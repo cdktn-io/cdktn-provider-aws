@@ -801,6 +801,7 @@ Object.defineProperty(exports, 'kmsReplicaKey', { get: function () { return requ
 Object.defineProperty(exports, 'lakeformationDataCellsFilter', { get: function () { return require('./lakeformation-data-cells-filter'); } });
 Object.defineProperty(exports, 'lakeformationDataLakeSettings', { get: function () { return require('./lakeformation-data-lake-settings'); } });
 Object.defineProperty(exports, 'lakeformationLfTag', { get: function () { return require('./lakeformation-lf-tag'); } });
+Object.defineProperty(exports, 'lakeformationLfTagExpression', { get: function () { return require('./lakeformation-lf-tag-expression'); } });
 Object.defineProperty(exports, 'lakeformationOptIn', { get: function () { return require('./lakeformation-opt-in'); } });
 Object.defineProperty(exports, 'lakeformationPermissions', { get: function () { return require('./lakeformation-permissions'); } });
 Object.defineProperty(exports, 'lakeformationResource', { get: function () { return require('./lakeformation-resource'); } });
@@ -1570,6 +1571,7 @@ Object.defineProperty(exports, 'dataAwsApigatewayv2Api', { get: function () { re
 Object.defineProperty(exports, 'dataAwsApigatewayv2Apis', { get: function () { return require('./data-aws-apigatewayv2-apis'); } });
 Object.defineProperty(exports, 'dataAwsApigatewayv2Export', { get: function () { return require('./data-aws-apigatewayv2-export'); } });
 Object.defineProperty(exports, 'dataAwsApigatewayv2VpcLink', { get: function () { return require('./data-aws-apigatewayv2-vpc-link'); } });
+Object.defineProperty(exports, 'dataAwsAppconfigApplication', { get: function () { return require('./data-aws-appconfig-application'); } });
 Object.defineProperty(exports, 'dataAwsAppconfigConfigurationProfile', { get: function () { return require('./data-aws-appconfig-configuration-profile'); } });
 Object.defineProperty(exports, 'dataAwsAppconfigConfigurationProfiles', { get: function () { return require('./data-aws-appconfig-configuration-profiles'); } });
 Object.defineProperty(exports, 'dataAwsAppconfigEnvironment', { get: function () { return require('./data-aws-appconfig-environment'); } });
@@ -1955,6 +1957,12 @@ Object.defineProperty(exports, 'dataAwsOamSinks', { get: function () { return re
 Object.defineProperty(exports, 'dataAwsOdbCloudAutonomousVmCluster', { get: function () { return require('./data-aws-odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'dataAwsOdbCloudExadataInfrastructure', { get: function () { return require('./data-aws-odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'dataAwsOdbCloudVmCluster', { get: function () { return require('./data-aws-odb-cloud-vm-cluster'); } });
+Object.defineProperty(exports, 'dataAwsOdbDbNode', { get: function () { return require('./data-aws-odb-db-node'); } });
+Object.defineProperty(exports, 'dataAwsOdbDbNodes', { get: function () { return require('./data-aws-odb-db-nodes'); } });
+Object.defineProperty(exports, 'dataAwsOdbDbServer', { get: function () { return require('./data-aws-odb-db-server'); } });
+Object.defineProperty(exports, 'dataAwsOdbDbServers', { get: function () { return require('./data-aws-odb-db-servers'); } });
+Object.defineProperty(exports, 'dataAwsOdbDbSystemShapes', { get: function () { return require('./data-aws-odb-db-system-shapes'); } });
+Object.defineProperty(exports, 'dataAwsOdbGiVersions', { get: function () { return require('./data-aws-odb-gi-versions'); } });
 Object.defineProperty(exports, 'dataAwsOdbNetwork', { get: function () { return require('./data-aws-odb-network'); } });
 Object.defineProperty(exports, 'dataAwsOdbNetworkPeeringConnection', { get: function () { return require('./data-aws-odb-network-peering-connection'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchDomain', { get: function () { return require('./data-aws-opensearch-domain'); } });

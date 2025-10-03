@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDmsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,11 +26,11 @@ export interface DataAwsDmsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint#region DataAwsDmsEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint#region DataAwsDmsEndpoint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -507,6 +507,126 @@ export class DataAwsDmsEndpointMongodbSettingsList extends cdktf.ComplexList {
   */
   public get(index: number): DataAwsDmsEndpointMongodbSettingsOutputReference {
     return new DataAwsDmsEndpointMongodbSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDmsEndpointMysqlSettings {
+}
+
+export function dataAwsDmsEndpointMysqlSettingsToTerraform(struct?: DataAwsDmsEndpointMysqlSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsDmsEndpointMysqlSettingsToHclTerraform(struct?: DataAwsDmsEndpointMysqlSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsDmsEndpointMysqlSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDmsEndpointMysqlSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDmsEndpointMysqlSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // after_connect_script - computed: true, optional: false, required: false
+  public get afterConnectScript() {
+    return this.getStringAttribute('after_connect_script');
+  }
+
+  // authentication_method - computed: true, optional: false, required: false
+  public get authenticationMethod() {
+    return this.getStringAttribute('authentication_method');
+  }
+
+  // clean_source_metadata_on_mismatch - computed: true, optional: false, required: false
+  public get cleanSourceMetadataOnMismatch() {
+    return this.getBooleanAttribute('clean_source_metadata_on_mismatch');
+  }
+
+  // events_poll_interval - computed: true, optional: false, required: false
+  public get eventsPollInterval() {
+    return this.getNumberAttribute('events_poll_interval');
+  }
+
+  // execute_timeout - computed: true, optional: false, required: false
+  public get executeTimeout() {
+    return this.getNumberAttribute('execute_timeout');
+  }
+
+  // max_file_size - computed: true, optional: false, required: false
+  public get maxFileSize() {
+    return this.getNumberAttribute('max_file_size');
+  }
+
+  // parallel_load_threads - computed: true, optional: false, required: false
+  public get parallelLoadThreads() {
+    return this.getNumberAttribute('parallel_load_threads');
+  }
+
+  // server_timezone - computed: true, optional: false, required: false
+  public get serverTimezone() {
+    return this.getStringAttribute('server_timezone');
+  }
+
+  // service_access_role_arn - computed: true, optional: false, required: false
+  public get serviceAccessRoleArn() {
+    return this.getStringAttribute('service_access_role_arn');
+  }
+
+  // target_db_type - computed: true, optional: false, required: false
+  public get targetDbType() {
+    return this.getStringAttribute('target_db_type');
+  }
+}
+
+export class DataAwsDmsEndpointMysqlSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDmsEndpointMysqlSettingsOutputReference {
+    return new DataAwsDmsEndpointMysqlSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsDmsEndpointPostgresSettings {
@@ -1136,7 +1256,7 @@ export class DataAwsDmsEndpointS3SettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint aws_dms_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint aws_dms_endpoint}
 */
 export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
 
@@ -1152,7 +1272,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsDmsEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDmsEndpoint to import
-  * @param importFromId The id of the existing DataAwsDmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDmsEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1164,7 +1284,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1175,7 +1295,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1282,6 +1402,12 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   private _mongodbSettings = new DataAwsDmsEndpointMongodbSettingsList(this, "mongodb_settings", false);
   public get mongodbSettings() {
     return this._mongodbSettings;
+  }
+
+  // mysql_settings - computed: true, optional: false, required: false
+  private _mysqlSettings = new DataAwsDmsEndpointMysqlSettingsList(this, "mysql_settings", false);
+  public get mysqlSettings() {
+    return this._mysqlSettings;
   }
 
   // password - computed: true, optional: false, required: false
