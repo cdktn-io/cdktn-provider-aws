@@ -4,7 +4,7 @@
 
 ### DbProxy <a name="DbProxy" id="@cdktf/provider-aws.dbProxy.DbProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy aws_db_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy aws_db_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer"></a>
 
@@ -23,14 +23,15 @@ DbProxy.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .auth(IResolvable)
-    .auth(java.util.List<DbProxyAuth>)
     .engineFamily(java.lang.String)
     .name(java.lang.String)
     .roleArn(java.lang.String)
     .vpcSubnetIds(java.util.List<java.lang.String>)
+//  .auth(IResolvable)
+//  .auth(java.util.List<DbProxyAuth>)
 //  .debugLogging(java.lang.Boolean)
 //  .debugLogging(IResolvable)
+//  .defaultAuthScheme(java.lang.String)
 //  .id(java.lang.String)
 //  .idleClientTimeout(java.lang.Number)
 //  .region(java.lang.String)
@@ -54,20 +55,21 @@ DbProxy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily">engineFamily</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#name DbProxy#name}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSubnetIds">vpcSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth">auth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>></code> | auth block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily">engineFamily</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#name DbProxy#name}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSubnetIds">vpcSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.debugLogging">debugLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#id DbProxy#id}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.idleClientTimeout">idleClientTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.debugLogging">debugLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.defaultAuthScheme">defaultAuthScheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#id DbProxy#id}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.idleClientTimeout">idleClientTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.requireTls">requireTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags DbProxy#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.requireTls">requireTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags DbProxy#tags}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
 
 ---
 
@@ -131,21 +133,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `auth`<sup>Required</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>>
-
-auth block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#auth DbProxy#auth}
-
----
-
 ##### `engineFamily`<sup>Required</sup> <a name="engineFamily" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
 
 ---
 
@@ -153,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#name DbProxy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#name DbProxy#name}.
 
 ---
 
@@ -161,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
 
 ---
 
@@ -169,7 +161,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+
+---
+
+##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>>
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#auth DbProxy#auth}
 
 ---
 
@@ -177,7 +179,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+
+---
+
+##### `defaultAuthScheme`<sup>Optional</sup> <a name="defaultAuthScheme" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.defaultAuthScheme"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}.
 
 ---
 
@@ -185,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#id DbProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#id DbProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -196,7 +206,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
 
 ---
 
@@ -206,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#region DbProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#region DbProxy#region}
 
 ---
 
@@ -214,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
 
 ---
 
@@ -222,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags DbProxy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags DbProxy#tags}.
 
 ---
 
@@ -230,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
 
 ---
 
@@ -240,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#timeouts DbProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
 
 ---
 
@@ -248,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
 
 ---
 
@@ -281,7 +291,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.putAuth">putAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetAuth">resetAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetDebugLogging">resetDebugLogging</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetDefaultAuthScheme">resetDefaultAuthScheme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetIdleClientTimeout">resetIdleClientTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetRegion">resetRegion</a></code> | *No description.* |
@@ -607,10 +619,22 @@ public void putTimeouts(DbProxyTimeouts value)
 
 ---
 
+##### `resetAuth` <a name="resetAuth" id="@cdktf/provider-aws.dbProxy.DbProxy.resetAuth"></a>
+
+```java
+public void resetAuth()
+```
+
 ##### `resetDebugLogging` <a name="resetDebugLogging" id="@cdktf/provider-aws.dbProxy.DbProxy.resetDebugLogging"></a>
 
 ```java
 public void resetDebugLogging()
+```
+
+##### `resetDefaultAuthScheme` <a name="resetDefaultAuthScheme" id="@cdktf/provider-aws.dbProxy.DbProxy.resetDefaultAuthScheme"></a>
+
+```java
+public void resetDefaultAuthScheme()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.dbProxy.DbProxy.resetId"></a>
@@ -764,7 +788,7 @@ The construct id used in the generated config for the DbProxy to import.
 
 The id of the existing DbProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,6 +824,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference">DbProxyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.authInput">authInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.debugLoggingInput">debugLoggingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthSchemeInput">defaultAuthSchemeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamilyInput">engineFamilyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.idleClientTimeoutInput">idleClientTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -813,6 +838,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIdsInput">vpcSecurityGroupIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSubnetIdsInput">vpcSubnetIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.debugLogging">debugLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthScheme">defaultAuthScheme</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamily">engineFamily</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.idleClientTimeout">idleClientTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1029,6 +1055,16 @@ public java.lang.Object getDebugLoggingInput();
 
 ---
 
+##### `defaultAuthSchemeInput`<sup>Optional</sup> <a name="defaultAuthSchemeInput" id="@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthSchemeInput"></a>
+
+```java
+public java.lang.String getDefaultAuthSchemeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `engineFamilyInput`<sup>Optional</sup> <a name="engineFamilyInput" id="@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamilyInput"></a>
 
 ```java
@@ -1156,6 +1192,16 @@ public java.lang.Object getDebugLogging();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `defaultAuthScheme`<sup>Required</sup> <a name="defaultAuthScheme" id="@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthScheme"></a>
+
+```java
+public java.lang.String getDefaultAuthScheme();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1310,12 +1356,12 @@ DbProxyAuth.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.authScheme">authScheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType">clientPasswordAuthType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#description DbProxy#description}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.iamAuth">iamAuth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.secretArn">secretArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#username DbProxy#username}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.authScheme">authScheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType">clientPasswordAuthType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#description DbProxy#description}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.iamAuth">iamAuth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.secretArn">secretArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#username DbProxy#username}. |
 
 ---
 
@@ -1327,7 +1373,7 @@ public java.lang.String getAuthScheme();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}.
 
 ---
 
@@ -1339,7 +1385,7 @@ public java.lang.String getClientPasswordAuthType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}.
 
 ---
 
@@ -1351,7 +1397,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#description DbProxy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#description DbProxy#description}.
 
 ---
 
@@ -1363,7 +1409,7 @@ public java.lang.String getIamAuth();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}.
 
 ---
 
@@ -1375,7 +1421,7 @@ public java.lang.String getSecretArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}.
 
 ---
 
@@ -1387,7 +1433,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#username DbProxy#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#username DbProxy#username}.
 
 ---
 
@@ -1410,14 +1456,15 @@ DbProxyConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .auth(IResolvable)
-    .auth(java.util.List<DbProxyAuth>)
     .engineFamily(java.lang.String)
     .name(java.lang.String)
     .roleArn(java.lang.String)
     .vpcSubnetIds(java.util.List<java.lang.String>)
+//  .auth(IResolvable)
+//  .auth(java.util.List<DbProxyAuth>)
 //  .debugLogging(java.lang.Boolean)
 //  .debugLogging(IResolvable)
+//  .defaultAuthScheme(java.lang.String)
 //  .id(java.lang.String)
 //  .idleClientTimeout(java.lang.Number)
 //  .region(java.lang.String)
@@ -1441,20 +1488,21 @@ DbProxyConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily">engineFamily</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#name DbProxy#name}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds">vpcSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.auth">auth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>></code> | auth block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily">engineFamily</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#name DbProxy#name}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds">vpcSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.debugLogging">debugLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#id DbProxy#id}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout">idleClientTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.debugLogging">debugLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.defaultAuthScheme">defaultAuthScheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#id DbProxy#id}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout">idleClientTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.requireTls">requireTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags DbProxy#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.requireTls">requireTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags DbProxy#tags}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
 
 ---
 
@@ -1528,20 +1576,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `auth`<sup>Required</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.auth"></a>
-
-```java
-public java.lang.Object getAuth();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>>
-
-auth block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#auth DbProxy#auth}
-
----
-
 ##### `engineFamily`<sup>Required</sup> <a name="engineFamily" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily"></a>
 
 ```java
@@ -1550,7 +1584,7 @@ public java.lang.String getEngineFamily();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
 
 ---
 
@@ -1562,7 +1596,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#name DbProxy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#name DbProxy#name}.
 
 ---
 
@@ -1574,7 +1608,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
 
 ---
 
@@ -1586,7 +1620,21 @@ public java.util.List<java.lang.String> getVpcSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+
+---
+
+##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.auth"></a>
+
+```java
+public java.lang.Object getAuth();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>>
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#auth DbProxy#auth}
 
 ---
 
@@ -1598,7 +1646,19 @@ public java.lang.Object getDebugLogging();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+
+---
+
+##### `defaultAuthScheme`<sup>Optional</sup> <a name="defaultAuthScheme" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.defaultAuthScheme"></a>
+
+```java
+public java.lang.String getDefaultAuthScheme();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}.
 
 ---
 
@@ -1610,7 +1670,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#id DbProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#id DbProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1625,7 +1685,7 @@ public java.lang.Number getIdleClientTimeout();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
 
 ---
 
@@ -1639,7 +1699,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#region DbProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#region DbProxy#region}
 
 ---
 
@@ -1651,7 +1711,7 @@ public java.lang.Object getRequireTls();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
 
 ---
 
@@ -1663,7 +1723,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags DbProxy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags DbProxy#tags}.
 
 ---
 
@@ -1675,7 +1735,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
 
 ---
 
@@ -1689,7 +1749,7 @@ public DbProxyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#timeouts DbProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
 
 ---
 
@@ -1701,7 +1761,7 @@ public java.util.List<java.lang.String> getVpcSecurityGroupIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
 
 ---
 
@@ -1723,9 +1783,9 @@ DbProxyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#create DbProxy#create}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#delete DbProxy#delete}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#update DbProxy#update}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#create DbProxy#create}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#delete DbProxy#delete}. |
+| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#update DbProxy#update}. |
 
 ---
 
@@ -1737,7 +1797,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#create DbProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#create DbProxy#create}.
 
 ---
 
@@ -1749,7 +1809,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#delete DbProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#delete DbProxy#delete}.
 
 ---
 
@@ -1761,7 +1821,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy#update DbProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy#update DbProxy#update}.
 
 ---
 

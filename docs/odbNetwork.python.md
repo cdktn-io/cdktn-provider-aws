@@ -4,7 +4,7 @@
 
 ### OdbNetwork <a name="OdbNetwork" id="@cdktf/provider-aws.odbNetwork.OdbNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network aws_odb_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network aws_odb_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer"></a>
 
@@ -59,7 +59,7 @@ odbNetwork.OdbNetwork(
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer.parameter.defaultDnsPrefix">default_dns_prefix</a></code> | <code>str</code> | The default DNS prefix for the network resource. Changing this will force terraform to create new resource. |
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer.parameter.s3PolicyDocument">s3_policy_document</a></code> | <code>str</code> | Specifies the endpoint policy for Amazon S3 access from the ODB network. |
-| <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#tags OdbNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#tags OdbNetwork#tags}. |
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkTimeouts">OdbNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -132,7 +132,7 @@ The AZ ID of the AZ where the ODB network is located.
 
 Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
 
 ---
 
@@ -153,7 +153,7 @@ ODB network.
 - 224.0.0.0 - 239.255.255.255
 - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
 
 ---
 
@@ -174,7 +174,7 @@ ODB network.
 - 224.0.0.0 - 239.255.255.255
 - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user-friendly name for the odb network. Changing this will force terraform to create a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#display_name OdbNetwork#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the configuration for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the configuration for Zero-ETL access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
 
 ---
 
@@ -216,7 +216,7 @@ The name of the Availability Zone (AZ) where the odb network is located.
 
 Changing this will force terraform to create new resource
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The default DNS prefix for the network resource. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#region OdbNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#region OdbNetwork#region}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the endpoint policy for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
 
 ---
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#tags OdbNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#tags OdbNetwork#tags}.
 
 ---
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
 
 ---
 
@@ -657,7 +657,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#create OdbNetwork#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#create OdbNetwork#create}
 
 ---
 
@@ -667,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#delete OdbNetwork#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#delete OdbNetwork#delete}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#update OdbNetwork#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#update OdbNetwork#update}
 
 ---
 
@@ -837,7 +837,7 @@ The construct id used in the generated config for the OdbNetwork to import.
 
 The id of the existing OdbNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1536,7 +1536,7 @@ odbNetwork.OdbNetworkConfig(
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkConfig.property.defaultDnsPrefix">default_dns_prefix</a></code> | <code>str</code> | The default DNS prefix for the network resource. Changing this will force terraform to create new resource. |
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkConfig.property.s3PolicyDocument">s3_policy_document</a></code> | <code>str</code> | Specifies the endpoint policy for Amazon S3 access from the ODB network. |
-| <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#tags OdbNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#tags OdbNetwork#tags}. |
 | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.odbNetwork.OdbNetworkTimeouts">OdbNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1623,7 +1623,7 @@ The AZ ID of the AZ where the ODB network is located.
 
 Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
 
 ---
 
@@ -1648,7 +1648,7 @@ ODB network.
 - 224.0.0.0 - 239.255.255.255
 - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
 
 ---
 
@@ -1673,7 +1673,7 @@ ODB network.
 - 224.0.0.0 - 239.255.255.255
 - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
 
 ---
 
@@ -1687,7 +1687,7 @@ display_name: str
 
 The user-friendly name for the odb network. Changing this will force terraform to create a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#display_name OdbNetwork#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
 
 ---
 
@@ -1701,7 +1701,7 @@ s3_access: str
 
 Specifies the configuration for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
 
 ---
 
@@ -1715,7 +1715,7 @@ zero_etl_access: str
 
 Specifies the configuration for Zero-ETL access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
 
 ---
 
@@ -1731,7 +1731,7 @@ The name of the Availability Zone (AZ) where the odb network is located.
 
 Changing this will force terraform to create new resource
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
 
 ---
 
@@ -1745,7 +1745,7 @@ custom_domain_name: str
 
 The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
 
 ---
 
@@ -1759,7 +1759,7 @@ default_dns_prefix: str
 
 The default DNS prefix for the network resource. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
 
 ---
 
@@ -1773,7 +1773,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#region OdbNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#region OdbNetwork#region}
 
 ---
 
@@ -1787,7 +1787,7 @@ s3_policy_document: str
 
 Specifies the endpoint policy for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
 
 ---
 
@@ -1799,7 +1799,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#tags OdbNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#tags OdbNetwork#tags}.
 
 ---
 
@@ -1813,7 +1813,7 @@ timeouts: OdbNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
 
 ---
 
@@ -1917,7 +1917,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#create OdbNetwork#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#create OdbNetwork#create}
 
 ---
 
@@ -1931,7 +1931,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#delete OdbNetwork#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#delete OdbNetwork#delete}
 
 ---
 
@@ -1945,7 +1945,7 @@ update: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_network#update OdbNetwork#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_network#update OdbNetwork#update}
 
 ---
 

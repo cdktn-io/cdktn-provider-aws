@@ -4,7 +4,7 @@
 
 ### IamServiceSpecificCredential <a name="IamServiceSpecificCredential" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.resetCredentialAgeDays">ResetCredentialAgeDays</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.resetStatus">ResetStatus</a></code> | *No description.* |
 
@@ -366,6 +367,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetCredentialAgeDays` <a name="ResetCredentialAgeDays" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.resetCredentialAgeDays"></a>
+
+```go
+func ResetCredentialAgeDays()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.resetId"></a>
 
 ```go
@@ -481,7 +488,7 @@ The construct id used in the generated config for the IamServiceSpecificCredenti
 
 The id of the existing IamServiceSpecificCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,13 +518,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.createDate">CreateDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.expirationDate">ExpirationDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceCredentialAlias">ServiceCredentialAlias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceCredentialSecret">ServiceCredentialSecret</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.servicePassword">ServicePassword</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceSpecificCredentialId">ServiceSpecificCredentialId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceUserName">ServiceUserName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.credentialAgeDaysInput">CredentialAgeDaysInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceNameInput">ServiceNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.userNameInput">UserNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.credentialAgeDays">CredentialAgeDays</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceName">ServiceName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.status">Status</a></code> | <code>*string</code> | *No description.* |
@@ -667,6 +680,46 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `CreateDate`<sup>Required</sup> <a name="CreateDate" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.createDate"></a>
+
+```go
+func CreateDate() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ExpirationDate`<sup>Required</sup> <a name="ExpirationDate" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.expirationDate"></a>
+
+```go
+func ExpirationDate() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceCredentialAlias`<sup>Required</sup> <a name="ServiceCredentialAlias" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceCredentialAlias"></a>
+
+```go
+func ServiceCredentialAlias() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceCredentialSecret`<sup>Required</sup> <a name="ServiceCredentialSecret" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.serviceCredentialSecret"></a>
+
+```go
+func ServiceCredentialSecret() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ServicePassword`<sup>Required</sup> <a name="ServicePassword" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.servicePassword"></a>
 
 ```go
@@ -694,6 +747,16 @@ func ServiceUserName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `CredentialAgeDaysInput`<sup>Optional</sup> <a name="CredentialAgeDaysInput" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.credentialAgeDaysInput"></a>
+
+```go
+func CredentialAgeDaysInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -734,6 +797,16 @@ func UserNameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `CredentialAgeDays`<sup>Required</sup> <a name="CredentialAgeDays" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.property.credentialAgeDays"></a>
+
+```go
+func CredentialAgeDays() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -814,6 +887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamservicespecificcredent
 	Provisioners: *[]interface{},
 	ServiceName: *string,
 	UserName: *string,
+	CredentialAgeDays: *f64,
 	Id: *string,
 	Status: *string,
 }
@@ -830,10 +904,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamservicespecificcredent
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.credentialAgeDays">CredentialAgeDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}. |
 
 ---
 
@@ -915,7 +990,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}.
 
 ---
 
@@ -927,7 +1002,19 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}.
+
+---
+
+##### `CredentialAgeDays`<sup>Optional</sup> <a name="CredentialAgeDays" id="@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.credentialAgeDays"></a>
+
+```go
+CredentialAgeDays *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}.
 
 ---
 
@@ -939,7 +1026,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -954,7 +1041,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}.
 
 ---
 
