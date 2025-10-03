@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface DsqlClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#deletion_protection_enabled DsqlCluster#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#deletion_protection_enabled DsqlCluster#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#kms_encryption_key DsqlCluster#kms_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#force_destroy DsqlCluster#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#kms_encryption_key DsqlCluster#kms_encryption_key}
   */
   readonly kmsEncryptionKey?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#region DsqlCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#region DsqlCluster#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#tags DsqlCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#tags DsqlCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * multi_region_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#multi_region_properties DsqlCluster#multi_region_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#multi_region_properties DsqlCluster#multi_region_properties}
   */
   readonly multiRegionProperties?: DsqlClusterMultiRegionProperties[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#timeouts DsqlCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#timeouts DsqlCluster#timeouts}
   */
   readonly timeouts?: DsqlClusterTimeouts;
 }
@@ -125,11 +129,11 @@ export class DsqlClusterEncryptionDetailsList extends cdktf.ComplexList {
 }
 export interface DsqlClusterMultiRegionProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#clusters DsqlCluster#clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#clusters DsqlCluster#clusters}
   */
   readonly clusters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#witness_region DsqlCluster#witness_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#witness_region DsqlCluster#witness_region}
   */
   readonly witnessRegion?: string;
 }
@@ -276,19 +280,19 @@ export interface DsqlClusterTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#create DsqlCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#create DsqlCluster#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#delete DsqlCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#delete DsqlCluster#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#update DsqlCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#update DsqlCluster#update}
   */
   readonly update?: string;
 }
@@ -440,7 +444,7 @@ export class DsqlClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster aws_dsql_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster aws_dsql_cluster}
 */
 export class DsqlCluster extends cdktf.TerraformResource {
 
@@ -456,7 +460,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DsqlCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DsqlCluster to import
-  * @param importFromId The id of the existing DsqlCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DsqlCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DsqlCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -468,7 +472,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster aws_dsql_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -479,7 +483,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dsql_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -491,6 +495,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._deletionProtectionEnabled = config.deletionProtectionEnabled;
+    this._forceDestroy = config.forceDestroy;
     this._kmsEncryptionKey = config.kmsEncryptionKey;
     this._region = config.region;
     this._tags = config.tags;
@@ -507,7 +512,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // deletion_protection_enabled - computed: false, optional: true, required: false
+  // deletion_protection_enabled - computed: true, optional: true, required: false
   private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
@@ -527,6 +532,22 @@ export class DsqlCluster extends cdktf.TerraformResource {
   private _encryptionDetails = new DsqlClusterEncryptionDetailsList(this, "encryption_details", false);
   public get encryptionDetails() {
     return this._encryptionDetails;
+  }
+
+  // force_destroy - computed: true, optional: true, required: false
+  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy;
   }
 
   // identifier - computed: true, optional: false, required: false
@@ -632,6 +653,7 @@ export class DsqlCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       kms_encryption_key: cdktf.stringToTerraform(this._kmsEncryptionKey),
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
@@ -644,6 +666,12 @@ export class DsqlCluster extends cdktf.TerraformResource {
     const attrs = {
       deletion_protection_enabled: {
         value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
