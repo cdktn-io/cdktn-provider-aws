@@ -279,7 +279,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.importFrom"></a>
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -348,7 +348,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -373,12 +373,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutFilterCriteria` <a name="PutFilterCriteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.putFilterCriteria"></a>
 
 ```csharp
-private void PutFilterCriteria(object Value)
+private void PutFilterCriteria(IResolvable|Inspector2FilterFilterCriteria[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.putFilterCriteria.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 ---
 
@@ -538,19 +538,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteria">FilterCriteria</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList">Inspector2FilterFilterCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.tagsAll">TagsAll</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">FilterCriteriaInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">FilterCriteriaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.reasonInput">ReasonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
@@ -639,20 +639,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -699,10 +699,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -759,10 +759,10 @@ public string DescriptionInput { get; }
 ##### `FilterCriteriaInput`<sup>Optional</sup> <a name="FilterCriteriaInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput"></a>
 
 ```csharp
-public object FilterCriteriaInput { get; }
+public IResolvable|Inspector2FilterFilterCriteria[] FilterCriteriaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 ---
 
@@ -894,17 +894,17 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new Inspector2FilterConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Action,
     string Name,
     string Description = null,
-    object FilterCriteria = null,
+    IResolvable|Inspector2FilterFilterCriteria[] FilterCriteria = null,
     string Reason = null,
     string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null
@@ -915,17 +915,17 @@ new Inspector2FilterConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">FilterCriteria</a></code> | <code>object</code> | filter_criteria block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">FilterCriteria</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | filter_criteria block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.reason">Reason</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
@@ -935,20 +935,20 @@ new Inspector2FilterConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -995,10 +995,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1041,10 +1041,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FilterCriteria`<sup>Optional</sup> <a name="FilterCriteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria"></a>
 
 ```csharp
-public object FilterCriteria { get; set; }
+public IResolvable|Inspector2FilterFilterCriteria[] FilterCriteria { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 filter_criteria block.
 
@@ -1098,52 +1098,52 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new Inspector2FilterFilterCriteria {
-    object AwsAccountId = null,
-    object CodeRepositoryProjectName = null,
-    object CodeRepositoryProviderType = null,
-    object CodeVulnerabilityDetectorName = null,
-    object CodeVulnerabilityDetectorTags = null,
-    object CodeVulnerabilityFilePath = null,
-    object ComponentId = null,
-    object ComponentType = null,
-    object Ec2InstanceImageId = null,
-    object Ec2InstanceSubnetId = null,
-    object Ec2InstanceVpcId = null,
-    object EcrImageArchitecture = null,
-    object EcrImageHash = null,
-    object EcrImageInUseCount = null,
-    object EcrImageLastInUseAt = null,
-    object EcrImagePushedAt = null,
-    object EcrImageRegistry = null,
-    object EcrImageRepositoryName = null,
-    object EcrImageTags = null,
-    object EpssScore = null,
-    object ExploitAvailable = null,
-    object FindingArn = null,
-    object FindingStatus = null,
-    object FindingType = null,
-    object FirstObservedAt = null,
-    object FixAvailable = null,
-    object InspectorScore = null,
-    object LambdaFunctionExecutionRoleArn = null,
-    object LambdaFunctionLastModifiedAt = null,
-    object LambdaFunctionLayers = null,
-    object LambdaFunctionName = null,
-    object LambdaFunctionRuntime = null,
-    object LastObservedAt = null,
-    object NetworkProtocol = null,
-    object PortRange = null,
-    object RelatedVulnerabilities = null,
-    object ResourceId = null,
-    object ResourceTags = null,
-    object ResourceType = null,
-    object Severity = null,
-    object Title = null,
-    object UpdatedAt = null,
-    object VendorSeverity = null,
-    object VulnerabilityId = null,
-    object VulnerabilitySource = null,
-    object VulnerablePackages = null
+    IResolvable|Inspector2FilterFilterCriteriaAwsAccountId[] AwsAccountId = null,
+    IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] CodeRepositoryProjectName = null,
+    IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] CodeRepositoryProviderType = null,
+    IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] CodeVulnerabilityDetectorName = null,
+    IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] CodeVulnerabilityDetectorTags = null,
+    IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] CodeVulnerabilityFilePath = null,
+    IResolvable|Inspector2FilterFilterCriteriaComponentId[] ComponentId = null,
+    IResolvable|Inspector2FilterFilterCriteriaComponentType[] ComponentType = null,
+    IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId[] Ec2InstanceImageId = null,
+    IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] Ec2InstanceSubnetId = null,
+    IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId[] Ec2InstanceVpcId = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture[] EcrImageArchitecture = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageHash[] EcrImageHash = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount[] EcrImageInUseCount = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] EcrImageLastInUseAt = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt[] EcrImagePushedAt = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry[] EcrImageRegistry = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName[] EcrImageRepositoryName = null,
+    IResolvable|Inspector2FilterFilterCriteriaEcrImageTags[] EcrImageTags = null,
+    IResolvable|Inspector2FilterFilterCriteriaEpssScore[] EpssScore = null,
+    IResolvable|Inspector2FilterFilterCriteriaExploitAvailable[] ExploitAvailable = null,
+    IResolvable|Inspector2FilterFilterCriteriaFindingArn[] FindingArn = null,
+    IResolvable|Inspector2FilterFilterCriteriaFindingStatus[] FindingStatus = null,
+    IResolvable|Inspector2FilterFilterCriteriaFindingType[] FindingType = null,
+    IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt[] FirstObservedAt = null,
+    IResolvable|Inspector2FilterFilterCriteriaFixAvailable[] FixAvailable = null,
+    IResolvable|Inspector2FilterFilterCriteriaInspectorScore[] InspectorScore = null,
+    IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] LambdaFunctionExecutionRoleArn = null,
+    IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] LambdaFunctionLastModifiedAt = null,
+    IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers[] LambdaFunctionLayers = null,
+    IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName[] LambdaFunctionName = null,
+    IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] LambdaFunctionRuntime = null,
+    IResolvable|Inspector2FilterFilterCriteriaLastObservedAt[] LastObservedAt = null,
+    IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol[] NetworkProtocol = null,
+    IResolvable|Inspector2FilterFilterCriteriaPortRange[] PortRange = null,
+    IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities[] RelatedVulnerabilities = null,
+    IResolvable|Inspector2FilterFilterCriteriaResourceId[] ResourceId = null,
+    IResolvable|Inspector2FilterFilterCriteriaResourceTags[] ResourceTags = null,
+    IResolvable|Inspector2FilterFilterCriteriaResourceType[] ResourceType = null,
+    IResolvable|Inspector2FilterFilterCriteriaSeverity[] Severity = null,
+    IResolvable|Inspector2FilterFilterCriteriaTitle[] Title = null,
+    IResolvable|Inspector2FilterFilterCriteriaUpdatedAt[] UpdatedAt = null,
+    IResolvable|Inspector2FilterFilterCriteriaVendorSeverity[] VendorSeverity = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId[] VulnerabilityId = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource[] VulnerabilitySource = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages[] VulnerablePackages = null
 };
 ```
 
@@ -1151,62 +1151,62 @@ new Inspector2FilterFilterCriteria {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">AwsAccountId</a></code> | <code>object</code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">CodeRepositoryProjectName</a></code> | <code>object</code> | code_repository_project_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">CodeRepositoryProviderType</a></code> | <code>object</code> | code_repository_provider_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">CodeVulnerabilityDetectorName</a></code> | <code>object</code> | code_vulnerability_detector_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">CodeVulnerabilityDetectorTags</a></code> | <code>object</code> | code_vulnerability_detector_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">CodeVulnerabilityFilePath</a></code> | <code>object</code> | code_vulnerability_file_path block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">ComponentId</a></code> | <code>object</code> | component_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">ComponentType</a></code> | <code>object</code> | component_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">Ec2InstanceImageId</a></code> | <code>object</code> | ec2_instance_image_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">Ec2InstanceSubnetId</a></code> | <code>object</code> | ec2_instance_subnet_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">Ec2InstanceVpcId</a></code> | <code>object</code> | ec2_instance_vpc_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">EcrImageArchitecture</a></code> | <code>object</code> | ecr_image_architecture block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">EcrImageHash</a></code> | <code>object</code> | ecr_image_hash block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">EcrImageInUseCount</a></code> | <code>object</code> | ecr_image_in_use_count block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">EcrImageLastInUseAt</a></code> | <code>object</code> | ecr_image_last_in_use_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">EcrImagePushedAt</a></code> | <code>object</code> | ecr_image_pushed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">EcrImageRegistry</a></code> | <code>object</code> | ecr_image_registry block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">EcrImageRepositoryName</a></code> | <code>object</code> | ecr_image_repository_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">EcrImageTags</a></code> | <code>object</code> | ecr_image_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">EpssScore</a></code> | <code>object</code> | epss_score block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">ExploitAvailable</a></code> | <code>object</code> | exploit_available block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">FindingArn</a></code> | <code>object</code> | finding_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">FindingStatus</a></code> | <code>object</code> | finding_status block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">FindingType</a></code> | <code>object</code> | finding_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">FirstObservedAt</a></code> | <code>object</code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">FixAvailable</a></code> | <code>object</code> | fix_available block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">InspectorScore</a></code> | <code>object</code> | inspector_score block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">LambdaFunctionExecutionRoleArn</a></code> | <code>object</code> | lambda_function_execution_role_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">LambdaFunctionLastModifiedAt</a></code> | <code>object</code> | lambda_function_last_modified_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">LambdaFunctionLayers</a></code> | <code>object</code> | lambda_function_layers block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">LambdaFunctionName</a></code> | <code>object</code> | lambda_function_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">LambdaFunctionRuntime</a></code> | <code>object</code> | lambda_function_runtime block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">LastObservedAt</a></code> | <code>object</code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">NetworkProtocol</a></code> | <code>object</code> | network_protocol block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">PortRange</a></code> | <code>object</code> | port_range block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">RelatedVulnerabilities</a></code> | <code>object</code> | related_vulnerabilities block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">ResourceId</a></code> | <code>object</code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">ResourceTags</a></code> | <code>object</code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">ResourceType</a></code> | <code>object</code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">Severity</a></code> | <code>object</code> | severity block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">Title</a></code> | <code>object</code> | title block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">UpdatedAt</a></code> | <code>object</code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">VendorSeverity</a></code> | <code>object</code> | vendor_severity block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">VulnerabilityId</a></code> | <code>object</code> | vulnerability_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">VulnerabilitySource</a></code> | <code>object</code> | vulnerability_source block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">VulnerablePackages</a></code> | <code>object</code> | vulnerable_packages block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">AwsAccountId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">CodeRepositoryProjectName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | code_repository_project_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">CodeRepositoryProviderType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | code_repository_provider_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">CodeVulnerabilityDetectorName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | code_vulnerability_detector_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">CodeVulnerabilityDetectorTags</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | code_vulnerability_detector_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">CodeVulnerabilityFilePath</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | code_vulnerability_file_path block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">ComponentId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | component_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">ComponentType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | component_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">Ec2InstanceImageId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | ec2_instance_image_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">Ec2InstanceSubnetId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | ec2_instance_subnet_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">Ec2InstanceVpcId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | ec2_instance_vpc_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">EcrImageArchitecture</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | ecr_image_architecture block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">EcrImageHash</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | ecr_image_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">EcrImageInUseCount</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | ecr_image_in_use_count block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">EcrImageLastInUseAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | ecr_image_last_in_use_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">EcrImagePushedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | ecr_image_pushed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">EcrImageRegistry</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | ecr_image_registry block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">EcrImageRepositoryName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | ecr_image_repository_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">EcrImageTags</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | ecr_image_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">EpssScore</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | epss_score block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">ExploitAvailable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | exploit_available block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">FindingArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | finding_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">FindingStatus</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | finding_status block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">FindingType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | finding_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">FirstObservedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">FixAvailable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | fix_available block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">InspectorScore</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | inspector_score block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">LambdaFunctionExecutionRoleArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | lambda_function_execution_role_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">LambdaFunctionLastModifiedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | lambda_function_last_modified_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">LambdaFunctionLayers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | lambda_function_layers block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">LambdaFunctionName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | lambda_function_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">LambdaFunctionRuntime</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | lambda_function_runtime block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">LastObservedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">NetworkProtocol</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | network_protocol block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">PortRange</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | port_range block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">RelatedVulnerabilities</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | related_vulnerabilities block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">ResourceId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">ResourceTags</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">ResourceType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">Severity</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | severity block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">Title</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | title block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">UpdatedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">VendorSeverity</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | vendor_severity block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">VulnerabilityId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | vulnerability_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">VulnerabilitySource</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | vulnerability_source block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">VulnerablePackages</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | vulnerable_packages block. |
 
 ---
 
 ##### `AwsAccountId`<sup>Optional</sup> <a name="AwsAccountId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId"></a>
 
 ```csharp
-public object AwsAccountId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaAwsAccountId[] AwsAccountId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 aws_account_id block.
 
@@ -1217,10 +1217,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CodeRepositoryProjectName`<sup>Optional</sup> <a name="CodeRepositoryProjectName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName"></a>
 
 ```csharp
-public object CodeRepositoryProjectName { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] CodeRepositoryProjectName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 code_repository_project_name block.
 
@@ -1231,10 +1231,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CodeRepositoryProviderType`<sup>Optional</sup> <a name="CodeRepositoryProviderType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType"></a>
 
 ```csharp
-public object CodeRepositoryProviderType { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] CodeRepositoryProviderType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 code_repository_provider_type block.
 
@@ -1245,10 +1245,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CodeVulnerabilityDetectorName`<sup>Optional</sup> <a name="CodeVulnerabilityDetectorName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName"></a>
 
 ```csharp
-public object CodeVulnerabilityDetectorName { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] CodeVulnerabilityDetectorName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 code_vulnerability_detector_name block.
 
@@ -1259,10 +1259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CodeVulnerabilityDetectorTags`<sup>Optional</sup> <a name="CodeVulnerabilityDetectorTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags"></a>
 
 ```csharp
-public object CodeVulnerabilityDetectorTags { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] CodeVulnerabilityDetectorTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 code_vulnerability_detector_tags block.
 
@@ -1273,10 +1273,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CodeVulnerabilityFilePath`<sup>Optional</sup> <a name="CodeVulnerabilityFilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath"></a>
 
 ```csharp
-public object CodeVulnerabilityFilePath { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] CodeVulnerabilityFilePath { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 code_vulnerability_file_path block.
 
@@ -1287,10 +1287,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ComponentId`<sup>Optional</sup> <a name="ComponentId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId"></a>
 
 ```csharp
-public object ComponentId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentId[] ComponentId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 component_id block.
 
@@ -1301,10 +1301,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ComponentType`<sup>Optional</sup> <a name="ComponentType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType"></a>
 
 ```csharp
-public object ComponentType { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentType[] ComponentType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 component_type block.
 
@@ -1315,10 +1315,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Ec2InstanceImageId`<sup>Optional</sup> <a name="Ec2InstanceImageId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId"></a>
 
 ```csharp
-public object Ec2InstanceImageId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId[] Ec2InstanceImageId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ec2_instance_image_id block.
 
@@ -1329,10 +1329,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Ec2InstanceSubnetId`<sup>Optional</sup> <a name="Ec2InstanceSubnetId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId"></a>
 
 ```csharp
-public object Ec2InstanceSubnetId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] Ec2InstanceSubnetId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ec2_instance_subnet_id block.
 
@@ -1343,10 +1343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Ec2InstanceVpcId`<sup>Optional</sup> <a name="Ec2InstanceVpcId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId"></a>
 
 ```csharp
-public object Ec2InstanceVpcId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId[] Ec2InstanceVpcId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ec2_instance_vpc_id block.
 
@@ -1357,10 +1357,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageArchitecture`<sup>Optional</sup> <a name="EcrImageArchitecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture"></a>
 
 ```csharp
-public object EcrImageArchitecture { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture[] EcrImageArchitecture { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ecr_image_architecture block.
 
@@ -1371,10 +1371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageHash`<sup>Optional</sup> <a name="EcrImageHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash"></a>
 
 ```csharp
-public object EcrImageHash { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageHash[] EcrImageHash { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ecr_image_hash block.
 
@@ -1385,10 +1385,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageInUseCount`<sup>Optional</sup> <a name="EcrImageInUseCount" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount"></a>
 
 ```csharp
-public object EcrImageInUseCount { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount[] EcrImageInUseCount { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ecr_image_in_use_count block.
 
@@ -1399,10 +1399,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageLastInUseAt`<sup>Optional</sup> <a name="EcrImageLastInUseAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt"></a>
 
 ```csharp
-public object EcrImageLastInUseAt { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] EcrImageLastInUseAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ecr_image_last_in_use_at block.
 
@@ -1413,10 +1413,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImagePushedAt`<sup>Optional</sup> <a name="EcrImagePushedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt"></a>
 
 ```csharp
-public object EcrImagePushedAt { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt[] EcrImagePushedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ecr_image_pushed_at block.
 
@@ -1427,10 +1427,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageRegistry`<sup>Optional</sup> <a name="EcrImageRegistry" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry"></a>
 
 ```csharp
-public object EcrImageRegistry { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry[] EcrImageRegistry { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ecr_image_registry block.
 
@@ -1441,10 +1441,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageRepositoryName`<sup>Optional</sup> <a name="EcrImageRepositoryName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName"></a>
 
 ```csharp
-public object EcrImageRepositoryName { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName[] EcrImageRepositoryName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ecr_image_repository_name block.
 
@@ -1455,10 +1455,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EcrImageTags`<sup>Optional</sup> <a name="EcrImageTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags"></a>
 
 ```csharp
-public object EcrImageTags { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageTags[] EcrImageTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ecr_image_tags block.
 
@@ -1469,10 +1469,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EpssScore`<sup>Optional</sup> <a name="EpssScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore"></a>
 
 ```csharp
-public object EpssScore { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaEpssScore[] EpssScore { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 epss_score block.
 
@@ -1483,10 +1483,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ExploitAvailable`<sup>Optional</sup> <a name="ExploitAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable"></a>
 
 ```csharp
-public object ExploitAvailable { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaExploitAvailable[] ExploitAvailable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 exploit_available block.
 
@@ -1497,10 +1497,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingArn`<sup>Optional</sup> <a name="FindingArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn"></a>
 
 ```csharp
-public object FindingArn { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingArn[] FindingArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 finding_arn block.
 
@@ -1511,10 +1511,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingStatus`<sup>Optional</sup> <a name="FindingStatus" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus"></a>
 
 ```csharp
-public object FindingStatus { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingStatus[] FindingStatus { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 finding_status block.
 
@@ -1525,10 +1525,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingType`<sup>Optional</sup> <a name="FindingType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType"></a>
 
 ```csharp
-public object FindingType { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingType[] FindingType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 finding_type block.
 
@@ -1539,10 +1539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FirstObservedAt`<sup>Optional</sup> <a name="FirstObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt"></a>
 
 ```csharp
-public object FirstObservedAt { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt[] FirstObservedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 first_observed_at block.
 
@@ -1553,10 +1553,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FixAvailable`<sup>Optional</sup> <a name="FixAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable"></a>
 
 ```csharp
-public object FixAvailable { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaFixAvailable[] FixAvailable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 fix_available block.
 
@@ -1567,10 +1567,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InspectorScore`<sup>Optional</sup> <a name="InspectorScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore"></a>
 
 ```csharp
-public object InspectorScore { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaInspectorScore[] InspectorScore { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 inspector_score block.
 
@@ -1581,10 +1581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LambdaFunctionExecutionRoleArn`<sup>Optional</sup> <a name="LambdaFunctionExecutionRoleArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn"></a>
 
 ```csharp
-public object LambdaFunctionExecutionRoleArn { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] LambdaFunctionExecutionRoleArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 lambda_function_execution_role_arn block.
 
@@ -1595,10 +1595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LambdaFunctionLastModifiedAt`<sup>Optional</sup> <a name="LambdaFunctionLastModifiedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt"></a>
 
 ```csharp
-public object LambdaFunctionLastModifiedAt { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] LambdaFunctionLastModifiedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 lambda_function_last_modified_at block.
 
@@ -1609,10 +1609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LambdaFunctionLayers`<sup>Optional</sup> <a name="LambdaFunctionLayers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers"></a>
 
 ```csharp
-public object LambdaFunctionLayers { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers[] LambdaFunctionLayers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 lambda_function_layers block.
 
@@ -1623,10 +1623,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LambdaFunctionName`<sup>Optional</sup> <a name="LambdaFunctionName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName"></a>
 
 ```csharp
-public object LambdaFunctionName { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName[] LambdaFunctionName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 lambda_function_name block.
 
@@ -1637,10 +1637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LambdaFunctionRuntime`<sup>Optional</sup> <a name="LambdaFunctionRuntime" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime"></a>
 
 ```csharp
-public object LambdaFunctionRuntime { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] LambdaFunctionRuntime { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 lambda_function_runtime block.
 
@@ -1651,10 +1651,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LastObservedAt`<sup>Optional</sup> <a name="LastObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt"></a>
 
 ```csharp
-public object LastObservedAt { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaLastObservedAt[] LastObservedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 last_observed_at block.
 
@@ -1665,10 +1665,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkProtocol`<sup>Optional</sup> <a name="NetworkProtocol" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol"></a>
 
 ```csharp
-public object NetworkProtocol { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol[] NetworkProtocol { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 network_protocol block.
 
@@ -1679,10 +1679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PortRange`<sup>Optional</sup> <a name="PortRange" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange"></a>
 
 ```csharp
-public object PortRange { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaPortRange[] PortRange { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 port_range block.
 
@@ -1693,10 +1693,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RelatedVulnerabilities`<sup>Optional</sup> <a name="RelatedVulnerabilities" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities"></a>
 
 ```csharp
-public object RelatedVulnerabilities { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities[] RelatedVulnerabilities { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 related_vulnerabilities block.
 
@@ -1707,10 +1707,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceId`<sup>Optional</sup> <a name="ResourceId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId"></a>
 
 ```csharp
-public object ResourceId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceId[] ResourceId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 resource_id block.
 
@@ -1721,10 +1721,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceTags`<sup>Optional</sup> <a name="ResourceTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags"></a>
 
 ```csharp
-public object ResourceTags { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceTags[] ResourceTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 resource_tags block.
 
@@ -1735,10 +1735,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceType`<sup>Optional</sup> <a name="ResourceType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType"></a>
 
 ```csharp
-public object ResourceType { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceType[] ResourceType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 resource_type block.
 
@@ -1749,10 +1749,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Severity`<sup>Optional</sup> <a name="Severity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity"></a>
 
 ```csharp
-public object Severity { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaSeverity[] Severity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 severity block.
 
@@ -1763,10 +1763,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Title`<sup>Optional</sup> <a name="Title" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title"></a>
 
 ```csharp
-public object Title { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaTitle[] Title { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 title block.
 
@@ -1777,10 +1777,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UpdatedAt`<sup>Optional</sup> <a name="UpdatedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt"></a>
 
 ```csharp
-public object UpdatedAt { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaUpdatedAt[] UpdatedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 updated_at block.
 
@@ -1791,10 +1791,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VendorSeverity`<sup>Optional</sup> <a name="VendorSeverity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity"></a>
 
 ```csharp
-public object VendorSeverity { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVendorSeverity[] VendorSeverity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 vendor_severity block.
 
@@ -1805,10 +1805,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VulnerabilityId`<sup>Optional</sup> <a name="VulnerabilityId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId"></a>
 
 ```csharp
-public object VulnerabilityId { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId[] VulnerabilityId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 vulnerability_id block.
 
@@ -1819,10 +1819,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VulnerabilitySource`<sup>Optional</sup> <a name="VulnerabilitySource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource"></a>
 
 ```csharp
-public object VulnerabilitySource { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource[] VulnerabilitySource { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 vulnerability_source block.
 
@@ -1833,10 +1833,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VulnerablePackages`<sup>Optional</sup> <a name="VulnerablePackages" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages"></a>
 
 ```csharp
-public object VulnerablePackages { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages[] VulnerablePackages { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 vulnerable_packages block.
 
@@ -3936,14 +3936,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new Inspector2FilterFilterCriteriaVulnerablePackages {
-    object Architecture = null,
-    object Epoch = null,
-    object FilePath = null,
-    object Name = null,
-    object Release = null,
-    object SourceLambdaLayerArn = null,
-    object SourceLayerHash = null,
-    object Version = null
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] Architecture = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] Epoch = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] FilePath = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName[] Name = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] Release = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] SourceLambdaLayerArn = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] SourceLayerHash = null,
+    IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] Version = null
 };
 ```
 
@@ -3951,24 +3951,24 @@ new Inspector2FilterFilterCriteriaVulnerablePackages {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">Architecture</a></code> | <code>object</code> | architecture block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">Epoch</a></code> | <code>object</code> | epoch block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">FilePath</a></code> | <code>object</code> | file_path block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">Name</a></code> | <code>object</code> | name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">Release</a></code> | <code>object</code> | release block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">SourceLambdaLayerArn</a></code> | <code>object</code> | source_lambda_layer_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">SourceLayerHash</a></code> | <code>object</code> | source_layer_hash block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">Version</a></code> | <code>object</code> | version block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">Architecture</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | architecture block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">Epoch</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | epoch block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">FilePath</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | file_path block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">Name</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">Release</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | release block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">SourceLambdaLayerArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | source_lambda_layer_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">SourceLayerHash</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | source_layer_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">Version</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | version block. |
 
 ---
 
 ##### `Architecture`<sup>Optional</sup> <a name="Architecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture"></a>
 
 ```csharp
-public object Architecture { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] Architecture { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 architecture block.
 
@@ -3979,10 +3979,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Epoch`<sup>Optional</sup> <a name="Epoch" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch"></a>
 
 ```csharp
-public object Epoch { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] Epoch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 epoch block.
 
@@ -3993,10 +3993,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FilePath`<sup>Optional</sup> <a name="FilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath"></a>
 
 ```csharp
-public object FilePath { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] FilePath { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 file_path block.
 
@@ -4007,10 +4007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name"></a>
 
 ```csharp
-public object Name { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName[] Name { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 name block.
 
@@ -4021,10 +4021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Release`<sup>Optional</sup> <a name="Release" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release"></a>
 
 ```csharp
-public object Release { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] Release { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 release block.
 
@@ -4035,10 +4035,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SourceLambdaLayerArn`<sup>Optional</sup> <a name="SourceLambdaLayerArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn"></a>
 
 ```csharp
-public object SourceLambdaLayerArn { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] SourceLambdaLayerArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 source_lambda_layer_arn block.
 
@@ -4049,10 +4049,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SourceLayerHash`<sup>Optional</sup> <a name="SourceLayerHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash"></a>
 
 ```csharp
-public object SourceLayerHash { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] SourceLayerHash { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 source_layer_hash block.
 
@@ -4063,10 +4063,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Version`<sup>Optional</sup> <a name="Version" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version"></a>
 
 ```csharp
-public object Version { get; set; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] Version { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 version block.
 
@@ -4565,7 +4565,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | *No description.* |
 
 ---
 
@@ -4596,10 +4596,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaAwsAccountId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 ---
 
@@ -4836,7 +4836,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -4907,10 +4907,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaAwsAccountId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>
 
 ---
 
@@ -5036,7 +5036,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | *No description.* |
 
 ---
 
@@ -5067,10 +5067,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 ---
 
@@ -5307,7 +5307,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a></code> | *No description.* |
 
 ---
 
@@ -5378,10 +5378,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>
 
 ---
 
@@ -5507,7 +5507,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | *No description.* |
 
 ---
 
@@ -5538,10 +5538,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 ---
 
@@ -5778,7 +5778,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a></code> | *No description.* |
 
 ---
 
@@ -5849,10 +5849,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>
 
 ---
 
@@ -5978,7 +5978,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | *No description.* |
 
 ---
 
@@ -6009,10 +6009,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 ---
 
@@ -6249,7 +6249,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a></code> | *No description.* |
 
 ---
 
@@ -6320,10 +6320,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>
 
 ---
 
@@ -6449,7 +6449,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -6480,10 +6480,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 ---
 
@@ -6720,7 +6720,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a></code> | *No description.* |
 
 ---
 
@@ -6791,10 +6791,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>
 
 ---
 
@@ -6920,7 +6920,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | *No description.* |
 
 ---
 
@@ -6951,10 +6951,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 ---
 
@@ -7191,7 +7191,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a></code> | *No description.* |
 
 ---
 
@@ -7262,10 +7262,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>
 
 ---
 
@@ -7391,7 +7391,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | *No description.* |
 
 ---
 
@@ -7422,10 +7422,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 ---
 
@@ -7662,7 +7662,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a></code> | *No description.* |
 
 ---
 
@@ -7733,10 +7733,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>
 
 ---
 
@@ -7862,7 +7862,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | *No description.* |
 
 ---
 
@@ -7893,10 +7893,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 ---
 
@@ -8133,7 +8133,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a></code> | *No description.* |
 
 ---
 
@@ -8204,10 +8204,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>
 
 ---
 
@@ -8333,7 +8333,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | *No description.* |
 
 ---
 
@@ -8364,10 +8364,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ---
 
@@ -8604,7 +8604,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -8675,10 +8675,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>
 
 ---
 
@@ -8804,7 +8804,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | *No description.* |
 
 ---
 
@@ -8835,10 +8835,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ---
 
@@ -9075,7 +9075,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -9146,10 +9146,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>
 
 ---
 
@@ -9275,7 +9275,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | *No description.* |
 
 ---
 
@@ -9306,10 +9306,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ---
 
@@ -9546,7 +9546,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -9617,10 +9617,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>
 
 ---
 
@@ -9746,7 +9746,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | *No description.* |
 
 ---
 
@@ -9777,10 +9777,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ---
 
@@ -10017,7 +10017,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -10088,10 +10088,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>
 
 ---
 
@@ -10217,7 +10217,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | *No description.* |
 
 ---
 
@@ -10248,10 +10248,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageHash[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ---
 
@@ -10488,7 +10488,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a></code> | *No description.* |
 
 ---
 
@@ -10559,10 +10559,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageHash InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>
 
 ---
 
@@ -10688,7 +10688,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | *No description.* |
 
 ---
 
@@ -10719,10 +10719,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ---
 
@@ -10959,7 +10959,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusiveInput">UpperInclusiveInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusive">LowerInclusive</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusive">UpperInclusive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a></code> | *No description.* |
 
 ---
 
@@ -11030,10 +11030,10 @@ public double UpperInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>
 
 ---
 
@@ -11159,7 +11159,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -11190,10 +11190,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ---
 
@@ -11444,7 +11444,7 @@ private void ResetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusiveInput">StartInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusive">EndInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusive">StartInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a></code> | *No description.* |
 
 ---
 
@@ -11515,10 +11515,10 @@ public string StartInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>
 
 ---
 
@@ -11644,7 +11644,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -11675,10 +11675,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ---
 
@@ -11929,7 +11929,7 @@ private void ResetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusiveInput">StartInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.endInclusive">EndInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusive">StartInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a></code> | *No description.* |
 
 ---
 
@@ -12000,10 +12000,10 @@ public string StartInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>
 
 ---
 
@@ -12129,7 +12129,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | *No description.* |
 
 ---
 
@@ -12160,10 +12160,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ---
 
@@ -12400,7 +12400,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a></code> | *No description.* |
 
 ---
 
@@ -12471,10 +12471,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>
 
 ---
 
@@ -12600,7 +12600,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | *No description.* |
 
 ---
 
@@ -12631,10 +12631,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ---
 
@@ -12871,7 +12871,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a></code> | *No description.* |
 
 ---
 
@@ -12942,10 +12942,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>
 
 ---
 
@@ -13071,7 +13071,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -13102,10 +13102,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageTags[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ---
 
@@ -13342,7 +13342,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a></code> | *No description.* |
 
 ---
 
@@ -13413,10 +13413,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageTags InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>
 
 ---
 
@@ -13542,7 +13542,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | *No description.* |
 
 ---
 
@@ -13573,10 +13573,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEpssScore[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 ---
 
@@ -13813,7 +13813,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusiveInput">UpperInclusiveInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.lowerInclusive">LowerInclusive</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusive">UpperInclusive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a></code> | *No description.* |
 
 ---
 
@@ -13884,10 +13884,10 @@ public double UpperInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEpssScore InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>
 
 ---
 
@@ -14013,7 +14013,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | *No description.* |
 
 ---
 
@@ -14044,10 +14044,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaExploitAvailable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 ---
 
@@ -14284,7 +14284,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a></code> | *No description.* |
 
 ---
 
@@ -14355,10 +14355,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaExploitAvailable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>
 
 ---
 
@@ -14484,7 +14484,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -14515,10 +14515,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 ---
 
@@ -14755,7 +14755,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a></code> | *No description.* |
 
 ---
 
@@ -14826,10 +14826,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>
 
 ---
 
@@ -14955,7 +14955,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -14986,10 +14986,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingStatus[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 ---
 
@@ -15226,7 +15226,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a></code> | *No description.* |
 
 ---
 
@@ -15297,10 +15297,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingStatus InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>
 
 ---
 
@@ -15426,7 +15426,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | *No description.* |
 
 ---
 
@@ -15457,10 +15457,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 ---
 
@@ -15697,7 +15697,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a></code> | *No description.* |
 
 ---
 
@@ -15768,10 +15768,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>
 
 ---
 
@@ -15897,7 +15897,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -15928,10 +15928,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 ---
 
@@ -16182,7 +16182,7 @@ private void ResetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusiveInput">StartInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.endInclusive">EndInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusive">StartInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16253,10 +16253,10 @@ public string StartInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>
 
 ---
 
@@ -16382,7 +16382,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | *No description.* |
 
 ---
 
@@ -16413,10 +16413,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFixAvailable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 ---
 
@@ -16653,7 +16653,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a></code> | *No description.* |
 
 ---
 
@@ -16724,10 +16724,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFixAvailable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>
 
 ---
 
@@ -16853,7 +16853,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | *No description.* |
 
 ---
 
@@ -16884,10 +16884,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaInspectorScore[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 ---
 
@@ -17124,7 +17124,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusiveInput">UpperInclusiveInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.lowerInclusive">LowerInclusive</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusive">UpperInclusive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a></code> | *No description.* |
 
 ---
 
@@ -17195,10 +17195,10 @@ public double UpperInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaInspectorScore InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>
 
 ---
 
@@ -17324,7 +17324,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -17355,10 +17355,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 ---
 
@@ -17595,7 +17595,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a></code> | *No description.* |
 
 ---
 
@@ -17666,10 +17666,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>
 
 ---
 
@@ -17795,7 +17795,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -17826,10 +17826,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 ---
 
@@ -18080,7 +18080,7 @@ private void ResetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusiveInput">StartInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.endInclusive">EndInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusive">StartInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a></code> | *No description.* |
 
 ---
 
@@ -18151,10 +18151,10 @@ public string StartInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>
 
 ---
 
@@ -18280,7 +18280,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | *No description.* |
 
 ---
 
@@ -18311,10 +18311,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 ---
 
@@ -18551,7 +18551,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a></code> | *No description.* |
 
 ---
 
@@ -18622,10 +18622,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>
 
 ---
 
@@ -18751,7 +18751,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | *No description.* |
 
 ---
 
@@ -18782,10 +18782,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 ---
 
@@ -19022,7 +19022,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a></code> | *No description.* |
 
 ---
 
@@ -19093,10 +19093,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>
 
 ---
 
@@ -19222,7 +19222,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | *No description.* |
 
 ---
 
@@ -19253,10 +19253,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 ---
 
@@ -19493,7 +19493,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a></code> | *No description.* |
 
 ---
 
@@ -19564,10 +19564,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>
 
 ---
 
@@ -19693,7 +19693,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -19724,10 +19724,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLastObservedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 ---
 
@@ -19978,7 +19978,7 @@ private void ResetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusiveInput">StartInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.endInclusive">EndInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusive">StartInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -20049,10 +20049,10 @@ public string StartInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLastObservedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>
 
 ---
 
@@ -20178,7 +20178,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]</code> | *No description.* |
 
 ---
 
@@ -20209,10 +20209,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteria[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>[]
 
 ---
 
@@ -20338,7 +20338,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | *No description.* |
 
 ---
 
@@ -20369,10 +20369,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 ---
 
@@ -20609,7 +20609,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -20680,10 +20680,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>
 
 ---
 
@@ -21004,552 +21004,552 @@ Returns a reversible string representation.
 ##### `PutAwsAccountId` <a name="PutAwsAccountId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId"></a>
 
 ```csharp
-private void PutAwsAccountId(object Value)
+private void PutAwsAccountId(IResolvable|Inspector2FilterFilterCriteriaAwsAccountId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 ---
 
 ##### `PutCodeRepositoryProjectName` <a name="PutCodeRepositoryProjectName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName"></a>
 
 ```csharp
-private void PutCodeRepositoryProjectName(object Value)
+private void PutCodeRepositoryProjectName(IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 ---
 
 ##### `PutCodeRepositoryProviderType` <a name="PutCodeRepositoryProviderType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType"></a>
 
 ```csharp
-private void PutCodeRepositoryProviderType(object Value)
+private void PutCodeRepositoryProviderType(IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 ---
 
 ##### `PutCodeVulnerabilityDetectorName` <a name="PutCodeVulnerabilityDetectorName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName"></a>
 
 ```csharp
-private void PutCodeVulnerabilityDetectorName(object Value)
+private void PutCodeVulnerabilityDetectorName(IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 ---
 
 ##### `PutCodeVulnerabilityDetectorTags` <a name="PutCodeVulnerabilityDetectorTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags"></a>
 
 ```csharp
-private void PutCodeVulnerabilityDetectorTags(object Value)
+private void PutCodeVulnerabilityDetectorTags(IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 ---
 
 ##### `PutCodeVulnerabilityFilePath` <a name="PutCodeVulnerabilityFilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath"></a>
 
 ```csharp
-private void PutCodeVulnerabilityFilePath(object Value)
+private void PutCodeVulnerabilityFilePath(IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 ---
 
 ##### `PutComponentId` <a name="PutComponentId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentId"></a>
 
 ```csharp
-private void PutComponentId(object Value)
+private void PutComponentId(IResolvable|Inspector2FilterFilterCriteriaComponentId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 ---
 
 ##### `PutComponentType` <a name="PutComponentType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentType"></a>
 
 ```csharp
-private void PutComponentType(object Value)
+private void PutComponentType(IResolvable|Inspector2FilterFilterCriteriaComponentType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 ---
 
 ##### `PutEc2InstanceImageId` <a name="PutEc2InstanceImageId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceImageId"></a>
 
 ```csharp
-private void PutEc2InstanceImageId(object Value)
+private void PutEc2InstanceImageId(IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ---
 
 ##### `PutEc2InstanceSubnetId` <a name="PutEc2InstanceSubnetId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceSubnetId"></a>
 
 ```csharp
-private void PutEc2InstanceSubnetId(object Value)
+private void PutEc2InstanceSubnetId(IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ---
 
 ##### `PutEc2InstanceVpcId` <a name="PutEc2InstanceVpcId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId"></a>
 
 ```csharp
-private void PutEc2InstanceVpcId(object Value)
+private void PutEc2InstanceVpcId(IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ---
 
 ##### `PutEcrImageArchitecture` <a name="PutEcrImageArchitecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture"></a>
 
 ```csharp
-private void PutEcrImageArchitecture(object Value)
+private void PutEcrImageArchitecture(IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ---
 
 ##### `PutEcrImageHash` <a name="PutEcrImageHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash"></a>
 
 ```csharp
-private void PutEcrImageHash(object Value)
+private void PutEcrImageHash(IResolvable|Inspector2FilterFilterCriteriaEcrImageHash[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ---
 
 ##### `PutEcrImageInUseCount` <a name="PutEcrImageInUseCount" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount"></a>
 
 ```csharp
-private void PutEcrImageInUseCount(object Value)
+private void PutEcrImageInUseCount(IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ---
 
 ##### `PutEcrImageLastInUseAt` <a name="PutEcrImageLastInUseAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt"></a>
 
 ```csharp
-private void PutEcrImageLastInUseAt(object Value)
+private void PutEcrImageLastInUseAt(IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ---
 
 ##### `PutEcrImagePushedAt` <a name="PutEcrImagePushedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt"></a>
 
 ```csharp
-private void PutEcrImagePushedAt(object Value)
+private void PutEcrImagePushedAt(IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ---
 
 ##### `PutEcrImageRegistry` <a name="PutEcrImageRegistry" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry"></a>
 
 ```csharp
-private void PutEcrImageRegistry(object Value)
+private void PutEcrImageRegistry(IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ---
 
 ##### `PutEcrImageRepositoryName` <a name="PutEcrImageRepositoryName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName"></a>
 
 ```csharp
-private void PutEcrImageRepositoryName(object Value)
+private void PutEcrImageRepositoryName(IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ---
 
 ##### `PutEcrImageTags` <a name="PutEcrImageTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageTags"></a>
 
 ```csharp
-private void PutEcrImageTags(object Value)
+private void PutEcrImageTags(IResolvable|Inspector2FilterFilterCriteriaEcrImageTags[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageTags.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ---
 
 ##### `PutEpssScore` <a name="PutEpssScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEpssScore"></a>
 
 ```csharp
-private void PutEpssScore(object Value)
+private void PutEpssScore(IResolvable|Inspector2FilterFilterCriteriaEpssScore[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEpssScore.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 ---
 
 ##### `PutExploitAvailable` <a name="PutExploitAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putExploitAvailable"></a>
 
 ```csharp
-private void PutExploitAvailable(object Value)
+private void PutExploitAvailable(IResolvable|Inspector2FilterFilterCriteriaExploitAvailable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putExploitAvailable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 ---
 
 ##### `PutFindingArn` <a name="PutFindingArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingArn"></a>
 
 ```csharp
-private void PutFindingArn(object Value)
+private void PutFindingArn(IResolvable|Inspector2FilterFilterCriteriaFindingArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 ---
 
 ##### `PutFindingStatus` <a name="PutFindingStatus" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingStatus"></a>
 
 ```csharp
-private void PutFindingStatus(object Value)
+private void PutFindingStatus(IResolvable|Inspector2FilterFilterCriteriaFindingStatus[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingStatus.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 ---
 
 ##### `PutFindingType` <a name="PutFindingType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingType"></a>
 
 ```csharp
-private void PutFindingType(object Value)
+private void PutFindingType(IResolvable|Inspector2FilterFilterCriteriaFindingType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 ---
 
 ##### `PutFirstObservedAt` <a name="PutFirstObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFirstObservedAt"></a>
 
 ```csharp
-private void PutFirstObservedAt(object Value)
+private void PutFirstObservedAt(IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 ---
 
 ##### `PutFixAvailable` <a name="PutFixAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFixAvailable"></a>
 
 ```csharp
-private void PutFixAvailable(object Value)
+private void PutFixAvailable(IResolvable|Inspector2FilterFilterCriteriaFixAvailable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFixAvailable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 ---
 
 ##### `PutInspectorScore` <a name="PutInspectorScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putInspectorScore"></a>
 
 ```csharp
-private void PutInspectorScore(object Value)
+private void PutInspectorScore(IResolvable|Inspector2FilterFilterCriteriaInspectorScore[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putInspectorScore.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 ---
 
 ##### `PutLambdaFunctionExecutionRoleArn` <a name="PutLambdaFunctionExecutionRoleArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionExecutionRoleArn"></a>
 
 ```csharp
-private void PutLambdaFunctionExecutionRoleArn(object Value)
+private void PutLambdaFunctionExecutionRoleArn(IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionExecutionRoleArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 ---
 
 ##### `PutLambdaFunctionLastModifiedAt` <a name="PutLambdaFunctionLastModifiedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLastModifiedAt"></a>
 
 ```csharp
-private void PutLambdaFunctionLastModifiedAt(object Value)
+private void PutLambdaFunctionLastModifiedAt(IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLastModifiedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 ---
 
 ##### `PutLambdaFunctionLayers` <a name="PutLambdaFunctionLayers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLayers"></a>
 
 ```csharp
-private void PutLambdaFunctionLayers(object Value)
+private void PutLambdaFunctionLayers(IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLayers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 ---
 
 ##### `PutLambdaFunctionName` <a name="PutLambdaFunctionName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionName"></a>
 
 ```csharp
-private void PutLambdaFunctionName(object Value)
+private void PutLambdaFunctionName(IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 ---
 
 ##### `PutLambdaFunctionRuntime` <a name="PutLambdaFunctionRuntime" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionRuntime"></a>
 
 ```csharp
-private void PutLambdaFunctionRuntime(object Value)
+private void PutLambdaFunctionRuntime(IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionRuntime.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 ---
 
 ##### `PutLastObservedAt` <a name="PutLastObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLastObservedAt"></a>
 
 ```csharp
-private void PutLastObservedAt(object Value)
+private void PutLastObservedAt(IResolvable|Inspector2FilterFilterCriteriaLastObservedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 ---
 
 ##### `PutNetworkProtocol` <a name="PutNetworkProtocol" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putNetworkProtocol"></a>
 
 ```csharp
-private void PutNetworkProtocol(object Value)
+private void PutNetworkProtocol(IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 ---
 
 ##### `PutPortRange` <a name="PutPortRange" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putPortRange"></a>
 
 ```csharp
-private void PutPortRange(object Value)
+private void PutPortRange(IResolvable|Inspector2FilterFilterCriteriaPortRange[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putPortRange.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 ---
 
 ##### `PutRelatedVulnerabilities` <a name="PutRelatedVulnerabilities" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putRelatedVulnerabilities"></a>
 
 ```csharp
-private void PutRelatedVulnerabilities(object Value)
+private void PutRelatedVulnerabilities(IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putRelatedVulnerabilities.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 ---
 
 ##### `PutResourceId` <a name="PutResourceId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceId"></a>
 
 ```csharp
-private void PutResourceId(object Value)
+private void PutResourceId(IResolvable|Inspector2FilterFilterCriteriaResourceId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 ---
 
 ##### `PutResourceTags` <a name="PutResourceTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceTags"></a>
 
 ```csharp
-private void PutResourceTags(object Value)
+private void PutResourceTags(IResolvable|Inspector2FilterFilterCriteriaResourceTags[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 ---
 
 ##### `PutResourceType` <a name="PutResourceType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceType"></a>
 
 ```csharp
-private void PutResourceType(object Value)
+private void PutResourceType(IResolvable|Inspector2FilterFilterCriteriaResourceType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 ---
 
 ##### `PutSeverity` <a name="PutSeverity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putSeverity"></a>
 
 ```csharp
-private void PutSeverity(object Value)
+private void PutSeverity(IResolvable|Inspector2FilterFilterCriteriaSeverity[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 ---
 
 ##### `PutTitle` <a name="PutTitle" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putTitle"></a>
 
 ```csharp
-private void PutTitle(object Value)
+private void PutTitle(IResolvable|Inspector2FilterFilterCriteriaTitle[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 ---
 
 ##### `PutUpdatedAt` <a name="PutUpdatedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putUpdatedAt"></a>
 
 ```csharp
-private void PutUpdatedAt(object Value)
+private void PutUpdatedAt(IResolvable|Inspector2FilterFilterCriteriaUpdatedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 ---
 
 ##### `PutVendorSeverity` <a name="PutVendorSeverity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVendorSeverity"></a>
 
 ```csharp
-private void PutVendorSeverity(object Value)
+private void PutVendorSeverity(IResolvable|Inspector2FilterFilterCriteriaVendorSeverity[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVendorSeverity.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 ---
 
 ##### `PutVulnerabilityId` <a name="PutVulnerabilityId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilityId"></a>
 
 ```csharp
-private void PutVulnerabilityId(object Value)
+private void PutVulnerabilityId(IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilityId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 ---
 
 ##### `PutVulnerabilitySource` <a name="PutVulnerabilitySource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource"></a>
 
 ```csharp
-private void PutVulnerabilitySource(object Value)
+private void PutVulnerabilitySource(IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 ---
 
 ##### `PutVulnerablePackages` <a name="PutVulnerablePackages" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages"></a>
 
 ```csharp
-private void PutVulnerablePackages(object Value)
+private void PutVulnerablePackages(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 ---
 
@@ -21882,53 +21882,53 @@ private void ResetVulnerablePackages()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityId">VulnerabilityId</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList">Inspector2FilterFilterCriteriaVulnerabilityIdList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySource">VulnerabilitySource</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList">Inspector2FilterFilterCriteriaVulnerabilitySourceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackages">VulnerablePackages</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList">Inspector2FilterFilterCriteriaVulnerablePackagesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">CodeRepositoryProjectNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">CodeRepositoryProviderTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">CodeVulnerabilityDetectorNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">CodeVulnerabilityDetectorTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">CodeVulnerabilityFilePathInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">ComponentIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">ComponentTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">Ec2InstanceImageIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">Ec2InstanceSubnetIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">Ec2InstanceVpcIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">EcrImageArchitectureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">EcrImageHashInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">EcrImageInUseCountInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">EcrImageLastInUseAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">EcrImagePushedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">EcrImageRegistryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">EcrImageRepositoryNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">EcrImageTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">EpssScoreInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">ExploitAvailableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">FindingArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">FindingStatusInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">FindingTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">FirstObservedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">FixAvailableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">InspectorScoreInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">LambdaFunctionExecutionRoleArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">LambdaFunctionLastModifiedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">LambdaFunctionLayersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">LambdaFunctionNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">LambdaFunctionRuntimeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">LastObservedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">NetworkProtocolInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">PortRangeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">RelatedVulnerabilitiesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">ResourceIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">ResourceTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">ResourceTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">SeverityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">TitleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">UpdatedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">VendorSeverityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">VulnerabilityIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">VulnerabilitySourceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">VulnerablePackagesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">CodeRepositoryProjectNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">CodeRepositoryProviderTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">CodeVulnerabilityDetectorNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">CodeVulnerabilityDetectorTagsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">CodeVulnerabilityFilePathInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">ComponentIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">ComponentTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">Ec2InstanceImageIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">Ec2InstanceSubnetIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">Ec2InstanceVpcIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">EcrImageArchitectureInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">EcrImageHashInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">EcrImageInUseCountInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">EcrImageLastInUseAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">EcrImagePushedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">EcrImageRegistryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">EcrImageRepositoryNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">EcrImageTagsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">EpssScoreInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">ExploitAvailableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">FindingArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">FindingStatusInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">FindingTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">FirstObservedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">FixAvailableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">InspectorScoreInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">LambdaFunctionExecutionRoleArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">LambdaFunctionLastModifiedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">LambdaFunctionLayersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">LambdaFunctionNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">LambdaFunctionRuntimeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">LastObservedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">NetworkProtocolInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">PortRangeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">RelatedVulnerabilitiesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">ResourceIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">ResourceTagsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">ResourceTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">SeverityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">TitleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">UpdatedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">VendorSeverityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">VulnerabilityIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">VulnerabilitySourceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">VulnerablePackagesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a></code> | *No description.* |
 
 ---
 
@@ -22419,470 +22419,470 @@ public Inspector2FilterFilterCriteriaVulnerablePackagesList VulnerablePackages {
 ##### `AwsAccountIdInput`<sup>Optional</sup> <a name="AwsAccountIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput"></a>
 
 ```csharp
-public object AwsAccountIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaAwsAccountId[] AwsAccountIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>[]
 
 ---
 
 ##### `CodeRepositoryProjectNameInput`<sup>Optional</sup> <a name="CodeRepositoryProjectNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput"></a>
 
 ```csharp
-public object CodeRepositoryProjectNameInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] CodeRepositoryProjectNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>[]
 
 ---
 
 ##### `CodeRepositoryProviderTypeInput`<sup>Optional</sup> <a name="CodeRepositoryProviderTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput"></a>
 
 ```csharp
-public object CodeRepositoryProviderTypeInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] CodeRepositoryProviderTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>[]
 
 ---
 
 ##### `CodeVulnerabilityDetectorNameInput`<sup>Optional</sup> <a name="CodeVulnerabilityDetectorNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput"></a>
 
 ```csharp
-public object CodeVulnerabilityDetectorNameInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] CodeVulnerabilityDetectorNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>[]
 
 ---
 
 ##### `CodeVulnerabilityDetectorTagsInput`<sup>Optional</sup> <a name="CodeVulnerabilityDetectorTagsInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput"></a>
 
 ```csharp
-public object CodeVulnerabilityDetectorTagsInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] CodeVulnerabilityDetectorTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>[]
 
 ---
 
 ##### `CodeVulnerabilityFilePathInput`<sup>Optional</sup> <a name="CodeVulnerabilityFilePathInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput"></a>
 
 ```csharp
-public object CodeVulnerabilityFilePathInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] CodeVulnerabilityFilePathInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>[]
 
 ---
 
 ##### `ComponentIdInput`<sup>Optional</sup> <a name="ComponentIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput"></a>
 
 ```csharp
-public object ComponentIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentId[] ComponentIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>[]
 
 ---
 
 ##### `ComponentTypeInput`<sup>Optional</sup> <a name="ComponentTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput"></a>
 
 ```csharp
-public object ComponentTypeInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaComponentType[] ComponentTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>[]
 
 ---
 
 ##### `Ec2InstanceImageIdInput`<sup>Optional</sup> <a name="Ec2InstanceImageIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput"></a>
 
 ```csharp
-public object Ec2InstanceImageIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId[] Ec2InstanceImageIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>[]
 
 ---
 
 ##### `Ec2InstanceSubnetIdInput`<sup>Optional</sup> <a name="Ec2InstanceSubnetIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput"></a>
 
 ```csharp
-public object Ec2InstanceSubnetIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] Ec2InstanceSubnetIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>[]
 
 ---
 
 ##### `Ec2InstanceVpcIdInput`<sup>Optional</sup> <a name="Ec2InstanceVpcIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput"></a>
 
 ```csharp
-public object Ec2InstanceVpcIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId[] Ec2InstanceVpcIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>[]
 
 ---
 
 ##### `EcrImageArchitectureInput`<sup>Optional</sup> <a name="EcrImageArchitectureInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput"></a>
 
 ```csharp
-public object EcrImageArchitectureInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture[] EcrImageArchitectureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>[]
 
 ---
 
 ##### `EcrImageHashInput`<sup>Optional</sup> <a name="EcrImageHashInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput"></a>
 
 ```csharp
-public object EcrImageHashInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageHash[] EcrImageHashInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>[]
 
 ---
 
 ##### `EcrImageInUseCountInput`<sup>Optional</sup> <a name="EcrImageInUseCountInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput"></a>
 
 ```csharp
-public object EcrImageInUseCountInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount[] EcrImageInUseCountInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>[]
 
 ---
 
 ##### `EcrImageLastInUseAtInput`<sup>Optional</sup> <a name="EcrImageLastInUseAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput"></a>
 
 ```csharp
-public object EcrImageLastInUseAtInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] EcrImageLastInUseAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>[]
 
 ---
 
 ##### `EcrImagePushedAtInput`<sup>Optional</sup> <a name="EcrImagePushedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput"></a>
 
 ```csharp
-public object EcrImagePushedAtInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt[] EcrImagePushedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>[]
 
 ---
 
 ##### `EcrImageRegistryInput`<sup>Optional</sup> <a name="EcrImageRegistryInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput"></a>
 
 ```csharp
-public object EcrImageRegistryInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry[] EcrImageRegistryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>[]
 
 ---
 
 ##### `EcrImageRepositoryNameInput`<sup>Optional</sup> <a name="EcrImageRepositoryNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput"></a>
 
 ```csharp
-public object EcrImageRepositoryNameInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName[] EcrImageRepositoryNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>[]
 
 ---
 
 ##### `EcrImageTagsInput`<sup>Optional</sup> <a name="EcrImageTagsInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput"></a>
 
 ```csharp
-public object EcrImageTagsInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageTags[] EcrImageTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>[]
 
 ---
 
 ##### `EpssScoreInput`<sup>Optional</sup> <a name="EpssScoreInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput"></a>
 
 ```csharp
-public object EpssScoreInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaEpssScore[] EpssScoreInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>[]
 
 ---
 
 ##### `ExploitAvailableInput`<sup>Optional</sup> <a name="ExploitAvailableInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput"></a>
 
 ```csharp
-public object ExploitAvailableInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaExploitAvailable[] ExploitAvailableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>[]
 
 ---
 
 ##### `FindingArnInput`<sup>Optional</sup> <a name="FindingArnInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput"></a>
 
 ```csharp
-public object FindingArnInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingArn[] FindingArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>[]
 
 ---
 
 ##### `FindingStatusInput`<sup>Optional</sup> <a name="FindingStatusInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput"></a>
 
 ```csharp
-public object FindingStatusInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingStatus[] FindingStatusInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>[]
 
 ---
 
 ##### `FindingTypeInput`<sup>Optional</sup> <a name="FindingTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput"></a>
 
 ```csharp
-public object FindingTypeInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFindingType[] FindingTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>[]
 
 ---
 
 ##### `FirstObservedAtInput`<sup>Optional</sup> <a name="FirstObservedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput"></a>
 
 ```csharp
-public object FirstObservedAtInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt[] FirstObservedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>[]
 
 ---
 
 ##### `FixAvailableInput`<sup>Optional</sup> <a name="FixAvailableInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput"></a>
 
 ```csharp
-public object FixAvailableInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaFixAvailable[] FixAvailableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>[]
 
 ---
 
 ##### `InspectorScoreInput`<sup>Optional</sup> <a name="InspectorScoreInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput"></a>
 
 ```csharp
-public object InspectorScoreInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaInspectorScore[] InspectorScoreInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>[]
 
 ---
 
 ##### `LambdaFunctionExecutionRoleArnInput`<sup>Optional</sup> <a name="LambdaFunctionExecutionRoleArnInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput"></a>
 
 ```csharp
-public object LambdaFunctionExecutionRoleArnInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] LambdaFunctionExecutionRoleArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>[]
 
 ---
 
 ##### `LambdaFunctionLastModifiedAtInput`<sup>Optional</sup> <a name="LambdaFunctionLastModifiedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput"></a>
 
 ```csharp
-public object LambdaFunctionLastModifiedAtInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] LambdaFunctionLastModifiedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>[]
 
 ---
 
 ##### `LambdaFunctionLayersInput`<sup>Optional</sup> <a name="LambdaFunctionLayersInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput"></a>
 
 ```csharp
-public object LambdaFunctionLayersInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers[] LambdaFunctionLayersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>[]
 
 ---
 
 ##### `LambdaFunctionNameInput`<sup>Optional</sup> <a name="LambdaFunctionNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput"></a>
 
 ```csharp
-public object LambdaFunctionNameInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName[] LambdaFunctionNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>[]
 
 ---
 
 ##### `LambdaFunctionRuntimeInput`<sup>Optional</sup> <a name="LambdaFunctionRuntimeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput"></a>
 
 ```csharp
-public object LambdaFunctionRuntimeInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] LambdaFunctionRuntimeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>[]
 
 ---
 
 ##### `LastObservedAtInput`<sup>Optional</sup> <a name="LastObservedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput"></a>
 
 ```csharp
-public object LastObservedAtInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaLastObservedAt[] LastObservedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>[]
 
 ---
 
 ##### `NetworkProtocolInput`<sup>Optional</sup> <a name="NetworkProtocolInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput"></a>
 
 ```csharp
-public object NetworkProtocolInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol[] NetworkProtocolInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>[]
 
 ---
 
 ##### `PortRangeInput`<sup>Optional</sup> <a name="PortRangeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput"></a>
 
 ```csharp
-public object PortRangeInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaPortRange[] PortRangeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 ---
 
 ##### `RelatedVulnerabilitiesInput`<sup>Optional</sup> <a name="RelatedVulnerabilitiesInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput"></a>
 
 ```csharp
-public object RelatedVulnerabilitiesInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities[] RelatedVulnerabilitiesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 ---
 
 ##### `ResourceIdInput`<sup>Optional</sup> <a name="ResourceIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput"></a>
 
 ```csharp
-public object ResourceIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceId[] ResourceIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 ---
 
 ##### `ResourceTagsInput`<sup>Optional</sup> <a name="ResourceTagsInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput"></a>
 
 ```csharp
-public object ResourceTagsInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceTags[] ResourceTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 ---
 
 ##### `ResourceTypeInput`<sup>Optional</sup> <a name="ResourceTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput"></a>
 
 ```csharp
-public object ResourceTypeInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceType[] ResourceTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 ---
 
 ##### `SeverityInput`<sup>Optional</sup> <a name="SeverityInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput"></a>
 
 ```csharp
-public object SeverityInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaSeverity[] SeverityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 ---
 
 ##### `TitleInput`<sup>Optional</sup> <a name="TitleInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput"></a>
 
 ```csharp
-public object TitleInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaTitle[] TitleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 ---
 
 ##### `UpdatedAtInput`<sup>Optional</sup> <a name="UpdatedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput"></a>
 
 ```csharp
-public object UpdatedAtInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaUpdatedAt[] UpdatedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 ---
 
 ##### `VendorSeverityInput`<sup>Optional</sup> <a name="VendorSeverityInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput"></a>
 
 ```csharp
-public object VendorSeverityInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVendorSeverity[] VendorSeverityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 ---
 
 ##### `VulnerabilityIdInput`<sup>Optional</sup> <a name="VulnerabilityIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput"></a>
 
 ```csharp
-public object VulnerabilityIdInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId[] VulnerabilityIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 ---
 
 ##### `VulnerabilitySourceInput`<sup>Optional</sup> <a name="VulnerabilitySourceInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput"></a>
 
 ```csharp
-public object VulnerabilitySourceInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource[] VulnerabilitySourceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 ---
 
 ##### `VulnerablePackagesInput`<sup>Optional</sup> <a name="VulnerablePackagesInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput"></a>
 
 ```csharp
-public object VulnerablePackagesInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages[] VulnerablePackagesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteria InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>
 
 ---
 
@@ -23008,7 +23008,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -23039,10 +23039,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaPortRange[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>[]
 
 ---
 
@@ -23279,7 +23279,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusiveInput">EndInclusiveInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.beginInclusive">BeginInclusive</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusive">EndInclusive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a></code> | *No description.* |
 
 ---
 
@@ -23350,10 +23350,10 @@ public double EndInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaPortRange InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>
 
 ---
 
@@ -23479,7 +23479,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]</code> | *No description.* |
 
 ---
 
@@ -23510,10 +23510,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>[]
 
 ---
 
@@ -23750,7 +23750,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a></code> | *No description.* |
 
 ---
 
@@ -23821,10 +23821,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>
 
 ---
 
@@ -23950,7 +23950,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]</code> | *No description.* |
 
 ---
 
@@ -23981,10 +23981,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>[]
 
 ---
 
@@ -24221,7 +24221,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -24292,10 +24292,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>
 
 ---
 
@@ -24421,7 +24421,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -24452,10 +24452,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceTags[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>[]
 
 ---
 
@@ -24694,7 +24694,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -24785,10 +24785,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceTags InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>
 
 ---
 
@@ -24914,7 +24914,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]</code> | *No description.* |
 
 ---
 
@@ -24945,10 +24945,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>[]
 
 ---
 
@@ -25185,7 +25185,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -25256,10 +25256,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaResourceType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>
 
 ---
 
@@ -25385,7 +25385,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -25416,10 +25416,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaSeverity[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>[]
 
 ---
 
@@ -25656,7 +25656,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a></code> | *No description.* |
 
 ---
 
@@ -25727,10 +25727,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaSeverity InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>
 
 ---
 
@@ -25856,7 +25856,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]</code> | *No description.* |
 
 ---
 
@@ -25887,10 +25887,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaTitle[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>[]
 
 ---
 
@@ -26127,7 +26127,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -26198,10 +26198,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaTitle InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>
 
 ---
 
@@ -26327,7 +26327,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -26358,10 +26358,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaUpdatedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>[]
 
 ---
 
@@ -26612,7 +26612,7 @@ private void ResetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusiveInput">StartInclusiveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.endInclusive">EndInclusive</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusive">StartInclusive</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -26683,10 +26683,10 @@ public string StartInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaUpdatedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>
 
 ---
 
@@ -26812,7 +26812,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -26843,10 +26843,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVendorSeverity[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>[]
 
 ---
 
@@ -27083,7 +27083,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a></code> | *No description.* |
 
 ---
 
@@ -27154,10 +27154,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVendorSeverity InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>
 
 ---
 
@@ -27283,7 +27283,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]</code> | *No description.* |
 
 ---
 
@@ -27314,10 +27314,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>[]
 
 ---
 
@@ -27554,7 +27554,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a></code> | *No description.* |
 
 ---
 
@@ -27625,10 +27625,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>
 
 ---
 
@@ -27754,7 +27754,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]</code> | *No description.* |
 
 ---
 
@@ -27785,10 +27785,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>[]
 
 ---
 
@@ -28025,7 +28025,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a></code> | *No description.* |
 
 ---
 
@@ -28096,10 +28096,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>
 
 ---
 
@@ -28225,7 +28225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | *No description.* |
 
 ---
 
@@ -28256,10 +28256,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 ---
 
@@ -28496,7 +28496,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -28567,10 +28567,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>
 
 ---
 
@@ -28696,7 +28696,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | *No description.* |
 
 ---
 
@@ -28727,10 +28727,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 ---
 
@@ -28967,7 +28967,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusiveInput">UpperInclusiveInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.lowerInclusive">LowerInclusive</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusive">UpperInclusive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a></code> | *No description.* |
 
 ---
 
@@ -29038,10 +29038,10 @@ public double UpperInclusive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>
 
 ---
 
@@ -29167,7 +29167,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | *No description.* |
 
 ---
 
@@ -29198,10 +29198,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 ---
 
@@ -29438,7 +29438,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a></code> | *No description.* |
 
 ---
 
@@ -29509,10 +29509,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>
 
 ---
 
@@ -29638,7 +29638,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]</code> | *No description.* |
 
 ---
 
@@ -29669,10 +29669,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>[]
 
 ---
 
@@ -29798,7 +29798,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | *No description.* |
 
 ---
 
@@ -29829,10 +29829,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 ---
 
@@ -30069,7 +30069,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a></code> | *No description.* |
 
 ---
 
@@ -30140,10 +30140,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>
 
 ---
 
@@ -30388,96 +30388,96 @@ Returns a reversible string representation.
 ##### `PutArchitecture` <a name="PutArchitecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putArchitecture"></a>
 
 ```csharp
-private void PutArchitecture(object Value)
+private void PutArchitecture(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putArchitecture.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 ---
 
 ##### `PutEpoch` <a name="PutEpoch" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putEpoch"></a>
 
 ```csharp
-private void PutEpoch(object Value)
+private void PutEpoch(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putEpoch.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 ---
 
 ##### `PutFilePath` <a name="PutFilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putFilePath"></a>
 
 ```csharp
-private void PutFilePath(object Value)
+private void PutFilePath(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putFilePath.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 ---
 
 ##### `PutName` <a name="PutName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putName"></a>
 
 ```csharp
-private void PutName(object Value)
+private void PutName(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 ---
 
 ##### `PutRelease` <a name="PutRelease" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putRelease"></a>
 
 ```csharp
-private void PutRelease(object Value)
+private void PutRelease(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putRelease.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 ---
 
 ##### `PutSourceLambdaLayerArn` <a name="PutSourceLambdaLayerArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLambdaLayerArn"></a>
 
 ```csharp
-private void PutSourceLambdaLayerArn(object Value)
+private void PutSourceLambdaLayerArn(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLambdaLayerArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 ---
 
 ##### `PutSourceLayerHash` <a name="PutSourceLayerHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLayerHash"></a>
 
 ```csharp
-private void PutSourceLayerHash(object Value)
+private void PutSourceLayerHash(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLayerHash.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 ---
 
 ##### `PutVersion` <a name="PutVersion" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putVersion"></a>
 
 ```csharp
-private void PutVersion(object Value)
+private void PutVersion(IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putVersion.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 ---
 
@@ -30544,15 +30544,15 @@ private void ResetVersion()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArn">SourceLambdaLayerArn</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHash">SourceLayerHash</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.version">Version</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList">Inspector2FilterFilterCriteriaVulnerablePackagesVersionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">ArchitectureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">EpochInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">FilePathInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">NameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">ReleaseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">SourceLambdaLayerArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">SourceLayerHashInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">VersionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">ArchitectureInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">EpochInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">FilePathInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">NameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">ReleaseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">SourceLambdaLayerArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">SourceLayerHashInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">VersionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a></code> | *No description.* |
 
 ---
 
@@ -30663,90 +30663,90 @@ public Inspector2FilterFilterCriteriaVulnerablePackagesVersionList Version { get
 ##### `ArchitectureInput`<sup>Optional</sup> <a name="ArchitectureInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput"></a>
 
 ```csharp
-public object ArchitectureInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] ArchitectureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>[]
 
 ---
 
 ##### `EpochInput`<sup>Optional</sup> <a name="EpochInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput"></a>
 
 ```csharp
-public object EpochInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] EpochInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>[]
 
 ---
 
 ##### `FilePathInput`<sup>Optional</sup> <a name="FilePathInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput"></a>
 
 ```csharp
-public object FilePathInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] FilePathInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>[]
 
 ---
 
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput"></a>
 
 ```csharp
-public object NameInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName[] NameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>[]
 
 ---
 
 ##### `ReleaseInput`<sup>Optional</sup> <a name="ReleaseInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput"></a>
 
 ```csharp
-public object ReleaseInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] ReleaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 ---
 
 ##### `SourceLambdaLayerArnInput`<sup>Optional</sup> <a name="SourceLambdaLayerArnInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput"></a>
 
 ```csharp
-public object SourceLambdaLayerArnInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] SourceLambdaLayerArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 ---
 
 ##### `SourceLayerHashInput`<sup>Optional</sup> <a name="SourceLayerHashInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput"></a>
 
 ```csharp
-public object SourceLayerHashInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] SourceLayerHashInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 ---
 
 ##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput"></a>
 
 ```csharp
-public object VersionInput { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] VersionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>
 
 ---
 
@@ -30872,7 +30872,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]</code> | *No description.* |
 
 ---
 
@@ -30903,10 +30903,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>[]
 
 ---
 
@@ -31143,7 +31143,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a></code> | *No description.* |
 
 ---
 
@@ -31214,10 +31214,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>
 
 ---
 
@@ -31343,7 +31343,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -31374,10 +31374,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>[]
 
 ---
 
@@ -31614,7 +31614,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a></code> | *No description.* |
 
 ---
 
@@ -31685,10 +31685,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>
 
 ---
 
@@ -31814,7 +31814,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]</code> | *No description.* |
 
 ---
 
@@ -31845,10 +31845,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>[]
 
 ---
 
@@ -32085,7 +32085,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a></code> | *No description.* |
 
 ---
 
@@ -32156,10 +32156,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>
 
 ---
 
@@ -32285,7 +32285,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]</code> | *No description.* |
 
 ---
 
@@ -32316,10 +32316,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>[]
 
 ---
 
@@ -32556,7 +32556,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a></code> | *No description.* |
 
 ---
 
@@ -32627,10 +32627,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>
 
 ---
 

@@ -17,37 +17,37 @@ provider.AwsProvider(
   access_key: str = None,
   alias: str = None,
   allowed_account_ids: typing.List[str] = None,
-  assume_role: typing.Union[IResolvable, typing.List[AwsProviderAssumeRole]] = None,
-  assume_role_with_web_identity: typing.Union[IResolvable, typing.List[AwsProviderAssumeRoleWithWebIdentity]] = None,
+  assume_role: IResolvable | typing.List[AwsProviderAssumeRole] = None,
+  assume_role_with_web_identity: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity] = None,
   custom_ca_bundle: str = None,
-  default_tags: typing.Union[IResolvable, typing.List[AwsProviderDefaultTags]] = None,
+  default_tags: IResolvable | typing.List[AwsProviderDefaultTags] = None,
   ec2_metadata_service_endpoint: str = None,
   ec2_metadata_service_endpoint_mode: str = None,
-  endpoints: typing.Union[IResolvable, typing.List[AwsProviderEndpoints]] = None,
+  endpoints: IResolvable | typing.List[AwsProviderEndpoints] = None,
   forbidden_account_ids: typing.List[str] = None,
   http_proxy: str = None,
   https_proxy: str = None,
-  ignore_tags: typing.Union[IResolvable, typing.List[AwsProviderIgnoreTags]] = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  ignore_tags: IResolvable | typing.List[AwsProviderIgnoreTags] = None,
+  insecure: bool | IResolvable = None,
   max_retries: typing.Union[int, float] = None,
   no_proxy: str = None,
   profile: str = None,
   region: str = None,
   retry_mode: str = None,
   s3_us_east1_regional_endpoint: str = None,
-  s3_use_path_style: typing.Union[bool, IResolvable] = None,
+  s3_use_path_style: bool | IResolvable = None,
   secret_key: str = None,
   shared_config_files: typing.List[str] = None,
   shared_credentials_files: typing.List[str] = None,
-  skip_credentials_validation: typing.Union[bool, IResolvable] = None,
+  skip_credentials_validation: bool | IResolvable = None,
   skip_metadata_api_check: str = None,
-  skip_region_validation: typing.Union[bool, IResolvable] = None,
-  skip_requesting_account_id: typing.Union[bool, IResolvable] = None,
+  skip_region_validation: bool | IResolvable = None,
+  skip_requesting_account_id: bool | IResolvable = None,
   sts_region: str = None,
   token: str = None,
   token_bucket_rate_limiter_capacity: typing.Union[int, float] = None,
-  use_dualstack_endpoint: typing.Union[bool, IResolvable] = None,
-  use_fips_endpoint: typing.Union[bool, IResolvable] = None
+  use_dualstack_endpoint: bool | IResolvable = None,
+  use_fips_endpoint: bool | IResolvable = None
 )
 ```
 
@@ -58,37 +58,37 @@ provider.AwsProvider(
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.accessKey">access_key</a></code> | <code>str</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole">assume_role</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]</code> | assume_role block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]</code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | assume_role block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | assume_role_with_web_identity block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags">default_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]</code> | default_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | default_tags block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints">endpoints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]</code> | endpoints block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | endpoints block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpProxy">http_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpsProxy">https_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags">ignore_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]</code> | ignore_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | ignore_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of times an AWS API request is being executed. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.noProxy">no_proxy</a></code> | <code>str</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.retryMode">retry_mode</a></code> | <code>str</code> | Specifies how retries are attempted. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle">s3_use_path_style</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation">skip_region_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip static validation of region name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.stsRegion">sts_region</a></code> | <code>str</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | session token. A session token is only required if you are using temporary security credentials. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint">use_fips_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 assume_role block.
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 assume_role_with_web_identity block.
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 default_tags block.
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 endpoints block.
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ignore_tags block.
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
@@ -373,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip static validation of region name.
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
@@ -445,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Resolve an endpoint with DualStack capability.
 
@@ -455,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Resolve an endpoint with FIPS capability.
 
@@ -932,70 +932,70 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">allowed_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput">assume_role_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assume_role_with_web_identity_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput">assume_role_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assume_role_with_web_identity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.customCaBundleInput">custom_ca_bundle_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput">default_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput">default_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput">ec2_metadata_service_endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput">ec2_metadata_service_endpoint_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput">endpoints_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput">endpoints_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput">forbidden_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpProxyInput">http_proxy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpsProxyInput">https_proxy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignore_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecureInput">insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignore_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.noProxyInput">no_proxy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.retryModeInput">retry_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput">s3_us_east1_regional_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3_use_path_style_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3_use_path_style_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.secretKeyInput">secret_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput">shared_config_files_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput">shared_credentials_files_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skip_credentials_validation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skip_credentials_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput">skip_metadata_api_check_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skip_region_validation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skip_requesting_account_id_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skip_region_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skip_requesting_account_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.stsRegionInput">sts_region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput">token_bucket_rate_limiter_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">use_dualstack_endpoint_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">use_fips_endpoint_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">use_dualstack_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">use_fips_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRole">assume_role</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTags">default_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpProxy">http_proxy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpsProxy">https_proxy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags">ignore_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.noProxy">no_proxy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.profile">profile</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.retryMode">retry_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation">skip_region_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.stsRegion">sts_region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1124,20 +1124,20 @@ allowed_account_ids_input: typing.List[str]
 ##### `assume_role_input`<sup>Optional</sup> <a name="assume_role_input" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput"></a>
 
 ```python
-assume_role_input: typing.Union[IResolvable, typing.List[AwsProviderAssumeRole]]
+assume_role_input: IResolvable | typing.List[AwsProviderAssumeRole]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 ---
 
 ##### `assume_role_with_web_identity_input`<sup>Optional</sup> <a name="assume_role_with_web_identity_input" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput"></a>
 
 ```python
-assume_role_with_web_identity_input: typing.Union[IResolvable, typing.List[AwsProviderAssumeRoleWithWebIdentity]]
+assume_role_with_web_identity_input: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 ---
 
@@ -1154,10 +1154,10 @@ custom_ca_bundle_input: str
 ##### `default_tags_input`<sup>Optional</sup> <a name="default_tags_input" id="@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput"></a>
 
 ```python
-default_tags_input: typing.Union[IResolvable, typing.List[AwsProviderDefaultTags]]
+default_tags_input: IResolvable | typing.List[AwsProviderDefaultTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 ---
 
@@ -1184,10 +1184,10 @@ ec2_metadata_service_endpoint_mode_input: str
 ##### `endpoints_input`<sup>Optional</sup> <a name="endpoints_input" id="@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput"></a>
 
 ```python
-endpoints_input: typing.Union[IResolvable, typing.List[AwsProviderEndpoints]]
+endpoints_input: IResolvable | typing.List[AwsProviderEndpoints]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 ---
 
@@ -1224,20 +1224,20 @@ https_proxy_input: str
 ##### `ignore_tags_input`<sup>Optional</sup> <a name="ignore_tags_input" id="@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput"></a>
 
 ```python
-ignore_tags_input: typing.Union[IResolvable, typing.List[AwsProviderIgnoreTags]]
+ignore_tags_input: IResolvable | typing.List[AwsProviderIgnoreTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ---
 
 ##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktf/provider-aws.provider.AwsProvider.property.insecureInput"></a>
 
 ```python
-insecure_input: typing.Union[bool, IResolvable]
+insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1304,10 +1304,10 @@ s3_us_east1_regional_endpoint_input: str
 ##### `s3_use_path_style_input`<sup>Optional</sup> <a name="s3_use_path_style_input" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput"></a>
 
 ```python
-s3_use_path_style_input: typing.Union[bool, IResolvable]
+s3_use_path_style_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1344,10 +1344,10 @@ shared_credentials_files_input: typing.List[str]
 ##### `skip_credentials_validation_input`<sup>Optional</sup> <a name="skip_credentials_validation_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput"></a>
 
 ```python
-skip_credentials_validation_input: typing.Union[bool, IResolvable]
+skip_credentials_validation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1364,20 +1364,20 @@ skip_metadata_api_check_input: str
 ##### `skip_region_validation_input`<sup>Optional</sup> <a name="skip_region_validation_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput"></a>
 
 ```python
-skip_region_validation_input: typing.Union[bool, IResolvable]
+skip_region_validation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_requesting_account_id_input`<sup>Optional</sup> <a name="skip_requesting_account_id_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput"></a>
 
 ```python
-skip_requesting_account_id_input: typing.Union[bool, IResolvable]
+skip_requesting_account_id_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1414,20 +1414,20 @@ token_input: str
 ##### `use_dualstack_endpoint_input`<sup>Optional</sup> <a name="use_dualstack_endpoint_input" id="@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput"></a>
 
 ```python
-use_dualstack_endpoint_input: typing.Union[bool, IResolvable]
+use_dualstack_endpoint_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_fips_endpoint_input`<sup>Optional</sup> <a name="use_fips_endpoint_input" id="@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput"></a>
 
 ```python
-use_fips_endpoint_input: typing.Union[bool, IResolvable]
+use_fips_endpoint_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1454,20 +1454,20 @@ allowed_account_ids: typing.List[str]
 ##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRole"></a>
 
 ```python
-assume_role: typing.Union[IResolvable, typing.List[AwsProviderAssumeRole]]
+assume_role: IResolvable | typing.List[AwsProviderAssumeRole]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 ---
 
 ##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity"></a>
 
 ```python
-assume_role_with_web_identity: typing.Union[IResolvable, typing.List[AwsProviderAssumeRoleWithWebIdentity]]
+assume_role_with_web_identity: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 ---
 
@@ -1484,10 +1484,10 @@ custom_ca_bundle: str
 ##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktf/provider-aws.provider.AwsProvider.property.defaultTags"></a>
 
 ```python
-default_tags: typing.Union[IResolvable, typing.List[AwsProviderDefaultTags]]
+default_tags: IResolvable | typing.List[AwsProviderDefaultTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 ---
 
@@ -1514,10 +1514,10 @@ ec2_metadata_service_endpoint_mode: str
 ##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProvider.property.endpoints"></a>
 
 ```python
-endpoints: typing.Union[IResolvable, typing.List[AwsProviderEndpoints]]
+endpoints: IResolvable | typing.List[AwsProviderEndpoints]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 ---
 
@@ -1554,20 +1554,20 @@ https_proxy: str
 ##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags"></a>
 
 ```python
-ignore_tags: typing.Union[IResolvable, typing.List[AwsProviderIgnoreTags]]
+ignore_tags: IResolvable | typing.List[AwsProviderIgnoreTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ---
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProvider.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1634,10 +1634,10 @@ s3_us_east1_regional_endpoint: str
 ##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle"></a>
 
 ```python
-s3_use_path_style: typing.Union[bool, IResolvable]
+s3_use_path_style: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1674,10 +1674,10 @@ shared_credentials_files: typing.List[str]
 ##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation"></a>
 
 ```python
-skip_credentials_validation: typing.Union[bool, IResolvable]
+skip_credentials_validation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1694,20 +1694,20 @@ skip_metadata_api_check: str
 ##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation"></a>
 
 ```python
-skip_region_validation: typing.Union[bool, IResolvable]
+skip_region_validation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId"></a>
 
 ```python
-skip_requesting_account_id: typing.Union[bool, IResolvable]
+skip_requesting_account_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1744,20 +1744,20 @@ token_bucket_rate_limiter_capacity: typing.Union[int, float]
 ##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint"></a>
 
 ```python
-use_dualstack_endpoint: typing.Union[bool, IResolvable]
+use_dualstack_endpoint: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint"></a>
 
 ```python
-use_fips_endpoint: typing.Union[bool, IResolvable]
+use_fips_endpoint: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2084,37 +2084,37 @@ provider.AwsProviderConfig(
   access_key: str = None,
   alias: str = None,
   allowed_account_ids: typing.List[str] = None,
-  assume_role: typing.Union[IResolvable, typing.List[AwsProviderAssumeRole]] = None,
-  assume_role_with_web_identity: typing.Union[IResolvable, typing.List[AwsProviderAssumeRoleWithWebIdentity]] = None,
+  assume_role: IResolvable | typing.List[AwsProviderAssumeRole] = None,
+  assume_role_with_web_identity: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity] = None,
   custom_ca_bundle: str = None,
-  default_tags: typing.Union[IResolvable, typing.List[AwsProviderDefaultTags]] = None,
+  default_tags: IResolvable | typing.List[AwsProviderDefaultTags] = None,
   ec2_metadata_service_endpoint: str = None,
   ec2_metadata_service_endpoint_mode: str = None,
-  endpoints: typing.Union[IResolvable, typing.List[AwsProviderEndpoints]] = None,
+  endpoints: IResolvable | typing.List[AwsProviderEndpoints] = None,
   forbidden_account_ids: typing.List[str] = None,
   http_proxy: str = None,
   https_proxy: str = None,
-  ignore_tags: typing.Union[IResolvable, typing.List[AwsProviderIgnoreTags]] = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  ignore_tags: IResolvable | typing.List[AwsProviderIgnoreTags] = None,
+  insecure: bool | IResolvable = None,
   max_retries: typing.Union[int, float] = None,
   no_proxy: str = None,
   profile: str = None,
   region: str = None,
   retry_mode: str = None,
   s3_us_east1_regional_endpoint: str = None,
-  s3_use_path_style: typing.Union[bool, IResolvable] = None,
+  s3_use_path_style: bool | IResolvable = None,
   secret_key: str = None,
   shared_config_files: typing.List[str] = None,
   shared_credentials_files: typing.List[str] = None,
-  skip_credentials_validation: typing.Union[bool, IResolvable] = None,
+  skip_credentials_validation: bool | IResolvable = None,
   skip_metadata_api_check: str = None,
-  skip_region_validation: typing.Union[bool, IResolvable] = None,
-  skip_requesting_account_id: typing.Union[bool, IResolvable] = None,
+  skip_region_validation: bool | IResolvable = None,
+  skip_requesting_account_id: bool | IResolvable = None,
   sts_region: str = None,
   token: str = None,
   token_bucket_rate_limiter_capacity: typing.Union[int, float] = None,
-  use_dualstack_endpoint: typing.Union[bool, IResolvable] = None,
-  use_fips_endpoint: typing.Union[bool, IResolvable] = None
+  use_dualstack_endpoint: bool | IResolvable = None,
+  use_fips_endpoint: bool | IResolvable = None
 )
 ```
 
@@ -2125,37 +2125,37 @@ provider.AwsProviderConfig(
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.accessKey">access_key</a></code> | <code>str</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole">assume_role</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]</code> | assume_role block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]</code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | assume_role block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | assume_role_with_web_identity block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags">default_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]</code> | default_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | default_tags block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]</code> | endpoints block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | endpoints block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpProxy">http_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpsProxy">https_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignore_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]</code> | ignore_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | ignore_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of times an AWS API request is being executed. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.noProxy">no_proxy</a></code> | <code>str</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.profile">profile</a></code> | <code>str</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.region">region</a></code> | <code>str</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.retryMode">retry_mode</a></code> | <code>str</code> | Specifies how retries are attempted. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.secretKey">secret_key</a></code> | <code>str</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skip_region_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip static validation of region name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.stsRegion">sts_region</a></code> | <code>str</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.token">token</a></code> | <code>str</code> | session token. A session token is only required if you are using temporary security credentials. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
 
 ---
 
@@ -2202,10 +2202,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole"></a>
 
 ```python
-assume_role: typing.Union[IResolvable, typing.List[AwsProviderAssumeRole]]
+assume_role: IResolvable | typing.List[AwsProviderAssumeRole]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 assume_role block.
 
@@ -2216,10 +2216,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity"></a>
 
 ```python
-assume_role_with_web_identity: typing.Union[IResolvable, typing.List[AwsProviderAssumeRoleWithWebIdentity]]
+assume_role_with_web_identity: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 assume_role_with_web_identity block.
 
@@ -2246,10 +2246,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags"></a>
 
 ```python
-default_tags: typing.Union[IResolvable, typing.List[AwsProviderDefaultTags]]
+default_tags: IResolvable | typing.List[AwsProviderDefaultTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 default_tags block.
 
@@ -2288,10 +2288,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints"></a>
 
 ```python
-endpoints: typing.Union[IResolvable, typing.List[AwsProviderEndpoints]]
+endpoints: IResolvable | typing.List[AwsProviderEndpoints]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 endpoints block.
 
@@ -2346,10 +2346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags"></a>
 
 ```python
-ignore_tags: typing.Union[IResolvable, typing.List[AwsProviderIgnoreTags]]
+ignore_tags: IResolvable | typing.List[AwsProviderIgnoreTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ignore_tags block.
 
@@ -2360,10 +2360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
@@ -2467,10 +2467,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle"></a>
 
 ```python
-s3_use_path_style: typing.Union[bool, IResolvable]
+s3_use_path_style: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
@@ -2523,10 +2523,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation"></a>
 
 ```python
-skip_credentials_validation: typing.Union[bool, IResolvable]
+skip_credentials_validation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
@@ -2551,10 +2551,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation"></a>
 
 ```python
-skip_region_validation: typing.Union[bool, IResolvable]
+skip_region_validation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip static validation of region name.
 
@@ -2567,10 +2567,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId"></a>
 
 ```python
-skip_requesting_account_id: typing.Union[bool, IResolvable]
+skip_requesting_account_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
@@ -2623,10 +2623,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint"></a>
 
 ```python
-use_dualstack_endpoint: typing.Union[bool, IResolvable]
+use_dualstack_endpoint: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Resolve an endpoint with DualStack capability.
 
@@ -2637,10 +2637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint"></a>
 
 ```python
-use_fips_endpoint: typing.Union[bool, IResolvable]
+use_fips_endpoint: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Resolve an endpoint with FIPS capability.
 

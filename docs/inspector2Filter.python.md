@@ -14,17 +14,17 @@ from cdktf_cdktf_provider_aws import inspector2_filter
 inspector2Filter.Inspector2Filter(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   action: str,
   name: str,
   description: str = None,
-  filter_criteria: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria]] = None,
+  filter_criteria: IResolvable | typing.List[Inspector2FilterFilterCriteria] = None,
   reason: str = None,
   region: str = None,
   tags: typing.Mapping[str] = None
@@ -35,17 +35,17 @@ inspector2Filter.Inspector2Filter(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria">filter_criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]</code> | filter_criteria block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria">filter_criteria</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]</code> | filter_criteria block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.reason">reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
@@ -72,13 +72,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `filter_criteria`<sup>Optional</sup> <a name="filter_criteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]
 
 filter_criteria block.
 
@@ -430,7 +430,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.importFrom"></a>
@@ -493,7 +493,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -509,7 +509,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -537,13 +537,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_filter_criteria(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteria]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.putFilterCriteria.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]
 
 ---
 
@@ -714,19 +714,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteria">filter_criteria</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList">Inspector2FilterFilterCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">filter_criteria_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">filter_criteria_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.reasonInput">reason_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
@@ -815,20 +815,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -875,10 +875,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -935,10 +935,10 @@ description_input: str
 ##### `filter_criteria_input`<sup>Optional</sup> <a name="filter_criteria_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput"></a>
 
 ```python
-filter_criteria_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria]]
+filter_criteria_input: IResolvable | typing.List[Inspector2FilterFilterCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]
 
 ---
 
@@ -1070,17 +1070,17 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import inspector2_filter
 
 inspector2Filter.Inspector2FilterConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   action: str,
   name: str,
   description: str = None,
-  filter_criteria: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria]] = None,
+  filter_criteria: IResolvable | typing.List[Inspector2FilterFilterCriteria] = None,
   reason: str = None,
   region: str = None,
   tags: typing.Mapping[str] = None
@@ -1091,17 +1091,17 @@ inspector2Filter.Inspector2FilterConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filter_criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]</code> | filter_criteria block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filter_criteria</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]</code> | filter_criteria block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.reason">reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
@@ -1111,20 +1111,20 @@ inspector2Filter.Inspector2FilterConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1171,10 +1171,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1217,10 +1217,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `filter_criteria`<sup>Optional</sup> <a name="filter_criteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria"></a>
 
 ```python
-filter_criteria: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria]]
+filter_criteria: IResolvable | typing.List[Inspector2FilterFilterCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]
 
 filter_criteria block.
 
@@ -1274,52 +1274,52 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import inspector2_filter
 
 inspector2Filter.Inspector2FilterFilterCriteria(
-  aws_account_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaAwsAccountId]] = None,
-  code_repository_project_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]] = None,
-  code_repository_provider_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]] = None,
-  code_vulnerability_detector_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]] = None,
-  code_vulnerability_detector_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]] = None,
-  code_vulnerability_file_path: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]] = None,
-  component_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentId]] = None,
-  component_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentType]] = None,
-  ec2_instance_image_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]] = None,
-  ec2_instance_subnet_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]] = None,
-  ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]] = None,
-  ecr_image_architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]] = None,
-  ecr_image_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageHash]] = None,
-  ecr_image_in_use_count: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]] = None,
-  ecr_image_last_in_use_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]] = None,
-  ecr_image_pushed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]] = None,
-  ecr_image_registry: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]] = None,
-  ecr_image_repository_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]] = None,
-  ecr_image_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageTags]] = None,
-  epss_score: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEpssScore]] = None,
-  exploit_available: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaExploitAvailable]] = None,
-  finding_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingArn]] = None,
-  finding_status: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingStatus]] = None,
-  finding_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingType]] = None,
-  first_observed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]] = None,
-  fix_available: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFixAvailable]] = None,
-  inspector_score: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaInspectorScore]] = None,
-  lambda_function_execution_role_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]] = None,
-  lambda_function_last_modified_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]] = None,
-  lambda_function_layers: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]] = None,
-  lambda_function_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]] = None,
-  lambda_function_runtime: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]] = None,
-  last_observed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLastObservedAt]] = None,
-  network_protocol: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]] = None,
-  port_range: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaPortRange]] = None,
-  related_vulnerabilities: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]] = None,
-  resource_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceId]] = None,
-  resource_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceTags]] = None,
-  resource_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceType]] = None,
-  severity: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaSeverity]] = None,
-  title: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaTitle]] = None,
-  updated_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaUpdatedAt]] = None,
-  vendor_severity: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVendorSeverity]] = None,
-  vulnerability_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]] = None,
-  vulnerability_source: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]] = None,
-  vulnerable_packages: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]] = None
+  aws_account_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaAwsAccountId] = None,
+  code_repository_project_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName] = None,
+  code_repository_provider_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType] = None,
+  code_vulnerability_detector_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName] = None,
+  code_vulnerability_detector_tags: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags] = None,
+  code_vulnerability_file_path: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath] = None,
+  component_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentId] = None,
+  component_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentType] = None,
+  ec2_instance_image_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId] = None,
+  ec2_instance_subnet_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId] = None,
+  ec2_instance_vpc_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId] = None,
+  ecr_image_architecture: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture] = None,
+  ecr_image_hash: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageHash] = None,
+  ecr_image_in_use_count: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount] = None,
+  ecr_image_last_in_use_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt] = None,
+  ecr_image_pushed_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt] = None,
+  ecr_image_registry: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry] = None,
+  ecr_image_repository_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName] = None,
+  ecr_image_tags: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageTags] = None,
+  epss_score: IResolvable | typing.List[Inspector2FilterFilterCriteriaEpssScore] = None,
+  exploit_available: IResolvable | typing.List[Inspector2FilterFilterCriteriaExploitAvailable] = None,
+  finding_arn: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingArn] = None,
+  finding_status: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingStatus] = None,
+  finding_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingType] = None,
+  first_observed_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaFirstObservedAt] = None,
+  fix_available: IResolvable | typing.List[Inspector2FilterFilterCriteriaFixAvailable] = None,
+  inspector_score: IResolvable | typing.List[Inspector2FilterFilterCriteriaInspectorScore] = None,
+  lambda_function_execution_role_arn: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn] = None,
+  lambda_function_last_modified_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt] = None,
+  lambda_function_layers: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers] = None,
+  lambda_function_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName] = None,
+  lambda_function_runtime: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime] = None,
+  last_observed_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaLastObservedAt] = None,
+  network_protocol: IResolvable | typing.List[Inspector2FilterFilterCriteriaNetworkProtocol] = None,
+  port_range: IResolvable | typing.List[Inspector2FilterFilterCriteriaPortRange] = None,
+  related_vulnerabilities: IResolvable | typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities] = None,
+  resource_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceId] = None,
+  resource_tags: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceTags] = None,
+  resource_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceType] = None,
+  severity: IResolvable | typing.List[Inspector2FilterFilterCriteriaSeverity] = None,
+  title: IResolvable | typing.List[Inspector2FilterFilterCriteriaTitle] = None,
+  updated_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaUpdatedAt] = None,
+  vendor_severity: IResolvable | typing.List[Inspector2FilterFilterCriteriaVendorSeverity] = None,
+  vulnerability_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilityId] = None,
+  vulnerability_source: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource] = None,
+  vulnerable_packages: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackages] = None
 )
 ```
 
@@ -1327,62 +1327,62 @@ inspector2Filter.Inspector2FilterFilterCriteria(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">aws_account_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]</code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">code_repository_project_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]</code> | code_repository_project_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">code_repository_provider_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]</code> | code_repository_provider_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">code_vulnerability_detector_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]</code> | code_vulnerability_detector_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">code_vulnerability_detector_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]</code> | code_vulnerability_detector_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">code_vulnerability_file_path</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]</code> | code_vulnerability_file_path block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">component_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]</code> | component_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">component_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]</code> | component_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">ec2_instance_image_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]</code> | ec2_instance_image_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">ec2_instance_subnet_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]</code> | ec2_instance_subnet_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2_instance_vpc_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]</code> | ec2_instance_vpc_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecr_image_architecture</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]</code> | ecr_image_architecture block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecr_image_hash</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]</code> | ecr_image_hash block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecr_image_in_use_count</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]</code> | ecr_image_in_use_count block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecr_image_last_in_use_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]</code> | ecr_image_last_in_use_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecr_image_pushed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]</code> | ecr_image_pushed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecr_image_registry</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]</code> | ecr_image_registry block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecr_image_repository_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]</code> | ecr_image_repository_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">ecr_image_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]</code> | ecr_image_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">epss_score</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]</code> | epss_score block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">exploit_available</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]</code> | exploit_available block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">finding_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]</code> | finding_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">finding_status</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]</code> | finding_status block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">finding_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]</code> | finding_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">first_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]</code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">fix_available</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]</code> | fix_available block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">inspector_score</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]</code> | inspector_score block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">lambda_function_execution_role_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]</code> | lambda_function_execution_role_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">lambda_function_last_modified_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]</code> | lambda_function_last_modified_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">lambda_function_layers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]</code> | lambda_function_layers block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">lambda_function_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]</code> | lambda_function_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">lambda_function_runtime</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]</code> | lambda_function_runtime block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">last_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]</code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">network_protocol</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]</code> | network_protocol block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">port_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]</code> | port_range block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">related_vulnerabilities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]</code> | related_vulnerabilities block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">resource_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]</code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">resource_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]</code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">resource_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]</code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">severity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]</code> | severity block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">title</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]</code> | title block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">updated_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]</code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">vendor_severity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]</code> | vendor_severity block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">vulnerability_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]</code> | vulnerability_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">vulnerability_source</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]</code> | vulnerability_source block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">vulnerable_packages</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]</code> | vulnerable_packages block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">aws_account_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]</code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">code_repository_project_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]</code> | code_repository_project_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">code_repository_provider_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]</code> | code_repository_provider_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">code_vulnerability_detector_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]</code> | code_vulnerability_detector_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">code_vulnerability_detector_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]</code> | code_vulnerability_detector_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">code_vulnerability_file_path</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]</code> | code_vulnerability_file_path block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">component_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]</code> | component_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">component_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]</code> | component_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">ec2_instance_image_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]</code> | ec2_instance_image_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">ec2_instance_subnet_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]</code> | ec2_instance_subnet_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2_instance_vpc_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]</code> | ec2_instance_vpc_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecr_image_architecture</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]</code> | ecr_image_architecture block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecr_image_hash</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]</code> | ecr_image_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecr_image_in_use_count</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]</code> | ecr_image_in_use_count block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecr_image_last_in_use_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]</code> | ecr_image_last_in_use_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecr_image_pushed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]</code> | ecr_image_pushed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecr_image_registry</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]</code> | ecr_image_registry block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecr_image_repository_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]</code> | ecr_image_repository_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">ecr_image_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]</code> | ecr_image_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">epss_score</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]</code> | epss_score block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">exploit_available</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]</code> | exploit_available block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">finding_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]</code> | finding_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">finding_status</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]</code> | finding_status block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">finding_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]</code> | finding_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">first_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]</code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">fix_available</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]</code> | fix_available block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">inspector_score</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]</code> | inspector_score block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">lambda_function_execution_role_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]</code> | lambda_function_execution_role_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">lambda_function_last_modified_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]</code> | lambda_function_last_modified_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">lambda_function_layers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]</code> | lambda_function_layers block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">lambda_function_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]</code> | lambda_function_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">lambda_function_runtime</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]</code> | lambda_function_runtime block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">last_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]</code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">network_protocol</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]</code> | network_protocol block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">port_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]</code> | port_range block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">related_vulnerabilities</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]</code> | related_vulnerabilities block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">resource_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]</code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">resource_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]</code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">resource_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]</code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">severity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]</code> | severity block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">title</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]</code> | title block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">updated_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]</code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">vendor_severity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]</code> | vendor_severity block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">vulnerability_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]</code> | vulnerability_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">vulnerability_source</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]</code> | vulnerability_source block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">vulnerable_packages</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]</code> | vulnerable_packages block. |
 
 ---
 
 ##### `aws_account_id`<sup>Optional</sup> <a name="aws_account_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId"></a>
 
 ```python
-aws_account_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaAwsAccountId]]
+aws_account_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]
 
 aws_account_id block.
 
@@ -1393,10 +1393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `code_repository_project_name`<sup>Optional</sup> <a name="code_repository_project_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName"></a>
 
 ```python
-code_repository_project_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+code_repository_project_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]
 
 code_repository_project_name block.
 
@@ -1407,10 +1407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `code_repository_provider_type`<sup>Optional</sup> <a name="code_repository_provider_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType"></a>
 
 ```python
-code_repository_provider_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+code_repository_provider_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]
 
 code_repository_provider_type block.
 
@@ -1421,10 +1421,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `code_vulnerability_detector_name`<sup>Optional</sup> <a name="code_vulnerability_detector_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName"></a>
 
 ```python
-code_vulnerability_detector_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]]
+code_vulnerability_detector_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]
 
 code_vulnerability_detector_name block.
 
@@ -1435,10 +1435,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `code_vulnerability_detector_tags`<sup>Optional</sup> <a name="code_vulnerability_detector_tags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags"></a>
 
 ```python
-code_vulnerability_detector_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]]
+code_vulnerability_detector_tags: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]
 
 code_vulnerability_detector_tags block.
 
@@ -1449,10 +1449,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `code_vulnerability_file_path`<sup>Optional</sup> <a name="code_vulnerability_file_path" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath"></a>
 
 ```python
-code_vulnerability_file_path: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]]
+code_vulnerability_file_path: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]
 
 code_vulnerability_file_path block.
 
@@ -1463,10 +1463,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `component_id`<sup>Optional</sup> <a name="component_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId"></a>
 
 ```python
-component_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentId]]
+component_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]
 
 component_id block.
 
@@ -1477,10 +1477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `component_type`<sup>Optional</sup> <a name="component_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType"></a>
 
 ```python
-component_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentType]]
+component_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]
 
 component_type block.
 
@@ -1491,10 +1491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ec2_instance_image_id`<sup>Optional</sup> <a name="ec2_instance_image_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId"></a>
 
 ```python
-ec2_instance_image_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]]
+ec2_instance_image_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]
 
 ec2_instance_image_id block.
 
@@ -1505,10 +1505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ec2_instance_subnet_id`<sup>Optional</sup> <a name="ec2_instance_subnet_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId"></a>
 
 ```python
-ec2_instance_subnet_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]]
+ec2_instance_subnet_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]
 
 ec2_instance_subnet_id block.
 
@@ -1519,10 +1519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ec2_instance_vpc_id`<sup>Optional</sup> <a name="ec2_instance_vpc_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId"></a>
 
 ```python
-ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]]
+ec2_instance_vpc_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]
 
 ec2_instance_vpc_id block.
 
@@ -1533,10 +1533,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_architecture`<sup>Optional</sup> <a name="ecr_image_architecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture"></a>
 
 ```python
-ecr_image_architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]]
+ecr_image_architecture: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]
 
 ecr_image_architecture block.
 
@@ -1547,10 +1547,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_hash`<sup>Optional</sup> <a name="ecr_image_hash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash"></a>
 
 ```python
-ecr_image_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageHash]]
+ecr_image_hash: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageHash]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]
 
 ecr_image_hash block.
 
@@ -1561,10 +1561,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_in_use_count`<sup>Optional</sup> <a name="ecr_image_in_use_count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount"></a>
 
 ```python
-ecr_image_in_use_count: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+ecr_image_in_use_count: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]
 
 ecr_image_in_use_count block.
 
@@ -1575,10 +1575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_last_in_use_at`<sup>Optional</sup> <a name="ecr_image_last_in_use_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt"></a>
 
 ```python
-ecr_image_last_in_use_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+ecr_image_last_in_use_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]
 
 ecr_image_last_in_use_at block.
 
@@ -1589,10 +1589,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_pushed_at`<sup>Optional</sup> <a name="ecr_image_pushed_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt"></a>
 
 ```python
-ecr_image_pushed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]]
+ecr_image_pushed_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]
 
 ecr_image_pushed_at block.
 
@@ -1603,10 +1603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_registry`<sup>Optional</sup> <a name="ecr_image_registry" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry"></a>
 
 ```python
-ecr_image_registry: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]]
+ecr_image_registry: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]
 
 ecr_image_registry block.
 
@@ -1617,10 +1617,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_repository_name`<sup>Optional</sup> <a name="ecr_image_repository_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName"></a>
 
 ```python
-ecr_image_repository_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]]
+ecr_image_repository_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]
 
 ecr_image_repository_name block.
 
@@ -1631,10 +1631,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecr_image_tags`<sup>Optional</sup> <a name="ecr_image_tags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags"></a>
 
 ```python
-ecr_image_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageTags]]
+ecr_image_tags: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]
 
 ecr_image_tags block.
 
@@ -1645,10 +1645,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `epss_score`<sup>Optional</sup> <a name="epss_score" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore"></a>
 
 ```python
-epss_score: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEpssScore]]
+epss_score: IResolvable | typing.List[Inspector2FilterFilterCriteriaEpssScore]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]
 
 epss_score block.
 
@@ -1659,10 +1659,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `exploit_available`<sup>Optional</sup> <a name="exploit_available" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable"></a>
 
 ```python
-exploit_available: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaExploitAvailable]]
+exploit_available: IResolvable | typing.List[Inspector2FilterFilterCriteriaExploitAvailable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]
 
 exploit_available block.
 
@@ -1673,10 +1673,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_arn`<sup>Optional</sup> <a name="finding_arn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn"></a>
 
 ```python
-finding_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingArn]]
+finding_arn: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]
 
 finding_arn block.
 
@@ -1687,10 +1687,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_status`<sup>Optional</sup> <a name="finding_status" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus"></a>
 
 ```python
-finding_status: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingStatus]]
+finding_status: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]
 
 finding_status block.
 
@@ -1701,10 +1701,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_type`<sup>Optional</sup> <a name="finding_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType"></a>
 
 ```python
-finding_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingType]]
+finding_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]
 
 finding_type block.
 
@@ -1715,10 +1715,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `first_observed_at`<sup>Optional</sup> <a name="first_observed_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt"></a>
 
 ```python
-first_observed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]]
+first_observed_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]
 
 first_observed_at block.
 
@@ -1729,10 +1729,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fix_available`<sup>Optional</sup> <a name="fix_available" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable"></a>
 
 ```python
-fix_available: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFixAvailable]]
+fix_available: IResolvable | typing.List[Inspector2FilterFilterCriteriaFixAvailable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]
 
 fix_available block.
 
@@ -1743,10 +1743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `inspector_score`<sup>Optional</sup> <a name="inspector_score" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore"></a>
 
 ```python
-inspector_score: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaInspectorScore]]
+inspector_score: IResolvable | typing.List[Inspector2FilterFilterCriteriaInspectorScore]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]
 
 inspector_score block.
 
@@ -1757,10 +1757,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambda_function_execution_role_arn`<sup>Optional</sup> <a name="lambda_function_execution_role_arn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn"></a>
 
 ```python
-lambda_function_execution_role_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]]
+lambda_function_execution_role_arn: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]
 
 lambda_function_execution_role_arn block.
 
@@ -1771,10 +1771,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambda_function_last_modified_at`<sup>Optional</sup> <a name="lambda_function_last_modified_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt"></a>
 
 ```python
-lambda_function_last_modified_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]]
+lambda_function_last_modified_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]
 
 lambda_function_last_modified_at block.
 
@@ -1785,10 +1785,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambda_function_layers`<sup>Optional</sup> <a name="lambda_function_layers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers"></a>
 
 ```python
-lambda_function_layers: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]]
+lambda_function_layers: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]
 
 lambda_function_layers block.
 
@@ -1799,10 +1799,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambda_function_name`<sup>Optional</sup> <a name="lambda_function_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName"></a>
 
 ```python
-lambda_function_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]]
+lambda_function_name: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]
 
 lambda_function_name block.
 
@@ -1813,10 +1813,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambda_function_runtime`<sup>Optional</sup> <a name="lambda_function_runtime" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime"></a>
 
 ```python
-lambda_function_runtime: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]]
+lambda_function_runtime: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]
 
 lambda_function_runtime block.
 
@@ -1827,10 +1827,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `last_observed_at`<sup>Optional</sup> <a name="last_observed_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt"></a>
 
 ```python
-last_observed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLastObservedAt]]
+last_observed_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]
 
 last_observed_at block.
 
@@ -1841,10 +1841,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_protocol`<sup>Optional</sup> <a name="network_protocol" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol"></a>
 
 ```python
-network_protocol: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]]
+network_protocol: IResolvable | typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]
 
 network_protocol block.
 
@@ -1855,10 +1855,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `port_range`<sup>Optional</sup> <a name="port_range" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange"></a>
 
 ```python
-port_range: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaPortRange]]
+port_range: IResolvable | typing.List[Inspector2FilterFilterCriteriaPortRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]
 
 port_range block.
 
@@ -1869,10 +1869,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `related_vulnerabilities`<sup>Optional</sup> <a name="related_vulnerabilities" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities"></a>
 
 ```python
-related_vulnerabilities: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]]
+related_vulnerabilities: IResolvable | typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]
 
 related_vulnerabilities block.
 
@@ -1883,10 +1883,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_id`<sup>Optional</sup> <a name="resource_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId"></a>
 
 ```python
-resource_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceId]]
+resource_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]
 
 resource_id block.
 
@@ -1897,10 +1897,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_tags`<sup>Optional</sup> <a name="resource_tags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags"></a>
 
 ```python
-resource_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceTags]]
+resource_tags: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]
 
 resource_tags block.
 
@@ -1911,10 +1911,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType"></a>
 
 ```python
-resource_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceType]]
+resource_type: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]
 
 resource_type block.
 
@@ -1925,10 +1925,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severity`<sup>Optional</sup> <a name="severity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity"></a>
 
 ```python
-severity: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaSeverity]]
+severity: IResolvable | typing.List[Inspector2FilterFilterCriteriaSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]
 
 severity block.
 
@@ -1939,10 +1939,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title"></a>
 
 ```python
-title: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaTitle]]
+title: IResolvable | typing.List[Inspector2FilterFilterCriteriaTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]
 
 title block.
 
@@ -1953,10 +1953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `updated_at`<sup>Optional</sup> <a name="updated_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt"></a>
 
 ```python
-updated_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaUpdatedAt]]
+updated_at: IResolvable | typing.List[Inspector2FilterFilterCriteriaUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]
 
 updated_at block.
 
@@ -1967,10 +1967,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vendor_severity`<sup>Optional</sup> <a name="vendor_severity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity"></a>
 
 ```python
-vendor_severity: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVendorSeverity]]
+vendor_severity: IResolvable | typing.List[Inspector2FilterFilterCriteriaVendorSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]
 
 vendor_severity block.
 
@@ -1981,10 +1981,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vulnerability_id`<sup>Optional</sup> <a name="vulnerability_id" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId"></a>
 
 ```python
-vulnerability_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]]
+vulnerability_id: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]
 
 vulnerability_id block.
 
@@ -1995,10 +1995,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vulnerability_source`<sup>Optional</sup> <a name="vulnerability_source" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource"></a>
 
 ```python
-vulnerability_source: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]]
+vulnerability_source: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]
 
 vulnerability_source block.
 
@@ -2009,10 +2009,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vulnerable_packages`<sup>Optional</sup> <a name="vulnerable_packages" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages"></a>
 
 ```python
-vulnerable_packages: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]]
+vulnerable_packages: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]
 
 vulnerable_packages block.
 
@@ -4112,14 +4112,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import inspector2_filter
 
 inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages(
-  architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]] = None,
-  epoch: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]] = None,
-  file_path: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]] = None,
-  name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]] = None,
-  release: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]] = None,
-  source_lambda_layer_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]] = None,
-  source_layer_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]] = None,
-  version: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]] = None
+  architecture: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture] = None,
+  epoch: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch] = None,
+  file_path: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath] = None,
+  name: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName] = None,
+  release: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease] = None,
+  source_lambda_layer_arn: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn] = None,
+  source_layer_hash: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash] = None,
+  version: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion] = None
 )
 ```
 
@@ -4127,24 +4127,24 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">architecture</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]</code> | architecture block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">epoch</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]</code> | epoch block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">file_path</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]</code> | file_path block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]</code> | name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">release</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]</code> | release block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">source_lambda_layer_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]</code> | source_lambda_layer_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">source_layer_hash</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]</code> | source_layer_hash block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">version</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]</code> | version block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">architecture</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]</code> | architecture block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">epoch</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]</code> | epoch block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">file_path</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]</code> | file_path block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]</code> | name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">release</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]</code> | release block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">source_lambda_layer_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]</code> | source_lambda_layer_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">source_layer_hash</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]</code> | source_layer_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">version</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]</code> | version block. |
 
 ---
 
 ##### `architecture`<sup>Optional</sup> <a name="architecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture"></a>
 
 ```python
-architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]]
+architecture: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]
 
 architecture block.
 
@@ -4155,10 +4155,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `epoch`<sup>Optional</sup> <a name="epoch" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch"></a>
 
 ```python
-epoch: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]]
+epoch: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]
 
 epoch block.
 
@@ -4169,10 +4169,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `file_path`<sup>Optional</sup> <a name="file_path" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath"></a>
 
 ```python
-file_path: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]]
+file_path: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]
 
 file_path block.
 
@@ -4183,10 +4183,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name"></a>
 
 ```python
-name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]]
+name: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]
 
 name block.
 
@@ -4197,10 +4197,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `release`<sup>Optional</sup> <a name="release" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release"></a>
 
 ```python
-release: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]]
+release: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]
 
 release block.
 
@@ -4211,10 +4211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `source_lambda_layer_arn`<sup>Optional</sup> <a name="source_lambda_layer_arn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn"></a>
 
 ```python
-source_lambda_layer_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]]
+source_lambda_layer_arn: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]
 
 source_lambda_layer_arn block.
 
@@ -4225,10 +4225,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `source_layer_hash`<sup>Optional</sup> <a name="source_layer_hash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash"></a>
 
 ```python
-source_layer_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]]
+source_layer_hash: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]
 
 source_layer_hash block.
 
@@ -4239,10 +4239,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version"></a>
 
 ```python
-version: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]]
+version: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]
 
 version block.
 
@@ -4751,7 +4751,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]</code> | *No description.* |
 
 ---
 
@@ -4782,10 +4782,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaAwsAccountId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]
 
 ---
 
@@ -5049,7 +5049,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -5120,10 +5120,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaAwsAccountId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaAwsAccountId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>
 
 ---
 
@@ -5259,7 +5259,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]</code> | *No description.* |
 
 ---
 
@@ -5290,10 +5290,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]
 
 ---
 
@@ -5557,7 +5557,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a></code> | *No description.* |
 
 ---
 
@@ -5628,10 +5628,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeRepositoryProjectName]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProjectName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>
 
 ---
 
@@ -5767,7 +5767,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]</code> | *No description.* |
 
 ---
 
@@ -5798,10 +5798,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]
 
 ---
 
@@ -6065,7 +6065,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a></code> | *No description.* |
 
 ---
 
@@ -6136,10 +6136,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeRepositoryProviderType]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaCodeRepositoryProviderType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>
 
 ---
 
@@ -6275,7 +6275,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]</code> | *No description.* |
 
 ---
 
@@ -6306,10 +6306,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]
 
 ---
 
@@ -6573,7 +6573,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a></code> | *No description.* |
 
 ---
 
@@ -6644,10 +6644,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>
 
 ---
 
@@ -6783,7 +6783,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]</code> | *No description.* |
 
 ---
 
@@ -6814,10 +6814,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]
 
 ---
 
@@ -7081,7 +7081,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a></code> | *No description.* |
 
 ---
 
@@ -7152,10 +7152,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>
 
 ---
 
@@ -7291,7 +7291,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]</code> | *No description.* |
 
 ---
 
@@ -7322,10 +7322,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]
 
 ---
 
@@ -7589,7 +7589,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a></code> | *No description.* |
 
 ---
 
@@ -7660,10 +7660,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>
 
 ---
 
@@ -7799,7 +7799,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]</code> | *No description.* |
 
 ---
 
@@ -7830,10 +7830,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]
 
 ---
 
@@ -8097,7 +8097,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a></code> | *No description.* |
 
 ---
 
@@ -8168,10 +8168,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaComponentId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaComponentId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>
 
 ---
 
@@ -8307,7 +8307,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]</code> | *No description.* |
 
 ---
 
@@ -8338,10 +8338,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentType]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]
 
 ---
 
@@ -8605,7 +8605,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a></code> | *No description.* |
 
 ---
 
@@ -8676,10 +8676,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaComponentType]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaComponentType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>
 
 ---
 
@@ -8815,7 +8815,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]</code> | *No description.* |
 
 ---
 
@@ -8846,10 +8846,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]
 
 ---
 
@@ -9113,7 +9113,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -9184,10 +9184,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEc2InstanceImageId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceImageId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>
 
 ---
 
@@ -9323,7 +9323,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]</code> | *No description.* |
 
 ---
 
@@ -9354,10 +9354,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]
 
 ---
 
@@ -9621,7 +9621,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -9692,10 +9692,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEc2InstanceSubnetId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceSubnetId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>
 
 ---
 
@@ -9831,7 +9831,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]</code> | *No description.* |
 
 ---
 
@@ -9862,10 +9862,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]
 
 ---
 
@@ -10129,7 +10129,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -10200,10 +10200,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEc2InstanceVpcId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEc2InstanceVpcId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>
 
 ---
 
@@ -10339,7 +10339,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]</code> | *No description.* |
 
 ---
 
@@ -10370,10 +10370,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]
 
 ---
 
@@ -10637,7 +10637,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -10708,10 +10708,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageArchitecture]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageArchitecture
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>
 
 ---
 
@@ -10847,7 +10847,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]</code> | *No description.* |
 
 ---
 
@@ -10878,10 +10878,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageHash]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageHash]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]
 
 ---
 
@@ -11145,7 +11145,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a></code> | *No description.* |
 
 ---
 
@@ -11216,10 +11216,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageHash]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageHash
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>
 
 ---
 
@@ -11355,7 +11355,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]</code> | *No description.* |
 
 ---
 
@@ -11386,10 +11386,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]
 
 ---
 
@@ -11653,7 +11653,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusiveInput">upper_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a></code> | *No description.* |
 
 ---
 
@@ -11724,10 +11724,10 @@ upper_inclusive: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageInUseCount]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageInUseCount
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>
 
 ---
 
@@ -11863,7 +11863,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]</code> | *No description.* |
 
 ---
 
@@ -11894,10 +11894,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]
 
 ---
 
@@ -12175,7 +12175,7 @@ def reset_start_inclusive() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a></code> | *No description.* |
 
 ---
 
@@ -12246,10 +12246,10 @@ start_inclusive: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageLastInUseAt]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageLastInUseAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>
 
 ---
 
@@ -12385,7 +12385,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -12416,10 +12416,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]
 
 ---
 
@@ -12697,7 +12697,7 @@ def reset_start_inclusive() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a></code> | *No description.* |
 
 ---
 
@@ -12768,10 +12768,10 @@ start_inclusive: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImagePushedAt]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImagePushedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>
 
 ---
 
@@ -12907,7 +12907,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]</code> | *No description.* |
 
 ---
 
@@ -12938,10 +12938,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]
 
 ---
 
@@ -13205,7 +13205,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a></code> | *No description.* |
 
 ---
 
@@ -13276,10 +13276,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageRegistry]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageRegistry
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>
 
 ---
 
@@ -13415,7 +13415,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]</code> | *No description.* |
 
 ---
 
@@ -13446,10 +13446,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]
 
 ---
 
@@ -13713,7 +13713,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a></code> | *No description.* |
 
 ---
 
@@ -13784,10 +13784,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageRepositoryName]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageRepositoryName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>
 
 ---
 
@@ -13923,7 +13923,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]</code> | *No description.* |
 
 ---
 
@@ -13954,10 +13954,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageTags]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]
 
 ---
 
@@ -14221,7 +14221,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a></code> | *No description.* |
 
 ---
 
@@ -14292,10 +14292,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageTags]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEcrImageTags
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>
 
 ---
 
@@ -14431,7 +14431,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]</code> | *No description.* |
 
 ---
 
@@ -14462,10 +14462,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEpssScore]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEpssScore]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]
 
 ---
 
@@ -14729,7 +14729,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusiveInput">upper_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a></code> | *No description.* |
 
 ---
 
@@ -14800,10 +14800,10 @@ upper_inclusive: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEpssScore]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaEpssScore
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>
 
 ---
 
@@ -14939,7 +14939,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]</code> | *No description.* |
 
 ---
 
@@ -14970,10 +14970,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaExploitAvailable]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaExploitAvailable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]
 
 ---
 
@@ -15237,7 +15237,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a></code> | *No description.* |
 
 ---
 
@@ -15308,10 +15308,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaExploitAvailable]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaExploitAvailable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>
 
 ---
 
@@ -15447,7 +15447,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]</code> | *No description.* |
 
 ---
 
@@ -15478,10 +15478,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingArn]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]
 
 ---
 
@@ -15745,7 +15745,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a></code> | *No description.* |
 
 ---
 
@@ -15816,10 +15816,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaFindingArn]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaFindingArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>
 
 ---
 
@@ -15955,7 +15955,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -15986,10 +15986,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingStatus]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]
 
 ---
 
@@ -16253,7 +16253,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a></code> | *No description.* |
 
 ---
 
@@ -16324,10 +16324,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaFindingStatus]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaFindingStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>
 
 ---
 
@@ -16463,7 +16463,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]</code> | *No description.* |
 
 ---
 
@@ -16494,10 +16494,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingType]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]
 
 ---
 
@@ -16761,7 +16761,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a></code> | *No description.* |
 
 ---
 
@@ -16832,10 +16832,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaFindingType]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaFindingType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>
 
 ---
 
@@ -16971,7 +16971,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -17002,10 +17002,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]
 
 ---
 
@@ -17283,7 +17283,7 @@ def reset_start_inclusive() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -17354,10 +17354,10 @@ start_inclusive: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaFirstObservedAt]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaFirstObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>
 
 ---
 
@@ -17493,7 +17493,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]</code> | *No description.* |
 
 ---
 
@@ -17524,10 +17524,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFixAvailable]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFixAvailable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]
 
 ---
 
@@ -17791,7 +17791,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a></code> | *No description.* |
 
 ---
 
@@ -17862,10 +17862,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaFixAvailable]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaFixAvailable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>
 
 ---
 
@@ -18001,7 +18001,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]</code> | *No description.* |
 
 ---
 
@@ -18032,10 +18032,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaInspectorScore]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaInspectorScore]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]
 
 ---
 
@@ -18299,7 +18299,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusiveInput">upper_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a></code> | *No description.* |
 
 ---
 
@@ -18370,10 +18370,10 @@ upper_inclusive: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaInspectorScore]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaInspectorScore
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>
 
 ---
 
@@ -18509,7 +18509,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]</code> | *No description.* |
 
 ---
 
@@ -18540,10 +18540,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]
 
 ---
 
@@ -18807,7 +18807,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a></code> | *No description.* |
 
 ---
 
@@ -18878,10 +18878,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>
 
 ---
 
@@ -19017,7 +19017,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -19048,10 +19048,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]
 
 ---
 
@@ -19329,7 +19329,7 @@ def reset_start_inclusive() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a></code> | *No description.* |
 
 ---
 
@@ -19400,10 +19400,10 @@ start_inclusive: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>
 
 ---
 
@@ -19539,7 +19539,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]</code> | *No description.* |
 
 ---
 
@@ -19570,10 +19570,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]
 
 ---
 
@@ -19837,7 +19837,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a></code> | *No description.* |
 
 ---
 
@@ -19908,10 +19908,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaLambdaFunctionLayers]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionLayers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>
 
 ---
 
@@ -20047,7 +20047,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]</code> | *No description.* |
 
 ---
 
@@ -20078,10 +20078,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]
 
 ---
 
@@ -20345,7 +20345,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a></code> | *No description.* |
 
 ---
 
@@ -20416,10 +20416,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaLambdaFunctionName]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>
 
 ---
 
@@ -20555,7 +20555,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]</code> | *No description.* |
 
 ---
 
@@ -20586,10 +20586,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]
 
 ---
 
@@ -20853,7 +20853,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a></code> | *No description.* |
 
 ---
 
@@ -20924,10 +20924,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaLambdaFunctionRuntime]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaLambdaFunctionRuntime
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>
 
 ---
 
@@ -21063,7 +21063,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -21094,10 +21094,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLastObservedAt]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]
 
 ---
 
@@ -21375,7 +21375,7 @@ def reset_start_inclusive() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -21446,10 +21446,10 @@ start_inclusive: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaLastObservedAt]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaLastObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>
 
 ---
 
@@ -21585,7 +21585,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]</code> | *No description.* |
 
 ---
 
@@ -21616,10 +21616,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]
 
 ---
 
@@ -21755,7 +21755,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]</code> | *No description.* |
 
 ---
 
@@ -21786,10 +21786,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]
 
 ---
 
@@ -22053,7 +22053,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -22124,10 +22124,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaNetworkProtocol]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaNetworkProtocol
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>
 
 ---
 
@@ -22476,13 +22476,13 @@ Returns a reversible string representation.
 
 ```python
 def put_aws_account_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaAwsAccountId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaAwsAccountId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]
 
 ---
 
@@ -22490,13 +22490,13 @@ def put_aws_account_id(
 
 ```python
 def put_code_repository_project_name(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]
 
 ---
 
@@ -22504,13 +22504,13 @@ def put_code_repository_project_name(
 
 ```python
 def put_code_repository_provider_type(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]
 
 ---
 
@@ -22518,13 +22518,13 @@ def put_code_repository_provider_type(
 
 ```python
 def put_code_vulnerability_detector_name(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]
 
 ---
 
@@ -22532,13 +22532,13 @@ def put_code_vulnerability_detector_name(
 
 ```python
 def put_code_vulnerability_detector_tags(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]
 
 ---
 
@@ -22546,13 +22546,13 @@ def put_code_vulnerability_detector_tags(
 
 ```python
 def put_code_vulnerability_file_path(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]
 
 ---
 
@@ -22560,13 +22560,13 @@ def put_code_vulnerability_file_path(
 
 ```python
 def put_component_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]
 
 ---
 
@@ -22574,13 +22574,13 @@ def put_component_id(
 
 ```python
 def put_component_type(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentType]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]
 
 ---
 
@@ -22588,13 +22588,13 @@ def put_component_type(
 
 ```python
 def put_ec2_instance_image_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]
 
 ---
 
@@ -22602,13 +22602,13 @@ def put_ec2_instance_image_id(
 
 ```python
 def put_ec2_instance_subnet_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]
 
 ---
 
@@ -22616,13 +22616,13 @@ def put_ec2_instance_subnet_id(
 
 ```python
 def put_ec2_instance_vpc_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]
 
 ---
 
@@ -22630,13 +22630,13 @@ def put_ec2_instance_vpc_id(
 
 ```python
 def put_ecr_image_architecture(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]
 
 ---
 
@@ -22644,13 +22644,13 @@ def put_ecr_image_architecture(
 
 ```python
 def put_ecr_image_hash(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageHash]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageHash]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]
 
 ---
 
@@ -22658,13 +22658,13 @@ def put_ecr_image_hash(
 
 ```python
 def put_ecr_image_in_use_count(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]
 
 ---
 
@@ -22672,13 +22672,13 @@ def put_ecr_image_in_use_count(
 
 ```python
 def put_ecr_image_last_in_use_at(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]
 
 ---
 
@@ -22686,13 +22686,13 @@ def put_ecr_image_last_in_use_at(
 
 ```python
 def put_ecr_image_pushed_at(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]
 
 ---
 
@@ -22700,13 +22700,13 @@ def put_ecr_image_pushed_at(
 
 ```python
 def put_ecr_image_registry(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]
 
 ---
 
@@ -22714,13 +22714,13 @@ def put_ecr_image_registry(
 
 ```python
 def put_ecr_image_repository_name(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]
 
 ---
 
@@ -22728,13 +22728,13 @@ def put_ecr_image_repository_name(
 
 ```python
 def put_ecr_image_tags(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageTags]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageTags]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageTags.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]
 
 ---
 
@@ -22742,13 +22742,13 @@ def put_ecr_image_tags(
 
 ```python
 def put_epss_score(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEpssScore]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaEpssScore]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEpssScore.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]
 
 ---
 
@@ -22756,13 +22756,13 @@ def put_epss_score(
 
 ```python
 def put_exploit_available(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaExploitAvailable]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaExploitAvailable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putExploitAvailable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]
 
 ---
 
@@ -22770,13 +22770,13 @@ def put_exploit_available(
 
 ```python
 def put_finding_arn(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingArn]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]
 
 ---
 
@@ -22784,13 +22784,13 @@ def put_finding_arn(
 
 ```python
 def put_finding_status(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingStatus]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingStatus]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingStatus.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]
 
 ---
 
@@ -22798,13 +22798,13 @@ def put_finding_status(
 
 ```python
 def put_finding_type(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingType]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]
 
 ---
 
@@ -22812,13 +22812,13 @@ def put_finding_type(
 
 ```python
 def put_first_observed_at(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]
 
 ---
 
@@ -22826,13 +22826,13 @@ def put_first_observed_at(
 
 ```python
 def put_fix_available(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFixAvailable]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaFixAvailable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFixAvailable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]
 
 ---
 
@@ -22840,13 +22840,13 @@ def put_fix_available(
 
 ```python
 def put_inspector_score(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaInspectorScore]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaInspectorScore]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putInspectorScore.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]
 
 ---
 
@@ -22854,13 +22854,13 @@ def put_inspector_score(
 
 ```python
 def put_lambda_function_execution_role_arn(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionExecutionRoleArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]
 
 ---
 
@@ -22868,13 +22868,13 @@ def put_lambda_function_execution_role_arn(
 
 ```python
 def put_lambda_function_last_modified_at(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLastModifiedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]
 
 ---
 
@@ -22882,13 +22882,13 @@ def put_lambda_function_last_modified_at(
 
 ```python
 def put_lambda_function_layers(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLayers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]
 
 ---
 
@@ -22896,13 +22896,13 @@ def put_lambda_function_layers(
 
 ```python
 def put_lambda_function_name(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]
 
 ---
 
@@ -22910,13 +22910,13 @@ def put_lambda_function_name(
 
 ```python
 def put_lambda_function_runtime(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionRuntime.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]
 
 ---
 
@@ -22924,13 +22924,13 @@ def put_lambda_function_runtime(
 
 ```python
 def put_last_observed_at(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLastObservedAt]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaLastObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]
 
 ---
 
@@ -22938,13 +22938,13 @@ def put_last_observed_at(
 
 ```python
 def put_network_protocol(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]
 
 ---
 
@@ -22952,13 +22952,13 @@ def put_network_protocol(
 
 ```python
 def put_port_range(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaPortRange]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaPortRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putPortRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]
 
 ---
 
@@ -22966,13 +22966,13 @@ def put_port_range(
 
 ```python
 def put_related_vulnerabilities(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putRelatedVulnerabilities.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]
 
 ---
 
@@ -22980,13 +22980,13 @@ def put_related_vulnerabilities(
 
 ```python
 def put_resource_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]
 
 ---
 
@@ -22994,13 +22994,13 @@ def put_resource_id(
 
 ```python
 def put_resource_tags(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceTags]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceTags]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]
 
 ---
 
@@ -23008,13 +23008,13 @@ def put_resource_tags(
 
 ```python
 def put_resource_type(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceType]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]
 
 ---
 
@@ -23022,13 +23022,13 @@ def put_resource_type(
 
 ```python
 def put_severity(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaSeverity]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaSeverity]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]
 
 ---
 
@@ -23036,13 +23036,13 @@ def put_severity(
 
 ```python
 def put_title(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaTitle]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaTitle]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]
 
 ---
 
@@ -23050,13 +23050,13 @@ def put_title(
 
 ```python
 def put_updated_at(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaUpdatedAt]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaUpdatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]
 
 ---
 
@@ -23064,13 +23064,13 @@ def put_updated_at(
 
 ```python
 def put_vendor_severity(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVendorSeverity]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVendorSeverity]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVendorSeverity.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]
 
 ---
 
@@ -23078,13 +23078,13 @@ def put_vendor_severity(
 
 ```python
 def put_vulnerability_id(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilityId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]
 
 ---
 
@@ -23092,13 +23092,13 @@ def put_vulnerability_id(
 
 ```python
 def put_vulnerability_source(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]
 
 ---
 
@@ -23106,13 +23106,13 @@ def put_vulnerability_source(
 
 ```python
 def put_vulnerable_packages(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]
 
 ---
 
@@ -23445,53 +23445,53 @@ def reset_vulnerable_packages() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityId">vulnerability_id</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList">Inspector2FilterFilterCriteriaVulnerabilityIdList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySource">vulnerability_source</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList">Inspector2FilterFilterCriteriaVulnerabilitySourceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackages">vulnerable_packages</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList">Inspector2FilterFilterCriteriaVulnerablePackagesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">code_repository_project_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">code_repository_provider_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">code_vulnerability_detector_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">code_vulnerability_detector_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">code_vulnerability_file_path_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">component_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">component_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">ec2_instance_image_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">ec2_instance_subnet_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2_instance_vpc_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecr_image_architecture_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecr_image_hash_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecr_image_in_use_count_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecr_image_last_in_use_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecr_image_pushed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecr_image_registry_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecr_image_repository_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">ecr_image_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">epss_score_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">exploit_available_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">finding_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">finding_status_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">finding_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">first_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">fix_available_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">inspector_score_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">lambda_function_execution_role_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">lambda_function_last_modified_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">lambda_function_layers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">lambda_function_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">lambda_function_runtime_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">last_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">network_protocol_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">port_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">related_vulnerabilities_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">resource_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">severity_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">title_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">updated_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">vendor_severity_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">vulnerability_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">vulnerability_source_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">vulnerable_packages_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">code_repository_project_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">code_repository_provider_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">code_vulnerability_detector_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">code_vulnerability_detector_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">code_vulnerability_file_path_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">component_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">component_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">ec2_instance_image_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">ec2_instance_subnet_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2_instance_vpc_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecr_image_architecture_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecr_image_hash_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecr_image_in_use_count_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecr_image_last_in_use_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecr_image_pushed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecr_image_registry_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecr_image_repository_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">ecr_image_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">epss_score_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">exploit_available_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">finding_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">finding_status_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">finding_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">first_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">fix_available_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">inspector_score_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">lambda_function_execution_role_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">lambda_function_last_modified_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">lambda_function_layers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">lambda_function_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">lambda_function_runtime_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">last_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">network_protocol_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">port_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">related_vulnerabilities_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">resource_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">severity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">title_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">updated_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">vendor_severity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">vulnerability_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">vulnerability_source_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">vulnerable_packages_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a></code> | *No description.* |
 
 ---
 
@@ -23982,470 +23982,470 @@ vulnerable_packages: Inspector2FilterFilterCriteriaVulnerablePackagesList
 ##### `aws_account_id_input`<sup>Optional</sup> <a name="aws_account_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput"></a>
 
 ```python
-aws_account_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaAwsAccountId]]
+aws_account_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]
 
 ---
 
 ##### `code_repository_project_name_input`<sup>Optional</sup> <a name="code_repository_project_name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput"></a>
 
 ```python
-code_repository_project_name_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+code_repository_project_name_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]
 
 ---
 
 ##### `code_repository_provider_type_input`<sup>Optional</sup> <a name="code_repository_provider_type_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput"></a>
 
 ```python
-code_repository_provider_type_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+code_repository_provider_type_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]
 
 ---
 
 ##### `code_vulnerability_detector_name_input`<sup>Optional</sup> <a name="code_vulnerability_detector_name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput"></a>
 
 ```python
-code_vulnerability_detector_name_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]]
+code_vulnerability_detector_name_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]
 
 ---
 
 ##### `code_vulnerability_detector_tags_input`<sup>Optional</sup> <a name="code_vulnerability_detector_tags_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput"></a>
 
 ```python
-code_vulnerability_detector_tags_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]]
+code_vulnerability_detector_tags_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]
 
 ---
 
 ##### `code_vulnerability_file_path_input`<sup>Optional</sup> <a name="code_vulnerability_file_path_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput"></a>
 
 ```python
-code_vulnerability_file_path_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]]
+code_vulnerability_file_path_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]
 
 ---
 
 ##### `component_id_input`<sup>Optional</sup> <a name="component_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput"></a>
 
 ```python
-component_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentId]]
+component_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>]
 
 ---
 
 ##### `component_type_input`<sup>Optional</sup> <a name="component_type_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput"></a>
 
 ```python
-component_type_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaComponentType]]
+component_type_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaComponentType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>]
 
 ---
 
 ##### `ec2_instance_image_id_input`<sup>Optional</sup> <a name="ec2_instance_image_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput"></a>
 
 ```python
-ec2_instance_image_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]]
+ec2_instance_image_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>]
 
 ---
 
 ##### `ec2_instance_subnet_id_input`<sup>Optional</sup> <a name="ec2_instance_subnet_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput"></a>
 
 ```python
-ec2_instance_subnet_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]]
+ec2_instance_subnet_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>]
 
 ---
 
 ##### `ec2_instance_vpc_id_input`<sup>Optional</sup> <a name="ec2_instance_vpc_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput"></a>
 
 ```python
-ec2_instance_vpc_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]]
+ec2_instance_vpc_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]
 
 ---
 
 ##### `ecr_image_architecture_input`<sup>Optional</sup> <a name="ecr_image_architecture_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput"></a>
 
 ```python
-ecr_image_architecture_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]]
+ecr_image_architecture_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]
 
 ---
 
 ##### `ecr_image_hash_input`<sup>Optional</sup> <a name="ecr_image_hash_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput"></a>
 
 ```python
-ecr_image_hash_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageHash]]
+ecr_image_hash_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageHash]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]
 
 ---
 
 ##### `ecr_image_in_use_count_input`<sup>Optional</sup> <a name="ecr_image_in_use_count_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput"></a>
 
 ```python
-ecr_image_in_use_count_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+ecr_image_in_use_count_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]
 
 ---
 
 ##### `ecr_image_last_in_use_at_input`<sup>Optional</sup> <a name="ecr_image_last_in_use_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput"></a>
 
 ```python
-ecr_image_last_in_use_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+ecr_image_last_in_use_at_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]
 
 ---
 
 ##### `ecr_image_pushed_at_input`<sup>Optional</sup> <a name="ecr_image_pushed_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput"></a>
 
 ```python
-ecr_image_pushed_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]]
+ecr_image_pushed_at_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]
 
 ---
 
 ##### `ecr_image_registry_input`<sup>Optional</sup> <a name="ecr_image_registry_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput"></a>
 
 ```python
-ecr_image_registry_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]]
+ecr_image_registry_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]
 
 ---
 
 ##### `ecr_image_repository_name_input`<sup>Optional</sup> <a name="ecr_image_repository_name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput"></a>
 
 ```python
-ecr_image_repository_name_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]]
+ecr_image_repository_name_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]
 
 ---
 
 ##### `ecr_image_tags_input`<sup>Optional</sup> <a name="ecr_image_tags_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput"></a>
 
 ```python
-ecr_image_tags_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageTags]]
+ecr_image_tags_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEcrImageTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>]
 
 ---
 
 ##### `epss_score_input`<sup>Optional</sup> <a name="epss_score_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput"></a>
 
 ```python
-epss_score_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEpssScore]]
+epss_score_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaEpssScore]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>]
 
 ---
 
 ##### `exploit_available_input`<sup>Optional</sup> <a name="exploit_available_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput"></a>
 
 ```python
-exploit_available_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaExploitAvailable]]
+exploit_available_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaExploitAvailable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>]
 
 ---
 
 ##### `finding_arn_input`<sup>Optional</sup> <a name="finding_arn_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput"></a>
 
 ```python
-finding_arn_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingArn]]
+finding_arn_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>]
 
 ---
 
 ##### `finding_status_input`<sup>Optional</sup> <a name="finding_status_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput"></a>
 
 ```python
-finding_status_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingStatus]]
+finding_status_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>]
 
 ---
 
 ##### `finding_type_input`<sup>Optional</sup> <a name="finding_type_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput"></a>
 
 ```python
-finding_type_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFindingType]]
+finding_type_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaFindingType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>]
 
 ---
 
 ##### `first_observed_at_input`<sup>Optional</sup> <a name="first_observed_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput"></a>
 
 ```python
-first_observed_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]]
+first_observed_at_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>]
 
 ---
 
 ##### `fix_available_input`<sup>Optional</sup> <a name="fix_available_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput"></a>
 
 ```python
-fix_available_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaFixAvailable]]
+fix_available_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaFixAvailable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>]
 
 ---
 
 ##### `inspector_score_input`<sup>Optional</sup> <a name="inspector_score_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput"></a>
 
 ```python
-inspector_score_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaInspectorScore]]
+inspector_score_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaInspectorScore]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>]
 
 ---
 
 ##### `lambda_function_execution_role_arn_input`<sup>Optional</sup> <a name="lambda_function_execution_role_arn_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput"></a>
 
 ```python
-lambda_function_execution_role_arn_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]]
+lambda_function_execution_role_arn_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>]
 
 ---
 
 ##### `lambda_function_last_modified_at_input`<sup>Optional</sup> <a name="lambda_function_last_modified_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput"></a>
 
 ```python
-lambda_function_last_modified_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]]
+lambda_function_last_modified_at_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>]
 
 ---
 
 ##### `lambda_function_layers_input`<sup>Optional</sup> <a name="lambda_function_layers_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput"></a>
 
 ```python
-lambda_function_layers_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]]
+lambda_function_layers_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionLayers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>]
 
 ---
 
 ##### `lambda_function_name_input`<sup>Optional</sup> <a name="lambda_function_name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput"></a>
 
 ```python
-lambda_function_name_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]]
+lambda_function_name_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>]
 
 ---
 
 ##### `lambda_function_runtime_input`<sup>Optional</sup> <a name="lambda_function_runtime_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput"></a>
 
 ```python
-lambda_function_runtime_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]]
+lambda_function_runtime_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaLambdaFunctionRuntime]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>]
 
 ---
 
 ##### `last_observed_at_input`<sup>Optional</sup> <a name="last_observed_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput"></a>
 
 ```python
-last_observed_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaLastObservedAt]]
+last_observed_at_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>]
 
 ---
 
 ##### `network_protocol_input`<sup>Optional</sup> <a name="network_protocol_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput"></a>
 
 ```python
-network_protocol_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]]
+network_protocol_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaNetworkProtocol]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>]
 
 ---
 
 ##### `port_range_input`<sup>Optional</sup> <a name="port_range_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput"></a>
 
 ```python
-port_range_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaPortRange]]
+port_range_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaPortRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]
 
 ---
 
 ##### `related_vulnerabilities_input`<sup>Optional</sup> <a name="related_vulnerabilities_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput"></a>
 
 ```python
-related_vulnerabilities_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]]
+related_vulnerabilities_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]
 
 ---
 
 ##### `resource_id_input`<sup>Optional</sup> <a name="resource_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput"></a>
 
 ```python
-resource_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceId]]
+resource_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]
 
 ---
 
 ##### `resource_tags_input`<sup>Optional</sup> <a name="resource_tags_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput"></a>
 
 ```python
-resource_tags_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceTags]]
+resource_tags_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]
 
 ---
 
 ##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput"></a>
 
 ```python
-resource_type_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceType]]
+resource_type_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]
 
 ---
 
 ##### `severity_input`<sup>Optional</sup> <a name="severity_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput"></a>
 
 ```python
-severity_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaSeverity]]
+severity_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]
 
 ---
 
 ##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput"></a>
 
 ```python
-title_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaTitle]]
+title_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]
 
 ---
 
 ##### `updated_at_input`<sup>Optional</sup> <a name="updated_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput"></a>
 
 ```python
-updated_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaUpdatedAt]]
+updated_at_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]
 
 ---
 
 ##### `vendor_severity_input`<sup>Optional</sup> <a name="vendor_severity_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput"></a>
 
 ```python
-vendor_severity_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVendorSeverity]]
+vendor_severity_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVendorSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]
 
 ---
 
 ##### `vulnerability_id_input`<sup>Optional</sup> <a name="vulnerability_id_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput"></a>
 
 ```python
-vulnerability_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]]
+vulnerability_id_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]
 
 ---
 
 ##### `vulnerability_source_input`<sup>Optional</sup> <a name="vulnerability_source_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput"></a>
 
 ```python
-vulnerability_source_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]]
+vulnerability_source_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]
 
 ---
 
 ##### `vulnerable_packages_input`<sup>Optional</sup> <a name="vulnerable_packages_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput"></a>
 
 ```python
-vulnerable_packages_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]]
+vulnerable_packages_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteria]
+internal_value: IResolvable | Inspector2FilterFilterCriteria
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>
 
 ---
 
@@ -24581,7 +24581,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]</code> | *No description.* |
 
 ---
 
@@ -24612,10 +24612,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaPortRange]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaPortRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]
 
 ---
 
@@ -24879,7 +24879,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusiveInput">end_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.beginInclusive">begin_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusive">end_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a></code> | *No description.* |
 
 ---
 
@@ -24950,10 +24950,10 @@ end_inclusive: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaPortRange]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaPortRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>
 
 ---
 
@@ -25089,7 +25089,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]</code> | *No description.* |
 
 ---
 
@@ -25120,10 +25120,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaRelatedVulnerabilities]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]
 
 ---
 
@@ -25387,7 +25387,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a></code> | *No description.* |
 
 ---
 
@@ -25458,10 +25458,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaRelatedVulnerabilities]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaRelatedVulnerabilities
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>
 
 ---
 
@@ -25597,7 +25597,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]</code> | *No description.* |
 
 ---
 
@@ -25628,10 +25628,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]
 
 ---
 
@@ -25895,7 +25895,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -25966,10 +25966,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaResourceId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaResourceId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>
 
 ---
 
@@ -26105,7 +26105,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]</code> | *No description.* |
 
 ---
 
@@ -26136,10 +26136,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceTags]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]
 
 ---
 
@@ -26405,7 +26405,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -26496,10 +26496,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaResourceTags]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaResourceTags
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>
 
 ---
 
@@ -26635,7 +26635,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]</code> | *No description.* |
 
 ---
 
@@ -26666,10 +26666,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaResourceType]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]
 
 ---
 
@@ -26933,7 +26933,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -27004,10 +27004,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaResourceType]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaResourceType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>
 
 ---
 
@@ -27143,7 +27143,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]</code> | *No description.* |
 
 ---
 
@@ -27174,10 +27174,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaSeverity]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]
 
 ---
 
@@ -27441,7 +27441,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a></code> | *No description.* |
 
 ---
 
@@ -27512,10 +27512,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaSeverity]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaSeverity
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>
 
 ---
 
@@ -27651,7 +27651,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]</code> | *No description.* |
 
 ---
 
@@ -27682,10 +27682,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaTitle]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]
 
 ---
 
@@ -27949,7 +27949,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -28020,10 +28020,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaTitle]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaTitle
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>
 
 ---
 
@@ -28159,7 +28159,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -28190,10 +28190,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaUpdatedAt]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]
 
 ---
 
@@ -28471,7 +28471,7 @@ def reset_start_inclusive() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -28542,10 +28542,10 @@ start_inclusive: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaUpdatedAt]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaUpdatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>
 
 ---
 
@@ -28681,7 +28681,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]</code> | *No description.* |
 
 ---
 
@@ -28712,10 +28712,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVendorSeverity]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVendorSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]
 
 ---
 
@@ -28979,7 +28979,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a></code> | *No description.* |
 
 ---
 
@@ -29050,10 +29050,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVendorSeverity]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVendorSeverity
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>
 
 ---
 
@@ -29189,7 +29189,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]</code> | *No description.* |
 
 ---
 
@@ -29220,10 +29220,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilityId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]
 
 ---
 
@@ -29487,7 +29487,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a></code> | *No description.* |
 
 ---
 
@@ -29558,10 +29558,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerabilityId]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerabilityId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>
 
 ---
 
@@ -29697,7 +29697,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]</code> | *No description.* |
 
 ---
 
@@ -29728,10 +29728,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerabilitySource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]
 
 ---
 
@@ -29995,7 +29995,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a></code> | *No description.* |
 
 ---
 
@@ -30066,10 +30066,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerabilitySource]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerabilitySource
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>
 
 ---
 
@@ -30205,7 +30205,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]</code> | *No description.* |
 
 ---
 
@@ -30236,10 +30236,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]
 
 ---
 
@@ -30503,7 +30503,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -30574,10 +30574,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>
 
 ---
 
@@ -30713,7 +30713,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]</code> | *No description.* |
 
 ---
 
@@ -30744,10 +30744,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]
 
 ---
 
@@ -31011,7 +31011,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusiveInput">upper_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a></code> | *No description.* |
 
 ---
 
@@ -31082,10 +31082,10 @@ upper_inclusive: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesEpoch
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>
 
 ---
 
@@ -31221,7 +31221,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]</code> | *No description.* |
 
 ---
 
@@ -31252,10 +31252,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]
 
 ---
 
@@ -31519,7 +31519,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a></code> | *No description.* |
 
 ---
 
@@ -31590,10 +31590,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesFilePath
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>
 
 ---
 
@@ -31729,7 +31729,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]</code> | *No description.* |
 
 ---
 
@@ -31760,10 +31760,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackages]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]
 
 ---
 
@@ -31899,7 +31899,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]</code> | *No description.* |
 
 ---
 
@@ -31930,10 +31930,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]
 
 ---
 
@@ -32197,7 +32197,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a></code> | *No description.* |
 
 ---
 
@@ -32268,10 +32268,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesName]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>
 
 ---
 
@@ -32544,13 +32544,13 @@ Returns a reversible string representation.
 
 ```python
 def put_architecture(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putArchitecture.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]
 
 ---
 
@@ -32558,13 +32558,13 @@ def put_architecture(
 
 ```python
 def put_epoch(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putEpoch.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]
 
 ---
 
@@ -32572,13 +32572,13 @@ def put_epoch(
 
 ```python
 def put_file_path(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putFilePath.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]
 
 ---
 
@@ -32586,13 +32586,13 @@ def put_file_path(
 
 ```python
 def put_name(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]
 
 ---
 
@@ -32600,13 +32600,13 @@ def put_name(
 
 ```python
 def put_release(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putRelease.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]
 
 ---
 
@@ -32614,13 +32614,13 @@ def put_release(
 
 ```python
 def put_source_lambda_layer_arn(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLambdaLayerArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]
 
 ---
 
@@ -32628,13 +32628,13 @@ def put_source_lambda_layer_arn(
 
 ```python
 def put_source_layer_hash(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLayerHash.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]
 
 ---
 
@@ -32642,13 +32642,13 @@ def put_source_layer_hash(
 
 ```python
 def put_version(
-  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]]
+  value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putVersion.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]
 
 ---
 
@@ -32715,15 +32715,15 @@ def reset_version() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArn">source_lambda_layer_arn</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHash">source_layer_hash</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.version">version</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList">Inspector2FilterFilterCriteriaVulnerablePackagesVersionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">architecture_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">epoch_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">file_path_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">release_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">source_lambda_layer_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">source_layer_hash_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">version_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">architecture_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">epoch_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">file_path_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">release_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">source_lambda_layer_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">source_layer_hash_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">version_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a></code> | *No description.* |
 
 ---
 
@@ -32834,90 +32834,90 @@ version: Inspector2FilterFilterCriteriaVulnerablePackagesVersionList
 ##### `architecture_input`<sup>Optional</sup> <a name="architecture_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput"></a>
 
 ```python
-architecture_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]]
+architecture_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>]
 
 ---
 
 ##### `epoch_input`<sup>Optional</sup> <a name="epoch_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput"></a>
 
 ```python
-epoch_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]]
+epoch_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesEpoch]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>]
 
 ---
 
 ##### `file_path_input`<sup>Optional</sup> <a name="file_path_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput"></a>
 
 ```python
-file_path_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]]
+file_path_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesFilePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>]
 
 ---
 
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput"></a>
 
 ```python
-name_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]]
+name_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>]
 
 ---
 
 ##### `release_input`<sup>Optional</sup> <a name="release_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput"></a>
 
 ```python
-release_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]]
+release_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]
 
 ---
 
 ##### `source_lambda_layer_arn_input`<sup>Optional</sup> <a name="source_lambda_layer_arn_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput"></a>
 
 ```python
-source_lambda_layer_arn_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]]
+source_lambda_layer_arn_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]
 
 ---
 
 ##### `source_layer_hash_input`<sup>Optional</sup> <a name="source_layer_hash_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput"></a>
 
 ```python
-source_layer_hash_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]]
+source_layer_hash_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]
 
 ---
 
 ##### `version_input`<sup>Optional</sup> <a name="version_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput"></a>
 
 ```python
-version_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]]
+version_input: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackages]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackages
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>
 
 ---
 
@@ -33053,7 +33053,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]</code> | *No description.* |
 
 ---
 
@@ -33084,10 +33084,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesRelease]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]
 
 ---
 
@@ -33351,7 +33351,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a></code> | *No description.* |
 
 ---
 
@@ -33422,10 +33422,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesRelease]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesRelease
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>
 
 ---
 
@@ -33561,7 +33561,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]</code> | *No description.* |
 
 ---
 
@@ -33592,10 +33592,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]
 
 ---
 
@@ -33859,7 +33859,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a></code> | *No description.* |
 
 ---
 
@@ -33930,10 +33930,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>
 
 ---
 
@@ -34069,7 +34069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]</code> | *No description.* |
 
 ---
 
@@ -34100,10 +34100,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]
 
 ---
 
@@ -34367,7 +34367,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a></code> | *No description.* |
 
 ---
 
@@ -34438,10 +34438,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>
 
 ---
 
@@ -34577,7 +34577,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]</code> | *No description.* |
 
 ---
 
@@ -34608,10 +34608,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]]
+internal_value: IResolvable | typing.List[Inspector2FilterFilterCriteriaVulnerablePackagesVersion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]
 
 ---
 
@@ -34875,7 +34875,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a></code> | *No description.* |
 
 ---
 
@@ -34946,10 +34946,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaVulnerablePackagesVersion]
+internal_value: IResolvable | Inspector2FilterFilterCriteriaVulnerablePackagesVersion
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>
 
 ---
 

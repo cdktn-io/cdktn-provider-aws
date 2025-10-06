@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_aws import securityhub_insight
 securityhubInsight.SecurityhubInsight(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   filters: SecurityhubInsightFilters,
   group_by_attribute: str,
   name: str,
@@ -33,13 +33,13 @@ securityhubInsight.SecurityhubInsight(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.filters">filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.groupByAttribute">group_by_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
@@ -68,13 +68,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -410,7 +410,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.importFrom"></a>
@@ -473,7 +473,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -489,7 +489,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -517,100 +517,100 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_filters(
-  aws_account_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersAwsAccountId]] = None,
-  company_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCompanyName]] = None,
-  compliance_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersComplianceStatus]] = None,
-  confidence: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersConfidence]] = None,
-  created_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCreatedAt]] = None,
-  criticality: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCriticality]] = None,
-  description: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersDescription]] = None,
-  finding_provider_fields_confidence: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]] = None,
-  finding_provider_fields_criticality: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]] = None,
-  finding_provider_fields_related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]] = None,
-  finding_provider_fields_related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]] = None,
-  finding_provider_fields_severity_label: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]] = None,
-  finding_provider_fields_severity_original: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]] = None,
-  finding_provider_fields_types: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]] = None,
-  first_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFirstObservedAt]] = None,
-  generator_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersGeneratorId]] = None,
-  id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersId]] = None,
-  keyword: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersKeyword]] = None,
-  last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersLastObservedAt]] = None,
-  malware_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareName]] = None,
-  malware_path: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwarePath]] = None,
-  malware_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareState]] = None,
-  malware_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareType]] = None,
-  network_destination_domain: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]] = None,
-  network_destination_ipv4: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]] = None,
-  network_destination_ipv6: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]] = None,
-  network_destination_port: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationPort]] = None,
-  network_direction: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDirection]] = None,
-  network_protocol: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkProtocol]] = None,
-  network_source_domain: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceDomain]] = None,
-  network_source_ipv4: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]] = None,
-  network_source_ipv6: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]] = None,
-  network_source_mac: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceMac]] = None,
-  network_source_port: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourcePort]] = None,
-  note_text: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteText]] = None,
-  note_updated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedAt]] = None,
-  note_updated_by: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedBy]] = None,
-  process_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessLaunchedAt]] = None,
-  process_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessName]] = None,
-  process_parent_pid: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessParentPid]] = None,
-  process_path: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPath]] = None,
-  process_pid: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPid]] = None,
-  process_terminated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessTerminatedAt]] = None,
-  product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductArn]] = None,
-  product_fields: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductFields]] = None,
-  product_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductName]] = None,
-  recommendation_text: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecommendationText]] = None,
-  record_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecordState]] = None,
-  related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsId]] = None,
-  related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]] = None,
-  resource_aws_ec2_instance_iam_instance_profile_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]] = None,
-  resource_aws_ec2_instance_image_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]] = None,
-  resource_aws_ec2_instance_ipv4_addresses: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]] = None,
-  resource_aws_ec2_instance_ipv6_addresses: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]] = None,
-  resource_aws_ec2_instance_key_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]] = None,
-  resource_aws_ec2_instance_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]] = None,
-  resource_aws_ec2_instance_subnet_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]] = None,
-  resource_aws_ec2_instance_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]] = None,
-  resource_aws_ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]] = None,
-  resource_aws_iam_access_key_created_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]] = None,
-  resource_aws_iam_access_key_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]] = None,
-  resource_aws_iam_access_key_user_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]] = None,
-  resource_aws_s3_bucket_owner_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]] = None,
-  resource_aws_s3_bucket_owner_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]] = None,
-  resource_container_image_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageId]] = None,
-  resource_container_image_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageName]] = None,
-  resource_container_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]] = None,
-  resource_container_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerName]] = None,
-  resource_details_other: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceDetailsOther]] = None,
-  resource_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceId]] = None,
-  resource_partition: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourcePartition]] = None,
-  resource_region: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceRegion]] = None,
-  resource_tags: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceTags]] = None,
-  resource_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceType]] = None,
-  severity_label: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSeverityLabel]] = None,
-  source_url: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSourceUrl]] = None,
-  threat_intel_indicator_category: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]] = None,
-  threat_intel_indicator_last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]] = None,
-  threat_intel_indicator_source: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]] = None,
-  threat_intel_indicator_source_url: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]] = None,
-  threat_intel_indicator_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]] = None,
-  threat_intel_indicator_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]] = None,
-  title: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersTitle]] = None,
-  type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersType]] = None,
-  updated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUpdatedAt]] = None,
-  user_defined_values: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUserDefinedValues]] = None,
-  verification_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersVerificationState]] = None,
-  workflow_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersWorkflowStatus]] = None
+  aws_account_id: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId] = None,
+  company_name: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName] = None,
+  compliance_status: IResolvable | typing.List[SecurityhubInsightFiltersComplianceStatus] = None,
+  confidence: IResolvable | typing.List[SecurityhubInsightFiltersConfidence] = None,
+  created_at: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt] = None,
+  criticality: IResolvable | typing.List[SecurityhubInsightFiltersCriticality] = None,
+  description: IResolvable | typing.List[SecurityhubInsightFiltersDescription] = None,
+  finding_provider_fields_confidence: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence] = None,
+  finding_provider_fields_criticality: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality] = None,
+  finding_provider_fields_related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId] = None,
+  finding_provider_fields_related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn] = None,
+  finding_provider_fields_severity_label: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel] = None,
+  finding_provider_fields_severity_original: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal] = None,
+  finding_provider_fields_types: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes] = None,
+  first_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersFirstObservedAt] = None,
+  generator_id: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId] = None,
+  id: IResolvable | typing.List[SecurityhubInsightFiltersId] = None,
+  keyword: IResolvable | typing.List[SecurityhubInsightFiltersKeyword] = None,
+  last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersLastObservedAt] = None,
+  malware_name: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName] = None,
+  malware_path: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath] = None,
+  malware_state: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState] = None,
+  malware_type: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType] = None,
+  network_destination_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationDomain] = None,
+  network_destination_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4] = None,
+  network_destination_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6] = None,
+  network_destination_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationPort] = None,
+  network_direction: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDirection] = None,
+  network_protocol: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProtocol] = None,
+  network_source_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceDomain] = None,
+  network_source_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv4] = None,
+  network_source_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv6] = None,
+  network_source_mac: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceMac] = None,
+  network_source_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourcePort] = None,
+  note_text: IResolvable | typing.List[SecurityhubInsightFiltersNoteText] = None,
+  note_updated_at: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedAt] = None,
+  note_updated_by: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedBy] = None,
+  process_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessLaunchedAt] = None,
+  process_name: IResolvable | typing.List[SecurityhubInsightFiltersProcessName] = None,
+  process_parent_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessParentPid] = None,
+  process_path: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath] = None,
+  process_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid] = None,
+  process_terminated_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessTerminatedAt] = None,
+  product_arn: IResolvable | typing.List[SecurityhubInsightFiltersProductArn] = None,
+  product_fields: IResolvable | typing.List[SecurityhubInsightFiltersProductFields] = None,
+  product_name: IResolvable | typing.List[SecurityhubInsightFiltersProductName] = None,
+  recommendation_text: IResolvable | typing.List[SecurityhubInsightFiltersRecommendationText] = None,
+  record_state: IResolvable | typing.List[SecurityhubInsightFiltersRecordState] = None,
+  related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsId] = None,
+  related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn] = None,
+  resource_aws_ec2_instance_iam_instance_profile_arn: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn] = None,
+  resource_aws_ec2_instance_image_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId] = None,
+  resource_aws_ec2_instance_ipv4_addresses: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses] = None,
+  resource_aws_ec2_instance_ipv6_addresses: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses] = None,
+  resource_aws_ec2_instance_key_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName] = None,
+  resource_aws_ec2_instance_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt] = None,
+  resource_aws_ec2_instance_subnet_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId] = None,
+  resource_aws_ec2_instance_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType] = None,
+  resource_aws_ec2_instance_vpc_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId] = None,
+  resource_aws_iam_access_key_created_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt] = None,
+  resource_aws_iam_access_key_status: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus] = None,
+  resource_aws_iam_access_key_user_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName] = None,
+  resource_aws_s3_bucket_owner_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId] = None,
+  resource_aws_s3_bucket_owner_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName] = None,
+  resource_container_image_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageId] = None,
+  resource_container_image_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageName] = None,
+  resource_container_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt] = None,
+  resource_container_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerName] = None,
+  resource_details_other: IResolvable | typing.List[SecurityhubInsightFiltersResourceDetailsOther] = None,
+  resource_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceId] = None,
+  resource_partition: IResolvable | typing.List[SecurityhubInsightFiltersResourcePartition] = None,
+  resource_region: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegion] = None,
+  resource_tags: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags] = None,
+  resource_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceType] = None,
+  severity_label: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel] = None,
+  source_url: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl] = None,
+  threat_intel_indicator_category: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory] = None,
+  threat_intel_indicator_last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt] = None,
+  threat_intel_indicator_source: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource] = None,
+  threat_intel_indicator_source_url: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl] = None,
+  threat_intel_indicator_type: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType] = None,
+  threat_intel_indicator_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue] = None,
+  title: IResolvable | typing.List[SecurityhubInsightFiltersTitle] = None,
+  type: IResolvable | typing.List[SecurityhubInsightFiltersType] = None,
+  updated_at: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt] = None,
+  user_defined_values: IResolvable | typing.List[SecurityhubInsightFiltersUserDefinedValues] = None,
+  verification_state: IResolvable | typing.List[SecurityhubInsightFiltersVerificationState] = None,
+  workflow_status: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStatus] = None
 ) -> None
 ```
 
 ###### `aws_account_id`<sup>Optional</sup> <a name="aws_account_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.awsAccountId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
 
 aws_account_id block.
 
@@ -620,7 +620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.companyName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
 
 company_name block.
 
@@ -630,7 +630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `compliance_status`<sup>Optional</sup> <a name="compliance_status" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.complianceStatus"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
 
 compliance_status block.
 
@@ -640,7 +640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `confidence`<sup>Optional</sup> <a name="confidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.confidence"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
 
 confidence block.
 
@@ -650,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `created_at`<sup>Optional</sup> <a name="created_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.createdAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
 
 created_at block.
 
@@ -660,7 +660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `criticality`<sup>Optional</sup> <a name="criticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.criticality"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
 
 criticality block.
 
@@ -670,7 +670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.description"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
 
 description block.
 
@@ -680,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_confidence`<sup>Optional</sup> <a name="finding_provider_fields_confidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsConfidence"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
 
 finding_provider_fields_confidence block.
 
@@ -690,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_criticality`<sup>Optional</sup> <a name="finding_provider_fields_criticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsCriticality"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
 
 finding_provider_fields_criticality block.
 
@@ -700,7 +700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_related_findings_id`<sup>Optional</sup> <a name="finding_provider_fields_related_findings_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsRelatedFindingsId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
 
 finding_provider_fields_related_findings_id block.
 
@@ -710,7 +710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_related_findings_product_arn`<sup>Optional</sup> <a name="finding_provider_fields_related_findings_product_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsRelatedFindingsProductArn"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
 
 finding_provider_fields_related_findings_product_arn block.
 
@@ -720,7 +720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_severity_label`<sup>Optional</sup> <a name="finding_provider_fields_severity_label" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsSeverityLabel"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
 
 finding_provider_fields_severity_label block.
 
@@ -730,7 +730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_severity_original`<sup>Optional</sup> <a name="finding_provider_fields_severity_original" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsSeverityOriginal"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
 
 finding_provider_fields_severity_original block.
 
@@ -740,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `finding_provider_fields_types`<sup>Optional</sup> <a name="finding_provider_fields_types" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.findingProviderFieldsTypes"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
 
 finding_provider_fields_types block.
 
@@ -750,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `first_observed_at`<sup>Optional</sup> <a name="first_observed_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.firstObservedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
 
 first_observed_at block.
 
@@ -760,7 +760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `generator_id`<sup>Optional</sup> <a name="generator_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.generatorId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
 
 generator_id block.
 
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.id"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
 
 id block.
 
@@ -783,7 +783,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ###### `keyword`<sup>Optional</sup> <a name="keyword" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.keyword"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
 
 keyword block.
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `last_observed_at`<sup>Optional</sup> <a name="last_observed_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.lastObservedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
 
 last_observed_at block.
 
@@ -803,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `malware_name`<sup>Optional</sup> <a name="malware_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.malwareName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
 
 malware_name block.
 
@@ -813,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `malware_path`<sup>Optional</sup> <a name="malware_path" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.malwarePath"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
 
 malware_path block.
 
@@ -823,7 +823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `malware_state`<sup>Optional</sup> <a name="malware_state" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.malwareState"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
 
 malware_state block.
 
@@ -833,7 +833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `malware_type`<sup>Optional</sup> <a name="malware_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.malwareType"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
 
 malware_type block.
 
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_destination_domain`<sup>Optional</sup> <a name="network_destination_domain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkDestinationDomain"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
 
 network_destination_domain block.
 
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_destination_ipv4`<sup>Optional</sup> <a name="network_destination_ipv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkDestinationIpv4"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
 
 network_destination_ipv4 block.
 
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_destination_ipv6`<sup>Optional</sup> <a name="network_destination_ipv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkDestinationIpv6"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
 
 network_destination_ipv6 block.
 
@@ -873,7 +873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_destination_port`<sup>Optional</sup> <a name="network_destination_port" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkDestinationPort"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
 
 network_destination_port block.
 
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_direction`<sup>Optional</sup> <a name="network_direction" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkDirection"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
 
 network_direction block.
 
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_protocol`<sup>Optional</sup> <a name="network_protocol" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkProtocol"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
 
 network_protocol block.
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_source_domain`<sup>Optional</sup> <a name="network_source_domain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkSourceDomain"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
 
 network_source_domain block.
 
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_source_ipv4`<sup>Optional</sup> <a name="network_source_ipv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkSourceIpv4"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
 
 network_source_ipv4 block.
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_source_ipv6`<sup>Optional</sup> <a name="network_source_ipv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkSourceIpv6"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
 
 network_source_ipv6 block.
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_source_mac`<sup>Optional</sup> <a name="network_source_mac" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkSourceMac"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
 
 network_source_mac block.
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `network_source_port`<sup>Optional</sup> <a name="network_source_port" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.networkSourcePort"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
 
 network_source_port block.
 
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `note_text`<sup>Optional</sup> <a name="note_text" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.noteText"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
 
 note_text block.
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `note_updated_at`<sup>Optional</sup> <a name="note_updated_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.noteUpdatedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
 
 note_updated_at block.
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `note_updated_by`<sup>Optional</sup> <a name="note_updated_by" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.noteUpdatedBy"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
 
 note_updated_by block.
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `process_launched_at`<sup>Optional</sup> <a name="process_launched_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.processLaunchedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
 
 process_launched_at block.
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `process_name`<sup>Optional</sup> <a name="process_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.processName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
 
 process_name block.
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `process_parent_pid`<sup>Optional</sup> <a name="process_parent_pid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.processParentPid"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
 
 process_parent_pid block.
 
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `process_path`<sup>Optional</sup> <a name="process_path" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.processPath"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
 
 process_path block.
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `process_pid`<sup>Optional</sup> <a name="process_pid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.processPid"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
 
 process_pid block.
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `process_terminated_at`<sup>Optional</sup> <a name="process_terminated_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.processTerminatedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
 
 process_terminated_at block.
 
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `product_arn`<sup>Optional</sup> <a name="product_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.productArn"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
 
 product_arn block.
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `product_fields`<sup>Optional</sup> <a name="product_fields" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.productFields"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
 
 product_fields block.
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `product_name`<sup>Optional</sup> <a name="product_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.productName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
 
 product_name block.
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `recommendation_text`<sup>Optional</sup> <a name="recommendation_text" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.recommendationText"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
 
 recommendation_text block.
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `record_state`<sup>Optional</sup> <a name="record_state" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.recordState"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
 
 record_state block.
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `related_findings_id`<sup>Optional</sup> <a name="related_findings_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.relatedFindingsId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
 
 related_findings_id block.
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `related_findings_product_arn`<sup>Optional</sup> <a name="related_findings_product_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.relatedFindingsProductArn"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
 
 related_findings_product_arn block.
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_iam_instance_profile_arn`<sup>Optional</sup> <a name="resource_aws_ec2_instance_iam_instance_profile_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceIamInstanceProfileArn"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_image_id`<sup>Optional</sup> <a name="resource_aws_ec2_instance_image_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceImageId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
 
 resource_aws_ec2_instance_image_id block.
 
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_ipv4_addresses`<sup>Optional</sup> <a name="resource_aws_ec2_instance_ipv4_addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceIpv4Addresses"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_ipv6_addresses`<sup>Optional</sup> <a name="resource_aws_ec2_instance_ipv6_addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceIpv6Addresses"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_key_name`<sup>Optional</sup> <a name="resource_aws_ec2_instance_key_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceKeyName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
 
 resource_aws_ec2_instance_key_name block.
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_launched_at`<sup>Optional</sup> <a name="resource_aws_ec2_instance_launched_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceLaunchedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
 
 resource_aws_ec2_instance_launched_at block.
 
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_subnet_id`<sup>Optional</sup> <a name="resource_aws_ec2_instance_subnet_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceSubnetId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
 
 resource_aws_ec2_instance_subnet_id block.
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_type`<sup>Optional</sup> <a name="resource_aws_ec2_instance_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceType"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
 
 resource_aws_ec2_instance_type block.
 
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_ec2_instance_vpc_id`<sup>Optional</sup> <a name="resource_aws_ec2_instance_vpc_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsEc2InstanceVpcId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
 
 resource_aws_ec2_instance_vpc_id block.
 
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_iam_access_key_created_at`<sup>Optional</sup> <a name="resource_aws_iam_access_key_created_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsIamAccessKeyCreatedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
 
 resource_aws_iam_access_key_created_at block.
 
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_iam_access_key_status`<sup>Optional</sup> <a name="resource_aws_iam_access_key_status" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsIamAccessKeyStatus"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
 
 resource_aws_iam_access_key_status block.
 
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_iam_access_key_user_name`<sup>Optional</sup> <a name="resource_aws_iam_access_key_user_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsIamAccessKeyUserName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
 
 resource_aws_iam_access_key_user_name block.
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_s3_bucket_owner_id`<sup>Optional</sup> <a name="resource_aws_s3_bucket_owner_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsS3BucketOwnerId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
 
 resource_aws_s3_bucket_owner_id block.
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_aws_s3_bucket_owner_name`<sup>Optional</sup> <a name="resource_aws_s3_bucket_owner_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceAwsS3BucketOwnerName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
 
 resource_aws_s3_bucket_owner_name block.
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_container_image_id`<sup>Optional</sup> <a name="resource_container_image_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceContainerImageId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
 
 resource_container_image_id block.
 
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_container_image_name`<sup>Optional</sup> <a name="resource_container_image_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceContainerImageName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
 
 resource_container_image_name block.
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_container_launched_at`<sup>Optional</sup> <a name="resource_container_launched_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceContainerLaunchedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
 
 resource_container_launched_at block.
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_container_name`<sup>Optional</sup> <a name="resource_container_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceContainerName"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
 
 resource_container_name block.
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_details_other`<sup>Optional</sup> <a name="resource_details_other" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceDetailsOther"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
 
 resource_details_other block.
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_id`<sup>Optional</sup> <a name="resource_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceId"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
 
 resource_id block.
 
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_partition`<sup>Optional</sup> <a name="resource_partition" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourcePartition"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
 
 resource_partition block.
 
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_region`<sup>Optional</sup> <a name="resource_region" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceRegion"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
 
 resource_region block.
 
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_tags`<sup>Optional</sup> <a name="resource_tags" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceTags"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
 
 resource_tags block.
 
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.resourceType"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
 
 resource_type block.
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `severity_label`<sup>Optional</sup> <a name="severity_label" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.severityLabel"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
 
 severity_label block.
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `source_url`<sup>Optional</sup> <a name="source_url" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.sourceUrl"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
 
 source_url block.
 
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `threat_intel_indicator_category`<sup>Optional</sup> <a name="threat_intel_indicator_category" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.threatIntelIndicatorCategory"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
 
 threat_intel_indicator_category block.
 
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `threat_intel_indicator_last_observed_at`<sup>Optional</sup> <a name="threat_intel_indicator_last_observed_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.threatIntelIndicatorLastObservedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
 
 threat_intel_indicator_last_observed_at block.
 
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `threat_intel_indicator_source`<sup>Optional</sup> <a name="threat_intel_indicator_source" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.threatIntelIndicatorSource"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
 
 threat_intel_indicator_source block.
 
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `threat_intel_indicator_source_url`<sup>Optional</sup> <a name="threat_intel_indicator_source_url" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.threatIntelIndicatorSourceUrl"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
 
 threat_intel_indicator_source_url block.
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `threat_intel_indicator_type`<sup>Optional</sup> <a name="threat_intel_indicator_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.threatIntelIndicatorType"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
 
 threat_intel_indicator_type block.
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `threat_intel_indicator_value`<sup>Optional</sup> <a name="threat_intel_indicator_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.threatIntelIndicatorValue"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
 
 threat_intel_indicator_value block.
 
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.title"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
 
 title block.
 
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.type"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
 
 type block.
 
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `updated_at`<sup>Optional</sup> <a name="updated_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.updatedAt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
 
 updated_at block.
 
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `user_defined_values`<sup>Optional</sup> <a name="user_defined_values" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.userDefinedValues"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
 
 user_defined_values block.
 
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `verification_state`<sup>Optional</sup> <a name="verification_state" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.verificationState"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
 
 verification_state block.
 
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `workflow_status`<sup>Optional</sup> <a name="workflow_status" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters.parameter.workflowStatus"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
 
 workflow_status block.
 
@@ -1640,13 +1640,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference">SecurityhubInsightFiltersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.filtersInput">filters_input</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | *No description.* |
@@ -1736,20 +1736,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1796,10 +1796,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1941,13 +1941,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import securityhub_insight
 
 securityhubInsight.SecurityhubInsightConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   filters: SecurityhubInsightFilters,
   group_by_attribute: str,
   name: str,
@@ -1960,13 +1960,13 @@ securityhubInsight.SecurityhubInsightConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">group_by_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
@@ -1978,20 +1978,20 @@ securityhubInsight.SecurityhubInsightConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2038,10 +2038,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2120,94 +2120,94 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_insight
 
 securityhubInsight.SecurityhubInsightFilters(
-  aws_account_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersAwsAccountId]] = None,
-  company_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCompanyName]] = None,
-  compliance_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersComplianceStatus]] = None,
-  confidence: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersConfidence]] = None,
-  created_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCreatedAt]] = None,
-  criticality: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCriticality]] = None,
-  description: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersDescription]] = None,
-  finding_provider_fields_confidence: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]] = None,
-  finding_provider_fields_criticality: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]] = None,
-  finding_provider_fields_related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]] = None,
-  finding_provider_fields_related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]] = None,
-  finding_provider_fields_severity_label: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]] = None,
-  finding_provider_fields_severity_original: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]] = None,
-  finding_provider_fields_types: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]] = None,
-  first_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFirstObservedAt]] = None,
-  generator_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersGeneratorId]] = None,
-  id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersId]] = None,
-  keyword: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersKeyword]] = None,
-  last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersLastObservedAt]] = None,
-  malware_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareName]] = None,
-  malware_path: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwarePath]] = None,
-  malware_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareState]] = None,
-  malware_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareType]] = None,
-  network_destination_domain: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]] = None,
-  network_destination_ipv4: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]] = None,
-  network_destination_ipv6: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]] = None,
-  network_destination_port: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationPort]] = None,
-  network_direction: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDirection]] = None,
-  network_protocol: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkProtocol]] = None,
-  network_source_domain: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceDomain]] = None,
-  network_source_ipv4: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]] = None,
-  network_source_ipv6: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]] = None,
-  network_source_mac: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceMac]] = None,
-  network_source_port: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourcePort]] = None,
-  note_text: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteText]] = None,
-  note_updated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedAt]] = None,
-  note_updated_by: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedBy]] = None,
-  process_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessLaunchedAt]] = None,
-  process_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessName]] = None,
-  process_parent_pid: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessParentPid]] = None,
-  process_path: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPath]] = None,
-  process_pid: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPid]] = None,
-  process_terminated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessTerminatedAt]] = None,
-  product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductArn]] = None,
-  product_fields: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductFields]] = None,
-  product_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductName]] = None,
-  recommendation_text: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecommendationText]] = None,
-  record_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecordState]] = None,
-  related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsId]] = None,
-  related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]] = None,
-  resource_aws_ec2_instance_iam_instance_profile_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]] = None,
-  resource_aws_ec2_instance_image_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]] = None,
-  resource_aws_ec2_instance_ipv4_addresses: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]] = None,
-  resource_aws_ec2_instance_ipv6_addresses: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]] = None,
-  resource_aws_ec2_instance_key_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]] = None,
-  resource_aws_ec2_instance_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]] = None,
-  resource_aws_ec2_instance_subnet_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]] = None,
-  resource_aws_ec2_instance_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]] = None,
-  resource_aws_ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]] = None,
-  resource_aws_iam_access_key_created_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]] = None,
-  resource_aws_iam_access_key_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]] = None,
-  resource_aws_iam_access_key_user_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]] = None,
-  resource_aws_s3_bucket_owner_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]] = None,
-  resource_aws_s3_bucket_owner_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]] = None,
-  resource_container_image_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageId]] = None,
-  resource_container_image_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageName]] = None,
-  resource_container_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]] = None,
-  resource_container_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerName]] = None,
-  resource_details_other: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceDetailsOther]] = None,
-  resource_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceId]] = None,
-  resource_partition: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourcePartition]] = None,
-  resource_region: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceRegion]] = None,
-  resource_tags: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceTags]] = None,
-  resource_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceType]] = None,
-  severity_label: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSeverityLabel]] = None,
-  source_url: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSourceUrl]] = None,
-  threat_intel_indicator_category: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]] = None,
-  threat_intel_indicator_last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]] = None,
-  threat_intel_indicator_source: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]] = None,
-  threat_intel_indicator_source_url: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]] = None,
-  threat_intel_indicator_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]] = None,
-  threat_intel_indicator_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]] = None,
-  title: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersTitle]] = None,
-  type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersType]] = None,
-  updated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUpdatedAt]] = None,
-  user_defined_values: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUserDefinedValues]] = None,
-  verification_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersVerificationState]] = None,
-  workflow_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersWorkflowStatus]] = None
+  aws_account_id: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId] = None,
+  company_name: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName] = None,
+  compliance_status: IResolvable | typing.List[SecurityhubInsightFiltersComplianceStatus] = None,
+  confidence: IResolvable | typing.List[SecurityhubInsightFiltersConfidence] = None,
+  created_at: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt] = None,
+  criticality: IResolvable | typing.List[SecurityhubInsightFiltersCriticality] = None,
+  description: IResolvable | typing.List[SecurityhubInsightFiltersDescription] = None,
+  finding_provider_fields_confidence: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence] = None,
+  finding_provider_fields_criticality: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality] = None,
+  finding_provider_fields_related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId] = None,
+  finding_provider_fields_related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn] = None,
+  finding_provider_fields_severity_label: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel] = None,
+  finding_provider_fields_severity_original: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal] = None,
+  finding_provider_fields_types: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes] = None,
+  first_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersFirstObservedAt] = None,
+  generator_id: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId] = None,
+  id: IResolvable | typing.List[SecurityhubInsightFiltersId] = None,
+  keyword: IResolvable | typing.List[SecurityhubInsightFiltersKeyword] = None,
+  last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersLastObservedAt] = None,
+  malware_name: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName] = None,
+  malware_path: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath] = None,
+  malware_state: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState] = None,
+  malware_type: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType] = None,
+  network_destination_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationDomain] = None,
+  network_destination_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4] = None,
+  network_destination_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6] = None,
+  network_destination_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationPort] = None,
+  network_direction: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDirection] = None,
+  network_protocol: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProtocol] = None,
+  network_source_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceDomain] = None,
+  network_source_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv4] = None,
+  network_source_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv6] = None,
+  network_source_mac: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceMac] = None,
+  network_source_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourcePort] = None,
+  note_text: IResolvable | typing.List[SecurityhubInsightFiltersNoteText] = None,
+  note_updated_at: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedAt] = None,
+  note_updated_by: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedBy] = None,
+  process_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessLaunchedAt] = None,
+  process_name: IResolvable | typing.List[SecurityhubInsightFiltersProcessName] = None,
+  process_parent_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessParentPid] = None,
+  process_path: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath] = None,
+  process_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid] = None,
+  process_terminated_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessTerminatedAt] = None,
+  product_arn: IResolvable | typing.List[SecurityhubInsightFiltersProductArn] = None,
+  product_fields: IResolvable | typing.List[SecurityhubInsightFiltersProductFields] = None,
+  product_name: IResolvable | typing.List[SecurityhubInsightFiltersProductName] = None,
+  recommendation_text: IResolvable | typing.List[SecurityhubInsightFiltersRecommendationText] = None,
+  record_state: IResolvable | typing.List[SecurityhubInsightFiltersRecordState] = None,
+  related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsId] = None,
+  related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn] = None,
+  resource_aws_ec2_instance_iam_instance_profile_arn: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn] = None,
+  resource_aws_ec2_instance_image_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId] = None,
+  resource_aws_ec2_instance_ipv4_addresses: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses] = None,
+  resource_aws_ec2_instance_ipv6_addresses: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses] = None,
+  resource_aws_ec2_instance_key_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName] = None,
+  resource_aws_ec2_instance_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt] = None,
+  resource_aws_ec2_instance_subnet_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId] = None,
+  resource_aws_ec2_instance_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType] = None,
+  resource_aws_ec2_instance_vpc_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId] = None,
+  resource_aws_iam_access_key_created_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt] = None,
+  resource_aws_iam_access_key_status: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus] = None,
+  resource_aws_iam_access_key_user_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName] = None,
+  resource_aws_s3_bucket_owner_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId] = None,
+  resource_aws_s3_bucket_owner_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName] = None,
+  resource_container_image_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageId] = None,
+  resource_container_image_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageName] = None,
+  resource_container_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt] = None,
+  resource_container_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerName] = None,
+  resource_details_other: IResolvable | typing.List[SecurityhubInsightFiltersResourceDetailsOther] = None,
+  resource_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceId] = None,
+  resource_partition: IResolvable | typing.List[SecurityhubInsightFiltersResourcePartition] = None,
+  resource_region: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegion] = None,
+  resource_tags: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags] = None,
+  resource_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceType] = None,
+  severity_label: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel] = None,
+  source_url: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl] = None,
+  threat_intel_indicator_category: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory] = None,
+  threat_intel_indicator_last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt] = None,
+  threat_intel_indicator_source: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource] = None,
+  threat_intel_indicator_source_url: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl] = None,
+  threat_intel_indicator_type: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType] = None,
+  threat_intel_indicator_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue] = None,
+  title: IResolvable | typing.List[SecurityhubInsightFiltersTitle] = None,
+  type: IResolvable | typing.List[SecurityhubInsightFiltersType] = None,
+  updated_at: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt] = None,
+  user_defined_values: IResolvable | typing.List[SecurityhubInsightFiltersUserDefinedValues] = None,
+  verification_state: IResolvable | typing.List[SecurityhubInsightFiltersVerificationState] = None,
+  workflow_status: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStatus] = None
 )
 ```
 
@@ -2215,104 +2215,104 @@ securityhubInsight.SecurityhubInsightFilters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId">aws_account_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]</code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName">company_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]</code> | company_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus">compliance_status</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]</code> | compliance_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence">confidence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]</code> | confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt">created_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]</code> | created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality">criticality</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]</code> | criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description">description</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]</code> | description block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence">finding_provider_fields_confidence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]</code> | finding_provider_fields_confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality">finding_provider_fields_criticality</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]</code> | finding_provider_fields_criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId">finding_provider_fields_related_findings_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]</code> | finding_provider_fields_related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn">finding_provider_fields_related_findings_product_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]</code> | finding_provider_fields_related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel">finding_provider_fields_severity_label</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]</code> | finding_provider_fields_severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal">finding_provider_fields_severity_original</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]</code> | finding_provider_fields_severity_original block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes">finding_provider_fields_types</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]</code> | finding_provider_fields_types block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt">first_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]</code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId">generator_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]</code> | generator_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id">id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]</code> | id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword">keyword</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]</code> | keyword block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt">last_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]</code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName">malware_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]</code> | malware_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath">malware_path</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]</code> | malware_path block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState">malware_state</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]</code> | malware_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType">malware_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]</code> | malware_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain">network_destination_domain</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]</code> | network_destination_domain block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4">network_destination_ipv4</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]</code> | network_destination_ipv4 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6">network_destination_ipv6</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]</code> | network_destination_ipv6 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort">network_destination_port</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]</code> | network_destination_port block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection">network_direction</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]</code> | network_direction block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol">network_protocol</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]</code> | network_protocol block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain">network_source_domain</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]</code> | network_source_domain block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4">network_source_ipv4</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]</code> | network_source_ipv4 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6">network_source_ipv6</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]</code> | network_source_ipv6 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac">network_source_mac</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]</code> | network_source_mac block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort">network_source_port</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]</code> | network_source_port block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText">note_text</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]</code> | note_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt">note_updated_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]</code> | note_updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy">note_updated_by</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]</code> | note_updated_by block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt">process_launched_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]</code> | process_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName">process_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]</code> | process_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid">process_parent_pid</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]</code> | process_parent_pid block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath">process_path</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]</code> | process_path block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid">process_pid</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]</code> | process_pid block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt">process_terminated_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]</code> | process_terminated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn">product_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]</code> | product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields">product_fields</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]</code> | product_fields block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName">product_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]</code> | product_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText">recommendation_text</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]</code> | recommendation_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState">record_state</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]</code> | record_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId">related_findings_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]</code> | related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn">related_findings_product_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]</code> | related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn">resource_aws_ec2_instance_iam_instance_profile_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]</code> | resource_aws_ec2_instance_iam_instance_profile_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId">resource_aws_ec2_instance_image_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]</code> | resource_aws_ec2_instance_image_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses">resource_aws_ec2_instance_ipv4_addresses</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]</code> | resource_aws_ec2_instance_ipv4_addresses block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses">resource_aws_ec2_instance_ipv6_addresses</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]</code> | resource_aws_ec2_instance_ipv6_addresses block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName">resource_aws_ec2_instance_key_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]</code> | resource_aws_ec2_instance_key_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt">resource_aws_ec2_instance_launched_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]</code> | resource_aws_ec2_instance_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId">resource_aws_ec2_instance_subnet_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]</code> | resource_aws_ec2_instance_subnet_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType">resource_aws_ec2_instance_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]</code> | resource_aws_ec2_instance_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId">resource_aws_ec2_instance_vpc_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]</code> | resource_aws_ec2_instance_vpc_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt">resource_aws_iam_access_key_created_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]</code> | resource_aws_iam_access_key_created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus">resource_aws_iam_access_key_status</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]</code> | resource_aws_iam_access_key_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName">resource_aws_iam_access_key_user_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]</code> | resource_aws_iam_access_key_user_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId">resource_aws_s3_bucket_owner_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]</code> | resource_aws_s3_bucket_owner_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName">resource_aws_s3_bucket_owner_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]</code> | resource_aws_s3_bucket_owner_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId">resource_container_image_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]</code> | resource_container_image_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName">resource_container_image_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]</code> | resource_container_image_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt">resource_container_launched_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]</code> | resource_container_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName">resource_container_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]</code> | resource_container_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther">resource_details_other</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]</code> | resource_details_other block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId">resource_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]</code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition">resource_partition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]</code> | resource_partition block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion">resource_region</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]</code> | resource_region block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags">resource_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]</code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType">resource_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]</code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel">severity_label</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]</code> | severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl">source_url</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]</code> | source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory">threat_intel_indicator_category</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]</code> | threat_intel_indicator_category block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt">threat_intel_indicator_last_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]</code> | threat_intel_indicator_last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource">threat_intel_indicator_source</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]</code> | threat_intel_indicator_source block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl">threat_intel_indicator_source_url</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]</code> | threat_intel_indicator_source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType">threat_intel_indicator_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]</code> | threat_intel_indicator_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue">threat_intel_indicator_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]</code> | threat_intel_indicator_value block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title">title</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]</code> | title block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type">type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]</code> | type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt">updated_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]</code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues">user_defined_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]</code> | user_defined_values block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState">verification_state</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]</code> | verification_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus">workflow_status</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]</code> | workflow_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId">aws_account_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]</code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName">company_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]</code> | company_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus">compliance_status</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]</code> | compliance_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence">confidence</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]</code> | confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt">created_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]</code> | created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality">criticality</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]</code> | criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description">description</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]</code> | description block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence">finding_provider_fields_confidence</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]</code> | finding_provider_fields_confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality">finding_provider_fields_criticality</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]</code> | finding_provider_fields_criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId">finding_provider_fields_related_findings_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]</code> | finding_provider_fields_related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn">finding_provider_fields_related_findings_product_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]</code> | finding_provider_fields_related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel">finding_provider_fields_severity_label</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]</code> | finding_provider_fields_severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal">finding_provider_fields_severity_original</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]</code> | finding_provider_fields_severity_original block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes">finding_provider_fields_types</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]</code> | finding_provider_fields_types block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt">first_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]</code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId">generator_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]</code> | generator_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id">id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]</code> | id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword">keyword</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]</code> | keyword block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt">last_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]</code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName">malware_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]</code> | malware_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath">malware_path</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]</code> | malware_path block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState">malware_state</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]</code> | malware_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType">malware_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]</code> | malware_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain">network_destination_domain</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]</code> | network_destination_domain block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4">network_destination_ipv4</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]</code> | network_destination_ipv4 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6">network_destination_ipv6</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]</code> | network_destination_ipv6 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort">network_destination_port</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]</code> | network_destination_port block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection">network_direction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]</code> | network_direction block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol">network_protocol</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]</code> | network_protocol block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain">network_source_domain</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]</code> | network_source_domain block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4">network_source_ipv4</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]</code> | network_source_ipv4 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6">network_source_ipv6</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]</code> | network_source_ipv6 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac">network_source_mac</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]</code> | network_source_mac block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort">network_source_port</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]</code> | network_source_port block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText">note_text</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]</code> | note_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt">note_updated_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]</code> | note_updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy">note_updated_by</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]</code> | note_updated_by block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt">process_launched_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]</code> | process_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName">process_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]</code> | process_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid">process_parent_pid</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]</code> | process_parent_pid block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath">process_path</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]</code> | process_path block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid">process_pid</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]</code> | process_pid block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt">process_terminated_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]</code> | process_terminated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn">product_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]</code> | product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields">product_fields</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]</code> | product_fields block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName">product_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]</code> | product_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText">recommendation_text</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]</code> | recommendation_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState">record_state</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]</code> | record_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId">related_findings_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]</code> | related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn">related_findings_product_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]</code> | related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn">resource_aws_ec2_instance_iam_instance_profile_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]</code> | resource_aws_ec2_instance_iam_instance_profile_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId">resource_aws_ec2_instance_image_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]</code> | resource_aws_ec2_instance_image_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses">resource_aws_ec2_instance_ipv4_addresses</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]</code> | resource_aws_ec2_instance_ipv4_addresses block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses">resource_aws_ec2_instance_ipv6_addresses</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]</code> | resource_aws_ec2_instance_ipv6_addresses block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName">resource_aws_ec2_instance_key_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]</code> | resource_aws_ec2_instance_key_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt">resource_aws_ec2_instance_launched_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]</code> | resource_aws_ec2_instance_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId">resource_aws_ec2_instance_subnet_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]</code> | resource_aws_ec2_instance_subnet_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType">resource_aws_ec2_instance_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]</code> | resource_aws_ec2_instance_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId">resource_aws_ec2_instance_vpc_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]</code> | resource_aws_ec2_instance_vpc_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt">resource_aws_iam_access_key_created_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]</code> | resource_aws_iam_access_key_created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus">resource_aws_iam_access_key_status</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]</code> | resource_aws_iam_access_key_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName">resource_aws_iam_access_key_user_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]</code> | resource_aws_iam_access_key_user_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId">resource_aws_s3_bucket_owner_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]</code> | resource_aws_s3_bucket_owner_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName">resource_aws_s3_bucket_owner_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]</code> | resource_aws_s3_bucket_owner_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId">resource_container_image_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]</code> | resource_container_image_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName">resource_container_image_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]</code> | resource_container_image_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt">resource_container_launched_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]</code> | resource_container_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName">resource_container_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]</code> | resource_container_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther">resource_details_other</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]</code> | resource_details_other block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId">resource_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]</code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition">resource_partition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]</code> | resource_partition block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion">resource_region</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]</code> | resource_region block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags">resource_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]</code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType">resource_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]</code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel">severity_label</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]</code> | severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl">source_url</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]</code> | source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory">threat_intel_indicator_category</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]</code> | threat_intel_indicator_category block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt">threat_intel_indicator_last_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]</code> | threat_intel_indicator_last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource">threat_intel_indicator_source</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]</code> | threat_intel_indicator_source block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl">threat_intel_indicator_source_url</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]</code> | threat_intel_indicator_source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType">threat_intel_indicator_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]</code> | threat_intel_indicator_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue">threat_intel_indicator_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]</code> | threat_intel_indicator_value block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title">title</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]</code> | title block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type">type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]</code> | type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt">updated_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]</code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues">user_defined_values</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]</code> | user_defined_values block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState">verification_state</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]</code> | verification_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus">workflow_status</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]</code> | workflow_status block. |
 
 ---
 
 ##### `aws_account_id`<sup>Optional</sup> <a name="aws_account_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId"></a>
 
 ```python
-aws_account_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersAwsAccountId]]
+aws_account_id: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
 
 aws_account_id block.
 
@@ -2323,10 +2323,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName"></a>
 
 ```python
-company_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCompanyName]]
+company_name: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
 
 company_name block.
 
@@ -2337,10 +2337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `compliance_status`<sup>Optional</sup> <a name="compliance_status" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus"></a>
 
 ```python
-compliance_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersComplianceStatus]]
+compliance_status: IResolvable | typing.List[SecurityhubInsightFiltersComplianceStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
 
 compliance_status block.
 
@@ -2351,10 +2351,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `confidence`<sup>Optional</sup> <a name="confidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence"></a>
 
 ```python
-confidence: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersConfidence]]
+confidence: IResolvable | typing.List[SecurityhubInsightFiltersConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
 
 confidence block.
 
@@ -2365,10 +2365,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `created_at`<sup>Optional</sup> <a name="created_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt"></a>
 
 ```python
-created_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCreatedAt]]
+created_at: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
 
 created_at block.
 
@@ -2379,10 +2379,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `criticality`<sup>Optional</sup> <a name="criticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality"></a>
 
 ```python
-criticality: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCriticality]]
+criticality: IResolvable | typing.List[SecurityhubInsightFiltersCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
 
 criticality block.
 
@@ -2393,10 +2393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description"></a>
 
 ```python
-description: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersDescription]]
+description: IResolvable | typing.List[SecurityhubInsightFiltersDescription]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
 
 description block.
 
@@ -2407,10 +2407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_confidence`<sup>Optional</sup> <a name="finding_provider_fields_confidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence"></a>
 
 ```python
-finding_provider_fields_confidence: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]]
+finding_provider_fields_confidence: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
 
 finding_provider_fields_confidence block.
 
@@ -2421,10 +2421,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_criticality`<sup>Optional</sup> <a name="finding_provider_fields_criticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality"></a>
 
 ```python
-finding_provider_fields_criticality: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]]
+finding_provider_fields_criticality: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
 
 finding_provider_fields_criticality block.
 
@@ -2435,10 +2435,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_related_findings_id`<sup>Optional</sup> <a name="finding_provider_fields_related_findings_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId"></a>
 
 ```python
-finding_provider_fields_related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]]
+finding_provider_fields_related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
 
 finding_provider_fields_related_findings_id block.
 
@@ -2449,10 +2449,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_related_findings_product_arn`<sup>Optional</sup> <a name="finding_provider_fields_related_findings_product_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn"></a>
 
 ```python
-finding_provider_fields_related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]]
+finding_provider_fields_related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
 
 finding_provider_fields_related_findings_product_arn block.
 
@@ -2463,10 +2463,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_severity_label`<sup>Optional</sup> <a name="finding_provider_fields_severity_label" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel"></a>
 
 ```python
-finding_provider_fields_severity_label: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]]
+finding_provider_fields_severity_label: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
 
 finding_provider_fields_severity_label block.
 
@@ -2477,10 +2477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_severity_original`<sup>Optional</sup> <a name="finding_provider_fields_severity_original" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal"></a>
 
 ```python
-finding_provider_fields_severity_original: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]]
+finding_provider_fields_severity_original: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
 
 finding_provider_fields_severity_original block.
 
@@ -2491,10 +2491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `finding_provider_fields_types`<sup>Optional</sup> <a name="finding_provider_fields_types" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes"></a>
 
 ```python
-finding_provider_fields_types: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]]
+finding_provider_fields_types: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
 
 finding_provider_fields_types block.
 
@@ -2505,10 +2505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `first_observed_at`<sup>Optional</sup> <a name="first_observed_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt"></a>
 
 ```python
-first_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFirstObservedAt]]
+first_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
 
 first_observed_at block.
 
@@ -2519,10 +2519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `generator_id`<sup>Optional</sup> <a name="generator_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId"></a>
 
 ```python
-generator_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersGeneratorId]]
+generator_id: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
 
 generator_id block.
 
@@ -2533,10 +2533,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id"></a>
 
 ```python
-id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersId]]
+id: IResolvable | typing.List[SecurityhubInsightFiltersId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
 
 id block.
 
@@ -2550,10 +2550,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `keyword`<sup>Optional</sup> <a name="keyword" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword"></a>
 
 ```python
-keyword: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersKeyword]]
+keyword: IResolvable | typing.List[SecurityhubInsightFiltersKeyword]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
 
 keyword block.
 
@@ -2564,10 +2564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `last_observed_at`<sup>Optional</sup> <a name="last_observed_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt"></a>
 
 ```python
-last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersLastObservedAt]]
+last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
 
 last_observed_at block.
 
@@ -2578,10 +2578,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malware_name`<sup>Optional</sup> <a name="malware_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName"></a>
 
 ```python
-malware_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareName]]
+malware_name: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
 
 malware_name block.
 
@@ -2592,10 +2592,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malware_path`<sup>Optional</sup> <a name="malware_path" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath"></a>
 
 ```python
-malware_path: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwarePath]]
+malware_path: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
 
 malware_path block.
 
@@ -2606,10 +2606,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malware_state`<sup>Optional</sup> <a name="malware_state" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState"></a>
 
 ```python
-malware_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareState]]
+malware_state: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
 
 malware_state block.
 
@@ -2620,10 +2620,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malware_type`<sup>Optional</sup> <a name="malware_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType"></a>
 
 ```python
-malware_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareType]]
+malware_type: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
 
 malware_type block.
 
@@ -2634,10 +2634,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_destination_domain`<sup>Optional</sup> <a name="network_destination_domain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain"></a>
 
 ```python
-network_destination_domain: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]]
+network_destination_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
 
 network_destination_domain block.
 
@@ -2648,10 +2648,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_destination_ipv4`<sup>Optional</sup> <a name="network_destination_ipv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4"></a>
 
 ```python
-network_destination_ipv4: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]]
+network_destination_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
 
 network_destination_ipv4 block.
 
@@ -2662,10 +2662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_destination_ipv6`<sup>Optional</sup> <a name="network_destination_ipv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6"></a>
 
 ```python
-network_destination_ipv6: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]]
+network_destination_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
 
 network_destination_ipv6 block.
 
@@ -2676,10 +2676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_destination_port`<sup>Optional</sup> <a name="network_destination_port" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort"></a>
 
 ```python
-network_destination_port: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationPort]]
+network_destination_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationPort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
 
 network_destination_port block.
 
@@ -2690,10 +2690,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_direction`<sup>Optional</sup> <a name="network_direction" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection"></a>
 
 ```python
-network_direction: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDirection]]
+network_direction: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDirection]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
 
 network_direction block.
 
@@ -2704,10 +2704,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_protocol`<sup>Optional</sup> <a name="network_protocol" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol"></a>
 
 ```python
-network_protocol: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkProtocol]]
+network_protocol: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProtocol]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
 
 network_protocol block.
 
@@ -2718,10 +2718,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_source_domain`<sup>Optional</sup> <a name="network_source_domain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain"></a>
 
 ```python
-network_source_domain: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceDomain]]
+network_source_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
 
 network_source_domain block.
 
@@ -2732,10 +2732,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_source_ipv4`<sup>Optional</sup> <a name="network_source_ipv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4"></a>
 
 ```python
-network_source_ipv4: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]]
+network_source_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
 
 network_source_ipv4 block.
 
@@ -2746,10 +2746,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_source_ipv6`<sup>Optional</sup> <a name="network_source_ipv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6"></a>
 
 ```python
-network_source_ipv6: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]]
+network_source_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
 
 network_source_ipv6 block.
 
@@ -2760,10 +2760,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_source_mac`<sup>Optional</sup> <a name="network_source_mac" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac"></a>
 
 ```python
-network_source_mac: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceMac]]
+network_source_mac: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceMac]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
 
 network_source_mac block.
 
@@ -2774,10 +2774,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `network_source_port`<sup>Optional</sup> <a name="network_source_port" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort"></a>
 
 ```python
-network_source_port: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourcePort]]
+network_source_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourcePort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
 
 network_source_port block.
 
@@ -2788,10 +2788,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note_text`<sup>Optional</sup> <a name="note_text" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText"></a>
 
 ```python
-note_text: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteText]]
+note_text: IResolvable | typing.List[SecurityhubInsightFiltersNoteText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
 
 note_text block.
 
@@ -2802,10 +2802,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note_updated_at`<sup>Optional</sup> <a name="note_updated_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt"></a>
 
 ```python
-note_updated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedAt]]
+note_updated_at: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
 
 note_updated_at block.
 
@@ -2816,10 +2816,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note_updated_by`<sup>Optional</sup> <a name="note_updated_by" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy"></a>
 
 ```python
-note_updated_by: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedBy]]
+note_updated_by: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
 
 note_updated_by block.
 
@@ -2830,10 +2830,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `process_launched_at`<sup>Optional</sup> <a name="process_launched_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt"></a>
 
 ```python
-process_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessLaunchedAt]]
+process_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
 
 process_launched_at block.
 
@@ -2844,10 +2844,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `process_name`<sup>Optional</sup> <a name="process_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName"></a>
 
 ```python
-process_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessName]]
+process_name: IResolvable | typing.List[SecurityhubInsightFiltersProcessName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
 
 process_name block.
 
@@ -2858,10 +2858,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `process_parent_pid`<sup>Optional</sup> <a name="process_parent_pid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid"></a>
 
 ```python
-process_parent_pid: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessParentPid]]
+process_parent_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessParentPid]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
 
 process_parent_pid block.
 
@@ -2872,10 +2872,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `process_path`<sup>Optional</sup> <a name="process_path" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath"></a>
 
 ```python
-process_path: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPath]]
+process_path: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
 
 process_path block.
 
@@ -2886,10 +2886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `process_pid`<sup>Optional</sup> <a name="process_pid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid"></a>
 
 ```python
-process_pid: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPid]]
+process_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
 
 process_pid block.
 
@@ -2900,10 +2900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `process_terminated_at`<sup>Optional</sup> <a name="process_terminated_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt"></a>
 
 ```python
-process_terminated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessTerminatedAt]]
+process_terminated_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessTerminatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
 
 process_terminated_at block.
 
@@ -2914,10 +2914,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `product_arn`<sup>Optional</sup> <a name="product_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn"></a>
 
 ```python
-product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductArn]]
+product_arn: IResolvable | typing.List[SecurityhubInsightFiltersProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
 
 product_arn block.
 
@@ -2928,10 +2928,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `product_fields`<sup>Optional</sup> <a name="product_fields" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields"></a>
 
 ```python
-product_fields: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductFields]]
+product_fields: IResolvable | typing.List[SecurityhubInsightFiltersProductFields]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
 
 product_fields block.
 
@@ -2942,10 +2942,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `product_name`<sup>Optional</sup> <a name="product_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName"></a>
 
 ```python
-product_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductName]]
+product_name: IResolvable | typing.List[SecurityhubInsightFiltersProductName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
 
 product_name block.
 
@@ -2956,10 +2956,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `recommendation_text`<sup>Optional</sup> <a name="recommendation_text" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText"></a>
 
 ```python
-recommendation_text: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecommendationText]]
+recommendation_text: IResolvable | typing.List[SecurityhubInsightFiltersRecommendationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
 
 recommendation_text block.
 
@@ -2970,10 +2970,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `record_state`<sup>Optional</sup> <a name="record_state" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState"></a>
 
 ```python
-record_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecordState]]
+record_state: IResolvable | typing.List[SecurityhubInsightFiltersRecordState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
 
 record_state block.
 
@@ -2984,10 +2984,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `related_findings_id`<sup>Optional</sup> <a name="related_findings_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId"></a>
 
 ```python
-related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsId]]
+related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
 
 related_findings_id block.
 
@@ -2998,10 +2998,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `related_findings_product_arn`<sup>Optional</sup> <a name="related_findings_product_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn"></a>
 
 ```python
-related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]]
+related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
 
 related_findings_product_arn block.
 
@@ -3012,10 +3012,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_iam_instance_profile_arn`<sup>Optional</sup> <a name="resource_aws_ec2_instance_iam_instance_profile_arn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn"></a>
 
 ```python
-resource_aws_ec2_instance_iam_instance_profile_arn: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]]
+resource_aws_ec2_instance_iam_instance_profile_arn: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
@@ -3026,10 +3026,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_image_id`<sup>Optional</sup> <a name="resource_aws_ec2_instance_image_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId"></a>
 
 ```python
-resource_aws_ec2_instance_image_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]]
+resource_aws_ec2_instance_image_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
 
 resource_aws_ec2_instance_image_id block.
 
@@ -3040,10 +3040,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_ipv4_addresses`<sup>Optional</sup> <a name="resource_aws_ec2_instance_ipv4_addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses"></a>
 
 ```python
-resource_aws_ec2_instance_ipv4_addresses: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]]
+resource_aws_ec2_instance_ipv4_addresses: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
@@ -3054,10 +3054,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_ipv6_addresses`<sup>Optional</sup> <a name="resource_aws_ec2_instance_ipv6_addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses"></a>
 
 ```python
-resource_aws_ec2_instance_ipv6_addresses: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]]
+resource_aws_ec2_instance_ipv6_addresses: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
@@ -3068,10 +3068,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_key_name`<sup>Optional</sup> <a name="resource_aws_ec2_instance_key_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName"></a>
 
 ```python
-resource_aws_ec2_instance_key_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]]
+resource_aws_ec2_instance_key_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
 
 resource_aws_ec2_instance_key_name block.
 
@@ -3082,10 +3082,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_launched_at`<sup>Optional</sup> <a name="resource_aws_ec2_instance_launched_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt"></a>
 
 ```python
-resource_aws_ec2_instance_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]]
+resource_aws_ec2_instance_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
 
 resource_aws_ec2_instance_launched_at block.
 
@@ -3096,10 +3096,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_subnet_id`<sup>Optional</sup> <a name="resource_aws_ec2_instance_subnet_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId"></a>
 
 ```python
-resource_aws_ec2_instance_subnet_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]]
+resource_aws_ec2_instance_subnet_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
 
 resource_aws_ec2_instance_subnet_id block.
 
@@ -3110,10 +3110,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_type`<sup>Optional</sup> <a name="resource_aws_ec2_instance_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType"></a>
 
 ```python
-resource_aws_ec2_instance_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]]
+resource_aws_ec2_instance_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
 
 resource_aws_ec2_instance_type block.
 
@@ -3124,10 +3124,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_ec2_instance_vpc_id`<sup>Optional</sup> <a name="resource_aws_ec2_instance_vpc_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId"></a>
 
 ```python
-resource_aws_ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]]
+resource_aws_ec2_instance_vpc_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
 
 resource_aws_ec2_instance_vpc_id block.
 
@@ -3138,10 +3138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_iam_access_key_created_at`<sup>Optional</sup> <a name="resource_aws_iam_access_key_created_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt"></a>
 
 ```python
-resource_aws_iam_access_key_created_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]]
+resource_aws_iam_access_key_created_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
 
 resource_aws_iam_access_key_created_at block.
 
@@ -3152,10 +3152,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_iam_access_key_status`<sup>Optional</sup> <a name="resource_aws_iam_access_key_status" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus"></a>
 
 ```python
-resource_aws_iam_access_key_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]]
+resource_aws_iam_access_key_status: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
 
 resource_aws_iam_access_key_status block.
 
@@ -3166,10 +3166,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_iam_access_key_user_name`<sup>Optional</sup> <a name="resource_aws_iam_access_key_user_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName"></a>
 
 ```python
-resource_aws_iam_access_key_user_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]]
+resource_aws_iam_access_key_user_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
 
 resource_aws_iam_access_key_user_name block.
 
@@ -3180,10 +3180,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_s3_bucket_owner_id`<sup>Optional</sup> <a name="resource_aws_s3_bucket_owner_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId"></a>
 
 ```python
-resource_aws_s3_bucket_owner_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]]
+resource_aws_s3_bucket_owner_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
 
 resource_aws_s3_bucket_owner_id block.
 
@@ -3194,10 +3194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_aws_s3_bucket_owner_name`<sup>Optional</sup> <a name="resource_aws_s3_bucket_owner_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName"></a>
 
 ```python
-resource_aws_s3_bucket_owner_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]]
+resource_aws_s3_bucket_owner_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
 
 resource_aws_s3_bucket_owner_name block.
 
@@ -3208,10 +3208,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_container_image_id`<sup>Optional</sup> <a name="resource_container_image_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId"></a>
 
 ```python
-resource_container_image_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageId]]
+resource_container_image_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
 
 resource_container_image_id block.
 
@@ -3222,10 +3222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_container_image_name`<sup>Optional</sup> <a name="resource_container_image_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName"></a>
 
 ```python
-resource_container_image_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageName]]
+resource_container_image_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
 
 resource_container_image_name block.
 
@@ -3236,10 +3236,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_container_launched_at`<sup>Optional</sup> <a name="resource_container_launched_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt"></a>
 
 ```python
-resource_container_launched_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]]
+resource_container_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
 
 resource_container_launched_at block.
 
@@ -3250,10 +3250,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_container_name`<sup>Optional</sup> <a name="resource_container_name" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName"></a>
 
 ```python
-resource_container_name: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerName]]
+resource_container_name: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
 
 resource_container_name block.
 
@@ -3264,10 +3264,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_details_other`<sup>Optional</sup> <a name="resource_details_other" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther"></a>
 
 ```python
-resource_details_other: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceDetailsOther]]
+resource_details_other: IResolvable | typing.List[SecurityhubInsightFiltersResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
 
 resource_details_other block.
 
@@ -3278,10 +3278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_id`<sup>Optional</sup> <a name="resource_id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId"></a>
 
 ```python
-resource_id: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceId]]
+resource_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
 
 resource_id block.
 
@@ -3292,10 +3292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_partition`<sup>Optional</sup> <a name="resource_partition" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition"></a>
 
 ```python
-resource_partition: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourcePartition]]
+resource_partition: IResolvable | typing.List[SecurityhubInsightFiltersResourcePartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
 
 resource_partition block.
 
@@ -3306,10 +3306,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_region`<sup>Optional</sup> <a name="resource_region" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion"></a>
 
 ```python
-resource_region: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceRegion]]
+resource_region: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
 
 resource_region block.
 
@@ -3320,10 +3320,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_tags`<sup>Optional</sup> <a name="resource_tags" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags"></a>
 
 ```python
-resource_tags: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceTags]]
+resource_tags: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
 
 resource_tags block.
 
@@ -3334,10 +3334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType"></a>
 
 ```python
-resource_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceType]]
+resource_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
 
 resource_type block.
 
@@ -3348,10 +3348,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severity_label`<sup>Optional</sup> <a name="severity_label" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel"></a>
 
 ```python
-severity_label: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSeverityLabel]]
+severity_label: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
 
 severity_label block.
 
@@ -3362,10 +3362,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `source_url`<sup>Optional</sup> <a name="source_url" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl"></a>
 
 ```python
-source_url: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSourceUrl]]
+source_url: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
 
 source_url block.
 
@@ -3376,10 +3376,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threat_intel_indicator_category`<sup>Optional</sup> <a name="threat_intel_indicator_category" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory"></a>
 
 ```python
-threat_intel_indicator_category: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]]
+threat_intel_indicator_category: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
 
 threat_intel_indicator_category block.
 
@@ -3390,10 +3390,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threat_intel_indicator_last_observed_at`<sup>Optional</sup> <a name="threat_intel_indicator_last_observed_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt"></a>
 
 ```python
-threat_intel_indicator_last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]]
+threat_intel_indicator_last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
 
 threat_intel_indicator_last_observed_at block.
 
@@ -3404,10 +3404,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threat_intel_indicator_source`<sup>Optional</sup> <a name="threat_intel_indicator_source" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource"></a>
 
 ```python
-threat_intel_indicator_source: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]]
+threat_intel_indicator_source: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
 
 threat_intel_indicator_source block.
 
@@ -3418,10 +3418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threat_intel_indicator_source_url`<sup>Optional</sup> <a name="threat_intel_indicator_source_url" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl"></a>
 
 ```python
-threat_intel_indicator_source_url: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]]
+threat_intel_indicator_source_url: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
 
 threat_intel_indicator_source_url block.
 
@@ -3432,10 +3432,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threat_intel_indicator_type`<sup>Optional</sup> <a name="threat_intel_indicator_type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType"></a>
 
 ```python
-threat_intel_indicator_type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]]
+threat_intel_indicator_type: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
 
 threat_intel_indicator_type block.
 
@@ -3446,10 +3446,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threat_intel_indicator_value`<sup>Optional</sup> <a name="threat_intel_indicator_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue"></a>
 
 ```python
-threat_intel_indicator_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]]
+threat_intel_indicator_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
 
 threat_intel_indicator_value block.
 
@@ -3460,10 +3460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title"></a>
 
 ```python
-title: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersTitle]]
+title: IResolvable | typing.List[SecurityhubInsightFiltersTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
 
 title block.
 
@@ -3474,10 +3474,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type"></a>
 
 ```python
-type: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersType]]
+type: IResolvable | typing.List[SecurityhubInsightFiltersType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
 
 type block.
 
@@ -3488,10 +3488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `updated_at`<sup>Optional</sup> <a name="updated_at" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt"></a>
 
 ```python
-updated_at: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUpdatedAt]]
+updated_at: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
 
 updated_at block.
 
@@ -3502,10 +3502,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `user_defined_values`<sup>Optional</sup> <a name="user_defined_values" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues"></a>
 
 ```python
-user_defined_values: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUserDefinedValues]]
+user_defined_values: IResolvable | typing.List[SecurityhubInsightFiltersUserDefinedValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
 
 user_defined_values block.
 
@@ -3516,10 +3516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `verification_state`<sup>Optional</sup> <a name="verification_state" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState"></a>
 
 ```python
-verification_state: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersVerificationState]]
+verification_state: IResolvable | typing.List[SecurityhubInsightFiltersVerificationState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
 
 verification_state block.
 
@@ -3530,10 +3530,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workflow_status`<sup>Optional</sup> <a name="workflow_status" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus"></a>
 
 ```python
-workflow_status: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersWorkflowStatus]]
+workflow_status: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
 
 workflow_status block.
 
@@ -8474,7 +8474,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]</code> | *No description.* |
 
 ---
 
@@ -8505,10 +8505,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersAwsAccountId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
 
 ---
 
@@ -8772,7 +8772,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -8843,10 +8843,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersAwsAccountId]
+internal_value: IResolvable | SecurityhubInsightFiltersAwsAccountId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>
 
 ---
 
@@ -8982,7 +8982,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]</code> | *No description.* |
 
 ---
 
@@ -9013,10 +9013,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCompanyName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
 
 ---
 
@@ -9280,7 +9280,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -9351,10 +9351,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersCompanyName]
+internal_value: IResolvable | SecurityhubInsightFiltersCompanyName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>
 
 ---
 
@@ -9490,7 +9490,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -9521,10 +9521,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersComplianceStatus]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersComplianceStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
 
 ---
 
@@ -9788,7 +9788,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -9859,10 +9859,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersComplianceStatus]
+internal_value: IResolvable | SecurityhubInsightFiltersComplianceStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>
 
 ---
 
@@ -9998,7 +9998,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]</code> | *No description.* |
 
 ---
 
@@ -10029,10 +10029,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersConfidence]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
 
 ---
 
@@ -10319,7 +10319,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a></code> | *No description.* |
 
 ---
 
@@ -10410,10 +10410,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersConfidence]
+internal_value: IResolvable | SecurityhubInsightFiltersConfidence
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>
 
 ---
 
@@ -10867,7 +10867,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -10898,10 +10898,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCreatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
 
 ---
 
@@ -11214,7 +11214,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -11305,10 +11305,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersCreatedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersCreatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>
 
 ---
 
@@ -11444,7 +11444,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]</code> | *No description.* |
 
 ---
 
@@ -11475,10 +11475,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCriticality]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
 
 ---
 
@@ -11765,7 +11765,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a></code> | *No description.* |
 
 ---
 
@@ -11856,10 +11856,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersCriticality]
+internal_value: IResolvable | SecurityhubInsightFiltersCriticality
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>
 
 ---
 
@@ -11995,7 +11995,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]</code> | *No description.* |
 
 ---
 
@@ -12026,10 +12026,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersDescription]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersDescription]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
 
 ---
 
@@ -12293,7 +12293,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a></code> | *No description.* |
 
 ---
 
@@ -12364,10 +12364,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersDescription]
+internal_value: IResolvable | SecurityhubInsightFiltersDescription
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>
 
 ---
 
@@ -12503,7 +12503,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]</code> | *No description.* |
 
 ---
 
@@ -12534,10 +12534,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
 
 ---
 
@@ -12824,7 +12824,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a></code> | *No description.* |
 
 ---
 
@@ -12915,10 +12915,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsConfidence]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsConfidence
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>
 
 ---
 
@@ -13054,7 +13054,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]</code> | *No description.* |
 
 ---
 
@@ -13085,10 +13085,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
 
 ---
 
@@ -13375,7 +13375,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a></code> | *No description.* |
 
 ---
 
@@ -13466,10 +13466,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsCriticality]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsCriticality
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>
 
 ---
 
@@ -13605,7 +13605,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]</code> | *No description.* |
 
 ---
 
@@ -13636,10 +13636,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
 
 ---
 
@@ -13903,7 +13903,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -13974,10 +13974,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>
 
 ---
 
@@ -14113,7 +14113,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -14144,10 +14144,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
 
 ---
 
@@ -14411,7 +14411,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -14482,10 +14482,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>
 
 ---
 
@@ -14621,7 +14621,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]</code> | *No description.* |
 
 ---
 
@@ -14652,10 +14652,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
 
 ---
 
@@ -14919,7 +14919,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -14990,10 +14990,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>
 
 ---
 
@@ -15129,7 +15129,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]</code> | *No description.* |
 
 ---
 
@@ -15160,10 +15160,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
 
 ---
 
@@ -15427,7 +15427,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a></code> | *No description.* |
 
 ---
 
@@ -15498,10 +15498,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>
 
 ---
 
@@ -15637,7 +15637,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]</code> | *No description.* |
 
 ---
 
@@ -15668,10 +15668,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
 
 ---
 
@@ -15935,7 +15935,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a></code> | *No description.* |
 
 ---
 
@@ -16006,10 +16006,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsTypes]
+internal_value: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsTypes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>
 
 ---
 
@@ -16463,7 +16463,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -16494,10 +16494,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFirstObservedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
 
 ---
 
@@ -16810,7 +16810,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16901,10 +16901,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFirstObservedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersFirstObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>
 
 ---
 
@@ -17040,7 +17040,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]</code> | *No description.* |
 
 ---
 
@@ -17071,10 +17071,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersGeneratorId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
 
 ---
 
@@ -17338,7 +17338,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -17409,10 +17409,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersGeneratorId]
+internal_value: IResolvable | SecurityhubInsightFiltersGeneratorId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>
 
 ---
 
@@ -17548,7 +17548,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]</code> | *No description.* |
 
 ---
 
@@ -17579,10 +17579,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
 
 ---
 
@@ -17846,7 +17846,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a></code> | *No description.* |
 
 ---
 
@@ -17917,10 +17917,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersId]
+internal_value: IResolvable | SecurityhubInsightFiltersId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>
 
 ---
 
@@ -18056,7 +18056,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]</code> | *No description.* |
 
 ---
 
@@ -18087,10 +18087,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersKeyword]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersKeyword]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
 
 ---
 
@@ -18352,7 +18352,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a></code> | *No description.* |
 
 ---
 
@@ -18403,10 +18403,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersKeyword]
+internal_value: IResolvable | SecurityhubInsightFiltersKeyword
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>
 
 ---
 
@@ -18860,7 +18860,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -18891,10 +18891,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersLastObservedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
 
 ---
 
@@ -19207,7 +19207,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -19298,10 +19298,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersLastObservedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersLastObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>
 
 ---
 
@@ -19437,7 +19437,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]</code> | *No description.* |
 
 ---
 
@@ -19468,10 +19468,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
 
 ---
 
@@ -19735,7 +19735,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a></code> | *No description.* |
 
 ---
 
@@ -19806,10 +19806,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwareName]
+internal_value: IResolvable | SecurityhubInsightFiltersMalwareName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>
 
 ---
 
@@ -19945,7 +19945,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]</code> | *No description.* |
 
 ---
 
@@ -19976,10 +19976,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwarePath]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
 
 ---
 
@@ -20243,7 +20243,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a></code> | *No description.* |
 
 ---
 
@@ -20314,10 +20314,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwarePath]
+internal_value: IResolvable | SecurityhubInsightFiltersMalwarePath
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>
 
 ---
 
@@ -20453,7 +20453,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]</code> | *No description.* |
 
 ---
 
@@ -20484,10 +20484,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareState]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
 
 ---
 
@@ -20751,7 +20751,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a></code> | *No description.* |
 
 ---
 
@@ -20822,10 +20822,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwareState]
+internal_value: IResolvable | SecurityhubInsightFiltersMalwareState
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>
 
 ---
 
@@ -20961,7 +20961,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]</code> | *No description.* |
 
 ---
 
@@ -20992,10 +20992,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareType]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
 
 ---
 
@@ -21259,7 +21259,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a></code> | *No description.* |
 
 ---
 
@@ -21330,10 +21330,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwareType]
+internal_value: IResolvable | SecurityhubInsightFiltersMalwareType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>
 
 ---
 
@@ -21469,7 +21469,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]</code> | *No description.* |
 
 ---
 
@@ -21500,10 +21500,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
 
 ---
 
@@ -21767,7 +21767,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a></code> | *No description.* |
 
 ---
 
@@ -21838,10 +21838,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationDomain]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkDestinationDomain
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>
 
 ---
 
@@ -21977,7 +21977,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]</code> | *No description.* |
 
 ---
 
@@ -22008,10 +22008,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
 
 ---
 
@@ -22273,7 +22273,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a></code> | *No description.* |
 
 ---
 
@@ -22324,10 +22324,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationIpv4]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkDestinationIpv4
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>
 
 ---
 
@@ -22463,7 +22463,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]</code> | *No description.* |
 
 ---
 
@@ -22494,10 +22494,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
 
 ---
 
@@ -22759,7 +22759,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a></code> | *No description.* |
 
 ---
 
@@ -22810,10 +22810,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationIpv6]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkDestinationIpv6
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>
 
 ---
 
@@ -22949,7 +22949,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]</code> | *No description.* |
 
 ---
 
@@ -22980,10 +22980,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationPort]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationPort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
 
 ---
 
@@ -23270,7 +23270,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a></code> | *No description.* |
 
 ---
 
@@ -23361,10 +23361,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationPort]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkDestinationPort
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>
 
 ---
 
@@ -23500,7 +23500,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]</code> | *No description.* |
 
 ---
 
@@ -23531,10 +23531,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDirection]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDirection]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
 
 ---
 
@@ -23798,7 +23798,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a></code> | *No description.* |
 
 ---
 
@@ -23869,10 +23869,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDirection]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkDirection
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>
 
 ---
 
@@ -24008,7 +24008,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]</code> | *No description.* |
 
 ---
 
@@ -24039,10 +24039,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkProtocol]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProtocol]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
 
 ---
 
@@ -24306,7 +24306,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -24377,10 +24377,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkProtocol]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkProtocol
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>
 
 ---
 
@@ -24516,7 +24516,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]</code> | *No description.* |
 
 ---
 
@@ -24547,10 +24547,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceDomain]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
 
 ---
 
@@ -24814,7 +24814,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a></code> | *No description.* |
 
 ---
 
@@ -24885,10 +24885,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceDomain]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkSourceDomain
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>
 
 ---
 
@@ -25024,7 +25024,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]</code> | *No description.* |
 
 ---
 
@@ -25055,10 +25055,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
 
 ---
 
@@ -25320,7 +25320,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a></code> | *No description.* |
 
 ---
 
@@ -25371,10 +25371,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceIpv4]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkSourceIpv4
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>
 
 ---
 
@@ -25510,7 +25510,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]</code> | *No description.* |
 
 ---
 
@@ -25541,10 +25541,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
 
 ---
 
@@ -25806,7 +25806,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a></code> | *No description.* |
 
 ---
 
@@ -25857,10 +25857,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceIpv6]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkSourceIpv6
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>
 
 ---
 
@@ -25996,7 +25996,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]</code> | *No description.* |
 
 ---
 
@@ -26027,10 +26027,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceMac]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceMac]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
 
 ---
 
@@ -26294,7 +26294,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a></code> | *No description.* |
 
 ---
 
@@ -26365,10 +26365,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceMac]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkSourceMac
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>
 
 ---
 
@@ -26504,7 +26504,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]</code> | *No description.* |
 
 ---
 
@@ -26535,10 +26535,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourcePort]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourcePort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
 
 ---
 
@@ -26825,7 +26825,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a></code> | *No description.* |
 
 ---
 
@@ -26916,10 +26916,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourcePort]
+internal_value: IResolvable | SecurityhubInsightFiltersNetworkSourcePort
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>
 
 ---
 
@@ -27055,7 +27055,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]</code> | *No description.* |
 
 ---
 
@@ -27086,10 +27086,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteText]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNoteText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
 
 ---
 
@@ -27353,7 +27353,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a></code> | *No description.* |
 
 ---
 
@@ -27424,10 +27424,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNoteText]
+internal_value: IResolvable | SecurityhubInsightFiltersNoteText
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>
 
 ---
 
@@ -27881,7 +27881,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -27912,10 +27912,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
 
 ---
 
@@ -28228,7 +28228,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -28319,10 +28319,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNoteUpdatedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersNoteUpdatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>
 
 ---
 
@@ -28458,7 +28458,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]</code> | *No description.* |
 
 ---
 
@@ -28489,10 +28489,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedBy]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
 
 ---
 
@@ -28756,7 +28756,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -28827,10 +28827,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNoteUpdatedBy]
+internal_value: IResolvable | SecurityhubInsightFiltersNoteUpdatedBy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>
 
 ---
 
@@ -29243,13 +29243,13 @@ Returns a reversible string representation.
 
 ```python
 def put_aws_account_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersAwsAccountId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
 
 ---
 
@@ -29257,13 +29257,13 @@ def put_aws_account_id(
 
 ```python
 def put_company_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCompanyName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCompanyName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
 
 ---
 
@@ -29271,13 +29271,13 @@ def put_company_name(
 
 ```python
 def put_compliance_status(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersComplianceStatus]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersComplianceStatus]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putComplianceStatus.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
 
 ---
 
@@ -29285,13 +29285,13 @@ def put_compliance_status(
 
 ```python
 def put_confidence(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersConfidence]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersConfidence]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putConfidence.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
 
 ---
 
@@ -29299,13 +29299,13 @@ def put_confidence(
 
 ```python
 def put_created_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCreatedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCreatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
 
 ---
 
@@ -29313,13 +29313,13 @@ def put_created_at(
 
 ```python
 def put_criticality(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCriticality]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersCriticality]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCriticality.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
 
 ---
 
@@ -29327,13 +29327,13 @@ def put_criticality(
 
 ```python
 def put_description(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersDescription]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersDescription]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putDescription.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
 
 ---
 
@@ -29341,13 +29341,13 @@ def put_description(
 
 ```python
 def put_finding_provider_fields_confidence(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsConfidence.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
 
 ---
 
@@ -29355,13 +29355,13 @@ def put_finding_provider_fields_confidence(
 
 ```python
 def put_finding_provider_fields_criticality(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsCriticality.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
 
 ---
 
@@ -29369,13 +29369,13 @@ def put_finding_provider_fields_criticality(
 
 ```python
 def put_finding_provider_fields_related_findings_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
 
 ---
 
@@ -29383,13 +29383,13 @@ def put_finding_provider_fields_related_findings_id(
 
 ```python
 def put_finding_provider_fields_related_findings_product_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
 
 ---
 
@@ -29397,13 +29397,13 @@ def put_finding_provider_fields_related_findings_product_arn(
 
 ```python
 def put_finding_provider_fields_severity_label(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityLabel.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
 
 ---
 
@@ -29411,13 +29411,13 @@ def put_finding_provider_fields_severity_label(
 
 ```python
 def put_finding_provider_fields_severity_original(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityOriginal.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
 
 ---
 
@@ -29425,13 +29425,13 @@ def put_finding_provider_fields_severity_original(
 
 ```python
 def put_finding_provider_fields_types(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsTypes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
 
 ---
 
@@ -29439,13 +29439,13 @@ def put_finding_provider_fields_types(
 
 ```python
 def put_first_observed_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFirstObservedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersFirstObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
 
 ---
 
@@ -29453,13 +29453,13 @@ def put_first_observed_at(
 
 ```python
 def put_generator_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersGeneratorId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putGeneratorId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
 
 ---
 
@@ -29467,13 +29467,13 @@ def put_generator_id(
 
 ```python
 def put_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
 
 ---
 
@@ -29481,13 +29481,13 @@ def put_id(
 
 ```python
 def put_keyword(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersKeyword]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersKeyword]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putKeyword.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
 
 ---
 
@@ -29495,13 +29495,13 @@ def put_keyword(
 
 ```python
 def put_last_observed_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersLastObservedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersLastObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
 
 ---
 
@@ -29509,13 +29509,13 @@ def put_last_observed_at(
 
 ```python
 def put_malware_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
 
 ---
 
@@ -29523,13 +29523,13 @@ def put_malware_name(
 
 ```python
 def put_malware_path(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwarePath]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwarePath.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
 
 ---
 
@@ -29537,13 +29537,13 @@ def put_malware_path(
 
 ```python
 def put_malware_state(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareState]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareState.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
 
 ---
 
@@ -29551,13 +29551,13 @@ def put_malware_state(
 
 ```python
 def put_malware_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareType]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
 
 ---
 
@@ -29565,13 +29565,13 @@ def put_malware_type(
 
 ```python
 def put_network_destination_domain(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationDomain.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
 
 ---
 
@@ -29579,13 +29579,13 @@ def put_network_destination_domain(
 
 ```python
 def put_network_destination_ipv4(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv4.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
 
 ---
 
@@ -29593,13 +29593,13 @@ def put_network_destination_ipv4(
 
 ```python
 def put_network_destination_ipv6(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv6.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
 
 ---
 
@@ -29607,13 +29607,13 @@ def put_network_destination_ipv6(
 
 ```python
 def put_network_destination_port(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationPort]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationPort]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationPort.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
 
 ---
 
@@ -29621,13 +29621,13 @@ def put_network_destination_port(
 
 ```python
 def put_network_direction(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDirection]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDirection]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDirection.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
 
 ---
 
@@ -29635,13 +29635,13 @@ def put_network_direction(
 
 ```python
 def put_network_protocol(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkProtocol]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProtocol]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
 
 ---
 
@@ -29649,13 +29649,13 @@ def put_network_protocol(
 
 ```python
 def put_network_source_domain(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceDomain]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceDomain]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceDomain.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
 
 ---
 
@@ -29663,13 +29663,13 @@ def put_network_source_domain(
 
 ```python
 def put_network_source_ipv4(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv4.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
 
 ---
 
@@ -29677,13 +29677,13 @@ def put_network_source_ipv4(
 
 ```python
 def put_network_source_ipv6(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv6.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
 
 ---
 
@@ -29691,13 +29691,13 @@ def put_network_source_ipv6(
 
 ```python
 def put_network_source_mac(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceMac]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceMac]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceMac.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
 
 ---
 
@@ -29705,13 +29705,13 @@ def put_network_source_mac(
 
 ```python
 def put_network_source_port(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourcePort]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourcePort]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourcePort.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
 
 ---
 
@@ -29719,13 +29719,13 @@ def put_network_source_port(
 
 ```python
 def put_note_text(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteText]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNoteText]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteText.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
 
 ---
 
@@ -29733,13 +29733,13 @@ def put_note_text(
 
 ```python
 def put_note_updated_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
 
 ---
 
@@ -29747,13 +29747,13 @@ def put_note_updated_at(
 
 ```python
 def put_note_updated_by(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedBy]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedBy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedBy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
 
 ---
 
@@ -29761,13 +29761,13 @@ def put_note_updated_by(
 
 ```python
 def put_process_launched_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessLaunchedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProcessLaunchedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessLaunchedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
 
 ---
 
@@ -29775,13 +29775,13 @@ def put_process_launched_at(
 
 ```python
 def put_process_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProcessName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
 
 ---
 
@@ -29789,13 +29789,13 @@ def put_process_name(
 
 ```python
 def put_process_parent_pid(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessParentPid]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProcessParentPid]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessParentPid.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
 
 ---
 
@@ -29803,13 +29803,13 @@ def put_process_parent_pid(
 
 ```python
 def put_process_path(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPath]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPath.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
 
 ---
 
@@ -29817,13 +29817,13 @@ def put_process_path(
 
 ```python
 def put_process_pid(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPid]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPid.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
 
 ---
 
@@ -29831,13 +29831,13 @@ def put_process_pid(
 
 ```python
 def put_process_terminated_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessTerminatedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProcessTerminatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessTerminatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
 
 ---
 
@@ -29845,13 +29845,13 @@ def put_process_terminated_at(
 
 ```python
 def put_product_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductArn]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProductArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
 
 ---
 
@@ -29859,13 +29859,13 @@ def put_product_arn(
 
 ```python
 def put_product_fields(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductFields]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProductFields]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductFields.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
 
 ---
 
@@ -29873,13 +29873,13 @@ def put_product_fields(
 
 ```python
 def put_product_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersProductName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
 
 ---
 
@@ -29887,13 +29887,13 @@ def put_product_name(
 
 ```python
 def put_recommendation_text(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecommendationText]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersRecommendationText]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecommendationText.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
 
 ---
 
@@ -29901,13 +29901,13 @@ def put_recommendation_text(
 
 ```python
 def put_record_state(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecordState]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersRecordState]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecordState.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
 
 ---
 
@@ -29915,13 +29915,13 @@ def put_record_state(
 
 ```python
 def put_related_findings_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
 
 ---
 
@@ -29929,13 +29929,13 @@ def put_related_findings_id(
 
 ```python
 def put_related_findings_product_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
 
 ---
 
@@ -29943,13 +29943,13 @@ def put_related_findings_product_arn(
 
 ```python
 def put_resource_aws_ec2_instance_iam_instance_profile_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIamInstanceProfileArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
 
 ---
 
@@ -29957,13 +29957,13 @@ def put_resource_aws_ec2_instance_iam_instance_profile_arn(
 
 ```python
 def put_resource_aws_ec2_instance_image_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
 
 ---
 
@@ -29971,13 +29971,13 @@ def put_resource_aws_ec2_instance_image_id(
 
 ```python
 def put_resource_aws_ec2_instance_ipv4_addresses(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv4Addresses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
 
 ---
 
@@ -29985,13 +29985,13 @@ def put_resource_aws_ec2_instance_ipv4_addresses(
 
 ```python
 def put_resource_aws_ec2_instance_ipv6_addresses(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv6Addresses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
 
 ---
 
@@ -29999,13 +29999,13 @@ def put_resource_aws_ec2_instance_ipv6_addresses(
 
 ```python
 def put_resource_aws_ec2_instance_key_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceKeyName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
 
 ---
 
@@ -30013,13 +30013,13 @@ def put_resource_aws_ec2_instance_key_name(
 
 ```python
 def put_resource_aws_ec2_instance_launched_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceLaunchedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
 
 ---
 
@@ -30027,13 +30027,13 @@ def put_resource_aws_ec2_instance_launched_at(
 
 ```python
 def put_resource_aws_ec2_instance_subnet_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
 
 ---
 
@@ -30041,13 +30041,13 @@ def put_resource_aws_ec2_instance_subnet_id(
 
 ```python
 def put_resource_aws_ec2_instance_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
 
 ---
 
@@ -30055,13 +30055,13 @@ def put_resource_aws_ec2_instance_type(
 
 ```python
 def put_resource_aws_ec2_instance_vpc_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
 
 ---
 
@@ -30069,13 +30069,13 @@ def put_resource_aws_ec2_instance_vpc_id(
 
 ```python
 def put_resource_aws_iam_access_key_created_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyCreatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
 
 ---
 
@@ -30083,13 +30083,13 @@ def put_resource_aws_iam_access_key_created_at(
 
 ```python
 def put_resource_aws_iam_access_key_status(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyStatus.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
 
 ---
 
@@ -30097,13 +30097,13 @@ def put_resource_aws_iam_access_key_status(
 
 ```python
 def put_resource_aws_iam_access_key_user_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyUserName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
 
 ---
 
@@ -30111,13 +30111,13 @@ def put_resource_aws_iam_access_key_user_name(
 
 ```python
 def put_resource_aws_s3_bucket_owner_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
 
 ---
 
@@ -30125,13 +30125,13 @@ def put_resource_aws_s3_bucket_owner_id(
 
 ```python
 def put_resource_aws_s3_bucket_owner_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
 
 ---
 
@@ -30139,13 +30139,13 @@ def put_resource_aws_s3_bucket_owner_name(
 
 ```python
 def put_resource_container_image_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
 
 ---
 
@@ -30153,13 +30153,13 @@ def put_resource_container_image_id(
 
 ```python
 def put_resource_container_image_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
 
 ---
 
@@ -30167,13 +30167,13 @@ def put_resource_container_image_name(
 
 ```python
 def put_resource_container_launched_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerLaunchedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
 
 ---
 
@@ -30181,13 +30181,13 @@ def put_resource_container_launched_at(
 
 ```python
 def put_resource_container_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerName]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
 
 ---
 
@@ -30195,13 +30195,13 @@ def put_resource_container_name(
 
 ```python
 def put_resource_details_other(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceDetailsOther]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceDetailsOther]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceDetailsOther.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
 
 ---
 
@@ -30209,13 +30209,13 @@ def put_resource_details_other(
 
 ```python
 def put_resource_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceId]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
 
 ---
 
@@ -30223,13 +30223,13 @@ def put_resource_id(
 
 ```python
 def put_resource_partition(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourcePartition]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourcePartition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourcePartition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
 
 ---
 
@@ -30237,13 +30237,13 @@ def put_resource_partition(
 
 ```python
 def put_resource_region(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceRegion]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegion]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceRegion.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
 
 ---
 
@@ -30251,13 +30251,13 @@ def put_resource_region(
 
 ```python
 def put_resource_tags(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceTags]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
 
 ---
 
@@ -30265,13 +30265,13 @@ def put_resource_tags(
 
 ```python
 def put_resource_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceType]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersResourceType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
 
 ---
 
@@ -30279,13 +30279,13 @@ def put_resource_type(
 
 ```python
 def put_severity_label(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSeverityLabel]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSeverityLabel.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
 
 ---
 
@@ -30293,13 +30293,13 @@ def put_severity_label(
 
 ```python
 def put_source_url(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSourceUrl]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSourceUrl.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
 
 ---
 
@@ -30307,13 +30307,13 @@ def put_source_url(
 
 ```python
 def put_threat_intel_indicator_category(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorCategory.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
 
 ---
 
@@ -30321,13 +30321,13 @@ def put_threat_intel_indicator_category(
 
 ```python
 def put_threat_intel_indicator_last_observed_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorLastObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
 
 ---
 
@@ -30335,13 +30335,13 @@ def put_threat_intel_indicator_last_observed_at(
 
 ```python
 def put_threat_intel_indicator_source(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSource.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
 
 ---
 
@@ -30349,13 +30349,13 @@ def put_threat_intel_indicator_source(
 
 ```python
 def put_threat_intel_indicator_source_url(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSourceUrl.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
 
 ---
 
@@ -30363,13 +30363,13 @@ def put_threat_intel_indicator_source_url(
 
 ```python
 def put_threat_intel_indicator_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
 
 ---
 
@@ -30377,13 +30377,13 @@ def put_threat_intel_indicator_type(
 
 ```python
 def put_threat_intel_indicator_value(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorValue.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
 
 ---
 
@@ -30391,13 +30391,13 @@ def put_threat_intel_indicator_value(
 
 ```python
 def put_title(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersTitle]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersTitle]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
 
 ---
 
@@ -30405,13 +30405,13 @@ def put_title(
 
 ```python
 def put_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersType]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
 
 ---
 
@@ -30419,13 +30419,13 @@ def put_type(
 
 ```python
 def put_updated_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUpdatedAt]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
 
 ---
 
@@ -30433,13 +30433,13 @@ def put_updated_at(
 
 ```python
 def put_user_defined_values(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUserDefinedValues]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersUserDefinedValues]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUserDefinedValues.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
 
 ---
 
@@ -30447,13 +30447,13 @@ def put_user_defined_values(
 
 ```python
 def put_verification_state(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersVerificationState]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersVerificationState]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putVerificationState.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
 
 ---
 
@@ -30461,13 +30461,13 @@ def put_verification_state(
 
 ```python
 def put_workflow_status(
-  value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersWorkflowStatus]]
+  value: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStatus]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putWorkflowStatus.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
 
 ---
 
@@ -31094,94 +31094,94 @@ def reset_workflow_status() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValues">user_defined_values</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList">SecurityhubInsightFiltersUserDefinedValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationState">verification_state</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList">SecurityhubInsightFiltersVerificationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatus">workflow_status</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList">SecurityhubInsightFiltersWorkflowStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput">company_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput">compliance_status_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput">confidence_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput">created_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput">criticality_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput">description_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput">finding_provider_fields_confidence_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput">finding_provider_fields_criticality_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput">finding_provider_fields_related_findings_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput">finding_provider_fields_related_findings_product_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput">finding_provider_fields_severity_label_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput">finding_provider_fields_severity_original_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput">finding_provider_fields_types_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput">first_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput">generator_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput">id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput">keyword_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput">last_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput">malware_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput">malware_path_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput">malware_state_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput">malware_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput">network_destination_domain_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input">network_destination_ipv4_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input">network_destination_ipv6_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput">network_destination_port_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput">network_direction_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput">network_protocol_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput">network_source_domain_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input">network_source_ipv4_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input">network_source_ipv6_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput">network_source_mac_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput">network_source_port_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput">note_text_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput">note_updated_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput">note_updated_by_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput">process_launched_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput">process_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput">process_parent_pid_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput">process_path_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput">process_pid_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput">process_terminated_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput">product_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput">product_fields_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput">product_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput">recommendation_text_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput">record_state_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput">related_findings_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput">related_findings_product_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput">resource_aws_ec2_instance_iam_instance_profile_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput">resource_aws_ec2_instance_image_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput">resource_aws_ec2_instance_ipv4_addresses_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput">resource_aws_ec2_instance_ipv6_addresses_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput">resource_aws_ec2_instance_key_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput">resource_aws_ec2_instance_launched_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput">resource_aws_ec2_instance_subnet_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput">resource_aws_ec2_instance_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput">resource_aws_ec2_instance_vpc_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput">resource_aws_iam_access_key_created_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput">resource_aws_iam_access_key_status_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput">resource_aws_iam_access_key_user_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput">resource_aws_s3_bucket_owner_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput">resource_aws_s3_bucket_owner_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput">resource_container_image_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput">resource_container_image_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput">resource_container_launched_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput">resource_container_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput">resource_details_other_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput">resource_partition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput">resource_region_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput">resource_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput">severity_label_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput">source_url_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput">threat_intel_indicator_category_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput">threat_intel_indicator_last_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput">threat_intel_indicator_source_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput">threat_intel_indicator_source_url_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput">threat_intel_indicator_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput">threat_intel_indicator_value_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput">title_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput">type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput">updated_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput">user_defined_values_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput">verification_state_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput">workflow_status_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput">company_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput">compliance_status_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput">confidence_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput">created_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput">criticality_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput">description_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput">finding_provider_fields_confidence_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput">finding_provider_fields_criticality_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput">finding_provider_fields_related_findings_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput">finding_provider_fields_related_findings_product_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput">finding_provider_fields_severity_label_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput">finding_provider_fields_severity_original_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput">finding_provider_fields_types_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput">first_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput">generator_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput">id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput">keyword_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput">last_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput">malware_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput">malware_path_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput">malware_state_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput">malware_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput">network_destination_domain_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input">network_destination_ipv4_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input">network_destination_ipv6_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput">network_destination_port_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput">network_direction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput">network_protocol_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput">network_source_domain_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input">network_source_ipv4_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input">network_source_ipv6_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput">network_source_mac_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput">network_source_port_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput">note_text_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput">note_updated_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput">note_updated_by_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput">process_launched_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput">process_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput">process_parent_pid_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput">process_path_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput">process_pid_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput">process_terminated_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput">product_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput">product_fields_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput">product_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput">recommendation_text_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput">record_state_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput">related_findings_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput">related_findings_product_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput">resource_aws_ec2_instance_iam_instance_profile_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput">resource_aws_ec2_instance_image_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput">resource_aws_ec2_instance_ipv4_addresses_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput">resource_aws_ec2_instance_ipv6_addresses_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput">resource_aws_ec2_instance_key_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput">resource_aws_ec2_instance_launched_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput">resource_aws_ec2_instance_subnet_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput">resource_aws_ec2_instance_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput">resource_aws_ec2_instance_vpc_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput">resource_aws_iam_access_key_created_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput">resource_aws_iam_access_key_status_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput">resource_aws_iam_access_key_user_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput">resource_aws_s3_bucket_owner_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput">resource_aws_s3_bucket_owner_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput">resource_container_image_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput">resource_container_image_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput">resource_container_launched_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput">resource_container_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput">resource_details_other_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput">resource_partition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput">resource_region_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput">resource_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput">severity_label_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput">source_url_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput">threat_intel_indicator_category_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput">threat_intel_indicator_last_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput">threat_intel_indicator_source_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput">threat_intel_indicator_source_url_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput">threat_intel_indicator_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput">threat_intel_indicator_value_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput">title_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput">type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput">updated_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput">user_defined_values_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput">verification_state_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput">workflow_status_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | *No description.* |
 
 ---
@@ -32093,880 +32093,880 @@ workflow_status: SecurityhubInsightFiltersWorkflowStatusList
 ##### `aws_account_id_input`<sup>Optional</sup> <a name="aws_account_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput"></a>
 
 ```python
-aws_account_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersAwsAccountId]]
+aws_account_id_input: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
 
 ---
 
 ##### `company_name_input`<sup>Optional</sup> <a name="company_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput"></a>
 
 ```python
-company_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCompanyName]]
+company_name_input: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
 
 ---
 
 ##### `compliance_status_input`<sup>Optional</sup> <a name="compliance_status_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput"></a>
 
 ```python
-compliance_status_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersComplianceStatus]]
+compliance_status_input: IResolvable | typing.List[SecurityhubInsightFiltersComplianceStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
 
 ---
 
 ##### `confidence_input`<sup>Optional</sup> <a name="confidence_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput"></a>
 
 ```python
-confidence_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersConfidence]]
+confidence_input: IResolvable | typing.List[SecurityhubInsightFiltersConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
 
 ---
 
 ##### `created_at_input`<sup>Optional</sup> <a name="created_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput"></a>
 
 ```python
-created_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCreatedAt]]
+created_at_input: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
 
 ---
 
 ##### `criticality_input`<sup>Optional</sup> <a name="criticality_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput"></a>
 
 ```python
-criticality_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersCriticality]]
+criticality_input: IResolvable | typing.List[SecurityhubInsightFiltersCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
 
 ---
 
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput"></a>
 
 ```python
-description_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersDescription]]
+description_input: IResolvable | typing.List[SecurityhubInsightFiltersDescription]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
 
 ---
 
 ##### `finding_provider_fields_confidence_input`<sup>Optional</sup> <a name="finding_provider_fields_confidence_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput"></a>
 
 ```python
-finding_provider_fields_confidence_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]]
+finding_provider_fields_confidence_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
 
 ---
 
 ##### `finding_provider_fields_criticality_input`<sup>Optional</sup> <a name="finding_provider_fields_criticality_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput"></a>
 
 ```python
-finding_provider_fields_criticality_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]]
+finding_provider_fields_criticality_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
 
 ---
 
 ##### `finding_provider_fields_related_findings_id_input`<sup>Optional</sup> <a name="finding_provider_fields_related_findings_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput"></a>
 
 ```python
-finding_provider_fields_related_findings_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]]
+finding_provider_fields_related_findings_id_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
 
 ---
 
 ##### `finding_provider_fields_related_findings_product_arn_input`<sup>Optional</sup> <a name="finding_provider_fields_related_findings_product_arn_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput"></a>
 
 ```python
-finding_provider_fields_related_findings_product_arn_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]]
+finding_provider_fields_related_findings_product_arn_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
 
 ---
 
 ##### `finding_provider_fields_severity_label_input`<sup>Optional</sup> <a name="finding_provider_fields_severity_label_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput"></a>
 
 ```python
-finding_provider_fields_severity_label_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]]
+finding_provider_fields_severity_label_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
 
 ---
 
 ##### `finding_provider_fields_severity_original_input`<sup>Optional</sup> <a name="finding_provider_fields_severity_original_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput"></a>
 
 ```python
-finding_provider_fields_severity_original_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]]
+finding_provider_fields_severity_original_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
 
 ---
 
 ##### `finding_provider_fields_types_input`<sup>Optional</sup> <a name="finding_provider_fields_types_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput"></a>
 
 ```python
-finding_provider_fields_types_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]]
+finding_provider_fields_types_input: IResolvable | typing.List[SecurityhubInsightFiltersFindingProviderFieldsTypes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
 
 ---
 
 ##### `first_observed_at_input`<sup>Optional</sup> <a name="first_observed_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput"></a>
 
 ```python
-first_observed_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersFirstObservedAt]]
+first_observed_at_input: IResolvable | typing.List[SecurityhubInsightFiltersFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
 
 ---
 
 ##### `generator_id_input`<sup>Optional</sup> <a name="generator_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput"></a>
 
 ```python
-generator_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersGeneratorId]]
+generator_id_input: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
 
 ---
 
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput"></a>
 
 ```python
-id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersId]]
+id_input: IResolvable | typing.List[SecurityhubInsightFiltersId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
 
 ---
 
 ##### `keyword_input`<sup>Optional</sup> <a name="keyword_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput"></a>
 
 ```python
-keyword_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersKeyword]]
+keyword_input: IResolvable | typing.List[SecurityhubInsightFiltersKeyword]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
 
 ---
 
 ##### `last_observed_at_input`<sup>Optional</sup> <a name="last_observed_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput"></a>
 
 ```python
-last_observed_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersLastObservedAt]]
+last_observed_at_input: IResolvable | typing.List[SecurityhubInsightFiltersLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
 
 ---
 
 ##### `malware_name_input`<sup>Optional</sup> <a name="malware_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput"></a>
 
 ```python
-malware_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareName]]
+malware_name_input: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
 
 ---
 
 ##### `malware_path_input`<sup>Optional</sup> <a name="malware_path_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput"></a>
 
 ```python
-malware_path_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwarePath]]
+malware_path_input: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
 
 ---
 
 ##### `malware_state_input`<sup>Optional</sup> <a name="malware_state_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput"></a>
 
 ```python
-malware_state_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareState]]
+malware_state_input: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
 
 ---
 
 ##### `malware_type_input`<sup>Optional</sup> <a name="malware_type_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput"></a>
 
 ```python
-malware_type_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersMalwareType]]
+malware_type_input: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
 
 ---
 
 ##### `network_destination_domain_input`<sup>Optional</sup> <a name="network_destination_domain_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput"></a>
 
 ```python
-network_destination_domain_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]]
+network_destination_domain_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
 
 ---
 
 ##### `network_destination_ipv4_input`<sup>Optional</sup> <a name="network_destination_ipv4_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input"></a>
 
 ```python
-network_destination_ipv4_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]]
+network_destination_ipv4_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv4]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
 
 ---
 
 ##### `network_destination_ipv6_input`<sup>Optional</sup> <a name="network_destination_ipv6_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input"></a>
 
 ```python
-network_destination_ipv6_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]]
+network_destination_ipv6_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationIpv6]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
 
 ---
 
 ##### `network_destination_port_input`<sup>Optional</sup> <a name="network_destination_port_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput"></a>
 
 ```python
-network_destination_port_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDestinationPort]]
+network_destination_port_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDestinationPort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
 
 ---
 
 ##### `network_direction_input`<sup>Optional</sup> <a name="network_direction_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput"></a>
 
 ```python
-network_direction_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkDirection]]
+network_direction_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDirection]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
 
 ---
 
 ##### `network_protocol_input`<sup>Optional</sup> <a name="network_protocol_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput"></a>
 
 ```python
-network_protocol_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkProtocol]]
+network_protocol_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProtocol]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
 
 ---
 
 ##### `network_source_domain_input`<sup>Optional</sup> <a name="network_source_domain_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput"></a>
 
 ```python
-network_source_domain_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceDomain]]
+network_source_domain_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
 
 ---
 
 ##### `network_source_ipv4_input`<sup>Optional</sup> <a name="network_source_ipv4_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input"></a>
 
 ```python
-network_source_ipv4_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]]
+network_source_ipv4_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv4]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
 
 ---
 
 ##### `network_source_ipv6_input`<sup>Optional</sup> <a name="network_source_ipv6_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input"></a>
 
 ```python
-network_source_ipv6_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]]
+network_source_ipv6_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceIpv6]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
 
 ---
 
 ##### `network_source_mac_input`<sup>Optional</sup> <a name="network_source_mac_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput"></a>
 
 ```python
-network_source_mac_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourceMac]]
+network_source_mac_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourceMac]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
 
 ---
 
 ##### `network_source_port_input`<sup>Optional</sup> <a name="network_source_port_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput"></a>
 
 ```python
-network_source_port_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNetworkSourcePort]]
+network_source_port_input: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSourcePort]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
 
 ---
 
 ##### `note_text_input`<sup>Optional</sup> <a name="note_text_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput"></a>
 
 ```python
-note_text_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteText]]
+note_text_input: IResolvable | typing.List[SecurityhubInsightFiltersNoteText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
 
 ---
 
 ##### `note_updated_at_input`<sup>Optional</sup> <a name="note_updated_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput"></a>
 
 ```python
-note_updated_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedAt]]
+note_updated_at_input: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
 
 ---
 
 ##### `note_updated_by_input`<sup>Optional</sup> <a name="note_updated_by_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput"></a>
 
 ```python
-note_updated_by_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersNoteUpdatedBy]]
+note_updated_by_input: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
 
 ---
 
 ##### `process_launched_at_input`<sup>Optional</sup> <a name="process_launched_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput"></a>
 
 ```python
-process_launched_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessLaunchedAt]]
+process_launched_at_input: IResolvable | typing.List[SecurityhubInsightFiltersProcessLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
 
 ---
 
 ##### `process_name_input`<sup>Optional</sup> <a name="process_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput"></a>
 
 ```python
-process_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessName]]
+process_name_input: IResolvable | typing.List[SecurityhubInsightFiltersProcessName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
 
 ---
 
 ##### `process_parent_pid_input`<sup>Optional</sup> <a name="process_parent_pid_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput"></a>
 
 ```python
-process_parent_pid_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessParentPid]]
+process_parent_pid_input: IResolvable | typing.List[SecurityhubInsightFiltersProcessParentPid]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
 
 ---
 
 ##### `process_path_input`<sup>Optional</sup> <a name="process_path_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput"></a>
 
 ```python
-process_path_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPath]]
+process_path_input: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
 
 ---
 
 ##### `process_pid_input`<sup>Optional</sup> <a name="process_pid_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput"></a>
 
 ```python
-process_pid_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPid]]
+process_pid_input: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
 
 ---
 
 ##### `process_terminated_at_input`<sup>Optional</sup> <a name="process_terminated_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput"></a>
 
 ```python
-process_terminated_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessTerminatedAt]]
+process_terminated_at_input: IResolvable | typing.List[SecurityhubInsightFiltersProcessTerminatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
 
 ---
 
 ##### `product_arn_input`<sup>Optional</sup> <a name="product_arn_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput"></a>
 
 ```python
-product_arn_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductArn]]
+product_arn_input: IResolvable | typing.List[SecurityhubInsightFiltersProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
 
 ---
 
 ##### `product_fields_input`<sup>Optional</sup> <a name="product_fields_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput"></a>
 
 ```python
-product_fields_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductFields]]
+product_fields_input: IResolvable | typing.List[SecurityhubInsightFiltersProductFields]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
 
 ---
 
 ##### `product_name_input`<sup>Optional</sup> <a name="product_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput"></a>
 
 ```python
-product_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductName]]
+product_name_input: IResolvable | typing.List[SecurityhubInsightFiltersProductName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
 
 ---
 
 ##### `recommendation_text_input`<sup>Optional</sup> <a name="recommendation_text_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput"></a>
 
 ```python
-recommendation_text_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecommendationText]]
+recommendation_text_input: IResolvable | typing.List[SecurityhubInsightFiltersRecommendationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
 
 ---
 
 ##### `record_state_input`<sup>Optional</sup> <a name="record_state_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput"></a>
 
 ```python
-record_state_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecordState]]
+record_state_input: IResolvable | typing.List[SecurityhubInsightFiltersRecordState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
 
 ---
 
 ##### `related_findings_id_input`<sup>Optional</sup> <a name="related_findings_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput"></a>
 
 ```python
-related_findings_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsId]]
+related_findings_id_input: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
 
 ---
 
 ##### `related_findings_product_arn_input`<sup>Optional</sup> <a name="related_findings_product_arn_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput"></a>
 
 ```python
-related_findings_product_arn_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]]
+related_findings_product_arn_input: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_iam_instance_profile_arn_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_iam_instance_profile_arn_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput"></a>
 
 ```python
-resource_aws_ec2_instance_iam_instance_profile_arn_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]]
+resource_aws_ec2_instance_iam_instance_profile_arn_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_image_id_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_image_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput"></a>
 
 ```python
-resource_aws_ec2_instance_image_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]]
+resource_aws_ec2_instance_image_id_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_ipv4_addresses_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_ipv4_addresses_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput"></a>
 
 ```python
-resource_aws_ec2_instance_ipv4_addresses_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]]
+resource_aws_ec2_instance_ipv4_addresses_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_ipv6_addresses_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_ipv6_addresses_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput"></a>
 
 ```python
-resource_aws_ec2_instance_ipv6_addresses_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]]
+resource_aws_ec2_instance_ipv6_addresses_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_key_name_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_key_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput"></a>
 
 ```python
-resource_aws_ec2_instance_key_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]]
+resource_aws_ec2_instance_key_name_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_launched_at_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_launched_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput"></a>
 
 ```python
-resource_aws_ec2_instance_launched_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]]
+resource_aws_ec2_instance_launched_at_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_subnet_id_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_subnet_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput"></a>
 
 ```python
-resource_aws_ec2_instance_subnet_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]]
+resource_aws_ec2_instance_subnet_id_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_type_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_type_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput"></a>
 
 ```python
-resource_aws_ec2_instance_type_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]]
+resource_aws_ec2_instance_type_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
 
 ---
 
 ##### `resource_aws_ec2_instance_vpc_id_input`<sup>Optional</sup> <a name="resource_aws_ec2_instance_vpc_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput"></a>
 
 ```python
-resource_aws_ec2_instance_vpc_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]]
+resource_aws_ec2_instance_vpc_id_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
 
 ---
 
 ##### `resource_aws_iam_access_key_created_at_input`<sup>Optional</sup> <a name="resource_aws_iam_access_key_created_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput"></a>
 
 ```python
-resource_aws_iam_access_key_created_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]]
+resource_aws_iam_access_key_created_at_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
 
 ---
 
 ##### `resource_aws_iam_access_key_status_input`<sup>Optional</sup> <a name="resource_aws_iam_access_key_status_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput"></a>
 
 ```python
-resource_aws_iam_access_key_status_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]]
+resource_aws_iam_access_key_status_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
 
 ---
 
 ##### `resource_aws_iam_access_key_user_name_input`<sup>Optional</sup> <a name="resource_aws_iam_access_key_user_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput"></a>
 
 ```python
-resource_aws_iam_access_key_user_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]]
+resource_aws_iam_access_key_user_name_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
 
 ---
 
 ##### `resource_aws_s3_bucket_owner_id_input`<sup>Optional</sup> <a name="resource_aws_s3_bucket_owner_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput"></a>
 
 ```python
-resource_aws_s3_bucket_owner_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]]
+resource_aws_s3_bucket_owner_id_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
 
 ---
 
 ##### `resource_aws_s3_bucket_owner_name_input`<sup>Optional</sup> <a name="resource_aws_s3_bucket_owner_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput"></a>
 
 ```python
-resource_aws_s3_bucket_owner_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]]
+resource_aws_s3_bucket_owner_name_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
 
 ---
 
 ##### `resource_container_image_id_input`<sup>Optional</sup> <a name="resource_container_image_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput"></a>
 
 ```python
-resource_container_image_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageId]]
+resource_container_image_id_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
 
 ---
 
 ##### `resource_container_image_name_input`<sup>Optional</sup> <a name="resource_container_image_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput"></a>
 
 ```python
-resource_container_image_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageName]]
+resource_container_image_name_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
 
 ---
 
 ##### `resource_container_launched_at_input`<sup>Optional</sup> <a name="resource_container_launched_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput"></a>
 
 ```python
-resource_container_launched_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]]
+resource_container_launched_at_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
 
 ---
 
 ##### `resource_container_name_input`<sup>Optional</sup> <a name="resource_container_name_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput"></a>
 
 ```python
-resource_container_name_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerName]]
+resource_container_name_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
 
 ---
 
 ##### `resource_details_other_input`<sup>Optional</sup> <a name="resource_details_other_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput"></a>
 
 ```python
-resource_details_other_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceDetailsOther]]
+resource_details_other_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
 
 ---
 
 ##### `resource_id_input`<sup>Optional</sup> <a name="resource_id_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput"></a>
 
 ```python
-resource_id_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceId]]
+resource_id_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
 
 ---
 
 ##### `resource_partition_input`<sup>Optional</sup> <a name="resource_partition_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput"></a>
 
 ```python
-resource_partition_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourcePartition]]
+resource_partition_input: IResolvable | typing.List[SecurityhubInsightFiltersResourcePartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
 
 ---
 
 ##### `resource_region_input`<sup>Optional</sup> <a name="resource_region_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput"></a>
 
 ```python
-resource_region_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceRegion]]
+resource_region_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
 
 ---
 
 ##### `resource_tags_input`<sup>Optional</sup> <a name="resource_tags_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput"></a>
 
 ```python
-resource_tags_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceTags]]
+resource_tags_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
 
 ---
 
 ##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput"></a>
 
 ```python
-resource_type_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceType]]
+resource_type_input: IResolvable | typing.List[SecurityhubInsightFiltersResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
 
 ---
 
 ##### `severity_label_input`<sup>Optional</sup> <a name="severity_label_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput"></a>
 
 ```python
-severity_label_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSeverityLabel]]
+severity_label_input: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
 
 ---
 
 ##### `source_url_input`<sup>Optional</sup> <a name="source_url_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput"></a>
 
 ```python
-source_url_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSourceUrl]]
+source_url_input: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
 
 ---
 
 ##### `threat_intel_indicator_category_input`<sup>Optional</sup> <a name="threat_intel_indicator_category_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput"></a>
 
 ```python
-threat_intel_indicator_category_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]]
+threat_intel_indicator_category_input: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
 
 ---
 
 ##### `threat_intel_indicator_last_observed_at_input`<sup>Optional</sup> <a name="threat_intel_indicator_last_observed_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput"></a>
 
 ```python
-threat_intel_indicator_last_observed_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]]
+threat_intel_indicator_last_observed_at_input: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
 
 ---
 
 ##### `threat_intel_indicator_source_input`<sup>Optional</sup> <a name="threat_intel_indicator_source_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput"></a>
 
 ```python
-threat_intel_indicator_source_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]]
+threat_intel_indicator_source_input: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
 
 ---
 
 ##### `threat_intel_indicator_source_url_input`<sup>Optional</sup> <a name="threat_intel_indicator_source_url_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput"></a>
 
 ```python
-threat_intel_indicator_source_url_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]]
+threat_intel_indicator_source_url_input: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
 
 ---
 
 ##### `threat_intel_indicator_type_input`<sup>Optional</sup> <a name="threat_intel_indicator_type_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput"></a>
 
 ```python
-threat_intel_indicator_type_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]]
+threat_intel_indicator_type_input: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
 
 ---
 
 ##### `threat_intel_indicator_value_input`<sup>Optional</sup> <a name="threat_intel_indicator_value_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput"></a>
 
 ```python
-threat_intel_indicator_value_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]]
+threat_intel_indicator_value_input: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
 
 ---
 
 ##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput"></a>
 
 ```python
-title_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersTitle]]
+title_input: IResolvable | typing.List[SecurityhubInsightFiltersTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
 
 ---
 
 ##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput"></a>
 
 ```python
-type_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersType]]
+type_input: IResolvable | typing.List[SecurityhubInsightFiltersType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
 
 ---
 
 ##### `updated_at_input`<sup>Optional</sup> <a name="updated_at_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput"></a>
 
 ```python
-updated_at_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUpdatedAt]]
+updated_at_input: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
 
 ---
 
 ##### `user_defined_values_input`<sup>Optional</sup> <a name="user_defined_values_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput"></a>
 
 ```python
-user_defined_values_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUserDefinedValues]]
+user_defined_values_input: IResolvable | typing.List[SecurityhubInsightFiltersUserDefinedValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
 
 ---
 
 ##### `verification_state_input`<sup>Optional</sup> <a name="verification_state_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput"></a>
 
 ```python
-verification_state_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersVerificationState]]
+verification_state_input: IResolvable | typing.List[SecurityhubInsightFiltersVerificationState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
 
 ---
 
 ##### `workflow_status_input`<sup>Optional</sup> <a name="workflow_status_input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput"></a>
 
 ```python
-workflow_status_input: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersWorkflowStatus]]
+workflow_status_input: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
 
 ---
 
@@ -33430,7 +33430,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -33461,10 +33461,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessLaunchedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProcessLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
 
 ---
 
@@ -33777,7 +33777,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -33868,10 +33868,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessLaunchedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersProcessLaunchedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>
 
 ---
 
@@ -34007,7 +34007,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]</code> | *No description.* |
 
 ---
 
@@ -34038,10 +34038,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProcessName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
 
 ---
 
@@ -34305,7 +34305,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a></code> | *No description.* |
 
 ---
 
@@ -34376,10 +34376,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessName]
+internal_value: IResolvable | SecurityhubInsightFiltersProcessName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>
 
 ---
 
@@ -34515,7 +34515,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]</code> | *No description.* |
 
 ---
 
@@ -34546,10 +34546,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessParentPid]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProcessParentPid]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
 
 ---
 
@@ -34836,7 +34836,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a></code> | *No description.* |
 
 ---
 
@@ -34927,10 +34927,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessParentPid]
+internal_value: IResolvable | SecurityhubInsightFiltersProcessParentPid
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>
 
 ---
 
@@ -35066,7 +35066,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]</code> | *No description.* |
 
 ---
 
@@ -35097,10 +35097,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPath]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
 
 ---
 
@@ -35364,7 +35364,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a></code> | *No description.* |
 
 ---
 
@@ -35435,10 +35435,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessPath]
+internal_value: IResolvable | SecurityhubInsightFiltersProcessPath
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>
 
 ---
 
@@ -35574,7 +35574,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]</code> | *No description.* |
 
 ---
 
@@ -35605,10 +35605,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessPid]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
 
 ---
 
@@ -35895,7 +35895,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a></code> | *No description.* |
 
 ---
 
@@ -35986,10 +35986,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessPid]
+internal_value: IResolvable | SecurityhubInsightFiltersProcessPid
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>
 
 ---
 
@@ -36443,7 +36443,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -36474,10 +36474,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProcessTerminatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProcessTerminatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
 
 ---
 
@@ -36790,7 +36790,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a></code> | *No description.* |
 
 ---
 
@@ -36881,10 +36881,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessTerminatedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersProcessTerminatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>
 
 ---
 
@@ -37020,7 +37020,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -37051,10 +37051,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductArn]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
 
 ---
 
@@ -37318,7 +37318,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a></code> | *No description.* |
 
 ---
 
@@ -37389,10 +37389,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProductArn]
+internal_value: IResolvable | SecurityhubInsightFiltersProductArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>
 
 ---
 
@@ -37528,7 +37528,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]</code> | *No description.* |
 
 ---
 
@@ -37559,10 +37559,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductFields]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProductFields]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
 
 ---
 
@@ -37828,7 +37828,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a></code> | *No description.* |
 
 ---
 
@@ -37919,10 +37919,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProductFields]
+internal_value: IResolvable | SecurityhubInsightFiltersProductFields
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>
 
 ---
 
@@ -38058,7 +38058,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]</code> | *No description.* |
 
 ---
 
@@ -38089,10 +38089,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersProductName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersProductName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
 
 ---
 
@@ -38356,7 +38356,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a></code> | *No description.* |
 
 ---
 
@@ -38427,10 +38427,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProductName]
+internal_value: IResolvable | SecurityhubInsightFiltersProductName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>
 
 ---
 
@@ -38566,7 +38566,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]</code> | *No description.* |
 
 ---
 
@@ -38597,10 +38597,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecommendationText]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersRecommendationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
 
 ---
 
@@ -38864,7 +38864,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a></code> | *No description.* |
 
 ---
 
@@ -38935,10 +38935,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRecommendationText]
+internal_value: IResolvable | SecurityhubInsightFiltersRecommendationText
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>
 
 ---
 
@@ -39074,7 +39074,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]</code> | *No description.* |
 
 ---
 
@@ -39105,10 +39105,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRecordState]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersRecordState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
 
 ---
 
@@ -39372,7 +39372,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a></code> | *No description.* |
 
 ---
 
@@ -39443,10 +39443,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRecordState]
+internal_value: IResolvable | SecurityhubInsightFiltersRecordState
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>
 
 ---
 
@@ -39582,7 +39582,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]</code> | *No description.* |
 
 ---
 
@@ -39613,10 +39613,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
 
 ---
 
@@ -39880,7 +39880,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -39951,10 +39951,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRelatedFindingsId]
+internal_value: IResolvable | SecurityhubInsightFiltersRelatedFindingsId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>
 
 ---
 
@@ -40090,7 +40090,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -40121,10 +40121,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
 
 ---
 
@@ -40388,7 +40388,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -40459,10 +40459,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRelatedFindingsProductArn]
+internal_value: IResolvable | SecurityhubInsightFiltersRelatedFindingsProductArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>
 
 ---
 
@@ -40598,7 +40598,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]</code> | *No description.* |
 
 ---
 
@@ -40629,10 +40629,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
 
 ---
 
@@ -40896,7 +40896,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | *No description.* |
 
 ---
 
@@ -40967,10 +40967,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>
 
 ---
 
@@ -41106,7 +41106,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]</code> | *No description.* |
 
 ---
 
@@ -41137,10 +41137,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
 
 ---
 
@@ -41404,7 +41404,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -41475,10 +41475,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceImageId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>
 
 ---
 
@@ -41614,7 +41614,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]</code> | *No description.* |
 
 ---
 
@@ -41645,10 +41645,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
 
 ---
 
@@ -41910,7 +41910,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a></code> | *No description.* |
 
 ---
 
@@ -41961,10 +41961,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>
 
 ---
 
@@ -42100,7 +42100,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]</code> | *No description.* |
 
 ---
 
@@ -42131,10 +42131,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
 
 ---
 
@@ -42396,7 +42396,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a></code> | *No description.* |
 
 ---
 
@@ -42447,10 +42447,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>
 
 ---
 
@@ -42586,7 +42586,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]</code> | *No description.* |
 
 ---
 
@@ -42617,10 +42617,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
 
 ---
 
@@ -42884,7 +42884,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a></code> | *No description.* |
 
 ---
 
@@ -42955,10 +42955,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>
 
 ---
 
@@ -43412,7 +43412,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -43443,10 +43443,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
 
 ---
 
@@ -43759,7 +43759,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -43850,10 +43850,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>
 
 ---
 
@@ -43989,7 +43989,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]</code> | *No description.* |
 
 ---
 
@@ -44020,10 +44020,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
 
 ---
 
@@ -44287,7 +44287,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -44358,10 +44358,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>
 
 ---
 
@@ -44497,7 +44497,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]</code> | *No description.* |
 
 ---
 
@@ -44528,10 +44528,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
 
 ---
 
@@ -44795,7 +44795,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a></code> | *No description.* |
 
 ---
 
@@ -44866,10 +44866,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceType]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>
 
 ---
 
@@ -45005,7 +45005,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]</code> | *No description.* |
 
 ---
 
@@ -45036,10 +45036,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
 
 ---
 
@@ -45303,7 +45303,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -45374,10 +45374,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>
 
 ---
 
@@ -45831,7 +45831,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -45862,10 +45862,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
 
 ---
 
@@ -46178,7 +46178,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -46269,10 +46269,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>
 
 ---
 
@@ -46408,7 +46408,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -46439,10 +46439,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
 
 ---
 
@@ -46706,7 +46706,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a></code> | *No description.* |
 
 ---
 
@@ -46777,10 +46777,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>
 
 ---
 
@@ -46916,7 +46916,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]</code> | *No description.* |
 
 ---
 
@@ -46947,10 +46947,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
 
 ---
 
@@ -47214,7 +47214,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a></code> | *No description.* |
 
 ---
 
@@ -47285,10 +47285,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>
 
 ---
 
@@ -47424,7 +47424,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]</code> | *No description.* |
 
 ---
 
@@ -47455,10 +47455,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
 
 ---
 
@@ -47722,7 +47722,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a></code> | *No description.* |
 
 ---
 
@@ -47793,10 +47793,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsS3BucketOwnerId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>
 
 ---
 
@@ -47932,7 +47932,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]</code> | *No description.* |
 
 ---
 
@@ -47963,10 +47963,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
 
 ---
 
@@ -48230,7 +48230,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a></code> | *No description.* |
 
 ---
 
@@ -48301,10 +48301,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceAwsS3BucketOwnerName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>
 
 ---
 
@@ -48440,7 +48440,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]</code> | *No description.* |
 
 ---
 
@@ -48471,10 +48471,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
 
 ---
 
@@ -48738,7 +48738,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a></code> | *No description.* |
 
 ---
 
@@ -48809,10 +48809,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerImageId]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceContainerImageId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>
 
 ---
 
@@ -48948,7 +48948,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]</code> | *No description.* |
 
 ---
 
@@ -48979,10 +48979,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerImageName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerImageName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
 
 ---
 
@@ -49246,7 +49246,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a></code> | *No description.* |
 
 ---
 
@@ -49317,10 +49317,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerImageName]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceContainerImageName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>
 
 ---
 
@@ -49774,7 +49774,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -49805,10 +49805,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerLaunchedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
 
 ---
 
@@ -50121,7 +50121,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -50212,10 +50212,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerLaunchedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceContainerLaunchedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>
 
 ---
 
@@ -50351,7 +50351,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]</code> | *No description.* |
 
 ---
 
@@ -50382,10 +50382,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceContainerName]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceContainerName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
 
 ---
 
@@ -50649,7 +50649,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a></code> | *No description.* |
 
 ---
 
@@ -50720,10 +50720,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerName]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceContainerName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>
 
 ---
 
@@ -50859,7 +50859,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]</code> | *No description.* |
 
 ---
 
@@ -50890,10 +50890,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceDetailsOther]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
 
 ---
 
@@ -51159,7 +51159,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -51250,10 +51250,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceDetailsOther]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceDetailsOther
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>
 
 ---
 
@@ -51389,7 +51389,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]</code> | *No description.* |
 
 ---
 
@@ -51420,10 +51420,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceId]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
 
 ---
 
@@ -51687,7 +51687,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a></code> | *No description.* |
 
 ---
 
@@ -51758,10 +51758,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceId]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>
 
 ---
 
@@ -51897,7 +51897,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]</code> | *No description.* |
 
 ---
 
@@ -51928,10 +51928,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourcePartition]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourcePartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
 
 ---
 
@@ -52195,7 +52195,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -52266,10 +52266,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourcePartition]
+internal_value: IResolvable | SecurityhubInsightFiltersResourcePartition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>
 
 ---
 
@@ -52405,7 +52405,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]</code> | *No description.* |
 
 ---
 
@@ -52436,10 +52436,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceRegion]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
 
 ---
 
@@ -52703,7 +52703,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -52774,10 +52774,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceRegion]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceRegion
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>
 
 ---
 
@@ -52913,7 +52913,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]</code> | *No description.* |
 
 ---
 
@@ -52944,10 +52944,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceTags]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
 
 ---
 
@@ -53213,7 +53213,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -53304,10 +53304,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceTags]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceTags
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>
 
 ---
 
@@ -53443,7 +53443,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]</code> | *No description.* |
 
 ---
 
@@ -53474,10 +53474,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersResourceType]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
 
 ---
 
@@ -53741,7 +53741,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a></code> | *No description.* |
 
 ---
 
@@ -53812,10 +53812,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceType]
+internal_value: IResolvable | SecurityhubInsightFiltersResourceType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>
 
 ---
 
@@ -53951,7 +53951,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]</code> | *No description.* |
 
 ---
 
@@ -53982,10 +53982,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSeverityLabel]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
 
 ---
 
@@ -54249,7 +54249,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -54320,10 +54320,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersSeverityLabel]
+internal_value: IResolvable | SecurityhubInsightFiltersSeverityLabel
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>
 
 ---
 
@@ -54459,7 +54459,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]</code> | *No description.* |
 
 ---
 
@@ -54490,10 +54490,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersSourceUrl]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
 
 ---
 
@@ -54757,7 +54757,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -54828,10 +54828,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersSourceUrl]
+internal_value: IResolvable | SecurityhubInsightFiltersSourceUrl
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>
 
 ---
 
@@ -54967,7 +54967,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]</code> | *No description.* |
 
 ---
 
@@ -54998,10 +54998,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorCategory]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
 
 ---
 
@@ -55265,7 +55265,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a></code> | *No description.* |
 
 ---
 
@@ -55336,10 +55336,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorCategory]
+internal_value: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorCategory
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>
 
 ---
 
@@ -55793,7 +55793,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -55824,10 +55824,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
 
 ---
 
@@ -56140,7 +56140,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -56231,10 +56231,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>
 
 ---
 
@@ -56370,7 +56370,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]</code> | *No description.* |
 
 ---
 
@@ -56401,10 +56401,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
 
 ---
 
@@ -56668,7 +56668,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a></code> | *No description.* |
 
 ---
 
@@ -56739,10 +56739,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorSource]
+internal_value: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorSource
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>
 
 ---
 
@@ -56878,7 +56878,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]</code> | *No description.* |
 
 ---
 
@@ -56909,10 +56909,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
 
 ---
 
@@ -57176,7 +57176,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -57247,10 +57247,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]
+internal_value: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>
 
 ---
 
@@ -57386,7 +57386,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]</code> | *No description.* |
 
 ---
 
@@ -57417,10 +57417,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
 
 ---
 
@@ -57684,7 +57684,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a></code> | *No description.* |
 
 ---
 
@@ -57755,10 +57755,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorType]
+internal_value: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>
 
 ---
 
@@ -57894,7 +57894,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]</code> | *No description.* |
 
 ---
 
@@ -57925,10 +57925,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersThreatIntelIndicatorValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
 
 ---
 
@@ -58192,7 +58192,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a></code> | *No description.* |
 
 ---
 
@@ -58263,10 +58263,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorValue]
+internal_value: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorValue
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>
 
 ---
 
@@ -58402,7 +58402,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]</code> | *No description.* |
 
 ---
 
@@ -58433,10 +58433,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersTitle]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
 
 ---
 
@@ -58700,7 +58700,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a></code> | *No description.* |
 
 ---
 
@@ -58771,10 +58771,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersTitle]
+internal_value: IResolvable | SecurityhubInsightFiltersTitle
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>
 
 ---
 
@@ -58910,7 +58910,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]</code> | *No description.* |
 
 ---
 
@@ -58941,10 +58941,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersType]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
 
 ---
 
@@ -59208,7 +59208,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a></code> | *No description.* |
 
 ---
 
@@ -59279,10 +59279,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersType]
+internal_value: IResolvable | SecurityhubInsightFiltersType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>
 
 ---
 
@@ -59736,7 +59736,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -59767,10 +59767,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUpdatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
 
 ---
 
@@ -60083,7 +60083,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -60174,10 +60174,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersUpdatedAt]
+internal_value: IResolvable | SecurityhubInsightFiltersUpdatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>
 
 ---
 
@@ -60313,7 +60313,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]</code> | *No description.* |
 
 ---
 
@@ -60344,10 +60344,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersUserDefinedValues]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersUserDefinedValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
 
 ---
 
@@ -60613,7 +60613,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a></code> | *No description.* |
 
 ---
 
@@ -60704,10 +60704,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersUserDefinedValues]
+internal_value: IResolvable | SecurityhubInsightFiltersUserDefinedValues
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>
 
 ---
 
@@ -60843,7 +60843,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]</code> | *No description.* |
 
 ---
 
@@ -60874,10 +60874,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersVerificationState]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersVerificationState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
 
 ---
 
@@ -61141,7 +61141,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -61212,10 +61212,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersVerificationState]
+internal_value: IResolvable | SecurityhubInsightFiltersVerificationState
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>
 
 ---
 
@@ -61351,7 +61351,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -61382,10 +61382,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubInsightFiltersWorkflowStatus]]
+internal_value: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
 
 ---
 
@@ -61649,7 +61649,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -61720,10 +61720,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersWorkflowStatus]
+internal_value: IResolvable | SecurityhubInsightFiltersWorkflowStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>
 
 ---
 

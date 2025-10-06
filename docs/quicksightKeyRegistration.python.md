@@ -14,15 +14,15 @@ from cdktf_cdktf_provider_aws import quicksight_key_registration
 quicksightKeyRegistration.QuicksightKeyRegistration(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   aws_account_id: str = None,
-  key_registration: typing.Union[IResolvable, typing.List[QuicksightKeyRegistrationKeyRegistration]] = None,
+  key_registration: IResolvable | typing.List[QuicksightKeyRegistrationKeyRegistration] = None,
   region: str = None
 )
 ```
@@ -31,15 +31,15 @@ quicksightKeyRegistration.QuicksightKeyRegistration(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.keyRegistration">key_registration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]</code> | key_registration block. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.keyRegistration">key_registration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]</code> | key_registration block. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -64,13 +64,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -100,7 +100,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `key_registration`<sup>Optional</sup> <a name="key_registration" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.keyRegistration"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]
 
 key_registration block.
 
@@ -388,7 +388,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.importFrom"></a>
@@ -451,7 +451,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -467,7 +467,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -495,13 +495,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_key_registration(
-  value: typing.Union[IResolvable, typing.List[QuicksightKeyRegistrationKeyRegistration]]
+  value: IResolvable | typing.List[QuicksightKeyRegistrationKeyRegistration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.putKeyRegistration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]
 
 ---
 
@@ -660,16 +660,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.keyRegistration">key_registration</a></code> | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList">QuicksightKeyRegistrationKeyRegistrationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.keyRegistrationInput">key_registration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.keyRegistrationInput">key_registration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.region">region</a></code> | <code>str</code> | *No description.* |
@@ -751,20 +751,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -811,10 +811,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -841,10 +841,10 @@ aws_account_id_input: str
 ##### `key_registration_input`<sup>Optional</sup> <a name="key_registration_input" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.property.keyRegistrationInput"></a>
 
 ```python
-key_registration_input: typing.Union[IResolvable, typing.List[QuicksightKeyRegistrationKeyRegistration]]
+key_registration_input: IResolvable | typing.List[QuicksightKeyRegistrationKeyRegistration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]
 
 ---
 
@@ -906,15 +906,15 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import quicksight_key_registration
 
 quicksightKeyRegistration.QuicksightKeyRegistrationConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   aws_account_id: str = None,
-  key_registration: typing.Union[IResolvable, typing.List[QuicksightKeyRegistrationKeyRegistration]] = None,
+  key_registration: IResolvable | typing.List[QuicksightKeyRegistrationKeyRegistration] = None,
   region: str = None
 )
 ```
@@ -923,15 +923,15 @@ quicksightKeyRegistration.QuicksightKeyRegistrationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.keyRegistration">key_registration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]</code> | key_registration block. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.keyRegistration">key_registration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]</code> | key_registration block. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -939,20 +939,20 @@ quicksightKeyRegistration.QuicksightKeyRegistrationConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -999,10 +999,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1021,10 +1021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `key_registration`<sup>Optional</sup> <a name="key_registration" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.keyRegistration"></a>
 
 ```python
-key_registration: typing.Union[IResolvable, typing.List[QuicksightKeyRegistrationKeyRegistration]]
+key_registration: IResolvable | typing.List[QuicksightKeyRegistrationKeyRegistration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]
 
 key_registration block.
 
@@ -1055,7 +1055,7 @@ from cdktf_cdktf_provider_aws import quicksight_key_registration
 
 quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration(
   key_arn: str,
-  default_key: typing.Union[bool, IResolvable] = None
+  default_key: bool | IResolvable = None
 )
 ```
 
@@ -1064,7 +1064,7 @@ quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">default_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">default_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
 
 ---
 
@@ -1083,10 +1083,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `default_key`<sup>Optional</sup> <a name="default_key" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey"></a>
 
 ```python
-default_key: typing.Union[bool, IResolvable]
+default_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
 
@@ -1225,7 +1225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]</code> | *No description.* |
 
 ---
 
@@ -1256,10 +1256,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[QuicksightKeyRegistrationKeyRegistration]]
+internal_value: IResolvable | typing.List[QuicksightKeyRegistrationKeyRegistration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]
 
 ---
 
@@ -1526,11 +1526,11 @@ def reset_default_key() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.defaultKeyInput">default_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.defaultKeyInput">default_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.keyArnInput">key_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.defaultKey">default_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.defaultKey">default_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.keyArn">key_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a></code> | *No description.* |
 
 ---
 
@@ -1561,10 +1561,10 @@ fqn: str
 ##### `default_key_input`<sup>Optional</sup> <a name="default_key_input" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.defaultKeyInput"></a>
 
 ```python
-default_key_input: typing.Union[bool, IResolvable]
+default_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1581,10 +1581,10 @@ key_arn_input: str
 ##### `default_key`<sup>Required</sup> <a name="default_key" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.defaultKey"></a>
 
 ```python
-default_key: typing.Union[bool, IResolvable]
+default_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1601,10 +1601,10 @@ key_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, QuicksightKeyRegistrationKeyRegistration]
+internal_value: IResolvable | QuicksightKeyRegistrationKeyRegistration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>
 
 ---
 

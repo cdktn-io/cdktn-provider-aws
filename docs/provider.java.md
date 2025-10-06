@@ -15,49 +15,37 @@ AwsProvider.Builder.create(Construct scope, java.lang.String id)
 //  .accessKey(java.lang.String)
 //  .alias(java.lang.String)
 //  .allowedAccountIds(java.util.List<java.lang.String>)
-//  .assumeRole(IResolvable)
-//  .assumeRole(java.util.List<AwsProviderAssumeRole>)
-//  .assumeRoleWithWebIdentity(IResolvable)
-//  .assumeRoleWithWebIdentity(java.util.List<AwsProviderAssumeRoleWithWebIdentity>)
+//  .assumeRole(IResolvable|java.util.List<AwsProviderAssumeRole>)
+//  .assumeRoleWithWebIdentity(IResolvable|java.util.List<AwsProviderAssumeRoleWithWebIdentity>)
 //  .customCaBundle(java.lang.String)
-//  .defaultTags(IResolvable)
-//  .defaultTags(java.util.List<AwsProviderDefaultTags>)
+//  .defaultTags(IResolvable|java.util.List<AwsProviderDefaultTags>)
 //  .ec2MetadataServiceEndpoint(java.lang.String)
 //  .ec2MetadataServiceEndpointMode(java.lang.String)
-//  .endpoints(IResolvable)
-//  .endpoints(java.util.List<AwsProviderEndpoints>)
+//  .endpoints(IResolvable|java.util.List<AwsProviderEndpoints>)
 //  .forbiddenAccountIds(java.util.List<java.lang.String>)
 //  .httpProxy(java.lang.String)
 //  .httpsProxy(java.lang.String)
-//  .ignoreTags(IResolvable)
-//  .ignoreTags(java.util.List<AwsProviderIgnoreTags>)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .ignoreTags(IResolvable|java.util.List<AwsProviderIgnoreTags>)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .maxRetries(java.lang.Number)
 //  .noProxy(java.lang.String)
 //  .profile(java.lang.String)
 //  .region(java.lang.String)
 //  .retryMode(java.lang.String)
 //  .s3UsEast1RegionalEndpoint(java.lang.String)
-//  .s3UsePathStyle(java.lang.Boolean)
-//  .s3UsePathStyle(IResolvable)
+//  .s3UsePathStyle(java.lang.Boolean|IResolvable)
 //  .secretKey(java.lang.String)
 //  .sharedConfigFiles(java.util.List<java.lang.String>)
 //  .sharedCredentialsFiles(java.util.List<java.lang.String>)
-//  .skipCredentialsValidation(java.lang.Boolean)
-//  .skipCredentialsValidation(IResolvable)
+//  .skipCredentialsValidation(java.lang.Boolean|IResolvable)
 //  .skipMetadataApiCheck(java.lang.String)
-//  .skipRegionValidation(java.lang.Boolean)
-//  .skipRegionValidation(IResolvable)
-//  .skipRequestingAccountId(java.lang.Boolean)
-//  .skipRequestingAccountId(IResolvable)
+//  .skipRegionValidation(java.lang.Boolean|IResolvable)
+//  .skipRequestingAccountId(java.lang.Boolean|IResolvable)
 //  .stsRegion(java.lang.String)
 //  .token(java.lang.String)
 //  .tokenBucketRateLimiterCapacity(java.lang.Number)
-//  .useDualstackEndpoint(java.lang.Boolean)
-//  .useDualstackEndpoint(IResolvable)
-//  .useFipsEndpoint(java.lang.Boolean)
-//  .useFipsEndpoint(IResolvable)
+//  .useDualstackEndpoint(java.lang.Boolean|IResolvable)
+//  .useFipsEndpoint(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -68,37 +56,37 @@ AwsProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.accessKey">accessKey</a></code> | <code>java.lang.String</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.allowedAccountIds">allowedAccountIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | assume_role block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | assume_role block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | assume_role_with_web_identity block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.customCaBundle">customCaBundle</a></code> | <code>java.lang.String</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags">defaultTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | default_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags">defaultTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | default_tags block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpoint">ec2MetadataServiceEndpoint</a></code> | <code>java.lang.String</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpointMode">ec2MetadataServiceEndpointMode</a></code> | <code>java.lang.String</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | endpoints block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | endpoints block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpProxy">httpProxy</a></code> | <code>java.lang.String</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpsProxy">httpsProxy</a></code> | <code>java.lang.String</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags">ignoreTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | ignore_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags">ignoreTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | ignore_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | The maximum number of times an AWS API request is being executed. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.noProxy">noProxy</a></code> | <code>java.lang.String</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.profile">profile</a></code> | <code>java.lang.String</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.retryMode">retryMode</a></code> | <code>java.lang.String</code> | Specifies how retries are attempted. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsEast1RegionalEndpoint">s3UsEast1RegionalEndpoint</a></code> | <code>java.lang.String</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle">s3UsePathStyle</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle">s3UsePathStyle</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.secretKey">secretKey</a></code> | <code>java.lang.String</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedConfigFiles">sharedConfigFiles</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedCredentialsFiles">sharedCredentialsFiles</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipMetadataApiCheck">skipMetadataApiCheck</a></code> | <code>java.lang.String</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation">skipRegionValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip static validation of region name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation">skipRegionValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.stsRegion">stsRegion</a></code> | <code>java.lang.String</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | session token. A session token is only required if you are using temporary security credentials. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.tokenBucketRateLimiterCapacity">tokenBucketRateLimiterCapacity</a></code> | <code>java.lang.Number</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint">useFipsEndpoint</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint">useFipsEndpoint</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
 
 ---
 
@@ -150,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
 
 assume_role block.
 
@@ -160,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assumeRoleWithWebIdentity`<sup>Optional</sup> <a name="assumeRoleWithWebIdentity" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
 
 assume_role_with_web_identity block.
 
@@ -182,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
 
 default_tags block.
 
@@ -212,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
 
 endpoints block.
 
@@ -254,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignoreTags`<sup>Optional</sup> <a name="ignoreTags" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
 
 ignore_tags block.
 
@@ -264,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
@@ -343,7 +331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `s3UsePathStyle`<sup>Optional</sup> <a name="s3UsePathStyle" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
@@ -383,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="skipCredentialsValidation" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
@@ -403,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipRegionValidation`<sup>Optional</sup> <a name="skipRegionValidation" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip static validation of region name.
 
@@ -415,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipRequestingAccountId`<sup>Optional</sup> <a name="skipRequestingAccountId" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
@@ -455,7 +443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `useDualstackEndpoint`<sup>Optional</sup> <a name="useDualstackEndpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Resolve an endpoint with DualStack capability.
 
@@ -465,7 +453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `useFipsEndpoint`<sup>Optional</sup> <a name="useFipsEndpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Resolve an endpoint with FIPS capability.
 
@@ -926,70 +914,70 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.accessKeyInput">accessKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">allowedAccountIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assumeRoleWithWebIdentityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assumeRoleWithWebIdentityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.customCaBundleInput">customCaBundleInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput">defaultTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput">defaultTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput">ec2MetadataServiceEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput">ec2MetadataServiceEndpointModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput">endpointsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput">endpointsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput">forbiddenAccountIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpProxyInput">httpProxyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpsProxyInput">httpsProxyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignoreTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignoreTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.maxRetriesInput">maxRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.noProxyInput">noProxyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.profileInput">profileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.retryModeInput">retryModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput">s3UsEast1RegionalEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3UsePathStyleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3UsePathStyleInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.secretKeyInput">secretKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput">sharedConfigFilesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput">sharedCredentialsFilesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skipCredentialsValidationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skipCredentialsValidationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput">skipMetadataApiCheckInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skipRegionValidationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skipRequestingAccountIdInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skipRegionValidationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skipRequestingAccountIdInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.stsRegionInput">stsRegionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput">tokenBucketRateLimiterCapacityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">useDualstackEndpointInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">useFipsEndpointInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">useDualstackEndpointInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">useFipsEndpointInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.accessKey">accessKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIds">allowedAccountIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.customCaBundle">customCaBundle</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTags">defaultTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTags">defaultTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint">ec2MetadataServiceEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode">ec2MetadataServiceEndpointMode</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpProxy">httpProxy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpsProxy">httpsProxy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags">ignoreTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags">ignoreTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.noProxy">noProxy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.profile">profile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.retryMode">retryMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint">s3UsEast1RegionalEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFiles">sharedConfigFiles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles">sharedCredentialsFiles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck">skipMetadataApiCheck</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation">skipRegionValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation">skipRegionValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.stsRegion">stsRegion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity">tokenBucketRateLimiterCapacity</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1118,20 +1106,20 @@ public java.util.List<java.lang.String> getAllowedAccountIdsInput();
 ##### `assumeRoleInput`<sup>Optional</sup> <a name="assumeRoleInput" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput"></a>
 
 ```java
-public java.lang.Object getAssumeRoleInput();
+public IResolvable|java.util.List<AwsProviderAssumeRole> getAssumeRoleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
 
 ---
 
 ##### `assumeRoleWithWebIdentityInput`<sup>Optional</sup> <a name="assumeRoleWithWebIdentityInput" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput"></a>
 
 ```java
-public java.lang.Object getAssumeRoleWithWebIdentityInput();
+public IResolvable|java.util.List<AwsProviderAssumeRoleWithWebIdentity> getAssumeRoleWithWebIdentityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
 
 ---
 
@@ -1148,10 +1136,10 @@ public java.lang.String getCustomCaBundleInput();
 ##### `defaultTagsInput`<sup>Optional</sup> <a name="defaultTagsInput" id="@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput"></a>
 
 ```java
-public java.lang.Object getDefaultTagsInput();
+public IResolvable|java.util.List<AwsProviderDefaultTags> getDefaultTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
 
 ---
 
@@ -1178,10 +1166,10 @@ public java.lang.String getEc2MetadataServiceEndpointModeInput();
 ##### `endpointsInput`<sup>Optional</sup> <a name="endpointsInput" id="@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput"></a>
 
 ```java
-public java.lang.Object getEndpointsInput();
+public IResolvable|java.util.List<AwsProviderEndpoints> getEndpointsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
 
 ---
 
@@ -1218,20 +1206,20 @@ public java.lang.String getHttpsProxyInput();
 ##### `ignoreTagsInput`<sup>Optional</sup> <a name="ignoreTagsInput" id="@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput"></a>
 
 ```java
-public java.lang.Object getIgnoreTagsInput();
+public IResolvable|java.util.List<AwsProviderIgnoreTags> getIgnoreTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
 
 ---
 
 ##### `insecureInput`<sup>Optional</sup> <a name="insecureInput" id="@cdktf/provider-aws.provider.AwsProvider.property.insecureInput"></a>
 
 ```java
-public java.lang.Object getInsecureInput();
+public java.lang.Boolean|IResolvable getInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1298,10 +1286,10 @@ public java.lang.String getS3UsEast1RegionalEndpointInput();
 ##### `s3UsePathStyleInput`<sup>Optional</sup> <a name="s3UsePathStyleInput" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput"></a>
 
 ```java
-public java.lang.Object getS3UsePathStyleInput();
+public java.lang.Boolean|IResolvable getS3UsePathStyleInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1338,10 +1326,10 @@ public java.util.List<java.lang.String> getSharedCredentialsFilesInput();
 ##### `skipCredentialsValidationInput`<sup>Optional</sup> <a name="skipCredentialsValidationInput" id="@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput"></a>
 
 ```java
-public java.lang.Object getSkipCredentialsValidationInput();
+public java.lang.Boolean|IResolvable getSkipCredentialsValidationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1358,20 +1346,20 @@ public java.lang.String getSkipMetadataApiCheckInput();
 ##### `skipRegionValidationInput`<sup>Optional</sup> <a name="skipRegionValidationInput" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput"></a>
 
 ```java
-public java.lang.Object getSkipRegionValidationInput();
+public java.lang.Boolean|IResolvable getSkipRegionValidationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipRequestingAccountIdInput`<sup>Optional</sup> <a name="skipRequestingAccountIdInput" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput"></a>
 
 ```java
-public java.lang.Object getSkipRequestingAccountIdInput();
+public java.lang.Boolean|IResolvable getSkipRequestingAccountIdInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1408,20 +1396,20 @@ public java.lang.String getTokenInput();
 ##### `useDualstackEndpointInput`<sup>Optional</sup> <a name="useDualstackEndpointInput" id="@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput"></a>
 
 ```java
-public java.lang.Object getUseDualstackEndpointInput();
+public java.lang.Boolean|IResolvable getUseDualstackEndpointInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useFipsEndpointInput`<sup>Optional</sup> <a name="useFipsEndpointInput" id="@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput"></a>
 
 ```java
-public java.lang.Object getUseFipsEndpointInput();
+public java.lang.Boolean|IResolvable getUseFipsEndpointInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1448,20 +1436,20 @@ public java.util.List<java.lang.String> getAllowedAccountIds();
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRole"></a>
 
 ```java
-public java.lang.Object getAssumeRole();
+public IResolvable|java.util.List<AwsProviderAssumeRole> getAssumeRole();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
 
 ---
 
 ##### `assumeRoleWithWebIdentity`<sup>Optional</sup> <a name="assumeRoleWithWebIdentity" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity"></a>
 
 ```java
-public java.lang.Object getAssumeRoleWithWebIdentity();
+public IResolvable|java.util.List<AwsProviderAssumeRoleWithWebIdentity> getAssumeRoleWithWebIdentity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
 
 ---
 
@@ -1478,10 +1466,10 @@ public java.lang.String getCustomCaBundle();
 ##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktf/provider-aws.provider.AwsProvider.property.defaultTags"></a>
 
 ```java
-public java.lang.Object getDefaultTags();
+public IResolvable|java.util.List<AwsProviderDefaultTags> getDefaultTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
 
 ---
 
@@ -1508,10 +1496,10 @@ public java.lang.String getEc2MetadataServiceEndpointMode();
 ##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProvider.property.endpoints"></a>
 
 ```java
-public java.lang.Object getEndpoints();
+public IResolvable|java.util.List<AwsProviderEndpoints> getEndpoints();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
 
 ---
 
@@ -1548,20 +1536,20 @@ public java.lang.String getHttpsProxy();
 ##### `ignoreTags`<sup>Optional</sup> <a name="ignoreTags" id="@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags"></a>
 
 ```java
-public java.lang.Object getIgnoreTags();
+public IResolvable|java.util.List<AwsProviderIgnoreTags> getIgnoreTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
 
 ---
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProvider.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1628,10 +1616,10 @@ public java.lang.String getS3UsEast1RegionalEndpoint();
 ##### `s3UsePathStyle`<sup>Optional</sup> <a name="s3UsePathStyle" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle"></a>
 
 ```java
-public java.lang.Object getS3UsePathStyle();
+public java.lang.Boolean|IResolvable getS3UsePathStyle();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1668,10 +1656,10 @@ public java.util.List<java.lang.String> getSharedCredentialsFiles();
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="skipCredentialsValidation" id="@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation"></a>
 
 ```java
-public java.lang.Object getSkipCredentialsValidation();
+public java.lang.Boolean|IResolvable getSkipCredentialsValidation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1688,20 +1676,20 @@ public java.lang.String getSkipMetadataApiCheck();
 ##### `skipRegionValidation`<sup>Optional</sup> <a name="skipRegionValidation" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation"></a>
 
 ```java
-public java.lang.Object getSkipRegionValidation();
+public java.lang.Boolean|IResolvable getSkipRegionValidation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipRequestingAccountId`<sup>Optional</sup> <a name="skipRequestingAccountId" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId"></a>
 
 ```java
-public java.lang.Object getSkipRequestingAccountId();
+public java.lang.Boolean|IResolvable getSkipRequestingAccountId();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1738,20 +1726,20 @@ public java.lang.Number getTokenBucketRateLimiterCapacity();
 ##### `useDualstackEndpoint`<sup>Optional</sup> <a name="useDualstackEndpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint"></a>
 
 ```java
-public java.lang.Object getUseDualstackEndpoint();
+public java.lang.Boolean|IResolvable getUseDualstackEndpoint();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useFipsEndpoint`<sup>Optional</sup> <a name="useFipsEndpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint"></a>
 
 ```java
-public java.lang.Object getUseFipsEndpoint();
+public java.lang.Boolean|IResolvable getUseFipsEndpoint();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2078,49 +2066,37 @@ AwsProviderConfig.builder()
 //  .accessKey(java.lang.String)
 //  .alias(java.lang.String)
 //  .allowedAccountIds(java.util.List<java.lang.String>)
-//  .assumeRole(IResolvable)
-//  .assumeRole(java.util.List<AwsProviderAssumeRole>)
-//  .assumeRoleWithWebIdentity(IResolvable)
-//  .assumeRoleWithWebIdentity(java.util.List<AwsProviderAssumeRoleWithWebIdentity>)
+//  .assumeRole(IResolvable|java.util.List<AwsProviderAssumeRole>)
+//  .assumeRoleWithWebIdentity(IResolvable|java.util.List<AwsProviderAssumeRoleWithWebIdentity>)
 //  .customCaBundle(java.lang.String)
-//  .defaultTags(IResolvable)
-//  .defaultTags(java.util.List<AwsProviderDefaultTags>)
+//  .defaultTags(IResolvable|java.util.List<AwsProviderDefaultTags>)
 //  .ec2MetadataServiceEndpoint(java.lang.String)
 //  .ec2MetadataServiceEndpointMode(java.lang.String)
-//  .endpoints(IResolvable)
-//  .endpoints(java.util.List<AwsProviderEndpoints>)
+//  .endpoints(IResolvable|java.util.List<AwsProviderEndpoints>)
 //  .forbiddenAccountIds(java.util.List<java.lang.String>)
 //  .httpProxy(java.lang.String)
 //  .httpsProxy(java.lang.String)
-//  .ignoreTags(IResolvable)
-//  .ignoreTags(java.util.List<AwsProviderIgnoreTags>)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .ignoreTags(IResolvable|java.util.List<AwsProviderIgnoreTags>)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .maxRetries(java.lang.Number)
 //  .noProxy(java.lang.String)
 //  .profile(java.lang.String)
 //  .region(java.lang.String)
 //  .retryMode(java.lang.String)
 //  .s3UsEast1RegionalEndpoint(java.lang.String)
-//  .s3UsePathStyle(java.lang.Boolean)
-//  .s3UsePathStyle(IResolvable)
+//  .s3UsePathStyle(java.lang.Boolean|IResolvable)
 //  .secretKey(java.lang.String)
 //  .sharedConfigFiles(java.util.List<java.lang.String>)
 //  .sharedCredentialsFiles(java.util.List<java.lang.String>)
-//  .skipCredentialsValidation(java.lang.Boolean)
-//  .skipCredentialsValidation(IResolvable)
+//  .skipCredentialsValidation(java.lang.Boolean|IResolvable)
 //  .skipMetadataApiCheck(java.lang.String)
-//  .skipRegionValidation(java.lang.Boolean)
-//  .skipRegionValidation(IResolvable)
-//  .skipRequestingAccountId(java.lang.Boolean)
-//  .skipRequestingAccountId(IResolvable)
+//  .skipRegionValidation(java.lang.Boolean|IResolvable)
+//  .skipRequestingAccountId(java.lang.Boolean|IResolvable)
 //  .stsRegion(java.lang.String)
 //  .token(java.lang.String)
 //  .tokenBucketRateLimiterCapacity(java.lang.Number)
-//  .useDualstackEndpoint(java.lang.Boolean)
-//  .useDualstackEndpoint(IResolvable)
-//  .useFipsEndpoint(java.lang.Boolean)
-//  .useFipsEndpoint(IResolvable)
+//  .useDualstackEndpoint(java.lang.Boolean|IResolvable)
+//  .useFipsEndpoint(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2131,37 +2107,37 @@ AwsProviderConfig.builder()
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.accessKey">accessKey</a></code> | <code>java.lang.String</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowedAccountIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | assume_role block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>></code> | assume_role block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>></code> | assume_role_with_web_identity block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.customCaBundle">customCaBundle</a></code> | <code>java.lang.String</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags">defaultTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | default_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags">defaultTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>></code> | default_tags block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint">ec2MetadataServiceEndpoint</a></code> | <code>java.lang.String</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode">ec2MetadataServiceEndpointMode</a></code> | <code>java.lang.String</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | endpoints block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>></code> | endpoints block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpProxy">httpProxy</a></code> | <code>java.lang.String</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpsProxy">httpsProxy</a></code> | <code>java.lang.String</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignoreTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | ignore_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignoreTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>></code> | ignore_tags block. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | The maximum number of times an AWS API request is being executed. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.noProxy">noProxy</a></code> | <code>java.lang.String</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.profile">profile</a></code> | <code>java.lang.String</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.retryMode">retryMode</a></code> | <code>java.lang.String</code> | Specifies how retries are attempted. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint">s3UsEast1RegionalEndpoint</a></code> | <code>java.lang.String</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3UsePathStyle</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles">sharedConfigFiles</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles">sharedCredentialsFiles</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck">skipMetadataApiCheck</a></code> | <code>java.lang.String</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skipRegionValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip static validation of region name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skipRegionValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skipRequestingAccountId</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.stsRegion">stsRegion</a></code> | <code>java.lang.String</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | session token. A session token is only required if you are using temporary security credentials. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity">tokenBucketRateLimiterCapacity</a></code> | <code>java.lang.Number</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">useDualstackEndpoint</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">useFipsEndpoint</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
 
 ---
 
@@ -2208,10 +2184,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole"></a>
 
 ```java
-public java.lang.Object getAssumeRole();
+public IResolvable|java.util.List<AwsProviderAssumeRole> getAssumeRole();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>>
 
 assume_role block.
 
@@ -2222,10 +2198,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assumeRoleWithWebIdentity`<sup>Optional</sup> <a name="assumeRoleWithWebIdentity" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity"></a>
 
 ```java
-public java.lang.Object getAssumeRoleWithWebIdentity();
+public IResolvable|java.util.List<AwsProviderAssumeRoleWithWebIdentity> getAssumeRoleWithWebIdentity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>>
 
 assume_role_with_web_identity block.
 
@@ -2252,10 +2228,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags"></a>
 
 ```java
-public java.lang.Object getDefaultTags();
+public IResolvable|java.util.List<AwsProviderDefaultTags> getDefaultTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>>
 
 default_tags block.
 
@@ -2294,10 +2270,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints"></a>
 
 ```java
-public java.lang.Object getEndpoints();
+public IResolvable|java.util.List<AwsProviderEndpoints> getEndpoints();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>>
 
 endpoints block.
 
@@ -2352,10 +2328,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ignoreTags`<sup>Optional</sup> <a name="ignoreTags" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags"></a>
 
 ```java
-public java.lang.Object getIgnoreTags();
+public IResolvable|java.util.List<AwsProviderIgnoreTags> getIgnoreTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>>
 
 ignore_tags block.
 
@@ -2366,10 +2342,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
@@ -2473,10 +2449,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `s3UsePathStyle`<sup>Optional</sup> <a name="s3UsePathStyle" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle"></a>
 
 ```java
-public java.lang.Object getS3UsePathStyle();
+public java.lang.Boolean|IResolvable getS3UsePathStyle();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
@@ -2529,10 +2505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="skipCredentialsValidation" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation"></a>
 
 ```java
-public java.lang.Object getSkipCredentialsValidation();
+public java.lang.Boolean|IResolvable getSkipCredentialsValidation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
@@ -2557,10 +2533,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipRegionValidation`<sup>Optional</sup> <a name="skipRegionValidation" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation"></a>
 
 ```java
-public java.lang.Object getSkipRegionValidation();
+public java.lang.Boolean|IResolvable getSkipRegionValidation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip static validation of region name.
 
@@ -2573,10 +2549,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipRequestingAccountId`<sup>Optional</sup> <a name="skipRequestingAccountId" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId"></a>
 
 ```java
-public java.lang.Object getSkipRequestingAccountId();
+public java.lang.Boolean|IResolvable getSkipRequestingAccountId();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
@@ -2629,10 +2605,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useDualstackEndpoint`<sup>Optional</sup> <a name="useDualstackEndpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint"></a>
 
 ```java
-public java.lang.Object getUseDualstackEndpoint();
+public java.lang.Boolean|IResolvable getUseDualstackEndpoint();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Resolve an endpoint with DualStack capability.
 
@@ -2643,10 +2619,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useFipsEndpoint`<sup>Optional</sup> <a name="useFipsEndpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint"></a>
 
 ```java
-public java.lang.Object getUseFipsEndpoint();
+public java.lang.Boolean|IResolvable getUseFipsEndpoint();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Resolve an endpoint with FIPS capability.
 

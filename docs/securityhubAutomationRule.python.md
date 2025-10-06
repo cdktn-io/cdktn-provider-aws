@@ -14,19 +14,19 @@ from cdktf_cdktf_provider_aws import securityhub_automation_rule
 securityhubAutomationRule.SecurityhubAutomationRule(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   description: str,
   rule_name: str,
   rule_order: typing.Union[int, float],
-  actions: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActions]] = None,
-  criteria: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteria]] = None,
-  is_terminal: typing.Union[bool, IResolvable] = None,
+  actions: IResolvable | typing.List[SecurityhubAutomationRuleActions] = None,
+  criteria: IResolvable | typing.List[SecurityhubAutomationRuleCriteria] = None,
+  is_terminal: bool | IResolvable = None,
   region: str = None,
   rule_status: str = None,
   tags: typing.Mapping[str] = None
@@ -37,19 +37,19 @@ securityhubAutomationRule.SecurityhubAutomationRule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleName">rule_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleOrder">rule_order</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions">actions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]</code> | actions block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria">criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]</code> | criteria block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal">is_terminal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions">actions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]</code> | actions block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria">criteria</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]</code> | criteria block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal">is_terminal</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleStatus">rule_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
@@ -76,13 +76,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]
 
 actions block.
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `criteria`<sup>Optional</sup> <a name="criteria" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]
 
 criteria block.
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `is_terminal`<sup>Optional</sup> <a name="is_terminal" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
@@ -454,7 +454,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.importFrom"></a>
@@ -517,7 +517,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -533,7 +533,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -561,13 +561,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_actions(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActions]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleActions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putActions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]
 
 ---
 
@@ -575,13 +575,13 @@ def put_actions(
 
 ```python
 def put_criteria(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteria]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteria]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putCriteria.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]
 
 ---
 
@@ -758,29 +758,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList">SecurityhubAutomationRuleActionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteria">criteria</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList">SecurityhubAutomationRuleCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput">actions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput">criteria_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput">actions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput">criteria_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput">is_terminal_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput">is_terminal_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleNameInput">rule_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleOrderInput">rule_order_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleStatusInput">rule_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal">is_terminal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal">is_terminal</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleName">rule_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleOrder">rule_order</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -864,20 +864,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -924,10 +924,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -984,20 +984,20 @@ tags_all: StringMap
 ##### `actions_input`<sup>Optional</sup> <a name="actions_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput"></a>
 
 ```python
-actions_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActions]]
+actions_input: IResolvable | typing.List[SecurityhubAutomationRuleActions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]
 
 ---
 
 ##### `criteria_input`<sup>Optional</sup> <a name="criteria_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput"></a>
 
 ```python
-criteria_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteria]]
+criteria_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]
 
 ---
 
@@ -1014,10 +1014,10 @@ description_input: str
 ##### `is_terminal_input`<sup>Optional</sup> <a name="is_terminal_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput"></a>
 
 ```python
-is_terminal_input: typing.Union[bool, IResolvable]
+is_terminal_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1084,10 +1084,10 @@ description: str
 ##### `is_terminal`<sup>Required</sup> <a name="is_terminal" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal"></a>
 
 ```python
-is_terminal: typing.Union[bool, IResolvable]
+is_terminal: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1169,7 +1169,7 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleActions(
-  finding_fields_update: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]] = None,
+  finding_fields_update: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate] = None,
   type: str = None
 )
 ```
@@ -1178,7 +1178,7 @@ securityhubAutomationRule.SecurityhubAutomationRuleActions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">finding_fields_update</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]</code> | finding_fields_update block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">finding_fields_update</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]</code> | finding_fields_update block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
 
 ---
@@ -1186,10 +1186,10 @@ securityhubAutomationRule.SecurityhubAutomationRuleActions(
 ##### `finding_fields_update`<sup>Optional</sup> <a name="finding_fields_update" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate"></a>
 
 ```python
-finding_fields_update: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]]
+finding_fields_update: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]
 
 finding_fields_update block.
 
@@ -1219,13 +1219,13 @@ from cdktf_cdktf_provider_aws import securityhub_automation_rule
 securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate(
   confidence: typing.Union[int, float] = None,
   criticality: typing.Union[int, float] = None,
-  note: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]] = None,
-  related_findings: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]] = None,
-  severity: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]] = None,
+  note: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote] = None,
+  related_findings: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings] = None,
+  severity: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity] = None,
   types: typing.List[str] = None,
   user_defined_fields: typing.Mapping[str] = None,
   verification_state: str = None,
-  workflow: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]] = None
+  workflow: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow] = None
 )
 ```
 
@@ -1235,13 +1235,13 @@ securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">confidence</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">criticality</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]</code> | note block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">related_findings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]</code> | related_findings block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]</code> | severity block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]</code> | note block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">related_findings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]</code> | related_findings block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]</code> | severity block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">user_defined_fields</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">verification_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]</code> | workflow block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]</code> | workflow block. |
 
 ---
 
@@ -1272,10 +1272,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note`<sup>Optional</sup> <a name="note" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note"></a>
 
 ```python
-note: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]]
+note: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]
 
 note block.
 
@@ -1286,10 +1286,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `related_findings`<sup>Optional</sup> <a name="related_findings" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings"></a>
 
 ```python
-related_findings: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]]
+related_findings: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]
 
 related_findings block.
 
@@ -1300,10 +1300,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severity`<sup>Optional</sup> <a name="severity" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity"></a>
 
 ```python
-severity: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]]
+severity: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]
 
 severity block.
 
@@ -1350,10 +1350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workflow`<sup>Optional</sup> <a name="workflow" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow"></a>
 
 ```python
-workflow: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]]
+workflow: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]
 
 workflow block.
 
@@ -1542,19 +1542,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   description: str,
   rule_name: str,
   rule_order: typing.Union[int, float],
-  actions: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActions]] = None,
-  criteria: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteria]] = None,
-  is_terminal: typing.Union[bool, IResolvable] = None,
+  actions: IResolvable | typing.List[SecurityhubAutomationRuleActions] = None,
+  criteria: IResolvable | typing.List[SecurityhubAutomationRuleCriteria] = None,
+  is_terminal: bool | IResolvable = None,
   region: str = None,
   rule_status: str = None,
   tags: typing.Mapping[str] = None
@@ -1565,19 +1565,19 @@ securityhubAutomationRule.SecurityhubAutomationRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">rule_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">rule_order</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]</code> | actions block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]</code> | criteria block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">is_terminal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]</code> | actions block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]</code> | criteria block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">is_terminal</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">rule_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
@@ -1587,20 +1587,20 @@ securityhubAutomationRule.SecurityhubAutomationRuleConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1647,10 +1647,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1693,10 +1693,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions"></a>
 
 ```python
-actions: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActions]]
+actions: IResolvable | typing.List[SecurityhubAutomationRuleActions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]
 
 actions block.
 
@@ -1707,10 +1707,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `criteria`<sup>Optional</sup> <a name="criteria" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria"></a>
 
 ```python
-criteria: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteria]]
+criteria: IResolvable | typing.List[SecurityhubAutomationRuleCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]
 
 criteria block.
 
@@ -1721,10 +1721,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `is_terminal`<sup>Optional</sup> <a name="is_terminal" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal"></a>
 
 ```python
-is_terminal: typing.Union[bool, IResolvable]
+is_terminal: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
@@ -1776,44 +1776,44 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleCriteria(
-  aws_account_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]] = None,
-  aws_account_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]] = None,
-  company_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCompanyName]] = None,
-  compliance_associated_standards_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]] = None,
-  compliance_security_control_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]] = None,
-  compliance_status: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]] = None,
-  confidence: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaConfidence]] = None,
-  created_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]] = None,
-  criticality: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCriticality]] = None,
-  description: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaDescription]] = None,
-  first_observed_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]] = None,
-  generator_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]] = None,
-  id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaId]] = None,
-  last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]] = None,
-  note_text: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteText]] = None,
-  note_updated_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]] = None,
-  note_updated_by: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]] = None,
-  product_arn: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductArn]] = None,
-  product_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductName]] = None,
-  record_state: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRecordState]] = None,
-  related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]] = None,
-  related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]] = None,
-  resource_application_arn: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]] = None,
-  resource_application_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]] = None,
-  resource_details_other: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]] = None,
-  resource_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceId]] = None,
-  resource_partition: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]] = None,
-  resource_region: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]] = None,
-  resource_tags: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceTags]] = None,
-  resource_type: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceType]] = None,
-  severity_label: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]] = None,
-  source_url: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]] = None,
-  title: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaTitle]] = None,
-  type: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaType]] = None,
-  updated_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]] = None,
-  user_defined_fields: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]] = None,
-  verification_state: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaVerificationState]] = None,
-  workflow_status: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]] = None
+  aws_account_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId] = None,
+  aws_account_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName] = None,
+  company_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCompanyName] = None,
+  compliance_associated_standards_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId] = None,
+  compliance_security_control_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId] = None,
+  compliance_status: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus] = None,
+  confidence: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaConfidence] = None,
+  created_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAt] = None,
+  criticality: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCriticality] = None,
+  description: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaDescription] = None,
+  first_observed_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt] = None,
+  generator_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaGeneratorId] = None,
+  id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaId] = None,
+  last_observed_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt] = None,
+  note_text: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteText] = None,
+  note_updated_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt] = None,
+  note_updated_by: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy] = None,
+  product_arn: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductArn] = None,
+  product_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductName] = None,
+  record_state: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRecordState] = None,
+  related_findings_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId] = None,
+  related_findings_product_arn: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn] = None,
+  resource_application_arn: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn] = None,
+  resource_application_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName] = None,
+  resource_details_other: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther] = None,
+  resource_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceId] = None,
+  resource_partition: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourcePartition] = None,
+  resource_region: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceRegion] = None,
+  resource_tags: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceTags] = None,
+  resource_type: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceType] = None,
+  severity_label: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel] = None,
+  source_url: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSourceUrl] = None,
+  title: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaTitle] = None,
+  type: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaType] = None,
+  updated_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt] = None,
+  user_defined_fields: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields] = None,
+  verification_state: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaVerificationState] = None,
+  workflow_status: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus] = None
 )
 ```
 
@@ -1821,54 +1821,54 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteria(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId">aws_account_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]</code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName">aws_account_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]</code> | aws_account_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName">company_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]</code> | company_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId">compliance_associated_standards_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]</code> | compliance_associated_standards_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId">compliance_security_control_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]</code> | compliance_security_control_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus">compliance_status</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]</code> | compliance_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence">confidence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]</code> | confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt">created_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]</code> | created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality">criticality</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]</code> | criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description">description</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]</code> | description block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt">first_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]</code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId">generator_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]</code> | generator_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id">id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]</code> | id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt">last_observed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]</code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText">note_text</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]</code> | note_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt">note_updated_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]</code> | note_updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy">note_updated_by</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]</code> | note_updated_by block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn">product_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]</code> | product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName">product_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]</code> | product_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState">record_state</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]</code> | record_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId">related_findings_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]</code> | related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn">related_findings_product_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]</code> | related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn">resource_application_arn</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]</code> | resource_application_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName">resource_application_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]</code> | resource_application_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther">resource_details_other</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]</code> | resource_details_other block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId">resource_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]</code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition">resource_partition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]</code> | resource_partition block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion">resource_region</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]</code> | resource_region block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags">resource_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]</code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType">resource_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]</code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel">severity_label</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]</code> | severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl">source_url</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]</code> | source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title">title</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]</code> | title block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type">type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]</code> | type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt">updated_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]</code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields">user_defined_fields</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]</code> | user_defined_fields block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState">verification_state</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]</code> | verification_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus">workflow_status</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]</code> | workflow_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId">aws_account_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]</code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName">aws_account_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]</code> | aws_account_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName">company_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]</code> | company_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId">compliance_associated_standards_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]</code> | compliance_associated_standards_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId">compliance_security_control_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]</code> | compliance_security_control_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus">compliance_status</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]</code> | compliance_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence">confidence</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]</code> | confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt">created_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]</code> | created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality">criticality</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]</code> | criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description">description</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]</code> | description block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt">first_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]</code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId">generator_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]</code> | generator_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id">id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]</code> | id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt">last_observed_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]</code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText">note_text</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]</code> | note_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt">note_updated_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]</code> | note_updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy">note_updated_by</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]</code> | note_updated_by block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn">product_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]</code> | product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName">product_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]</code> | product_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState">record_state</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]</code> | record_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId">related_findings_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]</code> | related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn">related_findings_product_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]</code> | related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn">resource_application_arn</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]</code> | resource_application_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName">resource_application_name</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]</code> | resource_application_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther">resource_details_other</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]</code> | resource_details_other block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId">resource_id</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]</code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition">resource_partition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]</code> | resource_partition block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion">resource_region</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]</code> | resource_region block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags">resource_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]</code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType">resource_type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]</code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel">severity_label</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]</code> | severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl">source_url</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]</code> | source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title">title</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]</code> | title block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type">type</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]</code> | type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt">updated_at</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]</code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields">user_defined_fields</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]</code> | user_defined_fields block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState">verification_state</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]</code> | verification_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus">workflow_status</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]</code> | workflow_status block. |
 
 ---
 
 ##### `aws_account_id`<sup>Optional</sup> <a name="aws_account_id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId"></a>
 
 ```python
-aws_account_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]]
+aws_account_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]
 
 aws_account_id block.
 
@@ -1879,10 +1879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `aws_account_name`<sup>Optional</sup> <a name="aws_account_name" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName"></a>
 
 ```python
-aws_account_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]]
+aws_account_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]
 
 aws_account_name block.
 
@@ -1893,10 +1893,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName"></a>
 
 ```python
-company_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCompanyName]]
+company_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCompanyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]
 
 company_name block.
 
@@ -1907,10 +1907,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `compliance_associated_standards_id`<sup>Optional</sup> <a name="compliance_associated_standards_id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId"></a>
 
 ```python
-compliance_associated_standards_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]]
+compliance_associated_standards_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]
 
 compliance_associated_standards_id block.
 
@@ -1921,10 +1921,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `compliance_security_control_id`<sup>Optional</sup> <a name="compliance_security_control_id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId"></a>
 
 ```python
-compliance_security_control_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]]
+compliance_security_control_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]
 
 compliance_security_control_id block.
 
@@ -1935,10 +1935,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `compliance_status`<sup>Optional</sup> <a name="compliance_status" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus"></a>
 
 ```python
-compliance_status: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]]
+compliance_status: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]
 
 compliance_status block.
 
@@ -1949,10 +1949,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `confidence`<sup>Optional</sup> <a name="confidence" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence"></a>
 
 ```python
-confidence: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaConfidence]]
+confidence: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]
 
 confidence block.
 
@@ -1963,10 +1963,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `created_at`<sup>Optional</sup> <a name="created_at" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt"></a>
 
 ```python
-created_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]]
+created_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]
 
 created_at block.
 
@@ -1977,10 +1977,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `criticality`<sup>Optional</sup> <a name="criticality" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality"></a>
 
 ```python
-criticality: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCriticality]]
+criticality: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]
 
 criticality block.
 
@@ -1991,10 +1991,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description"></a>
 
 ```python
-description: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaDescription]]
+description: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaDescription]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]
 
 description block.
 
@@ -2005,10 +2005,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `first_observed_at`<sup>Optional</sup> <a name="first_observed_at" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt"></a>
 
 ```python
-first_observed_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]]
+first_observed_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]
 
 first_observed_at block.
 
@@ -2019,10 +2019,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `generator_id`<sup>Optional</sup> <a name="generator_id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId"></a>
 
 ```python
-generator_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]]
+generator_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]
 
 generator_id block.
 
@@ -2033,10 +2033,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id"></a>
 
 ```python
-id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaId]]
+id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]
 
 id block.
 
@@ -2050,10 +2050,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `last_observed_at`<sup>Optional</sup> <a name="last_observed_at" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt"></a>
 
 ```python
-last_observed_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]]
+last_observed_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]
 
 last_observed_at block.
 
@@ -2064,10 +2064,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note_text`<sup>Optional</sup> <a name="note_text" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText"></a>
 
 ```python
-note_text: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteText]]
+note_text: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]
 
 note_text block.
 
@@ -2078,10 +2078,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note_updated_at`<sup>Optional</sup> <a name="note_updated_at" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt"></a>
 
 ```python
-note_updated_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]]
+note_updated_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]
 
 note_updated_at block.
 
@@ -2092,10 +2092,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note_updated_by`<sup>Optional</sup> <a name="note_updated_by" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy"></a>
 
 ```python
-note_updated_by: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]]
+note_updated_by: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]
 
 note_updated_by block.
 
@@ -2106,10 +2106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `product_arn`<sup>Optional</sup> <a name="product_arn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn"></a>
 
 ```python
-product_arn: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductArn]]
+product_arn: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]
 
 product_arn block.
 
@@ -2120,10 +2120,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `product_name`<sup>Optional</sup> <a name="product_name" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName"></a>
 
 ```python
-product_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductName]]
+product_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]
 
 product_name block.
 
@@ -2134,10 +2134,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `record_state`<sup>Optional</sup> <a name="record_state" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState"></a>
 
 ```python
-record_state: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRecordState]]
+record_state: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRecordState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]
 
 record_state block.
 
@@ -2148,10 +2148,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `related_findings_id`<sup>Optional</sup> <a name="related_findings_id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId"></a>
 
 ```python
-related_findings_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]]
+related_findings_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]
 
 related_findings_id block.
 
@@ -2162,10 +2162,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `related_findings_product_arn`<sup>Optional</sup> <a name="related_findings_product_arn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn"></a>
 
 ```python
-related_findings_product_arn: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]]
+related_findings_product_arn: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]
 
 related_findings_product_arn block.
 
@@ -2176,10 +2176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_application_arn`<sup>Optional</sup> <a name="resource_application_arn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn"></a>
 
 ```python
-resource_application_arn: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]]
+resource_application_arn: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]
 
 resource_application_arn block.
 
@@ -2190,10 +2190,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_application_name`<sup>Optional</sup> <a name="resource_application_name" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName"></a>
 
 ```python
-resource_application_name: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]]
+resource_application_name: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]
 
 resource_application_name block.
 
@@ -2204,10 +2204,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_details_other`<sup>Optional</sup> <a name="resource_details_other" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther"></a>
 
 ```python
-resource_details_other: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]]
+resource_details_other: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]
 
 resource_details_other block.
 
@@ -2218,10 +2218,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_id`<sup>Optional</sup> <a name="resource_id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId"></a>
 
 ```python
-resource_id: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceId]]
+resource_id: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]
 
 resource_id block.
 
@@ -2232,10 +2232,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_partition`<sup>Optional</sup> <a name="resource_partition" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition"></a>
 
 ```python
-resource_partition: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]]
+resource_partition: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]
 
 resource_partition block.
 
@@ -2246,10 +2246,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_region`<sup>Optional</sup> <a name="resource_region" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion"></a>
 
 ```python
-resource_region: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]]
+resource_region: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]
 
 resource_region block.
 
@@ -2260,10 +2260,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_tags`<sup>Optional</sup> <a name="resource_tags" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags"></a>
 
 ```python
-resource_tags: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceTags]]
+resource_tags: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]
 
 resource_tags block.
 
@@ -2274,10 +2274,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType"></a>
 
 ```python
-resource_type: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceType]]
+resource_type: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]
 
 resource_type block.
 
@@ -2288,10 +2288,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severity_label`<sup>Optional</sup> <a name="severity_label" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel"></a>
 
 ```python
-severity_label: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]]
+severity_label: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]
 
 severity_label block.
 
@@ -2302,10 +2302,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `source_url`<sup>Optional</sup> <a name="source_url" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl"></a>
 
 ```python
-source_url: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]]
+source_url: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]
 
 source_url block.
 
@@ -2316,10 +2316,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title"></a>
 
 ```python
-title: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaTitle]]
+title: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]
 
 title block.
 
@@ -2330,10 +2330,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type"></a>
 
 ```python
-type: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaType]]
+type: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]
 
 type block.
 
@@ -2344,10 +2344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `updated_at`<sup>Optional</sup> <a name="updated_at" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt"></a>
 
 ```python
-updated_at: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]]
+updated_at: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]
 
 updated_at block.
 
@@ -2358,10 +2358,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `user_defined_fields`<sup>Optional</sup> <a name="user_defined_fields" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields"></a>
 
 ```python
-user_defined_fields: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]]
+user_defined_fields: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]
 
 user_defined_fields block.
 
@@ -2372,10 +2372,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `verification_state`<sup>Optional</sup> <a name="verification_state" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState"></a>
 
 ```python
-verification_state: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaVerificationState]]
+verification_state: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaVerificationState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]
 
 verification_state block.
 
@@ -2386,10 +2386,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workflow_status`<sup>Optional</sup> <a name="workflow_status" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus"></a>
 
 ```python
-workflow_status: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]]
+workflow_status: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]
 
 workflow_status block.
 
@@ -2769,7 +2769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt(
-  date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]] = None,
+  date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange] = None,
   end: str = None,
   start: str = None
 )
@@ -2779,7 +2779,7 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">date_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]</code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">date_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]</code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -2788,10 +2788,10 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt(
 ##### `date_range`<sup>Optional</sup> <a name="date_range" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange"></a>
 
 ```python
-date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]]
+date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]
 
 date_range block.
 
@@ -3011,7 +3011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt(
-  date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]] = None,
+  date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange] = None,
   end: str = None,
   start: str = None
 )
@@ -3021,7 +3021,7 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">date_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]</code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">date_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]</code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3030,10 +3030,10 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt(
 ##### `date_range`<sup>Optional</sup> <a name="date_range" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange"></a>
 
 ```python
-date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]]
+date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]
 
 date_range block.
 
@@ -3211,7 +3211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt(
-  date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]] = None,
+  date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange] = None,
   end: str = None,
   start: str = None
 )
@@ -3221,7 +3221,7 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">date_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]</code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">date_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]</code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3230,10 +3230,10 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt(
 ##### `date_range`<sup>Optional</sup> <a name="date_range" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange"></a>
 
 ```python
-date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]]
+date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]
 
 date_range block.
 
@@ -3365,7 +3365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt(
-  date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]] = None,
+  date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange] = None,
   end: str = None,
   start: str = None
 )
@@ -3375,7 +3375,7 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">date_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]</code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">date_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]</code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3384,10 +3384,10 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt(
 ##### `date_range`<sup>Optional</sup> <a name="date_range" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange"></a>
 
 ```python
-date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]]
+date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]
 
 date_range block.
 
@@ -4329,7 +4329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import securityhub_automation_rule
 
 securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt(
-  date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]] = None,
+  date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange] = None,
   end: str = None,
   start: str = None
 )
@@ -4339,7 +4339,7 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">date_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]</code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">date_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]</code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -4348,10 +4348,10 @@ securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt(
 ##### `date_range`<sup>Optional</sup> <a name="date_range" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange"></a>
 
 ```python
-date_range: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]]
+date_range: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]
 
 date_range block.
 
@@ -4714,7 +4714,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]</code> | *No description.* |
 
 ---
 
@@ -4745,10 +4745,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]
 
 ---
 
@@ -4884,7 +4884,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]</code> | *No description.* |
 
 ---
 
@@ -4915,10 +4915,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]
 
 ---
 
@@ -5182,7 +5182,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.updatedByInput">updated_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.updatedBy">updated_by</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a></code> | *No description.* |
 
 ---
 
@@ -5253,10 +5253,10 @@ updated_by: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]
+internal_value: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateNote
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>
 
 ---
 
@@ -5526,13 +5526,13 @@ Returns a reversible string representation.
 
 ```python
 def put_note(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putNote.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]
 
 ---
 
@@ -5540,13 +5540,13 @@ def put_note(
 
 ```python
 def put_related_findings(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putRelatedFindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]
 
 ---
 
@@ -5554,13 +5554,13 @@ def put_related_findings(
 
 ```python
 def put_severity(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]
 
 ---
 
@@ -5568,13 +5568,13 @@ def put_severity(
 
 ```python
 def put_workflow(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putWorkflow.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]
 
 ---
 
@@ -5645,19 +5645,19 @@ def reset_workflow() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflow">workflow</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.confidenceInput">confidence_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.criticalityInput">criticality_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput">note_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput">related_findings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput">severity_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput">note_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput">related_findings_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput">severity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.userDefinedFieldsInput">user_defined_fields_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.verificationStateInput">verification_state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput">workflow_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput">workflow_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.confidence">confidence</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.criticality">criticality</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.userDefinedFields">user_defined_fields</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.verificationState">verification_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a></code> | *No description.* |
 
 ---
 
@@ -5748,30 +5748,30 @@ criticality_input: typing.Union[int, float]
 ##### `note_input`<sup>Optional</sup> <a name="note_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput"></a>
 
 ```python
-note_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]]
+note_input: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateNote]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>]
 
 ---
 
 ##### `related_findings_input`<sup>Optional</sup> <a name="related_findings_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput"></a>
 
 ```python
-related_findings_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]]
+related_findings_input: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]
 
 ---
 
 ##### `severity_input`<sup>Optional</sup> <a name="severity_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput"></a>
 
 ```python
-severity_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]]
+severity_input: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]
 
 ---
 
@@ -5808,10 +5808,10 @@ verification_state_input: str
 ##### `workflow_input`<sup>Optional</sup> <a name="workflow_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput"></a>
 
 ```python
-workflow_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]]
+workflow_input: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]
 
 ---
 
@@ -5868,10 +5868,10 @@ verification_state: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleActionsFindingFieldsUpdate]
+internal_value: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdate
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>
 
 ---
 
@@ -6007,7 +6007,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]</code> | *No description.* |
 
 ---
 
@@ -6038,10 +6038,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]
 
 ---
 
@@ -6305,7 +6305,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.productArnInput">product_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.productArn">product_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a></code> | *No description.* |
 
 ---
 
@@ -6376,10 +6376,10 @@ product_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings]
+internal_value: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>
 
 ---
 
@@ -6515,7 +6515,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]</code> | *No description.* |
 
 ---
 
@@ -6546,10 +6546,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]
 
 ---
 
@@ -6827,7 +6827,7 @@ def reset_product() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.productInput">product_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.product">product</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a></code> | *No description.* |
 
 ---
 
@@ -6898,10 +6898,10 @@ product: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity]
+internal_value: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>
 
 ---
 
@@ -7037,7 +7037,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]</code> | *No description.* |
 
 ---
 
@@ -7068,10 +7068,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]
 
 ---
 
@@ -7340,7 +7340,7 @@ def reset_status() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a></code> | *No description.* |
 
 ---
 
@@ -7391,10 +7391,10 @@ status: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow]
+internal_value: IResolvable | SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>
 
 ---
 
@@ -7530,7 +7530,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]</code> | *No description.* |
 
 ---
 
@@ -7561,10 +7561,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActions]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleActions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]
 
 ---
 
@@ -7824,13 +7824,13 @@ Returns a reversible string representation.
 
 ```python
 def put_finding_fields_update(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.putFindingFieldsUpdate.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]
 
 ---
 
@@ -7854,10 +7854,10 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdate">finding_fields_update</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList">SecurityhubAutomationRuleActionsFindingFieldsUpdateList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput">finding_fields_update_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput">finding_fields_update_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a></code> | *No description.* |
 
 ---
 
@@ -7898,10 +7898,10 @@ finding_fields_update: SecurityhubAutomationRuleActionsFindingFieldsUpdateList
 ##### `finding_fields_update_input`<sup>Optional</sup> <a name="finding_fields_update_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput"></a>
 
 ```python
-finding_fields_update_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]]
+finding_fields_update_input: IResolvable | typing.List[SecurityhubAutomationRuleActionsFindingFieldsUpdate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>]
 
 ---
 
@@ -7928,10 +7928,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleActions]
+internal_value: IResolvable | SecurityhubAutomationRuleActions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>
 
 ---
 
@@ -8067,7 +8067,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]</code> | *No description.* |
 
 ---
 
@@ -8098,10 +8098,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]
 
 ---
 
@@ -8365,7 +8365,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -8436,10 +8436,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaAwsAccountId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>
 
 ---
 
@@ -8575,7 +8575,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]</code> | *No description.* |
 
 ---
 
@@ -8606,10 +8606,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]
 
 ---
 
@@ -8873,7 +8873,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a></code> | *No description.* |
 
 ---
 
@@ -8944,10 +8944,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaAwsAccountName]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaAwsAccountName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>
 
 ---
 
@@ -9083,7 +9083,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]</code> | *No description.* |
 
 ---
 
@@ -9114,10 +9114,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCompanyName]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCompanyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]
 
 ---
 
@@ -9381,7 +9381,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -9452,10 +9452,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaCompanyName]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaCompanyName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>
 
 ---
 
@@ -9591,7 +9591,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]</code> | *No description.* |
 
 ---
 
@@ -9622,10 +9622,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]
 
 ---
 
@@ -9889,7 +9889,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a></code> | *No description.* |
 
 ---
 
@@ -9960,10 +9960,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>
 
 ---
 
@@ -10099,7 +10099,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]</code> | *No description.* |
 
 ---
 
@@ -10130,10 +10130,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]
 
 ---
 
@@ -10397,7 +10397,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a></code> | *No description.* |
 
 ---
 
@@ -10468,10 +10468,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaComplianceSecurityControlId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>
 
 ---
 
@@ -10607,7 +10607,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -10638,10 +10638,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]
 
 ---
 
@@ -10905,7 +10905,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -10976,10 +10976,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaComplianceStatus]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaComplianceStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>
 
 ---
 
@@ -11115,7 +11115,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]</code> | *No description.* |
 
 ---
 
@@ -11146,10 +11146,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaConfidence]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]
 
 ---
 
@@ -11454,7 +11454,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.gte">gte</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.lt">lt</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.lte">lte</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a></code> | *No description.* |
 
 ---
 
@@ -11585,10 +11585,10 @@ lte: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaConfidence]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaConfidence
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>
 
 ---
 
@@ -11724,7 +11724,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]</code> | *No description.* |
 
 ---
 
@@ -11755,10 +11755,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]
 
 ---
 
@@ -12022,7 +12022,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -12093,10 +12093,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaCreatedAtDateRange]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAtDateRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>
 
 ---
 
@@ -12232,7 +12232,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -12263,10 +12263,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]
 
 ---
 
@@ -12527,13 +12527,13 @@ Returns a reversible string representation.
 
 ```python
 def put_date_range(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]
 
 ---
 
@@ -12563,12 +12563,12 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRange">date_range</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList">SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.endInput">end_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -12609,10 +12609,10 @@ date_range: SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList
 ##### `date_range_input`<sup>Optional</sup> <a name="date_range_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput"></a>
 
 ```python
-date_range_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]]
+date_range_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>]
 
 ---
 
@@ -12659,10 +12659,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaCreatedAt]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaCreatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>
 
 ---
 
@@ -12798,7 +12798,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]</code> | *No description.* |
 
 ---
 
@@ -12829,10 +12829,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCriticality]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]
 
 ---
 
@@ -13137,7 +13137,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.gte">gte</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.lt">lt</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.lte">lte</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a></code> | *No description.* |
 
 ---
 
@@ -13268,10 +13268,10 @@ lte: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaCriticality]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaCriticality
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>
 
 ---
 
@@ -13407,7 +13407,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]</code> | *No description.* |
 
 ---
 
@@ -13438,10 +13438,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaDescription]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaDescription]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]
 
 ---
 
@@ -13705,7 +13705,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a></code> | *No description.* |
 
 ---
 
@@ -13776,10 +13776,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaDescription]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaDescription
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>
 
 ---
 
@@ -13915,7 +13915,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]</code> | *No description.* |
 
 ---
 
@@ -13946,10 +13946,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]
 
 ---
 
@@ -14213,7 +14213,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -14284,10 +14284,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>
 
 ---
 
@@ -14423,7 +14423,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -14454,10 +14454,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]
 
 ---
 
@@ -14718,13 +14718,13 @@ Returns a reversible string representation.
 
 ```python
 def put_date_range(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]
 
 ---
 
@@ -14754,12 +14754,12 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRange">date_range</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.endInput">end_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -14800,10 +14800,10 @@ date_range: SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList
 ##### `date_range_input`<sup>Optional</sup> <a name="date_range_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput"></a>
 
 ```python
-date_range_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]]
+date_range_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>]
 
 ---
 
@@ -14850,10 +14850,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaFirstObservedAt]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaFirstObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>
 
 ---
 
@@ -14989,7 +14989,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]</code> | *No description.* |
 
 ---
 
@@ -15020,10 +15020,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]
 
 ---
 
@@ -15287,7 +15287,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -15358,10 +15358,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaGeneratorId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaGeneratorId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>
 
 ---
 
@@ -15497,7 +15497,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]</code> | *No description.* |
 
 ---
 
@@ -15528,10 +15528,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]
 
 ---
 
@@ -15795,7 +15795,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a></code> | *No description.* |
 
 ---
 
@@ -15866,10 +15866,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>
 
 ---
 
@@ -16005,7 +16005,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]</code> | *No description.* |
 
 ---
 
@@ -16036,10 +16036,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]
 
 ---
 
@@ -16303,7 +16303,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -16374,10 +16374,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAtDateRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>
 
 ---
 
@@ -16513,7 +16513,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -16544,10 +16544,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]
 
 ---
 
@@ -16808,13 +16808,13 @@ Returns a reversible string representation.
 
 ```python
 def put_date_range(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]
 
 ---
 
@@ -16844,12 +16844,12 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRange">date_range</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList">SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.endInput">end_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16890,10 +16890,10 @@ date_range: SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList
 ##### `date_range_input`<sup>Optional</sup> <a name="date_range_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput"></a>
 
 ```python
-date_range_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]]
+date_range_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>]
 
 ---
 
@@ -16940,10 +16940,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaLastObservedAt]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaLastObservedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>
 
 ---
 
@@ -17079,7 +17079,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]</code> | *No description.* |
 
 ---
 
@@ -17110,10 +17110,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteria]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]
 
 ---
 
@@ -17249,7 +17249,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]</code> | *No description.* |
 
 ---
 
@@ -17280,10 +17280,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteText]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]
 
 ---
 
@@ -17547,7 +17547,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a></code> | *No description.* |
 
 ---
 
@@ -17618,10 +17618,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaNoteText]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaNoteText
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>
 
 ---
 
@@ -17757,7 +17757,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]</code> | *No description.* |
 
 ---
 
@@ -17788,10 +17788,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]
 
 ---
 
@@ -18055,7 +18055,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -18126,10 +18126,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>
 
 ---
 
@@ -18265,7 +18265,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -18296,10 +18296,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]
 
 ---
 
@@ -18560,13 +18560,13 @@ Returns a reversible string representation.
 
 ```python
 def put_date_range(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]
 
 ---
 
@@ -18596,12 +18596,12 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRange">date_range</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.endInput">end_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -18642,10 +18642,10 @@ date_range: SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList
 ##### `date_range_input`<sup>Optional</sup> <a name="date_range_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput"></a>
 
 ```python
-date_range_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]]
+date_range_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>]
 
 ---
 
@@ -18692,10 +18692,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaNoteUpdatedAt]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>
 
 ---
 
@@ -18831,7 +18831,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]</code> | *No description.* |
 
 ---
 
@@ -18862,10 +18862,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]
 
 ---
 
@@ -19129,7 +19129,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -19200,10 +19200,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaNoteUpdatedBy]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaNoteUpdatedBy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>
 
 ---
 
@@ -19536,13 +19536,13 @@ Returns a reversible string representation.
 
 ```python
 def put_aws_account_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]
 
 ---
 
@@ -19550,13 +19550,13 @@ def put_aws_account_id(
 
 ```python
 def put_aws_account_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]
 
 ---
 
@@ -19564,13 +19564,13 @@ def put_aws_account_name(
 
 ```python
 def put_company_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCompanyName]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCompanyName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCompanyName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]
 
 ---
 
@@ -19578,13 +19578,13 @@ def put_company_name(
 
 ```python
 def put_compliance_associated_standards_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceAssociatedStandardsId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]
 
 ---
 
@@ -19592,13 +19592,13 @@ def put_compliance_associated_standards_id(
 
 ```python
 def put_compliance_security_control_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceSecurityControlId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]
 
 ---
 
@@ -19606,13 +19606,13 @@ def put_compliance_security_control_id(
 
 ```python
 def put_compliance_status(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceStatus.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]
 
 ---
 
@@ -19620,13 +19620,13 @@ def put_compliance_status(
 
 ```python
 def put_confidence(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaConfidence]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaConfidence]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putConfidence.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]
 
 ---
 
@@ -19634,13 +19634,13 @@ def put_confidence(
 
 ```python
 def put_created_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCreatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]
 
 ---
 
@@ -19648,13 +19648,13 @@ def put_created_at(
 
 ```python
 def put_criticality(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCriticality]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCriticality]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCriticality.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]
 
 ---
 
@@ -19662,13 +19662,13 @@ def put_criticality(
 
 ```python
 def put_description(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaDescription]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaDescription]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putDescription.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]
 
 ---
 
@@ -19676,13 +19676,13 @@ def put_description(
 
 ```python
 def put_first_observed_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]
 
 ---
 
@@ -19690,13 +19690,13 @@ def put_first_observed_at(
 
 ```python
 def put_generator_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putGeneratorId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]
 
 ---
 
@@ -19704,13 +19704,13 @@ def put_generator_id(
 
 ```python
 def put_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]
 
 ---
 
@@ -19718,13 +19718,13 @@ def put_id(
 
 ```python
 def put_last_observed_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]
 
 ---
 
@@ -19732,13 +19732,13 @@ def put_last_observed_at(
 
 ```python
 def put_note_text(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteText]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteText]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteText.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]
 
 ---
 
@@ -19746,13 +19746,13 @@ def put_note_text(
 
 ```python
 def put_note_updated_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]
 
 ---
 
@@ -19760,13 +19760,13 @@ def put_note_updated_at(
 
 ```python
 def put_note_updated_by(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedBy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]
 
 ---
 
@@ -19774,13 +19774,13 @@ def put_note_updated_by(
 
 ```python
 def put_product_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductArn]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]
 
 ---
 
@@ -19788,13 +19788,13 @@ def put_product_arn(
 
 ```python
 def put_product_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductName]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]
 
 ---
 
@@ -19802,13 +19802,13 @@ def put_product_name(
 
 ```python
 def put_record_state(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRecordState]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRecordState]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRecordState.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]
 
 ---
 
@@ -19816,13 +19816,13 @@ def put_record_state(
 
 ```python
 def put_related_findings_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]
 
 ---
 
@@ -19830,13 +19830,13 @@ def put_related_findings_id(
 
 ```python
 def put_related_findings_product_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]
 
 ---
 
@@ -19844,13 +19844,13 @@ def put_related_findings_product_arn(
 
 ```python
 def put_resource_application_arn(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationArn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]
 
 ---
 
@@ -19858,13 +19858,13 @@ def put_resource_application_arn(
 
 ```python
 def put_resource_application_name(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationName.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]
 
 ---
 
@@ -19872,13 +19872,13 @@ def put_resource_application_name(
 
 ```python
 def put_resource_details_other(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceDetailsOther.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]
 
 ---
 
@@ -19886,13 +19886,13 @@ def put_resource_details_other(
 
 ```python
 def put_resource_id(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceId]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceId]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]
 
 ---
 
@@ -19900,13 +19900,13 @@ def put_resource_id(
 
 ```python
 def put_resource_partition(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourcePartition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]
 
 ---
 
@@ -19914,13 +19914,13 @@ def put_resource_partition(
 
 ```python
 def put_resource_region(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceRegion.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]
 
 ---
 
@@ -19928,13 +19928,13 @@ def put_resource_region(
 
 ```python
 def put_resource_tags(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceTags]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceTags]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]
 
 ---
 
@@ -19942,13 +19942,13 @@ def put_resource_tags(
 
 ```python
 def put_resource_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceType]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]
 
 ---
 
@@ -19956,13 +19956,13 @@ def put_resource_type(
 
 ```python
 def put_severity_label(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSeverityLabel.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]
 
 ---
 
@@ -19970,13 +19970,13 @@ def put_severity_label(
 
 ```python
 def put_source_url(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSourceUrl.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]
 
 ---
 
@@ -19984,13 +19984,13 @@ def put_source_url(
 
 ```python
 def put_title(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaTitle]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaTitle]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]
 
 ---
 
@@ -19998,13 +19998,13 @@ def put_title(
 
 ```python
 def put_type(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaType]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaType]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putType.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]
 
 ---
 
@@ -20012,13 +20012,13 @@ def put_type(
 
 ```python
 def put_updated_at(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]
 
 ---
 
@@ -20026,13 +20026,13 @@ def put_updated_at(
 
 ```python
 def put_user_defined_fields(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUserDefinedFields.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]
 
 ---
 
@@ -20040,13 +20040,13 @@ def put_user_defined_fields(
 
 ```python
 def put_verification_state(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaVerificationState]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaVerificationState]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putVerificationState.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]
 
 ---
 
@@ -20054,13 +20054,13 @@ def put_verification_state(
 
 ```python
 def put_workflow_status(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putWorkflowStatus.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]
 
 ---
 
@@ -20337,45 +20337,45 @@ def reset_workflow_status() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFields">user_defined_fields</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList">SecurityhubAutomationRuleCriteriaUserDefinedFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationState">verification_state</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList">SecurityhubAutomationRuleCriteriaVerificationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatus">workflow_status</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList">SecurityhubAutomationRuleCriteriaWorkflowStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput">aws_account_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput">company_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput">compliance_associated_standards_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput">compliance_security_control_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput">compliance_status_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput">confidence_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput">created_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput">criticality_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput">description_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput">first_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput">generator_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput">id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput">last_observed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput">note_text_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput">note_updated_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput">note_updated_by_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput">product_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput">product_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput">record_state_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput">related_findings_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput">related_findings_product_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput">resource_application_arn_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput">resource_application_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput">resource_details_other_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput">resource_partition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput">resource_region_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput">resource_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput">severity_label_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput">source_url_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput">title_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput">type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput">updated_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput">user_defined_fields_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput">verification_state_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput">workflow_status_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput">aws_account_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput">company_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput">compliance_associated_standards_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput">compliance_security_control_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput">compliance_status_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput">confidence_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput">created_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput">criticality_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput">description_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput">first_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput">generator_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput">id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput">last_observed_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput">note_text_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput">note_updated_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput">note_updated_by_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput">product_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput">product_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput">record_state_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput">related_findings_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput">related_findings_product_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput">resource_application_arn_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput">resource_application_name_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput">resource_details_other_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput">resource_partition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput">resource_region_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput">resource_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput">severity_label_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput">source_url_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput">title_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput">type_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput">updated_at_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput">user_defined_fields_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput">verification_state_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput">workflow_status_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a></code> | *No description.* |
 
 ---
 
@@ -20786,390 +20786,390 @@ workflow_status: SecurityhubAutomationRuleCriteriaWorkflowStatusList
 ##### `aws_account_id_input`<sup>Optional</sup> <a name="aws_account_id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput"></a>
 
 ```python
-aws_account_id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]]
+aws_account_id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>]
 
 ---
 
 ##### `aws_account_name_input`<sup>Optional</sup> <a name="aws_account_name_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput"></a>
 
 ```python
-aws_account_name_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]]
+aws_account_name_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaAwsAccountName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>]
 
 ---
 
 ##### `company_name_input`<sup>Optional</sup> <a name="company_name_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput"></a>
 
 ```python
-company_name_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCompanyName]]
+company_name_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCompanyName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>]
 
 ---
 
 ##### `compliance_associated_standards_id_input`<sup>Optional</sup> <a name="compliance_associated_standards_id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput"></a>
 
 ```python
-compliance_associated_standards_id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]]
+compliance_associated_standards_id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>]
 
 ---
 
 ##### `compliance_security_control_id_input`<sup>Optional</sup> <a name="compliance_security_control_id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput"></a>
 
 ```python
-compliance_security_control_id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]]
+compliance_security_control_id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceSecurityControlId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>]
 
 ---
 
 ##### `compliance_status_input`<sup>Optional</sup> <a name="compliance_status_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput"></a>
 
 ```python
-compliance_status_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]]
+compliance_status_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaComplianceStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>]
 
 ---
 
 ##### `confidence_input`<sup>Optional</sup> <a name="confidence_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput"></a>
 
 ```python
-confidence_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaConfidence]]
+confidence_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaConfidence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>]
 
 ---
 
 ##### `created_at_input`<sup>Optional</sup> <a name="created_at_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput"></a>
 
 ```python
-created_at_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]]
+created_at_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCreatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>]
 
 ---
 
 ##### `criticality_input`<sup>Optional</sup> <a name="criticality_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput"></a>
 
 ```python
-criticality_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaCriticality]]
+criticality_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaCriticality]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>]
 
 ---
 
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput"></a>
 
 ```python
-description_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaDescription]]
+description_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaDescription]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>]
 
 ---
 
 ##### `first_observed_at_input`<sup>Optional</sup> <a name="first_observed_at_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput"></a>
 
 ```python
-first_observed_at_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]]
+first_observed_at_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaFirstObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>]
 
 ---
 
 ##### `generator_id_input`<sup>Optional</sup> <a name="generator_id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput"></a>
 
 ```python
-generator_id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]]
+generator_id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaGeneratorId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>]
 
 ---
 
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput"></a>
 
 ```python
-id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaId]]
+id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>]
 
 ---
 
 ##### `last_observed_at_input`<sup>Optional</sup> <a name="last_observed_at_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput"></a>
 
 ```python
-last_observed_at_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]]
+last_observed_at_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaLastObservedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>]
 
 ---
 
 ##### `note_text_input`<sup>Optional</sup> <a name="note_text_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput"></a>
 
 ```python
-note_text_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteText]]
+note_text_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>]
 
 ---
 
 ##### `note_updated_at_input`<sup>Optional</sup> <a name="note_updated_at_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput"></a>
 
 ```python
-note_updated_at_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]]
+note_updated_at_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>]
 
 ---
 
 ##### `note_updated_by_input`<sup>Optional</sup> <a name="note_updated_by_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput"></a>
 
 ```python
-note_updated_by_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]]
+note_updated_by_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>]
 
 ---
 
 ##### `product_arn_input`<sup>Optional</sup> <a name="product_arn_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput"></a>
 
 ```python
-product_arn_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductArn]]
+product_arn_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]
 
 ---
 
 ##### `product_name_input`<sup>Optional</sup> <a name="product_name_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput"></a>
 
 ```python
-product_name_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductName]]
+product_name_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]
 
 ---
 
 ##### `record_state_input`<sup>Optional</sup> <a name="record_state_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput"></a>
 
 ```python
-record_state_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRecordState]]
+record_state_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRecordState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]
 
 ---
 
 ##### `related_findings_id_input`<sup>Optional</sup> <a name="related_findings_id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput"></a>
 
 ```python
-related_findings_id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]]
+related_findings_id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]
 
 ---
 
 ##### `related_findings_product_arn_input`<sup>Optional</sup> <a name="related_findings_product_arn_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput"></a>
 
 ```python
-related_findings_product_arn_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]]
+related_findings_product_arn_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]
 
 ---
 
 ##### `resource_application_arn_input`<sup>Optional</sup> <a name="resource_application_arn_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput"></a>
 
 ```python
-resource_application_arn_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]]
+resource_application_arn_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]
 
 ---
 
 ##### `resource_application_name_input`<sup>Optional</sup> <a name="resource_application_name_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput"></a>
 
 ```python
-resource_application_name_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]]
+resource_application_name_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]
 
 ---
 
 ##### `resource_details_other_input`<sup>Optional</sup> <a name="resource_details_other_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput"></a>
 
 ```python
-resource_details_other_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]]
+resource_details_other_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]
 
 ---
 
 ##### `resource_id_input`<sup>Optional</sup> <a name="resource_id_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput"></a>
 
 ```python
-resource_id_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceId]]
+resource_id_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]
 
 ---
 
 ##### `resource_partition_input`<sup>Optional</sup> <a name="resource_partition_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput"></a>
 
 ```python
-resource_partition_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]]
+resource_partition_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]
 
 ---
 
 ##### `resource_region_input`<sup>Optional</sup> <a name="resource_region_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput"></a>
 
 ```python
-resource_region_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]]
+resource_region_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]
 
 ---
 
 ##### `resource_tags_input`<sup>Optional</sup> <a name="resource_tags_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput"></a>
 
 ```python
-resource_tags_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceTags]]
+resource_tags_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]
 
 ---
 
 ##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput"></a>
 
 ```python
-resource_type_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceType]]
+resource_type_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]
 
 ---
 
 ##### `severity_label_input`<sup>Optional</sup> <a name="severity_label_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput"></a>
 
 ```python
-severity_label_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]]
+severity_label_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]
 
 ---
 
 ##### `source_url_input`<sup>Optional</sup> <a name="source_url_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput"></a>
 
 ```python
-source_url_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]]
+source_url_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]
 
 ---
 
 ##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput"></a>
 
 ```python
-title_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaTitle]]
+title_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]
 
 ---
 
 ##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput"></a>
 
 ```python
-type_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaType]]
+type_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]
 
 ---
 
 ##### `updated_at_input`<sup>Optional</sup> <a name="updated_at_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput"></a>
 
 ```python
-updated_at_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]]
+updated_at_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]
 
 ---
 
 ##### `user_defined_fields_input`<sup>Optional</sup> <a name="user_defined_fields_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput"></a>
 
 ```python
-user_defined_fields_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]]
+user_defined_fields_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]
 
 ---
 
 ##### `verification_state_input`<sup>Optional</sup> <a name="verification_state_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput"></a>
 
 ```python
-verification_state_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaVerificationState]]
+verification_state_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaVerificationState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]
 
 ---
 
 ##### `workflow_status_input`<sup>Optional</sup> <a name="workflow_status_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput"></a>
 
 ```python
-workflow_status_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]]
+workflow_status_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteria]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteria
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>
 
 ---
 
@@ -21305,7 +21305,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -21336,10 +21336,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductArn]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]
 
 ---
 
@@ -21603,7 +21603,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a></code> | *No description.* |
 
 ---
 
@@ -21674,10 +21674,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaProductArn]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaProductArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>
 
 ---
 
@@ -21813,7 +21813,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]</code> | *No description.* |
 
 ---
 
@@ -21844,10 +21844,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaProductName]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaProductName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]
 
 ---
 
@@ -22111,7 +22111,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a></code> | *No description.* |
 
 ---
 
@@ -22182,10 +22182,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaProductName]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaProductName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>
 
 ---
 
@@ -22321,7 +22321,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]</code> | *No description.* |
 
 ---
 
@@ -22352,10 +22352,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRecordState]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRecordState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]
 
 ---
 
@@ -22619,7 +22619,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a></code> | *No description.* |
 
 ---
 
@@ -22690,10 +22690,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaRecordState]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaRecordState
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>
 
 ---
 
@@ -22829,7 +22829,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]</code> | *No description.* |
 
 ---
 
@@ -22860,10 +22860,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]
 
 ---
 
@@ -23127,7 +23127,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -23198,10 +23198,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaRelatedFindingsId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>
 
 ---
 
@@ -23337,7 +23337,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -23368,10 +23368,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]
 
 ---
 
@@ -23635,7 +23635,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -23706,10 +23706,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>
 
 ---
 
@@ -23845,7 +23845,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]</code> | *No description.* |
 
 ---
 
@@ -23876,10 +23876,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationArn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]
 
 ---
 
@@ -24143,7 +24143,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a></code> | *No description.* |
 
 ---
 
@@ -24214,10 +24214,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceApplicationArn]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationArn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>
 
 ---
 
@@ -24353,7 +24353,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]</code> | *No description.* |
 
 ---
 
@@ -24384,10 +24384,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceApplicationName]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]
 
 ---
 
@@ -24651,7 +24651,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a></code> | *No description.* |
 
 ---
 
@@ -24722,10 +24722,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceApplicationName]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceApplicationName
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>
 
 ---
 
@@ -24861,7 +24861,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]</code> | *No description.* |
 
 ---
 
@@ -24892,10 +24892,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]
 
 ---
 
@@ -25161,7 +25161,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -25252,10 +25252,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceDetailsOther]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceDetailsOther
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>
 
 ---
 
@@ -25391,7 +25391,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]</code> | *No description.* |
 
 ---
 
@@ -25422,10 +25422,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceId]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceId]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]
 
 ---
 
@@ -25689,7 +25689,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -25760,10 +25760,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceId]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceId
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>
 
 ---
 
@@ -25899,7 +25899,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]</code> | *No description.* |
 
 ---
 
@@ -25930,10 +25930,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourcePartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]
 
 ---
 
@@ -26197,7 +26197,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -26268,10 +26268,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourcePartition]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourcePartition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>
 
 ---
 
@@ -26407,7 +26407,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]</code> | *No description.* |
 
 ---
 
@@ -26438,10 +26438,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceRegion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]
 
 ---
 
@@ -26705,7 +26705,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -26776,10 +26776,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceRegion]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceRegion
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>
 
 ---
 
@@ -26915,7 +26915,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]</code> | *No description.* |
 
 ---
 
@@ -26946,10 +26946,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceTags]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]
 
 ---
 
@@ -27215,7 +27215,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -27306,10 +27306,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceTags]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceTags
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>
 
 ---
 
@@ -27445,7 +27445,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]</code> | *No description.* |
 
 ---
 
@@ -27476,10 +27476,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaResourceType]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaResourceType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]
 
 ---
 
@@ -27743,7 +27743,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -27814,10 +27814,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaResourceType]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaResourceType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>
 
 ---
 
@@ -27953,7 +27953,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]</code> | *No description.* |
 
 ---
 
@@ -27984,10 +27984,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSeverityLabel]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]
 
 ---
 
@@ -28251,7 +28251,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -28322,10 +28322,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaSeverityLabel]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaSeverityLabel
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>
 
 ---
 
@@ -28461,7 +28461,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]</code> | *No description.* |
 
 ---
 
@@ -28492,10 +28492,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaSourceUrl]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]
 
 ---
 
@@ -28759,7 +28759,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -28830,10 +28830,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaSourceUrl]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaSourceUrl
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>
 
 ---
 
@@ -28969,7 +28969,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]</code> | *No description.* |
 
 ---
 
@@ -29000,10 +29000,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaTitle]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaTitle]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]
 
 ---
 
@@ -29267,7 +29267,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -29338,10 +29338,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaTitle]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaTitle
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>
 
 ---
 
@@ -29477,7 +29477,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]</code> | *No description.* |
 
 ---
 
@@ -29508,10 +29508,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaType]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaType]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]
 
 ---
 
@@ -29775,7 +29775,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a></code> | *No description.* |
 
 ---
 
@@ -29846,10 +29846,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaType]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaType
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>
 
 ---
 
@@ -29985,7 +29985,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]</code> | *No description.* |
 
 ---
 
@@ -30016,10 +30016,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]
 
 ---
 
@@ -30283,7 +30283,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -30354,10 +30354,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAtDateRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>
 
 ---
 
@@ -30493,7 +30493,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -30524,10 +30524,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]
 
 ---
 
@@ -30788,13 +30788,13 @@ Returns a reversible string representation.
 
 ```python
 def put_date_range(
-  value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]]
+  value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]
 
 ---
 
@@ -30824,12 +30824,12 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRange">date_range</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList">SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput">date_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.endInput">end_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -30870,10 +30870,10 @@ date_range: SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList
 ##### `date_range_input`<sup>Optional</sup> <a name="date_range_input" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput"></a>
 
 ```python
-date_range_input: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]]
+date_range_input: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUpdatedAtDateRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>]
 
 ---
 
@@ -30920,10 +30920,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaUpdatedAt]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaUpdatedAt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>
 
 ---
 
@@ -31059,7 +31059,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]</code> | *No description.* |
 
 ---
 
@@ -31090,10 +31090,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaUserDefinedFields]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]
 
 ---
 
@@ -31359,7 +31359,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a></code> | *No description.* |
 
 ---
 
@@ -31450,10 +31450,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaUserDefinedFields]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaUserDefinedFields
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>
 
 ---
 
@@ -31589,7 +31589,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]</code> | *No description.* |
 
 ---
 
@@ -31620,10 +31620,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaVerificationState]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaVerificationState]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]
 
 ---
 
@@ -31887,7 +31887,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -31958,10 +31958,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaVerificationState]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaVerificationState
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>
 
 ---
 
@@ -32097,7 +32097,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -32128,10 +32128,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]]
+internal_value: IResolvable | typing.List[SecurityhubAutomationRuleCriteriaWorkflowStatus]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]
 
 ---
 
@@ -32395,7 +32395,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -32466,10 +32466,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SecurityhubAutomationRuleCriteriaWorkflowStatus]
+internal_value: IResolvable | SecurityhubAutomationRuleCriteriaWorkflowStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>
 
 ---
 
