@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_aws import cloudformation_stack_instances
 cloudformationStackInstances.CloudformationStackInstances(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   stack_set_name: str,
   accounts: typing.List[str] = None,
   call_as: str = None,
@@ -30,7 +30,7 @@ cloudformationStackInstances.CloudformationStackInstances(
   parameter_overrides: typing.Mapping[str] = None,
   region: str = None,
   regions: typing.List[str] = None,
-  retain_stacks: typing.Union[bool, IResolvable] = None,
+  retain_stacks: bool | IResolvable = None,
   timeouts: CloudformationStackInstancesTimeouts = None
 )
 ```
@@ -39,13 +39,13 @@ cloudformationStackInstances.CloudformationStackInstances(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.stackSetName">stack_set_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#stack_set_name CloudformationStackInstances#stack_set_name}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.accounts">accounts</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#accounts CloudformationStackInstances#accounts}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.callAs">call_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#call_as CloudformationStackInstances#call_as}. |
@@ -55,7 +55,7 @@ cloudformationStackInstances.CloudformationStackInstances(
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.parameterOverrides">parameter_overrides</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#parameter_overrides CloudformationStackInstances#parameter_overrides}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.regions">regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#regions CloudformationStackInstances#regions}. |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.retainStacks">retain_stacks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}. |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.retainStacks">retain_stacks</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -80,13 +80,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `retain_stacks`<sup>Optional</sup> <a name="retain_stacks" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.Initializer.parameter.retainStacks"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}.
 
@@ -484,7 +484,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.importFrom"></a>
@@ -547,7 +547,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -563,7 +563,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -931,13 +931,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.deploymentTargets">deployment_targets</a></code> | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesDeploymentTargetsOutputReference">CloudformationStackInstancesDeploymentTargetsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.operationPreferences">operation_preferences</a></code> | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesOperationPreferencesOutputReference">CloudformationStackInstancesOperationPreferencesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.stackInstanceSummaries">stack_instance_summaries</a></code> | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesStackInstanceSummariesList">CloudformationStackInstancesStackInstanceSummariesList</a></code> | *No description.* |
@@ -951,16 +951,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.parameterOverridesInput">parameter_overrides_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.regionsInput">regions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.retainStacksInput">retain_stacks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.retainStacksInput">retain_stacks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.stackSetNameInput">stack_set_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.accounts">accounts</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.callAs">call_as</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.parameterOverrides">parameter_overrides</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.regions">regions</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.retainStacks">retain_stacks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.retainStacks">retain_stacks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.stackSetName">stack_set_name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1040,20 +1040,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1100,10 +1100,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1240,10 +1240,10 @@ regions_input: typing.List[str]
 ##### `retain_stacks_input`<sup>Optional</sup> <a name="retain_stacks_input" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.retainStacksInput"></a>
 
 ```python
-retain_stacks_input: typing.Union[bool, IResolvable]
+retain_stacks_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1260,10 +1260,10 @@ stack_set_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, CloudformationStackInstancesTimeouts]
+timeouts_input: IResolvable | CloudformationStackInstancesTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a>
 
 ---
 
@@ -1330,10 +1330,10 @@ regions: typing.List[str]
 ##### `retain_stacks`<sup>Required</sup> <a name="retain_stacks" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstances.property.retainStacks"></a>
 
 ```python
-retain_stacks: typing.Union[bool, IResolvable]
+retain_stacks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1375,13 +1375,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import cloudformation_stack_instances
 
 cloudformationStackInstances.CloudformationStackInstancesConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   stack_set_name: str,
   accounts: typing.List[str] = None,
   call_as: str = None,
@@ -1391,7 +1391,7 @@ cloudformationStackInstances.CloudformationStackInstancesConfig(
   parameter_overrides: typing.Mapping[str] = None,
   region: str = None,
   regions: typing.List[str] = None,
-  retain_stacks: typing.Union[bool, IResolvable] = None,
+  retain_stacks: bool | IResolvable = None,
   timeouts: CloudformationStackInstancesTimeouts = None
 )
 ```
@@ -1400,13 +1400,13 @@ cloudformationStackInstances.CloudformationStackInstancesConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.stackSetName">stack_set_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#stack_set_name CloudformationStackInstances#stack_set_name}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.accounts">accounts</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#accounts CloudformationStackInstances#accounts}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.callAs">call_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#call_as CloudformationStackInstances#call_as}. |
@@ -1416,7 +1416,7 @@ cloudformationStackInstances.CloudformationStackInstancesConfig(
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.parameterOverrides">parameter_overrides</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#parameter_overrides CloudformationStackInstances#parameter_overrides}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.regions">regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#regions CloudformationStackInstances#regions}. |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.retainStacks">retain_stacks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}. |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.retainStacks">retain_stacks</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}. |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1424,20 +1424,20 @@ cloudformationStackInstances.CloudformationStackInstancesConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1484,10 +1484,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1611,10 +1611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `retain_stacks`<sup>Optional</sup> <a name="retain_stacks" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesConfig.property.retainStacks"></a>
 
 ```python
-retain_stacks: typing.Union[bool, IResolvable]
+retain_stacks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}.
 
@@ -3578,7 +3578,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3669,10 +3669,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, CloudformationStackInstancesTimeouts]
+internal_value: IResolvable | CloudformationStackInstancesTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.cloudformationStackInstances.CloudformationStackInstancesTimeouts">CloudformationStackInstancesTimeouts</a>
 
 ---
 

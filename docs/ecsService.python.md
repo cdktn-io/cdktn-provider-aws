@@ -14,17 +14,17 @@ from cdktf_cdktf_provider_aws import ecs_service
 ecsService.EcsService(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   alarms: EcsServiceAlarms = None,
   availability_zone_rebalancing: str = None,
-  capacity_provider_strategy: typing.Union[IResolvable, typing.List[EcsServiceCapacityProviderStrategy]] = None,
+  capacity_provider_strategy: IResolvable | typing.List[EcsServiceCapacityProviderStrategy] = None,
   cluster: str = None,
   deployment_circuit_breaker: EcsServiceDeploymentCircuitBreaker = None,
   deployment_configuration: EcsServiceDeploymentConfiguration = None,
@@ -32,33 +32,33 @@ ecsService.EcsService(
   deployment_maximum_percent: typing.Union[int, float] = None,
   deployment_minimum_healthy_percent: typing.Union[int, float] = None,
   desired_count: typing.Union[int, float] = None,
-  enable_ecs_managed_tags: typing.Union[bool, IResolvable] = None,
-  enable_execute_command: typing.Union[bool, IResolvable] = None,
-  force_delete: typing.Union[bool, IResolvable] = None,
-  force_new_deployment: typing.Union[bool, IResolvable] = None,
+  enable_ecs_managed_tags: bool | IResolvable = None,
+  enable_execute_command: bool | IResolvable = None,
+  force_delete: bool | IResolvable = None,
+  force_new_deployment: bool | IResolvable = None,
   health_check_grace_period_seconds: typing.Union[int, float] = None,
   iam_role: str = None,
   id: str = None,
   launch_type: str = None,
-  load_balancer: typing.Union[IResolvable, typing.List[EcsServiceLoadBalancer]] = None,
+  load_balancer: IResolvable | typing.List[EcsServiceLoadBalancer] = None,
   network_configuration: EcsServiceNetworkConfiguration = None,
-  ordered_placement_strategy: typing.Union[IResolvable, typing.List[EcsServiceOrderedPlacementStrategy]] = None,
-  placement_constraints: typing.Union[IResolvable, typing.List[EcsServicePlacementConstraints]] = None,
+  ordered_placement_strategy: IResolvable | typing.List[EcsServiceOrderedPlacementStrategy] = None,
+  placement_constraints: IResolvable | typing.List[EcsServicePlacementConstraints] = None,
   platform_version: str = None,
   propagate_tags: str = None,
   region: str = None,
   scheduling_strategy: str = None,
   service_connect_configuration: EcsServiceServiceConnectConfiguration = None,
   service_registries: EcsServiceServiceRegistries = None,
-  sigint_rollback: typing.Union[bool, IResolvable] = None,
+  sigint_rollback: bool | IResolvable = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   task_definition: str = None,
   timeouts: EcsServiceTimeouts = None,
   triggers: typing.Mapping[str] = None,
   volume_configuration: EcsServiceVolumeConfiguration = None,
-  vpc_lattice_configurations: typing.Union[IResolvable, typing.List[EcsServiceVpcLatticeConfigurations]] = None,
-  wait_for_steady_state: typing.Union[bool, IResolvable] = None
+  vpc_lattice_configurations: IResolvable | typing.List[EcsServiceVpcLatticeConfigurations] = None,
+  wait_for_steady_state: bool | IResolvable = None
 )
 ```
 
@@ -66,17 +66,17 @@ ecsService.EcsService(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#name EcsService#name}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.alarms">alarms</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms">EcsServiceAlarms</a></code> | alarms block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.availabilityZoneRebalancing">availability_zone_rebalancing</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]</code> | capacity_provider_strategy block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]</code> | capacity_provider_strategy block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#cluster EcsService#cluster}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.deploymentCircuitBreaker">deployment_circuit_breaker</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker">EcsServiceDeploymentCircuitBreaker</a></code> | deployment_circuit_breaker block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.deploymentConfiguration">deployment_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration">EcsServiceDeploymentConfiguration</a></code> | deployment_configuration block. |
@@ -84,33 +84,33 @@ ecsService.EcsService(
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.deploymentMaximumPercent">deployment_maximum_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.deploymentMinimumHealthyPercent">deployment_minimum_healthy_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.desiredCount">desired_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#desired_count EcsService#desired_count}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.enableExecuteCommand">enable_execute_command</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_delete EcsService#force_delete}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forceNewDeployment">force_new_deployment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.enableExecuteCommand">enable_execute_command</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_delete EcsService#force_delete}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forceNewDeployment">force_new_deployment</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.healthCheckGracePeriodSeconds">health_check_grace_period_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.iamRole">iam_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#iam_role EcsService#iam_role}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#id EcsService#id}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.launchType">launch_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#launch_type EcsService#launch_type}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.loadBalancer">load_balancer</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]</code> | load_balancer block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.loadBalancer">load_balancer</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]</code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.networkConfiguration">network_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration">EcsServiceNetworkConfiguration</a></code> | network_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.orderedPlacementStrategy">ordered_placement_strategy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]</code> | ordered_placement_strategy block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.placementConstraints">placement_constraints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]</code> | placement_constraints block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.orderedPlacementStrategy">ordered_placement_strategy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]</code> | ordered_placement_strategy block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.placementConstraints">placement_constraints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]</code> | placement_constraints block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.platformVersion">platform_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#platform_version EcsService#platform_version}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.propagateTags">propagate_tags</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.schedulingStrategy">scheduling_strategy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.serviceConnectConfiguration">service_connect_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration">EcsServiceServiceConnectConfiguration</a></code> | service_connect_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.serviceRegistries">service_registries</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries">EcsServiceServiceRegistries</a></code> | service_registries block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.sigintRollback">sigint_rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.sigintRollback">sigint_rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#tags EcsService#tags}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#tags_all EcsService#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.taskDefinition">task_definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#task_definition EcsService#task_definition}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#triggers EcsService#triggers}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.volumeConfiguration">volume_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration">EcsServiceVolumeConfiguration</a></code> | volume_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.vpcLatticeConfigurations">vpc_lattice_configurations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]</code> | vpc_lattice_configurations block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.waitForSteadyState">wait_for_steady_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.vpcLatticeConfigurations">vpc_lattice_configurations</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]</code> | vpc_lattice_configurations block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.waitForSteadyState">wait_for_steady_state</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}. |
 
 ---
 
@@ -134,13 +134,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -170,7 +170,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `capacity_provider_strategy`<sup>Optional</sup> <a name="capacity_provider_strategy" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.capacityProviderStrategy"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]
 
 capacity_provider_strategy block.
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_ecs_managed_tags`<sup>Optional</sup> <a name="enable_ecs_managed_tags" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.enableEcsManagedTags"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}.
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_execute_command`<sup>Optional</sup> <a name="enable_execute_command" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.enableExecuteCommand"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}.
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forceDelete"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_delete EcsService#force_delete}.
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_new_deployment`<sup>Optional</sup> <a name="force_new_deployment" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.forceNewDeployment"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}.
 
@@ -341,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `load_balancer`<sup>Optional</sup> <a name="load_balancer" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.loadBalancer"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]
 
 load_balancer block.
 
@@ -361,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ordered_placement_strategy`<sup>Optional</sup> <a name="ordered_placement_strategy" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.orderedPlacementStrategy"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]
 
 ordered_placement_strategy block.
 
@@ -371,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `placement_constraints`<sup>Optional</sup> <a name="placement_constraints" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.placementConstraints"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]
 
 placement_constraints block.
 
@@ -435,7 +435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `sigint_rollback`<sup>Optional</sup> <a name="sigint_rollback" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.sigintRollback"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}.
 
@@ -495,7 +495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `vpc_lattice_configurations`<sup>Optional</sup> <a name="vpc_lattice_configurations" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.vpcLatticeConfigurations"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]
 
 vpc_lattice_configurations block.
 
@@ -505,7 +505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `wait_for_steady_state`<sup>Optional</sup> <a name="wait_for_steady_state" id="@cdktf/provider-aws.ecsService.EcsService.Initializer.parameter.waitForSteadyState"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}.
 
@@ -814,7 +814,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.ecsService.EcsService.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.ecsService.EcsService.importFrom"></a>
@@ -877,7 +877,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -893,7 +893,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.ecsService.EcsService.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -922,8 +922,8 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_alarms(
   alarm_names: typing.List[str],
-  enable: typing.Union[bool, IResolvable],
-  rollback: typing.Union[bool, IResolvable]
+  enable: bool | IResolvable,
+  rollback: bool | IResolvable
 ) -> None
 ```
 
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-aws.ecsService.EcsService.putAlarms.parameter.enable"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}.
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `rollback`<sup>Required</sup> <a name="rollback" id="@cdktf/provider-aws.ecsService.EcsService.putAlarms.parameter.rollback"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}.
 
@@ -955,13 +955,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_capacity_provider_strategy(
-  value: typing.Union[IResolvable, typing.List[EcsServiceCapacityProviderStrategy]]
+  value: IResolvable | typing.List[EcsServiceCapacityProviderStrategy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsService.putCapacityProviderStrategy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]
 
 ---
 
@@ -969,14 +969,14 @@ def put_capacity_provider_strategy(
 
 ```python
 def put_deployment_circuit_breaker(
-  enable: typing.Union[bool, IResolvable],
-  rollback: typing.Union[bool, IResolvable]
+  enable: bool | IResolvable,
+  rollback: bool | IResolvable
 ) -> None
 ```
 
 ###### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-aws.ecsService.EcsService.putDeploymentCircuitBreaker.parameter.enable"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}.
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `rollback`<sup>Required</sup> <a name="rollback" id="@cdktf/provider-aws.ecsService.EcsService.putDeploymentCircuitBreaker.parameter.rollback"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}.
 
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_deployment_configuration(
   bake_time_in_minutes: str = None,
-  lifecycle_hook: typing.Union[IResolvable, typing.List[EcsServiceDeploymentConfigurationLifecycleHook]] = None,
+  lifecycle_hook: IResolvable | typing.List[EcsServiceDeploymentConfigurationLifecycleHook] = None,
   strategy: str = None
 ) -> None
 ```
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `lifecycle_hook`<sup>Optional</sup> <a name="lifecycle_hook" id="@cdktf/provider-aws.ecsService.EcsService.putDeploymentConfiguration.parameter.lifecycleHook"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]
 
 lifecycle_hook block.
 
@@ -1046,13 +1046,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_load_balancer(
-  value: typing.Union[IResolvable, typing.List[EcsServiceLoadBalancer]]
+  value: IResolvable | typing.List[EcsServiceLoadBalancer]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsService.putLoadBalancer.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]
 
 ---
 
@@ -1061,7 +1061,7 @@ def put_load_balancer(
 ```python
 def put_network_configuration(
   subnets: typing.List[str],
-  assign_public_ip: typing.Union[bool, IResolvable] = None,
+  assign_public_ip: bool | IResolvable = None,
   security_groups: typing.List[str] = None
 ) -> None
 ```
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `assign_public_ip`<sup>Optional</sup> <a name="assign_public_ip" id="@cdktf/provider-aws.ecsService.EcsService.putNetworkConfiguration.parameter.assignPublicIp"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}.
 
@@ -1094,13 +1094,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_ordered_placement_strategy(
-  value: typing.Union[IResolvable, typing.List[EcsServiceOrderedPlacementStrategy]]
+  value: IResolvable | typing.List[EcsServiceOrderedPlacementStrategy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsService.putOrderedPlacementStrategy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]
 
 ---
 
@@ -1108,13 +1108,13 @@ def put_ordered_placement_strategy(
 
 ```python
 def put_placement_constraints(
-  value: typing.Union[IResolvable, typing.List[EcsServicePlacementConstraints]]
+  value: IResolvable | typing.List[EcsServicePlacementConstraints]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsService.putPlacementConstraints.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]
 
 ---
 
@@ -1122,16 +1122,16 @@ def put_placement_constraints(
 
 ```python
 def put_service_connect_configuration(
-  enabled: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
   log_configuration: EcsServiceServiceConnectConfigurationLogConfiguration = None,
   namespace: str = None,
-  service: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationService]] = None
+  service: IResolvable | typing.List[EcsServiceServiceConnectConfigurationService] = None
 ) -> None
 ```
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-aws.ecsService.EcsService.putServiceConnectConfiguration.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enabled EcsService#enabled}.
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `service`<sup>Optional</sup> <a name="service" id="@cdktf/provider-aws.ecsService.EcsService.putServiceConnectConfiguration.parameter.service"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]
 
 service block.
 
@@ -1273,13 +1273,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_vpc_lattice_configurations(
-  value: typing.Union[IResolvable, typing.List[EcsServiceVpcLatticeConfigurations]]
+  value: IResolvable | typing.List[EcsServiceVpcLatticeConfigurations]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsService.putVpcLatticeConfigurations.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]
 
 ---
 
@@ -1642,13 +1642,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.alarms">alarms</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference">EcsServiceAlarmsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList">EcsServiceCapacityProviderStrategyList</a></code> | *No description.* |
@@ -1666,7 +1666,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.vpcLatticeConfigurations">vpc_lattice_configurations</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList">EcsServiceVpcLatticeConfigurationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.alarmsInput">alarms_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms">EcsServiceAlarms</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.availabilityZoneRebalancingInput">availability_zone_rebalancing_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.capacityProviderStrategyInput">capacity_provider_strategy_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.capacityProviderStrategyInput">capacity_provider_strategy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.deploymentCircuitBreakerInput">deployment_circuit_breaker_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker">EcsServiceDeploymentCircuitBreaker</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.deploymentConfigurationInput">deployment_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration">EcsServiceDeploymentConfiguration</a></code> | *No description.* |
@@ -1674,43 +1674,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.deploymentMaximumPercentInput">deployment_maximum_percent_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.deploymentMinimumHealthyPercentInput">deployment_minimum_healthy_percent_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.desiredCountInput">desired_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableEcsManagedTagsInput">enable_ecs_managed_tags_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableExecuteCommandInput">enable_execute_command_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceDeleteInput">force_delete_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceNewDeploymentInput">force_new_deployment_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableEcsManagedTagsInput">enable_ecs_managed_tags_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableExecuteCommandInput">enable_execute_command_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceNewDeploymentInput">force_new_deployment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.healthCheckGracePeriodSecondsInput">health_check_grace_period_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.iamRoleInput">iam_role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.launchTypeInput">launch_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.loadBalancerInput">load_balancer_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.loadBalancerInput">load_balancer_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.networkConfigurationInput">network_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration">EcsServiceNetworkConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.orderedPlacementStrategyInput">ordered_placement_strategy_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.placementConstraintsInput">placement_constraints_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.orderedPlacementStrategyInput">ordered_placement_strategy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.placementConstraintsInput">placement_constraints_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.platformVersionInput">platform_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.propagateTagsInput">propagate_tags_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.schedulingStrategyInput">scheduling_strategy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.serviceConnectConfigurationInput">service_connect_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration">EcsServiceServiceConnectConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.serviceRegistriesInput">service_registries_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries">EcsServiceServiceRegistries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.sigintRollbackInput">sigint_rollback_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.sigintRollbackInput">sigint_rollback_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.taskDefinitionInput">task_definition_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.triggersInput">triggers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.volumeConfigurationInput">volume_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration">EcsServiceVolumeConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.vpcLatticeConfigurationsInput">vpc_lattice_configurations_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.waitForSteadyStateInput">wait_for_steady_state_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.vpcLatticeConfigurationsInput">vpc_lattice_configurations_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.waitForSteadyStateInput">wait_for_steady_state_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.availabilityZoneRebalancing">availability_zone_rebalancing</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.deploymentMaximumPercent">deployment_maximum_percent</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.deploymentMinimumHealthyPercent">deployment_minimum_healthy_percent</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.desiredCount">desired_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableExecuteCommand">enable_execute_command</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceNewDeployment">force_new_deployment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.enableExecuteCommand">enable_execute_command</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.forceNewDeployment">force_new_deployment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.healthCheckGracePeriodSeconds">health_check_grace_period_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.iamRole">iam_role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1720,12 +1720,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.propagateTags">propagate_tags</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.schedulingStrategy">scheduling_strategy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.sigintRollback">sigint_rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.sigintRollback">sigint_rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.taskDefinition">task_definition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.waitForSteadyState">wait_for_steady_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsService.property.waitForSteadyState">wait_for_steady_state</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1804,20 +1804,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.ecsService.EcsService.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.ecsService.EcsService.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1864,10 +1864,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.ecsService.EcsService.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2044,10 +2044,10 @@ availability_zone_rebalancing_input: str
 ##### `capacity_provider_strategy_input`<sup>Optional</sup> <a name="capacity_provider_strategy_input" id="@cdktf/provider-aws.ecsService.EcsService.property.capacityProviderStrategyInput"></a>
 
 ```python
-capacity_provider_strategy_input: typing.Union[IResolvable, typing.List[EcsServiceCapacityProviderStrategy]]
+capacity_provider_strategy_input: IResolvable | typing.List[EcsServiceCapacityProviderStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]
 
 ---
 
@@ -2124,40 +2124,40 @@ desired_count_input: typing.Union[int, float]
 ##### `enable_ecs_managed_tags_input`<sup>Optional</sup> <a name="enable_ecs_managed_tags_input" id="@cdktf/provider-aws.ecsService.EcsService.property.enableEcsManagedTagsInput"></a>
 
 ```python
-enable_ecs_managed_tags_input: typing.Union[bool, IResolvable]
+enable_ecs_managed_tags_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_execute_command_input`<sup>Optional</sup> <a name="enable_execute_command_input" id="@cdktf/provider-aws.ecsService.EcsService.property.enableExecuteCommandInput"></a>
 
 ```python
-enable_execute_command_input: typing.Union[bool, IResolvable]
+enable_execute_command_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_delete_input`<sup>Optional</sup> <a name="force_delete_input" id="@cdktf/provider-aws.ecsService.EcsService.property.forceDeleteInput"></a>
 
 ```python
-force_delete_input: typing.Union[bool, IResolvable]
+force_delete_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_new_deployment_input`<sup>Optional</sup> <a name="force_new_deployment_input" id="@cdktf/provider-aws.ecsService.EcsService.property.forceNewDeploymentInput"></a>
 
 ```python
-force_new_deployment_input: typing.Union[bool, IResolvable]
+force_new_deployment_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2204,10 +2204,10 @@ launch_type_input: str
 ##### `load_balancer_input`<sup>Optional</sup> <a name="load_balancer_input" id="@cdktf/provider-aws.ecsService.EcsService.property.loadBalancerInput"></a>
 
 ```python
-load_balancer_input: typing.Union[IResolvable, typing.List[EcsServiceLoadBalancer]]
+load_balancer_input: IResolvable | typing.List[EcsServiceLoadBalancer]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]
 
 ---
 
@@ -2234,20 +2234,20 @@ network_configuration_input: EcsServiceNetworkConfiguration
 ##### `ordered_placement_strategy_input`<sup>Optional</sup> <a name="ordered_placement_strategy_input" id="@cdktf/provider-aws.ecsService.EcsService.property.orderedPlacementStrategyInput"></a>
 
 ```python
-ordered_placement_strategy_input: typing.Union[IResolvable, typing.List[EcsServiceOrderedPlacementStrategy]]
+ordered_placement_strategy_input: IResolvable | typing.List[EcsServiceOrderedPlacementStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]
 
 ---
 
 ##### `placement_constraints_input`<sup>Optional</sup> <a name="placement_constraints_input" id="@cdktf/provider-aws.ecsService.EcsService.property.placementConstraintsInput"></a>
 
 ```python
-placement_constraints_input: typing.Union[IResolvable, typing.List[EcsServicePlacementConstraints]]
+placement_constraints_input: IResolvable | typing.List[EcsServicePlacementConstraints]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]
 
 ---
 
@@ -2314,10 +2314,10 @@ service_registries_input: EcsServiceServiceRegistries
 ##### `sigint_rollback_input`<sup>Optional</sup> <a name="sigint_rollback_input" id="@cdktf/provider-aws.ecsService.EcsService.property.sigintRollbackInput"></a>
 
 ```python
-sigint_rollback_input: typing.Union[bool, IResolvable]
+sigint_rollback_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2354,10 +2354,10 @@ task_definition_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.ecsService.EcsService.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, EcsServiceTimeouts]
+timeouts_input: IResolvable | EcsServiceTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a>
 
 ---
 
@@ -2384,20 +2384,20 @@ volume_configuration_input: EcsServiceVolumeConfiguration
 ##### `vpc_lattice_configurations_input`<sup>Optional</sup> <a name="vpc_lattice_configurations_input" id="@cdktf/provider-aws.ecsService.EcsService.property.vpcLatticeConfigurationsInput"></a>
 
 ```python
-vpc_lattice_configurations_input: typing.Union[IResolvable, typing.List[EcsServiceVpcLatticeConfigurations]]
+vpc_lattice_configurations_input: IResolvable | typing.List[EcsServiceVpcLatticeConfigurations]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]
 
 ---
 
 ##### `wait_for_steady_state_input`<sup>Optional</sup> <a name="wait_for_steady_state_input" id="@cdktf/provider-aws.ecsService.EcsService.property.waitForSteadyStateInput"></a>
 
 ```python
-wait_for_steady_state_input: typing.Union[bool, IResolvable]
+wait_for_steady_state_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2454,40 +2454,40 @@ desired_count: typing.Union[int, float]
 ##### `enable_ecs_managed_tags`<sup>Required</sup> <a name="enable_ecs_managed_tags" id="@cdktf/provider-aws.ecsService.EcsService.property.enableEcsManagedTags"></a>
 
 ```python
-enable_ecs_managed_tags: typing.Union[bool, IResolvable]
+enable_ecs_managed_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_execute_command`<sup>Required</sup> <a name="enable_execute_command" id="@cdktf/provider-aws.ecsService.EcsService.property.enableExecuteCommand"></a>
 
 ```python
-enable_execute_command: typing.Union[bool, IResolvable]
+enable_execute_command: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_delete`<sup>Required</sup> <a name="force_delete" id="@cdktf/provider-aws.ecsService.EcsService.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_new_deployment`<sup>Required</sup> <a name="force_new_deployment" id="@cdktf/provider-aws.ecsService.EcsService.property.forceNewDeployment"></a>
 
 ```python
-force_new_deployment: typing.Union[bool, IResolvable]
+force_new_deployment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2584,10 +2584,10 @@ scheduling_strategy: str
 ##### `sigint_rollback`<sup>Required</sup> <a name="sigint_rollback" id="@cdktf/provider-aws.ecsService.EcsService.property.sigintRollback"></a>
 
 ```python
-sigint_rollback: typing.Union[bool, IResolvable]
+sigint_rollback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2634,10 +2634,10 @@ triggers: typing.Mapping[str]
 ##### `wait_for_steady_state`<sup>Required</sup> <a name="wait_for_steady_state" id="@cdktf/provider-aws.ecsService.EcsService.property.waitForSteadyState"></a>
 
 ```python
-wait_for_steady_state: typing.Union[bool, IResolvable]
+wait_for_steady_state: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2670,8 +2670,8 @@ from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceAlarms(
   alarm_names: typing.List[str],
-  enable: typing.Union[bool, IResolvable],
-  rollback: typing.Union[bool, IResolvable]
+  enable: bool | IResolvable,
+  rollback: bool | IResolvable
 )
 ```
 
@@ -2680,8 +2680,8 @@ ecsService.EcsServiceAlarms(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.alarmNames">alarm_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.enable">enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.rollback">rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.rollback">rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
 
 ---
 
@@ -2700,10 +2700,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.enable"></a>
 
 ```python
-enable: typing.Union[bool, IResolvable]
+enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}.
 
@@ -2712,10 +2712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `rollback`<sup>Required</sup> <a name="rollback" id="@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.rollback"></a>
 
 ```python
-rollback: typing.Union[bool, IResolvable]
+rollback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}.
 
@@ -2789,17 +2789,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   alarms: EcsServiceAlarms = None,
   availability_zone_rebalancing: str = None,
-  capacity_provider_strategy: typing.Union[IResolvable, typing.List[EcsServiceCapacityProviderStrategy]] = None,
+  capacity_provider_strategy: IResolvable | typing.List[EcsServiceCapacityProviderStrategy] = None,
   cluster: str = None,
   deployment_circuit_breaker: EcsServiceDeploymentCircuitBreaker = None,
   deployment_configuration: EcsServiceDeploymentConfiguration = None,
@@ -2807,33 +2807,33 @@ ecsService.EcsServiceConfig(
   deployment_maximum_percent: typing.Union[int, float] = None,
   deployment_minimum_healthy_percent: typing.Union[int, float] = None,
   desired_count: typing.Union[int, float] = None,
-  enable_ecs_managed_tags: typing.Union[bool, IResolvable] = None,
-  enable_execute_command: typing.Union[bool, IResolvable] = None,
-  force_delete: typing.Union[bool, IResolvable] = None,
-  force_new_deployment: typing.Union[bool, IResolvable] = None,
+  enable_ecs_managed_tags: bool | IResolvable = None,
+  enable_execute_command: bool | IResolvable = None,
+  force_delete: bool | IResolvable = None,
+  force_new_deployment: bool | IResolvable = None,
   health_check_grace_period_seconds: typing.Union[int, float] = None,
   iam_role: str = None,
   id: str = None,
   launch_type: str = None,
-  load_balancer: typing.Union[IResolvable, typing.List[EcsServiceLoadBalancer]] = None,
+  load_balancer: IResolvable | typing.List[EcsServiceLoadBalancer] = None,
   network_configuration: EcsServiceNetworkConfiguration = None,
-  ordered_placement_strategy: typing.Union[IResolvable, typing.List[EcsServiceOrderedPlacementStrategy]] = None,
-  placement_constraints: typing.Union[IResolvable, typing.List[EcsServicePlacementConstraints]] = None,
+  ordered_placement_strategy: IResolvable | typing.List[EcsServiceOrderedPlacementStrategy] = None,
+  placement_constraints: IResolvable | typing.List[EcsServicePlacementConstraints] = None,
   platform_version: str = None,
   propagate_tags: str = None,
   region: str = None,
   scheduling_strategy: str = None,
   service_connect_configuration: EcsServiceServiceConnectConfiguration = None,
   service_registries: EcsServiceServiceRegistries = None,
-  sigint_rollback: typing.Union[bool, IResolvable] = None,
+  sigint_rollback: bool | IResolvable = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   task_definition: str = None,
   timeouts: EcsServiceTimeouts = None,
   triggers: typing.Mapping[str] = None,
   volume_configuration: EcsServiceVolumeConfiguration = None,
-  vpc_lattice_configurations: typing.Union[IResolvable, typing.List[EcsServiceVpcLatticeConfigurations]] = None,
-  wait_for_steady_state: typing.Union[bool, IResolvable] = None
+  vpc_lattice_configurations: IResolvable | typing.List[EcsServiceVpcLatticeConfigurations] = None,
+  wait_for_steady_state: bool | IResolvable = None
 )
 ```
 
@@ -2841,17 +2841,17 @@ ecsService.EcsServiceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#name EcsService#name}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.alarms">alarms</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms">EcsServiceAlarms</a></code> | alarms block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.availabilityZoneRebalancing">availability_zone_rebalancing</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]</code> | capacity_provider_strategy block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]</code> | capacity_provider_strategy block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.cluster">cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#cluster EcsService#cluster}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentCircuitBreaker">deployment_circuit_breaker</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker">EcsServiceDeploymentCircuitBreaker</a></code> | deployment_circuit_breaker block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentConfiguration">deployment_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration">EcsServiceDeploymentConfiguration</a></code> | deployment_configuration block. |
@@ -2859,53 +2859,53 @@ ecsService.EcsServiceConfig(
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentMaximumPercent">deployment_maximum_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentMinimumHealthyPercent">deployment_minimum_healthy_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.desiredCount">desired_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#desired_count EcsService#desired_count}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableExecuteCommand">enable_execute_command</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_delete EcsService#force_delete}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceNewDeployment">force_new_deployment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableExecuteCommand">enable_execute_command</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_delete EcsService#force_delete}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceNewDeployment">force_new_deployment</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.healthCheckGracePeriodSeconds">health_check_grace_period_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.iamRole">iam_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#iam_role EcsService#iam_role}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#id EcsService#id}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.launchType">launch_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#launch_type EcsService#launch_type}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.loadBalancer">load_balancer</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]</code> | load_balancer block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.loadBalancer">load_balancer</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]</code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.networkConfiguration">network_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration">EcsServiceNetworkConfiguration</a></code> | network_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.orderedPlacementStrategy">ordered_placement_strategy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]</code> | ordered_placement_strategy block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.placementConstraints">placement_constraints</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]</code> | placement_constraints block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.orderedPlacementStrategy">ordered_placement_strategy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]</code> | ordered_placement_strategy block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.placementConstraints">placement_constraints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]</code> | placement_constraints block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.platformVersion">platform_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#platform_version EcsService#platform_version}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.propagateTags">propagate_tags</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.schedulingStrategy">scheduling_strategy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.serviceConnectConfiguration">service_connect_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration">EcsServiceServiceConnectConfiguration</a></code> | service_connect_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.serviceRegistries">service_registries</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries">EcsServiceServiceRegistries</a></code> | service_registries block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.sigintRollback">sigint_rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.sigintRollback">sigint_rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#tags EcsService#tags}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#tags_all EcsService#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.taskDefinition">task_definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#task_definition EcsService#task_definition}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#triggers EcsService#triggers}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.volumeConfiguration">volume_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration">EcsServiceVolumeConfiguration</a></code> | volume_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.vpcLatticeConfigurations">vpc_lattice_configurations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]</code> | vpc_lattice_configurations block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.waitForSteadyState">wait_for_steady_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.vpcLatticeConfigurations">vpc_lattice_configurations</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]</code> | vpc_lattice_configurations block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.waitForSteadyState">wait_for_steady_state</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2952,10 +2952,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -3000,10 +3000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `capacity_provider_strategy`<sup>Optional</sup> <a name="capacity_provider_strategy" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.capacityProviderStrategy"></a>
 
 ```python
-capacity_provider_strategy: typing.Union[IResolvable, typing.List[EcsServiceCapacityProviderStrategy]]
+capacity_provider_strategy: IResolvable | typing.List[EcsServiceCapacityProviderStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]
 
 capacity_provider_strategy block.
 
@@ -3104,10 +3104,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_ecs_managed_tags`<sup>Optional</sup> <a name="enable_ecs_managed_tags" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableEcsManagedTags"></a>
 
 ```python
-enable_ecs_managed_tags: typing.Union[bool, IResolvable]
+enable_ecs_managed_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}.
 
@@ -3116,10 +3116,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_execute_command`<sup>Optional</sup> <a name="enable_execute_command" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableExecuteCommand"></a>
 
 ```python
-enable_execute_command: typing.Union[bool, IResolvable]
+enable_execute_command: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}.
 
@@ -3128,10 +3128,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_delete EcsService#force_delete}.
 
@@ -3140,10 +3140,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `force_new_deployment`<sup>Optional</sup> <a name="force_new_deployment" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceNewDeployment"></a>
 
 ```python
-force_new_deployment: typing.Union[bool, IResolvable]
+force_new_deployment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}.
 
@@ -3203,10 +3203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `load_balancer`<sup>Optional</sup> <a name="load_balancer" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.loadBalancer"></a>
 
 ```python
-load_balancer: typing.Union[IResolvable, typing.List[EcsServiceLoadBalancer]]
+load_balancer: IResolvable | typing.List[EcsServiceLoadBalancer]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]
 
 load_balancer block.
 
@@ -3231,10 +3231,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ordered_placement_strategy`<sup>Optional</sup> <a name="ordered_placement_strategy" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.orderedPlacementStrategy"></a>
 
 ```python
-ordered_placement_strategy: typing.Union[IResolvable, typing.List[EcsServiceOrderedPlacementStrategy]]
+ordered_placement_strategy: IResolvable | typing.List[EcsServiceOrderedPlacementStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]
 
 ordered_placement_strategy block.
 
@@ -3245,10 +3245,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `placement_constraints`<sup>Optional</sup> <a name="placement_constraints" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.placementConstraints"></a>
 
 ```python
-placement_constraints: typing.Union[IResolvable, typing.List[EcsServicePlacementConstraints]]
+placement_constraints: IResolvable | typing.List[EcsServicePlacementConstraints]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]
 
 placement_constraints block.
 
@@ -3337,10 +3337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sigint_rollback`<sup>Optional</sup> <a name="sigint_rollback" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.sigintRollback"></a>
 
 ```python
-sigint_rollback: typing.Union[bool, IResolvable]
+sigint_rollback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}.
 
@@ -3425,10 +3425,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vpc_lattice_configurations`<sup>Optional</sup> <a name="vpc_lattice_configurations" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.vpcLatticeConfigurations"></a>
 
 ```python
-vpc_lattice_configurations: typing.Union[IResolvable, typing.List[EcsServiceVpcLatticeConfigurations]]
+vpc_lattice_configurations: IResolvable | typing.List[EcsServiceVpcLatticeConfigurations]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]
 
 vpc_lattice_configurations block.
 
@@ -3439,10 +3439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `wait_for_steady_state`<sup>Optional</sup> <a name="wait_for_steady_state" id="@cdktf/provider-aws.ecsService.EcsServiceConfig.property.waitForSteadyState"></a>
 
 ```python
-wait_for_steady_state: typing.Union[bool, IResolvable]
+wait_for_steady_state: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}.
 
@@ -3456,8 +3456,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceDeploymentCircuitBreaker(
-  enable: typing.Union[bool, IResolvable],
-  rollback: typing.Union[bool, IResolvable]
+  enable: bool | IResolvable,
+  rollback: bool | IResolvable
 )
 ```
 
@@ -3465,18 +3465,18 @@ ecsService.EcsServiceDeploymentCircuitBreaker(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.enable">enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.rollback">rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.rollback">rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
 
 ---
 
 ##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.enable"></a>
 
 ```python
-enable: typing.Union[bool, IResolvable]
+enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enable EcsService#enable}.
 
@@ -3485,10 +3485,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `rollback`<sup>Required</sup> <a name="rollback" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.rollback"></a>
 
 ```python
-rollback: typing.Union[bool, IResolvable]
+rollback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#rollback EcsService#rollback}.
 
@@ -3503,7 +3503,7 @@ from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceDeploymentConfiguration(
   bake_time_in_minutes: str = None,
-  lifecycle_hook: typing.Union[IResolvable, typing.List[EcsServiceDeploymentConfigurationLifecycleHook]] = None,
+  lifecycle_hook: IResolvable | typing.List[EcsServiceDeploymentConfigurationLifecycleHook] = None,
   strategy: str = None
 )
 ```
@@ -3513,7 +3513,7 @@ ecsService.EcsServiceDeploymentConfiguration(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.bakeTimeInMinutes">bake_time_in_minutes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.lifecycleHook">lifecycle_hook</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]</code> | lifecycle_hook block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.lifecycleHook">lifecycle_hook</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]</code> | lifecycle_hook block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.strategy">strategy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#strategy EcsService#strategy}. |
 
 ---
@@ -3533,10 +3533,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lifecycle_hook`<sup>Optional</sup> <a name="lifecycle_hook" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.lifecycleHook"></a>
 
 ```python
-lifecycle_hook: typing.Union[IResolvable, typing.List[EcsServiceDeploymentConfigurationLifecycleHook]]
+lifecycle_hook: IResolvable | typing.List[EcsServiceDeploymentConfigurationLifecycleHook]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]
 
 lifecycle_hook block.
 
@@ -3835,7 +3835,7 @@ from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceNetworkConfiguration(
   subnets: typing.List[str],
-  assign_public_ip: typing.Union[bool, IResolvable] = None,
+  assign_public_ip: bool | IResolvable = None,
   security_groups: typing.List[str] = None
 )
 ```
@@ -3845,7 +3845,7 @@ ecsService.EcsServiceNetworkConfiguration(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.subnets">subnets</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#subnets EcsService#subnets}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.assignPublicIp">assign_public_ip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.assignPublicIp">assign_public_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#security_groups EcsService#security_groups}. |
 
 ---
@@ -3865,10 +3865,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assign_public_ip`<sup>Optional</sup> <a name="assign_public_ip" id="@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.assignPublicIp"></a>
 
 ```python
-assign_public_ip: typing.Union[bool, IResolvable]
+assign_public_ip: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}.
 
@@ -3986,10 +3986,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceServiceConnectConfiguration(
-  enabled: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
   log_configuration: EcsServiceServiceConnectConfigurationLogConfiguration = None,
   namespace: str = None,
-  service: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationService]] = None
+  service: IResolvable | typing.List[EcsServiceServiceConnectConfigurationService] = None
 )
 ```
 
@@ -3997,20 +3997,20 @@ ecsService.EcsServiceServiceConnectConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enabled EcsService#enabled}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enabled EcsService#enabled}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.logConfiguration">log_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration">EcsServiceServiceConnectConfigurationLogConfiguration</a></code> | log_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#namespace EcsService#namespace}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.service">service</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]</code> | service block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.service">service</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]</code> | service block. |
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#enabled EcsService#enabled}.
 
@@ -4045,10 +4045,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `service`<sup>Optional</sup> <a name="service" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.service"></a>
 
 ```python
-service: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationService]]
+service: IResolvable | typing.List[EcsServiceServiceConnectConfigurationService]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]
 
 service block.
 
@@ -4066,7 +4066,7 @@ from cdktf_cdktf_provider_aws import ecs_service
 ecsService.EcsServiceServiceConnectConfigurationLogConfiguration(
   log_driver: str,
   options: typing.Mapping[str] = None,
-  secret_option: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]] = None
+  secret_option: IResolvable | typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption] = None
 )
 ```
 
@@ -4076,7 +4076,7 @@ ecsService.EcsServiceServiceConnectConfigurationLogConfiguration(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.logDriver">log_driver</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#log_driver EcsService#log_driver}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.options">options</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#options EcsService#options}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.secretOption">secret_option</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]</code> | secret_option block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.secretOption">secret_option</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]</code> | secret_option block. |
 
 ---
 
@@ -4107,10 +4107,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `secret_option`<sup>Optional</sup> <a name="secret_option" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.secretOption"></a>
 
 ```python
-secret_option: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]]
+secret_option: IResolvable | typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]
 
 secret_option block.
 
@@ -4282,7 +4282,7 @@ from cdktf_cdktf_provider_aws import ecs_service
 ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias(
   port: typing.Union[int, float],
   dns_name: str = None,
-  test_traffic_rules: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]] = None
+  test_traffic_rules: IResolvable | typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules] = None
 )
 ```
 
@@ -4292,7 +4292,7 @@ ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#port EcsService#port}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.dnsName">dns_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#dns_name EcsService#dns_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.testTrafficRules">test_traffic_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]</code> | test_traffic_rules block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.testTrafficRules">test_traffic_rules</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]</code> | test_traffic_rules block. |
 
 ---
 
@@ -4323,10 +4323,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `test_traffic_rules`<sup>Optional</sup> <a name="test_traffic_rules" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.testTrafficRules"></a>
 
 ```python
-test_traffic_rules: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]]
+test_traffic_rules: IResolvable | typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]
 
 test_traffic_rules block.
 
@@ -4779,13 +4779,13 @@ from cdktf_cdktf_provider_aws import ecs_service
 
 ecsService.EcsServiceVolumeConfigurationManagedEbsVolume(
   role_arn: str,
-  encrypted: typing.Union[bool, IResolvable] = None,
+  encrypted: bool | IResolvable = None,
   file_system_type: str = None,
   iops: typing.Union[int, float] = None,
   kms_key_id: str = None,
   size_in_gb: typing.Union[int, float] = None,
   snapshot_id: str = None,
-  tag_specifications: typing.Union[IResolvable, typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]] = None,
+  tag_specifications: IResolvable | typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications] = None,
   throughput: typing.Union[int, float] = None,
   volume_initialization_rate: typing.Union[int, float] = None,
   volume_type: str = None
@@ -4797,13 +4797,13 @@ ecsService.EcsServiceVolumeConfigurationManagedEbsVolume(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.encrypted">encrypted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#encrypted EcsService#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.encrypted">encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#encrypted EcsService#encrypted}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.fileSystemType">file_system_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#iops EcsService#iops}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.sizeInGb">size_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.snapshotId">snapshot_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.tagSpecifications">tag_specifications</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]</code> | tag_specifications block. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.tagSpecifications">tag_specifications</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]</code> | tag_specifications block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#throughput EcsService#throughput}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.volumeInitializationRate">volume_initialization_rate</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.volumeType">volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#volume_type EcsService#volume_type}. |
@@ -4825,10 +4825,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.encrypted"></a>
 
 ```python
-encrypted: typing.Union[bool, IResolvable]
+encrypted: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#encrypted EcsService#encrypted}.
 
@@ -4897,10 +4897,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tag_specifications`<sup>Optional</sup> <a name="tag_specifications" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.tagSpecifications"></a>
 
 ```python
-tag_specifications: typing.Union[IResolvable, typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]]
+tag_specifications: IResolvable | typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]
 
 tag_specifications block.
 
@@ -5302,11 +5302,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.alarmNamesInput">alarm_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.enableInput">enable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.rollbackInput">rollback_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.enableInput">enable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.rollbackInput">rollback_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.alarmNames">alarm_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.enable">enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.rollback">rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.rollback">rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms">EcsServiceAlarms</a></code> | *No description.* |
 
 ---
@@ -5348,20 +5348,20 @@ alarm_names_input: typing.List[str]
 ##### `enable_input`<sup>Optional</sup> <a name="enable_input" id="@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.enableInput"></a>
 
 ```python
-enable_input: typing.Union[bool, IResolvable]
+enable_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `rollback_input`<sup>Optional</sup> <a name="rollback_input" id="@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.rollbackInput"></a>
 
 ```python
-rollback_input: typing.Union[bool, IResolvable]
+rollback_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5378,20 +5378,20 @@ alarm_names: typing.List[str]
 ##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.enable"></a>
 
 ```python
-enable: typing.Union[bool, IResolvable]
+enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `rollback`<sup>Required</sup> <a name="rollback" id="@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference.property.rollback"></a>
 
 ```python
-rollback: typing.Union[bool, IResolvable]
+rollback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5537,7 +5537,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]</code> | *No description.* |
 
 ---
 
@@ -5568,10 +5568,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceCapacityProviderStrategy]]
+internal_value: IResolvable | typing.List[EcsServiceCapacityProviderStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]
 
 ---
 
@@ -5851,7 +5851,7 @@ def reset_weight() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.property.base">base</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.property.capacityProvider">capacity_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a></code> | *No description.* |
 
 ---
 
@@ -5942,10 +5942,10 @@ weight: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceCapacityProviderStrategy]
+internal_value: IResolvable | EcsServiceCapacityProviderStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy">EcsServiceCapacityProviderStrategy</a>
 
 ---
 
@@ -6185,10 +6185,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.enableInput">enable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.rollbackInput">rollback_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.enable">enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.rollback">rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.enableInput">enable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.rollbackInput">rollback_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.rollback">rollback</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker">EcsServiceDeploymentCircuitBreaker</a></code> | *No description.* |
 
 ---
@@ -6220,40 +6220,40 @@ fqn: str
 ##### `enable_input`<sup>Optional</sup> <a name="enable_input" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.enableInput"></a>
 
 ```python
-enable_input: typing.Union[bool, IResolvable]
+enable_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `rollback_input`<sup>Optional</sup> <a name="rollback_input" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.rollbackInput"></a>
 
 ```python
-rollback_input: typing.Union[bool, IResolvable]
+rollback_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.enable"></a>
 
 ```python
-enable: typing.Union[bool, IResolvable]
+enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `rollback`<sup>Required</sup> <a name="rollback" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference.property.rollback"></a>
 
 ```python
-rollback: typing.Union[bool, IResolvable]
+rollback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6399,7 +6399,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]</code> | *No description.* |
 
 ---
 
@@ -6430,10 +6430,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceDeploymentConfigurationLifecycleHook]]
+internal_value: IResolvable | typing.List[EcsServiceDeploymentConfigurationLifecycleHook]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]
 
 ---
 
@@ -6708,7 +6708,7 @@ def reset_hook_details() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.property.hookTargetArn">hook_target_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.property.lifecycleStages">lifecycle_stages</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a></code> | *No description.* |
 
 ---
 
@@ -6819,10 +6819,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceDeploymentConfigurationLifecycleHook]
+internal_value: IResolvable | EcsServiceDeploymentConfigurationLifecycleHook
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>
 
 ---
 
@@ -7063,13 +7063,13 @@ Returns a reversible string representation.
 
 ```python
 def put_lifecycle_hook(
-  value: typing.Union[IResolvable, typing.List[EcsServiceDeploymentConfigurationLifecycleHook]]
+  value: IResolvable | typing.List[EcsServiceDeploymentConfigurationLifecycleHook]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.putLifecycleHook.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]
 
 ---
 
@@ -7100,7 +7100,7 @@ def reset_strategy() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.lifecycleHook">lifecycle_hook</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHookList">EcsServiceDeploymentConfigurationLifecycleHookList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.bakeTimeInMinutesInput">bake_time_in_minutes_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.lifecycleHookInput">lifecycle_hook_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.lifecycleHookInput">lifecycle_hook_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.strategyInput">strategy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.bakeTimeInMinutes">bake_time_in_minutes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.strategy">strategy</a></code> | <code>str</code> | *No description.* |
@@ -7155,10 +7155,10 @@ bake_time_in_minutes_input: str
 ##### `lifecycle_hook_input`<sup>Optional</sup> <a name="lifecycle_hook_input" id="@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference.property.lifecycleHookInput"></a>
 
 ```python
-lifecycle_hook_input: typing.Union[IResolvable, typing.List[EcsServiceDeploymentConfigurationLifecycleHook]]
+lifecycle_hook_input: IResolvable | typing.List[EcsServiceDeploymentConfigurationLifecycleHook]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook">EcsServiceDeploymentConfigurationLifecycleHook</a>]
 
 ---
 
@@ -8006,7 +8006,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]</code> | *No description.* |
 
 ---
 
@@ -8037,10 +8037,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceLoadBalancer]]
+internal_value: IResolvable | typing.List[EcsServiceLoadBalancer]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]
 
 ---
 
@@ -8375,7 +8375,7 @@ def reset_target_group_arn() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.property.containerPort">container_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.property.elbName">elb_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a></code> | *No description.* |
 
 ---
 
@@ -8506,10 +8506,10 @@ target_group_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceLoadBalancer]
+internal_value: IResolvable | EcsServiceLoadBalancer
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer">EcsServiceLoadBalancer</a>
 
 ---
 
@@ -8763,10 +8763,10 @@ def reset_security_groups() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.assignPublicIpInput">assign_public_ip_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.assignPublicIpInput">assign_public_ip_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.securityGroupsInput">security_groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.subnetsInput">subnets_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.assignPublicIp">assign_public_ip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.assignPublicIp">assign_public_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.subnets">subnets</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration">EcsServiceNetworkConfiguration</a></code> | *No description.* |
@@ -8800,10 +8800,10 @@ fqn: str
 ##### `assign_public_ip_input`<sup>Optional</sup> <a name="assign_public_ip_input" id="@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.assignPublicIpInput"></a>
 
 ```python
-assign_public_ip_input: typing.Union[bool, IResolvable]
+assign_public_ip_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8830,10 +8830,10 @@ subnets_input: typing.List[str]
 ##### `assign_public_ip`<sup>Required</sup> <a name="assign_public_ip" id="@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference.property.assignPublicIp"></a>
 
 ```python
-assign_public_ip: typing.Union[bool, IResolvable]
+assign_public_ip: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8999,7 +8999,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]</code> | *No description.* |
 
 ---
 
@@ -9030,10 +9030,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceOrderedPlacementStrategy]]
+internal_value: IResolvable | typing.List[EcsServiceOrderedPlacementStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]
 
 ---
 
@@ -9304,7 +9304,7 @@ def reset_field() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.property.field">field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a></code> | *No description.* |
 
 ---
 
@@ -9375,10 +9375,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceOrderedPlacementStrategy]
+internal_value: IResolvable | EcsServiceOrderedPlacementStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy">EcsServiceOrderedPlacementStrategy</a>
 
 ---
 
@@ -9514,7 +9514,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]</code> | *No description.* |
 
 ---
 
@@ -9545,10 +9545,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServicePlacementConstraints]]
+internal_value: IResolvable | typing.List[EcsServicePlacementConstraints]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]
 
 ---
 
@@ -9819,7 +9819,7 @@ def reset_expression() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a></code> | *No description.* |
 
 ---
 
@@ -9890,10 +9890,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServicePlacementConstraints]
+internal_value: IResolvable | EcsServicePlacementConstraints
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints">EcsServicePlacementConstraints</a>
 
 ---
 
@@ -10133,13 +10133,13 @@ Returns a reversible string representation.
 
 ```python
 def put_secret_option(
-  value: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]]
+  value: IResolvable | typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.putSecretOption.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]
 
 ---
 
@@ -10165,7 +10165,7 @@ def reset_secret_option() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.secretOption">secret_option</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList">EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.logDriverInput">log_driver_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.optionsInput">options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.secretOptionInput">secret_option_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.secretOptionInput">secret_option_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.logDriver">log_driver</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.options">options</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration">EcsServiceServiceConnectConfigurationLogConfiguration</a></code> | *No description.* |
@@ -10229,10 +10229,10 @@ options_input: typing.Mapping[str]
 ##### `secret_option_input`<sup>Optional</sup> <a name="secret_option_input" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference.property.secretOptionInput"></a>
 
 ```python
-secret_option_input: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]]
+secret_option_input: IResolvable | typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]
 
 ---
 
@@ -10398,7 +10398,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]</code> | *No description.* |
 
 ---
 
@@ -10429,10 +10429,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]]
+internal_value: IResolvable | typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]
 
 ---
 
@@ -10696,7 +10696,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.property.valueFromInput">value_from_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.property.valueFrom">value_from</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a></code> | *No description.* |
 
 ---
 
@@ -10767,10 +10767,10 @@ value_from: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]
+internal_value: IResolvable | EcsServiceServiceConnectConfigurationLogConfigurationSecretOption
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>
 
 ---
 
@@ -11014,7 +11014,7 @@ Returns a reversible string representation.
 def put_log_configuration(
   log_driver: str,
   options: typing.Mapping[str] = None,
-  secret_option: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption]] = None
+  secret_option: IResolvable | typing.List[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption] = None
 ) -> None
 ```
 
@@ -11036,7 +11036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `secret_option`<sup>Optional</sup> <a name="secret_option" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.putLogConfiguration.parameter.secretOption"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption">EcsServiceServiceConnectConfigurationLogConfigurationSecretOption</a>]
 
 secret_option block.
 
@@ -11048,13 +11048,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_service(
-  value: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationService]]
+  value: IResolvable | typing.List[EcsServiceServiceConnectConfigurationService]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.putService.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]
 
 ---
 
@@ -11085,11 +11085,11 @@ def reset_service() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.logConfiguration">log_configuration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference">EcsServiceServiceConnectConfigurationLogConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.service">service</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList">EcsServiceServiceConnectConfigurationServiceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.logConfigurationInput">log_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration">EcsServiceServiceConnectConfigurationLogConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.serviceInput">service_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.serviceInput">service_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration">EcsServiceServiceConnectConfiguration</a></code> | *No description.* |
 
@@ -11142,10 +11142,10 @@ service: EcsServiceServiceConnectConfigurationServiceList
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11172,20 +11172,20 @@ namespace_input: str
 ##### `service_input`<sup>Optional</sup> <a name="service_input" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.serviceInput"></a>
 
 ```python
-service_input: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationService]]
+service_input: IResolvable | typing.List[EcsServiceServiceConnectConfigurationService]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11445,13 +11445,13 @@ Returns a reversible string representation.
 
 ```python
 def put_test_traffic_rules(
-  value: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]]
+  value: IResolvable | typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.putTestTrafficRules.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]
 
 ---
 
@@ -11477,7 +11477,7 @@ def reset_test_traffic_rules() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.testTrafficRules">test_traffic_rules</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.dnsNameInput">dns_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.testTrafficRulesInput">test_traffic_rules_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.testTrafficRulesInput">test_traffic_rules_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias">EcsServiceServiceConnectConfigurationServiceClientAlias</a></code> | *No description.* |
@@ -11541,10 +11541,10 @@ port_input: typing.Union[int, float]
 ##### `test_traffic_rules_input`<sup>Optional</sup> <a name="test_traffic_rules_input" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference.property.testTrafficRulesInput"></a>
 
 ```python
-test_traffic_rules_input: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]]
+test_traffic_rules_input: IResolvable | typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]
 
 ---
 
@@ -12341,7 +12341,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]</code> | *No description.* |
 
 ---
 
@@ -12372,10 +12372,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]]
+internal_value: IResolvable | typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]
 
 ---
 
@@ -12672,7 +12672,7 @@ def reset_header() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.property.header">header</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.property.headerInput">header_input</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a></code> | *No description.* |
 
 ---
 
@@ -12723,10 +12723,10 @@ header_input: EcsServiceServiceConnectConfigurationServiceClientAliasTestTraffic
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]
+internal_value: IResolvable | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>
 
 ---
 
@@ -12862,7 +12862,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]</code> | *No description.* |
 
 ---
 
@@ -12893,10 +12893,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationService]]
+internal_value: IResolvable | typing.List[EcsServiceServiceConnectConfigurationService]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]
 
 ---
 
@@ -13163,7 +13163,7 @@ Returns a reversible string representation.
 def put_client_alias(
   port: typing.Union[int, float],
   dns_name: str = None,
-  test_traffic_rules: typing.Union[IResolvable, typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules]] = None
+  test_traffic_rules: IResolvable | typing.List[EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules] = None
 ) -> None
 ```
 
@@ -13185,7 +13185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `test_traffic_rules`<sup>Optional</sup> <a name="test_traffic_rules" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.putClientAlias.parameter.testTrafficRules"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules</a>]
 
 test_traffic_rules block.
 
@@ -13303,7 +13303,7 @@ def reset_tls() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.property.discoveryName">discovery_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.property.ingressPortOverride">ingress_port_override</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.property.portName">port_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a></code> | *No description.* |
 
 ---
 
@@ -13454,10 +13454,10 @@ port_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceServiceConnectConfigurationService]
+internal_value: IResolvable | EcsServiceServiceConnectConfigurationService
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService">EcsServiceServiceConnectConfigurationService</a>
 
 ---
 
@@ -15106,7 +15106,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -15197,10 +15197,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceTimeouts]
+internal_value: IResolvable | EcsServiceTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a>
 
 ---
 
@@ -15448,13 +15448,13 @@ Returns a reversible string representation.
 
 ```python
 def put_tag_specifications(
-  value: typing.Union[IResolvable, typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]]
+  value: IResolvable | typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.putTagSpecifications.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]
 
 ---
 
@@ -15526,18 +15526,18 @@ def reset_volume_type() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.tagSpecifications">tag_specifications</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.encryptedInput">encrypted_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.encryptedInput">encrypted_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.fileSystemTypeInput">file_system_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.iopsInput">iops_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.kmsKeyIdInput">kms_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.sizeInGbInput">size_in_gb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.snapshotIdInput">snapshot_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.tagSpecificationsInput">tag_specifications_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.tagSpecificationsInput">tag_specifications_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.throughputInput">throughput_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.volumeInitializationRateInput">volume_initialization_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.volumeTypeInput">volume_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.encrypted">encrypted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.encrypted">encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.fileSystemType">file_system_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
@@ -15588,10 +15588,10 @@ tag_specifications: EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificatio
 ##### `encrypted_input`<sup>Optional</sup> <a name="encrypted_input" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.encryptedInput"></a>
 
 ```python
-encrypted_input: typing.Union[bool, IResolvable]
+encrypted_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -15658,10 +15658,10 @@ snapshot_id_input: str
 ##### `tag_specifications_input`<sup>Optional</sup> <a name="tag_specifications_input" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.tagSpecificationsInput"></a>
 
 ```python
-tag_specifications_input: typing.Union[IResolvable, typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]]
+tag_specifications_input: IResolvable | typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]
 
 ---
 
@@ -15698,10 +15698,10 @@ volume_type_input: str
 ##### `encrypted`<sup>Required</sup> <a name="encrypted" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference.property.encrypted"></a>
 
 ```python
-encrypted: typing.Union[bool, IResolvable]
+encrypted: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -15937,7 +15937,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]</code> | *No description.* |
 
 ---
 
@@ -15968,10 +15968,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]]
+internal_value: IResolvable | typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]
 
 ---
 
@@ -16251,7 +16251,7 @@ def reset_tags() -> None
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.property.propagateTags">propagate_tags</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a></code> | *No description.* |
 
 ---
 
@@ -16342,10 +16342,10 @@ tags: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]
+internal_value: IResolvable | EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>
 
 ---
 
@@ -16584,13 +16584,13 @@ Returns a reversible string representation.
 ```python
 def put_managed_ebs_volume(
   role_arn: str,
-  encrypted: typing.Union[bool, IResolvable] = None,
+  encrypted: bool | IResolvable = None,
   file_system_type: str = None,
   iops: typing.Union[int, float] = None,
   kms_key_id: str = None,
   size_in_gb: typing.Union[int, float] = None,
   snapshot_id: str = None,
-  tag_specifications: typing.Union[IResolvable, typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications]] = None,
+  tag_specifications: IResolvable | typing.List[EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications] = None,
   throughput: typing.Union[int, float] = None,
   volume_initialization_rate: typing.Union[int, float] = None,
   volume_type: str = None
@@ -16607,7 +16607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationOutputReference.putManagedEbsVolume.parameter.encrypted"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#encrypted EcsService#encrypted}.
 
@@ -16655,7 +16655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `tag_specifications`<sup>Optional</sup> <a name="tag_specifications" id="@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationOutputReference.putManagedEbsVolume.parameter.tagSpecifications"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications">EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications</a>]
 
 tag_specifications block.
 
@@ -16908,7 +16908,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]</code> | *No description.* |
 
 ---
 
@@ -16939,10 +16939,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EcsServiceVpcLatticeConfigurations]]
+internal_value: IResolvable | typing.List[EcsServiceVpcLatticeConfigurations]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]
 
 ---
 
@@ -17208,7 +17208,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.property.portName">port_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a></code> | *No description.* |
 
 ---
 
@@ -17299,10 +17299,10 @@ target_group_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EcsServiceVpcLatticeConfigurations]
+internal_value: IResolvable | EcsServiceVpcLatticeConfigurations
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations">EcsServiceVpcLatticeConfigurations</a>
 
 ---
 

@@ -14,17 +14,17 @@ from cdktf_cdktf_provider_aws import bedrockagent_flow
 bedrockagentFlow.BedrockagentFlow(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   execution_role_arn: str,
   name: str,
   customer_encryption_key_arn: str = None,
-  definition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]] = None,
+  definition: IResolvable | typing.List[BedrockagentFlowDefinition] = None,
   description: str = None,
   region: str = None,
   tags: typing.Mapping[str] = None,
@@ -36,17 +36,17 @@ bedrockagentFlow.BedrockagentFlow(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.definition">definition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]</code> | definition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.definition">definition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]</code> | definition block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
@@ -74,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `definition`<sup>Optional</sup> <a name="definition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.definition"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]
 
 definition block.
 
@@ -444,7 +444,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.importFrom"></a>
@@ -507,7 +507,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -523,7 +523,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -551,13 +551,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_definition(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.putDefinition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]
 
 ---
 
@@ -774,13 +774,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definition">definition</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList">BedrockagentFlowDefinitionList</a></code> | *No description.* |
@@ -791,13 +791,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.version">version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.customerEncryptionKeyArnInput">customer_encryption_key_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definitionInput">definition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definitionInput">definition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.executionRoleArnInput">execution_role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | *No description.* |
@@ -882,20 +882,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -942,10 +942,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1052,10 +1052,10 @@ customer_encryption_key_arn_input: str
 ##### `definition_input`<sup>Optional</sup> <a name="definition_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definitionInput"></a>
 
 ```python
-definition_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]]
+definition_input: IResolvable | typing.List[BedrockagentFlowDefinition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]
 
 ---
 
@@ -1112,10 +1112,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, BedrockagentFlowTimeouts]
+timeouts_input: IResolvable | BedrockagentFlowTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>
 
 ---
 
@@ -1207,17 +1207,17 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   execution_role_arn: str,
   name: str,
   customer_encryption_key_arn: str = None,
-  definition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]] = None,
+  definition: IResolvable | typing.List[BedrockagentFlowDefinition] = None,
   description: str = None,
   region: str = None,
   tags: typing.Mapping[str] = None,
@@ -1229,17 +1229,17 @@ bedrockagentFlow.BedrockagentFlowConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition">definition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]</code> | definition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition">definition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]</code> | definition block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
@@ -1250,20 +1250,20 @@ bedrockagentFlow.BedrockagentFlowConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1310,10 +1310,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1356,10 +1356,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `definition`<sup>Optional</sup> <a name="definition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition"></a>
 
 ```python
-definition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]]
+definition: IResolvable | typing.List[BedrockagentFlowDefinition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]
 
 definition block.
 
@@ -1427,8 +1427,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinition(
-  connection: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnection]] = None,
-  node_attribute: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNode]] = None
+  connection: IResolvable | typing.List[BedrockagentFlowDefinitionConnection] = None,
+  node_attribute: IResolvable | typing.List[BedrockagentFlowDefinitionNode] = None
 )
 ```
 
@@ -1436,18 +1436,18 @@ bedrockagentFlow.BedrockagentFlowDefinition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.connection">connection</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]</code> | connection block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.nodeAttribute">node_attribute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]</code> | node block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.connection">connection</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]</code> | connection block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.nodeAttribute">node_attribute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]</code> | node block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.connection"></a>
 
 ```python
-connection: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnection]]
+connection: IResolvable | typing.List[BedrockagentFlowDefinitionConnection]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]
 
 connection block.
 
@@ -1458,10 +1458,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `node_attribute`<sup>Optional</sup> <a name="node_attribute" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.nodeAttribute"></a>
 
 ```python
-node_attribute: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNode]]
+node_attribute: IResolvable | typing.List[BedrockagentFlowDefinitionNode]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]
 
 node block.
 
@@ -1481,7 +1481,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionConnection(
   source: str,
   target: str,
   type: str,
-  configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfiguration]] = None
+  configuration: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfiguration] = None
 )
 ```
 
@@ -1493,7 +1493,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionConnection(
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#source BedrockagentFlow#source}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#target BedrockagentFlow#target}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration">configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]</code> | configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration">configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]</code> | configuration block. |
 
 ---
 
@@ -1548,10 +1548,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `configuration`<sup>Optional</sup> <a name="configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration"></a>
 
 ```python
-configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfiguration]]
+configuration: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]
 
 configuration block.
 
@@ -1567,8 +1567,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration(
-  conditional: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]] = None,
-  data: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]] = None
+  conditional: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional] = None,
+  data: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationData] = None
 )
 ```
 
@@ -1576,18 +1576,18 @@ bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.conditional">conditional</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]</code> | conditional block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.data">data</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]</code> | data block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.conditional">conditional</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]</code> | conditional block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.data">data</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]</code> | data block. |
 
 ---
 
 ##### `conditional`<sup>Optional</sup> <a name="conditional" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.conditional"></a>
 
 ```python
-conditional: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]]
+conditional: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]
 
 conditional block.
 
@@ -1598,10 +1598,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `data`<sup>Optional</sup> <a name="data" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.data"></a>
 
 ```python
-data: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]]
+data: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]
 
 data block.
 
@@ -1697,9 +1697,9 @@ from cdktf_cdktf_provider_aws import bedrockagent_flow
 bedrockagentFlow.BedrockagentFlowDefinitionNode(
   name: str,
   type: str,
-  configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfiguration]] = None,
-  input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeInput]] = None,
-  output: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeOutput]] = None
+  configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfiguration] = None,
+  input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeInput] = None,
+  output: IResolvable | typing.List[BedrockagentFlowDefinitionNodeOutput] = None
 )
 ```
 
@@ -1709,9 +1709,9 @@ bedrockagentFlow.BedrockagentFlowDefinitionNode(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration">configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]</code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input">input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]</code> | input block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output">output</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]</code> | output block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration">configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]</code> | configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input">input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]</code> | input block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output">output</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]</code> | output block. |
 
 ---
 
@@ -1742,10 +1742,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `configuration`<sup>Optional</sup> <a name="configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration"></a>
 
 ```python
-configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfiguration]]
+configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]
 
 configuration block.
 
@@ -1756,10 +1756,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `input`<sup>Optional</sup> <a name="input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input"></a>
 
 ```python
-input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeInput]]
+input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeInput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]
 
 input block.
 
@@ -1770,10 +1770,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `output`<sup>Optional</sup> <a name="output" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output"></a>
 
 ```python
-output: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeOutput]]
+output: IResolvable | typing.List[BedrockagentFlowDefinitionNodeOutput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]
 
 output block.
 
@@ -1789,19 +1789,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration(
-  agent: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]] = None,
-  collector: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]] = None,
-  condition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]] = None,
-  inline_code: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]] = None,
-  input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]] = None,
-  iterator: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]] = None,
-  knowledge_base: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]] = None,
-  lambda_function: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]] = None,
-  lex: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]] = None,
-  output: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]] = None,
-  prompt: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]] = None,
-  retrieval: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]] = None,
-  storage: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]] = None
+  agent: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent] = None,
+  collector: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector] = None,
+  condition: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition] = None,
+  inline_code: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode] = None,
+  input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInput] = None,
+  iterator: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator] = None,
+  knowledge_base: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase] = None,
+  lambda_function: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction] = None,
+  lex: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLex] = None,
+  output: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput] = None,
+  prompt: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt] = None,
+  retrieval: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval] = None,
+  storage: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage] = None
 )
 ```
 
@@ -1809,29 +1809,29 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.agent">agent</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]</code> | agent block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.collector">collector</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]</code> | collector block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.condition">condition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]</code> | condition block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.inlineCode">inline_code</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]</code> | inline_code block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.input">input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]</code> | input block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.iterator">iterator</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]</code> | iterator block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.knowledgeBase">knowledge_base</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]</code> | knowledge_base block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lambdaFunction">lambda_function</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]</code> | lambda_function block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lex">lex</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]</code> | lex block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.output">output</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]</code> | output block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.prompt">prompt</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]</code> | prompt block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.retrieval">retrieval</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]</code> | retrieval block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.storage">storage</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]</code> | storage block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.agent">agent</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]</code> | agent block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.collector">collector</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]</code> | collector block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]</code> | condition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.inlineCode">inline_code</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]</code> | inline_code block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.input">input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]</code> | input block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.iterator">iterator</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]</code> | iterator block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.knowledgeBase">knowledge_base</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]</code> | knowledge_base block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lambdaFunction">lambda_function</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]</code> | lambda_function block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lex">lex</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]</code> | lex block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.output">output</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]</code> | output block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.prompt">prompt</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]</code> | prompt block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.retrieval">retrieval</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]</code> | retrieval block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.storage">storage</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]</code> | storage block. |
 
 ---
 
 ##### `agent`<sup>Optional</sup> <a name="agent" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.agent"></a>
 
 ```python
-agent: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]]
+agent: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]
 
 agent block.
 
@@ -1842,10 +1842,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `collector`<sup>Optional</sup> <a name="collector" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.collector"></a>
 
 ```python
-collector: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]]
+collector: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]
 
 collector block.
 
@@ -1856,10 +1856,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.condition"></a>
 
 ```python
-condition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]]
+condition: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]
 
 condition block.
 
@@ -1870,10 +1870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `inline_code`<sup>Optional</sup> <a name="inline_code" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.inlineCode"></a>
 
 ```python
-inline_code: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]]
+inline_code: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]
 
 inline_code block.
 
@@ -1884,10 +1884,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `input`<sup>Optional</sup> <a name="input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.input"></a>
 
 ```python
-input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]]
+input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]
 
 input block.
 
@@ -1898,10 +1898,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `iterator`<sup>Optional</sup> <a name="iterator" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.iterator"></a>
 
 ```python
-iterator: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]]
+iterator: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]
 
 iterator block.
 
@@ -1912,10 +1912,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `knowledge_base`<sup>Optional</sup> <a name="knowledge_base" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.knowledgeBase"></a>
 
 ```python
-knowledge_base: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]]
+knowledge_base: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]
 
 knowledge_base block.
 
@@ -1926,10 +1926,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambda_function`<sup>Optional</sup> <a name="lambda_function" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lambdaFunction"></a>
 
 ```python
-lambda_function: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]]
+lambda_function: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]
 
 lambda_function block.
 
@@ -1940,10 +1940,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lex`<sup>Optional</sup> <a name="lex" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lex"></a>
 
 ```python
-lex: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]]
+lex: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]
 
 lex block.
 
@@ -1954,10 +1954,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `output`<sup>Optional</sup> <a name="output" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.output"></a>
 
 ```python
-output: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]]
+output: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]
 
 output block.
 
@@ -1968,10 +1968,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `prompt`<sup>Optional</sup> <a name="prompt" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.prompt"></a>
 
 ```python
-prompt: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]]
+prompt: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]
 
 prompt block.
 
@@ -1982,10 +1982,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `retrieval`<sup>Optional</sup> <a name="retrieval" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.retrieval"></a>
 
 ```python
-retrieval: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]]
+retrieval: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]
 
 retrieval block.
 
@@ -1996,10 +1996,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `storage`<sup>Optional</sup> <a name="storage" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.storage"></a>
 
 ```python
-storage: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]]
+storage: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]
 
 storage block.
 
@@ -2058,7 +2058,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector()
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition(
-  condition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]] = None
+  condition: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition] = None
 )
 ```
 
@@ -2066,17 +2066,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition.property.condition">condition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]</code> | condition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition.property.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]</code> | condition block. |
 
 ---
 
 ##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition.property.condition"></a>
 
 ```python
-condition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]]
+condition: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]
 
 condition block.
 
@@ -2208,8 +2208,8 @@ from cdktf_cdktf_provider_aws import bedrockagent_flow
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase(
   knowledge_base_id: str,
   model_id: str,
-  guardrail_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]] = None,
-  inference_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]] = None,
+  guardrail_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration] = None,
+  inference_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration] = None,
   number_of_results: typing.Union[int, float] = None
 )
 ```
@@ -2220,8 +2220,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.knowledgeBaseId">knowledge_base_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#knowledge_base_id BedrockagentFlow#knowledge_base_id}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.modelId">model_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration">guardrail_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]</code> | guardrail_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration">inference_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]</code> | inference_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration">guardrail_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]</code> | guardrail_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration">inference_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]</code> | inference_configuration block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.numberOfResults">number_of_results</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#number_of_results BedrockagentFlow#number_of_results}. |
 
 ---
@@ -2253,10 +2253,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `guardrail_configuration`<sup>Optional</sup> <a name="guardrail_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration"></a>
 
 ```python
-guardrail_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]]
+guardrail_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]
 
 guardrail_configuration block.
 
@@ -2267,10 +2267,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `inference_configuration`<sup>Optional</sup> <a name="inference_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration"></a>
 
 ```python
-inference_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]]
+inference_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]
 
 inference_configuration block.
 
@@ -2344,7 +2344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration(
-  text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]] = None
+  text: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText] = None
 )
 ```
 
@@ -2352,17 +2352,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration.property.text">text</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]</code> | text block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration.property.text">text</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]</code> | text block. |
 
 ---
 
 ##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration.property.text"></a>
 
 ```python
-text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]]
+text: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]
 
 text block.
 
@@ -2541,8 +2541,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput()
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt(
-  guardrail_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]] = None,
-  source_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]] = None
+  guardrail_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration] = None,
+  source_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration] = None
 )
 ```
 
@@ -2550,18 +2550,18 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.guardrailConfiguration">guardrail_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]</code> | guardrail_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.sourceConfiguration">source_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]</code> | source_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.guardrailConfiguration">guardrail_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]</code> | guardrail_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.sourceConfiguration">source_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]</code> | source_configuration block. |
 
 ---
 
 ##### `guardrail_configuration`<sup>Optional</sup> <a name="guardrail_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.guardrailConfiguration"></a>
 
 ```python
-guardrail_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]]
+guardrail_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]
 
 guardrail_configuration block.
 
@@ -2572,10 +2572,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `source_configuration`<sup>Optional</sup> <a name="source_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.sourceConfiguration"></a>
 
 ```python
-source_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]]
+source_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]
 
 source_configuration block.
 
@@ -2637,8 +2637,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration(
-  inline: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]] = None,
-  resource: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]] = None
+  inline: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline] = None,
+  resource: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource] = None
 )
 ```
 
@@ -2646,18 +2646,18 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.inline">inline</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]</code> | inline block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.resource">resource</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]</code> | resource block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.inline">inline</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]</code> | inline block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.resource">resource</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]</code> | resource block. |
 
 ---
 
 ##### `inline`<sup>Optional</sup> <a name="inline" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.inline"></a>
 
 ```python
-inline: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]]
+inline: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]
 
 inline block.
 
@@ -2668,10 +2668,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource`<sup>Optional</sup> <a name="resource" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.resource"></a>
 
 ```python
-resource: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]]
+resource: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]
 
 resource block.
 
@@ -2690,8 +2690,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
   model_id: str,
   template_type: str,
   additional_model_request_fields: str = None,
-  inference_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]] = None,
-  template_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]] = None
+  inference_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration] = None,
+  template_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration] = None
 )
 ```
 
@@ -2702,8 +2702,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.modelId">model_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateType">template_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#template_type BedrockagentFlow#template_type}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.additionalModelRequestFields">additional_model_request_fields</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#additional_model_request_fields BedrockagentFlow#additional_model_request_fields}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration">inference_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]</code> | inference_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration">template_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]</code> | template_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration">inference_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]</code> | inference_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration">template_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]</code> | template_configuration block. |
 
 ---
 
@@ -2746,10 +2746,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `inference_configuration`<sup>Optional</sup> <a name="inference_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration"></a>
 
 ```python
-inference_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]]
+inference_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]
 
 inference_configuration block.
 
@@ -2760,10 +2760,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `template_configuration`<sup>Optional</sup> <a name="template_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration"></a>
 
 ```python
-template_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]]
+template_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]
 
 template_configuration block.
 
@@ -2779,7 +2779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration(
-  text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]] = None
+  text: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText] = None
 )
 ```
 
@@ -2787,17 +2787,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration.property.text">text</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]</code> | text block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration.property.text">text</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]</code> | text block. |
 
 ---
 
 ##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration.property.text"></a>
 
 ```python
-text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]]
+text: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]
 
 text block.
 
@@ -2887,8 +2887,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration(
-  chat: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]] = None,
-  text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]] = None
+  chat: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat] = None,
+  text: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText] = None
 )
 ```
 
@@ -2896,18 +2896,18 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.chat">chat</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]</code> | chat block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.text">text</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]</code> | text block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.chat">chat</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]</code> | chat block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.text">text</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]</code> | text block. |
 
 ---
 
 ##### `chat`<sup>Optional</sup> <a name="chat" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.chat"></a>
 
 ```python
-chat: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]]
+chat: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]
 
 chat block.
 
@@ -2918,10 +2918,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.text"></a>
 
 ```python
-text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]]
+text: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]
 
 text block.
 
@@ -2937,10 +2937,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat(
-  input_variable: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]] = None,
-  message: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]] = None,
-  system_attribute: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]] = None,
-  tool_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]] = None
+  input_variable: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable] = None,
+  message: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage] = None,
+  system_attribute: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem] = None,
+  tool_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration] = None
 )
 ```
 
@@ -2948,20 +2948,20 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.inputVariable">input_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]</code> | input_variable block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.message">message</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.systemAttribute">system_attribute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]</code> | system block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.toolConfiguration">tool_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]</code> | tool_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.inputVariable">input_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]</code> | input_variable block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.message">message</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.systemAttribute">system_attribute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]</code> | system block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.toolConfiguration">tool_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]</code> | tool_configuration block. |
 
 ---
 
 ##### `input_variable`<sup>Optional</sup> <a name="input_variable" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.inputVariable"></a>
 
 ```python
-input_variable: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]]
+input_variable: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]
 
 input_variable block.
 
@@ -2972,10 +2972,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.message"></a>
 
 ```python
-message: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]]
+message: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]
 
 message block.
 
@@ -2986,10 +2986,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `system_attribute`<sup>Optional</sup> <a name="system_attribute" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.systemAttribute"></a>
 
 ```python
-system_attribute: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]]
+system_attribute: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]
 
 system block.
 
@@ -3000,10 +3000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tool_configuration`<sup>Optional</sup> <a name="tool_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.toolConfiguration"></a>
 
 ```python
-tool_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]]
+tool_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]
 
 tool_configuration block.
 
@@ -3052,7 +3052,7 @@ from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage(
   role: str,
-  content: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]] = None
+  content: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent] = None
 )
 ```
 
@@ -3061,7 +3061,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#role BedrockagentFlow#role}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content">content</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]</code> | content block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content">content</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]</code> | content block. |
 
 ---
 
@@ -3080,10 +3080,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `content`<sup>Optional</sup> <a name="content" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content"></a>
 
 ```python
-content: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]]
+content: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]
 
 content block.
 
@@ -3099,7 +3099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent(
-  cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]] = None,
+  cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint] = None,
   text: str = None
 )
 ```
@@ -3108,7 +3108,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint">cache_point</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]</code> | cache_point block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 
 ---
@@ -3116,10 +3116,10 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 ##### `cache_point`<sup>Optional</sup> <a name="cache_point" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint"></a>
 
 ```python
-cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]]
+cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]
 
 cache_point block.
 
@@ -3179,7 +3179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem(
-  cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]] = None,
+  cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint] = None,
   text: str = None
 )
 ```
@@ -3188,7 +3188,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint">cache_point</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]</code> | cache_point block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 
 ---
@@ -3196,10 +3196,10 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 ##### `cache_point`<sup>Optional</sup> <a name="cache_point" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint"></a>
 
 ```python
-cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]]
+cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]
 
 cache_point block.
 
@@ -3259,8 +3259,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration(
-  tool: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]] = None,
-  tool_choice: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]] = None
+  tool: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool] = None,
+  tool_choice: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice] = None
 )
 ```
 
@@ -3268,18 +3268,18 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.tool">tool</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]</code> | tool block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.toolChoice">tool_choice</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]</code> | tool_choice block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.tool">tool</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]</code> | tool block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.toolChoice">tool_choice</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]</code> | tool_choice block. |
 
 ---
 
 ##### `tool`<sup>Optional</sup> <a name="tool" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.tool"></a>
 
 ```python
-tool: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]]
+tool: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]
 
 tool block.
 
@@ -3290,10 +3290,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tool_choice`<sup>Optional</sup> <a name="tool_choice" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.toolChoice"></a>
 
 ```python
-tool_choice: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]]
+tool_choice: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]
 
 tool_choice block.
 
@@ -3309,8 +3309,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool(
-  cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]] = None,
-  tool_spec: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]] = None
+  cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint] = None,
+  tool_spec: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec] = None
 )
 ```
 
@@ -3318,18 +3318,18 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]</code> | cache_point block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.toolSpec">tool_spec</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]</code> | tool_spec block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.cachePoint">cache_point</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.toolSpec">tool_spec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]</code> | tool_spec block. |
 
 ---
 
 ##### `cache_point`<sup>Optional</sup> <a name="cache_point" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.cachePoint"></a>
 
 ```python
-cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]]
+cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]
 
 cache_point block.
 
@@ -3340,10 +3340,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tool_spec`<sup>Optional</sup> <a name="tool_spec" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.toolSpec"></a>
 
 ```python
-tool_spec: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]]
+tool_spec: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]
 
 tool_spec block.
 
@@ -3391,9 +3391,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice(
-  any: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]] = None,
-  auto: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]] = None,
-  tool: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]] = None
+  any: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny] = None,
+  auto: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto] = None,
+  tool: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool] = None
 )
 ```
 
@@ -3401,19 +3401,19 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.any">any</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]</code> | any block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.auto">auto</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]</code> | auto block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.tool">tool</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]</code> | tool block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.any">any</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]</code> | any block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.auto">auto</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]</code> | auto block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.tool">tool</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]</code> | tool block. |
 
 ---
 
 ##### `any`<sup>Optional</sup> <a name="any" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.any"></a>
 
 ```python
-any: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]]
+any: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]
 
 any block.
 
@@ -3424,10 +3424,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auto`<sup>Optional</sup> <a name="auto" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.auto"></a>
 
 ```python
-auto: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]]
+auto: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]
 
 auto block.
 
@@ -3438,10 +3438,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tool`<sup>Optional</sup> <a name="tool" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.tool"></a>
 
 ```python
-tool: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]]
+tool: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]
 
 tool block.
 
@@ -3513,7 +3513,7 @@ from cdktf_cdktf_provider_aws import bedrockagent_flow
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec(
   name: str,
   description: str = None,
-  input_schema: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]] = None
+  input_schema: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema] = None
 )
 ```
 
@@ -3523,7 +3523,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema">input_schema</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]</code> | input_schema block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema">input_schema</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]</code> | input_schema block. |
 
 ---
 
@@ -3554,10 +3554,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `input_schema`<sup>Optional</sup> <a name="input_schema" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema"></a>
 
 ```python
-input_schema: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]]
+input_schema: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]
 
 input_schema block.
 
@@ -3606,8 +3606,8 @@ from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText(
   text: str,
-  cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]] = None,
-  input_variable: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]] = None
+  cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint] = None,
+  input_variable: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable] = None
 )
 ```
 
@@ -3616,8 +3616,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]</code> | cache_point block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable">input_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]</code> | input_variable block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint">cache_point</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable">input_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]</code> | input_variable block. |
 
 ---
 
@@ -3636,10 +3636,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `cache_point`<sup>Optional</sup> <a name="cache_point" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint"></a>
 
 ```python
-cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]]
+cache_point: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]
 
 cache_point block.
 
@@ -3650,10 +3650,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `input_variable`<sup>Optional</sup> <a name="input_variable" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable"></a>
 
 ```python
-input_variable: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]]
+input_variable: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]
 
 input_variable block.
 
@@ -3765,7 +3765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval(
-  service_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]] = None
+  service_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration] = None
 )
 ```
 
@@ -3773,17 +3773,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval.property.serviceConfiguration">service_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]</code> | service_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval.property.serviceConfiguration">service_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]</code> | service_configuration block. |
 
 ---
 
 ##### `service_configuration`<sup>Optional</sup> <a name="service_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval.property.serviceConfiguration"></a>
 
 ```python
-service_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]]
+service_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]
 
 service_configuration block.
 
@@ -3799,7 +3799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration(
-  s3: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]] = None
+  s3: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3] = None
 )
 ```
 
@@ -3807,17 +3807,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration.property.s3">s3</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]</code> | s3 block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration.property.s3">s3</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]</code> | s3 block. |
 
 ---
 
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration.property.s3"></a>
 
 ```python
-s3: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]]
+s3: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]
 
 s3 block.
 
@@ -3865,7 +3865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage(
-  service_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]] = None
+  service_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration] = None
 )
 ```
 
@@ -3873,17 +3873,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage.property.serviceConfiguration">service_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]</code> | service_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage.property.serviceConfiguration">service_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]</code> | service_configuration block. |
 
 ---
 
 ##### `service_configuration`<sup>Optional</sup> <a name="service_configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage.property.serviceConfiguration"></a>
 
 ```python
-service_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]]
+service_configuration: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]
 
 service_configuration block.
 
@@ -3899,7 +3899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration(
-  s3: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]] = None
+  s3: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3] = None
 )
 ```
 
@@ -3907,17 +3907,17 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration.property.s3">s3</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]</code> | s3 block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration.property.s3">s3</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]</code> | s3 block. |
 
 ---
 
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration.property.s3"></a>
 
 ```python
-s3: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]]
+s3: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]
 
 s3 block.
 
@@ -4276,7 +4276,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]</code> | *No description.* |
 
 ---
 
@@ -4307,10 +4307,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]
 
 ---
 
@@ -4572,7 +4572,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.conditionInput">condition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.condition">condition</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a></code> | *No description.* |
 
 ---
 
@@ -4623,10 +4623,10 @@ condition: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionConnectionConfigurationConditional]
+internal_value: IResolvable | BedrockagentFlowDefinitionConnectionConfigurationConditional
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>
 
 ---
 
@@ -4762,7 +4762,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]</code> | *No description.* |
 
 ---
 
@@ -4793,10 +4793,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]
 
 ---
 
@@ -5060,7 +5060,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.targetInputInput">target_input_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.sourceOutput">source_output</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a></code> | *No description.* |
 
 ---
 
@@ -5131,10 +5131,10 @@ target_input: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionConnectionConfigurationData]
+internal_value: IResolvable | BedrockagentFlowDefinitionConnectionConfigurationData
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>
 
 ---
 
@@ -5270,7 +5270,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -5301,10 +5301,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]
 
 ---
 
@@ -5565,13 +5565,13 @@ Returns a reversible string representation.
 
 ```python
 def put_conditional(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.putConditional.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]
 
 ---
 
@@ -5579,13 +5579,13 @@ def put_conditional(
 
 ```python
 def put_data(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.putData.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]
 
 ---
 
@@ -5610,9 +5610,9 @@ def reset_data() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditional">conditional</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList">BedrockagentFlowDefinitionConnectionConfigurationConditionalList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.data">data</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList">BedrockagentFlowDefinitionConnectionConfigurationDataList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditionalInput">conditional_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.dataInput">data_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditionalInput">conditional_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.dataInput">data_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -5663,30 +5663,30 @@ data: BedrockagentFlowDefinitionConnectionConfigurationDataList
 ##### `conditional_input`<sup>Optional</sup> <a name="conditional_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditionalInput"></a>
 
 ```python
-conditional_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]]
+conditional_input: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationConditional]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>]
 
 ---
 
 ##### `data_input`<sup>Optional</sup> <a name="data_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.dataInput"></a>
 
 ```python
-data_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]]
+data_input: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfigurationData]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionConnectionConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionConnectionConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>
 
 ---
 
@@ -5822,7 +5822,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]</code> | *No description.* |
 
 ---
 
@@ -5853,10 +5853,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnection]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionConnection]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]
 
 ---
 
@@ -6115,13 +6115,13 @@ Returns a reversible string representation.
 
 ```python
 def put_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.putConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]
 
 ---
 
@@ -6139,7 +6139,7 @@ def reset_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList">BedrockagentFlowDefinitionConnectionConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configurationInput">configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configurationInput">configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
@@ -6148,7 +6148,7 @@ def reset_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a></code> | *No description.* |
 
 ---
 
@@ -6189,10 +6189,10 @@ configuration: BedrockagentFlowDefinitionConnectionConfigurationList
 ##### `configuration_input`<sup>Optional</sup> <a name="configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configurationInput"></a>
 
 ```python
-configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnectionConfiguration]]
+configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionConnectionConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]
 
 ---
 
@@ -6279,10 +6279,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionConnection]
+internal_value: IResolvable | BedrockagentFlowDefinitionConnection
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>
 
 ---
 
@@ -6418,7 +6418,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]</code> | *No description.* |
 
 ---
 
@@ -6449,10 +6449,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]
 
 ---
 
@@ -6588,7 +6588,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]</code> | *No description.* |
 
 ---
 
@@ -6619,10 +6619,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]
 
 ---
 
@@ -6884,7 +6884,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.agentAliasArnInput">agent_alias_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.agentAliasArn">agent_alias_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a></code> | *No description.* |
 
 ---
 
@@ -6935,10 +6935,10 @@ agent_alias_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationAgent]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationAgent
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>
 
 ---
 
@@ -7074,7 +7074,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]</code> | *No description.* |
 
 ---
 
@@ -7105,10 +7105,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]
 
 ---
 
@@ -7368,7 +7368,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a></code> | *No description.* |
 
 ---
 
@@ -7399,10 +7399,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationCollector]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationCollector
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>
 
 ---
 
@@ -7538,7 +7538,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -7569,10 +7569,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]
 
 ---
 
@@ -7843,7 +7843,7 @@ def reset_expression() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a></code> | *No description.* |
 
 ---
 
@@ -7914,10 +7914,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationConditionCondition]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationConditionCondition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>
 
 ---
 
@@ -8053,7 +8053,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -8084,10 +8084,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]
 
 ---
 
@@ -8346,13 +8346,13 @@ Returns a reversible string representation.
 
 ```python
 def put_condition(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]
 
 ---
 
@@ -8370,8 +8370,8 @@ def reset_condition() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList">BedrockagentFlowDefinitionNodeConfigurationConditionConditionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.conditionInput">condition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.conditionInput">condition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a></code> | *No description.* |
 
 ---
 
@@ -8412,20 +8412,20 @@ condition: BedrockagentFlowDefinitionNodeConfigurationConditionConditionList
 ##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.conditionInput"></a>
 
 ```python
-condition_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]]
+condition_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationConditionCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationCondition]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationCondition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>
 
 ---
 
@@ -8561,7 +8561,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]</code> | *No description.* |
 
 ---
 
@@ -8592,10 +8592,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]
 
 ---
 
@@ -8859,7 +8859,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.code">code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.language">language</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a></code> | *No description.* |
 
 ---
 
@@ -8930,10 +8930,10 @@ language: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationInlineCode]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationInlineCode
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>
 
 ---
 
@@ -9069,7 +9069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]</code> | *No description.* |
 
 ---
 
@@ -9100,10 +9100,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]
 
 ---
 
@@ -9363,7 +9363,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a></code> | *No description.* |
 
 ---
 
@@ -9394,10 +9394,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationInput]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationInput
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>
 
 ---
 
@@ -9533,7 +9533,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]</code> | *No description.* |
 
 ---
 
@@ -9564,10 +9564,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]
 
 ---
 
@@ -9827,7 +9827,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a></code> | *No description.* |
 
 ---
 
@@ -9858,10 +9858,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationIterator]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationIterator
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>
 
 ---
 
@@ -9997,7 +9997,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -10028,10 +10028,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]
 
 ---
 
@@ -10295,7 +10295,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.guardrailVersionInput">guardrail_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.guardrailIdentifier">guardrail_identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.guardrailVersion">guardrail_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -10366,10 +10366,10 @@ guardrail_version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>
 
 ---
 
@@ -10505,7 +10505,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -10536,10 +10536,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]
 
 ---
 
@@ -10798,13 +10798,13 @@ Returns a reversible string representation.
 
 ```python
 def put_text(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.putText.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]
 
 ---
 
@@ -10822,8 +10822,8 @@ def reset_text() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.text">text</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.textInput">text_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.textInput">text_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -10864,20 +10864,20 @@ text: BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigura
 ##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.textInput"></a>
 
 ```python
-text_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]]
+text_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>
 
 ---
 
@@ -11013,7 +11013,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]</code> | *No description.* |
 
 ---
 
@@ -11044,10 +11044,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]
 
 ---
 
@@ -11343,7 +11343,7 @@ def reset_top_p() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.stopSequences">stop_sequences</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a></code> | *No description.* |
 
 ---
 
@@ -11454,10 +11454,10 @@ top_p: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>
 
 ---
 
@@ -11593,7 +11593,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]</code> | *No description.* |
 
 ---
 
@@ -11624,10 +11624,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]
 
 ---
 
@@ -11889,13 +11889,13 @@ Returns a reversible string representation.
 
 ```python
 def put_guardrail_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.putGuardrailConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]
 
 ---
 
@@ -11903,13 +11903,13 @@ def put_guardrail_configuration(
 
 ```python
 def put_inference_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.putInferenceConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]
 
 ---
 
@@ -11940,15 +11940,15 @@ def reset_number_of_results() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfiguration">guardrail_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfiguration">inference_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfigurationInput">guardrail_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfigurationInput">inference_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfigurationInput">guardrail_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfigurationInput">inference_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.knowledgeBaseIdInput">knowledge_base_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.modelIdInput">model_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.numberOfResultsInput">number_of_results_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.knowledgeBaseId">knowledge_base_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.modelId">model_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.numberOfResults">number_of_results</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a></code> | *No description.* |
 
 ---
 
@@ -11999,20 +11999,20 @@ inference_configuration: BedrockagentFlowDefinitionNodeConfigurationKnowledgeBas
 ##### `guardrail_configuration_input`<sup>Optional</sup> <a name="guardrail_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfigurationInput"></a>
 
 ```python
-guardrail_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]]
+guardrail_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]
 
 ---
 
 ##### `inference_configuration_input`<sup>Optional</sup> <a name="inference_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfigurationInput"></a>
 
 ```python
-inference_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]]
+inference_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]
 
 ---
 
@@ -12079,10 +12079,10 @@ number_of_results: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>
 
 ---
 
@@ -12218,7 +12218,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]</code> | *No description.* |
 
 ---
 
@@ -12249,10 +12249,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]
 
 ---
 
@@ -12514,7 +12514,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.lambdaArnInput">lambda_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.lambdaArn">lambda_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a></code> | *No description.* |
 
 ---
 
@@ -12565,10 +12565,10 @@ lambda_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationLambdaFunction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>
 
 ---
 
@@ -12704,7 +12704,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]</code> | *No description.* |
 
 ---
 
@@ -12735,10 +12735,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]
 
 ---
 
@@ -13002,7 +13002,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.localeIdInput">locale_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.botAliasArn">bot_alias_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.localeId">locale_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a></code> | *No description.* |
 
 ---
 
@@ -13073,10 +13073,10 @@ locale_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationLex]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationLex
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>
 
 ---
 
@@ -13212,7 +13212,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -13243,10 +13243,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]
 
 ---
 
@@ -13382,7 +13382,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]</code> | *No description.* |
 
 ---
 
@@ -13413,10 +13413,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]
 
 ---
 
@@ -13676,7 +13676,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a></code> | *No description.* |
 
 ---
 
@@ -13707,10 +13707,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationOutput]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationOutput
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>
 
 ---
 
@@ -13993,13 +13993,13 @@ Returns a reversible string representation.
 
 ```python
 def put_agent(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putAgent.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]
 
 ---
 
@@ -14007,13 +14007,13 @@ def put_agent(
 
 ```python
 def put_collector(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putCollector.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]
 
 ---
 
@@ -14021,13 +14021,13 @@ def put_collector(
 
 ```python
 def put_condition(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]
 
 ---
 
@@ -14035,13 +14035,13 @@ def put_condition(
 
 ```python
 def put_inline_code(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putInlineCode.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]
 
 ---
 
@@ -14049,13 +14049,13 @@ def put_inline_code(
 
 ```python
 def put_input(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putInput.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]
 
 ---
 
@@ -14063,13 +14063,13 @@ def put_input(
 
 ```python
 def put_iterator(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putIterator.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]
 
 ---
 
@@ -14077,13 +14077,13 @@ def put_iterator(
 
 ```python
 def put_knowledge_base(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putKnowledgeBase.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]
 
 ---
 
@@ -14091,13 +14091,13 @@ def put_knowledge_base(
 
 ```python
 def put_lambda_function(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putLambdaFunction.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]
 
 ---
 
@@ -14105,13 +14105,13 @@ def put_lambda_function(
 
 ```python
 def put_lex(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putLex.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]
 
 ---
 
@@ -14119,13 +14119,13 @@ def put_lex(
 
 ```python
 def put_output(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putOutput.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]
 
 ---
 
@@ -14133,13 +14133,13 @@ def put_output(
 
 ```python
 def put_prompt(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putPrompt.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]
 
 ---
 
@@ -14147,13 +14147,13 @@ def put_prompt(
 
 ```python
 def put_retrieval(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putRetrieval.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]
 
 ---
 
@@ -14161,13 +14161,13 @@ def put_retrieval(
 
 ```python
 def put_storage(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putStorage.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]
 
 ---
 
@@ -14269,20 +14269,20 @@ def reset_storage() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.prompt">prompt</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList">BedrockagentFlowDefinitionNodeConfigurationPromptList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrieval">retrieval</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList">BedrockagentFlowDefinitionNodeConfigurationRetrievalList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storage">storage</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList">BedrockagentFlowDefinitionNodeConfigurationStorageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.agentInput">agent_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.collectorInput">collector_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.conditionInput">condition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inlineCodeInput">inline_code_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inputInput">input_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.iteratorInput">iterator_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.knowledgeBaseInput">knowledge_base_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lambdaFunctionInput">lambda_function_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lexInput">lex_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.outputInput">output_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.promptInput">prompt_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrievalInput">retrieval_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storageInput">storage_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.agentInput">agent_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.collectorInput">collector_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.conditionInput">condition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inlineCodeInput">inline_code_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inputInput">input_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.iteratorInput">iterator_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.knowledgeBaseInput">knowledge_base_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lambdaFunctionInput">lambda_function_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lexInput">lex_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.outputInput">output_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.promptInput">prompt_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrievalInput">retrieval_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storageInput">storage_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -14443,140 +14443,140 @@ storage: BedrockagentFlowDefinitionNodeConfigurationStorageList
 ##### `agent_input`<sup>Optional</sup> <a name="agent_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.agentInput"></a>
 
 ```python
-agent_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]]
+agent_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationAgent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>]
 
 ---
 
 ##### `collector_input`<sup>Optional</sup> <a name="collector_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.collectorInput"></a>
 
 ```python
-collector_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]]
+collector_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCollector]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>]
 
 ---
 
 ##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.conditionInput"></a>
 
 ```python
-condition_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]]
+condition_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>]
 
 ---
 
 ##### `inline_code_input`<sup>Optional</sup> <a name="inline_code_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inlineCodeInput"></a>
 
 ```python
-inline_code_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]]
+inline_code_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInlineCode]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>]
 
 ---
 
 ##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inputInput"></a>
 
 ```python
-input_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]]
+input_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationInput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>]
 
 ---
 
 ##### `iterator_input`<sup>Optional</sup> <a name="iterator_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.iteratorInput"></a>
 
 ```python
-iterator_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]]
+iterator_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationIterator]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>]
 
 ---
 
 ##### `knowledge_base_input`<sup>Optional</sup> <a name="knowledge_base_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.knowledgeBaseInput"></a>
 
 ```python
-knowledge_base_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]]
+knowledge_base_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>]
 
 ---
 
 ##### `lambda_function_input`<sup>Optional</sup> <a name="lambda_function_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lambdaFunctionInput"></a>
 
 ```python
-lambda_function_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]]
+lambda_function_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLambdaFunction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>]
 
 ---
 
 ##### `lex_input`<sup>Optional</sup> <a name="lex_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lexInput"></a>
 
 ```python
-lex_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]]
+lex_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationLex]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>]
 
 ---
 
 ##### `output_input`<sup>Optional</sup> <a name="output_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.outputInput"></a>
 
 ```python
-output_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]]
+output_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationOutput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>]
 
 ---
 
 ##### `prompt_input`<sup>Optional</sup> <a name="prompt_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.promptInput"></a>
 
 ```python
-prompt_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]]
+prompt_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]
 
 ---
 
 ##### `retrieval_input`<sup>Optional</sup> <a name="retrieval_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrievalInput"></a>
 
 ```python
-retrieval_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]]
+retrieval_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]
 
 ---
 
 ##### `storage_input`<sup>Optional</sup> <a name="storage_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storageInput"></a>
 
 ```python
-storage_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]]
+storage_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>
 
 ---
 
@@ -14712,7 +14712,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -14743,10 +14743,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]
 
 ---
 
@@ -15010,7 +15010,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.guardrailVersionInput">guardrail_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.guardrailIdentifier">guardrail_identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.guardrailVersion">guardrail_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -15081,10 +15081,10 @@ guardrail_version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>
 
 ---
 
@@ -15220,7 +15220,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]</code> | *No description.* |
 
 ---
 
@@ -15251,10 +15251,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPrompt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]
 
 ---
 
@@ -15515,13 +15515,13 @@ Returns a reversible string representation.
 
 ```python
 def put_guardrail_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.putGuardrailConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]
 
 ---
 
@@ -15529,13 +15529,13 @@ def put_guardrail_configuration(
 
 ```python
 def put_source_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.putSourceConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]
 
 ---
 
@@ -15560,9 +15560,9 @@ def reset_source_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfiguration">guardrail_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfiguration">source_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfigurationInput">guardrail_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfigurationInput">source_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfigurationInput">guardrail_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfigurationInput">source_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a></code> | *No description.* |
 
 ---
 
@@ -15613,30 +15613,30 @@ source_configuration: BedrockagentFlowDefinitionNodeConfigurationPromptSourceCon
 ##### `guardrail_configuration_input`<sup>Optional</sup> <a name="guardrail_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfigurationInput"></a>
 
 ```python
-guardrail_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]]
+guardrail_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>]
 
 ---
 
 ##### `source_configuration_input`<sup>Optional</sup> <a name="source_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfigurationInput"></a>
 
 ```python
-source_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]]
+source_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPrompt]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPrompt
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>
 
 ---
 
@@ -15772,7 +15772,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -15803,10 +15803,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]
 
 ---
 
@@ -16065,13 +16065,13 @@ Returns a reversible string representation.
 
 ```python
 def put_text(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.putText.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]
 
 ---
 
@@ -16089,8 +16089,8 @@ def reset_text() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.text">text</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.textInput">text_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.textInput">text_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -16131,20 +16131,20 @@ text: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline
 ##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.textInput"></a>
 
 ```python
-text_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]]
+text_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>
 
 ---
 
@@ -16280,7 +16280,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]</code> | *No description.* |
 
 ---
 
@@ -16311,10 +16311,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]
 
 ---
 
@@ -16610,7 +16610,7 @@ def reset_top_p() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.stopSequences">stop_sequences</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a></code> | *No description.* |
 
 ---
 
@@ -16721,10 +16721,10 @@ top_p: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>
 
 ---
 
@@ -16860,7 +16860,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]</code> | *No description.* |
 
 ---
 
@@ -16891,10 +16891,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]
 
 ---
 
@@ -17156,13 +17156,13 @@ Returns a reversible string representation.
 
 ```python
 def put_inference_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.putInferenceConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]
 
 ---
 
@@ -17170,13 +17170,13 @@ def put_inference_configuration(
 
 ```python
 def put_template_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.putTemplateConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]
 
 ---
 
@@ -17208,14 +17208,14 @@ def reset_template_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfiguration">inference_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfiguration">template_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.additionalModelRequestFieldsInput">additional_model_request_fields_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfigurationInput">inference_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfigurationInput">inference_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.modelIdInput">model_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfigurationInput">template_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfigurationInput">template_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateTypeInput">template_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.additionalModelRequestFields">additional_model_request_fields</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.modelId">model_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateType">template_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a></code> | *No description.* |
 
 ---
 
@@ -17276,10 +17276,10 @@ additional_model_request_fields_input: str
 ##### `inference_configuration_input`<sup>Optional</sup> <a name="inference_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfigurationInput"></a>
 
 ```python
-inference_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]]
+inference_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]
 
 ---
 
@@ -17296,10 +17296,10 @@ model_id_input: str
 ##### `template_configuration_input`<sup>Optional</sup> <a name="template_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfigurationInput"></a>
 
 ```python
-template_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]]
+template_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]
 
 ---
 
@@ -17346,10 +17346,10 @@ template_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>
 
 ---
 
@@ -17485,7 +17485,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -17516,10 +17516,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]
 
 ---
 
@@ -17781,7 +17781,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a></code> | *No description.* |
 
 ---
 
@@ -17832,10 +17832,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>
 
 ---
 
@@ -17971,7 +17971,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]</code> | *No description.* |
 
 ---
 
@@ -18002,10 +18002,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]
 
 ---
 
@@ -18141,7 +18141,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]</code> | *No description.* |
 
 ---
 
@@ -18172,10 +18172,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]
 
 ---
 
@@ -18437,7 +18437,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -18488,10 +18488,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>
 
 ---
 
@@ -18627,7 +18627,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]</code> | *No description.* |
 
 ---
 
@@ -18658,10 +18658,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]
 
 ---
 
@@ -18921,13 +18921,13 @@ Returns a reversible string representation.
 
 ```python
 def put_cache_point(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]
 
 ---
 
@@ -18951,10 +18951,10 @@ def reset_text() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePoint">cache_point</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a></code> | *No description.* |
 
 ---
 
@@ -18995,10 +18995,10 @@ cache_point: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguratio
 ##### `cache_point_input`<sup>Optional</sup> <a name="cache_point_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePointInput"></a>
 
 ```python
-cache_point_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]]
+cache_point_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]
 
 ---
 
@@ -19025,10 +19025,10 @@ text: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>
 
 ---
 
@@ -19164,7 +19164,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -19195,10 +19195,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]
 
 ---
 
@@ -19457,13 +19457,13 @@ Returns a reversible string representation.
 
 ```python
 def put_content(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.putContent.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]
 
 ---
 
@@ -19481,10 +19481,10 @@ def reset_content() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.content">content</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.contentInput">content_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.contentInput">content_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.role">role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a></code> | *No description.* |
 
 ---
 
@@ -19525,10 +19525,10 @@ content: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInl
 ##### `content_input`<sup>Optional</sup> <a name="content_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.contentInput"></a>
 
 ```python
-content_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]]
+content_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]
 
 ---
 
@@ -19555,10 +19555,10 @@ role: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>
 
 ---
 
@@ -19823,13 +19823,13 @@ Returns a reversible string representation.
 
 ```python
 def put_input_variable(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putInputVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]
 
 ---
 
@@ -19837,13 +19837,13 @@ def put_input_variable(
 
 ```python
 def put_message(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]
 
 ---
 
@@ -19851,13 +19851,13 @@ def put_message(
 
 ```python
 def put_system_attribute(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putSystemAttribute.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]
 
 ---
 
@@ -19865,13 +19865,13 @@ def put_system_attribute(
 
 ```python
 def put_tool_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putToolConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]
 
 ---
 
@@ -19910,11 +19910,11 @@ def reset_tool_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.message">message</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttribute">system_attribute</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfiguration">tool_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.inputVariableInput">input_variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.messageInput">message_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttributeInput">system_attribute_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfigurationInput">tool_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.inputVariableInput">input_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.messageInput">message_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttributeInput">system_attribute_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfigurationInput">tool_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a></code> | *No description.* |
 
 ---
 
@@ -19985,50 +19985,50 @@ tool_configuration: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfi
 ##### `input_variable_input`<sup>Optional</sup> <a name="input_variable_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.inputVariableInput"></a>
 
 ```python
-input_variable_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]]
+input_variable_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>]
 
 ---
 
 ##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.messageInput"></a>
 
 ```python
-message_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]]
+message_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>]
 
 ---
 
 ##### `system_attribute_input`<sup>Optional</sup> <a name="system_attribute_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttributeInput"></a>
 
 ```python
-system_attribute_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]]
+system_attribute_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]
 
 ---
 
 ##### `tool_configuration_input`<sup>Optional</sup> <a name="tool_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfigurationInput"></a>
 
 ```python
-tool_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]]
+tool_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>
 
 ---
 
@@ -20164,7 +20164,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]</code> | *No description.* |
 
 ---
 
@@ -20195,10 +20195,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]
 
 ---
 
@@ -20460,7 +20460,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -20511,10 +20511,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>
 
 ---
 
@@ -20650,7 +20650,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]</code> | *No description.* |
 
 ---
 
@@ -20681,10 +20681,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]
 
 ---
 
@@ -20944,13 +20944,13 @@ Returns a reversible string representation.
 
 ```python
 def put_cache_point(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]
 
 ---
 
@@ -20974,10 +20974,10 @@ def reset_text() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePoint">cache_point</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a></code> | *No description.* |
 
 ---
 
@@ -21018,10 +21018,10 @@ cache_point: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguratio
 ##### `cache_point_input`<sup>Optional</sup> <a name="cache_point_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePointInput"></a>
 
 ```python
-cache_point_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]]
+cache_point_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]
 
 ---
 
@@ -21048,10 +21048,10 @@ text: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>
 
 ---
 
@@ -21187,7 +21187,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -21218,10 +21218,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]
 
 ---
 
@@ -21482,13 +21482,13 @@ Returns a reversible string representation.
 
 ```python
 def put_tool(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.putTool.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]
 
 ---
 
@@ -21496,13 +21496,13 @@ def put_tool(
 
 ```python
 def put_tool_choice(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.putToolChoice.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]
 
 ---
 
@@ -21527,9 +21527,9 @@ def reset_tool_choice() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.tool">tool</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoice">tool_choice</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoiceInput">tool_choice_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolInput">tool_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoiceInput">tool_choice_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolInput">tool_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -21580,30 +21580,30 @@ tool_choice: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguratio
 ##### `tool_choice_input`<sup>Optional</sup> <a name="tool_choice_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoiceInput"></a>
 
 ```python
-tool_choice_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]]
+tool_choice_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]
 
 ---
 
 ##### `tool_input`<sup>Optional</sup> <a name="tool_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolInput"></a>
 
 ```python
-tool_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]]
+tool_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>
 
 ---
 
@@ -21739,7 +21739,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]</code> | *No description.* |
 
 ---
 
@@ -21770,10 +21770,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]
 
 ---
 
@@ -22035,7 +22035,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -22086,10 +22086,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>
 
 ---
 
@@ -22225,7 +22225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]</code> | *No description.* |
 
 ---
 
@@ -22256,10 +22256,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]
 
 ---
 
@@ -22519,7 +22519,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a></code> | *No description.* |
 
 ---
 
@@ -22550,10 +22550,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>
 
 ---
 
@@ -22689,7 +22689,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]</code> | *No description.* |
 
 ---
 
@@ -22720,10 +22720,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]
 
 ---
 
@@ -22983,7 +22983,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a></code> | *No description.* |
 
 ---
 
@@ -23014,10 +23014,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>
 
 ---
 
@@ -23153,7 +23153,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]</code> | *No description.* |
 
 ---
 
@@ -23184,10 +23184,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]
 
 ---
 
@@ -23450,13 +23450,13 @@ Returns a reversible string representation.
 
 ```python
 def put_any(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putAny.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]
 
 ---
 
@@ -23464,13 +23464,13 @@ def put_any(
 
 ```python
 def put_auto(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putAuto.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]
 
 ---
 
@@ -23478,13 +23478,13 @@ def put_auto(
 
 ```python
 def put_tool(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putTool.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]
 
 ---
 
@@ -23516,10 +23516,10 @@ def reset_tool() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.any">any</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.auto">auto</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.tool">tool</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.anyInput">any_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.autoInput">auto_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.toolInput">tool_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.anyInput">any_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.autoInput">auto_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.toolInput">tool_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a></code> | *No description.* |
 
 ---
 
@@ -23580,40 +23580,40 @@ tool: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline
 ##### `any_input`<sup>Optional</sup> <a name="any_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.anyInput"></a>
 
 ```python
-any_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]]
+any_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>]
 
 ---
 
 ##### `auto_input`<sup>Optional</sup> <a name="auto_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.autoInput"></a>
 
 ```python
-auto_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]]
+auto_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>]
 
 ---
 
 ##### `tool_input`<sup>Optional</sup> <a name="tool_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.toolInput"></a>
 
 ```python
-tool_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]]
+tool_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>
 
 ---
 
@@ -23749,7 +23749,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]</code> | *No description.* |
 
 ---
 
@@ -23780,10 +23780,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]
 
 ---
 
@@ -24045,7 +24045,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a></code> | *No description.* |
 
 ---
 
@@ -24096,10 +24096,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>
 
 ---
 
@@ -24235,7 +24235,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]</code> | *No description.* |
 
 ---
 
@@ -24266,10 +24266,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]
 
 ---
 
@@ -24530,13 +24530,13 @@ Returns a reversible string representation.
 
 ```python
 def put_cache_point(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]
 
 ---
 
@@ -24544,13 +24544,13 @@ def put_cache_point(
 
 ```python
 def put_tool_spec(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.putToolSpec.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]
 
 ---
 
@@ -24575,9 +24575,9 @@ def reset_tool_spec() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePoint">cache_point</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpec">tool_spec</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpecInput">tool_spec_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpecInput">tool_spec_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a></code> | *No description.* |
 
 ---
 
@@ -24628,30 +24628,30 @@ tool_spec: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationI
 ##### `cache_point_input`<sup>Optional</sup> <a name="cache_point_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePointInput"></a>
 
 ```python
-cache_point_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]]
+cache_point_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>]
 
 ---
 
 ##### `tool_spec_input`<sup>Optional</sup> <a name="tool_spec_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpecInput"></a>
 
 ```python
-tool_spec_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]]
+tool_spec_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>
 
 ---
 
@@ -24787,7 +24787,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]</code> | *No description.* |
 
 ---
 
@@ -24818,10 +24818,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]
 
 ---
 
@@ -25090,7 +25090,7 @@ def reset_json() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.jsonInput">json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.json">json</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a></code> | *No description.* |
 
 ---
 
@@ -25141,10 +25141,10 @@ json: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>
 
 ---
 
@@ -25280,7 +25280,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]</code> | *No description.* |
 
 ---
 
@@ -25311,10 +25311,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]
 
 ---
 
@@ -25574,13 +25574,13 @@ Returns a reversible string representation.
 
 ```python
 def put_input_schema(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.putInputSchema.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]
 
 ---
 
@@ -25605,11 +25605,11 @@ def reset_input_schema() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchema">input_schema</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchemaInput">input_schema_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchemaInput">input_schema_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a></code> | *No description.* |
 
 ---
 
@@ -25660,10 +25660,10 @@ description_input: str
 ##### `input_schema_input`<sup>Optional</sup> <a name="input_schema_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchemaInput"></a>
 
 ```python
-input_schema_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]]
+input_schema_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]
 
 ---
 
@@ -25700,10 +25700,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>
 
 ---
 
@@ -25839,7 +25839,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -25870,10 +25870,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]
 
 ---
 
@@ -26134,13 +26134,13 @@ Returns a reversible string representation.
 
 ```python
 def put_chat(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.putChat.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]
 
 ---
 
@@ -26148,13 +26148,13 @@ def put_chat(
 
 ```python
 def put_text(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.putText.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]
 
 ---
 
@@ -26179,9 +26179,9 @@ def reset_text() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chat">chat</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.text">text</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chatInput">chat_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.textInput">text_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chatInput">chat_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.textInput">text_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -26232,30 +26232,30 @@ text: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline
 ##### `chat_input`<sup>Optional</sup> <a name="chat_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chatInput"></a>
 
 ```python
-chat_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]]
+chat_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>]
 
 ---
 
 ##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.textInput"></a>
 
 ```python
-text_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]]
+text_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>
 
 ---
 
@@ -26391,7 +26391,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]</code> | *No description.* |
 
 ---
 
@@ -26422,10 +26422,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]
 
 ---
 
@@ -26687,7 +26687,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -26738,10 +26738,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>
 
 ---
 
@@ -26877,7 +26877,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -26908,10 +26908,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]
 
 ---
 
@@ -27173,7 +27173,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a></code> | *No description.* |
 
 ---
 
@@ -27224,10 +27224,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>
 
 ---
 
@@ -27363,7 +27363,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]</code> | *No description.* |
 
 ---
 
@@ -27394,10 +27394,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]
 
 ---
 
@@ -27658,13 +27658,13 @@ Returns a reversible string representation.
 
 ```python
 def put_cache_point(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]
 
 ---
 
@@ -27672,13 +27672,13 @@ def put_cache_point(
 
 ```python
 def put_input_variable(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.putInputVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]
 
 ---
 
@@ -27703,11 +27703,11 @@ def reset_input_variable() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePoint">cache_point</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariable">input_variable</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariableInput">input_variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePointInput">cache_point_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariableInput">input_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a></code> | *No description.* |
 
 ---
 
@@ -27758,20 +27758,20 @@ input_variable: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigura
 ##### `cache_point_input`<sup>Optional</sup> <a name="cache_point_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePointInput"></a>
 
 ```python
-cache_point_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]]
+cache_point_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]
 
 ---
 
 ##### `input_variable_input`<sup>Optional</sup> <a name="input_variable_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariableInput"></a>
 
 ```python
-input_variable_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]]
+input_variable_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]
 
 ---
 
@@ -27798,10 +27798,10 @@ text: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>
 
 ---
 
@@ -27937,7 +27937,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -27968,10 +27968,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]
 
 ---
 
@@ -28232,13 +28232,13 @@ Returns a reversible string representation.
 
 ```python
 def put_inline(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.putInline.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]
 
 ---
 
@@ -28246,13 +28246,13 @@ def put_inline(
 
 ```python
 def put_resource(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.putResource.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]
 
 ---
 
@@ -28277,9 +28277,9 @@ def reset_resource() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inline">inline</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resource">resource</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inlineInput">inline_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resourceInput">resource_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inlineInput">inline_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resourceInput">resource_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -28330,30 +28330,30 @@ resource: BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationRe
 ##### `inline_input`<sup>Optional</sup> <a name="inline_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inlineInput"></a>
 
 ```python
-inline_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]]
+inline_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>]
 
 ---
 
 ##### `resource_input`<sup>Optional</sup> <a name="resource_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resourceInput"></a>
 
 ```python
-resource_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]]
+resource_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>
 
 ---
 
@@ -28489,7 +28489,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]</code> | *No description.* |
 
 ---
 
@@ -28520,10 +28520,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]
 
 ---
 
@@ -28785,7 +28785,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArnInput">prompt_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArn">prompt_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a></code> | *No description.* |
 
 ---
 
@@ -28836,10 +28836,10 @@ prompt_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>
 
 ---
 
@@ -28975,7 +28975,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]</code> | *No description.* |
 
 ---
 
@@ -29006,10 +29006,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrieval]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]
 
 ---
 
@@ -29268,13 +29268,13 @@ Returns a reversible string representation.
 
 ```python
 def put_service_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.putServiceConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]
 
 ---
 
@@ -29292,8 +29292,8 @@ def reset_service_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfiguration">service_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfigurationInput">service_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfigurationInput">service_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a></code> | *No description.* |
 
 ---
 
@@ -29334,20 +29334,20 @@ service_configuration: BedrockagentFlowDefinitionNodeConfigurationRetrievalServi
 ##### `service_configuration_input`<sup>Optional</sup> <a name="service_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfigurationInput"></a>
 
 ```python
-service_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]]
+service_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationRetrieval]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationRetrieval
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>
 
 ---
 
@@ -29483,7 +29483,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -29514,10 +29514,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]
 
 ---
 
@@ -29776,13 +29776,13 @@ Returns a reversible string representation.
 
 ```python
 def put_s3(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.putS3.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]
 
 ---
 
@@ -29800,8 +29800,8 @@ def reset_s3() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3Input">s3_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3Input">s3_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -29842,20 +29842,20 @@ s3: BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3Li
 ##### `s3_input`<sup>Optional</sup> <a name="s3_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3Input"></a>
 
 ```python
-s3_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]]
+s3_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>
 
 ---
 
@@ -29991,7 +29991,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]</code> | *No description.* |
 
 ---
 
@@ -30022,10 +30022,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]
 
 ---
 
@@ -30287,7 +30287,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a></code> | *No description.* |
 
 ---
 
@@ -30338,10 +30338,10 @@ bucket_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>
 
 ---
 
@@ -30477,7 +30477,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]</code> | *No description.* |
 
 ---
 
@@ -30508,10 +30508,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]
 
 ---
 
@@ -30770,13 +30770,13 @@ Returns a reversible string representation.
 
 ```python
 def put_service_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.putServiceConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]
 
 ---
 
@@ -30794,8 +30794,8 @@ def reset_service_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfiguration">service_configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfigurationInput">service_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfigurationInput">service_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a></code> | *No description.* |
 
 ---
 
@@ -30836,20 +30836,20 @@ service_configuration: BedrockagentFlowDefinitionNodeConfigurationStorageService
 ##### `service_configuration_input`<sup>Optional</sup> <a name="service_configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfigurationInput"></a>
 
 ```python
-service_configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]]
+service_configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationStorage]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationStorage
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>
 
 ---
 
@@ -30985,7 +30985,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -31016,10 +31016,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]
 
 ---
 
@@ -31278,13 +31278,13 @@ Returns a reversible string representation.
 
 ```python
 def put_s3(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.putS3.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]
 
 ---
 
@@ -31302,8 +31302,8 @@ def reset_s3() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3Input">s3_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3Input">s3_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -31344,20 +31344,20 @@ s3: BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List
 ##### `s3_input`<sup>Optional</sup> <a name="s3_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3Input"></a>
 
 ```python
-s3_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]]
+s3_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>
 
 ---
 
@@ -31493,7 +31493,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]</code> | *No description.* |
 
 ---
 
@@ -31524,10 +31524,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]
 
 ---
 
@@ -31789,7 +31789,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a></code> | *No description.* |
 
 ---
 
@@ -31840,10 +31840,10 @@ bucket_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>
 
 ---
 
@@ -31979,7 +31979,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]</code> | *No description.* |
 
 ---
 
@@ -32010,10 +32010,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeInput]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeInput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]
 
 ---
 
@@ -32288,7 +32288,7 @@ def reset_category() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a></code> | *No description.* |
 
 ---
 
@@ -32399,10 +32399,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeInput]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeInput
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>
 
 ---
 
@@ -32538,7 +32538,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]</code> | *No description.* |
 
 ---
 
@@ -32569,10 +32569,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNode]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNode]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]
 
 ---
 
@@ -32708,7 +32708,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]</code> | *No description.* |
 
 ---
 
@@ -32739,10 +32739,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeOutput]]
+internal_value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeOutput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]
 
 ---
 
@@ -33006,7 +33006,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a></code> | *No description.* |
 
 ---
 
@@ -33077,10 +33077,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNodeOutput]
+internal_value: IResolvable | BedrockagentFlowDefinitionNodeOutput
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>
 
 ---
 
@@ -33343,13 +33343,13 @@ Returns a reversible string representation.
 
 ```python
 def put_configuration(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfiguration]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]
 
 ---
 
@@ -33357,13 +33357,13 @@ def put_configuration(
 
 ```python
 def put_input(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeInput]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeInput]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putInput.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]
 
 ---
 
@@ -33371,13 +33371,13 @@ def put_input(
 
 ```python
 def put_output(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeOutput]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNodeOutput]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putOutput.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]
 
 ---
 
@@ -33409,14 +33409,14 @@ def reset_output() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList">BedrockagentFlowDefinitionNodeConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.input">input</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList">BedrockagentFlowDefinitionNodeInputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.output">output</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList">BedrockagentFlowDefinitionNodeOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configurationInput">configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.inputInput">input_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configurationInput">configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.inputInput">input_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.outputInput">output_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.outputInput">output_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a></code> | *No description.* |
 
 ---
 
@@ -33477,20 +33477,20 @@ output: BedrockagentFlowDefinitionNodeOutputList
 ##### `configuration_input`<sup>Optional</sup> <a name="configuration_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configurationInput"></a>
 
 ```python
-configuration_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfiguration]]
+configuration_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]
 
 ---
 
 ##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.inputInput"></a>
 
 ```python
-input_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeInput]]
+input_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeInput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]
 
 ---
 
@@ -33507,10 +33507,10 @@ name_input: str
 ##### `output_input`<sup>Optional</sup> <a name="output_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.outputInput"></a>
 
 ```python
-output_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeOutput]]
+output_input: IResolvable | typing.List[BedrockagentFlowDefinitionNodeOutput]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]
 
 ---
 
@@ -33547,10 +33547,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinitionNode]
+internal_value: IResolvable | BedrockagentFlowDefinitionNode
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>
 
 ---
 
@@ -33811,13 +33811,13 @@ Returns a reversible string representation.
 
 ```python
 def put_connection(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnection]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionConnection]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.putConnection.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]
 
 ---
 
@@ -33825,13 +33825,13 @@ def put_connection(
 
 ```python
 def put_node_attribute(
-  value: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNode]]
+  value: IResolvable | typing.List[BedrockagentFlowDefinitionNode]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.putNodeAttribute.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]
 
 ---
 
@@ -33856,9 +33856,9 @@ def reset_node_attribute() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connection">connection</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList">BedrockagentFlowDefinitionConnectionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttribute">node_attribute</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList">BedrockagentFlowDefinitionNodeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connectionInput">connection_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttributeInput">node_attribute_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connectionInput">connection_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttributeInput">node_attribute_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a></code> | *No description.* |
 
 ---
 
@@ -33909,30 +33909,30 @@ node_attribute: BedrockagentFlowDefinitionNodeList
 ##### `connection_input`<sup>Optional</sup> <a name="connection_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connectionInput"></a>
 
 ```python
-connection_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnection]]
+connection_input: IResolvable | typing.List[BedrockagentFlowDefinitionConnection]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>]
 
 ---
 
 ##### `node_attribute_input`<sup>Optional</sup> <a name="node_attribute_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttributeInput"></a>
 
 ```python
-node_attribute_input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNode]]
+node_attribute_input: IResolvable | typing.List[BedrockagentFlowDefinitionNode]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowDefinition]
+internal_value: IResolvable | BedrockagentFlowDefinition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>
 
 ---
 
@@ -34199,7 +34199,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -34290,10 +34290,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BedrockagentFlowTimeouts]
+internal_value: IResolvable | BedrockagentFlowTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>
 
 ---
 

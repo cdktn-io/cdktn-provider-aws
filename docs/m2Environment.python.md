@@ -14,27 +14,27 @@ from cdktf_cdktf_provider_aws import m2_environment
 m2Environment.M2Environment(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   engine_type: str,
   instance_type: str,
   name: str,
-  apply_changes_during_maintenance_window: typing.Union[bool, IResolvable] = None,
+  apply_changes_during_maintenance_window: bool | IResolvable = None,
   description: str = None,
   engine_version: str = None,
-  force_update: typing.Union[bool, IResolvable] = None,
-  high_availability_config: typing.Union[IResolvable, typing.List[M2EnvironmentHighAvailabilityConfig]] = None,
+  force_update: bool | IResolvable = None,
+  high_availability_config: IResolvable | typing.List[M2EnvironmentHighAvailabilityConfig] = None,
   kms_key_id: str = None,
   preferred_maintenance_window: str = None,
-  publicly_accessible: typing.Union[bool, IResolvable] = None,
+  publicly_accessible: bool | IResolvable = None,
   region: str = None,
   security_group_ids: typing.List[str] = None,
-  storage_configuration: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfiguration]] = None,
+  storage_configuration: IResolvable | typing.List[M2EnvironmentStorageConfiguration] = None,
   subnet_ids: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   timeouts: M2EnvironmentTimeouts = None
@@ -45,27 +45,27 @@ m2Environment.M2Environment(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.engineType">engine_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#engine_type M2Environment#engine_type}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#instance_type M2Environment#instance_type}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#name M2Environment#name}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.applyChangesDuringMaintenanceWindow">apply_changes_during_maintenance_window</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.applyChangesDuringMaintenanceWindow">apply_changes_during_maintenance_window</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#description M2Environment#description}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.engineVersion">engine_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#engine_version M2Environment#engine_version}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#force_update M2Environment#force_update}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.highAvailabilityConfig">high_availability_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]</code> | high_availability_config block. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.forceUpdate">force_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#force_update M2Environment#force_update}. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.highAvailabilityConfig">high_availability_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]</code> | high_availability_config block. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.publiclyAccessible">publicly_accessible</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.publiclyAccessible">publicly_accessible</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.securityGroupIds">security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.storageConfiguration">storage_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]</code> | storage_configuration block. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.storageConfiguration">storage_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]</code> | storage_configuration block. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#tags M2Environment#tags}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a></code> | timeouts block. |
@@ -92,13 +92,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `apply_changes_during_maintenance_window`<sup>Optional</sup> <a name="apply_changes_during_maintenance_window" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.applyChangesDuringMaintenanceWindow"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}.
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_update`<sup>Optional</sup> <a name="force_update" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.forceUpdate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#force_update M2Environment#force_update}.
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `high_availability_config`<sup>Optional</sup> <a name="high_availability_config" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.highAvailabilityConfig"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]
 
 high_availability_config block.
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `publicly_accessible`<sup>Optional</sup> <a name="publicly_accessible" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.publiclyAccessible"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}.
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `storage_configuration`<sup>Optional</sup> <a name="storage_configuration" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer.parameter.storageConfiguration"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]
 
 storage_configuration block.
 
@@ -545,7 +545,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.m2Environment.M2Environment.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.m2Environment.M2Environment.importFrom"></a>
@@ -608,7 +608,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -624,7 +624,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.m2Environment.M2Environment.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -652,13 +652,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_high_availability_config(
-  value: typing.Union[IResolvable, typing.List[M2EnvironmentHighAvailabilityConfig]]
+  value: IResolvable | typing.List[M2EnvironmentHighAvailabilityConfig]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.m2Environment.M2Environment.putHighAvailabilityConfig.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]
 
 ---
 
@@ -666,13 +666,13 @@ def put_high_availability_config(
 
 ```python
 def put_storage_configuration(
-  value: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfiguration]]
+  value: IResolvable | typing.List[M2EnvironmentStorageConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.m2Environment.M2Environment.putStorageConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]
 
 ---
 
@@ -937,13 +937,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.environmentId">environment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.highAvailabilityConfig">high_availability_config</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList">M2EnvironmentHighAvailabilityConfigList</a></code> | *No description.* |
@@ -952,33 +952,33 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.storageConfiguration">storage_configuration</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList">M2EnvironmentStorageConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference">M2EnvironmentTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.applyChangesDuringMaintenanceWindowInput">apply_changes_during_maintenance_window_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.applyChangesDuringMaintenanceWindowInput">apply_changes_during_maintenance_window_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.engineTypeInput">engine_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.engineVersionInput">engine_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.forceUpdateInput">force_update_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.highAvailabilityConfigInput">high_availability_config_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.forceUpdateInput">force_update_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.highAvailabilityConfigInput">high_availability_config_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.instanceTypeInput">instance_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.kmsKeyIdInput">kms_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.preferredMaintenanceWindowInput">preferred_maintenance_window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.publiclyAccessibleInput">publicly_accessible_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.publiclyAccessibleInput">publicly_accessible_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.securityGroupIdsInput">security_group_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.storageConfigurationInput">storage_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.storageConfigurationInput">storage_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.subnetIdsInput">subnet_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.applyChangesDuringMaintenanceWindow">apply_changes_during_maintenance_window</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.applyChangesDuringMaintenanceWindow">apply_changes_during_maintenance_window</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.engineType">engine_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.engineVersion">engine_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.forceUpdate">force_update</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.instanceType">instance_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.publiclyAccessible">publicly_accessible</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.publiclyAccessible">publicly_accessible</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.securityGroupIds">security_group_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2Environment.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1061,20 +1061,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.m2Environment.M2Environment.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.m2Environment.M2Environment.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1121,10 +1121,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.m2Environment.M2Environment.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1211,10 +1211,10 @@ timeouts: M2EnvironmentTimeoutsOutputReference
 ##### `apply_changes_during_maintenance_window_input`<sup>Optional</sup> <a name="apply_changes_during_maintenance_window_input" id="@cdktf/provider-aws.m2Environment.M2Environment.property.applyChangesDuringMaintenanceWindowInput"></a>
 
 ```python
-apply_changes_during_maintenance_window_input: typing.Union[bool, IResolvable]
+apply_changes_during_maintenance_window_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1251,20 +1251,20 @@ engine_version_input: str
 ##### `force_update_input`<sup>Optional</sup> <a name="force_update_input" id="@cdktf/provider-aws.m2Environment.M2Environment.property.forceUpdateInput"></a>
 
 ```python
-force_update_input: typing.Union[bool, IResolvable]
+force_update_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `high_availability_config_input`<sup>Optional</sup> <a name="high_availability_config_input" id="@cdktf/provider-aws.m2Environment.M2Environment.property.highAvailabilityConfigInput"></a>
 
 ```python
-high_availability_config_input: typing.Union[IResolvable, typing.List[M2EnvironmentHighAvailabilityConfig]]
+high_availability_config_input: IResolvable | typing.List[M2EnvironmentHighAvailabilityConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]
 
 ---
 
@@ -1311,10 +1311,10 @@ preferred_maintenance_window_input: str
 ##### `publicly_accessible_input`<sup>Optional</sup> <a name="publicly_accessible_input" id="@cdktf/provider-aws.m2Environment.M2Environment.property.publiclyAccessibleInput"></a>
 
 ```python
-publicly_accessible_input: typing.Union[bool, IResolvable]
+publicly_accessible_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1341,10 +1341,10 @@ security_group_ids_input: typing.List[str]
 ##### `storage_configuration_input`<sup>Optional</sup> <a name="storage_configuration_input" id="@cdktf/provider-aws.m2Environment.M2Environment.property.storageConfigurationInput"></a>
 
 ```python
-storage_configuration_input: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfiguration]]
+storage_configuration_input: IResolvable | typing.List[M2EnvironmentStorageConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]
 
 ---
 
@@ -1371,20 +1371,20 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.m2Environment.M2Environment.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, M2EnvironmentTimeouts]
+timeouts_input: IResolvable | M2EnvironmentTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a>
 
 ---
 
 ##### `apply_changes_during_maintenance_window`<sup>Required</sup> <a name="apply_changes_during_maintenance_window" id="@cdktf/provider-aws.m2Environment.M2Environment.property.applyChangesDuringMaintenanceWindow"></a>
 
 ```python
-apply_changes_during_maintenance_window: typing.Union[bool, IResolvable]
+apply_changes_during_maintenance_window: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1421,10 +1421,10 @@ engine_version: str
 ##### `force_update`<sup>Required</sup> <a name="force_update" id="@cdktf/provider-aws.m2Environment.M2Environment.property.forceUpdate"></a>
 
 ```python
-force_update: typing.Union[bool, IResolvable]
+force_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1471,10 +1471,10 @@ preferred_maintenance_window: str
 ##### `publicly_accessible`<sup>Required</sup> <a name="publicly_accessible" id="@cdktf/provider-aws.m2Environment.M2Environment.property.publiclyAccessible"></a>
 
 ```python
-publicly_accessible: typing.Union[bool, IResolvable]
+publicly_accessible: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1546,27 +1546,27 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import m2_environment
 
 m2Environment.M2EnvironmentConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   engine_type: str,
   instance_type: str,
   name: str,
-  apply_changes_during_maintenance_window: typing.Union[bool, IResolvable] = None,
+  apply_changes_during_maintenance_window: bool | IResolvable = None,
   description: str = None,
   engine_version: str = None,
-  force_update: typing.Union[bool, IResolvable] = None,
-  high_availability_config: typing.Union[IResolvable, typing.List[M2EnvironmentHighAvailabilityConfig]] = None,
+  force_update: bool | IResolvable = None,
+  high_availability_config: IResolvable | typing.List[M2EnvironmentHighAvailabilityConfig] = None,
   kms_key_id: str = None,
   preferred_maintenance_window: str = None,
-  publicly_accessible: typing.Union[bool, IResolvable] = None,
+  publicly_accessible: bool | IResolvable = None,
   region: str = None,
   security_group_ids: typing.List[str] = None,
-  storage_configuration: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfiguration]] = None,
+  storage_configuration: IResolvable | typing.List[M2EnvironmentStorageConfiguration] = None,
   subnet_ids: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   timeouts: M2EnvironmentTimeouts = None
@@ -1577,27 +1577,27 @@ m2Environment.M2EnvironmentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.engineType">engine_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#engine_type M2Environment#engine_type}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#instance_type M2Environment#instance_type}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#name M2Environment#name}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.applyChangesDuringMaintenanceWindow">apply_changes_during_maintenance_window</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.applyChangesDuringMaintenanceWindow">apply_changes_during_maintenance_window</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#description M2Environment#description}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.engineVersion">engine_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#engine_version M2Environment#engine_version}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#force_update M2Environment#force_update}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.highAvailabilityConfig">high_availability_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]</code> | high_availability_config block. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.forceUpdate">force_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#force_update M2Environment#force_update}. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.highAvailabilityConfig">high_availability_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]</code> | high_availability_config block. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.publiclyAccessible">publicly_accessible</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.publiclyAccessible">publicly_accessible</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.securityGroupIds">security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.storageConfiguration">storage_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]</code> | storage_configuration block. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.storageConfiguration">storage_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]</code> | storage_configuration block. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#tags M2Environment#tags}. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a></code> | timeouts block. |
@@ -1607,20 +1607,20 @@ m2Environment.M2EnvironmentConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1667,10 +1667,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1713,10 +1713,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `apply_changes_during_maintenance_window`<sup>Optional</sup> <a name="apply_changes_during_maintenance_window" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.applyChangesDuringMaintenanceWindow"></a>
 
 ```python
-apply_changes_during_maintenance_window: typing.Union[bool, IResolvable]
+apply_changes_during_maintenance_window: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}.
 
@@ -1749,10 +1749,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `force_update`<sup>Optional</sup> <a name="force_update" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.forceUpdate"></a>
 
 ```python
-force_update: typing.Union[bool, IResolvable]
+force_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#force_update M2Environment#force_update}.
 
@@ -1761,10 +1761,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `high_availability_config`<sup>Optional</sup> <a name="high_availability_config" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.highAvailabilityConfig"></a>
 
 ```python
-high_availability_config: typing.Union[IResolvable, typing.List[M2EnvironmentHighAvailabilityConfig]]
+high_availability_config: IResolvable | typing.List[M2EnvironmentHighAvailabilityConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]
 
 high_availability_config block.
 
@@ -1799,10 +1799,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `publicly_accessible`<sup>Optional</sup> <a name="publicly_accessible" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.publiclyAccessible"></a>
 
 ```python
-publicly_accessible: typing.Union[bool, IResolvable]
+publicly_accessible: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}.
 
@@ -1837,10 +1837,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `storage_configuration`<sup>Optional</sup> <a name="storage_configuration" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.property.storageConfiguration"></a>
 
 ```python
-storage_configuration: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfiguration]]
+storage_configuration: IResolvable | typing.List[M2EnvironmentStorageConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]
 
 storage_configuration block.
 
@@ -1926,8 +1926,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import m2_environment
 
 m2Environment.M2EnvironmentStorageConfiguration(
-  efs: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationEfs]] = None,
-  fsx: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationFsx]] = None
+  efs: IResolvable | typing.List[M2EnvironmentStorageConfigurationEfs] = None,
+  fsx: IResolvable | typing.List[M2EnvironmentStorageConfigurationFsx] = None
 )
 ```
 
@@ -1935,18 +1935,18 @@ m2Environment.M2EnvironmentStorageConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.property.efs">efs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]</code> | efs block. |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.property.fsx">fsx</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]</code> | fsx block. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.property.efs">efs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]</code> | efs block. |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.property.fsx">fsx</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]</code> | fsx block. |
 
 ---
 
 ##### `efs`<sup>Optional</sup> <a name="efs" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.property.efs"></a>
 
 ```python
-efs: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationEfs]]
+efs: IResolvable | typing.List[M2EnvironmentStorageConfigurationEfs]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]
 
 efs block.
 
@@ -1957,10 +1957,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fsx`<sup>Optional</sup> <a name="fsx" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.property.fsx"></a>
 
 ```python
-fsx: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationFsx]]
+fsx: IResolvable | typing.List[M2EnvironmentStorageConfigurationFsx]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]
 
 fsx block.
 
@@ -2259,7 +2259,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -2290,10 +2290,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[M2EnvironmentHighAvailabilityConfig]]
+internal_value: IResolvable | typing.List[M2EnvironmentHighAvailabilityConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]
 
 ---
 
@@ -2555,7 +2555,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.property.desiredCapacityInput">desired_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.property.desiredCapacity">desired_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a></code> | *No description.* |
 
 ---
 
@@ -2606,10 +2606,10 @@ desired_capacity: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, M2EnvironmentHighAvailabilityConfig]
+internal_value: IResolvable | M2EnvironmentHighAvailabilityConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig">M2EnvironmentHighAvailabilityConfig</a>
 
 ---
 
@@ -2745,7 +2745,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]</code> | *No description.* |
 
 ---
 
@@ -2776,10 +2776,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationEfs]]
+internal_value: IResolvable | typing.List[M2EnvironmentStorageConfigurationEfs]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]
 
 ---
 
@@ -3043,7 +3043,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.property.mountPointInput">mount_point_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.property.fileSystemId">file_system_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.property.mountPoint">mount_point</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a></code> | *No description.* |
 
 ---
 
@@ -3114,10 +3114,10 @@ mount_point: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, M2EnvironmentStorageConfigurationEfs]
+internal_value: IResolvable | M2EnvironmentStorageConfigurationEfs
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>
 
 ---
 
@@ -3253,7 +3253,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]</code> | *No description.* |
 
 ---
 
@@ -3284,10 +3284,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationFsx]]
+internal_value: IResolvable | typing.List[M2EnvironmentStorageConfigurationFsx]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]
 
 ---
 
@@ -3551,7 +3551,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.property.mountPointInput">mount_point_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.property.fileSystemId">file_system_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.property.mountPoint">mount_point</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a></code> | *No description.* |
 
 ---
 
@@ -3622,10 +3622,10 @@ mount_point: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, M2EnvironmentStorageConfigurationFsx]
+internal_value: IResolvable | M2EnvironmentStorageConfigurationFsx
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>
 
 ---
 
@@ -3761,7 +3761,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -3792,10 +3792,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfiguration]]
+internal_value: IResolvable | typing.List[M2EnvironmentStorageConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]
 
 ---
 
@@ -4056,13 +4056,13 @@ Returns a reversible string representation.
 
 ```python
 def put_efs(
-  value: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationEfs]]
+  value: IResolvable | typing.List[M2EnvironmentStorageConfigurationEfs]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.putEfs.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]
 
 ---
 
@@ -4070,13 +4070,13 @@ def put_efs(
 
 ```python
 def put_fsx(
-  value: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationFsx]]
+  value: IResolvable | typing.List[M2EnvironmentStorageConfigurationFsx]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.putFsx.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]
 
 ---
 
@@ -4101,9 +4101,9 @@ def reset_fsx() -> None
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.efs">efs</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList">M2EnvironmentStorageConfigurationEfsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.fsx">fsx</a></code> | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList">M2EnvironmentStorageConfigurationFsxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.efsInput">efs_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.fsxInput">fsx_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.efsInput">efs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.fsxInput">fsx_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -4154,30 +4154,30 @@ fsx: M2EnvironmentStorageConfigurationFsxList
 ##### `efs_input`<sup>Optional</sup> <a name="efs_input" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.efsInput"></a>
 
 ```python
-efs_input: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationEfs]]
+efs_input: IResolvable | typing.List[M2EnvironmentStorageConfigurationEfs]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs">M2EnvironmentStorageConfigurationEfs</a>]
 
 ---
 
 ##### `fsx_input`<sup>Optional</sup> <a name="fsx_input" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.fsxInput"></a>
 
 ```python
-fsx_input: typing.Union[IResolvable, typing.List[M2EnvironmentStorageConfigurationFsx]]
+fsx_input: IResolvable | typing.List[M2EnvironmentStorageConfigurationFsx]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx">M2EnvironmentStorageConfigurationFsx</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, M2EnvironmentStorageConfiguration]
+internal_value: IResolvable | M2EnvironmentStorageConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration">M2EnvironmentStorageConfiguration</a>
 
 ---
 
@@ -4444,7 +4444,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4535,10 +4535,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, M2EnvironmentTimeouts]
+internal_value: IResolvable | M2EnvironmentTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a>
 
 ---
 

@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   execution_role_arn: str,
   name: str,
   query_string: str,
-  error_report_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]] = None,
+  error_report_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration] = None,
   kms_key_id: str = None,
-  last_run_summary: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummary]] = None,
-  notification_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]] = None,
-  recently_failed_runs: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]] = None,
+  last_run_summary: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummary] = None,
+  notification_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfiguration] = None,
+  recently_failed_runs: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns] = None,
   region: str = None,
-  schedule_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]] = None,
+  schedule_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryScheduleConfiguration] = None,
   tags: typing.Mapping[str] = None,
-  target_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfiguration]] = None,
+  target_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfiguration] = None,
   timeouts: TimestreamqueryScheduledQueryTimeouts = None
 )
 ```
@@ -41,25 +41,25 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#execution_role_arn TimestreamqueryScheduledQuery#execution_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#name TimestreamqueryScheduledQuery#name}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.queryString">query_string</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#query_string TimestreamqueryScheduledQuery#query_string}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.errorReportConfiguration">error_report_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]</code> | error_report_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.errorReportConfiguration">error_report_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]</code> | error_report_configuration block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#kms_key_id TimestreamqueryScheduledQuery#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.lastRunSummary">last_run_summary</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]</code> | last_run_summary block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.notificationConfiguration">notification_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]</code> | notification_configuration block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.recentlyFailedRuns">recently_failed_runs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]</code> | recently_failed_runs block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.lastRunSummary">last_run_summary</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]</code> | last_run_summary block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.notificationConfiguration">notification_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]</code> | notification_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.recentlyFailedRuns">recently_failed_runs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]</code> | recently_failed_runs block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.scheduleConfiguration">schedule_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]</code> | schedule_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.scheduleConfiguration">schedule_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]</code> | schedule_configuration block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#tags TimestreamqueryScheduledQuery#tags}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.targetConfiguration">target_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]</code> | target_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.targetConfiguration">target_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]</code> | target_configuration block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -84,13 +84,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `error_report_configuration`<sup>Optional</sup> <a name="error_report_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.errorReportConfiguration"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]
 
 error_report_configuration block.
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `last_run_summary`<sup>Optional</sup> <a name="last_run_summary" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.lastRunSummary"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]
 
 last_run_summary block.
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `notification_configuration`<sup>Optional</sup> <a name="notification_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.notificationConfiguration"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]
 
 notification_configuration block.
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `recently_failed_runs`<sup>Optional</sup> <a name="recently_failed_runs" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.recentlyFailedRuns"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]
 
 recently_failed_runs block.
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `schedule_configuration`<sup>Optional</sup> <a name="schedule_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.scheduleConfiguration"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]
 
 schedule_configuration block.
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `target_configuration`<sup>Optional</sup> <a name="target_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer.parameter.targetConfiguration"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]
 
 target_configuration block.
 
@@ -513,7 +513,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.importFrom"></a>
@@ -576,7 +576,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -592,7 +592,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -620,13 +620,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_error_report_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.putErrorReportConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]
 
 ---
 
@@ -634,13 +634,13 @@ def put_error_report_configuration(
 
 ```python
 def put_last_run_summary(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummary]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummary]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.putLastRunSummary.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]
 
 ---
 
@@ -648,13 +648,13 @@ def put_last_run_summary(
 
 ```python
 def put_notification_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.putNotificationConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]
 
 ---
 
@@ -662,13 +662,13 @@ def put_notification_configuration(
 
 ```python
 def put_recently_failed_runs(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.putRecentlyFailedRuns.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]
 
 ---
 
@@ -676,13 +676,13 @@ def put_recently_failed_runs(
 
 ```python
 def put_schedule_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.putScheduleConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]
 
 ---
 
@@ -690,13 +690,13 @@ def put_schedule_configuration(
 
 ```python
 def put_target_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfiguration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.putTargetConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]
 
 ---
 
@@ -937,13 +937,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.creationTime">creation_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.errorReportConfiguration">error_report_configuration</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList">TimestreamqueryScheduledQueryErrorReportConfigurationList</a></code> | *No description.* |
@@ -957,19 +957,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.targetConfiguration">target_configuration</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList">TimestreamqueryScheduledQueryTargetConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference">TimestreamqueryScheduledQueryTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.errorReportConfigurationInput">error_report_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.errorReportConfigurationInput">error_report_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.executionRoleArnInput">execution_role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.kmsKeyIdInput">kms_key_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.lastRunSummaryInput">last_run_summary_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.lastRunSummaryInput">last_run_summary_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.notificationConfigurationInput">notification_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.notificationConfigurationInput">notification_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.queryStringInput">query_string_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.recentlyFailedRunsInput">recently_failed_runs_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.recentlyFailedRunsInput">recently_failed_runs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.scheduleConfigurationInput">schedule_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.scheduleConfigurationInput">schedule_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.targetConfigurationInput">target_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.targetConfigurationInput">target_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1054,20 +1054,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1114,10 +1114,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1254,10 +1254,10 @@ timeouts: TimestreamqueryScheduledQueryTimeoutsOutputReference
 ##### `error_report_configuration_input`<sup>Optional</sup> <a name="error_report_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.errorReportConfigurationInput"></a>
 
 ```python
-error_report_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]]
+error_report_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]
 
 ---
 
@@ -1284,10 +1284,10 @@ kms_key_id_input: str
 ##### `last_run_summary_input`<sup>Optional</sup> <a name="last_run_summary_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.lastRunSummaryInput"></a>
 
 ```python
-last_run_summary_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummary]]
+last_run_summary_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummary]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]
 
 ---
 
@@ -1304,10 +1304,10 @@ name_input: str
 ##### `notification_configuration_input`<sup>Optional</sup> <a name="notification_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.notificationConfigurationInput"></a>
 
 ```python
-notification_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]]
+notification_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]
 
 ---
 
@@ -1324,10 +1324,10 @@ query_string_input: str
 ##### `recently_failed_runs_input`<sup>Optional</sup> <a name="recently_failed_runs_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.recentlyFailedRunsInput"></a>
 
 ```python
-recently_failed_runs_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]]
+recently_failed_runs_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]
 
 ---
 
@@ -1344,10 +1344,10 @@ region_input: str
 ##### `schedule_configuration_input`<sup>Optional</sup> <a name="schedule_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.scheduleConfigurationInput"></a>
 
 ```python
-schedule_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]]
+schedule_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]
 
 ---
 
@@ -1364,20 +1364,20 @@ tags_input: typing.Mapping[str]
 ##### `target_configuration_input`<sup>Optional</sup> <a name="target_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.targetConfigurationInput"></a>
 
 ```python
-target_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfiguration]]
+target_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]
 
 ---
 
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, TimestreamqueryScheduledQueryTimeouts]
+timeouts_input: IResolvable | TimestreamqueryScheduledQueryTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a>
 
 ---
 
@@ -1469,25 +1469,25 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   execution_role_arn: str,
   name: str,
   query_string: str,
-  error_report_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]] = None,
+  error_report_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration] = None,
   kms_key_id: str = None,
-  last_run_summary: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummary]] = None,
-  notification_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]] = None,
-  recently_failed_runs: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]] = None,
+  last_run_summary: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummary] = None,
+  notification_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfiguration] = None,
+  recently_failed_runs: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns] = None,
   region: str = None,
-  schedule_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]] = None,
+  schedule_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryScheduleConfiguration] = None,
   tags: typing.Mapping[str] = None,
-  target_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfiguration]] = None,
+  target_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfiguration] = None,
   timeouts: TimestreamqueryScheduledQueryTimeouts = None
 )
 ```
@@ -1496,25 +1496,25 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#execution_role_arn TimestreamqueryScheduledQuery#execution_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#name TimestreamqueryScheduledQuery#name}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.queryString">query_string</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#query_string TimestreamqueryScheduledQuery#query_string}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.errorReportConfiguration">error_report_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]</code> | error_report_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.errorReportConfiguration">error_report_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]</code> | error_report_configuration block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#kms_key_id TimestreamqueryScheduledQuery#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.lastRunSummary">last_run_summary</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]</code> | last_run_summary block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.notificationConfiguration">notification_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]</code> | notification_configuration block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.recentlyFailedRuns">recently_failed_runs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]</code> | recently_failed_runs block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.lastRunSummary">last_run_summary</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]</code> | last_run_summary block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.notificationConfiguration">notification_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]</code> | notification_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.recentlyFailedRuns">recently_failed_runs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]</code> | recently_failed_runs block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.scheduleConfiguration">schedule_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]</code> | schedule_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.scheduleConfiguration">schedule_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]</code> | schedule_configuration block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#tags TimestreamqueryScheduledQuery#tags}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.targetConfiguration">target_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]</code> | target_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.targetConfiguration">target_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]</code> | target_configuration block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1522,20 +1522,20 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1582,10 +1582,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1628,10 +1628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `error_report_configuration`<sup>Optional</sup> <a name="error_report_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.errorReportConfiguration"></a>
 
 ```python
-error_report_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]]
+error_report_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]
 
 error_report_configuration block.
 
@@ -1654,10 +1654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `last_run_summary`<sup>Optional</sup> <a name="last_run_summary" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.lastRunSummary"></a>
 
 ```python
-last_run_summary: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummary]]
+last_run_summary: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummary]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]
 
 last_run_summary block.
 
@@ -1668,10 +1668,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `notification_configuration`<sup>Optional</sup> <a name="notification_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.notificationConfiguration"></a>
 
 ```python
-notification_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]]
+notification_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]
 
 notification_configuration block.
 
@@ -1682,10 +1682,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `recently_failed_runs`<sup>Optional</sup> <a name="recently_failed_runs" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.recentlyFailedRuns"></a>
 
 ```python
-recently_failed_runs: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]]
+recently_failed_runs: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]
 
 recently_failed_runs block.
 
@@ -1710,10 +1710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `schedule_configuration`<sup>Optional</sup> <a name="schedule_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.scheduleConfiguration"></a>
 
 ```python
-schedule_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]]
+schedule_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]
 
 schedule_configuration block.
 
@@ -1736,10 +1736,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `target_configuration`<sup>Optional</sup> <a name="target_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.property.targetConfiguration"></a>
 
 ```python
-target_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfiguration]]
+target_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]
 
 target_configuration block.
 
@@ -1769,7 +1769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration(
-  s3_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]] = None
+  s3_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration] = None
 )
 ```
 
@@ -1777,17 +1777,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration.property.s3Configuration">s3_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]</code> | s3_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration.property.s3Configuration">s3_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]</code> | s3_configuration block. |
 
 ---
 
 ##### `s3_configuration`<sup>Optional</sup> <a name="s3_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration.property.s3Configuration"></a>
 
 ```python
-s3_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]]
+s3_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]
 
 s3_configuration block.
 
@@ -1863,9 +1863,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary(
-  error_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]] = None,
-  execution_stats: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]] = None,
-  query_insights_response: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]] = None
+  error_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation] = None,
+  execution_stats: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats] = None,
+  query_insights_response: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse] = None
 )
 ```
 
@@ -1873,19 +1873,19 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.errorReportLocation">error_report_location</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]</code> | error_report_location block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.executionStats">execution_stats</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]</code> | execution_stats block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.queryInsightsResponse">query_insights_response</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]</code> | query_insights_response block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.errorReportLocation">error_report_location</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]</code> | error_report_location block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.executionStats">execution_stats</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]</code> | execution_stats block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.queryInsightsResponse">query_insights_response</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]</code> | query_insights_response block. |
 
 ---
 
 ##### `error_report_location`<sup>Optional</sup> <a name="error_report_location" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.errorReportLocation"></a>
 
 ```python
-error_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]]
+error_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]
 
 error_report_location block.
 
@@ -1896,10 +1896,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `execution_stats`<sup>Optional</sup> <a name="execution_stats" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.executionStats"></a>
 
 ```python
-execution_stats: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]]
+execution_stats: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]
 
 execution_stats block.
 
@@ -1910,10 +1910,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `query_insights_response`<sup>Optional</sup> <a name="query_insights_response" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.property.queryInsightsResponse"></a>
 
 ```python
-query_insights_response: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]]
+query_insights_response: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]
 
 query_insights_response block.
 
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation(
-  s3_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]] = None
+  s3_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation] = None
 )
 ```
 
@@ -1937,17 +1937,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation.property.s3ReportLocation">s3_report_location</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]</code> | s3_report_location block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation.property.s3ReportLocation">s3_report_location</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]</code> | s3_report_location block. |
 
 ---
 
 ##### `s3_report_location`<sup>Optional</sup> <a name="s3_report_location" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation.property.s3ReportLocation"></a>
 
 ```python
-s3_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]]
+s3_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]
 
 s3_report_location block.
 
@@ -1985,8 +1985,8 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecuti
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse(
-  query_spatial_coverage: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]] = None,
-  query_temporal_range: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]] = None
+  query_spatial_coverage: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage] = None,
+  query_temporal_range: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange] = None
 )
 ```
 
@@ -1994,18 +1994,18 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.property.querySpatialCoverage">query_spatial_coverage</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]</code> | query_spatial_coverage block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.property.queryTemporalRange">query_temporal_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]</code> | query_temporal_range block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.property.querySpatialCoverage">query_spatial_coverage</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]</code> | query_spatial_coverage block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.property.queryTemporalRange">query_temporal_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]</code> | query_temporal_range block. |
 
 ---
 
 ##### `query_spatial_coverage`<sup>Optional</sup> <a name="query_spatial_coverage" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.property.querySpatialCoverage"></a>
 
 ```python
-query_spatial_coverage: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]]
+query_spatial_coverage: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]
 
 query_spatial_coverage block.
 
@@ -2016,10 +2016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `query_temporal_range`<sup>Optional</sup> <a name="query_temporal_range" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.property.queryTemporalRange"></a>
 
 ```python
-query_temporal_range: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]]
+query_temporal_range: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]
 
 query_temporal_range block.
 
@@ -2035,7 +2035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage(
-  max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]] = None
+  max: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax] = None
 )
 ```
 
@@ -2043,17 +2043,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage.property.max">max</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]</code> | max block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage.property.max">max</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | max block. |
 
 ---
 
 ##### `max`<sup>Optional</sup> <a name="max" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage.property.max"></a>
 
 ```python
-max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]]
+max: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 max block.
 
@@ -2080,7 +2080,7 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryIn
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange(
-  max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]] = None
+  max: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax] = None
 )
 ```
 
@@ -2088,17 +2088,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange.property.max">max</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]</code> | max block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange.property.max">max</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | max block. |
 
 ---
 
 ##### `max`<sup>Optional</sup> <a name="max" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange.property.max"></a>
 
 ```python
-max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]]
+max: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 max block.
 
@@ -2125,7 +2125,7 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryIn
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration(
-  sns_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]] = None
+  sns_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration] = None
 )
 ```
 
@@ -2133,17 +2133,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigura
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration.property.snsConfiguration">sns_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]</code> | sns_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration.property.snsConfiguration">sns_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]</code> | sns_configuration block. |
 
 ---
 
 ##### `sns_configuration`<sup>Optional</sup> <a name="sns_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration.property.snsConfiguration"></a>
 
 ```python
-sns_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]]
+sns_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]
 
 sns_configuration block.
 
@@ -2191,9 +2191,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns(
-  error_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]] = None,
-  execution_stats: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]] = None,
-  query_insights_response: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]] = None
+  error_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation] = None,
+  execution_stats: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats] = None,
+  query_insights_response: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse] = None
 )
 ```
 
@@ -2201,19 +2201,19 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.errorReportLocation">error_report_location</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]</code> | error_report_location block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.executionStats">execution_stats</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]</code> | execution_stats block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.queryInsightsResponse">query_insights_response</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]</code> | query_insights_response block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.errorReportLocation">error_report_location</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]</code> | error_report_location block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.executionStats">execution_stats</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]</code> | execution_stats block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.queryInsightsResponse">query_insights_response</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]</code> | query_insights_response block. |
 
 ---
 
 ##### `error_report_location`<sup>Optional</sup> <a name="error_report_location" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.errorReportLocation"></a>
 
 ```python
-error_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]]
+error_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]
 
 error_report_location block.
 
@@ -2224,10 +2224,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `execution_stats`<sup>Optional</sup> <a name="execution_stats" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.executionStats"></a>
 
 ```python
-execution_stats: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]]
+execution_stats: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]
 
 execution_stats block.
 
@@ -2238,10 +2238,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `query_insights_response`<sup>Optional</sup> <a name="query_insights_response" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.property.queryInsightsResponse"></a>
 
 ```python
-query_insights_response: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]]
+query_insights_response: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]
 
 query_insights_response block.
 
@@ -2257,7 +2257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation(
-  s3_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]] = None
+  s3_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation] = None
 )
 ```
 
@@ -2265,17 +2265,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation.property.s3ReportLocation">s3_report_location</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]</code> | s3_report_location block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation.property.s3ReportLocation">s3_report_location</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]</code> | s3_report_location block. |
 
 ---
 
 ##### `s3_report_location`<sup>Optional</sup> <a name="s3_report_location" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation.property.s3ReportLocation"></a>
 
 ```python
-s3_report_location: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]]
+s3_report_location: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]
 
 s3_report_location block.
 
@@ -2313,8 +2313,8 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExe
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse(
-  query_spatial_coverage: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]] = None,
-  query_temporal_range: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]] = None
+  query_spatial_coverage: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage] = None,
+  query_temporal_range: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange] = None
 )
 ```
 
@@ -2322,18 +2322,18 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQue
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.property.querySpatialCoverage">query_spatial_coverage</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]</code> | query_spatial_coverage block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.property.queryTemporalRange">query_temporal_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]</code> | query_temporal_range block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.property.querySpatialCoverage">query_spatial_coverage</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]</code> | query_spatial_coverage block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.property.queryTemporalRange">query_temporal_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]</code> | query_temporal_range block. |
 
 ---
 
 ##### `query_spatial_coverage`<sup>Optional</sup> <a name="query_spatial_coverage" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.property.querySpatialCoverage"></a>
 
 ```python
-query_spatial_coverage: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]]
+query_spatial_coverage: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]
 
 query_spatial_coverage block.
 
@@ -2344,10 +2344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `query_temporal_range`<sup>Optional</sup> <a name="query_temporal_range" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.property.queryTemporalRange"></a>
 
 ```python
-query_temporal_range: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]]
+query_temporal_range: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]
 
 query_temporal_range block.
 
@@ -2363,7 +2363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage(
-  max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]] = None
+  max: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax] = None
 )
 ```
 
@@ -2371,17 +2371,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQue
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage.property.max">max</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]</code> | max block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage.property.max">max</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | max block. |
 
 ---
 
 ##### `max`<sup>Optional</sup> <a name="max" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage.property.max"></a>
 
 ```python
-max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]]
+max: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 max block.
 
@@ -2408,7 +2408,7 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQue
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange(
-  max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]] = None
+  max: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax] = None
 )
 ```
 
@@ -2416,17 +2416,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQue
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange.property.max">max</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]</code> | max block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange.property.max">max</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | max block. |
 
 ---
 
 ##### `max`<sup>Optional</sup> <a name="max" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange.property.max"></a>
 
 ```python
-max: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]]
+max: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 max block.
 
@@ -2485,7 +2485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration(
-  timestream_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]] = None
+  timestream_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration] = None
 )
 ```
 
@@ -2493,17 +2493,17 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration.property.timestreamConfiguration">timestream_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]</code> | timestream_configuration block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration.property.timestreamConfiguration">timestream_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]</code> | timestream_configuration block. |
 
 ---
 
 ##### `timestream_configuration`<sup>Optional</sup> <a name="timestream_configuration" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration.property.timestreamConfiguration"></a>
 
 ```python
-timestream_configuration: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]]
+timestream_configuration: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]
 
 timestream_configuration block.
 
@@ -2522,10 +2522,10 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTi
   database_name: str,
   table_name: str,
   time_column: str,
-  dimension_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]] = None,
+  dimension_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping] = None,
   measure_name_column: str = None,
-  mixed_measure_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]] = None,
-  multi_measure_mappings: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]] = None
+  mixed_measure_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping] = None,
+  multi_measure_mappings: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings] = None
 )
 ```
 
@@ -2536,10 +2536,10 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTi
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#database_name TimestreamqueryScheduledQuery#database_name}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#table_name TimestreamqueryScheduledQuery#table_name}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.timeColumn">time_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#time_column TimestreamqueryScheduledQuery#time_column}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.dimensionMapping">dimension_mapping</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]</code> | dimension_mapping block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.dimensionMapping">dimension_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]</code> | dimension_mapping block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.measureNameColumn">measure_name_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#measure_name_column TimestreamqueryScheduledQuery#measure_name_column}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.mixedMeasureMapping">mixed_measure_mapping</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]</code> | mixed_measure_mapping block. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.multiMeasureMappings">multi_measure_mappings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]</code> | multi_measure_mappings block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.mixedMeasureMapping">mixed_measure_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]</code> | mixed_measure_mapping block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.multiMeasureMappings">multi_measure_mappings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]</code> | multi_measure_mappings block. |
 
 ---
 
@@ -2582,10 +2582,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `dimension_mapping`<sup>Optional</sup> <a name="dimension_mapping" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.dimensionMapping"></a>
 
 ```python
-dimension_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]]
+dimension_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]
 
 dimension_mapping block.
 
@@ -2608,10 +2608,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `mixed_measure_mapping`<sup>Optional</sup> <a name="mixed_measure_mapping" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.mixedMeasureMapping"></a>
 
 ```python
-mixed_measure_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]]
+mixed_measure_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]
 
 mixed_measure_mapping block.
 
@@ -2622,10 +2622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `multi_measure_mappings`<sup>Optional</sup> <a name="multi_measure_mappings" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.property.multiMeasureMappings"></a>
 
 ```python
-multi_measure_mappings: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]]
+multi_measure_mappings: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]
 
 multi_measure_mappings block.
 
@@ -2689,7 +2689,7 @@ from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping(
   measure_value_type: str,
   measure_name: str = None,
-  multi_measure_attribute_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]] = None,
+  multi_measure_attribute_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping] = None,
   source_column: str = None,
   target_measure_name: str = None
 )
@@ -2701,7 +2701,7 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTi
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.measureValueType">measure_value_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#measure_value_type TimestreamqueryScheduledQuery#measure_value_type}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.measureName">measure_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#measure_name TimestreamqueryScheduledQuery#measure_name}. |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.multiMeasureAttributeMapping">multi_measure_attribute_mapping</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]</code> | multi_measure_attribute_mapping block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.multiMeasureAttributeMapping">multi_measure_attribute_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]</code> | multi_measure_attribute_mapping block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.sourceColumn">source_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#source_column TimestreamqueryScheduledQuery#source_column}. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.targetMeasureName">target_measure_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#target_measure_name TimestreamqueryScheduledQuery#target_measure_name}. |
 
@@ -2734,10 +2734,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `multi_measure_attribute_mapping`<sup>Optional</sup> <a name="multi_measure_attribute_mapping" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.property.multiMeasureAttributeMapping"></a>
 
 ```python
-multi_measure_attribute_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]]
+multi_measure_attribute_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]
 
 multi_measure_attribute_mapping block.
 
@@ -2837,7 +2837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import timestreamquery_scheduled_query
 
 timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings(
-  multi_measure_attribute_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]] = None,
+  multi_measure_attribute_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping] = None,
   target_multi_measure_name: str = None
 )
 ```
@@ -2846,7 +2846,7 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings.property.multiMeasureAttributeMapping">multi_measure_attribute_mapping</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]</code> | multi_measure_attribute_mapping block. |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings.property.multiMeasureAttributeMapping">multi_measure_attribute_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]</code> | multi_measure_attribute_mapping block. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings.property.targetMultiMeasureName">target_multi_measure_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#target_multi_measure_name TimestreamqueryScheduledQuery#target_multi_measure_name}. |
 
 ---
@@ -2854,10 +2854,10 @@ timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTi
 ##### `multi_measure_attribute_mapping`<sup>Optional</sup> <a name="multi_measure_attribute_mapping" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings.property.multiMeasureAttributeMapping"></a>
 
 ```python
-multi_measure_attribute_mapping: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]]
+multi_measure_attribute_mapping: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]
 
 multi_measure_attribute_mapping block.
 
@@ -3136,7 +3136,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -3167,10 +3167,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]
 
 ---
 
@@ -3429,13 +3429,13 @@ Returns a reversible string representation.
 
 ```python
 def put_s3_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.putS3Configuration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]
 
 ---
 
@@ -3453,8 +3453,8 @@ def reset_s3_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.s3Configuration">s3_configuration</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList">TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.s3ConfigurationInput">s3_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.s3ConfigurationInput">s3_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -3495,20 +3495,20 @@ s3_configuration: TimestreamqueryScheduledQueryErrorReportConfigurationS3Configu
 ##### `s3_configuration_input`<sup>Optional</sup> <a name="s3_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.s3ConfigurationInput"></a>
 
 ```python
-s3_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]]
+s3_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryErrorReportConfiguration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryErrorReportConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration">TimestreamqueryScheduledQueryErrorReportConfiguration</a>
 
 ---
 
@@ -3644,7 +3644,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]</code> | *No description.* |
 
 ---
 
@@ -3675,10 +3675,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]
 
 ---
 
@@ -3958,7 +3958,7 @@ def reset_object_key_prefix() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.property.encryptionOption">encryption_option</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.property.objectKeyPrefix">object_key_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a></code> | *No description.* |
 
 ---
 
@@ -4049,10 +4049,10 @@ object_key_prefix: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration">TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration</a>
 
 ---
 
@@ -4188,7 +4188,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]</code> | *No description.* |
 
 ---
 
@@ -4219,10 +4219,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]
 
 ---
 
@@ -4481,13 +4481,13 @@ Returns a reversible string representation.
 
 ```python
 def put_s3_report_location(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.putS3ReportLocation.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]
 
 ---
 
@@ -4505,8 +4505,8 @@ def reset_s3_report_location() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.s3ReportLocation">s3_report_location</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.s3ReportLocationInput">s3_report_location_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.s3ReportLocationInput">s3_report_location_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a></code> | *No description.* |
 
 ---
 
@@ -4547,20 +4547,20 @@ s3_report_location: TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocati
 ##### `s3_report_location_input`<sup>Optional</sup> <a name="s3_report_location_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.s3ReportLocationInput"></a>
 
 ```python
-s3_report_location_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]]
+s3_report_location_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>
 
 ---
 
@@ -4696,7 +4696,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]</code> | *No description.* |
 
 ---
 
@@ -4727,10 +4727,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]
 
 ---
 
@@ -4992,7 +4992,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.property.objectKey">object_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a></code> | *No description.* |
 
 ---
 
@@ -5043,10 +5043,10 @@ object_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation</a>
 
 ---
 
@@ -5182,7 +5182,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]</code> | *No description.* |
 
 ---
 
@@ -5213,10 +5213,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]
 
 ---
 
@@ -5482,7 +5482,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.property.executionTimeInMillis">execution_time_in_millis</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.property.queryResultRows">query_result_rows</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.property.recordsIngested">records_ingested</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a></code> | *No description.* |
 
 ---
 
@@ -5573,10 +5573,10 @@ records_ingested: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryExecutionStats
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>
 
 ---
 
@@ -5712,7 +5712,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]</code> | *No description.* |
 
 ---
 
@@ -5743,10 +5743,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummary]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummary]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]
 
 ---
 
@@ -6009,13 +6009,13 @@ Returns a reversible string representation.
 
 ```python
 def put_error_report_location(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.putErrorReportLocation.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]
 
 ---
 
@@ -6023,13 +6023,13 @@ def put_error_report_location(
 
 ```python
 def put_execution_stats(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.putExecutionStats.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]
 
 ---
 
@@ -6037,13 +6037,13 @@ def put_execution_stats(
 
 ```python
 def put_query_insights_response(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.putQueryInsightsResponse.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]
 
 ---
 
@@ -6079,10 +6079,10 @@ def reset_query_insights_response() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.queryInsightsResponse">query_insights_response</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.runStatus">run_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.triggerTime">trigger_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.errorReportLocationInput">error_report_location_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.executionStatsInput">execution_stats_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.queryInsightsResponseInput">query_insights_response_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.errorReportLocationInput">error_report_location_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.executionStatsInput">execution_stats_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.queryInsightsResponseInput">query_insights_response_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a></code> | *No description.* |
 
 ---
 
@@ -6183,40 +6183,40 @@ trigger_time: str
 ##### `error_report_location_input`<sup>Optional</sup> <a name="error_report_location_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.errorReportLocationInput"></a>
 
 ```python
-error_report_location_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]]
+error_report_location_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation">TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation</a>]
 
 ---
 
 ##### `execution_stats_input`<sup>Optional</sup> <a name="execution_stats_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.executionStatsInput"></a>
 
 ```python
-execution_stats_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]]
+execution_stats_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryExecutionStats]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats">TimestreamqueryScheduledQueryLastRunSummaryExecutionStats</a>]
 
 ---
 
 ##### `query_insights_response_input`<sup>Optional</sup> <a name="query_insights_response_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.queryInsightsResponseInput"></a>
 
 ```python
-query_insights_response_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]]
+query_insights_response_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummary]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummary
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary">TimestreamqueryScheduledQueryLastRunSummary</a>
 
 ---
 
@@ -6352,7 +6352,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]</code> | *No description.* |
 
 ---
 
@@ -6383,10 +6383,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]
 
 ---
 
@@ -6647,13 +6647,13 @@ Returns a reversible string representation.
 
 ```python
 def put_query_spatial_coverage(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.putQuerySpatialCoverage.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]
 
 ---
 
@@ -6661,13 +6661,13 @@ def put_query_spatial_coverage(
 
 ```python
 def put_query_temporal_range(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.putQueryTemporalRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]
 
 ---
 
@@ -6695,9 +6695,9 @@ def reset_query_temporal_range() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.querySpatialCoverage">query_spatial_coverage</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.queryTableCount">query_table_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.queryTemporalRange">query_temporal_range</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.querySpatialCoverageInput">query_spatial_coverage_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.queryTemporalRangeInput">query_temporal_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.querySpatialCoverageInput">query_spatial_coverage_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.queryTemporalRangeInput">query_temporal_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a></code> | *No description.* |
 
 ---
 
@@ -6778,30 +6778,30 @@ query_temporal_range: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRe
 ##### `query_spatial_coverage_input`<sup>Optional</sup> <a name="query_spatial_coverage_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.querySpatialCoverageInput"></a>
 
 ```python
-query_spatial_coverage_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]]
+query_spatial_coverage_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]
 
 ---
 
 ##### `query_temporal_range_input`<sup>Optional</sup> <a name="query_temporal_range_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.queryTemporalRangeInput"></a>
 
 ```python
-query_temporal_range_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]]
+query_temporal_range_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse</a>
 
 ---
 
@@ -6937,7 +6937,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]</code> | *No description.* |
 
 ---
 
@@ -6968,10 +6968,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]
 
 ---
 
@@ -7107,7 +7107,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | *No description.* |
 
 ---
 
@@ -7138,10 +7138,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 ---
 
@@ -7404,7 +7404,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.partitionKey">partition_key</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.tableArn">table_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a></code> | *No description.* |
 
 ---
 
@@ -7465,10 +7465,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>
 
 ---
 
@@ -7727,13 +7727,13 @@ Returns a reversible string representation.
 
 ```python
 def put_max(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.putMax.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 ---
 
@@ -7751,8 +7751,8 @@ def reset_max() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.max">max</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.maxInput">max_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.maxInput">max_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a></code> | *No description.* |
 
 ---
 
@@ -7793,20 +7793,20 @@ max: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatia
 ##### `max_input`<sup>Optional</sup> <a name="max_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.maxInput"></a>
 
 ```python
-max_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]]
+max_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage</a>
 
 ---
 
@@ -7942,7 +7942,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]</code> | *No description.* |
 
 ---
 
@@ -7973,10 +7973,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]
 
 ---
 
@@ -8112,7 +8112,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | *No description.* |
 
 ---
 
@@ -8143,10 +8143,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 ---
 
@@ -8408,7 +8408,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.tableArn">table_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a></code> | *No description.* |
 
 ---
 
@@ -8459,10 +8459,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>
 
 ---
 
@@ -8721,13 +8721,13 @@ Returns a reversible string representation.
 
 ```python
 def put_max(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.putMax.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 ---
 
@@ -8745,8 +8745,8 @@ def reset_max() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.max">max</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.maxInput">max_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.maxInput">max_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a></code> | *No description.* |
 
 ---
 
@@ -8787,20 +8787,20 @@ max: TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTempor
 ##### `max_input`<sup>Optional</sup> <a name="max_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.maxInput"></a>
 
 ```python
-max_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]]
+max_input: IResolvable | typing.List[TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange]
+internal_value: IResolvable | TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange</a>
 
 ---
 
@@ -8936,7 +8936,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -8967,10 +8967,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]
 
 ---
 
@@ -9229,13 +9229,13 @@ Returns a reversible string representation.
 
 ```python
 def put_sns_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.putSnsConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]
 
 ---
 
@@ -9253,8 +9253,8 @@ def reset_sns_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.snsConfiguration">sns_configuration</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.snsConfigurationInput">sns_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.snsConfigurationInput">sns_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -9295,20 +9295,20 @@ sns_configuration: TimestreamqueryScheduledQueryNotificationConfigurationSnsConf
 ##### `sns_configuration_input`<sup>Optional</sup> <a name="sns_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.snsConfigurationInput"></a>
 
 ```python
-sns_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]]
+sns_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryNotificationConfiguration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryNotificationConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration">TimestreamqueryScheduledQueryNotificationConfiguration</a>
 
 ---
 
@@ -9444,7 +9444,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -9475,10 +9475,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]
 
 ---
 
@@ -9740,7 +9740,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.property.topicArnInput">topic_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -9791,10 +9791,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration">TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration</a>
 
 ---
 
@@ -9930,7 +9930,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]</code> | *No description.* |
 
 ---
 
@@ -9961,10 +9961,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]
 
 ---
 
@@ -10223,13 +10223,13 @@ Returns a reversible string representation.
 
 ```python
 def put_s3_report_location(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.putS3ReportLocation.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]
 
 ---
 
@@ -10247,8 +10247,8 @@ def reset_s3_report_location() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.s3ReportLocation">s3_report_location</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.s3ReportLocationInput">s3_report_location_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.s3ReportLocationInput">s3_report_location_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a></code> | *No description.* |
 
 ---
 
@@ -10289,20 +10289,20 @@ s3_report_location: TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLo
 ##### `s3_report_location_input`<sup>Optional</sup> <a name="s3_report_location_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.s3ReportLocationInput"></a>
 
 ```python
-s3_report_location_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]]
+s3_report_location_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>
 
 ---
 
@@ -10438,7 +10438,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]</code> | *No description.* |
 
 ---
 
@@ -10469,10 +10469,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]
 
 ---
 
@@ -10734,7 +10734,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.property.objectKey">object_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a></code> | *No description.* |
 
 ---
 
@@ -10785,10 +10785,10 @@ object_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation</a>
 
 ---
 
@@ -10924,7 +10924,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]</code> | *No description.* |
 
 ---
 
@@ -10955,10 +10955,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]
 
 ---
 
@@ -11224,7 +11224,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.property.executionTimeInMillis">execution_time_in_millis</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.property.queryResultRows">query_result_rows</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.property.recordsIngested">records_ingested</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a></code> | *No description.* |
 
 ---
 
@@ -11315,10 +11315,10 @@ records_ingested: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>
 
 ---
 
@@ -11454,7 +11454,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]</code> | *No description.* |
 
 ---
 
@@ -11485,10 +11485,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRuns]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]
 
 ---
 
@@ -11751,13 +11751,13 @@ Returns a reversible string representation.
 
 ```python
 def put_error_report_location(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.putErrorReportLocation.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]
 
 ---
 
@@ -11765,13 +11765,13 @@ def put_error_report_location(
 
 ```python
 def put_execution_stats(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.putExecutionStats.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]
 
 ---
 
@@ -11779,13 +11779,13 @@ def put_execution_stats(
 
 ```python
 def put_query_insights_response(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.putQueryInsightsResponse.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]
 
 ---
 
@@ -11821,10 +11821,10 @@ def reset_query_insights_response() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.queryInsightsResponse">query_insights_response</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.runStatus">run_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.triggerTime">trigger_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.errorReportLocationInput">error_report_location_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.executionStatsInput">execution_stats_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.queryInsightsResponseInput">query_insights_response_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.errorReportLocationInput">error_report_location_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.executionStatsInput">execution_stats_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.queryInsightsResponseInput">query_insights_response_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a></code> | *No description.* |
 
 ---
 
@@ -11925,40 +11925,40 @@ trigger_time: str
 ##### `error_report_location_input`<sup>Optional</sup> <a name="error_report_location_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.errorReportLocationInput"></a>
 
 ```python
-error_report_location_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]]
+error_report_location_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation">TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation</a>]
 
 ---
 
 ##### `execution_stats_input`<sup>Optional</sup> <a name="execution_stats_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.executionStatsInput"></a>
 
 ```python
-execution_stats_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]]
+execution_stats_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats">TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats</a>]
 
 ---
 
 ##### `query_insights_response_input`<sup>Optional</sup> <a name="query_insights_response_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.queryInsightsResponseInput"></a>
 
 ```python
-query_insights_response_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]]
+query_insights_response_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRuns]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRuns
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns">TimestreamqueryScheduledQueryRecentlyFailedRuns</a>
 
 ---
 
@@ -12094,7 +12094,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]</code> | *No description.* |
 
 ---
 
@@ -12125,10 +12125,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]
 
 ---
 
@@ -12389,13 +12389,13 @@ Returns a reversible string representation.
 
 ```python
 def put_query_spatial_coverage(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.putQuerySpatialCoverage.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]
 
 ---
 
@@ -12403,13 +12403,13 @@ def put_query_spatial_coverage(
 
 ```python
 def put_query_temporal_range(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.putQueryTemporalRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]
 
 ---
 
@@ -12437,9 +12437,9 @@ def reset_query_temporal_range() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.querySpatialCoverage">query_spatial_coverage</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.queryTableCount">query_table_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.queryTemporalRange">query_temporal_range</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.querySpatialCoverageInput">query_spatial_coverage_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.queryTemporalRangeInput">query_temporal_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.querySpatialCoverageInput">query_spatial_coverage_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.queryTemporalRangeInput">query_temporal_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a></code> | *No description.* |
 
 ---
 
@@ -12520,30 +12520,30 @@ query_temporal_range: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsigh
 ##### `query_spatial_coverage_input`<sup>Optional</sup> <a name="query_spatial_coverage_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.querySpatialCoverageInput"></a>
 
 ```python
-query_spatial_coverage_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]]
+query_spatial_coverage_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]
 
 ---
 
 ##### `query_temporal_range_input`<sup>Optional</sup> <a name="query_temporal_range_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.queryTemporalRangeInput"></a>
 
 ```python
-query_temporal_range_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]]
+query_temporal_range_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse</a>
 
 ---
 
@@ -12679,7 +12679,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]</code> | *No description.* |
 
 ---
 
@@ -12710,10 +12710,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]
 
 ---
 
@@ -12849,7 +12849,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | *No description.* |
 
 ---
 
@@ -12880,10 +12880,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 ---
 
@@ -13146,7 +13146,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.partitionKey">partition_key</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.tableArn">table_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a></code> | *No description.* |
 
 ---
 
@@ -13207,10 +13207,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>
 
 ---
 
@@ -13469,13 +13469,13 @@ Returns a reversible string representation.
 
 ```python
 def put_max(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.putMax.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 ---
 
@@ -13493,8 +13493,8 @@ def reset_max() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.max">max</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.maxInput">max_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.maxInput">max_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a></code> | *No description.* |
 
 ---
 
@@ -13535,20 +13535,20 @@ max: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySp
 ##### `max_input`<sup>Optional</sup> <a name="max_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.maxInput"></a>
 
 ```python
-max_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]]
+max_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage</a>
 
 ---
 
@@ -13684,7 +13684,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]</code> | *No description.* |
 
 ---
 
@@ -13715,10 +13715,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]
 
 ---
 
@@ -13854,7 +13854,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | *No description.* |
 
 ---
 
@@ -13885,10 +13885,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 ---
 
@@ -14150,7 +14150,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.tableArn">table_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a></code> | *No description.* |
 
 ---
 
@@ -14201,10 +14201,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>
 
 ---
 
@@ -14463,13 +14463,13 @@ Returns a reversible string representation.
 
 ```python
 def put_max(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.putMax.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 ---
 
@@ -14487,8 +14487,8 @@ def reset_max() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.max">max</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.maxInput">max_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.maxInput">max_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a></code> | *No description.* |
 
 ---
 
@@ -14529,20 +14529,20 @@ max: TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTe
 ##### `max_input`<sup>Optional</sup> <a name="max_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.maxInput"></a>
 
 ```python
-max_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]]
+max_input: IResolvable | typing.List[TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange]
+internal_value: IResolvable | TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange">TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange</a>
 
 ---
 
@@ -14678,7 +14678,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -14709,10 +14709,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryScheduleConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]
 
 ---
 
@@ -14974,7 +14974,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.property.scheduleExpressionInput">schedule_expression_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.property.scheduleExpression">schedule_expression</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -15025,10 +15025,10 @@ schedule_expression: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryScheduleConfiguration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryScheduleConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration">TimestreamqueryScheduledQueryScheduleConfiguration</a>
 
 ---
 
@@ -15164,7 +15164,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -15195,10 +15195,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfiguration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]
 
 ---
 
@@ -15457,13 +15457,13 @@ Returns a reversible string representation.
 
 ```python
 def put_timestream_configuration(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.putTimestreamConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]
 
 ---
 
@@ -15481,8 +15481,8 @@ def reset_timestream_configuration() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.timestreamConfiguration">timestream_configuration</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.timestreamConfigurationInput">timestream_configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.timestreamConfigurationInput">timestream_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -15523,20 +15523,20 @@ timestream_configuration: TimestreamqueryScheduledQueryTargetConfigurationTimest
 ##### `timestream_configuration_input`<sup>Optional</sup> <a name="timestream_configuration_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.timestreamConfigurationInput"></a>
 
 ```python
-timestream_configuration_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]]
+timestream_configuration_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfiguration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration">TimestreamqueryScheduledQueryTargetConfiguration</a>
 
 ---
 
@@ -15672,7 +15672,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -15703,10 +15703,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]
 
 ---
 
@@ -15970,7 +15970,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.property.dimensionValueType">dimension_value_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a></code> | *No description.* |
 
 ---
 
@@ -16041,10 +16041,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>
 
 ---
 
@@ -16180,7 +16180,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -16211,10 +16211,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]
 
 ---
 
@@ -16350,7 +16350,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -16381,10 +16381,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]
 
 ---
 
@@ -16520,7 +16520,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -16551,10 +16551,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]
 
 ---
 
@@ -16827,7 +16827,7 @@ def reset_target_multi_measure_attribute_name() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.property.measureValueType">measure_value_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.property.sourceColumn">source_column</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.property.targetMultiMeasureAttributeName">target_multi_measure_attribute_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a></code> | *No description.* |
 
 ---
 
@@ -16918,10 +16918,10 @@ target_multi_measure_attribute_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>
 
 ---
 
@@ -17183,13 +17183,13 @@ Returns a reversible string representation.
 
 ```python
 def put_multi_measure_attribute_mapping(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.putMultiMeasureAttributeMapping.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]
 
 ---
 
@@ -17227,14 +17227,14 @@ def reset_target_measure_name() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.multiMeasureAttributeMapping">multi_measure_attribute_mapping</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.measureNameInput">measure_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.measureValueTypeInput">measure_value_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.multiMeasureAttributeMappingInput">multi_measure_attribute_mapping_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.multiMeasureAttributeMappingInput">multi_measure_attribute_mapping_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.sourceColumnInput">source_column_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.targetMeasureNameInput">target_measure_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.measureName">measure_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.measureValueType">measure_value_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.sourceColumn">source_column</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.targetMeasureName">target_measure_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a></code> | *No description.* |
 
 ---
 
@@ -17295,10 +17295,10 @@ measure_value_type_input: str
 ##### `multi_measure_attribute_mapping_input`<sup>Optional</sup> <a name="multi_measure_attribute_mapping_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.multiMeasureAttributeMappingInput"></a>
 
 ```python
-multi_measure_attribute_mapping_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]]
+multi_measure_attribute_mapping_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping</a>]
 
 ---
 
@@ -17365,10 +17365,10 @@ target_measure_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>
 
 ---
 
@@ -17504,7 +17504,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]</code> | *No description.* |
 
 ---
 
@@ -17535,10 +17535,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]
 
 ---
 
@@ -17674,7 +17674,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -17705,10 +17705,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]]
+internal_value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]
 
 ---
 
@@ -17981,7 +17981,7 @@ def reset_target_multi_measure_attribute_name() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.property.measureValueType">measure_value_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.property.sourceColumn">source_column</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.property.targetMultiMeasureAttributeName">target_multi_measure_attribute_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a></code> | *No description.* |
 
 ---
 
@@ -18072,10 +18072,10 @@ target_multi_measure_attribute_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>
 
 ---
 
@@ -18335,13 +18335,13 @@ Returns a reversible string representation.
 
 ```python
 def put_multi_measure_attribute_mapping(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.putMultiMeasureAttributeMapping.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]
 
 ---
 
@@ -18365,10 +18365,10 @@ def reset_target_multi_measure_name() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.multiMeasureAttributeMapping">multi_measure_attribute_mapping</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.multiMeasureAttributeMappingInput">multi_measure_attribute_mapping_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.multiMeasureAttributeMappingInput">multi_measure_attribute_mapping_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.targetMultiMeasureNameInput">target_multi_measure_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.targetMultiMeasureName">target_multi_measure_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a></code> | *No description.* |
 
 ---
 
@@ -18409,10 +18409,10 @@ multi_measure_attribute_mapping: TimestreamqueryScheduledQueryTargetConfiguratio
 ##### `multi_measure_attribute_mapping_input`<sup>Optional</sup> <a name="multi_measure_attribute_mapping_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.multiMeasureAttributeMappingInput"></a>
 
 ```python
-multi_measure_attribute_mapping_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]]
+multi_measure_attribute_mapping_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping</a>]
 
 ---
 
@@ -18439,10 +18439,10 @@ target_multi_measure_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>
 
 ---
 
@@ -18706,13 +18706,13 @@ Returns a reversible string representation.
 
 ```python
 def put_dimension_mapping(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.putDimensionMapping.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]
 
 ---
 
@@ -18720,13 +18720,13 @@ def put_dimension_mapping(
 
 ```python
 def put_mixed_measure_mapping(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.putMixedMeasureMapping.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]
 
 ---
 
@@ -18734,13 +18734,13 @@ def put_mixed_measure_mapping(
 
 ```python
 def put_multi_measure_mappings(
-  value: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]]
+  value: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.putMultiMeasureMappings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]
 
 ---
 
@@ -18779,17 +18779,17 @@ def reset_multi_measure_mappings() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.mixedMeasureMapping">mixed_measure_mapping</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.multiMeasureMappings">multi_measure_mappings</a></code> | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.databaseNameInput">database_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.dimensionMappingInput">dimension_mapping_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.dimensionMappingInput">dimension_mapping_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.measureNameColumnInput">measure_name_column_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.mixedMeasureMappingInput">mixed_measure_mapping_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.multiMeasureMappingsInput">multi_measure_mappings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.mixedMeasureMappingInput">mixed_measure_mapping_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.multiMeasureMappingsInput">multi_measure_mappings_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.timeColumnInput">time_column_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.measureNameColumn">measure_name_column</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.timeColumn">time_column</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -18860,10 +18860,10 @@ database_name_input: str
 ##### `dimension_mapping_input`<sup>Optional</sup> <a name="dimension_mapping_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.dimensionMappingInput"></a>
 
 ```python
-dimension_mapping_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]]
+dimension_mapping_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping</a>]
 
 ---
 
@@ -18880,20 +18880,20 @@ measure_name_column_input: str
 ##### `mixed_measure_mapping_input`<sup>Optional</sup> <a name="mixed_measure_mapping_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.mixedMeasureMappingInput"></a>
 
 ```python
-mixed_measure_mapping_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]]
+mixed_measure_mapping_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping</a>]
 
 ---
 
 ##### `multi_measure_mappings_input`<sup>Optional</sup> <a name="multi_measure_mappings_input" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.multiMeasureMappingsInput"></a>
 
 ```python
-multi_measure_mappings_input: typing.Union[IResolvable, typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]]
+multi_measure_mappings_input: IResolvable | typing.List[TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings</a>]
 
 ---
 
@@ -18960,10 +18960,10 @@ time_column: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration">TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration</a>
 
 ---
 
@@ -19230,7 +19230,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -19321,10 +19321,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TimestreamqueryScheduledQueryTimeouts]
+internal_value: IResolvable | TimestreamqueryScheduledQueryTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts">TimestreamqueryScheduledQueryTimeouts</a>
 
 ---
 

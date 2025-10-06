@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_aws import appmesh_virtual_node
 appmeshVirtualNode.AppmeshVirtualNode(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   mesh_name: str,
   name: str,
   spec: AppmeshVirtualNodeSpec,
@@ -36,13 +36,13 @@ appmeshVirtualNode.AppmeshVirtualNode(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.meshName">mesh_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#name AppmeshVirtualNode#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec">AppmeshVirtualNodeSpec</a></code> | spec block. |
@@ -74,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -443,7 +443,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.importFrom"></a>
@@ -506,7 +506,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -522,7 +522,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -550,9 +550,9 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_spec(
-  backend: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecBackend]] = None,
+  backend: IResolvable | typing.List[AppmeshVirtualNodeSpecBackend] = None,
   backend_defaults: AppmeshVirtualNodeSpecBackendDefaults = None,
-  listener: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListener]] = None,
+  listener: IResolvable | typing.List[AppmeshVirtualNodeSpecListener] = None,
   logging: AppmeshVirtualNodeSpecLogging = None,
   service_discovery: AppmeshVirtualNodeSpecServiceDiscovery = None
 ) -> None
@@ -560,7 +560,7 @@ def put_spec(
 
 ###### `backend`<sup>Optional</sup> <a name="backend" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.putSpec.parameter.backend"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]
 
 backend block.
 
@@ -580,7 +580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `listener`<sup>Optional</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.putSpec.parameter.listener"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]
 
 listener block.
 
@@ -775,13 +775,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.createdDate">created_date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.lastUpdatedDate">last_updated_date</a></code> | <code>str</code> | *No description.* |
@@ -880,20 +880,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -940,10 +940,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1175,13 +1175,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import appmesh_virtual_node
 
 appmeshVirtualNode.AppmeshVirtualNodeConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   mesh_name: str,
   name: str,
   spec: AppmeshVirtualNodeSpec,
@@ -1197,13 +1197,13 @@ appmeshVirtualNode.AppmeshVirtualNodeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.meshName">mesh_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#name AppmeshVirtualNode#name}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec">AppmeshVirtualNodeSpec</a></code> | spec block. |
@@ -1218,20 +1218,20 @@ appmeshVirtualNode.AppmeshVirtualNodeConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1278,10 +1278,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1396,9 +1396,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import appmesh_virtual_node
 
 appmeshVirtualNode.AppmeshVirtualNodeSpec(
-  backend: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecBackend]] = None,
+  backend: IResolvable | typing.List[AppmeshVirtualNodeSpecBackend] = None,
   backend_defaults: AppmeshVirtualNodeSpecBackendDefaults = None,
-  listener: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListener]] = None,
+  listener: IResolvable | typing.List[AppmeshVirtualNodeSpecListener] = None,
   logging: AppmeshVirtualNodeSpecLogging = None,
   service_discovery: AppmeshVirtualNodeSpecServiceDiscovery = None
 )
@@ -1408,9 +1408,9 @@ appmeshVirtualNode.AppmeshVirtualNodeSpec(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.backend">backend</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]</code> | backend block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.backend">backend</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]</code> | backend block. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.backendDefaults">backend_defaults</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults">AppmeshVirtualNodeSpecBackendDefaults</a></code> | backend_defaults block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.listener">listener</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]</code> | listener block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.listener">listener</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]</code> | listener block. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.logging">logging</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging">AppmeshVirtualNodeSpecLogging</a></code> | logging block. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.serviceDiscovery">service_discovery</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery">AppmeshVirtualNodeSpecServiceDiscovery</a></code> | service_discovery block. |
 
@@ -1419,10 +1419,10 @@ appmeshVirtualNode.AppmeshVirtualNodeSpec(
 ##### `backend`<sup>Optional</sup> <a name="backend" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.backend"></a>
 
 ```python
-backend: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecBackend]]
+backend: IResolvable | typing.List[AppmeshVirtualNodeSpecBackend]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]
 
 backend block.
 
@@ -1447,10 +1447,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `listener`<sup>Optional</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.property.listener"></a>
 
 ```python
-listener: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListener]]
+listener: IResolvable | typing.List[AppmeshVirtualNodeSpecListener]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]
 
 listener block.
 
@@ -1598,7 +1598,7 @@ from cdktf_cdktf_provider_aws import appmesh_virtual_node
 appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls(
   validation: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation,
   certificate: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate = None,
-  enforce: typing.Union[bool, IResolvable] = None,
+  enforce: bool | IResolvable = None,
   ports: typing.List[typing.Union[int, float]] = None
 )
 ```
@@ -1609,7 +1609,7 @@ appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.validation">validation</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation</a></code> | validation block. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.certificate">certificate</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate</a></code> | certificate block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.enforce">enforce</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.enforce">enforce</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.ports">ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}. |
 
 ---
@@ -1645,10 +1645,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enforce`<sup>Optional</sup> <a name="enforce" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.enforce"></a>
 
 ```python
-enforce: typing.Union[bool, IResolvable]
+enforce: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 
@@ -2164,7 +2164,7 @@ from cdktf_cdktf_provider_aws import appmesh_virtual_node
 appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls(
   validation: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation,
   certificate: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate = None,
-  enforce: typing.Union[bool, IResolvable] = None,
+  enforce: bool | IResolvable = None,
   ports: typing.List[typing.Union[int, float]] = None
 )
 ```
@@ -2175,7 +2175,7 @@ appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.validation">validation</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation</a></code> | validation block. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.certificate">certificate</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate</a></code> | certificate block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.enforce">enforce</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.enforce">enforce</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.ports">ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}. |
 
 ---
@@ -2211,10 +2211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enforce`<sup>Optional</sup> <a name="enforce" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.enforce"></a>
 
 ```python
-enforce: typing.Union[bool, IResolvable]
+enforce: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 
@@ -2761,9 +2761,9 @@ from cdktf_cdktf_provider_aws import appmesh_virtual_node
 
 appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool(
   grpc: AppmeshVirtualNodeSpecListenerConnectionPoolGrpc = None,
-  http: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]] = None,
-  http2: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]] = None,
-  tcp: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]] = None
+  http: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp] = None,
+  http2: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2] = None,
+  tcp: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp] = None
 )
 ```
 
@@ -2772,9 +2772,9 @@ appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.grpc">grpc</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc">AppmeshVirtualNodeSpecListenerConnectionPoolGrpc</a></code> | grpc block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.http">http</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]</code> | http block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.http2">http2</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]</code> | http2 block. |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.tcp">tcp</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]</code> | tcp block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.http">http</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]</code> | http block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.http2">http2</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]</code> | http2 block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.tcp">tcp</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]</code> | tcp block. |
 
 ---
 
@@ -2795,10 +2795,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `http`<sup>Optional</sup> <a name="http" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.http"></a>
 
 ```python
-http: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]]
+http: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]
 
 http block.
 
@@ -2809,10 +2809,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `http2`<sup>Optional</sup> <a name="http2" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.http2"></a>
 
 ```python
-http2: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]]
+http2: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]
 
 http2 block.
 
@@ -2823,10 +2823,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tcp`<sup>Optional</sup> <a name="tcp" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.property.tcp"></a>
 
 ```python
-tcp: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]]
+tcp: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]
 
 tcp block.
 
@@ -4490,7 +4490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import appmesh_virtual_node
 
 appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat(
-  json: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]] = None,
+  json: IResolvable | typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson] = None,
   text: str = None
 )
 ```
@@ -4499,7 +4499,7 @@ appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.json">json</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]</code> | json block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.json">json</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]</code> | json block. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#text AppmeshVirtualNode#text}. |
 
 ---
@@ -4507,10 +4507,10 @@ appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat(
 ##### `json`<sup>Optional</sup> <a name="json" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.json"></a>
 
 ```python
-json: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]]
+json: IResolvable | typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]
 
 json block.
 
@@ -4984,7 +4984,7 @@ Returns a reversible string representation.
 def put_tls(
   validation: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation,
   certificate: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate = None,
-  enforce: typing.Union[bool, IResolvable] = None,
+  enforce: bool | IResolvable = None,
   ports: typing.List[typing.Union[int, float]] = None
 ) -> None
 ```
@@ -5011,7 +5011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enforce`<sup>Optional</sup> <a name="enforce" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference.putTls.parameter.enforce"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 
@@ -6407,10 +6407,10 @@ def reset_ports() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.certificate">certificate</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.validation">validation</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.certificateInput">certificate_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.enforceInput">enforce_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.enforceInput">enforce_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.portsInput">ports_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.validationInput">validation_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.enforce">enforce</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.enforce">enforce</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.ports">ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls</a></code> | *No description.* |
 
@@ -6473,10 +6473,10 @@ certificate_input: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifica
 ##### `enforce_input`<sup>Optional</sup> <a name="enforce_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.enforceInput"></a>
 
 ```python
-enforce_input: typing.Union[bool, IResolvable]
+enforce_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6503,10 +6503,10 @@ validation_input: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation
 ##### `enforce`<sup>Required</sup> <a name="enforce" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.property.enforce"></a>
 
 ```python
-enforce: typing.Union[bool, IResolvable]
+enforce: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9278,7 +9278,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]</code> | *No description.* |
 
 ---
 
@@ -9309,10 +9309,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecBackend]]
+internal_value: IResolvable | typing.List[AppmeshVirtualNodeSpecBackend]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]
 
 ---
 
@@ -9602,7 +9602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.virtualService">virtual_service</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference">AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.virtualServiceInput">virtual_service_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService">AppmeshVirtualNodeSpecBackendVirtualService</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a></code> | *No description.* |
 
 ---
 
@@ -9653,10 +9653,10 @@ virtual_service_input: AppmeshVirtualNodeSpecBackendVirtualService
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppmeshVirtualNodeSpecBackend]
+internal_value: IResolvable | AppmeshVirtualNodeSpecBackend
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>
 
 ---
 
@@ -9897,7 +9897,7 @@ Returns a reversible string representation.
 def put_tls(
   validation: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation,
   certificate: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate = None,
-  enforce: typing.Union[bool, IResolvable] = None,
+  enforce: bool | IResolvable = None,
   ports: typing.List[typing.Union[int, float]] = None
 ) -> None
 ```
@@ -9924,7 +9924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enforce`<sup>Optional</sup> <a name="enforce" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference.putTls.parameter.enforce"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 
@@ -11320,10 +11320,10 @@ def reset_ports() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.certificate">certificate</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.validation">validation</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.certificateInput">certificate_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.enforceInput">enforce_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.enforceInput">enforce_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.portsInput">ports_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.validationInput">validation_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.enforce">enforce</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.enforce">enforce</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.ports">ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls</a></code> | *No description.* |
 
@@ -11386,10 +11386,10 @@ certificate_input: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCer
 ##### `enforce_input`<sup>Optional</sup> <a name="enforce_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.enforceInput"></a>
 
 ```python
-enforce_input: typing.Union[bool, IResolvable]
+enforce_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11416,10 +11416,10 @@ validation_input: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsVali
 ##### `enforce`<sup>Required</sup> <a name="enforce" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.property.enforce"></a>
 
 ```python
-enforce: typing.Union[bool, IResolvable]
+enforce: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -14509,7 +14509,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]</code> | *No description.* |
 
 ---
 
@@ -14540,10 +14540,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]]
+internal_value: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]
 
 ---
 
@@ -14805,7 +14805,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.maxRequestsInput">max_requests_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.maxRequests">max_requests</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a></code> | *No description.* |
 
 ---
 
@@ -14856,10 +14856,10 @@ max_requests: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]
+internal_value: IResolvable | AppmeshVirtualNodeSpecListenerConnectionPoolHttp2
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>
 
 ---
 
@@ -14995,7 +14995,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]</code> | *No description.* |
 
 ---
 
@@ -15026,10 +15026,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]]
+internal_value: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]
 
 ---
 
@@ -15300,7 +15300,7 @@ def reset_max_pending_requests() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.maxPendingRequestsInput">max_pending_requests_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.maxPendingRequests">max_pending_requests</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a></code> | *No description.* |
 
 ---
 
@@ -15371,10 +15371,10 @@ max_pending_requests: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppmeshVirtualNodeSpecListenerConnectionPoolHttp]
+internal_value: IResolvable | AppmeshVirtualNodeSpecListenerConnectionPoolHttp
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>
 
 ---
 
@@ -15635,13 +15635,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_http(
-  value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]]
+  value: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.putHttp.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]
 
 ---
 
@@ -15649,13 +15649,13 @@ def put_http(
 
 ```python
 def put_http2(
-  value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]]
+  value: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.putHttp2.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]
 
 ---
 
@@ -15663,13 +15663,13 @@ def put_http2(
 
 ```python
 def put_tcp(
-  value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]]
+  value: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.putTcp.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]
 
 ---
 
@@ -15709,9 +15709,9 @@ def reset_tcp() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.http2">http2</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.tcp">tcp</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList">AppmeshVirtualNodeSpecListenerConnectionPoolTcpList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.grpcInput">grpc_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc">AppmeshVirtualNodeSpecListenerConnectionPoolGrpc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.http2Input">http2_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.httpInput">http_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.tcpInput">tcp_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.http2Input">http2_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.httpInput">http_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.tcpInput">tcp_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool">AppmeshVirtualNodeSpecListenerConnectionPool</a></code> | *No description.* |
 
 ---
@@ -15793,30 +15793,30 @@ grpc_input: AppmeshVirtualNodeSpecListenerConnectionPoolGrpc
 ##### `http2_input`<sup>Optional</sup> <a name="http2_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.http2Input"></a>
 
 ```python
-http2_input: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]]
+http2_input: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]
 
 ---
 
 ##### `http_input`<sup>Optional</sup> <a name="http_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.httpInput"></a>
 
 ```python
-http_input: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]]
+http_input: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]
 
 ---
 
 ##### `tcp_input`<sup>Optional</sup> <a name="tcp_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.property.tcpInput"></a>
 
 ```python
-tcp_input: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]]
+tcp_input: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]
 
 ---
 
@@ -15962,7 +15962,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]</code> | *No description.* |
 
 ---
 
@@ -15993,10 +15993,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]]
+internal_value: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]
 
 ---
 
@@ -16258,7 +16258,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.maxConnectionsInput">max_connections_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a></code> | *No description.* |
 
 ---
 
@@ -16309,10 +16309,10 @@ max_connections: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppmeshVirtualNodeSpecListenerConnectionPoolTcp]
+internal_value: IResolvable | AppmeshVirtualNodeSpecListenerConnectionPoolTcp
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>
 
 ---
 
@@ -16890,7 +16890,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]</code> | *No description.* |
 
 ---
 
@@ -16921,10 +16921,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListener]]
+internal_value: IResolvable | typing.List[AppmeshVirtualNodeSpecListener]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]
 
 ---
 
@@ -18243,9 +18243,9 @@ Returns a reversible string representation.
 ```python
 def put_connection_pool(
   grpc: AppmeshVirtualNodeSpecListenerConnectionPoolGrpc = None,
-  http: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp]] = None,
-  http2: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2]] = None,
-  tcp: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp]] = None
+  http: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp] = None,
+  http2: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2] = None,
+  tcp: IResolvable | typing.List[AppmeshVirtualNodeSpecListenerConnectionPoolTcp] = None
 ) -> None
 ```
 
@@ -18261,7 +18261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http`<sup>Optional</sup> <a name="http" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.putConnectionPool.parameter.http"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>]
 
 http block.
 
@@ -18271,7 +18271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http2`<sup>Optional</sup> <a name="http2" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.putConnectionPool.parameter.http2"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>]
 
 http2 block.
 
@@ -18281,7 +18281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `tcp`<sup>Optional</sup> <a name="tcp" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.putConnectionPool.parameter.tcp"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>]
 
 tcp block.
 
@@ -18569,7 +18569,7 @@ def reset_tls() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.portMappingInput">port_mapping_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping">AppmeshVirtualNodeSpecListenerPortMapping</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.timeoutInput">timeout_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout">AppmeshVirtualNodeSpecListenerTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.tlsInput">tls_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls">AppmeshVirtualNodeSpecListenerTls</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a></code> | *No description.* |
 
 ---
 
@@ -18720,10 +18720,10 @@ tls_input: AppmeshVirtualNodeSpecListenerTls
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppmeshVirtualNodeSpecListener]
+internal_value: IResolvable | AppmeshVirtualNodeSpecListener
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>
 
 ---
 
@@ -27073,7 +27073,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]</code> | *No description.* |
 
 ---
 
@@ -27104,10 +27104,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]]
+internal_value: IResolvable | typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]
 
 ---
 
@@ -27371,7 +27371,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a></code> | *No description.* |
 
 ---
 
@@ -27442,10 +27442,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]
+internal_value: IResolvable | AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>
 
 ---
 
@@ -27685,13 +27685,13 @@ Returns a reversible string representation.
 
 ```python
 def put_json(
-  value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]]
+  value: IResolvable | typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.putJson.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]
 
 ---
 
@@ -27715,7 +27715,7 @@ def reset_text() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.json">json</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.jsonInput">json_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.jsonInput">json_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a></code> | *No description.* |
@@ -27759,10 +27759,10 @@ json: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList
 ##### `json_input`<sup>Optional</sup> <a name="json_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.jsonInput"></a>
 
 ```python
-json_input: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]]
+json_input: IResolvable | typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]
 
 ---
 
@@ -28031,14 +28031,14 @@ Returns a reversible string representation.
 
 ```python
 def put_format(
-  json: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson]] = None,
+  json: IResolvable | typing.List[AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson] = None,
   text: str = None
 ) -> None
 ```
 
 ###### `json`<sup>Optional</sup> <a name="json" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.putFormat.parameter.json"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>]
 
 json block.
 
@@ -29045,13 +29045,13 @@ Returns a reversible string representation.
 
 ```python
 def put_backend(
-  value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecBackend]]
+  value: IResolvable | typing.List[AppmeshVirtualNodeSpecBackend]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.putBackend.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]
 
 ---
 
@@ -29077,13 +29077,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_listener(
-  value: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListener]]
+  value: IResolvable | typing.List[AppmeshVirtualNodeSpecListener]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.putListener.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]
 
 ---
 
@@ -29177,8 +29177,8 @@ def reset_service_discovery() -> None
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.logging">logging</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingOutputReference">AppmeshVirtualNodeSpecLoggingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.serviceDiscovery">service_discovery</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryOutputReference">AppmeshVirtualNodeSpecServiceDiscoveryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.backendDefaultsInput">backend_defaults_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults">AppmeshVirtualNodeSpecBackendDefaults</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.backendInput">backend_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.listenerInput">listener_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.backendInput">backend_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.listenerInput">listener_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.loggingInput">logging_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging">AppmeshVirtualNodeSpecLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.serviceDiscoveryInput">service_discovery_input</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery">AppmeshVirtualNodeSpecServiceDiscovery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec">AppmeshVirtualNodeSpec</a></code> | *No description.* |
@@ -29272,20 +29272,20 @@ backend_defaults_input: AppmeshVirtualNodeSpecBackendDefaults
 ##### `backend_input`<sup>Optional</sup> <a name="backend_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.backendInput"></a>
 
 ```python
-backend_input: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecBackend]]
+backend_input: IResolvable | typing.List[AppmeshVirtualNodeSpecBackend]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>]
 
 ---
 
 ##### `listener_input`<sup>Optional</sup> <a name="listener_input" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.property.listenerInput"></a>
 
 ```python
-listener_input: typing.Union[IResolvable, typing.List[AppmeshVirtualNodeSpecListener]]
+listener_input: IResolvable | typing.List[AppmeshVirtualNodeSpecListener]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>]
 
 ---
 

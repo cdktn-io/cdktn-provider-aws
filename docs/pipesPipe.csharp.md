@@ -293,7 +293,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.pipesPipe.PipesPipe.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.pipesPipe.PipesPipe.importFrom"></a>
@@ -347,7 +347,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.pipesPipe.PipesPipe.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -362,7 +362,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.pipesPipe.PipesPipe.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -660,13 +660,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.enrichmentParameters">EnrichmentParameters</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeEnrichmentParametersOutputReference">PipesPipeEnrichmentParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.logConfiguration">LogConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeLogConfigurationOutputReference">PipesPipeLogConfigurationOutputReference</a></code> | *No description.* |
@@ -690,7 +690,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.targetInput">TargetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.targetParametersInput">TargetParametersInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters">PipesPipeTargetParameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.desiredState">DesiredState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.enrichment">Enrichment</a></code> | <code>string</code> | *No description.* |
@@ -782,20 +782,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -842,10 +842,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1082,10 +1082,10 @@ public PipesPipeTargetParameters TargetParametersInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|PipesPipeTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>
 
 ---
 
@@ -1247,13 +1247,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new PipesPipeConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string RoleArn,
     string Source,
     string Target,
@@ -1279,13 +1279,13 @@ new PipesPipeConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
@@ -1310,20 +1310,20 @@ new PipesPipeConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1370,10 +1370,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2374,7 +2374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new PipesPipeSourceParametersFilterCriteria {
-    object Filter = null
+    IResolvable|PipesPipeSourceParametersFilterCriteriaFilter[] Filter = null
 };
 ```
 
@@ -2382,17 +2382,17 @@ new PipesPipeSourceParametersFilterCriteria {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.property.filter">Filter</a></code> | <code>object</code> | filter block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.property.filter">Filter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]</code> | filter block. |
 
 ---
 
 ##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.property.filter"></a>
 
 ```csharp
-public object Filter { get; set; }
+public IResolvable|PipesPipeSourceParametersFilterCriteriaFilter[] Filter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]
 
 filter block.
 
@@ -3416,7 +3416,7 @@ new PipesPipeTargetParametersBatchJobParameters {
     string JobName,
     PipesPipeTargetParametersBatchJobParametersArrayProperties ArrayProperties = null,
     PipesPipeTargetParametersBatchJobParametersContainerOverrides ContainerOverrides = null,
-    object DependsOn = null,
+    IResolvable|PipesPipeTargetParametersBatchJobParametersDependsOn[] DependsOn = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
     PipesPipeTargetParametersBatchJobParametersRetryStrategy RetryStrategy = null
 };
@@ -3430,7 +3430,7 @@ new PipesPipeTargetParametersBatchJobParameters {
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.jobName">JobName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#job_name PipesPipe#job_name}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.arrayProperties">ArrayProperties</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties">PipesPipeTargetParametersBatchJobParametersArrayProperties</a></code> | array_properties block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.containerOverrides">ContainerOverrides</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides">PipesPipeTargetParametersBatchJobParametersContainerOverrides</a></code> | container_overrides block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.dependsOn">DependsOn</a></code> | <code>object</code> | depends_on block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]</code> | depends_on block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#parameters PipesPipe#parameters}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.retryStrategy">RetryStrategy</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategy">PipesPipeTargetParametersBatchJobParametersRetryStrategy</a></code> | retry_strategy block. |
 
@@ -3491,10 +3491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.dependsOn"></a>
 
 ```csharp
-public object DependsOn { get; set; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersDependsOn[] DependsOn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]
 
 depends_on block.
 
@@ -3569,9 +3569,9 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new PipesPipeTargetParametersBatchJobParametersContainerOverrides {
     string[] Command = null,
-    object Environment = null,
+    IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] Environment = null,
     string InstanceType = null,
-    object ResourceRequirement = null
+    IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] ResourceRequirement = null
 };
 ```
 
@@ -3580,9 +3580,9 @@ new PipesPipeTargetParametersBatchJobParametersContainerOverrides {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.command">Command</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#command PipesPipe#command}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.environment">Environment</a></code> | <code>object</code> | environment block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.environment">Environment</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]</code> | environment block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#instance_type PipesPipe#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.resourceRequirement">ResourceRequirement</a></code> | <code>object</code> | resource_requirement block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.resourceRequirement">ResourceRequirement</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]</code> | resource_requirement block. |
 
 ---
 
@@ -3601,10 +3601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.environment"></a>
 
 ```csharp
-public object Environment { get; set; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] Environment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]
 
 environment block.
 
@@ -3627,10 +3627,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceRequirement`<sup>Optional</sup> <a name="ResourceRequirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.resourceRequirement"></a>
 
 ```csharp
-public object ResourceRequirement { get; set; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] ResourceRequirement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]
 
 resource_requirement block.
 
@@ -3863,15 +3863,15 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new PipesPipeTargetParametersEcsTaskParameters {
     string TaskDefinitionArn,
-    object CapacityProviderStrategy = null,
-    object EnableEcsManagedTags = null,
-    object EnableExecuteCommand = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] CapacityProviderStrategy = null,
+    bool|IResolvable EnableEcsManagedTags = null,
+    bool|IResolvable EnableExecuteCommand = null,
     string Group = null,
     string LaunchType = null,
     PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration NetworkConfiguration = null,
     PipesPipeTargetParametersEcsTaskParametersOverrides Overrides = null,
-    object PlacementConstraint = null,
-    object PlacementStrategy = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] PlacementConstraint = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] PlacementStrategy = null,
     string PlatformVersion = null,
     string PropagateTags = null,
     string ReferenceId = null,
@@ -3885,15 +3885,15 @@ new PipesPipeTargetParametersEcsTaskParameters {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.taskDefinitionArn">TaskDefinitionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#task_definition_arn PipesPipe#task_definition_arn}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.capacityProviderStrategy">CapacityProviderStrategy</a></code> | <code>object</code> | capacity_provider_strategy block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.capacityProviderStrategy">CapacityProviderStrategy</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]</code> | capacity_provider_strategy block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.group">Group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#group PipesPipe#group}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.launchType">LaunchType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#launch_type PipesPipe#launch_type}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.networkConfiguration">NetworkConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration">PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration</a></code> | network_configuration block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.overrides">Overrides</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides">PipesPipeTargetParametersEcsTaskParametersOverrides</a></code> | overrides block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementConstraint">PlacementConstraint</a></code> | <code>object</code> | placement_constraint block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementStrategy">PlacementStrategy</a></code> | <code>object</code> | placement_strategy block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementConstraint">PlacementConstraint</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]</code> | placement_constraint block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementStrategy">PlacementStrategy</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]</code> | placement_strategy block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.platformVersion">PlatformVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#platform_version PipesPipe#platform_version}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.propagateTags">PropagateTags</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#propagate_tags PipesPipe#propagate_tags}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.referenceId">ReferenceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#reference_id PipesPipe#reference_id}. |
@@ -3917,10 +3917,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CapacityProviderStrategy`<sup>Optional</sup> <a name="CapacityProviderStrategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.capacityProviderStrategy"></a>
 
 ```csharp
-public object CapacityProviderStrategy { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] CapacityProviderStrategy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]
 
 capacity_provider_strategy block.
 
@@ -3931,10 +3931,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableEcsManagedTags`<sup>Optional</sup> <a name="EnableEcsManagedTags" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableEcsManagedTags"></a>
 
 ```csharp
-public object EnableEcsManagedTags { get; set; }
+public bool|IResolvable EnableEcsManagedTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}.
 
@@ -3943,10 +3943,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableExecuteCommand`<sup>Optional</sup> <a name="EnableExecuteCommand" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableExecuteCommand"></a>
 
 ```csharp
-public object EnableExecuteCommand { get; set; }
+public bool|IResolvable EnableExecuteCommand { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}.
 
@@ -4007,10 +4007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PlacementConstraint`<sup>Optional</sup> <a name="PlacementConstraint" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementConstraint"></a>
 
 ```csharp
-public object PlacementConstraint { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] PlacementConstraint { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]
 
 placement_constraint block.
 
@@ -4021,10 +4021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PlacementStrategy`<sup>Optional</sup> <a name="PlacementStrategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementStrategy"></a>
 
 ```csharp
-public object PlacementStrategy { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] PlacementStrategy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]
 
 placement_strategy block.
 
@@ -4254,11 +4254,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new PipesPipeTargetParametersEcsTaskParametersOverrides {
-    object ContainerOverride = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] ContainerOverride = null,
     string Cpu = null,
     PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage EphemeralStorage = null,
     string ExecutionRoleArn = null,
-    object InferenceAcceleratorOverride = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] InferenceAcceleratorOverride = null,
     string Memory = null,
     string TaskRoleArn = null
 };
@@ -4268,11 +4268,11 @@ new PipesPipeTargetParametersEcsTaskParametersOverrides {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.containerOverride">ContainerOverride</a></code> | <code>object</code> | container_override block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.containerOverride">ContainerOverride</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]</code> | container_override block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.cpu">Cpu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#cpu PipesPipe#cpu}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.ephemeralStorage">EphemeralStorage</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage">PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage</a></code> | ephemeral_storage block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#execution_role_arn PipesPipe#execution_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.inferenceAcceleratorOverride">InferenceAcceleratorOverride</a></code> | <code>object</code> | inference_accelerator_override block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.inferenceAcceleratorOverride">InferenceAcceleratorOverride</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]</code> | inference_accelerator_override block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.memory">Memory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#memory PipesPipe#memory}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.taskRoleArn">TaskRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#task_role_arn PipesPipe#task_role_arn}. |
 
@@ -4281,10 +4281,10 @@ new PipesPipeTargetParametersEcsTaskParametersOverrides {
 ##### `ContainerOverride`<sup>Optional</sup> <a name="ContainerOverride" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.containerOverride"></a>
 
 ```csharp
-public object ContainerOverride { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] ContainerOverride { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]
 
 container_override block.
 
@@ -4333,10 +4333,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InferenceAcceleratorOverride`<sup>Optional</sup> <a name="InferenceAcceleratorOverride" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.inferenceAcceleratorOverride"></a>
 
 ```csharp
-public object InferenceAcceleratorOverride { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] InferenceAcceleratorOverride { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]
 
 inference_accelerator_override block.
 
@@ -4378,12 +4378,12 @@ using HashiCorp.Cdktf.Providers.Aws;
 new PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride {
     string[] Command = null,
     double Cpu = null,
-    object Environment = null,
-    object EnvironmentFile = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] Environment = null,
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] EnvironmentFile = null,
     double Memory = null,
     double MemoryReservation = null,
     string Name = null,
-    object ResourceRequirement = null
+    IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] ResourceRequirement = null
 };
 ```
 
@@ -4393,12 +4393,12 @@ new PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.command">Command</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#command PipesPipe#command}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.cpu">Cpu</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#cpu PipesPipe#cpu}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environment">Environment</a></code> | <code>object</code> | environment block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environmentFile">EnvironmentFile</a></code> | <code>object</code> | environment_file block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environment">Environment</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]</code> | environment block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environmentFile">EnvironmentFile</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]</code> | environment_file block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.memory">Memory</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#memory PipesPipe#memory}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#memory_reservation PipesPipe#memory_reservation}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#name PipesPipe#name}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.resourceRequirement">ResourceRequirement</a></code> | <code>object</code> | resource_requirement block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.resourceRequirement">ResourceRequirement</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]</code> | resource_requirement block. |
 
 ---
 
@@ -4429,10 +4429,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environment"></a>
 
 ```csharp
-public object Environment { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] Environment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]
 
 environment block.
 
@@ -4443,10 +4443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnvironmentFile`<sup>Optional</sup> <a name="EnvironmentFile" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environmentFile"></a>
 
 ```csharp
-public object EnvironmentFile { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] EnvironmentFile { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]
 
 environment_file block.
 
@@ -4493,10 +4493,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceRequirement`<sup>Optional</sup> <a name="ResourceRequirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.resourceRequirement"></a>
 
 ```csharp
-public object ResourceRequirement { get; set; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] ResourceRequirement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]
 
 resource_requirement block.
 
@@ -5037,7 +5037,7 @@ new PipesPipeTargetParametersRedshiftDataParameters {
     string DbUser = null,
     string SecretManagerArn = null,
     string StatementName = null,
-    object WithEvent = null
+    bool|IResolvable WithEvent = null
 };
 ```
 
@@ -5050,7 +5050,7 @@ new PipesPipeTargetParametersRedshiftDataParameters {
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.dbUser">DbUser</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#db_user PipesPipe#db_user}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.secretManagerArn">SecretManagerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#secret_manager_arn PipesPipe#secret_manager_arn}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.statementName">StatementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#statement_name PipesPipe#statement_name}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.withEvent">WithEvent</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.withEvent">WithEvent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}. |
 
 ---
 
@@ -5117,10 +5117,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WithEvent`<sup>Optional</sup> <a name="WithEvent" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.withEvent"></a>
 
 ```csharp
-public object WithEvent { get; set; }
+public bool|IResolvable WithEvent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}.
 
@@ -5134,7 +5134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new PipesPipeTargetParametersSagemakerPipelineParameters {
-    object PipelineParameter = null
+    IResolvable|PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] PipelineParameter = null
 };
 ```
 
@@ -5142,17 +5142,17 @@ new PipesPipeTargetParametersSagemakerPipelineParameters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.property.pipelineParameter">PipelineParameter</a></code> | <code>object</code> | pipeline_parameter block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.property.pipelineParameter">PipelineParameter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]</code> | pipeline_parameter block. |
 
 ---
 
 ##### `PipelineParameter`<sup>Optional</sup> <a name="PipelineParameter" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.property.pipelineParameter"></a>
 
 ```csharp
-public object PipelineParameter { get; set; }
+public IResolvable|PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] PipelineParameter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]
 
 pipeline_parameter block.
 
@@ -8842,7 +8842,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]</code> | *No description.* |
 
 ---
 
@@ -8873,10 +8873,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeSourceParametersFilterCriteriaFilter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]
 
 ---
 
@@ -9111,7 +9111,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.patternInput">PatternInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.pattern">Pattern</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a></code> | *No description.* |
 
 ---
 
@@ -9162,10 +9162,10 @@ public string Pattern { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeSourceParametersFilterCriteriaFilter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>
 
 ---
 
@@ -9378,12 +9378,12 @@ Returns a reversible string representation.
 ##### `PutFilter` <a name="PutFilter" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.putFilter"></a>
 
 ```csharp
-private void PutFilter(object Value)
+private void PutFilter(IResolvable|PipesPipeSourceParametersFilterCriteriaFilter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.putFilter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]
 
 ---
 
@@ -9401,7 +9401,7 @@ private void ResetFilter()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList">PipesPipeSourceParametersFilterCriteriaFilterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filterInput">FilterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filterInput">FilterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria">PipesPipeSourceParametersFilterCriteria</a></code> | *No description.* |
 
 ---
@@ -9443,10 +9443,10 @@ public PipesPipeSourceParametersFilterCriteriaFilterList Filter { get; }
 ##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filterInput"></a>
 
 ```csharp
-public object FilterInput { get; }
+public IResolvable|PipesPipeSourceParametersFilterCriteriaFilter[] FilterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>[]
 
 ---
 
@@ -14147,7 +14147,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]</code> | *No description.* |
 
 ---
 
@@ -14178,10 +14178,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]
 
 ---
 
@@ -14432,7 +14432,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a></code> | *No description.* |
 
 ---
 
@@ -14503,10 +14503,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>
 
 ---
 
@@ -14723,24 +14723,24 @@ Returns a reversible string representation.
 ##### `PutEnvironment` <a name="PutEnvironment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.putEnvironment"></a>
 
 ```csharp
-private void PutEnvironment(object Value)
+private void PutEnvironment(IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.putEnvironment.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]
 
 ---
 
 ##### `PutResourceRequirement` <a name="PutResourceRequirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.putResourceRequirement"></a>
 
 ```csharp
-private void PutResourceRequirement(object Value)
+private void PutResourceRequirement(IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.putResourceRequirement.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]
 
 ---
 
@@ -14778,9 +14778,9 @@ private void ResetResourceRequirement()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environment">Environment</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirement">ResourceRequirement</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.commandInput">CommandInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environmentInput">EnvironmentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environmentInput">EnvironmentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.instanceTypeInput">InstanceTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirementInput">ResourceRequirementInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirementInput">ResourceRequirementInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.command">Command</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.instanceType">InstanceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides">PipesPipeTargetParametersBatchJobParametersContainerOverrides</a></code> | *No description.* |
@@ -14844,10 +14844,10 @@ public string[] CommandInput { get; }
 ##### `EnvironmentInput`<sup>Optional</sup> <a name="EnvironmentInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environmentInput"></a>
 
 ```csharp
-public object EnvironmentInput { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment[] EnvironmentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>[]
 
 ---
 
@@ -14864,10 +14864,10 @@ public string InstanceTypeInput { get; }
 ##### `ResourceRequirementInput`<sup>Optional</sup> <a name="ResourceRequirementInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirementInput"></a>
 
 ```csharp
-public object ResourceRequirementInput { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] ResourceRequirementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]
 
 ---
 
@@ -15023,7 +15023,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]</code> | *No description.* |
 
 ---
 
@@ -15054,10 +15054,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>[]
 
 ---
 
@@ -15294,7 +15294,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a></code> | *No description.* |
 
 ---
 
@@ -15365,10 +15365,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>
 
 ---
 
@@ -15494,7 +15494,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]</code> | *No description.* |
 
 ---
 
@@ -15525,10 +15525,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersDependsOn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]
 
 ---
 
@@ -15779,7 +15779,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.jobId">JobId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a></code> | *No description.* |
 
 ---
 
@@ -15850,10 +15850,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersDependsOn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>
 
 ---
 
@@ -16097,12 +16097,12 @@ private void PutContainerOverrides(PipesPipeTargetParametersBatchJobParametersCo
 ##### `PutDependsOn` <a name="PutDependsOn" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.putDependsOn"></a>
 
 ```csharp
-private void PutDependsOn(object Value)
+private void PutDependsOn(IResolvable|PipesPipeTargetParametersBatchJobParametersDependsOn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.putDependsOn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]
 
 ---
 
@@ -16161,7 +16161,7 @@ private void ResetRetryStrategy()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.retryStrategy">RetryStrategy</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference">PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.arrayPropertiesInput">ArrayPropertiesInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties">PipesPipeTargetParametersBatchJobParametersArrayProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.containerOverridesInput">ContainerOverridesInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides">PipesPipeTargetParametersBatchJobParametersContainerOverrides</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.dependsOnInput">DependsOnInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.dependsOnInput">DependsOnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.jobDefinitionInput">JobDefinitionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.jobNameInput">JobNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -16260,10 +16260,10 @@ public PipesPipeTargetParametersBatchJobParametersContainerOverrides ContainerOv
 ##### `DependsOnInput`<sup>Optional</sup> <a name="DependsOnInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.dependsOnInput"></a>
 
 ```csharp
-public object DependsOnInput { get; }
+public IResolvable|PipesPipeTargetParametersBatchJobParametersDependsOn[] DependsOnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>[]
 
 ---
 
@@ -17054,7 +17054,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]</code> | *No description.* |
 
 ---
 
@@ -17085,10 +17085,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]
 
 ---
 
@@ -17341,7 +17341,7 @@ private void ResetWeight()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.base">Base</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.capacityProvider">CapacityProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.weight">Weight</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a></code> | *No description.* |
 
 ---
 
@@ -17432,10 +17432,10 @@ public double Weight { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>
 
 ---
 
@@ -18292,12 +18292,12 @@ Returns a reversible string representation.
 ##### `PutCapacityProviderStrategy` <a name="PutCapacityProviderStrategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putCapacityProviderStrategy"></a>
 
 ```csharp
-private void PutCapacityProviderStrategy(object Value)
+private void PutCapacityProviderStrategy(IResolvable|PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putCapacityProviderStrategy.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]
 
 ---
 
@@ -18328,24 +18328,24 @@ private void PutOverrides(PipesPipeTargetParametersEcsTaskParametersOverrides Va
 ##### `PutPlacementConstraint` <a name="PutPlacementConstraint" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putPlacementConstraint"></a>
 
 ```csharp
-private void PutPlacementConstraint(object Value)
+private void PutPlacementConstraint(IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putPlacementConstraint.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]
 
 ---
 
 ##### `PutPlacementStrategy` <a name="PutPlacementStrategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putPlacementStrategy"></a>
 
 ```csharp
-private void PutPlacementStrategy(object Value)
+private void PutPlacementStrategy(IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putPlacementStrategy.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]
 
 ---
 
@@ -18445,23 +18445,23 @@ private void ResetTaskCount()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.overrides">Overrides</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference">PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraint">PlacementConstraint</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList">PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategy">PlacementStrategy</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList">PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.capacityProviderStrategyInput">CapacityProviderStrategyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTagsInput">EnableEcsManagedTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommandInput">EnableExecuteCommandInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.capacityProviderStrategyInput">CapacityProviderStrategyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTagsInput">EnableEcsManagedTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommandInput">EnableExecuteCommandInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.groupInput">GroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.launchTypeInput">LaunchTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.networkConfigurationInput">NetworkConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration">PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.overridesInput">OverridesInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides">PipesPipeTargetParametersEcsTaskParametersOverrides</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraintInput">PlacementConstraintInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategyInput">PlacementStrategyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraintInput">PlacementConstraintInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategyInput">PlacementStrategyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.platformVersionInput">PlatformVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.propagateTagsInput">PropagateTagsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.referenceIdInput">ReferenceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.taskCountInput">TaskCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.taskDefinitionArnInput">TaskDefinitionArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.group">Group</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.launchType">LaunchType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.platformVersion">PlatformVersion</a></code> | <code>string</code> | *No description.* |
@@ -18551,30 +18551,30 @@ public PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList Placement
 ##### `CapacityProviderStrategyInput`<sup>Optional</sup> <a name="CapacityProviderStrategyInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.capacityProviderStrategyInput"></a>
 
 ```csharp
-public object CapacityProviderStrategyInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy[] CapacityProviderStrategyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>[]
 
 ---
 
 ##### `EnableEcsManagedTagsInput`<sup>Optional</sup> <a name="EnableEcsManagedTagsInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTagsInput"></a>
 
 ```csharp
-public object EnableEcsManagedTagsInput { get; }
+public bool|IResolvable EnableEcsManagedTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableExecuteCommandInput`<sup>Optional</sup> <a name="EnableExecuteCommandInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommandInput"></a>
 
 ```csharp
-public object EnableExecuteCommandInput { get; }
+public bool|IResolvable EnableExecuteCommandInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18621,20 +18621,20 @@ public PipesPipeTargetParametersEcsTaskParametersOverrides OverridesInput { get;
 ##### `PlacementConstraintInput`<sup>Optional</sup> <a name="PlacementConstraintInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraintInput"></a>
 
 ```csharp
-public object PlacementConstraintInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] PlacementConstraintInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]
 
 ---
 
 ##### `PlacementStrategyInput`<sup>Optional</sup> <a name="PlacementStrategyInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategyInput"></a>
 
 ```csharp
-public object PlacementStrategyInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] PlacementStrategyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]
 
 ---
 
@@ -18701,20 +18701,20 @@ public string TaskDefinitionArnInput { get; }
 ##### `EnableEcsManagedTags`<sup>Required</sup> <a name="EnableEcsManagedTags" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTags"></a>
 
 ```csharp
-public object EnableEcsManagedTags { get; }
+public bool|IResolvable EnableEcsManagedTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableExecuteCommand`<sup>Required</sup> <a name="EnableExecuteCommand" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommand"></a>
 
 ```csharp
-public object EnableExecuteCommand { get; }
+public bool|IResolvable EnableExecuteCommand { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18930,7 +18930,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]</code> | *No description.* |
 
 ---
 
@@ -18961,10 +18961,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]
 
 ---
 
@@ -19201,7 +19201,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a></code> | *No description.* |
 
 ---
 
@@ -19272,10 +19272,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>
 
 ---
 
@@ -19401,7 +19401,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]</code> | *No description.* |
 
 ---
 
@@ -19432,10 +19432,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]
 
 ---
 
@@ -19686,7 +19686,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a></code> | *No description.* |
 
 ---
 
@@ -19757,10 +19757,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>
 
 ---
 
@@ -19886,7 +19886,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]</code> | *No description.* |
 
 ---
 
@@ -19917,10 +19917,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]
 
 ---
 
@@ -20160,36 +20160,36 @@ Returns a reversible string representation.
 ##### `PutEnvironment` <a name="PutEnvironment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putEnvironment"></a>
 
 ```csharp
-private void PutEnvironment(object Value)
+private void PutEnvironment(IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putEnvironment.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]
 
 ---
 
 ##### `PutEnvironmentFile` <a name="PutEnvironmentFile" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putEnvironmentFile"></a>
 
 ```csharp
-private void PutEnvironmentFile(object Value)
+private void PutEnvironmentFile(IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putEnvironmentFile.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]
 
 ---
 
 ##### `PutResourceRequirement` <a name="PutResourceRequirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putResourceRequirement"></a>
 
 ```csharp
-private void PutResourceRequirement(object Value)
+private void PutResourceRequirement(IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putResourceRequirement.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]
 
 ---
 
@@ -20253,18 +20253,18 @@ private void ResetResourceRequirement()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirement">ResourceRequirement</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.commandInput">CommandInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.cpuInput">CpuInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentFileInput">EnvironmentFileInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentInput">EnvironmentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentFileInput">EnvironmentFileInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentInput">EnvironmentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memoryInput">MemoryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memoryReservationInput">MemoryReservationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirementInput">ResourceRequirementInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirementInput">ResourceRequirementInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.command">Command</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.cpu">Cpu</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memory">Memory</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a></code> | *No description.* |
 
 ---
 
@@ -20345,20 +20345,20 @@ public double CpuInput { get; }
 ##### `EnvironmentFileInput`<sup>Optional</sup> <a name="EnvironmentFileInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentFileInput"></a>
 
 ```csharp
-public object EnvironmentFileInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile[] EnvironmentFileInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>[]
 
 ---
 
 ##### `EnvironmentInput`<sup>Optional</sup> <a name="EnvironmentInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentInput"></a>
 
 ```csharp
-public object EnvironmentInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment[] EnvironmentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>[]
 
 ---
 
@@ -20395,10 +20395,10 @@ public string NameInput { get; }
 ##### `ResourceRequirementInput`<sup>Optional</sup> <a name="ResourceRequirementInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirementInput"></a>
 
 ```csharp
-public object ResourceRequirementInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] ResourceRequirementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]
 
 ---
 
@@ -20455,10 +20455,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>
 
 ---
 
@@ -20584,7 +20584,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]</code> | *No description.* |
 
 ---
 
@@ -20615,10 +20615,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>[]
 
 ---
 
@@ -20855,7 +20855,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a></code> | *No description.* |
 
 ---
 
@@ -20926,10 +20926,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>
 
 ---
 
@@ -21326,7 +21326,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]</code> | *No description.* |
 
 ---
 
@@ -21357,10 +21357,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]
 
 ---
 
@@ -21611,7 +21611,7 @@ private void ResetDeviceType()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.deviceTypeInput">DeviceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.deviceName">DeviceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.deviceType">DeviceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a></code> | *No description.* |
 
 ---
 
@@ -21682,10 +21682,10 @@ public string DeviceType { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>
 
 ---
 
@@ -21906,12 +21906,12 @@ Returns a reversible string representation.
 ##### `PutContainerOverride` <a name="PutContainerOverride" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.putContainerOverride"></a>
 
 ```csharp
-private void PutContainerOverride(object Value)
+private void PutContainerOverride(IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.putContainerOverride.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]
 
 ---
 
@@ -21930,12 +21930,12 @@ private void PutEphemeralStorage(PipesPipeTargetParametersEcsTaskParametersOverr
 ##### `PutInferenceAcceleratorOverride` <a name="PutInferenceAcceleratorOverride" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.putInferenceAcceleratorOverride"></a>
 
 ```csharp
-private void PutInferenceAcceleratorOverride(object Value)
+private void PutInferenceAcceleratorOverride(IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.putInferenceAcceleratorOverride.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]
 
 ---
 
@@ -21991,11 +21991,11 @@ private void ResetTaskRoleArn()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverride">ContainerOverride</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.ephemeralStorage">EphemeralStorage</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference">PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverride">InferenceAcceleratorOverride</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverrideInput">ContainerOverrideInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverrideInput">ContainerOverrideInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.cpuInput">CpuInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.ephemeralStorageInput">EphemeralStorageInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage">PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.executionRoleArnInput">ExecutionRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverrideInput">InferenceAcceleratorOverrideInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverrideInput">InferenceAcceleratorOverrideInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.memoryInput">MemoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.taskRoleArnInput">TaskRoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.cpu">Cpu</a></code> | <code>string</code> | *No description.* |
@@ -22063,10 +22063,10 @@ public PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOv
 ##### `ContainerOverrideInput`<sup>Optional</sup> <a name="ContainerOverrideInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverrideInput"></a>
 
 ```csharp
-public object ContainerOverrideInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride[] ContainerOverrideInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>[]
 
 ---
 
@@ -22103,10 +22103,10 @@ public string ExecutionRoleArnInput { get; }
 ##### `InferenceAcceleratorOverrideInput`<sup>Optional</sup> <a name="InferenceAcceleratorOverrideInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverrideInput"></a>
 
 ```csharp
-public object InferenceAcceleratorOverrideInput { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride[] InferenceAcceleratorOverrideInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>[]
 
 ---
 
@@ -22302,7 +22302,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]</code> | *No description.* |
 
 ---
 
@@ -22333,10 +22333,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementConstraint[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>[]
 
 ---
 
@@ -22587,7 +22587,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a></code> | *No description.* |
 
 ---
 
@@ -22658,10 +22658,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementConstraint InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>
 
 ---
 
@@ -22787,7 +22787,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]</code> | *No description.* |
 
 ---
 
@@ -22818,10 +22818,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementStrategy[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>[]
 
 ---
 
@@ -23072,7 +23072,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a></code> | *No description.* |
 
 ---
 
@@ -23143,10 +23143,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersEcsTaskParametersPlacementStrategy InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>
 
 ---
 
@@ -25406,13 +25406,13 @@ private void ResetWithEvent()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.secretManagerArnInput">SecretManagerArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.sqlsInput">SqlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.statementNameInput">StatementNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEventInput">WithEventInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEventInput">WithEventInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.dbUser">DbUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.secretManagerArn">SecretManagerArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.sqls">Sqls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.statementName">StatementName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEvent">WithEvent</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEvent">WithEvent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters">PipesPipeTargetParametersRedshiftDataParameters</a></code> | *No description.* |
 
 ---
@@ -25494,10 +25494,10 @@ public string StatementNameInput { get; }
 ##### `WithEventInput`<sup>Optional</sup> <a name="WithEventInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEventInput"></a>
 
 ```csharp
-public object WithEventInput { get; }
+public bool|IResolvable WithEventInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25554,10 +25554,10 @@ public string StatementName { get; }
 ##### `WithEvent`<sup>Required</sup> <a name="WithEvent" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEvent"></a>
 
 ```csharp
-public object WithEvent { get; }
+public bool|IResolvable WithEvent { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25780,12 +25780,12 @@ Returns a reversible string representation.
 ##### `PutPipelineParameter` <a name="PutPipelineParameter" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.putPipelineParameter"></a>
 
 ```csharp
-private void PutPipelineParameter(object Value)
+private void PutPipelineParameter(IResolvable|PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.putPipelineParameter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]
 
 ---
 
@@ -25803,7 +25803,7 @@ private void ResetPipelineParameter()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameter">PipelineParameter</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameterInput">PipelineParameterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameterInput">PipelineParameterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters">PipesPipeTargetParametersSagemakerPipelineParameters</a></code> | *No description.* |
 
 ---
@@ -25845,10 +25845,10 @@ public PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList
 ##### `PipelineParameterInput`<sup>Optional</sup> <a name="PipelineParameterInput" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameterInput"></a>
 
 ```csharp
-public object PipelineParameterInput { get; }
+public IResolvable|PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] PipelineParameterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]
 
 ---
 
@@ -25984,7 +25984,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -26015,10 +26015,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>[]
 
 ---
 
@@ -26255,7 +26255,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a></code> | *No description.* |
 
 ---
 
@@ -26326,10 +26326,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>
 
 ---
 
@@ -27149,7 +27149,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -27240,10 +27240,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipesPipeTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>
 
 ---
 

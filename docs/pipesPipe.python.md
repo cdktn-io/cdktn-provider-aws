@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_aws import pipes_pipe
 pipesPipe.PipesPipe(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   role_arn: str,
   source: str,
   target: str,
@@ -46,13 +46,13 @@ pipesPipe.PipesPipe(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
@@ -94,13 +94,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -565,7 +565,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.pipesPipe.PipesPipe.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.pipesPipe.PipesPipe.importFrom"></a>
@@ -628,7 +628,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -644,7 +644,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.pipesPipe.PipesPipe.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1246,13 +1246,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.enrichmentParameters">enrichment_parameters</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeEnrichmentParametersOutputReference">PipesPipeEnrichmentParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.logConfiguration">log_configuration</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeLogConfigurationOutputReference">PipesPipeLogConfigurationOutputReference</a></code> | *No description.* |
@@ -1276,7 +1276,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.targetParametersInput">target_parameters_input</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters">PipesPipeTargetParameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.desiredState">desired_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.enrichment">enrichment</a></code> | <code>str</code> | *No description.* |
@@ -1368,20 +1368,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1428,10 +1428,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1668,10 +1668,10 @@ target_parameters_input: PipesPipeTargetParameters
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, PipesPipeTimeouts]
+timeouts_input: IResolvable | PipesPipeTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>
 
 ---
 
@@ -1833,13 +1833,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import pipes_pipe
 
 pipesPipe.PipesPipeConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   role_arn: str,
   source: str,
   target: str,
@@ -1865,13 +1865,13 @@ pipesPipe.PipesPipeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
@@ -1896,20 +1896,20 @@ pipesPipe.PipesPipeConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1956,10 +1956,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2960,7 +2960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import pipes_pipe
 
 pipesPipe.PipesPipeSourceParametersFilterCriteria(
-  filter: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCriteriaFilter]] = None
+  filter: IResolvable | typing.List[PipesPipeSourceParametersFilterCriteriaFilter] = None
 )
 ```
 
@@ -2968,17 +2968,17 @@ pipesPipe.PipesPipeSourceParametersFilterCriteria(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.property.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]</code> | filter block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.property.filter">filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]</code> | filter block. |
 
 ---
 
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria.property.filter"></a>
 
 ```python
-filter: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCriteriaFilter]]
+filter: IResolvable | typing.List[PipesPipeSourceParametersFilterCriteriaFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]
 
 filter block.
 
@@ -4002,7 +4002,7 @@ pipesPipe.PipesPipeTargetParametersBatchJobParameters(
   job_name: str,
   array_properties: PipesPipeTargetParametersBatchJobParametersArrayProperties = None,
   container_overrides: PipesPipeTargetParametersBatchJobParametersContainerOverrides = None,
-  depends_on: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]] = None,
+  depends_on: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn] = None,
   parameters: typing.Mapping[str] = None,
   retry_strategy: PipesPipeTargetParametersBatchJobParametersRetryStrategy = None
 )
@@ -4016,7 +4016,7 @@ pipesPipe.PipesPipeTargetParametersBatchJobParameters(
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.jobName">job_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#job_name PipesPipe#job_name}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.arrayProperties">array_properties</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties">PipesPipeTargetParametersBatchJobParametersArrayProperties</a></code> | array_properties block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.containerOverrides">container_overrides</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides">PipesPipeTargetParametersBatchJobParametersContainerOverrides</a></code> | container_overrides block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.dependsOn">depends_on</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]</code> | depends_on block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.dependsOn">depends_on</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]</code> | depends_on block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#parameters PipesPipe#parameters}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.retryStrategy">retry_strategy</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategy">PipesPipeTargetParametersBatchJobParametersRetryStrategy</a></code> | retry_strategy block. |
 
@@ -4077,10 +4077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParameters.property.dependsOn"></a>
 
 ```python
-depends_on: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]]
+depends_on: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]
 
 depends_on block.
 
@@ -4155,9 +4155,9 @@ from cdktf_cdktf_provider_aws import pipes_pipe
 
 pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides(
   command: typing.List[str] = None,
-  environment: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]] = None,
+  environment: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment] = None,
   instance_type: str = None,
-  resource_requirement: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]] = None
+  resource_requirement: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement] = None
 )
 ```
 
@@ -4166,9 +4166,9 @@ pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.command">command</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#command PipesPipe#command}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.environment">environment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]</code> | environment block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.environment">environment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]</code> | environment block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#instance_type PipesPipe#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.resourceRequirement">resource_requirement</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]</code> | resource_requirement block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.resourceRequirement">resource_requirement</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]</code> | resource_requirement block. |
 
 ---
 
@@ -4187,10 +4187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `environment`<sup>Optional</sup> <a name="environment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.environment"></a>
 
 ```python
-environment: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]]
+environment: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]
 
 environment block.
 
@@ -4213,10 +4213,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_requirement`<sup>Optional</sup> <a name="resource_requirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides.property.resourceRequirement"></a>
 
 ```python
-resource_requirement: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]]
+resource_requirement: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]
 
 resource_requirement block.
 
@@ -4449,15 +4449,15 @@ from cdktf_cdktf_provider_aws import pipes_pipe
 
 pipesPipe.PipesPipeTargetParametersEcsTaskParameters(
   task_definition_arn: str,
-  capacity_provider_strategy: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]] = None,
-  enable_ecs_managed_tags: typing.Union[bool, IResolvable] = None,
-  enable_execute_command: typing.Union[bool, IResolvable] = None,
+  capacity_provider_strategy: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy] = None,
+  enable_ecs_managed_tags: bool | IResolvable = None,
+  enable_execute_command: bool | IResolvable = None,
   group: str = None,
   launch_type: str = None,
   network_configuration: PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration = None,
   overrides: PipesPipeTargetParametersEcsTaskParametersOverrides = None,
-  placement_constraint: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]] = None,
-  placement_strategy: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]] = None,
+  placement_constraint: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint] = None,
+  placement_strategy: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy] = None,
   platform_version: str = None,
   propagate_tags: str = None,
   reference_id: str = None,
@@ -4471,15 +4471,15 @@ pipesPipe.PipesPipeTargetParametersEcsTaskParameters(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.taskDefinitionArn">task_definition_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#task_definition_arn PipesPipe#task_definition_arn}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]</code> | capacity_provider_strategy block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableExecuteCommand">enable_execute_command</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.capacityProviderStrategy">capacity_provider_strategy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]</code> | capacity_provider_strategy block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableExecuteCommand">enable_execute_command</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#group PipesPipe#group}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.launchType">launch_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#launch_type PipesPipe#launch_type}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.networkConfiguration">network_configuration</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration">PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration</a></code> | network_configuration block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.overrides">overrides</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides">PipesPipeTargetParametersEcsTaskParametersOverrides</a></code> | overrides block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementConstraint">placement_constraint</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]</code> | placement_constraint block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementStrategy">placement_strategy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]</code> | placement_strategy block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementConstraint">placement_constraint</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]</code> | placement_constraint block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementStrategy">placement_strategy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]</code> | placement_strategy block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.platformVersion">platform_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#platform_version PipesPipe#platform_version}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.propagateTags">propagate_tags</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#propagate_tags PipesPipe#propagate_tags}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.referenceId">reference_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#reference_id PipesPipe#reference_id}. |
@@ -4503,10 +4503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `capacity_provider_strategy`<sup>Optional</sup> <a name="capacity_provider_strategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.capacityProviderStrategy"></a>
 
 ```python
-capacity_provider_strategy: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]]
+capacity_provider_strategy: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]
 
 capacity_provider_strategy block.
 
@@ -4517,10 +4517,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_ecs_managed_tags`<sup>Optional</sup> <a name="enable_ecs_managed_tags" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableEcsManagedTags"></a>
 
 ```python
-enable_ecs_managed_tags: typing.Union[bool, IResolvable]
+enable_ecs_managed_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}.
 
@@ -4529,10 +4529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_execute_command`<sup>Optional</sup> <a name="enable_execute_command" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.enableExecuteCommand"></a>
 
 ```python
-enable_execute_command: typing.Union[bool, IResolvable]
+enable_execute_command: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}.
 
@@ -4593,10 +4593,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `placement_constraint`<sup>Optional</sup> <a name="placement_constraint" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementConstraint"></a>
 
 ```python
-placement_constraint: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]]
+placement_constraint: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]
 
 placement_constraint block.
 
@@ -4607,10 +4607,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `placement_strategy`<sup>Optional</sup> <a name="placement_strategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParameters.property.placementStrategy"></a>
 
 ```python
-placement_strategy: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]]
+placement_strategy: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]
 
 placement_strategy block.
 
@@ -4840,11 +4840,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import pipes_pipe
 
 pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides(
-  container_override: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]] = None,
+  container_override: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride] = None,
   cpu: str = None,
   ephemeral_storage: PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage = None,
   execution_role_arn: str = None,
-  inference_accelerator_override: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]] = None,
+  inference_accelerator_override: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride] = None,
   memory: str = None,
   task_role_arn: str = None
 )
@@ -4854,11 +4854,11 @@ pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.containerOverride">container_override</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]</code> | container_override block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.containerOverride">container_override</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]</code> | container_override block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.cpu">cpu</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#cpu PipesPipe#cpu}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.ephemeralStorage">ephemeral_storage</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage">PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage</a></code> | ephemeral_storage block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#execution_role_arn PipesPipe#execution_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.inferenceAcceleratorOverride">inference_accelerator_override</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]</code> | inference_accelerator_override block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.inferenceAcceleratorOverride">inference_accelerator_override</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]</code> | inference_accelerator_override block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.memory">memory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#memory PipesPipe#memory}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.taskRoleArn">task_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#task_role_arn PipesPipe#task_role_arn}. |
 
@@ -4867,10 +4867,10 @@ pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides(
 ##### `container_override`<sup>Optional</sup> <a name="container_override" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.containerOverride"></a>
 
 ```python
-container_override: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]]
+container_override: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]
 
 container_override block.
 
@@ -4919,10 +4919,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `inference_accelerator_override`<sup>Optional</sup> <a name="inference_accelerator_override" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides.property.inferenceAcceleratorOverride"></a>
 
 ```python
-inference_accelerator_override: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]]
+inference_accelerator_override: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]
 
 inference_accelerator_override block.
 
@@ -4964,12 +4964,12 @@ from cdktf_cdktf_provider_aws import pipes_pipe
 pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride(
   command: typing.List[str] = None,
   cpu: typing.Union[int, float] = None,
-  environment: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]] = None,
-  environment_file: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]] = None,
+  environment: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment] = None,
+  environment_file: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile] = None,
   memory: typing.Union[int, float] = None,
   memory_reservation: typing.Union[int, float] = None,
   name: str = None,
-  resource_requirement: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]] = None
+  resource_requirement: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement] = None
 )
 ```
 
@@ -4979,12 +4979,12 @@ pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.command">command</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#command PipesPipe#command}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.cpu">cpu</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#cpu PipesPipe#cpu}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environment">environment</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]</code> | environment block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environmentFile">environment_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]</code> | environment_file block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environment">environment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]</code> | environment block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environmentFile">environment_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]</code> | environment_file block. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.memory">memory</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#memory PipesPipe#memory}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#memory_reservation PipesPipe#memory_reservation}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#name PipesPipe#name}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.resourceRequirement">resource_requirement</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]</code> | resource_requirement block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.resourceRequirement">resource_requirement</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]</code> | resource_requirement block. |
 
 ---
 
@@ -5015,10 +5015,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `environment`<sup>Optional</sup> <a name="environment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environment"></a>
 
 ```python
-environment: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]]
+environment: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]
 
 environment block.
 
@@ -5029,10 +5029,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `environment_file`<sup>Optional</sup> <a name="environment_file" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.environmentFile"></a>
 
 ```python
-environment_file: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]]
+environment_file: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]
 
 environment_file block.
 
@@ -5079,10 +5079,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resource_requirement`<sup>Optional</sup> <a name="resource_requirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride.property.resourceRequirement"></a>
 
 ```python
-resource_requirement: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]]
+resource_requirement: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]
 
 resource_requirement block.
 
@@ -5623,7 +5623,7 @@ pipesPipe.PipesPipeTargetParametersRedshiftDataParameters(
   db_user: str = None,
   secret_manager_arn: str = None,
   statement_name: str = None,
-  with_event: typing.Union[bool, IResolvable] = None
+  with_event: bool | IResolvable = None
 )
 ```
 
@@ -5636,7 +5636,7 @@ pipesPipe.PipesPipeTargetParametersRedshiftDataParameters(
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.dbUser">db_user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#db_user PipesPipe#db_user}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.secretManagerArn">secret_manager_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#secret_manager_arn PipesPipe#secret_manager_arn}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.statementName">statement_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#statement_name PipesPipe#statement_name}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.withEvent">with_event</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.withEvent">with_event</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}. |
 
 ---
 
@@ -5703,10 +5703,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `with_event`<sup>Optional</sup> <a name="with_event" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters.property.withEvent"></a>
 
 ```python
-with_event: typing.Union[bool, IResolvable]
+with_event: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}.
 
@@ -5720,7 +5720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import pipes_pipe
 
 pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters(
-  pipeline_parameter: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]] = None
+  pipeline_parameter: IResolvable | typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter] = None
 )
 ```
 
@@ -5728,17 +5728,17 @@ pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.property.pipelineParameter">pipeline_parameter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]</code> | pipeline_parameter block. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.property.pipelineParameter">pipeline_parameter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]</code> | pipeline_parameter block. |
 
 ---
 
 ##### `pipeline_parameter`<sup>Optional</sup> <a name="pipeline_parameter" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters.property.pipelineParameter"></a>
 
 ```python
-pipeline_parameter: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]]
+pipeline_parameter: IResolvable | typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]
 
 pipeline_parameter block.
 
@@ -9757,7 +9757,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -9788,10 +9788,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCriteriaFilter]]
+internal_value: IResolvable | typing.List[PipesPipeSourceParametersFilterCriteriaFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]
 
 ---
 
@@ -10053,7 +10053,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a></code> | *No description.* |
 
 ---
 
@@ -10104,10 +10104,10 @@ pattern: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeSourceParametersFilterCriteriaFilter]
+internal_value: IResolvable | PipesPipeSourceParametersFilterCriteriaFilter
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>
 
 ---
 
@@ -10346,13 +10346,13 @@ Returns a reversible string representation.
 
 ```python
 def put_filter(
-  value: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCriteriaFilter]]
+  value: IResolvable | typing.List[PipesPipeSourceParametersFilterCriteriaFilter]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.putFilter.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]
 
 ---
 
@@ -10370,7 +10370,7 @@ def reset_filter() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterList">PipesPipeSourceParametersFilterCriteriaFilterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filterInput">filter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filterInput">filter_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteria">PipesPipeSourceParametersFilterCriteria</a></code> | *No description.* |
 
 ---
@@ -10412,10 +10412,10 @@ filter: PipesPipeSourceParametersFilterCriteriaFilterList
 ##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaOutputReference.property.filterInput"></a>
 
 ```python
-filter_input: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCriteriaFilter]]
+filter_input: IResolvable | typing.List[PipesPipeSourceParametersFilterCriteriaFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]
 
 ---
 
@@ -12451,13 +12451,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_filter_criteria(
-  filter: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCriteriaFilter]] = None
+  filter: IResolvable | typing.List[PipesPipeSourceParametersFilterCriteriaFilter] = None
 ) -> None
 ```
 
 ###### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersOutputReference.putFilterCriteria.parameter.filter"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>]
 
 filter block.
 
@@ -15863,7 +15863,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]</code> | *No description.* |
 
 ---
 
@@ -15894,10 +15894,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]
 
 ---
 
@@ -16175,7 +16175,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a></code> | *No description.* |
 
 ---
 
@@ -16246,10 +16246,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]
+internal_value: IResolvable | PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>
 
 ---
 
@@ -16492,13 +16492,13 @@ Returns a reversible string representation.
 
 ```python
 def put_environment(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.putEnvironment.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]
 
 ---
 
@@ -16506,13 +16506,13 @@ def put_environment(
 
 ```python
 def put_resource_requirement(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.putResourceRequirement.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]
 
 ---
 
@@ -16550,9 +16550,9 @@ def reset_resource_requirement() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environment">environment</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirement">resource_requirement</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.commandInput">command_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environmentInput">environment_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environmentInput">environment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.instanceTypeInput">instance_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirementInput">resource_requirement_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirementInput">resource_requirement_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.command">command</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.instanceType">instance_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides">PipesPipeTargetParametersBatchJobParametersContainerOverrides</a></code> | *No description.* |
@@ -16616,10 +16616,10 @@ command_input: typing.List[str]
 ##### `environment_input`<sup>Optional</sup> <a name="environment_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.environmentInput"></a>
 
 ```python
-environment_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]]
+environment_input: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]
 
 ---
 
@@ -16636,10 +16636,10 @@ instance_type_input: str
 ##### `resource_requirement_input`<sup>Optional</sup> <a name="resource_requirement_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference.property.resourceRequirementInput"></a>
 
 ```python
-resource_requirement_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]]
+resource_requirement_input: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]
 
 ---
 
@@ -16805,7 +16805,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]</code> | *No description.* |
 
 ---
 
@@ -16836,10 +16836,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]
 
 ---
 
@@ -17103,7 +17103,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a></code> | *No description.* |
 
 ---
 
@@ -17174,10 +17174,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]
+internal_value: IResolvable | PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>
 
 ---
 
@@ -17313,7 +17313,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]</code> | *No description.* |
 
 ---
 
@@ -17344,10 +17344,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]
 
 ---
 
@@ -17625,7 +17625,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.jobId">job_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a></code> | *No description.* |
 
 ---
 
@@ -17696,10 +17696,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersBatchJobParametersDependsOn]
+internal_value: IResolvable | PipesPipeTargetParametersBatchJobParametersDependsOn
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>
 
 ---
 
@@ -17962,9 +17962,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_container_overrides(
   command: typing.List[str] = None,
-  environment: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment]] = None,
+  environment: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment] = None,
   instance_type: str = None,
-  resource_requirement: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement]] = None
+  resource_requirement: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement] = None
 ) -> None
 ```
 
@@ -17978,7 +17978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `environment`<sup>Optional</sup> <a name="environment" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.putContainerOverrides.parameter.environment"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment">PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironment</a>]
 
 environment block.
 
@@ -17996,7 +17996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `resource_requirement`<sup>Optional</sup> <a name="resource_requirement" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.putContainerOverrides.parameter.resourceRequirement"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement">PipesPipeTargetParametersBatchJobParametersContainerOverridesResourceRequirement</a>]
 
 resource_requirement block.
 
@@ -18008,13 +18008,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_depends_on(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.putDependsOn.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]
 
 ---
 
@@ -18077,7 +18077,7 @@ def reset_retry_strategy() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.retryStrategy">retry_strategy</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference">PipesPipeTargetParametersBatchJobParametersRetryStrategyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.arrayPropertiesInput">array_properties_input</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersArrayProperties">PipesPipeTargetParametersBatchJobParametersArrayProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.containerOverridesInput">container_overrides_input</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersContainerOverrides">PipesPipeTargetParametersBatchJobParametersContainerOverrides</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.dependsOnInput">depends_on_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.dependsOnInput">depends_on_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.jobDefinitionInput">job_definition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.jobNameInput">job_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -18176,10 +18176,10 @@ container_overrides_input: PipesPipeTargetParametersBatchJobParametersContainerO
 ##### `depends_on_input`<sup>Optional</sup> <a name="depends_on_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersOutputReference.property.dependsOnInput"></a>
 
 ```python
-depends_on_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]]
+depends_on_input: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]
 
 ---
 
@@ -19030,7 +19030,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]</code> | *No description.* |
 
 ---
 
@@ -19061,10 +19061,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]
 
 ---
 
@@ -19344,7 +19344,7 @@ def reset_weight() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.base">base</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.capacityProvider">capacity_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a></code> | *No description.* |
 
 ---
 
@@ -19435,10 +19435,10 @@ weight: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>
 
 ---
 
@@ -20393,13 +20393,13 @@ Returns a reversible string representation.
 
 ```python
 def put_capacity_provider_strategy(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putCapacityProviderStrategy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]
 
 ---
 
@@ -20425,11 +20425,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_overrides(
-  container_override: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]] = None,
+  container_override: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride] = None,
   cpu: str = None,
   ephemeral_storage: PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage = None,
   execution_role_arn: str = None,
-  inference_accelerator_override: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]] = None,
+  inference_accelerator_override: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride] = None,
   memory: str = None,
   task_role_arn: str = None
 ) -> None
@@ -20437,7 +20437,7 @@ def put_overrides(
 
 ###### `container_override`<sup>Optional</sup> <a name="container_override" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putOverrides.parameter.containerOverride"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]
 
 container_override block.
 
@@ -20473,7 +20473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `inference_accelerator_override`<sup>Optional</sup> <a name="inference_accelerator_override" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putOverrides.parameter.inferenceAcceleratorOverride"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]
 
 inference_accelerator_override block.
 
@@ -20501,13 +20501,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_placement_constraint(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putPlacementConstraint.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]
 
 ---
 
@@ -20515,13 +20515,13 @@ def put_placement_constraint(
 
 ```python
 def put_placement_strategy(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.putPlacementStrategy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]
 
 ---
 
@@ -20621,23 +20621,23 @@ def reset_task_count() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.overrides">overrides</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference">PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraint">placement_constraint</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList">PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategy">placement_strategy</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList">PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.capacityProviderStrategyInput">capacity_provider_strategy_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTagsInput">enable_ecs_managed_tags_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommandInput">enable_execute_command_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.capacityProviderStrategyInput">capacity_provider_strategy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTagsInput">enable_ecs_managed_tags_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommandInput">enable_execute_command_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.launchTypeInput">launch_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.networkConfigurationInput">network_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration">PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.overridesInput">overrides_input</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverrides">PipesPipeTargetParametersEcsTaskParametersOverrides</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraintInput">placement_constraint_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategyInput">placement_strategy_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraintInput">placement_constraint_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategyInput">placement_strategy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.platformVersionInput">platform_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.propagateTagsInput">propagate_tags_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.referenceIdInput">reference_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.taskCountInput">task_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.taskDefinitionArnInput">task_definition_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommand">enable_execute_command</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTags">enable_ecs_managed_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommand">enable_execute_command</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.group">group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.launchType">launch_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.platformVersion">platform_version</a></code> | <code>str</code> | *No description.* |
@@ -20727,30 +20727,30 @@ placement_strategy: PipesPipeTargetParametersEcsTaskParametersPlacementStrategyL
 ##### `capacity_provider_strategy_input`<sup>Optional</sup> <a name="capacity_provider_strategy_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.capacityProviderStrategyInput"></a>
 
 ```python
-capacity_provider_strategy_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]]
+capacity_provider_strategy_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]
 
 ---
 
 ##### `enable_ecs_managed_tags_input`<sup>Optional</sup> <a name="enable_ecs_managed_tags_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTagsInput"></a>
 
 ```python
-enable_ecs_managed_tags_input: typing.Union[bool, IResolvable]
+enable_ecs_managed_tags_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_execute_command_input`<sup>Optional</sup> <a name="enable_execute_command_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommandInput"></a>
 
 ```python
-enable_execute_command_input: typing.Union[bool, IResolvable]
+enable_execute_command_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -20797,20 +20797,20 @@ overrides_input: PipesPipeTargetParametersEcsTaskParametersOverrides
 ##### `placement_constraint_input`<sup>Optional</sup> <a name="placement_constraint_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementConstraintInput"></a>
 
 ```python
-placement_constraint_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]]
+placement_constraint_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]
 
 ---
 
 ##### `placement_strategy_input`<sup>Optional</sup> <a name="placement_strategy_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.placementStrategyInput"></a>
 
 ```python
-placement_strategy_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]]
+placement_strategy_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]
 
 ---
 
@@ -20877,20 +20877,20 @@ task_definition_arn_input: str
 ##### `enable_ecs_managed_tags`<sup>Required</sup> <a name="enable_ecs_managed_tags" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableEcsManagedTags"></a>
 
 ```python
-enable_ecs_managed_tags: typing.Union[bool, IResolvable]
+enable_ecs_managed_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_execute_command`<sup>Required</sup> <a name="enable_execute_command" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOutputReference.property.enableExecuteCommand"></a>
 
 ```python
-enable_execute_command: typing.Union[bool, IResolvable]
+enable_execute_command: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21116,7 +21116,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]</code> | *No description.* |
 
 ---
 
@@ -21147,10 +21147,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]
 
 ---
 
@@ -21414,7 +21414,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a></code> | *No description.* |
 
 ---
 
@@ -21485,10 +21485,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>
 
 ---
 
@@ -21624,7 +21624,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]</code> | *No description.* |
 
 ---
 
@@ -21655,10 +21655,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]
 
 ---
 
@@ -21936,7 +21936,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a></code> | *No description.* |
 
 ---
 
@@ -22007,10 +22007,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>
 
 ---
 
@@ -22146,7 +22146,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]</code> | *No description.* |
 
 ---
 
@@ -22177,10 +22177,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]
 
 ---
 
@@ -22448,13 +22448,13 @@ Returns a reversible string representation.
 
 ```python
 def put_environment(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putEnvironment.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]
 
 ---
 
@@ -22462,13 +22462,13 @@ def put_environment(
 
 ```python
 def put_environment_file(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putEnvironmentFile.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]
 
 ---
 
@@ -22476,13 +22476,13 @@ def put_environment_file(
 
 ```python
 def put_resource_requirement(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.putResourceRequirement.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]
 
 ---
 
@@ -22546,18 +22546,18 @@ def reset_resource_requirement() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirement">resource_requirement</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.commandInput">command_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.cpuInput">cpu_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentFileInput">environment_file_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentInput">environment_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentFileInput">environment_file_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentInput">environment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memoryInput">memory_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memoryReservationInput">memory_reservation_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirementInput">resource_requirement_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirementInput">resource_requirement_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.command">command</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.cpu">cpu</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memory">memory</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a></code> | *No description.* |
 
 ---
 
@@ -22638,20 +22638,20 @@ cpu_input: typing.Union[int, float]
 ##### `environment_file_input`<sup>Optional</sup> <a name="environment_file_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentFileInput"></a>
 
 ```python
-environment_file_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]]
+environment_file_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile</a>]
 
 ---
 
 ##### `environment_input`<sup>Optional</sup> <a name="environment_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.environmentInput"></a>
 
 ```python
-environment_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]]
+environment_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment</a>]
 
 ---
 
@@ -22688,10 +22688,10 @@ name_input: str
 ##### `resource_requirement_input`<sup>Optional</sup> <a name="resource_requirement_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.resourceRequirementInput"></a>
 
 ```python
-resource_requirement_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]]
+resource_requirement_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]
 
 ---
 
@@ -22748,10 +22748,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>
 
 ---
 
@@ -22887,7 +22887,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]</code> | *No description.* |
 
 ---
 
@@ -22918,10 +22918,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]
 
 ---
 
@@ -23185,7 +23185,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a></code> | *No description.* |
 
 ---
 
@@ -23256,10 +23256,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement</a>
 
 ---
 
@@ -23691,7 +23691,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]</code> | *No description.* |
 
 ---
 
@@ -23722,10 +23722,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]
 
 ---
 
@@ -24003,7 +24003,7 @@ def reset_device_type() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.deviceTypeInput">device_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.deviceType">device_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a></code> | *No description.* |
 
 ---
 
@@ -24074,10 +24074,10 @@ device_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>
 
 ---
 
@@ -24324,13 +24324,13 @@ Returns a reversible string representation.
 
 ```python
 def put_container_override(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.putContainerOverride.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]
 
 ---
 
@@ -24354,13 +24354,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_inference_accelerator_override(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.putInferenceAcceleratorOverride.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]
 
 ---
 
@@ -24416,11 +24416,11 @@ def reset_task_role_arn() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverride">container_override</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.ephemeralStorage">ephemeral_storage</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference">PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverride">inference_accelerator_override</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverrideInput">container_override_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverrideInput">container_override_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.cpuInput">cpu_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.ephemeralStorageInput">ephemeral_storage_input</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage">PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.executionRoleArnInput">execution_role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverrideInput">inference_accelerator_override_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverrideInput">inference_accelerator_override_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.memoryInput">memory_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.taskRoleArnInput">task_role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.cpu">cpu</a></code> | <code>str</code> | *No description.* |
@@ -24488,10 +24488,10 @@ inference_accelerator_override: PipesPipeTargetParametersEcsTaskParametersOverri
 ##### `container_override_input`<sup>Optional</sup> <a name="container_override_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.containerOverrideInput"></a>
 
 ```python
-container_override_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]]
+container_override_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride">PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverride</a>]
 
 ---
 
@@ -24528,10 +24528,10 @@ execution_role_arn_input: str
 ##### `inference_accelerator_override_input`<sup>Optional</sup> <a name="inference_accelerator_override_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesOutputReference.property.inferenceAcceleratorOverrideInput"></a>
 
 ```python
-inference_accelerator_override_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]]
+inference_accelerator_override_input: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride">PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride</a>]
 
 ---
 
@@ -24737,7 +24737,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]</code> | *No description.* |
 
 ---
 
@@ -24768,10 +24768,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]
 
 ---
 
@@ -25049,7 +25049,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a></code> | *No description.* |
 
 ---
 
@@ -25120,10 +25120,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraintOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersPlacementConstraint
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>
 
 ---
 
@@ -25259,7 +25259,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]</code> | *No description.* |
 
 ---
 
@@ -25290,10 +25290,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]
 
 ---
 
@@ -25571,7 +25571,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.field">field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a></code> | *No description.* |
 
 ---
 
@@ -25642,10 +25642,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]
+internal_value: IResolvable | PipesPipeTargetParametersEcsTaskParametersPlacementStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>
 
 ---
 
@@ -27281,7 +27281,7 @@ def put_batch_job_parameters(
   job_name: str,
   array_properties: PipesPipeTargetParametersBatchJobParametersArrayProperties = None,
   container_overrides: PipesPipeTargetParametersBatchJobParametersContainerOverrides = None,
-  depends_on: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn]] = None,
+  depends_on: IResolvable | typing.List[PipesPipeTargetParametersBatchJobParametersDependsOn] = None,
   parameters: typing.Mapping[str] = None,
   retry_strategy: PipesPipeTargetParametersBatchJobParametersRetryStrategy = None
 ) -> None
@@ -27325,7 +27325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putBatchJobParameters.parameter.dependsOn"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersBatchJobParametersDependsOn">PipesPipeTargetParametersBatchJobParametersDependsOn</a>]
 
 depends_on block.
 
@@ -27381,15 +27381,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_ecs_task_parameters(
   task_definition_arn: str,
-  capacity_provider_strategy: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy]] = None,
-  enable_ecs_managed_tags: typing.Union[bool, IResolvable] = None,
-  enable_execute_command: typing.Union[bool, IResolvable] = None,
+  capacity_provider_strategy: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy] = None,
+  enable_ecs_managed_tags: bool | IResolvable = None,
+  enable_execute_command: bool | IResolvable = None,
   group: str = None,
   launch_type: str = None,
   network_configuration: PipesPipeTargetParametersEcsTaskParametersNetworkConfiguration = None,
   overrides: PipesPipeTargetParametersEcsTaskParametersOverrides = None,
-  placement_constraint: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint]] = None,
-  placement_strategy: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy]] = None,
+  placement_constraint: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementConstraint] = None,
+  placement_strategy: IResolvable | typing.List[PipesPipeTargetParametersEcsTaskParametersPlacementStrategy] = None,
   platform_version: str = None,
   propagate_tags: str = None,
   reference_id: str = None,
@@ -27408,7 +27408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `capacity_provider_strategy`<sup>Optional</sup> <a name="capacity_provider_strategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putEcsTaskParameters.parameter.capacityProviderStrategy"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy">PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategy</a>]
 
 capacity_provider_strategy block.
 
@@ -27418,7 +27418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_ecs_managed_tags`<sup>Optional</sup> <a name="enable_ecs_managed_tags" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putEcsTaskParameters.parameter.enableEcsManagedTags"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_ecs_managed_tags PipesPipe#enable_ecs_managed_tags}.
 
@@ -27426,7 +27426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_execute_command`<sup>Optional</sup> <a name="enable_execute_command" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putEcsTaskParameters.parameter.enableExecuteCommand"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#enable_execute_command PipesPipe#enable_execute_command}.
 
@@ -27470,7 +27470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `placement_constraint`<sup>Optional</sup> <a name="placement_constraint" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putEcsTaskParameters.parameter.placementConstraint"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementConstraint">PipesPipeTargetParametersEcsTaskParametersPlacementConstraint</a>]
 
 placement_constraint block.
 
@@ -27480,7 +27480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `placement_strategy`<sup>Optional</sup> <a name="placement_strategy" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putEcsTaskParameters.parameter.placementStrategy"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersEcsTaskParametersPlacementStrategy">PipesPipeTargetParametersEcsTaskParametersPlacementStrategy</a>]
 
 placement_strategy block.
 
@@ -27655,7 +27655,7 @@ def put_redshift_data_parameters(
   db_user: str = None,
   secret_manager_arn: str = None,
   statement_name: str = None,
-  with_event: typing.Union[bool, IResolvable] = None
+  with_event: bool | IResolvable = None
 ) -> None
 ```
 
@@ -27701,7 +27701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `with_event`<sup>Optional</sup> <a name="with_event" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putRedshiftDataParameters.parameter.withEvent"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}.
 
@@ -27711,13 +27711,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_sagemaker_pipeline_parameters(
-  pipeline_parameter: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]] = None
+  pipeline_parameter: IResolvable | typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter] = None
 ) -> None
 ```
 
 ###### `pipeline_parameter`<sup>Optional</sup> <a name="pipeline_parameter" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersOutputReference.putSagemakerPipelineParameters.parameter.pipelineParameter"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]
 
 pipeline_parameter block.
 
@@ -28416,13 +28416,13 @@ def reset_with_event() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.secretManagerArnInput">secret_manager_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.sqlsInput">sqls_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.statementNameInput">statement_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEventInput">with_event_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEventInput">with_event_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.dbUser">db_user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.secretManagerArn">secret_manager_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.sqls">sqls</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.statementName">statement_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEvent">with_event</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEvent">with_event</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParameters">PipesPipeTargetParametersRedshiftDataParameters</a></code> | *No description.* |
 
 ---
@@ -28504,10 +28504,10 @@ statement_name_input: str
 ##### `with_event_input`<sup>Optional</sup> <a name="with_event_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEventInput"></a>
 
 ```python
-with_event_input: typing.Union[bool, IResolvable]
+with_event_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28564,10 +28564,10 @@ statement_name: str
 ##### `with_event`<sup>Required</sup> <a name="with_event" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersRedshiftDataParametersOutputReference.property.withEvent"></a>
 
 ```python
-with_event: typing.Union[bool, IResolvable]
+with_event: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28816,13 +28816,13 @@ Returns a reversible string representation.
 
 ```python
 def put_pipeline_parameter(
-  value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]]
+  value: IResolvable | typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.putPipelineParameter.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]
 
 ---
 
@@ -28840,7 +28840,7 @@ def reset_pipeline_parameter() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameter">pipeline_parameter</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameterInput">pipeline_parameter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameterInput">pipeline_parameter_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParameters">PipesPipeTargetParametersSagemakerPipelineParameters</a></code> | *No description.* |
 
 ---
@@ -28882,10 +28882,10 @@ pipeline_parameter: PipesPipeTargetParametersSagemakerPipelineParametersPipeline
 ##### `pipeline_parameter_input`<sup>Optional</sup> <a name="pipeline_parameter_input" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersOutputReference.property.pipelineParameterInput"></a>
 
 ```python
-pipeline_parameter_input: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]]
+pipeline_parameter_input: IResolvable | typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]
 
 ---
 
@@ -29031,7 +29031,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -29062,10 +29062,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]]
+internal_value: IResolvable | typing.List[PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]
 
 ---
 
@@ -29329,7 +29329,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a></code> | *No description.* |
 
 ---
 
@@ -29400,10 +29400,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter]
+internal_value: IResolvable | PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter">PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameter</a>
 
 ---
 
@@ -30298,7 +30298,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -30389,10 +30389,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PipesPipeTimeouts]
+internal_value: IResolvable | PipesPipeTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>
 
 ---
 

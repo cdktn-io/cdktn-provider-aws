@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_aws import api_gateway_rest_api_put
 apiGatewayRestApiPut.ApiGatewayRestApiPut(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   body: str,
   rest_api_id: str,
-  fail_on_warnings: typing.Union[bool, IResolvable] = None,
+  fail_on_warnings: bool | IResolvable = None,
   parameters: typing.Mapping[str] = None,
   region: str = None,
   timeouts: ApiGatewayRestApiPutTimeouts = None,
@@ -35,16 +35,16 @@ apiGatewayRestApiPut.ApiGatewayRestApiPut(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.body">body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.restApiId">rest_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.failOnWarnings">fail_on_warnings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a></code> | timeouts block. |
@@ -72,13 +72,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `fail_on_warnings`<sup>Optional</sup> <a name="fail_on_warnings" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer.parameter.failOnWarnings"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}.
 
@@ -430,7 +430,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.importFrom"></a>
@@ -493,7 +493,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -509,7 +509,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -718,23 +718,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference">ApiGatewayRestApiPutTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarningsInput">fail_on_warnings_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarningsInput">fail_on_warnings_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.restApiIdInput">rest_api_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.triggersInput">triggers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.body">body</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarnings">fail_on_warnings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.restApiId">rest_api_id</a></code> | <code>str</code> | *No description.* |
@@ -817,20 +817,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -877,10 +877,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -907,10 +907,10 @@ body_input: str
 ##### `fail_on_warnings_input`<sup>Optional</sup> <a name="fail_on_warnings_input" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarningsInput"></a>
 
 ```python
-fail_on_warnings_input: typing.Union[bool, IResolvable]
+fail_on_warnings_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -947,10 +947,10 @@ rest_api_id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, ApiGatewayRestApiPutTimeouts]
+timeouts_input: IResolvable | ApiGatewayRestApiPutTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a>
 
 ---
 
@@ -977,10 +977,10 @@ body: str
 ##### `fail_on_warnings`<sup>Required</sup> <a name="fail_on_warnings" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarnings"></a>
 
 ```python
-fail_on_warnings: typing.Union[bool, IResolvable]
+fail_on_warnings: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1052,16 +1052,16 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import api_gateway_rest_api_put
 
 apiGatewayRestApiPut.ApiGatewayRestApiPutConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   body: str,
   rest_api_id: str,
-  fail_on_warnings: typing.Union[bool, IResolvable] = None,
+  fail_on_warnings: bool | IResolvable = None,
   parameters: typing.Mapping[str] = None,
   region: str = None,
   timeouts: ApiGatewayRestApiPutTimeouts = None,
@@ -1073,16 +1073,16 @@ apiGatewayRestApiPut.ApiGatewayRestApiPutConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.body">body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.restApiId">rest_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.failOnWarnings">fail_on_warnings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a></code> | timeouts block. |
@@ -1093,20 +1093,20 @@ apiGatewayRestApiPut.ApiGatewayRestApiPutConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1153,10 +1153,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1187,10 +1187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_warnings`<sup>Optional</sup> <a name="fail_on_warnings" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.failOnWarnings"></a>
 
 ```python
-fail_on_warnings: typing.Union[bool, IResolvable]
+fail_on_warnings: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}.
 
@@ -1528,7 +1528,7 @@ def reset_create() -> None
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1579,10 +1579,10 @@ create: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApiGatewayRestApiPutTimeouts]
+internal_value: IResolvable | ApiGatewayRestApiPutTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a>
 
 ---
 

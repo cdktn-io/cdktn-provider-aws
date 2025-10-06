@@ -294,7 +294,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.lexIntent.LexIntent.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.lexIntent.LexIntent.importFrom"></a>
@@ -348,7 +348,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.lexIntent.LexIntent.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -363,7 +363,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.lexIntent.LexIntent.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -460,12 +460,12 @@ private void PutRejectionStatement(LexIntentRejectionStatement Value)
 ##### `PutSlot` <a name="PutSlot" id="@cdktf/provider-aws.lexIntent.LexIntent.putSlot"></a>
 
 ```csharp
-private void PutSlot(object Value)
+private void PutSlot(IResolvable|LexIntentSlot[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntent.putSlot.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]
 
 ---
 
@@ -685,13 +685,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.checksum">Checksum</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.conclusionStatement">ConclusionStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference">LexIntentConclusionStatementOutputReference</a></code> | *No description.* |
@@ -707,7 +707,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.version">Version</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.conclusionStatementInput">ConclusionStatementInput</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement">LexIntentConclusionStatement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.confirmationPromptInput">ConfirmationPromptInput</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt">LexIntentConfirmationPrompt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.createVersionInput">CreateVersionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.createVersionInput">CreateVersionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.dialogCodeHookInput">DialogCodeHookInput</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook">LexIntentDialogCodeHook</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.followUpPromptInput">FollowUpPromptInput</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPrompt">LexIntentFollowUpPrompt</a></code> | *No description.* |
@@ -718,9 +718,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.rejectionStatementInput">RejectionStatementInput</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement">LexIntentRejectionStatement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.sampleUtterancesInput">SampleUtterancesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.slotInput">SlotInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.createVersion">CreateVersion</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.slotInput">SlotInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.createVersion">CreateVersion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -805,20 +805,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.lexIntent.LexIntent.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.lexIntent.LexIntent.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -865,10 +865,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.lexIntent.LexIntent.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1025,10 +1025,10 @@ public LexIntentConfirmationPrompt ConfirmationPromptInput { get; }
 ##### `CreateVersionInput`<sup>Optional</sup> <a name="CreateVersionInput" id="@cdktf/provider-aws.lexIntent.LexIntent.property.createVersionInput"></a>
 
 ```csharp
-public object CreateVersionInput { get; }
+public bool|IResolvable CreateVersionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1135,30 +1135,30 @@ public string[] SampleUtterancesInput { get; }
 ##### `SlotInput`<sup>Optional</sup> <a name="SlotInput" id="@cdktf/provider-aws.lexIntent.LexIntent.property.slotInput"></a>
 
 ```csharp
-public object SlotInput { get; }
+public IResolvable|LexIntentSlot[] SlotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]
 
 ---
 
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.lexIntent.LexIntent.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|LexIntentTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>
 
 ---
 
 ##### `CreateVersion`<sup>Required</sup> <a name="CreateVersion" id="@cdktf/provider-aws.lexIntent.LexIntent.property.createVersion"></a>
 
 ```csharp
-public object CreateVersion { get; }
+public bool|IResolvable CreateVersion { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1250,7 +1250,7 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentConclusionStatement {
-    object Message,
+    IResolvable|LexIntentConclusionStatementMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -1259,7 +1259,7 @@ new LexIntentConclusionStatement {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
@@ -1267,10 +1267,10 @@ new LexIntentConclusionStatement {
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexIntentConclusionStatementMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]
 
 message block.
 
@@ -1358,18 +1358,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     LexIntentFulfillmentActivity FulfillmentActivity,
     string Name,
     LexIntentConclusionStatement ConclusionStatement = null,
     LexIntentConfirmationPrompt ConfirmationPrompt = null,
-    object CreateVersion = null,
+    bool|IResolvable CreateVersion = null,
     string Description = null,
     LexIntentDialogCodeHook DialogCodeHook = null,
     LexIntentFollowUpPrompt FollowUpPrompt = null,
@@ -1378,7 +1378,7 @@ new LexIntentConfig {
     string Region = null,
     LexIntentRejectionStatement RejectionStatement = null,
     string[] SampleUtterances = null,
-    object Slot = null,
+    IResolvable|LexIntentSlot[] Slot = null,
     LexIntentTimeouts Timeouts = null
 };
 ```
@@ -1387,18 +1387,18 @@ new LexIntentConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.fulfillmentActivity">FulfillmentActivity</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity">LexIntentFulfillmentActivity</a></code> | fulfillment_activity block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#name LexIntent#name}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.conclusionStatement">ConclusionStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement">LexIntentConclusionStatement</a></code> | conclusion_statement block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.confirmationPrompt">ConfirmationPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt">LexIntentConfirmationPrompt</a></code> | confirmation_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.createVersion">CreateVersion</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#create_version LexIntent#create_version}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.createVersion">CreateVersion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#create_version LexIntent#create_version}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#description LexIntent#description}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.dialogCodeHook">DialogCodeHook</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook">LexIntentDialogCodeHook</a></code> | dialog_code_hook block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.followUpPrompt">FollowUpPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPrompt">LexIntentFollowUpPrompt</a></code> | follow_up_prompt block. |
@@ -1407,7 +1407,7 @@ new LexIntentConfig {
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.rejectionStatement">RejectionStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement">LexIntentRejectionStatement</a></code> | rejection_statement block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.sampleUtterances">SampleUtterances</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.slot">Slot</a></code> | <code>object</code> | slot block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.slot">Slot</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]</code> | slot block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1415,20 +1415,20 @@ new LexIntentConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.lexIntent.LexIntentConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.lexIntent.LexIntentConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1475,10 +1475,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.lexIntent.LexIntentConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1539,10 +1539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CreateVersion`<sup>Optional</sup> <a name="CreateVersion" id="@cdktf/provider-aws.lexIntent.LexIntentConfig.property.createVersion"></a>
 
 ```csharp
-public object CreateVersion { get; set; }
+public bool|IResolvable CreateVersion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#create_version LexIntent#create_version}.
 
@@ -1658,10 +1658,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Slot`<sup>Optional</sup> <a name="Slot" id="@cdktf/provider-aws.lexIntent.LexIntentConfig.property.slot"></a>
 
 ```csharp
-public object Slot { get; set; }
+public IResolvable|LexIntentSlot[] Slot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]
 
 slot block.
 
@@ -1692,7 +1692,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentConfirmationPrompt {
     double MaxAttempts,
-    object Message,
+    IResolvable|LexIntentConfirmationPromptMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -1702,7 +1702,7 @@ new LexIntentConfirmationPrompt {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
@@ -1722,10 +1722,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexIntentConfirmationPromptMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]
 
 message block.
 
@@ -1910,7 +1910,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentFollowUpPromptPrompt {
     double MaxAttempts,
-    object Message,
+    IResolvable|LexIntentFollowUpPromptPromptMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -1920,7 +1920,7 @@ new LexIntentFollowUpPromptPrompt {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
@@ -1940,10 +1940,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexIntentFollowUpPromptPromptMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]
 
 message block.
 
@@ -2031,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentFollowUpPromptRejectionStatement {
-    object Message,
+    IResolvable|LexIntentFollowUpPromptRejectionStatementMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -2040,7 +2040,7 @@ new LexIntentFollowUpPromptRejectionStatement {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
@@ -2048,10 +2048,10 @@ new LexIntentFollowUpPromptRejectionStatement {
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexIntentFollowUpPromptRejectionStatementMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]
 
 message block.
 
@@ -2233,7 +2233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentRejectionStatement {
-    object Message,
+    IResolvable|LexIntentRejectionStatementMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -2242,7 +2242,7 @@ new LexIntentRejectionStatement {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
@@ -2250,10 +2250,10 @@ new LexIntentRejectionStatement {
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexIntentRejectionStatementMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]
 
 message block.
 
@@ -2488,7 +2488,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new LexIntentSlotValueElicitationPrompt {
     double MaxAttempts,
-    object Message,
+    IResolvable|LexIntentSlotValueElicitationPromptMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -2498,7 +2498,7 @@ new LexIntentSlotValueElicitationPrompt {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
@@ -2518,10 +2518,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexIntentSlotValueElicitationPromptMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]
 
 message block.
 
@@ -2784,7 +2784,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -2815,10 +2815,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentConclusionStatementMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]
 
 ---
 
@@ -3064,7 +3064,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a></code> | *No description.* |
 
 ---
 
@@ -3155,10 +3155,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentConclusionStatementMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>
 
 ---
 
@@ -3371,12 +3371,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexIntentConclusionStatementMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]
 
 ---
 
@@ -3394,7 +3394,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList">LexIntentConclusionStatementMessageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement">LexIntentConclusionStatement</a></code> | *No description.* |
@@ -3438,10 +3438,10 @@ public LexIntentConclusionStatementMessageList Message { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexIntentConclusionStatementMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]
 
 ---
 
@@ -3597,7 +3597,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -3628,10 +3628,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentConfirmationPromptMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]
 
 ---
 
@@ -3877,7 +3877,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a></code> | *No description.* |
 
 ---
 
@@ -3968,10 +3968,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentConfirmationPromptMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>
 
 ---
 
@@ -4184,12 +4184,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexIntentConfirmationPromptMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]
 
 ---
 
@@ -4208,7 +4208,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList">LexIntentConfirmationPromptMessageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.maxAttemptsInput">MaxAttemptsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
@@ -4263,10 +4263,10 @@ public double MaxAttemptsInput { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexIntentConfirmationPromptMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]
 
 ---
 
@@ -5044,7 +5044,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -5075,10 +5075,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentFollowUpPromptPromptMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]
 
 ---
 
@@ -5324,7 +5324,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a></code> | *No description.* |
 
 ---
 
@@ -5415,10 +5415,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentFollowUpPromptPromptMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>
 
 ---
 
@@ -5631,12 +5631,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexIntentFollowUpPromptPromptMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]
 
 ---
 
@@ -5655,7 +5655,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList">LexIntentFollowUpPromptPromptMessageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.maxAttemptsInput">MaxAttemptsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
@@ -5710,10 +5710,10 @@ public double MaxAttemptsInput { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexIntentFollowUpPromptPromptMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]
 
 ---
 
@@ -5879,7 +5879,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -5910,10 +5910,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentFollowUpPromptRejectionStatementMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]
 
 ---
 
@@ -6159,7 +6159,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a></code> | *No description.* |
 
 ---
 
@@ -6250,10 +6250,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentFollowUpPromptRejectionStatementMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>
 
 ---
 
@@ -6466,12 +6466,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexIntentFollowUpPromptRejectionStatementMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]
 
 ---
 
@@ -6489,7 +6489,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList">LexIntentFollowUpPromptRejectionStatementMessageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement">LexIntentFollowUpPromptRejectionStatement</a></code> | *No description.* |
@@ -6533,10 +6533,10 @@ public LexIntentFollowUpPromptRejectionStatementMessageList Message { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexIntentFollowUpPromptRejectionStatementMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]
 
 ---
 
@@ -7298,7 +7298,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -7329,10 +7329,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentRejectionStatementMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]
 
 ---
 
@@ -7578,7 +7578,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a></code> | *No description.* |
 
 ---
 
@@ -7669,10 +7669,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentRejectionStatementMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>
 
 ---
 
@@ -7885,12 +7885,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexIntentRejectionStatementMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]
 
 ---
 
@@ -7908,7 +7908,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList">LexIntentRejectionStatementMessageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement">LexIntentRejectionStatement</a></code> | *No description.* |
@@ -7952,10 +7952,10 @@ public LexIntentRejectionStatementMessageList Message { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexIntentRejectionStatementMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]
 
 ---
 
@@ -8111,7 +8111,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]</code> | *No description.* |
 
 ---
 
@@ -8142,10 +8142,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentSlotList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentSlot[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]
 
 ---
 
@@ -8451,7 +8451,7 @@ private void ResetValueElicitationPrompt()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.slotConstraint">SlotConstraint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.slotType">SlotType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.slotTypeVersion">SlotTypeVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a></code> | *No description.* |
 
 ---
 
@@ -8662,10 +8662,10 @@ public string SlotTypeVersion { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentSlot InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>
 
 ---
 
@@ -8791,7 +8791,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -8822,10 +8822,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentSlotValueElicitationPromptMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]
 
 ---
 
@@ -9071,7 +9071,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a></code> | *No description.* |
 
 ---
 
@@ -9162,10 +9162,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentSlotValueElicitationPromptMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>
 
 ---
 
@@ -9378,12 +9378,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexIntentSlotValueElicitationPromptMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]
 
 ---
 
@@ -9402,7 +9402,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList">LexIntentSlotValueElicitationPromptMessageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.maxAttemptsInput">MaxAttemptsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
@@ -9457,10 +9457,10 @@ public double MaxAttemptsInput { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexIntentSlotValueElicitationPromptMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]
 
 ---
 
@@ -9742,7 +9742,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -9833,10 +9833,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexIntentTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>
 
 ---
 

@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_aws import data_aws_lb_listener_rule
 dataAwsLbListenerRule.DataAwsLbListenerRule(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  action: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleAction]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  action: IResolvable | typing.List[DataAwsLbListenerRuleAction] = None,
   arn: str = None,
-  condition: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleCondition]] = None,
+  condition: IResolvable | typing.List[DataAwsLbListenerRuleCondition] = None,
   listener_arn: str = None,
   priority: typing.Union[int, float] = None,
   region: str = None
@@ -34,16 +34,16 @@ dataAwsLbListenerRule.DataAwsLbListenerRule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.action">action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]</code> | action block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.action">action</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]</code> | action block. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.condition">condition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]</code> | condition block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]</code> | condition block. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.listenerArn">listener_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
@@ -70,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -106,13 +106,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `action`<sup>Optional</sup> <a name="action" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.action"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]
 
 action block.
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer.parameter.condition"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]
 
 condition block.
 
@@ -417,13 +417,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_action(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleAction]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleAction]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.putAction.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]
 
 ---
 
@@ -431,13 +431,13 @@ def put_action(
 
 ```python
 def put_condition(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleCondition]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleCondition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.putCondition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]
 
 ---
 
@@ -614,7 +614,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -622,9 +622,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.action">action</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionList">DataAwsLbListenerRuleActionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionList">DataAwsLbListenerRuleConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.actionInput">action_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.actionInput">action_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.arnInput">arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.conditionInput">condition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.conditionInput">condition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.listenerArnInput">listener_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
@@ -710,10 +710,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -790,10 +790,10 @@ tags: StringMap
 ##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.actionInput"></a>
 
 ```python
-action_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleAction]]
+action_input: IResolvable | typing.List[DataAwsLbListenerRuleAction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]
 
 ---
 
@@ -810,10 +810,10 @@ arn_input: str
 ##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.property.conditionInput"></a>
 
 ```python
-condition_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleCondition]]
+condition_input: IResolvable | typing.List[DataAwsLbListenerRuleCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]
 
 ---
 
@@ -915,11 +915,11 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import data_aws_lb_listener_rule
 
 dataAwsLbListenerRule.DataAwsLbListenerRuleAction(
-  authenticate_cognito: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]] = None,
-  authenticate_oidc: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]] = None,
-  fixed_response: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionFixedResponse]] = None,
-  forward: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForward]] = None,
-  redirect: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionRedirect]] = None
+  authenticate_cognito: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateCognito] = None,
+  authenticate_oidc: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateOidc] = None,
+  fixed_response: IResolvable | typing.List[DataAwsLbListenerRuleActionFixedResponse] = None,
+  forward: IResolvable | typing.List[DataAwsLbListenerRuleActionForward] = None,
+  redirect: IResolvable | typing.List[DataAwsLbListenerRuleActionRedirect] = None
 )
 ```
 
@@ -927,21 +927,21 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleAction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.authenticateCognito">authenticate_cognito</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]</code> | authenticate_cognito block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.authenticateOidc">authenticate_oidc</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]</code> | authenticate_oidc block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.fixedResponse">fixed_response</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]</code> | fixed_response block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.forward">forward</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]</code> | forward block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.redirect">redirect</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]</code> | redirect block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.authenticateCognito">authenticate_cognito</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]</code> | authenticate_cognito block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.authenticateOidc">authenticate_oidc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]</code> | authenticate_oidc block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.fixedResponse">fixed_response</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]</code> | fixed_response block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.forward">forward</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]</code> | forward block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.redirect">redirect</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]</code> | redirect block. |
 
 ---
 
 ##### `authenticate_cognito`<sup>Optional</sup> <a name="authenticate_cognito" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.authenticateCognito"></a>
 
 ```python
-authenticate_cognito: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]]
+authenticate_cognito: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]
 
 authenticate_cognito block.
 
@@ -952,10 +952,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authenticate_oidc`<sup>Optional</sup> <a name="authenticate_oidc" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.authenticateOidc"></a>
 
 ```python
-authenticate_oidc: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]]
+authenticate_oidc: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]
 
 authenticate_oidc block.
 
@@ -966,10 +966,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fixed_response`<sup>Optional</sup> <a name="fixed_response" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.fixedResponse"></a>
 
 ```python
-fixed_response: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionFixedResponse]]
+fixed_response: IResolvable | typing.List[DataAwsLbListenerRuleActionFixedResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]
 
 fixed_response block.
 
@@ -980,10 +980,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `forward`<sup>Optional</sup> <a name="forward" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.forward"></a>
 
 ```python
-forward: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForward]]
+forward: IResolvable | typing.List[DataAwsLbListenerRuleActionForward]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]
 
 forward block.
 
@@ -994,10 +994,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `redirect`<sup>Optional</sup> <a name="redirect" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction.property.redirect"></a>
 
 ```python
-redirect: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionRedirect]]
+redirect: IResolvable | typing.List[DataAwsLbListenerRuleActionRedirect]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]
 
 redirect block.
 
@@ -1046,8 +1046,8 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse()
 from cdktf_cdktf_provider_aws import data_aws_lb_listener_rule
 
 dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward(
-  stickiness: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardStickiness]] = None,
-  target_group: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]] = None
+  stickiness: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardStickiness] = None,
+  target_group: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardTargetGroup] = None
 )
 ```
 
@@ -1055,18 +1055,18 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward.property.stickiness">stickiness</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]</code> | stickiness block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward.property.targetGroup">target_group</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]</code> | target_group block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward.property.stickiness">stickiness</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]</code> | stickiness block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward.property.targetGroup">target_group</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]</code> | target_group block. |
 
 ---
 
 ##### `stickiness`<sup>Optional</sup> <a name="stickiness" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward.property.stickiness"></a>
 
 ```python
-stickiness: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardStickiness]]
+stickiness: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardStickiness]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]
 
 stickiness block.
 
@@ -1077,10 +1077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `target_group`<sup>Optional</sup> <a name="target_group" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward.property.targetGroup"></a>
 
 ```python
-target_group: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]]
+target_group: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]
 
 target_group block.
 
@@ -1129,12 +1129,12 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect()
 from cdktf_cdktf_provider_aws import data_aws_lb_listener_rule
 
 dataAwsLbListenerRule.DataAwsLbListenerRuleCondition(
-  host_header: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHostHeader]] = None,
-  http_header: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpHeader]] = None,
-  http_request_method: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]] = None,
-  path_pattern: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionPathPattern]] = None,
-  query_string: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryString]] = None,
-  source_ip: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionSourceIp]] = None
+  host_header: IResolvable | typing.List[DataAwsLbListenerRuleConditionHostHeader] = None,
+  http_header: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpHeader] = None,
+  http_request_method: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod] = None,
+  path_pattern: IResolvable | typing.List[DataAwsLbListenerRuleConditionPathPattern] = None,
+  query_string: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryString] = None,
+  source_ip: IResolvable | typing.List[DataAwsLbListenerRuleConditionSourceIp] = None
 )
 ```
 
@@ -1142,22 +1142,22 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.hostHeader">host_header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]</code> | host_header block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.httpHeader">http_header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]</code> | http_header block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.httpRequestMethod">http_request_method</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]</code> | http_request_method block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.pathPattern">path_pattern</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]</code> | path_pattern block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.queryString">query_string</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]</code> | query_string block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.sourceIp">source_ip</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]</code> | source_ip block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.hostHeader">host_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]</code> | host_header block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.httpHeader">http_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]</code> | http_header block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.httpRequestMethod">http_request_method</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]</code> | http_request_method block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.pathPattern">path_pattern</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]</code> | path_pattern block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.queryString">query_string</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]</code> | query_string block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.sourceIp">source_ip</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]</code> | source_ip block. |
 
 ---
 
 ##### `host_header`<sup>Optional</sup> <a name="host_header" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.hostHeader"></a>
 
 ```python
-host_header: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHostHeader]]
+host_header: IResolvable | typing.List[DataAwsLbListenerRuleConditionHostHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]
 
 host_header block.
 
@@ -1168,10 +1168,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `http_header`<sup>Optional</sup> <a name="http_header" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.httpHeader"></a>
 
 ```python
-http_header: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpHeader]]
+http_header: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]
 
 http_header block.
 
@@ -1182,10 +1182,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `http_request_method`<sup>Optional</sup> <a name="http_request_method" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.httpRequestMethod"></a>
 
 ```python
-http_request_method: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]]
+http_request_method: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]
 
 http_request_method block.
 
@@ -1196,10 +1196,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `path_pattern`<sup>Optional</sup> <a name="path_pattern" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.pathPattern"></a>
 
 ```python
-path_pattern: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionPathPattern]]
+path_pattern: IResolvable | typing.List[DataAwsLbListenerRuleConditionPathPattern]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]
 
 path_pattern block.
 
@@ -1210,10 +1210,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `query_string`<sup>Optional</sup> <a name="query_string" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.queryString"></a>
 
 ```python
-query_string: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryString]]
+query_string: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryString]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]
 
 query_string block.
 
@@ -1224,10 +1224,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `source_ip`<sup>Optional</sup> <a name="source_ip" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition.property.sourceIp"></a>
 
 ```python
-source_ip: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionSourceIp]]
+source_ip: IResolvable | typing.List[DataAwsLbListenerRuleConditionSourceIp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]
 
 source_ip block.
 
@@ -1287,7 +1287,7 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern()
 from cdktf_cdktf_provider_aws import data_aws_lb_listener_rule
 
 dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString(
-  values: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryStringValues]] = None
+  values: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryStringValues] = None
 )
 ```
 
@@ -1295,17 +1295,17 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString.property.values">values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]</code> | values block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString.property.values">values</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]</code> | values block. |
 
 ---
 
 ##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString.property.values"></a>
 
 ```python
-values: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryStringValues]]
+values: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryStringValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]
 
 values block.
 
@@ -1343,16 +1343,16 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp()
 from cdktf_cdktf_provider_aws import data_aws_lb_listener_rule
 
 dataAwsLbListenerRule.DataAwsLbListenerRuleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  action: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleAction]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  action: IResolvable | typing.List[DataAwsLbListenerRuleAction] = None,
   arn: str = None,
-  condition: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleCondition]] = None,
+  condition: IResolvable | typing.List[DataAwsLbListenerRuleCondition] = None,
   listener_arn: str = None,
   priority: typing.Union[int, float] = None,
   region: str = None
@@ -1363,16 +1363,16 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.action">action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]</code> | action block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.action">action</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]</code> | action block. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.condition">condition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]</code> | condition block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]</code> | condition block. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.listenerArn">listener_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
@@ -1382,20 +1382,20 @@ dataAwsLbListenerRule.DataAwsLbListenerRuleConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1442,20 +1442,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `action`<sup>Optional</sup> <a name="action" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.action"></a>
 
 ```python
-action: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleAction]]
+action: IResolvable | typing.List[DataAwsLbListenerRuleAction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]
 
 action block.
 
@@ -1478,10 +1478,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.condition"></a>
 
 ```python
-condition: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleCondition]]
+condition: IResolvable | typing.List[DataAwsLbListenerRuleCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]
 
 condition block.
 
@@ -1660,7 +1660,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]</code> | *No description.* |
 
 ---
 
@@ -1691,10 +1691,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]
 
 ---
 
@@ -1962,7 +1962,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference.property.userPoolArn">user_pool_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference.property.userPoolClientId">user_pool_client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference.property.userPoolDomain">user_pool_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a></code> | *No description.* |
 
 ---
 
@@ -2073,10 +2073,10 @@ user_pool_domain: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionAuthenticateCognito]
+internal_value: IResolvable | DataAwsLbListenerRuleActionAuthenticateCognito
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>
 
 ---
 
@@ -2212,7 +2212,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]</code> | *No description.* |
 
 ---
 
@@ -2243,10 +2243,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]
 
 ---
 
@@ -2516,7 +2516,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcOutputReference.property.sessionTimeout">session_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcOutputReference.property.tokenEndpoint">token_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcOutputReference.property.userInfoEndpoint">user_info_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a></code> | *No description.* |
 
 ---
 
@@ -2647,10 +2647,10 @@ user_info_endpoint: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidcOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionAuthenticateOidc]
+internal_value: IResolvable | DataAwsLbListenerRuleActionAuthenticateOidc
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>
 
 ---
 
@@ -2786,7 +2786,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]</code> | *No description.* |
 
 ---
 
@@ -2817,10 +2817,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionFixedResponse]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionFixedResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]
 
 ---
 
@@ -3083,7 +3083,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseOutputReference.property.messageBody">message_body</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseOutputReference.property.statusCode">status_code</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a></code> | *No description.* |
 
 ---
 
@@ -3144,10 +3144,10 @@ status_code: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionFixedResponse]
+internal_value: IResolvable | DataAwsLbListenerRuleActionFixedResponse
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>
 
 ---
 
@@ -3283,7 +3283,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]</code> | *No description.* |
 
 ---
 
@@ -3314,10 +3314,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForward]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionForward]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]
 
 ---
 
@@ -3578,13 +3578,13 @@ Returns a reversible string representation.
 
 ```python
 def put_stickiness(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardStickiness]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardStickiness]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.putStickiness.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]
 
 ---
 
@@ -3592,13 +3592,13 @@ def put_stickiness(
 
 ```python
 def put_target_group(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.putTargetGroup.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
@@ -3623,9 +3623,9 @@ def reset_target_group() -> None
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.stickiness">stickiness</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessList">DataAwsLbListenerRuleActionForwardStickinessList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.targetGroup">target_group</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupList">DataAwsLbListenerRuleActionForwardTargetGroupList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.stickinessInput">stickiness_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.targetGroupInput">target_group_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.stickinessInput">stickiness_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.targetGroupInput">target_group_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a></code> | *No description.* |
 
 ---
 
@@ -3676,30 +3676,30 @@ target_group: DataAwsLbListenerRuleActionForwardTargetGroupList
 ##### `stickiness_input`<sup>Optional</sup> <a name="stickiness_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.stickinessInput"></a>
 
 ```python
-stickiness_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardStickiness]]
+stickiness_input: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardStickiness]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]
 
 ---
 
 ##### `target_group_input`<sup>Optional</sup> <a name="target_group_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.targetGroupInput"></a>
 
 ```python
-target_group_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]]
+target_group_input: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionForward]
+internal_value: IResolvable | DataAwsLbListenerRuleActionForward
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>
 
 ---
 
@@ -3835,7 +3835,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]</code> | *No description.* |
 
 ---
 
@@ -3866,10 +3866,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardStickiness]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardStickiness]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]
 
 ---
 
@@ -4131,7 +4131,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a></code> | *No description.* |
 
 ---
 
@@ -4182,10 +4182,10 @@ enabled: IResolvable
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickinessOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionForwardStickiness]
+internal_value: IResolvable | DataAwsLbListenerRuleActionForwardStickiness
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardStickiness">DataAwsLbListenerRuleActionForwardStickiness</a>
 
 ---
 
@@ -4321,7 +4321,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -4352,10 +4352,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
@@ -4617,7 +4617,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupOutputReference.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a></code> | *No description.* |
 
 ---
 
@@ -4668,10 +4668,10 @@ weight: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionForwardTargetGroup]
+internal_value: IResolvable | DataAwsLbListenerRuleActionForwardTargetGroup
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardTargetGroup">DataAwsLbListenerRuleActionForwardTargetGroup</a>
 
 ---
 
@@ -4807,7 +4807,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]</code> | *No description.* |
 
 ---
 
@@ -4838,10 +4838,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleAction]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleAction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]
 
 ---
 
@@ -5108,13 +5108,13 @@ Returns a reversible string representation.
 
 ```python
 def put_authenticate_cognito(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.putAuthenticateCognito.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]
 
 ---
 
@@ -5122,13 +5122,13 @@ def put_authenticate_cognito(
 
 ```python
 def put_authenticate_oidc(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.putAuthenticateOidc.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]
 
 ---
 
@@ -5136,13 +5136,13 @@ def put_authenticate_oidc(
 
 ```python
 def put_fixed_response(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionFixedResponse]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionFixedResponse]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.putFixedResponse.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]
 
 ---
 
@@ -5150,13 +5150,13 @@ def put_fixed_response(
 
 ```python
 def put_forward(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForward]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionForward]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.putForward.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]
 
 ---
 
@@ -5164,13 +5164,13 @@ def put_forward(
 
 ```python
 def put_redirect(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionRedirect]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleActionRedirect]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.putRedirect.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]
 
 ---
 
@@ -5218,12 +5218,12 @@ def reset_redirect() -> None
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.order">order</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectList">DataAwsLbListenerRuleActionRedirectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.authenticateCognitoInput">authenticate_cognito_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.authenticateOidcInput">authenticate_oidc_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.fixedResponseInput">fixed_response_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.forwardInput">forward_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.redirectInput">redirect_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.authenticateCognitoInput">authenticate_cognito_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.authenticateOidcInput">authenticate_oidc_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.fixedResponseInput">fixed_response_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.forwardInput">forward_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.redirectInput">redirect_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a></code> | *No description.* |
 
 ---
 
@@ -5324,60 +5324,60 @@ type: str
 ##### `authenticate_cognito_input`<sup>Optional</sup> <a name="authenticate_cognito_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.authenticateCognitoInput"></a>
 
 ```python
-authenticate_cognito_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]]
+authenticate_cognito_input: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateCognito]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateCognito">DataAwsLbListenerRuleActionAuthenticateCognito</a>]
 
 ---
 
 ##### `authenticate_oidc_input`<sup>Optional</sup> <a name="authenticate_oidc_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.authenticateOidcInput"></a>
 
 ```python
-authenticate_oidc_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]]
+authenticate_oidc_input: IResolvable | typing.List[DataAwsLbListenerRuleActionAuthenticateOidc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionAuthenticateOidc">DataAwsLbListenerRuleActionAuthenticateOidc</a>]
 
 ---
 
 ##### `fixed_response_input`<sup>Optional</sup> <a name="fixed_response_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.fixedResponseInput"></a>
 
 ```python
-fixed_response_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionFixedResponse]]
+fixed_response_input: IResolvable | typing.List[DataAwsLbListenerRuleActionFixedResponse]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionFixedResponse">DataAwsLbListenerRuleActionFixedResponse</a>]
 
 ---
 
 ##### `forward_input`<sup>Optional</sup> <a name="forward_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.forwardInput"></a>
 
 ```python
-forward_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionForward]]
+forward_input: IResolvable | typing.List[DataAwsLbListenerRuleActionForward]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForward">DataAwsLbListenerRuleActionForward</a>]
 
 ---
 
 ##### `redirect_input`<sup>Optional</sup> <a name="redirect_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.redirectInput"></a>
 
 ```python
-redirect_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionRedirect]]
+redirect_input: IResolvable | typing.List[DataAwsLbListenerRuleActionRedirect]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleAction]
+internal_value: IResolvable | DataAwsLbListenerRuleAction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleAction">DataAwsLbListenerRuleAction</a>
 
 ---
 
@@ -5513,7 +5513,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]</code> | *No description.* |
 
 ---
 
@@ -5544,10 +5544,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleActionRedirect]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleActionRedirect]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]
 
 ---
 
@@ -5813,7 +5813,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectOutputReference.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectOutputReference.property.statusCode">status_code</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a></code> | *No description.* |
 
 ---
 
@@ -5904,10 +5904,10 @@ status_code: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirectOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleActionRedirect]
+internal_value: IResolvable | DataAwsLbListenerRuleActionRedirect
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionRedirect">DataAwsLbListenerRuleActionRedirect</a>
 
 ---
 
@@ -6043,7 +6043,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -6074,10 +6074,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHostHeader]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionHostHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]
 
 ---
 
@@ -6338,7 +6338,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a></code> | *No description.* |
 
 ---
 
@@ -6379,10 +6379,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionHostHeader]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionHostHeader
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>
 
 ---
 
@@ -6518,7 +6518,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -6549,10 +6549,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpHeader]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]
 
 ---
 
@@ -6814,7 +6814,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderOutputReference.property.httpHeaderName">http_header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -6865,10 +6865,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionHttpHeader]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionHttpHeader
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>
 
 ---
 
@@ -7004,7 +7004,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]</code> | *No description.* |
 
 ---
 
@@ -7035,10 +7035,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]
 
 ---
 
@@ -7299,7 +7299,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a></code> | *No description.* |
 
 ---
 
@@ -7340,10 +7340,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionHttpRequestMethod]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionHttpRequestMethod
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>
 
 ---
 
@@ -7479,7 +7479,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -7510,10 +7510,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleCondition]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]
 
 ---
 
@@ -7782,13 +7782,13 @@ Returns a reversible string representation.
 
 ```python
 def put_host_header(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHostHeader]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionHostHeader]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.putHostHeader.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]
 
 ---
 
@@ -7796,13 +7796,13 @@ def put_host_header(
 
 ```python
 def put_http_header(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpHeader]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpHeader]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.putHttpHeader.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]
 
 ---
 
@@ -7810,13 +7810,13 @@ def put_http_header(
 
 ```python
 def put_http_request_method(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.putHttpRequestMethod.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]
 
 ---
 
@@ -7824,13 +7824,13 @@ def put_http_request_method(
 
 ```python
 def put_path_pattern(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionPathPattern]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionPathPattern]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.putPathPattern.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]
 
 ---
 
@@ -7838,13 +7838,13 @@ def put_path_pattern(
 
 ```python
 def put_query_string(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryString]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryString]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.putQueryString.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]
 
 ---
 
@@ -7852,13 +7852,13 @@ def put_query_string(
 
 ```python
 def put_source_ip(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionSourceIp]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionSourceIp]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.putSourceIp.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]
 
 ---
 
@@ -7911,13 +7911,13 @@ def reset_source_ip() -> None
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.pathPattern">path_pattern</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternList">DataAwsLbListenerRuleConditionPathPatternList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.queryString">query_string</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringList">DataAwsLbListenerRuleConditionQueryStringList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.sourceIp">source_ip</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpList">DataAwsLbListenerRuleConditionSourceIpList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.hostHeaderInput">host_header_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.httpRequestMethodInput">http_request_method_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.pathPatternInput">path_pattern_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.queryStringInput">query_string_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.sourceIpInput">source_ip_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.hostHeaderInput">host_header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.httpRequestMethodInput">http_request_method_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.pathPatternInput">path_pattern_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.queryStringInput">query_string_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.sourceIpInput">source_ip_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -8008,70 +8008,70 @@ source_ip: DataAwsLbListenerRuleConditionSourceIpList
 ##### `host_header_input`<sup>Optional</sup> <a name="host_header_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.hostHeaderInput"></a>
 
 ```python
-host_header_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHostHeader]]
+host_header_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionHostHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHostHeader">DataAwsLbListenerRuleConditionHostHeader</a>]
 
 ---
 
 ##### `http_header_input`<sup>Optional</sup> <a name="http_header_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.httpHeaderInput"></a>
 
 ```python
-http_header_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpHeader]]
+http_header_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpHeader">DataAwsLbListenerRuleConditionHttpHeader</a>]
 
 ---
 
 ##### `http_request_method_input`<sup>Optional</sup> <a name="http_request_method_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.httpRequestMethodInput"></a>
 
 ```python
-http_request_method_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]]
+http_request_method_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionHttpRequestMethod]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionHttpRequestMethod">DataAwsLbListenerRuleConditionHttpRequestMethod</a>]
 
 ---
 
 ##### `path_pattern_input`<sup>Optional</sup> <a name="path_pattern_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.pathPatternInput"></a>
 
 ```python
-path_pattern_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionPathPattern]]
+path_pattern_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionPathPattern]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]
 
 ---
 
 ##### `query_string_input`<sup>Optional</sup> <a name="query_string_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.queryStringInput"></a>
 
 ```python
-query_string_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryString]]
+query_string_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryString]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]
 
 ---
 
 ##### `source_ip_input`<sup>Optional</sup> <a name="source_ip_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.sourceIpInput"></a>
 
 ```python
-source_ip_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionSourceIp]]
+source_ip_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionSourceIp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleCondition]
+internal_value: IResolvable | DataAwsLbListenerRuleCondition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleCondition">DataAwsLbListenerRuleCondition</a>
 
 ---
 
@@ -8207,7 +8207,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]</code> | *No description.* |
 
 ---
 
@@ -8238,10 +8238,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionPathPattern]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionPathPattern]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]
 
 ---
 
@@ -8502,7 +8502,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a></code> | *No description.* |
 
 ---
 
@@ -8543,10 +8543,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPatternOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionPathPattern]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionPathPattern
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionPathPattern">DataAwsLbListenerRuleConditionPathPattern</a>
 
 ---
 
@@ -8682,7 +8682,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]</code> | *No description.* |
 
 ---
 
@@ -8713,10 +8713,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryString]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryString]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]
 
 ---
 
@@ -8975,13 +8975,13 @@ Returns a reversible string representation.
 
 ```python
 def put_values(
-  value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryStringValues]]
+  value: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryStringValues]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.putValues.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]
 
 ---
 
@@ -8999,8 +8999,8 @@ def reset_values() -> None
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.values">values</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesList">DataAwsLbListenerRuleConditionQueryStringValuesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.valuesInput">values_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.valuesInput">values_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a></code> | *No description.* |
 
 ---
 
@@ -9041,20 +9041,20 @@ values: DataAwsLbListenerRuleConditionQueryStringValuesList
 ##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.valuesInput"></a>
 
 ```python
-values_input: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryStringValues]]
+values_input: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryStringValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionQueryString]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionQueryString
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryString">DataAwsLbListenerRuleConditionQueryString</a>
 
 ---
 
@@ -9190,7 +9190,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]</code> | *No description.* |
 
 ---
 
@@ -9221,10 +9221,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionQueryStringValues]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionQueryStringValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]
 
 ---
 
@@ -9486,7 +9486,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a></code> | *No description.* |
 
 ---
 
@@ -9537,10 +9537,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionQueryStringValues]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionQueryStringValues
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringValues">DataAwsLbListenerRuleConditionQueryStringValues</a>
 
 ---
 
@@ -9676,7 +9676,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]</code> | *No description.* |
 
 ---
 
@@ -9707,10 +9707,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataAwsLbListenerRuleConditionSourceIp]]
+internal_value: IResolvable | typing.List[DataAwsLbListenerRuleConditionSourceIp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]
 
 ---
 
@@ -9971,7 +9971,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a></code> | *No description.* |
 
 ---
 
@@ -10012,10 +10012,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIpOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataAwsLbListenerRuleConditionSourceIp]
+internal_value: IResolvable | DataAwsLbListenerRuleConditionSourceIp
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionSourceIp">DataAwsLbListenerRuleConditionSourceIp</a>
 
 ---
 

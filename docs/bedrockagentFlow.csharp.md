@@ -281,7 +281,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.importFrom"></a>
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -375,12 +375,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutDefinition` <a name="PutDefinition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.putDefinition"></a>
 
 ```csharp
-private void PutDefinition(object Value)
+private void PutDefinition(IResolvable|BedrockagentFlowDefinition[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.putDefinition.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]
 
 ---
 
@@ -558,13 +558,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definition">Definition</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList">BedrockagentFlowDefinitionList</a></code> | *No description.* |
@@ -575,13 +575,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.version">Version</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.customerEncryptionKeyArnInput">CustomerEncryptionKeyArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definitionInput">DefinitionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definitionInput">DefinitionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.executionRoleArnInput">ExecutionRoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.customerEncryptionKeyArn">CustomerEncryptionKeyArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>string</code> | *No description.* |
@@ -666,20 +666,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -726,10 +726,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -836,10 +836,10 @@ public string CustomerEncryptionKeyArnInput { get; }
 ##### `DefinitionInput`<sup>Optional</sup> <a name="DefinitionInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.definitionInput"></a>
 
 ```csharp
-public object DefinitionInput { get; }
+public IResolvable|BedrockagentFlowDefinition[] DefinitionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]
 
 ---
 
@@ -896,10 +896,10 @@ public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|BedrockagentFlowTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>
 
 ---
 
@@ -991,17 +991,17 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ExecutionRoleArn,
     string Name,
     string CustomerEncryptionKeyArn = null,
-    object Definition = null,
+    IResolvable|BedrockagentFlowDefinition[] Definition = null,
     string Description = null,
     string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
@@ -1013,17 +1013,17 @@ new BedrockagentFlowConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.customerEncryptionKeyArn">CustomerEncryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition">Definition</a></code> | <code>object</code> | definition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition">Definition</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]</code> | definition block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
@@ -1034,20 +1034,20 @@ new BedrockagentFlowConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1094,10 +1094,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1140,10 +1140,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Definition`<sup>Optional</sup> <a name="Definition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition"></a>
 
 ```csharp
-public object Definition { get; set; }
+public IResolvable|BedrockagentFlowDefinition[] Definition { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]
 
 definition block.
 
@@ -1211,8 +1211,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinition {
-    object Connection = null,
-    object NodeAttribute = null
+    IResolvable|BedrockagentFlowDefinitionConnection[] Connection = null,
+    IResolvable|BedrockagentFlowDefinitionNode[] NodeAttribute = null
 };
 ```
 
@@ -1220,18 +1220,18 @@ new BedrockagentFlowDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.connection">Connection</a></code> | <code>object</code> | connection block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.nodeAttribute">NodeAttribute</a></code> | <code>object</code> | node block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]</code> | connection block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.nodeAttribute">NodeAttribute</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]</code> | node block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public IResolvable|BedrockagentFlowDefinitionConnection[] Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]
 
 connection block.
 
@@ -1242,10 +1242,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NodeAttribute`<sup>Optional</sup> <a name="NodeAttribute" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition.property.nodeAttribute"></a>
 
 ```csharp
-public object NodeAttribute { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNode[] NodeAttribute { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]
 
 node block.
 
@@ -1265,7 +1265,7 @@ new BedrockagentFlowDefinitionConnection {
     string Source,
     string Target,
     string Type,
-    object Configuration = null
+    IResolvable|BedrockagentFlowDefinitionConnectionConfiguration[] Configuration = null
 };
 ```
 
@@ -1277,7 +1277,7 @@ new BedrockagentFlowDefinitionConnection {
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#source BedrockagentFlow#source}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#target BedrockagentFlow#target}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration">Configuration</a></code> | <code>object</code> | configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration">Configuration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]</code> | configuration block. |
 
 ---
 
@@ -1332,10 +1332,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Configuration`<sup>Optional</sup> <a name="Configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration"></a>
 
 ```csharp
-public object Configuration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfiguration[] Configuration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]
 
 configuration block.
 
@@ -1351,8 +1351,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionConnectionConfiguration {
-    object Conditional = null,
-    object Data = null
+    IResolvable|BedrockagentFlowDefinitionConnectionConfigurationConditional[] Conditional = null,
+    IResolvable|BedrockagentFlowDefinitionConnectionConfigurationData[] Data = null
 };
 ```
 
@@ -1360,18 +1360,18 @@ new BedrockagentFlowDefinitionConnectionConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.conditional">Conditional</a></code> | <code>object</code> | conditional block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.data">Data</a></code> | <code>object</code> | data block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.conditional">Conditional</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]</code> | conditional block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.data">Data</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]</code> | data block. |
 
 ---
 
 ##### `Conditional`<sup>Optional</sup> <a name="Conditional" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.conditional"></a>
 
 ```csharp
-public object Conditional { get; set; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationConditional[] Conditional { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]
 
 conditional block.
 
@@ -1382,10 +1382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Data`<sup>Optional</sup> <a name="Data" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration.property.data"></a>
 
 ```csharp
-public object Data { get; set; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationData[] Data { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]
 
 data block.
 
@@ -1481,9 +1481,9 @@ using HashiCorp.Cdktf.Providers.Aws;
 new BedrockagentFlowDefinitionNode {
     string Name,
     string Type,
-    object Configuration = null,
-    object Input = null,
-    object Output = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfiguration[] Configuration = null,
+    IResolvable|BedrockagentFlowDefinitionNodeInput[] Input = null,
+    IResolvable|BedrockagentFlowDefinitionNodeOutput[] Output = null
 };
 ```
 
@@ -1493,9 +1493,9 @@ new BedrockagentFlowDefinitionNode {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration">Configuration</a></code> | <code>object</code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input">Input</a></code> | <code>object</code> | input block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output">Output</a></code> | <code>object</code> | output block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration">Configuration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]</code> | configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input">Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]</code> | input block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output">Output</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]</code> | output block. |
 
 ---
 
@@ -1526,10 +1526,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Configuration`<sup>Optional</sup> <a name="Configuration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration"></a>
 
 ```csharp
-public object Configuration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfiguration[] Configuration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]
 
 configuration block.
 
@@ -1540,10 +1540,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Input`<sup>Optional</sup> <a name="Input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input"></a>
 
 ```csharp
-public object Input { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeInput[] Input { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]
 
 input block.
 
@@ -1554,10 +1554,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Output`<sup>Optional</sup> <a name="Output" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output"></a>
 
 ```csharp
-public object Output { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeOutput[] Output { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]
 
 output block.
 
@@ -1573,19 +1573,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfiguration {
-    object Agent = null,
-    object Collector = null,
-    object Condition = null,
-    object InlineCode = null,
-    object Input = null,
-    object Iterator = null,
-    object KnowledgeBase = null,
-    object LambdaFunction = null,
-    object Lex = null,
-    object Output = null,
-    object Prompt = null,
-    object Retrieval = null,
-    object Storage = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationAgent[] Agent = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationCollector[] Collector = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationCondition[] Condition = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationInlineCode[] InlineCode = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationInput[] Input = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationIterator[] Iterator = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase[] KnowledgeBase = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationLambdaFunction[] LambdaFunction = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationLex[] Lex = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationOutput[] Output = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPrompt[] Prompt = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrieval[] Retrieval = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorage[] Storage = null
 };
 ```
 
@@ -1593,29 +1593,29 @@ new BedrockagentFlowDefinitionNodeConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.agent">Agent</a></code> | <code>object</code> | agent block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.collector">Collector</a></code> | <code>object</code> | collector block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.condition">Condition</a></code> | <code>object</code> | condition block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.inlineCode">InlineCode</a></code> | <code>object</code> | inline_code block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.input">Input</a></code> | <code>object</code> | input block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.iterator">Iterator</a></code> | <code>object</code> | iterator block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.knowledgeBase">KnowledgeBase</a></code> | <code>object</code> | knowledge_base block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lambdaFunction">LambdaFunction</a></code> | <code>object</code> | lambda_function block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lex">Lex</a></code> | <code>object</code> | lex block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.output">Output</a></code> | <code>object</code> | output block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.prompt">Prompt</a></code> | <code>object</code> | prompt block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.retrieval">Retrieval</a></code> | <code>object</code> | retrieval block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.storage">Storage</a></code> | <code>object</code> | storage block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.agent">Agent</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]</code> | agent block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.collector">Collector</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]</code> | collector block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.condition">Condition</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]</code> | condition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.inlineCode">InlineCode</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]</code> | inline_code block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.input">Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]</code> | input block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.iterator">Iterator</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]</code> | iterator block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.knowledgeBase">KnowledgeBase</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]</code> | knowledge_base block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lambdaFunction">LambdaFunction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]</code> | lambda_function block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lex">Lex</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]</code> | lex block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.output">Output</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]</code> | output block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.prompt">Prompt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]</code> | prompt block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.retrieval">Retrieval</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]</code> | retrieval block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.storage">Storage</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]</code> | storage block. |
 
 ---
 
 ##### `Agent`<sup>Optional</sup> <a name="Agent" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.agent"></a>
 
 ```csharp
-public object Agent { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationAgent[] Agent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]
 
 agent block.
 
@@ -1626,10 +1626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Collector`<sup>Optional</sup> <a name="Collector" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.collector"></a>
 
 ```csharp
-public object Collector { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCollector[] Collector { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]
 
 collector block.
 
@@ -1640,10 +1640,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Condition`<sup>Optional</sup> <a name="Condition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.condition"></a>
 
 ```csharp
-public object Condition { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCondition[] Condition { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]
 
 condition block.
 
@@ -1654,10 +1654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InlineCode`<sup>Optional</sup> <a name="InlineCode" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.inlineCode"></a>
 
 ```csharp
-public object InlineCode { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInlineCode[] InlineCode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]
 
 inline_code block.
 
@@ -1668,10 +1668,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Input`<sup>Optional</sup> <a name="Input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.input"></a>
 
 ```csharp
-public object Input { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInput[] Input { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]
 
 input block.
 
@@ -1682,10 +1682,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Iterator`<sup>Optional</sup> <a name="Iterator" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.iterator"></a>
 
 ```csharp
-public object Iterator { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationIterator[] Iterator { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]
 
 iterator block.
 
@@ -1696,10 +1696,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `KnowledgeBase`<sup>Optional</sup> <a name="KnowledgeBase" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.knowledgeBase"></a>
 
 ```csharp
-public object KnowledgeBase { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase[] KnowledgeBase { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]
 
 knowledge_base block.
 
@@ -1710,10 +1710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LambdaFunction`<sup>Optional</sup> <a name="LambdaFunction" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lambdaFunction"></a>
 
 ```csharp
-public object LambdaFunction { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLambdaFunction[] LambdaFunction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]
 
 lambda_function block.
 
@@ -1724,10 +1724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Lex`<sup>Optional</sup> <a name="Lex" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.lex"></a>
 
 ```csharp
-public object Lex { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLex[] Lex { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]
 
 lex block.
 
@@ -1738,10 +1738,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Output`<sup>Optional</sup> <a name="Output" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.output"></a>
 
 ```csharp
-public object Output { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationOutput[] Output { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]
 
 output block.
 
@@ -1752,10 +1752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Prompt`<sup>Optional</sup> <a name="Prompt" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.prompt"></a>
 
 ```csharp
-public object Prompt { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPrompt[] Prompt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]
 
 prompt block.
 
@@ -1766,10 +1766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Retrieval`<sup>Optional</sup> <a name="Retrieval" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.retrieval"></a>
 
 ```csharp
-public object Retrieval { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrieval[] Retrieval { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]
 
 retrieval block.
 
@@ -1780,10 +1780,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Storage`<sup>Optional</sup> <a name="Storage" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration.property.storage"></a>
 
 ```csharp
-public object Storage { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorage[] Storage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]
 
 storage block.
 
@@ -1844,7 +1844,7 @@ new BedrockagentFlowDefinitionNodeConfigurationCollector {
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationCondition {
-    object Condition = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationConditionCondition[] Condition = null
 };
 ```
 
@@ -1852,17 +1852,17 @@ new BedrockagentFlowDefinitionNodeConfigurationCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition.property.condition">Condition</a></code> | <code>object</code> | condition block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition.property.condition">Condition</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]</code> | condition block. |
 
 ---
 
 ##### `Condition`<sup>Optional</sup> <a name="Condition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition.property.condition"></a>
 
 ```csharp
-public object Condition { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationConditionCondition[] Condition { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]
 
 condition block.
 
@@ -1998,8 +1998,8 @@ using HashiCorp.Cdktf.Providers.Aws;
 new BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase {
     string KnowledgeBaseId,
     string ModelId,
-    object GuardrailConfiguration = null,
-    object InferenceConfiguration = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration[] GuardrailConfiguration = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration[] InferenceConfiguration = null,
     double NumberOfResults = null
 };
 ```
@@ -2010,8 +2010,8 @@ new BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#knowledge_base_id BedrockagentFlow#knowledge_base_id}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.modelId">ModelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration">GuardrailConfiguration</a></code> | <code>object</code> | guardrail_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration">InferenceConfiguration</a></code> | <code>object</code> | inference_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration">GuardrailConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]</code> | guardrail_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration">InferenceConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]</code> | inference_configuration block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.numberOfResults">NumberOfResults</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#number_of_results BedrockagentFlow#number_of_results}. |
 
 ---
@@ -2043,10 +2043,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GuardrailConfiguration`<sup>Optional</sup> <a name="GuardrailConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration"></a>
 
 ```csharp
-public object GuardrailConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration[] GuardrailConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]
 
 guardrail_configuration block.
 
@@ -2057,10 +2057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InferenceConfiguration`<sup>Optional</sup> <a name="InferenceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration"></a>
 
 ```csharp
-public object InferenceConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration[] InferenceConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]
 
 inference_configuration block.
 
@@ -2134,7 +2134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration {
-    object Text = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText[] Text = null
 };
 ```
 
@@ -2142,17 +2142,17 @@ new BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration.property.text">Text</a></code> | <code>object</code> | text block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration.property.text">Text</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]</code> | text block. |
 
 ---
 
 ##### `Text`<sup>Optional</sup> <a name="Text" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration.property.text"></a>
 
 ```csharp
-public object Text { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText[] Text { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]
 
 text block.
 
@@ -2333,8 +2333,8 @@ new BedrockagentFlowDefinitionNodeConfigurationOutput {
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPrompt {
-    object GuardrailConfiguration = null,
-    object SourceConfiguration = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration[] GuardrailConfiguration = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration[] SourceConfiguration = null
 };
 ```
 
@@ -2342,18 +2342,18 @@ new BedrockagentFlowDefinitionNodeConfigurationPrompt {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.guardrailConfiguration">GuardrailConfiguration</a></code> | <code>object</code> | guardrail_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.sourceConfiguration">SourceConfiguration</a></code> | <code>object</code> | source_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.guardrailConfiguration">GuardrailConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]</code> | guardrail_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.sourceConfiguration">SourceConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]</code> | source_configuration block. |
 
 ---
 
 ##### `GuardrailConfiguration`<sup>Optional</sup> <a name="GuardrailConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.guardrailConfiguration"></a>
 
 ```csharp
-public object GuardrailConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration[] GuardrailConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]
 
 guardrail_configuration block.
 
@@ -2364,10 +2364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SourceConfiguration`<sup>Optional</sup> <a name="SourceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt.property.sourceConfiguration"></a>
 
 ```csharp
-public object SourceConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration[] SourceConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]
 
 source_configuration block.
 
@@ -2429,8 +2429,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration {
-    object Inline = null,
-    object Resource = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline[] Inline = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource[] Resource = null
 };
 ```
 
@@ -2438,18 +2438,18 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.inline">Inline</a></code> | <code>object</code> | inline block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.resource">Resource</a></code> | <code>object</code> | resource block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.inline">Inline</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]</code> | inline block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.resource">Resource</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]</code> | resource block. |
 
 ---
 
 ##### `Inline`<sup>Optional</sup> <a name="Inline" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.inline"></a>
 
 ```csharp
-public object Inline { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline[] Inline { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]
 
 inline block.
 
@@ -2460,10 +2460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Resource`<sup>Optional</sup> <a name="Resource" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration.property.resource"></a>
 
 ```csharp
-public object Resource { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource[] Resource { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]
 
 resource block.
 
@@ -2482,8 +2482,8 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline {
     string ModelId,
     string TemplateType,
     string AdditionalModelRequestFields = null,
-    object InferenceConfiguration = null,
-    object TemplateConfiguration = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration[] InferenceConfiguration = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration[] TemplateConfiguration = null
 };
 ```
 
@@ -2494,8 +2494,8 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline {
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.modelId">ModelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateType">TemplateType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#template_type BedrockagentFlow#template_type}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.additionalModelRequestFields">AdditionalModelRequestFields</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#additional_model_request_fields BedrockagentFlow#additional_model_request_fields}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration">InferenceConfiguration</a></code> | <code>object</code> | inference_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration">TemplateConfiguration</a></code> | <code>object</code> | template_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration">InferenceConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]</code> | inference_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration">TemplateConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]</code> | template_configuration block. |
 
 ---
 
@@ -2538,10 +2538,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InferenceConfiguration`<sup>Optional</sup> <a name="InferenceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration"></a>
 
 ```csharp
-public object InferenceConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration[] InferenceConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]
 
 inference_configuration block.
 
@@ -2552,10 +2552,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `TemplateConfiguration`<sup>Optional</sup> <a name="TemplateConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration"></a>
 
 ```csharp
-public object TemplateConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration[] TemplateConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]
 
 template_configuration block.
 
@@ -2571,7 +2571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration {
-    object Text = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText[] Text = null
 };
 ```
 
@@ -2579,17 +2579,17 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration.property.text">Text</a></code> | <code>object</code> | text block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration.property.text">Text</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]</code> | text block. |
 
 ---
 
 ##### `Text`<sup>Optional</sup> <a name="Text" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration.property.text"></a>
 
 ```csharp
-public object Text { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText[] Text { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]
 
 text block.
 
@@ -2679,8 +2679,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration {
-    object Chat = null,
-    object Text = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat[] Chat = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText[] Text = null
 };
 ```
 
@@ -2688,18 +2688,18 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.chat">Chat</a></code> | <code>object</code> | chat block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.text">Text</a></code> | <code>object</code> | text block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.chat">Chat</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]</code> | chat block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.text">Text</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]</code> | text block. |
 
 ---
 
 ##### `Chat`<sup>Optional</sup> <a name="Chat" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.chat"></a>
 
 ```csharp
-public object Chat { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat[] Chat { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]
 
 chat block.
 
@@ -2710,10 +2710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Text`<sup>Optional</sup> <a name="Text" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration.property.text"></a>
 
 ```csharp
-public object Text { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText[] Text { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]
 
 text block.
 
@@ -2729,10 +2729,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat {
-    object InputVariable = null,
-    object Message = null,
-    object SystemAttribute = null,
-    object ToolConfiguration = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable[] InputVariable = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage[] Message = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem[] SystemAttribute = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration[] ToolConfiguration = null
 };
 ```
 
@@ -2740,20 +2740,20 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.inputVariable">InputVariable</a></code> | <code>object</code> | input_variable block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.message">Message</a></code> | <code>object</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.systemAttribute">SystemAttribute</a></code> | <code>object</code> | system block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.toolConfiguration">ToolConfiguration</a></code> | <code>object</code> | tool_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.inputVariable">InputVariable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]</code> | input_variable block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.systemAttribute">SystemAttribute</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]</code> | system block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.toolConfiguration">ToolConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]</code> | tool_configuration block. |
 
 ---
 
 ##### `InputVariable`<sup>Optional</sup> <a name="InputVariable" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.inputVariable"></a>
 
 ```csharp
-public object InputVariable { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable[] InputVariable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]
 
 input_variable block.
 
@@ -2764,10 +2764,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Message`<sup>Optional</sup> <a name="Message" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]
 
 message block.
 
@@ -2778,10 +2778,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SystemAttribute`<sup>Optional</sup> <a name="SystemAttribute" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.systemAttribute"></a>
 
 ```csharp
-public object SystemAttribute { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem[] SystemAttribute { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]
 
 system block.
 
@@ -2792,10 +2792,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ToolConfiguration`<sup>Optional</sup> <a name="ToolConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat.property.toolConfiguration"></a>
 
 ```csharp
-public object ToolConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration[] ToolConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]
 
 tool_configuration block.
 
@@ -2844,7 +2844,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage {
     string Role,
-    object Content = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent[] Content = null
 };
 ```
 
@@ -2853,7 +2853,7 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#role BedrockagentFlow#role}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content">Content</a></code> | <code>object</code> | content block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content">Content</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]</code> | content block. |
 
 ---
 
@@ -2872,10 +2872,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Content`<sup>Optional</sup> <a name="Content" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content"></a>
 
 ```csharp
-public object Content { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent[] Content { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]
 
 content block.
 
@@ -2891,7 +2891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent {
-    object CachePoint = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint[] CachePoint = null,
     string Text = null
 };
 ```
@@ -2900,7 +2900,7 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint">CachePoint</a></code> | <code>object</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint">CachePoint</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]</code> | cache_point block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 
 ---
@@ -2908,10 +2908,10 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 ##### `CachePoint`<sup>Optional</sup> <a name="CachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint"></a>
 
 ```csharp
-public object CachePoint { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint[] CachePoint { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]
 
 cache_point block.
 
@@ -2971,7 +2971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem {
-    object CachePoint = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint[] CachePoint = null,
     string Text = null
 };
 ```
@@ -2980,7 +2980,7 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint">CachePoint</a></code> | <code>object</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint">CachePoint</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]</code> | cache_point block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 
 ---
@@ -2988,10 +2988,10 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 ##### `CachePoint`<sup>Optional</sup> <a name="CachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint"></a>
 
 ```csharp
-public object CachePoint { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint[] CachePoint { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]
 
 cache_point block.
 
@@ -3051,8 +3051,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration {
-    object Tool = null,
-    object ToolChoice = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool[] Tool = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice[] ToolChoice = null
 };
 ```
 
@@ -3060,18 +3060,18 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.tool">Tool</a></code> | <code>object</code> | tool block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.toolChoice">ToolChoice</a></code> | <code>object</code> | tool_choice block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.tool">Tool</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]</code> | tool block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.toolChoice">ToolChoice</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]</code> | tool_choice block. |
 
 ---
 
 ##### `Tool`<sup>Optional</sup> <a name="Tool" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.tool"></a>
 
 ```csharp
-public object Tool { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool[] Tool { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]
 
 tool block.
 
@@ -3082,10 +3082,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ToolChoice`<sup>Optional</sup> <a name="ToolChoice" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration.property.toolChoice"></a>
 
 ```csharp
-public object ToolChoice { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice[] ToolChoice { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]
 
 tool_choice block.
 
@@ -3101,8 +3101,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool {
-    object CachePoint = null,
-    object ToolSpec = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint[] CachePoint = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec[] ToolSpec = null
 };
 ```
 
@@ -3110,18 +3110,18 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.cachePoint">CachePoint</a></code> | <code>object</code> | cache_point block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.toolSpec">ToolSpec</a></code> | <code>object</code> | tool_spec block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.cachePoint">CachePoint</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.toolSpec">ToolSpec</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]</code> | tool_spec block. |
 
 ---
 
 ##### `CachePoint`<sup>Optional</sup> <a name="CachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.cachePoint"></a>
 
 ```csharp
-public object CachePoint { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint[] CachePoint { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]
 
 cache_point block.
 
@@ -3132,10 +3132,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ToolSpec`<sup>Optional</sup> <a name="ToolSpec" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool.property.toolSpec"></a>
 
 ```csharp
-public object ToolSpec { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec[] ToolSpec { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]
 
 tool_spec block.
 
@@ -3183,9 +3183,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice {
-    object Any = null,
-    object Auto = null,
-    object Tool = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny[] Any = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto[] Auto = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool[] Tool = null
 };
 ```
 
@@ -3193,19 +3193,19 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.any">Any</a></code> | <code>object</code> | any block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.auto">Auto</a></code> | <code>object</code> | auto block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.tool">Tool</a></code> | <code>object</code> | tool block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.any">Any</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]</code> | any block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.auto">Auto</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]</code> | auto block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.tool">Tool</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]</code> | tool block. |
 
 ---
 
 ##### `Any`<sup>Optional</sup> <a name="Any" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.any"></a>
 
 ```csharp
-public object Any { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny[] Any { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]
 
 any block.
 
@@ -3216,10 +3216,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Auto`<sup>Optional</sup> <a name="Auto" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.auto"></a>
 
 ```csharp
-public object Auto { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto[] Auto { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]
 
 auto block.
 
@@ -3230,10 +3230,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Tool`<sup>Optional</sup> <a name="Tool" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice.property.tool"></a>
 
 ```csharp
-public object Tool { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool[] Tool { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]
 
 tool block.
 
@@ -3309,7 +3309,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec {
     string Name,
     string Description = null,
-    object InputSchema = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema[] InputSchema = null
 };
 ```
 
@@ -3319,7 +3319,7 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema">InputSchema</a></code> | <code>object</code> | input_schema block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema">InputSchema</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]</code> | input_schema block. |
 
 ---
 
@@ -3350,10 +3350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InputSchema`<sup>Optional</sup> <a name="InputSchema" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema"></a>
 
 ```csharp
-public object InputSchema { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema[] InputSchema { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]
 
 input_schema block.
 
@@ -3402,8 +3402,8 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText {
     string Text,
-    object CachePoint = null,
-    object InputVariable = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint[] CachePoint = null,
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable[] InputVariable = null
 };
 ```
 
@@ -3412,8 +3412,8 @@ new BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTe
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint">CachePoint</a></code> | <code>object</code> | cache_point block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable">InputVariable</a></code> | <code>object</code> | input_variable block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint">CachePoint</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]</code> | cache_point block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable">InputVariable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]</code> | input_variable block. |
 
 ---
 
@@ -3432,10 +3432,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CachePoint`<sup>Optional</sup> <a name="CachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint"></a>
 
 ```csharp
-public object CachePoint { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint[] CachePoint { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]
 
 cache_point block.
 
@@ -3446,10 +3446,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InputVariable`<sup>Optional</sup> <a name="InputVariable" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable"></a>
 
 ```csharp
-public object InputVariable { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable[] InputVariable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]
 
 input_variable block.
 
@@ -3561,7 +3561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationRetrieval {
-    object ServiceConfiguration = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration[] ServiceConfiguration = null
 };
 ```
 
@@ -3569,17 +3569,17 @@ new BedrockagentFlowDefinitionNodeConfigurationRetrieval {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval.property.serviceConfiguration">ServiceConfiguration</a></code> | <code>object</code> | service_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval.property.serviceConfiguration">ServiceConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]</code> | service_configuration block. |
 
 ---
 
 ##### `ServiceConfiguration`<sup>Optional</sup> <a name="ServiceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval.property.serviceConfiguration"></a>
 
 ```csharp
-public object ServiceConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration[] ServiceConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]
 
 service_configuration block.
 
@@ -3595,7 +3595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration {
-    object S3 = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3[] S3 = null
 };
 ```
 
@@ -3603,17 +3603,17 @@ new BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration.property.s3">S3</a></code> | <code>object</code> | s3 block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration.property.s3">S3</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]</code> | s3 block. |
 
 ---
 
 ##### `S3`<sup>Optional</sup> <a name="S3" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration.property.s3"></a>
 
 ```csharp
-public object S3 { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3[] S3 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]
 
 s3 block.
 
@@ -3661,7 +3661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationStorage {
-    object ServiceConfiguration = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration[] ServiceConfiguration = null
 };
 ```
 
@@ -3669,17 +3669,17 @@ new BedrockagentFlowDefinitionNodeConfigurationStorage {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage.property.serviceConfiguration">ServiceConfiguration</a></code> | <code>object</code> | service_configuration block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage.property.serviceConfiguration">ServiceConfiguration</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]</code> | service_configuration block. |
 
 ---
 
 ##### `ServiceConfiguration`<sup>Optional</sup> <a name="ServiceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage.property.serviceConfiguration"></a>
 
 ```csharp
-public object ServiceConfiguration { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration[] ServiceConfiguration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]
 
 service_configuration block.
 
@@ -3695,7 +3695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration {
-    object S3 = null
+    IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3[] S3 = null
 };
 ```
 
@@ -3703,17 +3703,17 @@ new BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration.property.s3">S3</a></code> | <code>object</code> | s3 block. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration.property.s3">S3</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]</code> | s3 block. |
 
 ---
 
 ##### `S3`<sup>Optional</sup> <a name="S3" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration.property.s3"></a>
 
 ```csharp
-public object S3 { get; set; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3[] S3 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]
 
 s3 block.
 
@@ -4062,7 +4062,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]</code> | *No description.* |
 
 ---
 
@@ -4093,10 +4093,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationConditional[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]
 
 ---
 
@@ -4331,7 +4331,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.conditionInput">ConditionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.condition">Condition</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a></code> | *No description.* |
 
 ---
 
@@ -4382,10 +4382,10 @@ public string Condition { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationConditional InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>
 
 ---
 
@@ -4511,7 +4511,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]</code> | *No description.* |
 
 ---
 
@@ -4542,10 +4542,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationData[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]
 
 ---
 
@@ -4782,7 +4782,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.targetInputInput">TargetInputInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.sourceOutput">SourceOutput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.targetInput">TargetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a></code> | *No description.* |
 
 ---
 
@@ -4853,10 +4853,10 @@ public string TargetInput { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationData InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>
 
 ---
 
@@ -4982,7 +4982,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -5013,10 +5013,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]
 
 ---
 
@@ -5249,24 +5249,24 @@ Returns a reversible string representation.
 ##### `PutConditional` <a name="PutConditional" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.putConditional"></a>
 
 ```csharp
-private void PutConditional(object Value)
+private void PutConditional(IResolvable|BedrockagentFlowDefinitionConnectionConfigurationConditional[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.putConditional.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]
 
 ---
 
 ##### `PutData` <a name="PutData" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.putData"></a>
 
 ```csharp
-private void PutData(object Value)
+private void PutData(IResolvable|BedrockagentFlowDefinitionConnectionConfigurationData[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.putData.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]
 
 ---
 
@@ -5291,9 +5291,9 @@ private void ResetData()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditional">Conditional</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditionalList">BedrockagentFlowDefinitionConnectionConfigurationConditionalList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.data">Data</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationDataList">BedrockagentFlowDefinitionConnectionConfigurationDataList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditionalInput">ConditionalInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.dataInput">DataInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditionalInput">ConditionalInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.dataInput">DataInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -5344,30 +5344,30 @@ public BedrockagentFlowDefinitionConnectionConfigurationDataList Data { get; }
 ##### `ConditionalInput`<sup>Optional</sup> <a name="ConditionalInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.conditionalInput"></a>
 
 ```csharp
-public object ConditionalInput { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationConditional[] ConditionalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional">BedrockagentFlowDefinitionConnectionConfigurationConditional</a>[]
 
 ---
 
 ##### `DataInput`<sup>Optional</sup> <a name="DataInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.dataInput"></a>
 
 ```csharp
-public object DataInput { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfigurationData[] DataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData">BedrockagentFlowDefinitionConnectionConfigurationData</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>
 
 ---
 
@@ -5493,7 +5493,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]</code> | *No description.* |
 
 ---
 
@@ -5524,10 +5524,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnection[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]
 
 ---
 
@@ -5758,12 +5758,12 @@ Returns a reversible string representation.
 ##### `PutConfiguration` <a name="PutConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.putConfiguration"></a>
 
 ```csharp
-private void PutConfiguration(object Value)
+private void PutConfiguration(IResolvable|BedrockagentFlowDefinitionConnectionConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.putConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]
 
 ---
 
@@ -5781,7 +5781,7 @@ private void ResetConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationList">BedrockagentFlowDefinitionConnectionConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configurationInput">ConfigurationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configurationInput">ConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.targetInput">TargetInput</a></code> | <code>string</code> | *No description.* |
@@ -5790,7 +5790,7 @@ private void ResetConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a></code> | *No description.* |
 
 ---
 
@@ -5831,10 +5831,10 @@ public BedrockagentFlowDefinitionConnectionConfigurationList Configuration { get
 ##### `ConfigurationInput`<sup>Optional</sup> <a name="ConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.configurationInput"></a>
 
 ```csharp
-public object ConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionConnectionConfiguration[] ConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>[]
 
 ---
 
@@ -5921,10 +5921,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionConnection InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>
 
 ---
 
@@ -6050,7 +6050,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]</code> | *No description.* |
 
 ---
 
@@ -6081,10 +6081,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinition[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>[]
 
 ---
 
@@ -6210,7 +6210,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]</code> | *No description.* |
 
 ---
 
@@ -6241,10 +6241,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationAgent[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]
 
 ---
 
@@ -6479,7 +6479,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.agentAliasArnInput">AgentAliasArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.agentAliasArn">AgentAliasArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a></code> | *No description.* |
 
 ---
 
@@ -6530,10 +6530,10 @@ public string AgentAliasArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationAgent InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>
 
 ---
 
@@ -6659,7 +6659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]</code> | *No description.* |
 
 ---
 
@@ -6690,10 +6690,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCollector[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]
 
 ---
 
@@ -6926,7 +6926,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a></code> | *No description.* |
 
 ---
 
@@ -6957,10 +6957,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollectorOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCollector InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>
 
 ---
 
@@ -7086,7 +7086,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]</code> | *No description.* |
 
 ---
 
@@ -7117,10 +7117,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationConditionCondition[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]
 
 ---
 
@@ -7364,7 +7364,7 @@ private void ResetExpression()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a></code> | *No description.* |
 
 ---
 
@@ -7435,10 +7435,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationConditionCondition InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>
 
 ---
 
@@ -7564,7 +7564,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]</code> | *No description.* |
 
 ---
 
@@ -7595,10 +7595,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCondition[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]
 
 ---
 
@@ -7829,12 +7829,12 @@ Returns a reversible string representation.
 ##### `PutCondition` <a name="PutCondition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.putCondition"></a>
 
 ```csharp
-private void PutCondition(object Value)
+private void PutCondition(IResolvable|BedrockagentFlowDefinitionNodeConfigurationConditionCondition[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]
 
 ---
 
@@ -7852,8 +7852,8 @@ private void ResetCondition()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionConditionList">BedrockagentFlowDefinitionNodeConfigurationConditionConditionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.conditionInput">ConditionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.conditionInput">ConditionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a></code> | *No description.* |
 
 ---
 
@@ -7894,20 +7894,20 @@ public BedrockagentFlowDefinitionNodeConfigurationConditionConditionList Conditi
 ##### `ConditionInput`<sup>Optional</sup> <a name="ConditionInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.conditionInput"></a>
 
 ```csharp
-public object ConditionInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationConditionCondition[] ConditionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition">BedrockagentFlowDefinitionNodeConfigurationConditionCondition</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCondition InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>
 
 ---
 
@@ -8033,7 +8033,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]</code> | *No description.* |
 
 ---
 
@@ -8064,10 +8064,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInlineCode[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]
 
 ---
 
@@ -8304,7 +8304,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.languageInput">LanguageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.code">Code</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.language">Language</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a></code> | *No description.* |
 
 ---
 
@@ -8375,10 +8375,10 @@ public string Language { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCodeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInlineCode InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>
 
 ---
 
@@ -8504,7 +8504,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]</code> | *No description.* |
 
 ---
 
@@ -8535,10 +8535,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInput[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]
 
 ---
 
@@ -8771,7 +8771,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a></code> | *No description.* |
 
 ---
 
@@ -8802,10 +8802,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInputOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInput InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>
 
 ---
 
@@ -8931,7 +8931,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]</code> | *No description.* |
 
 ---
 
@@ -8962,10 +8962,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationIterator[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]
 
 ---
 
@@ -9198,7 +9198,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a></code> | *No description.* |
 
 ---
 
@@ -9229,10 +9229,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIteratorOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationIterator InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>
 
 ---
 
@@ -9358,7 +9358,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -9389,10 +9389,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]
 
 ---
 
@@ -9629,7 +9629,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.guardrailVersionInput">GuardrailVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.guardrailIdentifier">GuardrailIdentifier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.guardrailVersion">GuardrailVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -9700,10 +9700,10 @@ public string GuardrailVersion { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>
 
 ---
 
@@ -9829,7 +9829,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -9860,10 +9860,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]
 
 ---
 
@@ -10094,12 +10094,12 @@ Returns a reversible string representation.
 ##### `PutText` <a name="PutText" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.putText"></a>
 
 ```csharp
-private void PutText(object Value)
+private void PutText(IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.putText.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]
 
 ---
 
@@ -10117,8 +10117,8 @@ private void ResetText()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.text">Text</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.textInput">TextInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.textInput">TextInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -10159,20 +10159,20 @@ public BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigur
 ##### `TextInput`<sup>Optional</sup> <a name="TextInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.textInput"></a>
 
 ```csharp
-public object TextInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText[] TextInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>
 
 ---
 
@@ -10298,7 +10298,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]</code> | *No description.* |
 
 ---
 
@@ -10329,10 +10329,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>[]
 
 ---
 
@@ -10601,7 +10601,7 @@ private void ResetTopP()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.stopSequences">StopSequences</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.temperature">Temperature</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.topP">TopP</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a></code> | *No description.* |
 
 ---
 
@@ -10712,10 +10712,10 @@ public double TopP { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText</a>
 
 ---
 
@@ -10841,7 +10841,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]</code> | *No description.* |
 
 ---
 
@@ -10872,10 +10872,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]
 
 ---
 
@@ -11109,24 +11109,24 @@ Returns a reversible string representation.
 ##### `PutGuardrailConfiguration` <a name="PutGuardrailConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.putGuardrailConfiguration"></a>
 
 ```csharp
-private void PutGuardrailConfiguration(object Value)
+private void PutGuardrailConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.putGuardrailConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]
 
 ---
 
 ##### `PutInferenceConfiguration` <a name="PutInferenceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.putInferenceConfiguration"></a>
 
 ```csharp
-private void PutInferenceConfiguration(object Value)
+private void PutInferenceConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.putInferenceConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]
 
 ---
 
@@ -11157,15 +11157,15 @@ private void ResetNumberOfResults()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfiguration">GuardrailConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfiguration">InferenceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfigurationInput">GuardrailConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfigurationInput">InferenceConfigurationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfigurationInput">GuardrailConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfigurationInput">InferenceConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.knowledgeBaseIdInput">KnowledgeBaseIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.modelIdInput">ModelIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.numberOfResultsInput">NumberOfResultsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.modelId">ModelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.numberOfResults">NumberOfResults</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a></code> | *No description.* |
 
 ---
 
@@ -11216,20 +11216,20 @@ public BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigur
 ##### `GuardrailConfigurationInput`<sup>Optional</sup> <a name="GuardrailConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.guardrailConfigurationInput"></a>
 
 ```csharp
-public object GuardrailConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration[] GuardrailConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>[]
 
 ---
 
 ##### `InferenceConfigurationInput`<sup>Optional</sup> <a name="InferenceConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.inferenceConfigurationInput"></a>
 
 ```csharp
-public object InferenceConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration[] InferenceConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>[]
 
 ---
 
@@ -11296,10 +11296,10 @@ public double NumberOfResults { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>
 
 ---
 
@@ -11425,7 +11425,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]</code> | *No description.* |
 
 ---
 
@@ -11456,10 +11456,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLambdaFunction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]
 
 ---
 
@@ -11694,7 +11694,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.lambdaArnInput">LambdaArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.lambdaArn">LambdaArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a></code> | *No description.* |
 
 ---
 
@@ -11745,10 +11745,10 @@ public string LambdaArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunctionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLambdaFunction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>
 
 ---
 
@@ -11874,7 +11874,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]</code> | *No description.* |
 
 ---
 
@@ -11905,10 +11905,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLex[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]
 
 ---
 
@@ -12145,7 +12145,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.localeIdInput">LocaleIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.botAliasArn">BotAliasArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.localeId">LocaleId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a></code> | *No description.* |
 
 ---
 
@@ -12216,10 +12216,10 @@ public string LocaleId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLexOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLex InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>
 
 ---
 
@@ -12345,7 +12345,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -12376,10 +12376,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]
 
 ---
 
@@ -12505,7 +12505,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]</code> | *No description.* |
 
 ---
 
@@ -12536,10 +12536,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationOutput[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]
 
 ---
 
@@ -12772,7 +12772,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a></code> | *No description.* |
 
 ---
 
@@ -12803,10 +12803,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationOutput InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>
 
 ---
 
@@ -13061,156 +13061,156 @@ Returns a reversible string representation.
 ##### `PutAgent` <a name="PutAgent" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putAgent"></a>
 
 ```csharp
-private void PutAgent(object Value)
+private void PutAgent(IResolvable|BedrockagentFlowDefinitionNodeConfigurationAgent[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putAgent.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]
 
 ---
 
 ##### `PutCollector` <a name="PutCollector" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putCollector"></a>
 
 ```csharp
-private void PutCollector(object Value)
+private void PutCollector(IResolvable|BedrockagentFlowDefinitionNodeConfigurationCollector[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putCollector.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]
 
 ---
 
 ##### `PutCondition` <a name="PutCondition" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putCondition"></a>
 
 ```csharp
-private void PutCondition(object Value)
+private void PutCondition(IResolvable|BedrockagentFlowDefinitionNodeConfigurationCondition[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]
 
 ---
 
 ##### `PutInlineCode` <a name="PutInlineCode" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putInlineCode"></a>
 
 ```csharp
-private void PutInlineCode(object Value)
+private void PutInlineCode(IResolvable|BedrockagentFlowDefinitionNodeConfigurationInlineCode[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putInlineCode.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]
 
 ---
 
 ##### `PutInput` <a name="PutInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putInput"></a>
 
 ```csharp
-private void PutInput(object Value)
+private void PutInput(IResolvable|BedrockagentFlowDefinitionNodeConfigurationInput[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putInput.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]
 
 ---
 
 ##### `PutIterator` <a name="PutIterator" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putIterator"></a>
 
 ```csharp
-private void PutIterator(object Value)
+private void PutIterator(IResolvable|BedrockagentFlowDefinitionNodeConfigurationIterator[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putIterator.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]
 
 ---
 
 ##### `PutKnowledgeBase` <a name="PutKnowledgeBase" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putKnowledgeBase"></a>
 
 ```csharp
-private void PutKnowledgeBase(object Value)
+private void PutKnowledgeBase(IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putKnowledgeBase.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]
 
 ---
 
 ##### `PutLambdaFunction` <a name="PutLambdaFunction" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putLambdaFunction"></a>
 
 ```csharp
-private void PutLambdaFunction(object Value)
+private void PutLambdaFunction(IResolvable|BedrockagentFlowDefinitionNodeConfigurationLambdaFunction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putLambdaFunction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]
 
 ---
 
 ##### `PutLex` <a name="PutLex" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putLex"></a>
 
 ```csharp
-private void PutLex(object Value)
+private void PutLex(IResolvable|BedrockagentFlowDefinitionNodeConfigurationLex[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putLex.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]
 
 ---
 
 ##### `PutOutput` <a name="PutOutput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putOutput"></a>
 
 ```csharp
-private void PutOutput(object Value)
+private void PutOutput(IResolvable|BedrockagentFlowDefinitionNodeConfigurationOutput[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putOutput.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]
 
 ---
 
 ##### `PutPrompt` <a name="PutPrompt" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putPrompt"></a>
 
 ```csharp
-private void PutPrompt(object Value)
+private void PutPrompt(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPrompt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putPrompt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]
 
 ---
 
 ##### `PutRetrieval` <a name="PutRetrieval" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putRetrieval"></a>
 
 ```csharp
-private void PutRetrieval(object Value)
+private void PutRetrieval(IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrieval[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putRetrieval.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]
 
 ---
 
 ##### `PutStorage` <a name="PutStorage" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putStorage"></a>
 
 ```csharp
-private void PutStorage(object Value)
+private void PutStorage(IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.putStorage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]
 
 ---
 
@@ -13312,20 +13312,20 @@ private void ResetStorage()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.prompt">Prompt</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList">BedrockagentFlowDefinitionNodeConfigurationPromptList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrieval">Retrieval</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList">BedrockagentFlowDefinitionNodeConfigurationRetrievalList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storage">Storage</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList">BedrockagentFlowDefinitionNodeConfigurationStorageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.agentInput">AgentInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.collectorInput">CollectorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.conditionInput">ConditionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inlineCodeInput">InlineCodeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inputInput">InputInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.iteratorInput">IteratorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.knowledgeBaseInput">KnowledgeBaseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lambdaFunctionInput">LambdaFunctionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lexInput">LexInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.outputInput">OutputInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.promptInput">PromptInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrievalInput">RetrievalInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storageInput">StorageInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.agentInput">AgentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.collectorInput">CollectorInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.conditionInput">ConditionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inlineCodeInput">InlineCodeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inputInput">InputInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.iteratorInput">IteratorInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.knowledgeBaseInput">KnowledgeBaseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lambdaFunctionInput">LambdaFunctionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lexInput">LexInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.outputInput">OutputInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.promptInput">PromptInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrievalInput">RetrievalInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storageInput">StorageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -13486,140 +13486,140 @@ public BedrockagentFlowDefinitionNodeConfigurationStorageList Storage { get; }
 ##### `AgentInput`<sup>Optional</sup> <a name="AgentInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.agentInput"></a>
 
 ```csharp
-public object AgentInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationAgent[] AgentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent">BedrockagentFlowDefinitionNodeConfigurationAgent</a>[]
 
 ---
 
 ##### `CollectorInput`<sup>Optional</sup> <a name="CollectorInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.collectorInput"></a>
 
 ```csharp
-public object CollectorInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCollector[] CollectorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCollector">BedrockagentFlowDefinitionNodeConfigurationCollector</a>[]
 
 ---
 
 ##### `ConditionInput`<sup>Optional</sup> <a name="ConditionInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.conditionInput"></a>
 
 ```csharp
-public object ConditionInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationCondition[] ConditionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationCondition">BedrockagentFlowDefinitionNodeConfigurationCondition</a>[]
 
 ---
 
 ##### `InlineCodeInput`<sup>Optional</sup> <a name="InlineCodeInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inlineCodeInput"></a>
 
 ```csharp
-public object InlineCodeInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInlineCode[] InlineCodeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode">BedrockagentFlowDefinitionNodeConfigurationInlineCode</a>[]
 
 ---
 
 ##### `InputInput`<sup>Optional</sup> <a name="InputInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.inputInput"></a>
 
 ```csharp
-public object InputInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationInput[] InputInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInput">BedrockagentFlowDefinitionNodeConfigurationInput</a>[]
 
 ---
 
 ##### `IteratorInput`<sup>Optional</sup> <a name="IteratorInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.iteratorInput"></a>
 
 ```csharp
-public object IteratorInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationIterator[] IteratorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationIterator">BedrockagentFlowDefinitionNodeConfigurationIterator</a>[]
 
 ---
 
 ##### `KnowledgeBaseInput`<sup>Optional</sup> <a name="KnowledgeBaseInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.knowledgeBaseInput"></a>
 
 ```csharp
-public object KnowledgeBaseInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase[] KnowledgeBaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase</a>[]
 
 ---
 
 ##### `LambdaFunctionInput`<sup>Optional</sup> <a name="LambdaFunctionInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lambdaFunctionInput"></a>
 
 ```csharp
-public object LambdaFunctionInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLambdaFunction[] LambdaFunctionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction">BedrockagentFlowDefinitionNodeConfigurationLambdaFunction</a>[]
 
 ---
 
 ##### `LexInput`<sup>Optional</sup> <a name="LexInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.lexInput"></a>
 
 ```csharp
-public object LexInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationLex[] LexInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex">BedrockagentFlowDefinitionNodeConfigurationLex</a>[]
 
 ---
 
 ##### `OutputInput`<sup>Optional</sup> <a name="OutputInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.outputInput"></a>
 
 ```csharp
-public object OutputInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationOutput[] OutputInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutput">BedrockagentFlowDefinitionNodeConfigurationOutput</a>[]
 
 ---
 
 ##### `PromptInput`<sup>Optional</sup> <a name="PromptInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.promptInput"></a>
 
 ```csharp
-public object PromptInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPrompt[] PromptInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]
 
 ---
 
 ##### `RetrievalInput`<sup>Optional</sup> <a name="RetrievalInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.retrievalInput"></a>
 
 ```csharp
-public object RetrievalInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrieval[] RetrievalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]
 
 ---
 
 ##### `StorageInput`<sup>Optional</sup> <a name="StorageInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.storageInput"></a>
 
 ```csharp
-public object StorageInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorage[] StorageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>
 
 ---
 
@@ -13745,7 +13745,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -13776,10 +13776,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]
 
 ---
 
@@ -14016,7 +14016,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.guardrailVersionInput">GuardrailVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.guardrailIdentifier">GuardrailIdentifier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.guardrailVersion">GuardrailVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -14087,10 +14087,10 @@ public string GuardrailVersion { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>
 
 ---
 
@@ -14216,7 +14216,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]</code> | *No description.* |
 
 ---
 
@@ -14247,10 +14247,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPrompt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>[]
 
 ---
 
@@ -14483,24 +14483,24 @@ Returns a reversible string representation.
 ##### `PutGuardrailConfiguration` <a name="PutGuardrailConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.putGuardrailConfiguration"></a>
 
 ```csharp
-private void PutGuardrailConfiguration(object Value)
+private void PutGuardrailConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.putGuardrailConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]
 
 ---
 
 ##### `PutSourceConfiguration` <a name="PutSourceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.putSourceConfiguration"></a>
 
 ```csharp
-private void PutSourceConfiguration(object Value)
+private void PutSourceConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.putSourceConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]
 
 ---
 
@@ -14525,9 +14525,9 @@ private void ResetSourceConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfiguration">GuardrailConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfiguration">SourceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfigurationInput">GuardrailConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfigurationInput">SourceConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfigurationInput">GuardrailConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfigurationInput">SourceConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a></code> | *No description.* |
 
 ---
 
@@ -14578,30 +14578,30 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList 
 ##### `GuardrailConfigurationInput`<sup>Optional</sup> <a name="GuardrailConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.guardrailConfigurationInput"></a>
 
 ```csharp
-public object GuardrailConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration[] GuardrailConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration</a>[]
 
 ---
 
 ##### `SourceConfigurationInput`<sup>Optional</sup> <a name="SourceConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.sourceConfigurationInput"></a>
 
 ```csharp
-public object SourceConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration[] SourceConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPrompt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPrompt">BedrockagentFlowDefinitionNodeConfigurationPrompt</a>
 
 ---
 
@@ -14727,7 +14727,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -14758,10 +14758,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]
 
 ---
 
@@ -14992,12 +14992,12 @@ Returns a reversible string representation.
 ##### `PutText` <a name="PutText" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.putText"></a>
 
 ```csharp
-private void PutText(object Value)
+private void PutText(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.putText.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]
 
 ---
 
@@ -15015,8 +15015,8 @@ private void ResetText()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.text">Text</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.textInput">TextInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.textInput">TextInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -15057,20 +15057,20 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `TextInput`<sup>Optional</sup> <a name="TextInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.textInput"></a>
 
 ```csharp
-public object TextInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText[] TextInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>
 
 ---
 
@@ -15196,7 +15196,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]</code> | *No description.* |
 
 ---
 
@@ -15227,10 +15227,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>[]
 
 ---
 
@@ -15499,7 +15499,7 @@ private void ResetTopP()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.stopSequences">StopSequences</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.temperature">Temperature</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.topP">TopP</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a></code> | *No description.* |
 
 ---
 
@@ -15610,10 +15610,10 @@ public double TopP { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText</a>
 
 ---
 
@@ -15739,7 +15739,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]</code> | *No description.* |
 
 ---
 
@@ -15770,10 +15770,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]
 
 ---
 
@@ -16007,24 +16007,24 @@ Returns a reversible string representation.
 ##### `PutInferenceConfiguration` <a name="PutInferenceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.putInferenceConfiguration"></a>
 
 ```csharp
-private void PutInferenceConfiguration(object Value)
+private void PutInferenceConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.putInferenceConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]
 
 ---
 
 ##### `PutTemplateConfiguration` <a name="PutTemplateConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.putTemplateConfiguration"></a>
 
 ```csharp
-private void PutTemplateConfiguration(object Value)
+private void PutTemplateConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.putTemplateConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]
 
 ---
 
@@ -16056,14 +16056,14 @@ private void ResetTemplateConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfiguration">InferenceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfiguration">TemplateConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.additionalModelRequestFieldsInput">AdditionalModelRequestFieldsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfigurationInput">InferenceConfigurationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfigurationInput">InferenceConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.modelIdInput">ModelIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfigurationInput">TemplateConfigurationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfigurationInput">TemplateConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateTypeInput">TemplateTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.additionalModelRequestFields">AdditionalModelRequestFields</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.modelId">ModelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateType">TemplateType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a></code> | *No description.* |
 
 ---
 
@@ -16124,10 +16124,10 @@ public string AdditionalModelRequestFieldsInput { get; }
 ##### `InferenceConfigurationInput`<sup>Optional</sup> <a name="InferenceConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.inferenceConfigurationInput"></a>
 
 ```csharp
-public object InferenceConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration[] InferenceConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>[]
 
 ---
 
@@ -16144,10 +16144,10 @@ public string ModelIdInput { get; }
 ##### `TemplateConfigurationInput`<sup>Optional</sup> <a name="TemplateConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.templateConfigurationInput"></a>
 
 ```csharp
-public object TemplateConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration[] TemplateConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]
 
 ---
 
@@ -16194,10 +16194,10 @@ public string TemplateType { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>
 
 ---
 
@@ -16323,7 +16323,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -16354,10 +16354,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]
 
 ---
 
@@ -16592,7 +16592,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a></code> | *No description.* |
 
 ---
 
@@ -16643,10 +16643,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>
 
 ---
 
@@ -16772,7 +16772,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]</code> | *No description.* |
 
 ---
 
@@ -16803,10 +16803,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]
 
 ---
 
@@ -16932,7 +16932,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]</code> | *No description.* |
 
 ---
 
@@ -16963,10 +16963,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]
 
 ---
 
@@ -17201,7 +17201,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -17252,10 +17252,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>
 
 ---
 
@@ -17381,7 +17381,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]</code> | *No description.* |
 
 ---
 
@@ -17412,10 +17412,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]
 
 ---
 
@@ -17647,12 +17647,12 @@ Returns a reversible string representation.
 ##### `PutCachePoint` <a name="PutCachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.putCachePoint"></a>
 
 ```csharp
-private void PutCachePoint(object Value)
+private void PutCachePoint(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]
 
 ---
 
@@ -17676,10 +17676,10 @@ private void ResetText()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePoint">CachePoint</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.textInput">TextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.text">Text</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a></code> | *No description.* |
 
 ---
 
@@ -17720,10 +17720,10 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `CachePointInput`<sup>Optional</sup> <a name="CachePointInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.cachePointInput"></a>
 
 ```csharp
-public object CachePointInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint[] CachePointInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>[]
 
 ---
 
@@ -17750,10 +17750,10 @@ public string Text { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>
 
 ---
 
@@ -17879,7 +17879,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -17910,10 +17910,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]
 
 ---
 
@@ -18144,12 +18144,12 @@ Returns a reversible string representation.
 ##### `PutContent` <a name="PutContent" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.putContent"></a>
 
 ```csharp
-private void PutContent(object Value)
+private void PutContent(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.putContent.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]
 
 ---
 
@@ -18167,10 +18167,10 @@ private void ResetContent()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.content">Content</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.contentInput">ContentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.contentInput">ContentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.role">Role</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a></code> | *No description.* |
 
 ---
 
@@ -18211,10 +18211,10 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `ContentInput`<sup>Optional</sup> <a name="ContentInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.contentInput"></a>
 
 ```csharp
-public object ContentInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent[] ContentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>[]
 
 ---
 
@@ -18241,10 +18241,10 @@ public string Role { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>
 
 ---
 
@@ -18481,48 +18481,48 @@ Returns a reversible string representation.
 ##### `PutInputVariable` <a name="PutInputVariable" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putInputVariable"></a>
 
 ```csharp
-private void PutInputVariable(object Value)
+private void PutInputVariable(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putInputVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]
 
 ---
 
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]
 
 ---
 
 ##### `PutSystemAttribute` <a name="PutSystemAttribute" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putSystemAttribute"></a>
 
 ```csharp
-private void PutSystemAttribute(object Value)
+private void PutSystemAttribute(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putSystemAttribute.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]
 
 ---
 
 ##### `PutToolConfiguration` <a name="PutToolConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putToolConfiguration"></a>
 
 ```csharp
-private void PutToolConfiguration(object Value)
+private void PutToolConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.putToolConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]
 
 ---
 
@@ -18561,11 +18561,11 @@ private void ResetToolConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttribute">SystemAttribute</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfiguration">ToolConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.inputVariableInput">InputVariableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttributeInput">SystemAttributeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfigurationInput">ToolConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.inputVariableInput">InputVariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttributeInput">SystemAttributeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfigurationInput">ToolConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a></code> | *No description.* |
 
 ---
 
@@ -18636,50 +18636,50 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `InputVariableInput`<sup>Optional</sup> <a name="InputVariableInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.inputVariableInput"></a>
 
 ```csharp
-public object InputVariableInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable[] InputVariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable</a>[]
 
 ---
 
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage</a>[]
 
 ---
 
 ##### `SystemAttributeInput`<sup>Optional</sup> <a name="SystemAttributeInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.systemAttributeInput"></a>
 
 ```csharp
-public object SystemAttributeInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem[] SystemAttributeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]
 
 ---
 
 ##### `ToolConfigurationInput`<sup>Optional</sup> <a name="ToolConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.toolConfigurationInput"></a>
 
 ```csharp
-public object ToolConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration[] ToolConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>
 
 ---
 
@@ -18805,7 +18805,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]</code> | *No description.* |
 
 ---
 
@@ -18836,10 +18836,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]
 
 ---
 
@@ -19074,7 +19074,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -19125,10 +19125,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>
 
 ---
 
@@ -19254,7 +19254,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]</code> | *No description.* |
 
 ---
 
@@ -19285,10 +19285,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>[]
 
 ---
 
@@ -19520,12 +19520,12 @@ Returns a reversible string representation.
 ##### `PutCachePoint` <a name="PutCachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.putCachePoint"></a>
 
 ```csharp
-private void PutCachePoint(object Value)
+private void PutCachePoint(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]
 
 ---
 
@@ -19549,10 +19549,10 @@ private void ResetText()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePoint">CachePoint</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.textInput">TextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.text">Text</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a></code> | *No description.* |
 
 ---
 
@@ -19593,10 +19593,10 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `CachePointInput`<sup>Optional</sup> <a name="CachePointInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.cachePointInput"></a>
 
 ```csharp
-public object CachePointInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint[] CachePointInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>[]
 
 ---
 
@@ -19623,10 +19623,10 @@ public string Text { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem</a>
 
 ---
 
@@ -19752,7 +19752,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -19783,10 +19783,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>[]
 
 ---
 
@@ -20019,24 +20019,24 @@ Returns a reversible string representation.
 ##### `PutTool` <a name="PutTool" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.putTool"></a>
 
 ```csharp
-private void PutTool(object Value)
+private void PutTool(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.putTool.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]
 
 ---
 
 ##### `PutToolChoice` <a name="PutToolChoice" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.putToolChoice"></a>
 
 ```csharp
-private void PutToolChoice(object Value)
+private void PutToolChoice(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.putToolChoice.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]
 
 ---
 
@@ -20061,9 +20061,9 @@ private void ResetToolChoice()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.tool">Tool</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoice">ToolChoice</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoiceInput">ToolChoiceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolInput">ToolInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoiceInput">ToolChoiceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolInput">ToolInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -20114,30 +20114,30 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `ToolChoiceInput`<sup>Optional</sup> <a name="ToolChoiceInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolChoiceInput"></a>
 
 ```csharp
-public object ToolChoiceInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice[] ToolChoiceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]
 
 ---
 
 ##### `ToolInput`<sup>Optional</sup> <a name="ToolInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.toolInput"></a>
 
 ```csharp
-public object ToolInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool[] ToolInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration</a>
 
 ---
 
@@ -20263,7 +20263,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]</code> | *No description.* |
 
 ---
 
@@ -20294,10 +20294,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]
 
 ---
 
@@ -20532,7 +20532,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -20583,10 +20583,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>
 
 ---
 
@@ -20712,7 +20712,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]</code> | *No description.* |
 
 ---
 
@@ -20743,10 +20743,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]
 
 ---
 
@@ -20979,7 +20979,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a></code> | *No description.* |
 
 ---
 
@@ -21010,10 +21010,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>
 
 ---
 
@@ -21139,7 +21139,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]</code> | *No description.* |
 
 ---
 
@@ -21170,10 +21170,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]
 
 ---
 
@@ -21406,7 +21406,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a></code> | *No description.* |
 
 ---
 
@@ -21437,10 +21437,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>
 
 ---
 
@@ -21566,7 +21566,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]</code> | *No description.* |
 
 ---
 
@@ -21597,10 +21597,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>[]
 
 ---
 
@@ -21835,36 +21835,36 @@ Returns a reversible string representation.
 ##### `PutAny` <a name="PutAny" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putAny"></a>
 
 ```csharp
-private void PutAny(object Value)
+private void PutAny(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putAny.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]
 
 ---
 
 ##### `PutAuto` <a name="PutAuto" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putAuto"></a>
 
 ```csharp
-private void PutAuto(object Value)
+private void PutAuto(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putAuto.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]
 
 ---
 
 ##### `PutTool` <a name="PutTool" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putTool"></a>
 
 ```csharp
-private void PutTool(object Value)
+private void PutTool(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.putTool.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]
 
 ---
 
@@ -21896,10 +21896,10 @@ private void ResetTool()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.any">Any</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAnyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.auto">Auto</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAutoList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.tool">Tool</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.anyInput">AnyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.autoInput">AutoInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.toolInput">ToolInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.anyInput">AnyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.autoInput">AutoInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.toolInput">ToolInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a></code> | *No description.* |
 
 ---
 
@@ -21960,40 +21960,40 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `AnyInput`<sup>Optional</sup> <a name="AnyInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.anyInput"></a>
 
 ```csharp
-public object AnyInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny[] AnyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny</a>[]
 
 ---
 
 ##### `AutoInput`<sup>Optional</sup> <a name="AutoInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.autoInput"></a>
 
 ```csharp
-public object AutoInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto[] AutoInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto</a>[]
 
 ---
 
 ##### `ToolInput`<sup>Optional</sup> <a name="ToolInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.toolInput"></a>
 
 ```csharp
-public object ToolInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool[] ToolInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice</a>
 
 ---
 
@@ -22119,7 +22119,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]</code> | *No description.* |
 
 ---
 
@@ -22150,10 +22150,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>[]
 
 ---
 
@@ -22388,7 +22388,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a></code> | *No description.* |
 
 ---
 
@@ -22439,10 +22439,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool</a>
 
 ---
 
@@ -22568,7 +22568,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]</code> | *No description.* |
 
 ---
 
@@ -22599,10 +22599,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>[]
 
 ---
 
@@ -22835,24 +22835,24 @@ Returns a reversible string representation.
 ##### `PutCachePoint` <a name="PutCachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.putCachePoint"></a>
 
 ```csharp
-private void PutCachePoint(object Value)
+private void PutCachePoint(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]
 
 ---
 
 ##### `PutToolSpec` <a name="PutToolSpec" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.putToolSpec"></a>
 
 ```csharp
-private void PutToolSpec(object Value)
+private void PutToolSpec(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.putToolSpec.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]
 
 ---
 
@@ -22877,9 +22877,9 @@ private void ResetToolSpec()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePoint">CachePoint</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpec">ToolSpec</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpecInput">ToolSpecInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpecInput">ToolSpecInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a></code> | *No description.* |
 
 ---
 
@@ -22930,30 +22930,30 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `CachePointInput`<sup>Optional</sup> <a name="CachePointInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.cachePointInput"></a>
 
 ```csharp
-public object CachePointInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint[] CachePointInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint</a>[]
 
 ---
 
 ##### `ToolSpecInput`<sup>Optional</sup> <a name="ToolSpecInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.toolSpecInput"></a>
 
 ```csharp
-public object ToolSpecInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec[] ToolSpecInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool</a>
 
 ---
 
@@ -23079,7 +23079,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]</code> | *No description.* |
 
 ---
 
@@ -23110,10 +23110,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]
 
 ---
 
@@ -23355,7 +23355,7 @@ private void ResetJson()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.jsonInput">JsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.json">Json</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a></code> | *No description.* |
 
 ---
 
@@ -23406,10 +23406,10 @@ public string Json { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>
 
 ---
 
@@ -23535,7 +23535,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]</code> | *No description.* |
 
 ---
 
@@ -23566,10 +23566,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>[]
 
 ---
 
@@ -23801,12 +23801,12 @@ Returns a reversible string representation.
 ##### `PutInputSchema` <a name="PutInputSchema" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.putInputSchema"></a>
 
 ```csharp
-private void PutInputSchema(object Value)
+private void PutInputSchema(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.putInputSchema.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]
 
 ---
 
@@ -23831,11 +23831,11 @@ private void ResetInputSchema()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchema">InputSchema</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchemaInput">InputSchemaInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchemaInput">InputSchemaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a></code> | *No description.* |
 
 ---
 
@@ -23886,10 +23886,10 @@ public string DescriptionInput { get; }
 ##### `InputSchemaInput`<sup>Optional</sup> <a name="InputSchemaInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.inputSchemaInput"></a>
 
 ```csharp
-public object InputSchemaInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema[] InputSchemaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>[]
 
 ---
 
@@ -23926,10 +23926,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec</a>
 
 ---
 
@@ -24055,7 +24055,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -24086,10 +24086,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>[]
 
 ---
 
@@ -24322,24 +24322,24 @@ Returns a reversible string representation.
 ##### `PutChat` <a name="PutChat" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.putChat"></a>
 
 ```csharp
-private void PutChat(object Value)
+private void PutChat(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.putChat.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]
 
 ---
 
 ##### `PutText` <a name="PutText" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.putText"></a>
 
 ```csharp
-private void PutText(object Value)
+private void PutText(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.putText.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]
 
 ---
 
@@ -24364,9 +24364,9 @@ private void ResetText()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chat">Chat</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.text">Text</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chatInput">ChatInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.textInput">TextInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chatInput">ChatInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.textInput">TextInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -24417,30 +24417,30 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `ChatInput`<sup>Optional</sup> <a name="ChatInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.chatInput"></a>
 
 ```csharp
-public object ChatInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat[] ChatInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat</a>[]
 
 ---
 
 ##### `TextInput`<sup>Optional</sup> <a name="TextInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.textInput"></a>
 
 ```csharp
-public object TextInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText[] TextInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>
 
 ---
 
@@ -24566,7 +24566,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]</code> | *No description.* |
 
 ---
 
@@ -24597,10 +24597,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]
 
 ---
 
@@ -24835,7 +24835,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a></code> | *No description.* |
 
 ---
 
@@ -24886,10 +24886,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>
 
 ---
 
@@ -25015,7 +25015,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -25046,10 +25046,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]
 
 ---
 
@@ -25284,7 +25284,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a></code> | *No description.* |
 
 ---
 
@@ -25335,10 +25335,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>
 
 ---
 
@@ -25464,7 +25464,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]</code> | *No description.* |
 
 ---
 
@@ -25495,10 +25495,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>[]
 
 ---
 
@@ -25731,24 +25731,24 @@ Returns a reversible string representation.
 ##### `PutCachePoint` <a name="PutCachePoint" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.putCachePoint"></a>
 
 ```csharp
-private void PutCachePoint(object Value)
+private void PutCachePoint(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.putCachePoint.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]
 
 ---
 
 ##### `PutInputVariable` <a name="PutInputVariable" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.putInputVariable"></a>
 
 ```csharp
-private void PutInputVariable(object Value)
+private void PutInputVariable(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.putInputVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]
 
 ---
 
@@ -25773,11 +25773,11 @@ private void ResetInputVariable()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePoint">CachePoint</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariable">InputVariable</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariableInput">InputVariableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePointInput">CachePointInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariableInput">InputVariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.textInput">TextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.text">Text</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a></code> | *No description.* |
 
 ---
 
@@ -25828,20 +25828,20 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlin
 ##### `CachePointInput`<sup>Optional</sup> <a name="CachePointInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.cachePointInput"></a>
 
 ```csharp
-public object CachePointInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint[] CachePointInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>[]
 
 ---
 
 ##### `InputVariableInput`<sup>Optional</sup> <a name="InputVariableInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.inputVariableInput"></a>
 
 ```csharp
-public object InputVariableInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable[] InputVariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>[]
 
 ---
 
@@ -25868,10 +25868,10 @@ public string Text { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText</a>
 
 ---
 
@@ -25997,7 +25997,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -26028,10 +26028,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>[]
 
 ---
 
@@ -26264,24 +26264,24 @@ Returns a reversible string representation.
 ##### `PutInline` <a name="PutInline" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.putInline"></a>
 
 ```csharp
-private void PutInline(object Value)
+private void PutInline(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.putInline.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]
 
 ---
 
 ##### `PutResource` <a name="PutResource" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.putResource"></a>
 
 ```csharp
-private void PutResource(object Value)
+private void PutResource(IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.putResource.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]
 
 ---
 
@@ -26306,9 +26306,9 @@ private void ResetResource()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inline">Inline</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resource">Resource</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inlineInput">InlineInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resourceInput">ResourceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inlineInput">InlineInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resourceInput">ResourceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -26359,30 +26359,30 @@ public BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResou
 ##### `InlineInput`<sup>Optional</sup> <a name="InlineInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.inlineInput"></a>
 
 ```csharp
-public object InlineInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline[] InlineInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline</a>[]
 
 ---
 
 ##### `ResourceInput`<sup>Optional</sup> <a name="ResourceInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.resourceInput"></a>
 
 ```csharp
-public object ResourceInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource[] ResourceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfiguration</a>
 
 ---
 
@@ -26508,7 +26508,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]</code> | *No description.* |
 
 ---
 
@@ -26539,10 +26539,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>[]
 
 ---
 
@@ -26777,7 +26777,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArnInput">PromptArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArn">PromptArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a></code> | *No description.* |
 
 ---
 
@@ -26828,10 +26828,10 @@ public string PromptArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>
 
 ---
 
@@ -26957,7 +26957,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]</code> | *No description.* |
 
 ---
 
@@ -26988,10 +26988,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrieval[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>[]
 
 ---
 
@@ -27222,12 +27222,12 @@ Returns a reversible string representation.
 ##### `PutServiceConfiguration` <a name="PutServiceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.putServiceConfiguration"></a>
 
 ```csharp
-private void PutServiceConfiguration(object Value)
+private void PutServiceConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.putServiceConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]
 
 ---
 
@@ -27245,8 +27245,8 @@ private void ResetServiceConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfiguration">ServiceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfigurationInput">ServiceConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfigurationInput">ServiceConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a></code> | *No description.* |
 
 ---
 
@@ -27287,20 +27287,20 @@ public BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationL
 ##### `ServiceConfigurationInput`<sup>Optional</sup> <a name="ServiceConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.serviceConfigurationInput"></a>
 
 ```csharp
-public object ServiceConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration[] ServiceConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrieval InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrieval">BedrockagentFlowDefinitionNodeConfigurationRetrieval</a>
 
 ---
 
@@ -27426,7 +27426,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -27457,10 +27457,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>[]
 
 ---
 
@@ -27691,12 +27691,12 @@ Returns a reversible string representation.
 ##### `PutS3` <a name="PutS3" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.putS3"></a>
 
 ```csharp
-private void PutS3(object Value)
+private void PutS3(IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.putS3.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]
 
 ---
 
@@ -27714,8 +27714,8 @@ private void ResetS3()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3">S3</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3Input">S3Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3Input">S3Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -27756,20 +27756,20 @@ public BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS
 ##### `S3Input`<sup>Optional</sup> <a name="S3Input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.s3Input"></a>
 
 ```csharp
-public object S3Input { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3[] S3Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfiguration</a>
 
 ---
 
@@ -27895,7 +27895,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]</code> | *No description.* |
 
 ---
 
@@ -27926,10 +27926,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>[]
 
 ---
 
@@ -28164,7 +28164,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a></code> | *No description.* |
 
 ---
 
@@ -28215,10 +28215,10 @@ public string BucketName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3</a>
 
 ---
 
@@ -28344,7 +28344,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]</code> | *No description.* |
 
 ---
 
@@ -28375,10 +28375,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>[]
 
 ---
 
@@ -28609,12 +28609,12 @@ Returns a reversible string representation.
 ##### `PutServiceConfiguration` <a name="PutServiceConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.putServiceConfiguration"></a>
 
 ```csharp
-private void PutServiceConfiguration(object Value)
+private void PutServiceConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.putServiceConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]
 
 ---
 
@@ -28632,8 +28632,8 @@ private void ResetServiceConfiguration()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfiguration">ServiceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfigurationInput">ServiceConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfigurationInput">ServiceConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a></code> | *No description.* |
 
 ---
 
@@ -28674,20 +28674,20 @@ public BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationLis
 ##### `ServiceConfigurationInput`<sup>Optional</sup> <a name="ServiceConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.serviceConfigurationInput"></a>
 
 ```csharp
-public object ServiceConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration[] ServiceConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorage">BedrockagentFlowDefinitionNodeConfigurationStorage</a>
 
 ---
 
@@ -28813,7 +28813,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]</code> | *No description.* |
 
 ---
 
@@ -28844,10 +28844,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>[]
 
 ---
 
@@ -29078,12 +29078,12 @@ Returns a reversible string representation.
 ##### `PutS3` <a name="PutS3" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.putS3"></a>
 
 ```csharp
-private void PutS3(object Value)
+private void PutS3(IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.putS3.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]
 
 ---
 
@@ -29101,8 +29101,8 @@ private void ResetS3()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3">S3</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3Input">S3Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3Input">S3Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -29143,20 +29143,20 @@ public BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3L
 ##### `S3Input`<sup>Optional</sup> <a name="S3Input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.s3Input"></a>
 
 ```csharp
-public object S3Input { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3[] S3Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfiguration</a>
 
 ---
 
@@ -29282,7 +29282,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]</code> | *No description.* |
 
 ---
 
@@ -29313,10 +29313,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>[]
 
 ---
 
@@ -29551,7 +29551,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a></code> | *No description.* |
 
 ---
 
@@ -29602,10 +29602,10 @@ public string BucketName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3">BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3</a>
 
 ---
 
@@ -29731,7 +29731,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]</code> | *No description.* |
 
 ---
 
@@ -29762,10 +29762,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeInput[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]
 
 ---
 
@@ -30013,7 +30013,7 @@ private void ResetCategory()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a></code> | *No description.* |
 
 ---
 
@@ -30124,10 +30124,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeInput InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>
 
 ---
 
@@ -30253,7 +30253,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]</code> | *No description.* |
 
 ---
 
@@ -30284,10 +30284,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNode[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]
 
 ---
 
@@ -30413,7 +30413,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]</code> | *No description.* |
 
 ---
 
@@ -30444,10 +30444,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeOutput[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]
 
 ---
 
@@ -30684,7 +30684,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a></code> | *No description.* |
 
 ---
 
@@ -30755,10 +30755,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeOutput InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>
 
 ---
 
@@ -30993,36 +30993,36 @@ Returns a reversible string representation.
 ##### `PutConfiguration` <a name="PutConfiguration" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putConfiguration"></a>
 
 ```csharp
-private void PutConfiguration(object Value)
+private void PutConfiguration(IResolvable|BedrockagentFlowDefinitionNodeConfiguration[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putConfiguration.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]
 
 ---
 
 ##### `PutInput` <a name="PutInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putInput"></a>
 
 ```csharp
-private void PutInput(object Value)
+private void PutInput(IResolvable|BedrockagentFlowDefinitionNodeInput[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putInput.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]
 
 ---
 
 ##### `PutOutput` <a name="PutOutput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putOutput"></a>
 
 ```csharp
-private void PutOutput(object Value)
+private void PutOutput(IResolvable|BedrockagentFlowDefinitionNodeOutput[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.putOutput.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]
 
 ---
 
@@ -31054,14 +31054,14 @@ private void ResetOutput()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationList">BedrockagentFlowDefinitionNodeConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.input">Input</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInputList">BedrockagentFlowDefinitionNodeInputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.output">Output</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputList">BedrockagentFlowDefinitionNodeOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configurationInput">ConfigurationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.inputInput">InputInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configurationInput">ConfigurationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.inputInput">InputInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.outputInput">OutputInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.outputInput">OutputInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a></code> | *No description.* |
 
 ---
 
@@ -31122,20 +31122,20 @@ public BedrockagentFlowDefinitionNodeOutputList Output { get; }
 ##### `ConfigurationInput`<sup>Optional</sup> <a name="ConfigurationInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.configurationInput"></a>
 
 ```csharp
-public object ConfigurationInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeConfiguration[] ConfigurationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>[]
 
 ---
 
 ##### `InputInput`<sup>Optional</sup> <a name="InputInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.inputInput"></a>
 
 ```csharp
-public object InputInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeInput[] InputInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>[]
 
 ---
 
@@ -31152,10 +31152,10 @@ public string NameInput { get; }
 ##### `OutputInput`<sup>Optional</sup> <a name="OutputInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.outputInput"></a>
 
 ```csharp
-public object OutputInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNodeOutput[] OutputInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>[]
 
 ---
 
@@ -31192,10 +31192,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinitionNode InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>
 
 ---
 
@@ -31428,24 +31428,24 @@ Returns a reversible string representation.
 ##### `PutConnection` <a name="PutConnection" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.putConnection"></a>
 
 ```csharp
-private void PutConnection(object Value)
+private void PutConnection(IResolvable|BedrockagentFlowDefinitionConnection[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.putConnection.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]
 
 ---
 
 ##### `PutNodeAttribute` <a name="PutNodeAttribute" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.putNodeAttribute"></a>
 
 ```csharp
-private void PutNodeAttribute(object Value)
+private void PutNodeAttribute(IResolvable|BedrockagentFlowDefinitionNode[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.putNodeAttribute.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]
 
 ---
 
@@ -31470,9 +31470,9 @@ private void ResetNodeAttribute()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connection">Connection</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionList">BedrockagentFlowDefinitionConnectionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttribute">NodeAttribute</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeList">BedrockagentFlowDefinitionNodeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connectionInput">ConnectionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttributeInput">NodeAttributeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connectionInput">ConnectionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttributeInput">NodeAttributeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a></code> | *No description.* |
 
 ---
 
@@ -31523,30 +31523,30 @@ public BedrockagentFlowDefinitionNodeList NodeAttribute { get; }
 ##### `ConnectionInput`<sup>Optional</sup> <a name="ConnectionInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.connectionInput"></a>
 
 ```csharp
-public object ConnectionInput { get; }
+public IResolvable|BedrockagentFlowDefinitionConnection[] ConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection">BedrockagentFlowDefinitionConnection</a>[]
 
 ---
 
 ##### `NodeAttributeInput`<sup>Optional</sup> <a name="NodeAttributeInput" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.nodeAttributeInput"></a>
 
 ```csharp
-public object NodeAttributeInput { get; }
+public IResolvable|BedrockagentFlowDefinitionNode[] NodeAttributeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode">BedrockagentFlowDefinitionNode</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowDefinition InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>
 
 ---
 
@@ -31788,7 +31788,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -31879,10 +31879,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|BedrockagentFlowTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a>
 
 ---
 

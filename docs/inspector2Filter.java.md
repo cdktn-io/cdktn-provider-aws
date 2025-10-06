@@ -12,22 +12,17 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 import com.hashicorp.cdktf.providers.aws.inspector2_filter.Inspector2Filter;
 
 Inspector2Filter.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .action(java.lang.String)
     .name(java.lang.String)
 //  .description(java.lang.String)
-//  .filterCriteria(IResolvable)
-//  .filterCriteria(java.util.List<Inspector2FilterFilterCriteria>)
+//  .filterCriteria(IResolvable|java.util.List<Inspector2FilterFilterCriteria>)
 //  .reason(java.lang.String)
 //  .region(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
@@ -38,17 +33,17 @@ Inspector2Filter.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria">filterCriteria</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | filter_criteria block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria">filterCriteria</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | filter_criteria block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.reason">reason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
@@ -75,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -111,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -141,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `filterCriteria`<sup>Optional</sup> <a name="filterCriteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
 
 filter_criteria block.
 
@@ -408,7 +403,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.importFrom"></a>
@@ -464,7 +459,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -479,7 +474,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -504,12 +499,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putFilterCriteria` <a name="putFilterCriteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.putFilterCriteria"></a>
 
 ```java
-public void putFilterCriteria(IResolvable OR java.util.List<Inspector2FilterFilterCriteria> value)
+public void putFilterCriteria(IResolvable|java.util.List<Inspector2FilterFilterCriteria> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.putFilterCriteria.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
 
 ---
 
@@ -669,19 +664,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.arn">arn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteria">filterCriteria</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList">Inspector2FilterFilterCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.tagsAll">tagsAll</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.actionInput">actionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">filterCriteriaInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput">filterCriteriaInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.reasonInput">reasonInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -770,20 +765,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -830,10 +825,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -890,10 +885,10 @@ public java.lang.String getDescriptionInput();
 ##### `filterCriteriaInput`<sup>Optional</sup> <a name="filterCriteriaInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.property.filterCriteriaInput"></a>
 
 ```java
-public java.lang.Object getFilterCriteriaInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteria> getFilterCriteriaInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
 
 ---
 
@@ -1025,22 +1020,17 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.aws.inspector2_filter.Inspector2FilterConfig;
 
 Inspector2FilterConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .action(java.lang.String)
     .name(java.lang.String)
 //  .description(java.lang.String)
-//  .filterCriteria(IResolvable)
-//  .filterCriteria(java.util.List<Inspector2FilterFilterCriteria>)
+//  .filterCriteria(IResolvable|java.util.List<Inspector2FilterFilterCriteria>)
 //  .reason(java.lang.String)
 //  .region(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
@@ -1051,17 +1041,17 @@ Inspector2FilterConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filterCriteria</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | filter_criteria block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filterCriteria</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | filter_criteria block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.reason">reason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
@@ -1071,20 +1061,20 @@ Inspector2FilterConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1131,10 +1121,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1177,10 +1167,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `filterCriteria`<sup>Optional</sup> <a name="filterCriteria" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria"></a>
 
 ```java
-public java.lang.Object getFilterCriteria();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteria> getFilterCriteria();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
 
 filter_criteria block.
 
@@ -1234,98 +1224,52 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.inspector2_filter.Inspector2FilterFilterCriteria;
 
 Inspector2FilterFilterCriteria.builder()
-//  .awsAccountId(IResolvable)
-//  .awsAccountId(java.util.List<Inspector2FilterFilterCriteriaAwsAccountId>)
-//  .codeRepositoryProjectName(IResolvable)
-//  .codeRepositoryProjectName(java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName>)
-//  .codeRepositoryProviderType(IResolvable)
-//  .codeRepositoryProviderType(java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType>)
-//  .codeVulnerabilityDetectorName(IResolvable)
-//  .codeVulnerabilityDetectorName(java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName>)
-//  .codeVulnerabilityDetectorTags(IResolvable)
-//  .codeVulnerabilityDetectorTags(java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags>)
-//  .codeVulnerabilityFilePath(IResolvable)
-//  .codeVulnerabilityFilePath(java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath>)
-//  .componentId(IResolvable)
-//  .componentId(java.util.List<Inspector2FilterFilterCriteriaComponentId>)
-//  .componentType(IResolvable)
-//  .componentType(java.util.List<Inspector2FilterFilterCriteriaComponentType>)
-//  .ec2InstanceImageId(IResolvable)
-//  .ec2InstanceImageId(java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId>)
-//  .ec2InstanceSubnetId(IResolvable)
-//  .ec2InstanceSubnetId(java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId>)
-//  .ec2InstanceVpcId(IResolvable)
-//  .ec2InstanceVpcId(java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId>)
-//  .ecrImageArchitecture(IResolvable)
-//  .ecrImageArchitecture(java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture>)
-//  .ecrImageHash(IResolvable)
-//  .ecrImageHash(java.util.List<Inspector2FilterFilterCriteriaEcrImageHash>)
-//  .ecrImageInUseCount(IResolvable)
-//  .ecrImageInUseCount(java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount>)
-//  .ecrImageLastInUseAt(IResolvable)
-//  .ecrImageLastInUseAt(java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt>)
-//  .ecrImagePushedAt(IResolvable)
-//  .ecrImagePushedAt(java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt>)
-//  .ecrImageRegistry(IResolvable)
-//  .ecrImageRegistry(java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry>)
-//  .ecrImageRepositoryName(IResolvable)
-//  .ecrImageRepositoryName(java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName>)
-//  .ecrImageTags(IResolvable)
-//  .ecrImageTags(java.util.List<Inspector2FilterFilterCriteriaEcrImageTags>)
-//  .epssScore(IResolvable)
-//  .epssScore(java.util.List<Inspector2FilterFilterCriteriaEpssScore>)
-//  .exploitAvailable(IResolvable)
-//  .exploitAvailable(java.util.List<Inspector2FilterFilterCriteriaExploitAvailable>)
-//  .findingArn(IResolvable)
-//  .findingArn(java.util.List<Inspector2FilterFilterCriteriaFindingArn>)
-//  .findingStatus(IResolvable)
-//  .findingStatus(java.util.List<Inspector2FilterFilterCriteriaFindingStatus>)
-//  .findingType(IResolvable)
-//  .findingType(java.util.List<Inspector2FilterFilterCriteriaFindingType>)
-//  .firstObservedAt(IResolvable)
-//  .firstObservedAt(java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt>)
-//  .fixAvailable(IResolvable)
-//  .fixAvailable(java.util.List<Inspector2FilterFilterCriteriaFixAvailable>)
-//  .inspectorScore(IResolvable)
-//  .inspectorScore(java.util.List<Inspector2FilterFilterCriteriaInspectorScore>)
-//  .lambdaFunctionExecutionRoleArn(IResolvable)
-//  .lambdaFunctionExecutionRoleArn(java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn>)
-//  .lambdaFunctionLastModifiedAt(IResolvable)
-//  .lambdaFunctionLastModifiedAt(java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt>)
-//  .lambdaFunctionLayers(IResolvable)
-//  .lambdaFunctionLayers(java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers>)
-//  .lambdaFunctionName(IResolvable)
-//  .lambdaFunctionName(java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName>)
-//  .lambdaFunctionRuntime(IResolvable)
-//  .lambdaFunctionRuntime(java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime>)
-//  .lastObservedAt(IResolvable)
-//  .lastObservedAt(java.util.List<Inspector2FilterFilterCriteriaLastObservedAt>)
-//  .networkProtocol(IResolvable)
-//  .networkProtocol(java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol>)
-//  .portRange(IResolvable)
-//  .portRange(java.util.List<Inspector2FilterFilterCriteriaPortRange>)
-//  .relatedVulnerabilities(IResolvable)
-//  .relatedVulnerabilities(java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities>)
-//  .resourceId(IResolvable)
-//  .resourceId(java.util.List<Inspector2FilterFilterCriteriaResourceId>)
-//  .resourceTags(IResolvable)
-//  .resourceTags(java.util.List<Inspector2FilterFilterCriteriaResourceTags>)
-//  .resourceType(IResolvable)
-//  .resourceType(java.util.List<Inspector2FilterFilterCriteriaResourceType>)
-//  .severity(IResolvable)
-//  .severity(java.util.List<Inspector2FilterFilterCriteriaSeverity>)
-//  .title(IResolvable)
-//  .title(java.util.List<Inspector2FilterFilterCriteriaTitle>)
-//  .updatedAt(IResolvable)
-//  .updatedAt(java.util.List<Inspector2FilterFilterCriteriaUpdatedAt>)
-//  .vendorSeverity(IResolvable)
-//  .vendorSeverity(java.util.List<Inspector2FilterFilterCriteriaVendorSeverity>)
-//  .vulnerabilityId(IResolvable)
-//  .vulnerabilityId(java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId>)
-//  .vulnerabilitySource(IResolvable)
-//  .vulnerabilitySource(java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource>)
-//  .vulnerablePackages(IResolvable)
-//  .vulnerablePackages(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages>)
+//  .awsAccountId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaAwsAccountId>)
+//  .codeRepositoryProjectName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName>)
+//  .codeRepositoryProviderType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType>)
+//  .codeVulnerabilityDetectorName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName>)
+//  .codeVulnerabilityDetectorTags(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags>)
+//  .codeVulnerabilityFilePath(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath>)
+//  .componentId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentId>)
+//  .componentType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentType>)
+//  .ec2InstanceImageId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId>)
+//  .ec2InstanceSubnetId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId>)
+//  .ec2InstanceVpcId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId>)
+//  .ecrImageArchitecture(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture>)
+//  .ecrImageHash(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageHash>)
+//  .ecrImageInUseCount(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount>)
+//  .ecrImageLastInUseAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt>)
+//  .ecrImagePushedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt>)
+//  .ecrImageRegistry(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry>)
+//  .ecrImageRepositoryName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName>)
+//  .ecrImageTags(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageTags>)
+//  .epssScore(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEpssScore>)
+//  .exploitAvailable(IResolvable|java.util.List<Inspector2FilterFilterCriteriaExploitAvailable>)
+//  .findingArn(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingArn>)
+//  .findingStatus(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingStatus>)
+//  .findingType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingType>)
+//  .firstObservedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt>)
+//  .fixAvailable(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFixAvailable>)
+//  .inspectorScore(IResolvable|java.util.List<Inspector2FilterFilterCriteriaInspectorScore>)
+//  .lambdaFunctionExecutionRoleArn(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn>)
+//  .lambdaFunctionLastModifiedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt>)
+//  .lambdaFunctionLayers(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers>)
+//  .lambdaFunctionName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName>)
+//  .lambdaFunctionRuntime(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime>)
+//  .lastObservedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLastObservedAt>)
+//  .networkProtocol(IResolvable|java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol>)
+//  .portRange(IResolvable|java.util.List<Inspector2FilterFilterCriteriaPortRange>)
+//  .relatedVulnerabilities(IResolvable|java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities>)
+//  .resourceId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceId>)
+//  .resourceTags(IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceTags>)
+//  .resourceType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceType>)
+//  .severity(IResolvable|java.util.List<Inspector2FilterFilterCriteriaSeverity>)
+//  .title(IResolvable|java.util.List<Inspector2FilterFilterCriteriaTitle>)
+//  .updatedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaUpdatedAt>)
+//  .vendorSeverity(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVendorSeverity>)
+//  .vulnerabilityId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId>)
+//  .vulnerabilitySource(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource>)
+//  .vulnerablePackages(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages>)
     .build();
 ```
 
@@ -1333,62 +1277,62 @@ Inspector2FilterFilterCriteria.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">awsAccountId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>></code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">codeRepositoryProjectName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>></code> | code_repository_project_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">codeRepositoryProviderType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>></code> | code_repository_provider_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">codeVulnerabilityDetectorName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>></code> | code_vulnerability_detector_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">codeVulnerabilityDetectorTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>></code> | code_vulnerability_detector_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">codeVulnerabilityFilePath</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>></code> | code_vulnerability_file_path block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">componentId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>></code> | component_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">componentType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>></code> | component_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">ec2InstanceImageId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>></code> | ec2_instance_image_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">ec2InstanceSubnetId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>></code> | ec2_instance_subnet_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2InstanceVpcId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>></code> | ec2_instance_vpc_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecrImageArchitecture</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>></code> | ecr_image_architecture block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecrImageHash</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>></code> | ecr_image_hash block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecrImageInUseCount</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>></code> | ecr_image_in_use_count block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecrImageLastInUseAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>></code> | ecr_image_last_in_use_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecrImagePushedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>></code> | ecr_image_pushed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecrImageRegistry</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>></code> | ecr_image_registry block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecrImageRepositoryName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>></code> | ecr_image_repository_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">ecrImageTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>></code> | ecr_image_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">epssScore</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>></code> | epss_score block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">exploitAvailable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>></code> | exploit_available block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">findingArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>></code> | finding_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">findingStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>></code> | finding_status block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">findingType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>></code> | finding_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>></code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">fixAvailable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>></code> | fix_available block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">inspectorScore</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>></code> | inspector_score block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">lambdaFunctionExecutionRoleArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>></code> | lambda_function_execution_role_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">lambdaFunctionLastModifiedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>></code> | lambda_function_last_modified_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">lambdaFunctionLayers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>></code> | lambda_function_layers block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">lambdaFunctionName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>></code> | lambda_function_name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">lambdaFunctionRuntime</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>></code> | lambda_function_runtime block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>></code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">networkProtocol</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>></code> | network_protocol block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">portRange</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>></code> | port_range block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">relatedVulnerabilities</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>></code> | related_vulnerabilities block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">resourceId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>></code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>></code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">resourceType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>></code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">severity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>></code> | severity block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">title</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>></code> | title block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">updatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>></code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">vendorSeverity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>></code> | vendor_severity block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">vulnerabilityId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>></code> | vulnerability_id block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">vulnerabilitySource</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>></code> | vulnerability_source block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">vulnerablePackages</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>></code> | vulnerable_packages block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">awsAccountId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>></code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">codeRepositoryProjectName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>></code> | code_repository_project_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">codeRepositoryProviderType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>></code> | code_repository_provider_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">codeVulnerabilityDetectorName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>></code> | code_vulnerability_detector_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">codeVulnerabilityDetectorTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>></code> | code_vulnerability_detector_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">codeVulnerabilityFilePath</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>></code> | code_vulnerability_file_path block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId">componentId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>></code> | component_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType">componentType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>></code> | component_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId">ec2InstanceImageId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>></code> | ec2_instance_image_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId">ec2InstanceSubnetId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>></code> | ec2_instance_subnet_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2InstanceVpcId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>></code> | ec2_instance_vpc_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecrImageArchitecture</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>></code> | ecr_image_architecture block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecrImageHash</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>></code> | ecr_image_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecrImageInUseCount</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>></code> | ecr_image_in_use_count block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecrImageLastInUseAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>></code> | ecr_image_last_in_use_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecrImagePushedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>></code> | ecr_image_pushed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecrImageRegistry</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>></code> | ecr_image_registry block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecrImageRepositoryName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>></code> | ecr_image_repository_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags">ecrImageTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>></code> | ecr_image_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore">epssScore</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>></code> | epss_score block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable">exploitAvailable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>></code> | exploit_available block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn">findingArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>></code> | finding_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus">findingStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>></code> | finding_status block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType">findingType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>></code> | finding_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>></code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable">fixAvailable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>></code> | fix_available block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore">inspectorScore</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>></code> | inspector_score block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn">lambdaFunctionExecutionRoleArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>></code> | lambda_function_execution_role_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt">lambdaFunctionLastModifiedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>></code> | lambda_function_last_modified_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers">lambdaFunctionLayers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>></code> | lambda_function_layers block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName">lambdaFunctionName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>></code> | lambda_function_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime">lambdaFunctionRuntime</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>></code> | lambda_function_runtime block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>></code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol">networkProtocol</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>></code> | network_protocol block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange">portRange</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>></code> | port_range block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities">relatedVulnerabilities</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>></code> | related_vulnerabilities block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId">resourceId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>></code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>></code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType">resourceType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>></code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity">severity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>></code> | severity block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title">title</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>></code> | title block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt">updatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>></code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity">vendorSeverity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>></code> | vendor_severity block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId">vulnerabilityId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>></code> | vulnerability_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource">vulnerabilitySource</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>></code> | vulnerability_source block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages">vulnerablePackages</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>></code> | vulnerable_packages block. |
 
 ---
 
 ##### `awsAccountId`<sup>Optional</sup> <a name="awsAccountId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId"></a>
 
 ```java
-public java.lang.Object getAwsAccountId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaAwsAccountId> getAwsAccountId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
 
 aws_account_id block.
 
@@ -1399,10 +1343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `codeRepositoryProjectName`<sup>Optional</sup> <a name="codeRepositoryProjectName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName"></a>
 
 ```java
-public java.lang.Object getCodeRepositoryProjectName();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName> getCodeRepositoryProjectName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
 
 code_repository_project_name block.
 
@@ -1413,10 +1357,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `codeRepositoryProviderType`<sup>Optional</sup> <a name="codeRepositoryProviderType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType"></a>
 
 ```java
-public java.lang.Object getCodeRepositoryProviderType();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType> getCodeRepositoryProviderType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
 
 code_repository_provider_type block.
 
@@ -1427,10 +1371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `codeVulnerabilityDetectorName`<sup>Optional</sup> <a name="codeVulnerabilityDetectorName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName"></a>
 
 ```java
-public java.lang.Object getCodeVulnerabilityDetectorName();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName> getCodeVulnerabilityDetectorName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
 
 code_vulnerability_detector_name block.
 
@@ -1441,10 +1385,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `codeVulnerabilityDetectorTags`<sup>Optional</sup> <a name="codeVulnerabilityDetectorTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags"></a>
 
 ```java
-public java.lang.Object getCodeVulnerabilityDetectorTags();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags> getCodeVulnerabilityDetectorTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
 
 code_vulnerability_detector_tags block.
 
@@ -1455,10 +1399,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `codeVulnerabilityFilePath`<sup>Optional</sup> <a name="codeVulnerabilityFilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath"></a>
 
 ```java
-public java.lang.Object getCodeVulnerabilityFilePath();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath> getCodeVulnerabilityFilePath();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
 
 code_vulnerability_file_path block.
 
@@ -1469,10 +1413,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `componentId`<sup>Optional</sup> <a name="componentId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentId"></a>
 
 ```java
-public java.lang.Object getComponentId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentId> getComponentId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
 
 component_id block.
 
@@ -1483,10 +1427,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `componentType`<sup>Optional</sup> <a name="componentType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.componentType"></a>
 
 ```java
-public java.lang.Object getComponentType();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentType> getComponentType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
 
 component_type block.
 
@@ -1497,10 +1441,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ec2InstanceImageId`<sup>Optional</sup> <a name="ec2InstanceImageId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceImageId"></a>
 
 ```java
-public java.lang.Object getEc2InstanceImageId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId> getEc2InstanceImageId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
 
 ec2_instance_image_id block.
 
@@ -1511,10 +1455,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ec2InstanceSubnetId`<sup>Optional</sup> <a name="ec2InstanceSubnetId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceSubnetId"></a>
 
 ```java
-public java.lang.Object getEc2InstanceSubnetId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId> getEc2InstanceSubnetId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
 
 ec2_instance_subnet_id block.
 
@@ -1525,10 +1469,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ec2InstanceVpcId`<sup>Optional</sup> <a name="ec2InstanceVpcId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId"></a>
 
 ```java
-public java.lang.Object getEc2InstanceVpcId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId> getEc2InstanceVpcId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
 
 ec2_instance_vpc_id block.
 
@@ -1539,10 +1483,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageArchitecture`<sup>Optional</sup> <a name="ecrImageArchitecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture"></a>
 
 ```java
-public java.lang.Object getEcrImageArchitecture();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture> getEcrImageArchitecture();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
 
 ecr_image_architecture block.
 
@@ -1553,10 +1497,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageHash`<sup>Optional</sup> <a name="ecrImageHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash"></a>
 
 ```java
-public java.lang.Object getEcrImageHash();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageHash> getEcrImageHash();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
 
 ecr_image_hash block.
 
@@ -1567,10 +1511,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageInUseCount`<sup>Optional</sup> <a name="ecrImageInUseCount" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount"></a>
 
 ```java
-public java.lang.Object getEcrImageInUseCount();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount> getEcrImageInUseCount();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
 
 ecr_image_in_use_count block.
 
@@ -1581,10 +1525,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageLastInUseAt`<sup>Optional</sup> <a name="ecrImageLastInUseAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt"></a>
 
 ```java
-public java.lang.Object getEcrImageLastInUseAt();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt> getEcrImageLastInUseAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
 
 ecr_image_last_in_use_at block.
 
@@ -1595,10 +1539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImagePushedAt`<sup>Optional</sup> <a name="ecrImagePushedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt"></a>
 
 ```java
-public java.lang.Object getEcrImagePushedAt();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt> getEcrImagePushedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
 
 ecr_image_pushed_at block.
 
@@ -1609,10 +1553,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageRegistry`<sup>Optional</sup> <a name="ecrImageRegistry" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry"></a>
 
 ```java
-public java.lang.Object getEcrImageRegistry();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry> getEcrImageRegistry();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
 
 ecr_image_registry block.
 
@@ -1623,10 +1567,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageRepositoryName`<sup>Optional</sup> <a name="ecrImageRepositoryName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName"></a>
 
 ```java
-public java.lang.Object getEcrImageRepositoryName();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName> getEcrImageRepositoryName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
 
 ecr_image_repository_name block.
 
@@ -1637,10 +1581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ecrImageTags`<sup>Optional</sup> <a name="ecrImageTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageTags"></a>
 
 ```java
-public java.lang.Object getEcrImageTags();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageTags> getEcrImageTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
 
 ecr_image_tags block.
 
@@ -1651,10 +1595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `epssScore`<sup>Optional</sup> <a name="epssScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.epssScore"></a>
 
 ```java
-public java.lang.Object getEpssScore();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEpssScore> getEpssScore();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
 
 epss_score block.
 
@@ -1665,10 +1609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `exploitAvailable`<sup>Optional</sup> <a name="exploitAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.exploitAvailable"></a>
 
 ```java
-public java.lang.Object getExploitAvailable();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaExploitAvailable> getExploitAvailable();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
 
 exploit_available block.
 
@@ -1679,10 +1623,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingArn`<sup>Optional</sup> <a name="findingArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingArn"></a>
 
 ```java
-public java.lang.Object getFindingArn();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingArn> getFindingArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
 
 finding_arn block.
 
@@ -1693,10 +1637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingStatus`<sup>Optional</sup> <a name="findingStatus" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingStatus"></a>
 
 ```java
-public java.lang.Object getFindingStatus();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingStatus> getFindingStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
 
 finding_status block.
 
@@ -1707,10 +1651,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingType`<sup>Optional</sup> <a name="findingType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.findingType"></a>
 
 ```java
-public java.lang.Object getFindingType();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingType> getFindingType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
 
 finding_type block.
 
@@ -1721,10 +1665,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `firstObservedAt`<sup>Optional</sup> <a name="firstObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.firstObservedAt"></a>
 
 ```java
-public java.lang.Object getFirstObservedAt();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt> getFirstObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
 
 first_observed_at block.
 
@@ -1735,10 +1679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fixAvailable`<sup>Optional</sup> <a name="fixAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.fixAvailable"></a>
 
 ```java
-public java.lang.Object getFixAvailable();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFixAvailable> getFixAvailable();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
 
 fix_available block.
 
@@ -1749,10 +1693,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `inspectorScore`<sup>Optional</sup> <a name="inspectorScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.inspectorScore"></a>
 
 ```java
-public java.lang.Object getInspectorScore();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaInspectorScore> getInspectorScore();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
 
 inspector_score block.
 
@@ -1763,10 +1707,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambdaFunctionExecutionRoleArn`<sup>Optional</sup> <a name="lambdaFunctionExecutionRoleArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionExecutionRoleArn"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionExecutionRoleArn();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn> getLambdaFunctionExecutionRoleArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
 
 lambda_function_execution_role_arn block.
 
@@ -1777,10 +1721,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambdaFunctionLastModifiedAt`<sup>Optional</sup> <a name="lambdaFunctionLastModifiedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLastModifiedAt"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionLastModifiedAt();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt> getLambdaFunctionLastModifiedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
 
 lambda_function_last_modified_at block.
 
@@ -1791,10 +1735,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambdaFunctionLayers`<sup>Optional</sup> <a name="lambdaFunctionLayers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionLayers"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionLayers();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers> getLambdaFunctionLayers();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
 
 lambda_function_layers block.
 
@@ -1805,10 +1749,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambdaFunctionName`<sup>Optional</sup> <a name="lambdaFunctionName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionName"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionName();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName> getLambdaFunctionName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
 
 lambda_function_name block.
 
@@ -1819,10 +1763,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lambdaFunctionRuntime`<sup>Optional</sup> <a name="lambdaFunctionRuntime" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lambdaFunctionRuntime"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionRuntime();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime> getLambdaFunctionRuntime();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
 
 lambda_function_runtime block.
 
@@ -1833,10 +1777,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lastObservedAt`<sup>Optional</sup> <a name="lastObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.lastObservedAt"></a>
 
 ```java
-public java.lang.Object getLastObservedAt();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLastObservedAt> getLastObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
 
 last_observed_at block.
 
@@ -1847,10 +1791,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkProtocol`<sup>Optional</sup> <a name="networkProtocol" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.networkProtocol"></a>
 
 ```java
-public java.lang.Object getNetworkProtocol();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol> getNetworkProtocol();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
 
 network_protocol block.
 
@@ -1861,10 +1805,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `portRange`<sup>Optional</sup> <a name="portRange" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.portRange"></a>
 
 ```java
-public java.lang.Object getPortRange();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaPortRange> getPortRange();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
 
 port_range block.
 
@@ -1875,10 +1819,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `relatedVulnerabilities`<sup>Optional</sup> <a name="relatedVulnerabilities" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.relatedVulnerabilities"></a>
 
 ```java
-public java.lang.Object getRelatedVulnerabilities();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities> getRelatedVulnerabilities();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
 
 related_vulnerabilities block.
 
@@ -1889,10 +1833,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceId`<sup>Optional</sup> <a name="resourceId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceId"></a>
 
 ```java
-public java.lang.Object getResourceId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceId> getResourceId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
 
 resource_id block.
 
@@ -1903,10 +1847,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceTags`<sup>Optional</sup> <a name="resourceTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceTags"></a>
 
 ```java
-public java.lang.Object getResourceTags();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceTags> getResourceTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
 
 resource_tags block.
 
@@ -1917,10 +1861,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceType`<sup>Optional</sup> <a name="resourceType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.resourceType"></a>
 
 ```java
-public java.lang.Object getResourceType();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceType> getResourceType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
 
 resource_type block.
 
@@ -1931,10 +1875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severity`<sup>Optional</sup> <a name="severity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.severity"></a>
 
 ```java
-public java.lang.Object getSeverity();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaSeverity> getSeverity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
 
 severity block.
 
@@ -1945,10 +1889,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.title"></a>
 
 ```java
-public java.lang.Object getTitle();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaTitle> getTitle();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
 
 title block.
 
@@ -1959,10 +1903,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `updatedAt`<sup>Optional</sup> <a name="updatedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.updatedAt"></a>
 
 ```java
-public java.lang.Object getUpdatedAt();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaUpdatedAt> getUpdatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
 
 updated_at block.
 
@@ -1973,10 +1917,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vendorSeverity`<sup>Optional</sup> <a name="vendorSeverity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vendorSeverity"></a>
 
 ```java
-public java.lang.Object getVendorSeverity();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVendorSeverity> getVendorSeverity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
 
 vendor_severity block.
 
@@ -1987,10 +1931,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vulnerabilityId`<sup>Optional</sup> <a name="vulnerabilityId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilityId"></a>
 
 ```java
-public java.lang.Object getVulnerabilityId();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId> getVulnerabilityId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
 
 vulnerability_id block.
 
@@ -2001,10 +1945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vulnerabilitySource`<sup>Optional</sup> <a name="vulnerabilitySource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerabilitySource"></a>
 
 ```java
-public java.lang.Object getVulnerabilitySource();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource> getVulnerabilitySource();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
 
 vulnerability_source block.
 
@@ -2015,10 +1959,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `vulnerablePackages`<sup>Optional</sup> <a name="vulnerablePackages" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.vulnerablePackages"></a>
 
 ```java
-public java.lang.Object getVulnerablePackages();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages> getVulnerablePackages();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
 
 vulnerable_packages block.
 
@@ -4118,22 +4062,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.inspector2_filter.Inspector2FilterFilterCriteriaVulnerablePackages;
 
 Inspector2FilterFilterCriteriaVulnerablePackages.builder()
-//  .architecture(IResolvable)
-//  .architecture(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture>)
-//  .epoch(IResolvable)
-//  .epoch(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch>)
-//  .filePath(IResolvable)
-//  .filePath(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath>)
-//  .name(IResolvable)
-//  .name(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName>)
-//  .release(IResolvable)
-//  .release(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease>)
-//  .sourceLambdaLayerArn(IResolvable)
-//  .sourceLambdaLayerArn(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn>)
-//  .sourceLayerHash(IResolvable)
-//  .sourceLayerHash(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash>)
-//  .version(IResolvable)
-//  .version(java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion>)
+//  .architecture(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture>)
+//  .epoch(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch>)
+//  .filePath(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath>)
+//  .name(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName>)
+//  .release(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease>)
+//  .sourceLambdaLayerArn(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn>)
+//  .sourceLayerHash(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash>)
+//  .version(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion>)
     .build();
 ```
 
@@ -4141,24 +4077,24 @@ Inspector2FilterFilterCriteriaVulnerablePackages.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">architecture</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>></code> | architecture block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">epoch</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>></code> | epoch block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">filePath</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>></code> | file_path block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">name</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>></code> | name block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">release</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>></code> | release block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">sourceLambdaLayerArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>></code> | source_lambda_layer_arn block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">sourceLayerHash</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>></code> | source_layer_hash block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">version</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>></code> | version block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture">architecture</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>></code> | architecture block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch">epoch</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>></code> | epoch block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath">filePath</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>></code> | file_path block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name">name</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>></code> | name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release">release</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>></code> | release block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn">sourceLambdaLayerArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>></code> | source_lambda_layer_arn block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash">sourceLayerHash</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>></code> | source_layer_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version">version</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>></code> | version block. |
 
 ---
 
 ##### `architecture`<sup>Optional</sup> <a name="architecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.architecture"></a>
 
 ```java
-public java.lang.Object getArchitecture();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture> getArchitecture();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
 
 architecture block.
 
@@ -4169,10 +4105,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `epoch`<sup>Optional</sup> <a name="epoch" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.epoch"></a>
 
 ```java
-public java.lang.Object getEpoch();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch> getEpoch();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
 
 epoch block.
 
@@ -4183,10 +4119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `filePath`<sup>Optional</sup> <a name="filePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.filePath"></a>
 
 ```java
-public java.lang.Object getFilePath();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath> getFilePath();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
 
 file_path block.
 
@@ -4197,10 +4133,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.name"></a>
 
 ```java
-public java.lang.Object getName();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName> getName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
 
 name block.
 
@@ -4211,10 +4147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `release`<sup>Optional</sup> <a name="release" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.release"></a>
 
 ```java
-public java.lang.Object getRelease();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease> getRelease();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
 
 release block.
 
@@ -4225,10 +4161,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sourceLambdaLayerArn`<sup>Optional</sup> <a name="sourceLambdaLayerArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLambdaLayerArn"></a>
 
 ```java
-public java.lang.Object getSourceLambdaLayerArn();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn> getSourceLambdaLayerArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
 
 source_lambda_layer_arn block.
 
@@ -4239,10 +4175,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sourceLayerHash`<sup>Optional</sup> <a name="sourceLayerHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.sourceLayerHash"></a>
 
 ```java
-public java.lang.Object getSourceLayerHash();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash> getSourceLayerHash();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
 
 source_layer_hash block.
 
@@ -4253,10 +4189,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages.property.version"></a>
 
 ```java
-public java.lang.Object getVersion();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion> getVersion();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
 
 version block.
 
@@ -4755,7 +4691,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>></code> | *No description.* |
 
 ---
 
@@ -4786,10 +4722,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaAwsAccountId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
 
 ---
 
@@ -5026,7 +4962,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -5097,10 +5033,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaAwsAccountId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>
 
 ---
 
@@ -5226,7 +5162,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>></code> | *No description.* |
 
 ---
 
@@ -5257,10 +5193,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
 
 ---
 
@@ -5497,7 +5433,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a></code> | *No description.* |
 
 ---
 
@@ -5568,10 +5504,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProjectName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>
 
 ---
 
@@ -5697,7 +5633,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>></code> | *No description.* |
 
 ---
 
@@ -5728,10 +5664,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
 
 ---
 
@@ -5968,7 +5904,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a></code> | *No description.* |
 
 ---
 
@@ -6039,10 +5975,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaCodeRepositoryProviderType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>
 
 ---
 
@@ -6168,7 +6104,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>></code> | *No description.* |
 
 ---
 
@@ -6199,10 +6135,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
 
 ---
 
@@ -6439,7 +6375,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a></code> | *No description.* |
 
 ---
 
@@ -6510,10 +6446,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>
 
 ---
 
@@ -6639,7 +6575,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>></code> | *No description.* |
 
 ---
 
@@ -6670,10 +6606,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
 
 ---
 
@@ -6910,7 +6846,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a></code> | *No description.* |
 
 ---
 
@@ -6981,10 +6917,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>
 
 ---
 
@@ -7110,7 +7046,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>></code> | *No description.* |
 
 ---
 
@@ -7141,10 +7077,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
 
 ---
 
@@ -7381,7 +7317,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a></code> | *No description.* |
 
 ---
 
@@ -7452,10 +7388,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>
 
 ---
 
@@ -7581,7 +7517,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>></code> | *No description.* |
 
 ---
 
@@ -7612,10 +7548,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
 
 ---
 
@@ -7852,7 +7788,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a></code> | *No description.* |
 
 ---
 
@@ -7923,10 +7859,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaComponentId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>
 
 ---
 
@@ -8052,7 +7988,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>></code> | *No description.* |
 
 ---
 
@@ -8083,10 +8019,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
 
 ---
 
@@ -8323,7 +8259,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a></code> | *No description.* |
 
 ---
 
@@ -8394,10 +8330,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaComponentType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>
 
 ---
 
@@ -8523,7 +8459,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>></code> | *No description.* |
 
 ---
 
@@ -8554,10 +8490,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
 
 ---
 
@@ -8794,7 +8730,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -8865,10 +8801,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceImageId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>
 
 ---
 
@@ -8994,7 +8930,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>></code> | *No description.* |
 
 ---
 
@@ -9025,10 +8961,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
 
 ---
 
@@ -9265,7 +9201,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -9336,10 +9272,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceSubnetId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>
 
 ---
 
@@ -9465,7 +9401,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>></code> | *No description.* |
 
 ---
 
@@ -9496,10 +9432,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
 
 ---
 
@@ -9736,7 +9672,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -9807,10 +9743,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEc2InstanceVpcId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>
 
 ---
 
@@ -9936,7 +9872,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>></code> | *No description.* |
 
 ---
 
@@ -9967,10 +9903,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
 
 ---
 
@@ -10207,7 +10143,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -10278,10 +10214,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageArchitecture getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>
 
 ---
 
@@ -10407,7 +10343,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>></code> | *No description.* |
 
 ---
 
@@ -10438,10 +10374,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageHash> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
 
 ---
 
@@ -10678,7 +10614,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a></code> | *No description.* |
 
 ---
 
@@ -10749,10 +10685,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageHash getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>
 
 ---
 
@@ -10878,7 +10814,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>></code> | *No description.* |
 
 ---
 
@@ -10909,10 +10845,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
 
 ---
 
@@ -11149,7 +11085,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a></code> | *No description.* |
 
 ---
 
@@ -11220,10 +11156,10 @@ public java.lang.Number getUpperInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageInUseCount getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>
 
 ---
 
@@ -11349,7 +11285,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>></code> | *No description.* |
 
 ---
 
@@ -11380,10 +11316,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
 
 ---
 
@@ -11634,7 +11570,7 @@ public void resetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a></code> | *No description.* |
 
 ---
 
@@ -11705,10 +11641,10 @@ public java.lang.String getStartInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageLastInUseAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>
 
 ---
 
@@ -11834,7 +11770,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>></code> | *No description.* |
 
 ---
 
@@ -11865,10 +11801,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
 
 ---
 
@@ -12119,7 +12055,7 @@ public void resetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a></code> | *No description.* |
 
 ---
 
@@ -12190,10 +12126,10 @@ public java.lang.String getStartInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImagePushedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>
 
 ---
 
@@ -12319,7 +12255,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>></code> | *No description.* |
 
 ---
 
@@ -12350,10 +12286,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
 
 ---
 
@@ -12590,7 +12526,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a></code> | *No description.* |
 
 ---
 
@@ -12661,10 +12597,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRegistry getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>
 
 ---
 
@@ -12790,7 +12726,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>></code> | *No description.* |
 
 ---
 
@@ -12821,10 +12757,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
 
 ---
 
@@ -13061,7 +12997,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a></code> | *No description.* |
 
 ---
 
@@ -13132,10 +13068,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageRepositoryName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>
 
 ---
 
@@ -13261,7 +13197,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>></code> | *No description.* |
 
 ---
 
@@ -13292,10 +13228,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageTags> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
 
 ---
 
@@ -13532,7 +13468,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a></code> | *No description.* |
 
 ---
 
@@ -13603,10 +13539,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTagsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEcrImageTags getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>
 
 ---
 
@@ -13732,7 +13668,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>></code> | *No description.* |
 
 ---
 
@@ -13763,10 +13699,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEpssScore> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
 
 ---
 
@@ -14003,7 +13939,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a></code> | *No description.* |
 
 ---
 
@@ -14074,10 +14010,10 @@ public java.lang.Number getUpperInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScoreOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaEpssScore getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>
 
 ---
 
@@ -14203,7 +14139,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>></code> | *No description.* |
 
 ---
 
@@ -14234,10 +14170,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaExploitAvailable> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
 
 ---
 
@@ -14474,7 +14410,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a></code> | *No description.* |
 
 ---
 
@@ -14545,10 +14481,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailableOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaExploitAvailable getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>
 
 ---
 
@@ -14674,7 +14610,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>></code> | *No description.* |
 
 ---
 
@@ -14705,10 +14641,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
 
 ---
 
@@ -14945,7 +14881,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a></code> | *No description.* |
 
 ---
 
@@ -15016,10 +14952,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaFindingArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>
 
 ---
 
@@ -15145,7 +15081,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>></code> | *No description.* |
 
 ---
 
@@ -15176,10 +15112,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
 
 ---
 
@@ -15416,7 +15352,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a></code> | *No description.* |
 
 ---
 
@@ -15487,10 +15423,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaFindingStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>
 
 ---
 
@@ -15616,7 +15552,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>></code> | *No description.* |
 
 ---
 
@@ -15647,10 +15583,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
 
 ---
 
@@ -15887,7 +15823,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a></code> | *No description.* |
 
 ---
 
@@ -15958,10 +15894,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaFindingType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>
 
 ---
 
@@ -16087,7 +16023,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -16118,10 +16054,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
 
 ---
 
@@ -16372,7 +16308,7 @@ public void resetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16443,10 +16379,10 @@ public java.lang.String getStartInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaFirstObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>
 
 ---
 
@@ -16572,7 +16508,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>></code> | *No description.* |
 
 ---
 
@@ -16603,10 +16539,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFixAvailable> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
 
 ---
 
@@ -16843,7 +16779,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a></code> | *No description.* |
 
 ---
 
@@ -16914,10 +16850,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailableOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaFixAvailable getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>
 
 ---
 
@@ -17043,7 +16979,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>></code> | *No description.* |
 
 ---
 
@@ -17074,10 +17010,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaInspectorScore> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
 
 ---
 
@@ -17314,7 +17250,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a></code> | *No description.* |
 
 ---
 
@@ -17385,10 +17321,10 @@ public java.lang.Number getUpperInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScoreOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaInspectorScore getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>
 
 ---
 
@@ -17514,7 +17450,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>></code> | *No description.* |
 
 ---
 
@@ -17545,10 +17481,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
 
 ---
 
@@ -17785,7 +17721,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a></code> | *No description.* |
 
 ---
 
@@ -17856,10 +17792,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>
 
 ---
 
@@ -17985,7 +17921,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>></code> | *No description.* |
 
 ---
 
@@ -18016,10 +17952,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
 
 ---
 
@@ -18270,7 +18206,7 @@ public void resetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a></code> | *No description.* |
 
 ---
 
@@ -18341,10 +18277,10 @@ public java.lang.String getStartInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>
 
 ---
 
@@ -18470,7 +18406,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>></code> | *No description.* |
 
 ---
 
@@ -18501,10 +18437,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
 
 ---
 
@@ -18741,7 +18677,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a></code> | *No description.* |
 
 ---
 
@@ -18812,10 +18748,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayersOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionLayers getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>
 
 ---
 
@@ -18941,7 +18877,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>></code> | *No description.* |
 
 ---
 
@@ -18972,10 +18908,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
 
 ---
 
@@ -19212,7 +19148,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a></code> | *No description.* |
 
 ---
 
@@ -19283,10 +19219,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>
 
 ---
 
@@ -19412,7 +19348,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>></code> | *No description.* |
 
 ---
 
@@ -19443,10 +19379,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
 
 ---
 
@@ -19683,7 +19619,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a></code> | *No description.* |
 
 ---
 
@@ -19754,10 +19690,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntimeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaLambdaFunctionRuntime getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>
 
 ---
 
@@ -19883,7 +19819,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -19914,10 +19850,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLastObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
 
 ---
 
@@ -20168,7 +20104,7 @@ public void resetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -20239,10 +20175,10 @@ public java.lang.String getStartInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaLastObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>
 
 ---
 
@@ -20368,7 +20304,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>></code> | *No description.* |
 
 ---
 
@@ -20399,10 +20335,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteria> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>>
 
 ---
 
@@ -20528,7 +20464,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>></code> | *No description.* |
 
 ---
 
@@ -20559,10 +20495,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
 
 ---
 
@@ -20799,7 +20735,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -20870,10 +20806,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaNetworkProtocol getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>
 
 ---
 
@@ -21194,552 +21130,552 @@ Returns a reversible string representation.
 ##### `putAwsAccountId` <a name="putAwsAccountId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId"></a>
 
 ```java
-public void putAwsAccountId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaAwsAccountId> value)
+public void putAwsAccountId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaAwsAccountId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
 
 ---
 
 ##### `putCodeRepositoryProjectName` <a name="putCodeRepositoryProjectName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName"></a>
 
 ```java
-public void putCodeRepositoryProjectName(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName> value)
+public void putCodeRepositoryProjectName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
 
 ---
 
 ##### `putCodeRepositoryProviderType` <a name="putCodeRepositoryProviderType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType"></a>
 
 ```java
-public void putCodeRepositoryProviderType(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType> value)
+public void putCodeRepositoryProviderType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
 
 ---
 
 ##### `putCodeVulnerabilityDetectorName` <a name="putCodeVulnerabilityDetectorName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName"></a>
 
 ```java
-public void putCodeVulnerabilityDetectorName(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName> value)
+public void putCodeVulnerabilityDetectorName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
 
 ---
 
 ##### `putCodeVulnerabilityDetectorTags` <a name="putCodeVulnerabilityDetectorTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags"></a>
 
 ```java
-public void putCodeVulnerabilityDetectorTags(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags> value)
+public void putCodeVulnerabilityDetectorTags(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
 
 ---
 
 ##### `putCodeVulnerabilityFilePath` <a name="putCodeVulnerabilityFilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath"></a>
 
 ```java
-public void putCodeVulnerabilityFilePath(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath> value)
+public void putCodeVulnerabilityFilePath(IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
 
 ---
 
 ##### `putComponentId` <a name="putComponentId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentId"></a>
 
 ```java
-public void putComponentId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaComponentId> value)
+public void putComponentId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
 
 ---
 
 ##### `putComponentType` <a name="putComponentType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentType"></a>
 
 ```java
-public void putComponentType(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaComponentType> value)
+public void putComponentType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putComponentType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
 
 ---
 
 ##### `putEc2InstanceImageId` <a name="putEc2InstanceImageId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceImageId"></a>
 
 ```java
-public void putEc2InstanceImageId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId> value)
+public void putEc2InstanceImageId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
 
 ---
 
 ##### `putEc2InstanceSubnetId` <a name="putEc2InstanceSubnetId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceSubnetId"></a>
 
 ```java
-public void putEc2InstanceSubnetId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId> value)
+public void putEc2InstanceSubnetId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
 
 ---
 
 ##### `putEc2InstanceVpcId` <a name="putEc2InstanceVpcId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId"></a>
 
 ```java
-public void putEc2InstanceVpcId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId> value)
+public void putEc2InstanceVpcId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
 
 ---
 
 ##### `putEcrImageArchitecture` <a name="putEcrImageArchitecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture"></a>
 
 ```java
-public void putEcrImageArchitecture(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture> value)
+public void putEcrImageArchitecture(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
 
 ---
 
 ##### `putEcrImageHash` <a name="putEcrImageHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash"></a>
 
 ```java
-public void putEcrImageHash(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageHash> value)
+public void putEcrImageHash(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageHash> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
 
 ---
 
 ##### `putEcrImageInUseCount` <a name="putEcrImageInUseCount" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount"></a>
 
 ```java
-public void putEcrImageInUseCount(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount> value)
+public void putEcrImageInUseCount(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
 
 ---
 
 ##### `putEcrImageLastInUseAt` <a name="putEcrImageLastInUseAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt"></a>
 
 ```java
-public void putEcrImageLastInUseAt(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt> value)
+public void putEcrImageLastInUseAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
 
 ---
 
 ##### `putEcrImagePushedAt` <a name="putEcrImagePushedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt"></a>
 
 ```java
-public void putEcrImagePushedAt(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt> value)
+public void putEcrImagePushedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
 
 ---
 
 ##### `putEcrImageRegistry` <a name="putEcrImageRegistry" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry"></a>
 
 ```java
-public void putEcrImageRegistry(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry> value)
+public void putEcrImageRegistry(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
 
 ---
 
 ##### `putEcrImageRepositoryName` <a name="putEcrImageRepositoryName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName"></a>
 
 ```java
-public void putEcrImageRepositoryName(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName> value)
+public void putEcrImageRepositoryName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
 
 ---
 
 ##### `putEcrImageTags` <a name="putEcrImageTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageTags"></a>
 
 ```java
-public void putEcrImageTags(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEcrImageTags> value)
+public void putEcrImageTags(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageTags> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageTags.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
 
 ---
 
 ##### `putEpssScore` <a name="putEpssScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEpssScore"></a>
 
 ```java
-public void putEpssScore(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaEpssScore> value)
+public void putEpssScore(IResolvable|java.util.List<Inspector2FilterFilterCriteriaEpssScore> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEpssScore.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
 
 ---
 
 ##### `putExploitAvailable` <a name="putExploitAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putExploitAvailable"></a>
 
 ```java
-public void putExploitAvailable(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaExploitAvailable> value)
+public void putExploitAvailable(IResolvable|java.util.List<Inspector2FilterFilterCriteriaExploitAvailable> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putExploitAvailable.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
 
 ---
 
 ##### `putFindingArn` <a name="putFindingArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingArn"></a>
 
 ```java
-public void putFindingArn(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaFindingArn> value)
+public void putFindingArn(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
 
 ---
 
 ##### `putFindingStatus` <a name="putFindingStatus" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingStatus"></a>
 
 ```java
-public void putFindingStatus(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaFindingStatus> value)
+public void putFindingStatus(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
 
 ---
 
 ##### `putFindingType` <a name="putFindingType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingType"></a>
 
 ```java
-public void putFindingType(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaFindingType> value)
+public void putFindingType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFindingType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
 
 ---
 
 ##### `putFirstObservedAt` <a name="putFirstObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFirstObservedAt"></a>
 
 ```java
-public void putFirstObservedAt(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt> value)
+public void putFirstObservedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
 
 ---
 
 ##### `putFixAvailable` <a name="putFixAvailable" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFixAvailable"></a>
 
 ```java
-public void putFixAvailable(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaFixAvailable> value)
+public void putFixAvailable(IResolvable|java.util.List<Inspector2FilterFilterCriteriaFixAvailable> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putFixAvailable.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
 
 ---
 
 ##### `putInspectorScore` <a name="putInspectorScore" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putInspectorScore"></a>
 
 ```java
-public void putInspectorScore(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaInspectorScore> value)
+public void putInspectorScore(IResolvable|java.util.List<Inspector2FilterFilterCriteriaInspectorScore> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putInspectorScore.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
 
 ---
 
 ##### `putLambdaFunctionExecutionRoleArn` <a name="putLambdaFunctionExecutionRoleArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionExecutionRoleArn"></a>
 
 ```java
-public void putLambdaFunctionExecutionRoleArn(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn> value)
+public void putLambdaFunctionExecutionRoleArn(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionExecutionRoleArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
 
 ---
 
 ##### `putLambdaFunctionLastModifiedAt` <a name="putLambdaFunctionLastModifiedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLastModifiedAt"></a>
 
 ```java
-public void putLambdaFunctionLastModifiedAt(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt> value)
+public void putLambdaFunctionLastModifiedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLastModifiedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
 
 ---
 
 ##### `putLambdaFunctionLayers` <a name="putLambdaFunctionLayers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLayers"></a>
 
 ```java
-public void putLambdaFunctionLayers(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers> value)
+public void putLambdaFunctionLayers(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionLayers.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
 
 ---
 
 ##### `putLambdaFunctionName` <a name="putLambdaFunctionName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionName"></a>
 
 ```java
-public void putLambdaFunctionName(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName> value)
+public void putLambdaFunctionName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
 
 ---
 
 ##### `putLambdaFunctionRuntime` <a name="putLambdaFunctionRuntime" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionRuntime"></a>
 
 ```java
-public void putLambdaFunctionRuntime(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime> value)
+public void putLambdaFunctionRuntime(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLambdaFunctionRuntime.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
 
 ---
 
 ##### `putLastObservedAt` <a name="putLastObservedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLastObservedAt"></a>
 
 ```java
-public void putLastObservedAt(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaLastObservedAt> value)
+public void putLastObservedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaLastObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
 
 ---
 
 ##### `putNetworkProtocol` <a name="putNetworkProtocol" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putNetworkProtocol"></a>
 
 ```java
-public void putNetworkProtocol(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol> value)
+public void putNetworkProtocol(IResolvable|java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
 
 ---
 
 ##### `putPortRange` <a name="putPortRange" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putPortRange"></a>
 
 ```java
-public void putPortRange(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaPortRange> value)
+public void putPortRange(IResolvable|java.util.List<Inspector2FilterFilterCriteriaPortRange> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putPortRange.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
 
 ---
 
 ##### `putRelatedVulnerabilities` <a name="putRelatedVulnerabilities" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putRelatedVulnerabilities"></a>
 
 ```java
-public void putRelatedVulnerabilities(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities> value)
+public void putRelatedVulnerabilities(IResolvable|java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putRelatedVulnerabilities.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
 
 ---
 
 ##### `putResourceId` <a name="putResourceId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceId"></a>
 
 ```java
-public void putResourceId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaResourceId> value)
+public void putResourceId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
 
 ---
 
 ##### `putResourceTags` <a name="putResourceTags" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceTags"></a>
 
 ```java
-public void putResourceTags(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaResourceTags> value)
+public void putResourceTags(IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceTags> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
 
 ---
 
 ##### `putResourceType` <a name="putResourceType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceType"></a>
 
 ```java
-public void putResourceType(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaResourceType> value)
+public void putResourceType(IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
 
 ---
 
 ##### `putSeverity` <a name="putSeverity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putSeverity"></a>
 
 ```java
-public void putSeverity(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaSeverity> value)
+public void putSeverity(IResolvable|java.util.List<Inspector2FilterFilterCriteriaSeverity> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
 
 ---
 
 ##### `putTitle` <a name="putTitle" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putTitle"></a>
 
 ```java
-public void putTitle(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaTitle> value)
+public void putTitle(IResolvable|java.util.List<Inspector2FilterFilterCriteriaTitle> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
 
 ---
 
 ##### `putUpdatedAt` <a name="putUpdatedAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putUpdatedAt"></a>
 
 ```java
-public void putUpdatedAt(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaUpdatedAt> value)
+public void putUpdatedAt(IResolvable|java.util.List<Inspector2FilterFilterCriteriaUpdatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
 
 ---
 
 ##### `putVendorSeverity` <a name="putVendorSeverity" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVendorSeverity"></a>
 
 ```java
-public void putVendorSeverity(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVendorSeverity> value)
+public void putVendorSeverity(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVendorSeverity> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVendorSeverity.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
 
 ---
 
 ##### `putVulnerabilityId` <a name="putVulnerabilityId" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilityId"></a>
 
 ```java
-public void putVulnerabilityId(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId> value)
+public void putVulnerabilityId(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilityId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
 
 ---
 
 ##### `putVulnerabilitySource` <a name="putVulnerabilitySource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource"></a>
 
 ```java
-public void putVulnerabilitySource(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource> value)
+public void putVulnerabilitySource(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
 
 ---
 
 ##### `putVulnerablePackages` <a name="putVulnerablePackages" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages"></a>
 
 ```java
-public void putVulnerablePackages(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages> value)
+public void putVulnerablePackages(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
 
 ---
 
@@ -22072,53 +22008,53 @@ public void resetVulnerablePackages()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityId">vulnerabilityId</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList">Inspector2FilterFilterCriteriaVulnerabilityIdList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySource">vulnerabilitySource</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList">Inspector2FilterFilterCriteriaVulnerabilitySourceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackages">vulnerablePackages</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList">Inspector2FilterFilterCriteriaVulnerablePackagesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">codeRepositoryProjectNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">codeRepositoryProviderTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">codeVulnerabilityDetectorNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">codeVulnerabilityDetectorTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">codeVulnerabilityFilePathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">componentIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">componentTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">ec2InstanceImageIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">ec2InstanceSubnetIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2InstanceVpcIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecrImageArchitectureInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecrImageHashInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecrImageInUseCountInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecrImageLastInUseAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecrImagePushedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecrImageRegistryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecrImageRepositoryNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">ecrImageTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">epssScoreInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">exploitAvailableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">findingArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">findingStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">findingTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">fixAvailableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">inspectorScoreInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">lambdaFunctionExecutionRoleArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">lambdaFunctionLastModifiedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">lambdaFunctionLayersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">lambdaFunctionNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">lambdaFunctionRuntimeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">networkProtocolInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">portRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">relatedVulnerabilitiesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">severityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">vendorSeverityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">vulnerabilityIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">vulnerabilitySourceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">vulnerablePackagesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">codeRepositoryProjectNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">codeRepositoryProviderTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">codeVulnerabilityDetectorNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">codeVulnerabilityDetectorTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">codeVulnerabilityFilePathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput">componentIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput">componentTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput">ec2InstanceImageIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput">ec2InstanceSubnetIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2InstanceVpcIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecrImageArchitectureInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecrImageHashInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecrImageInUseCountInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecrImageLastInUseAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecrImagePushedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecrImageRegistryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecrImageRepositoryNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput">ecrImageTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput">epssScoreInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput">exploitAvailableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput">findingArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput">findingStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput">findingTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput">fixAvailableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput">inspectorScoreInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput">lambdaFunctionExecutionRoleArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput">lambdaFunctionLastModifiedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput">lambdaFunctionLayersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput">lambdaFunctionNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput">lambdaFunctionRuntimeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput">networkProtocolInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput">portRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput">relatedVulnerabilitiesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput">severityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput">vendorSeverityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput">vulnerabilityIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput">vulnerabilitySourceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput">vulnerablePackagesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a></code> | *No description.* |
 
 ---
 
@@ -22609,470 +22545,470 @@ public Inspector2FilterFilterCriteriaVulnerablePackagesList getVulnerablePackage
 ##### `awsAccountIdInput`<sup>Optional</sup> <a name="awsAccountIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput"></a>
 
 ```java
-public java.lang.Object getAwsAccountIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaAwsAccountId> getAwsAccountIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>>
 
 ---
 
 ##### `codeRepositoryProjectNameInput`<sup>Optional</sup> <a name="codeRepositoryProjectNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput"></a>
 
 ```java
-public java.lang.Object getCodeRepositoryProjectNameInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProjectName> getCodeRepositoryProjectNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>>
 
 ---
 
 ##### `codeRepositoryProviderTypeInput`<sup>Optional</sup> <a name="codeRepositoryProviderTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput"></a>
 
 ```java
-public java.lang.Object getCodeRepositoryProviderTypeInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeRepositoryProviderType> getCodeRepositoryProviderTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>>
 
 ---
 
 ##### `codeVulnerabilityDetectorNameInput`<sup>Optional</sup> <a name="codeVulnerabilityDetectorNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput"></a>
 
 ```java
-public java.lang.Object getCodeVulnerabilityDetectorNameInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName> getCodeVulnerabilityDetectorNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>>
 
 ---
 
 ##### `codeVulnerabilityDetectorTagsInput`<sup>Optional</sup> <a name="codeVulnerabilityDetectorTagsInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput"></a>
 
 ```java
-public java.lang.Object getCodeVulnerabilityDetectorTagsInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags> getCodeVulnerabilityDetectorTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>>
 
 ---
 
 ##### `codeVulnerabilityFilePathInput`<sup>Optional</sup> <a name="codeVulnerabilityFilePathInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput"></a>
 
 ```java
-public java.lang.Object getCodeVulnerabilityFilePathInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath> getCodeVulnerabilityFilePathInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>>
 
 ---
 
 ##### `componentIdInput`<sup>Optional</sup> <a name="componentIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentIdInput"></a>
 
 ```java
-public java.lang.Object getComponentIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentId> getComponentIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId">Inspector2FilterFilterCriteriaComponentId</a>>
 
 ---
 
 ##### `componentTypeInput`<sup>Optional</sup> <a name="componentTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.componentTypeInput"></a>
 
 ```java
-public java.lang.Object getComponentTypeInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaComponentType> getComponentTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType">Inspector2FilterFilterCriteriaComponentType</a>>
 
 ---
 
 ##### `ec2InstanceImageIdInput`<sup>Optional</sup> <a name="ec2InstanceImageIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceImageIdInput"></a>
 
 ```java
-public java.lang.Object getEc2InstanceImageIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceImageId> getEc2InstanceImageIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId">Inspector2FilterFilterCriteriaEc2InstanceImageId</a>>
 
 ---
 
 ##### `ec2InstanceSubnetIdInput`<sup>Optional</sup> <a name="ec2InstanceSubnetIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceSubnetIdInput"></a>
 
 ```java
-public java.lang.Object getEc2InstanceSubnetIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceSubnetId> getEc2InstanceSubnetIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId">Inspector2FilterFilterCriteriaEc2InstanceSubnetId</a>>
 
 ---
 
 ##### `ec2InstanceVpcIdInput`<sup>Optional</sup> <a name="ec2InstanceVpcIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput"></a>
 
 ```java
-public java.lang.Object getEc2InstanceVpcIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEc2InstanceVpcId> getEc2InstanceVpcIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>>
 
 ---
 
 ##### `ecrImageArchitectureInput`<sup>Optional</sup> <a name="ecrImageArchitectureInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput"></a>
 
 ```java
-public java.lang.Object getEcrImageArchitectureInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageArchitecture> getEcrImageArchitectureInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>>
 
 ---
 
 ##### `ecrImageHashInput`<sup>Optional</sup> <a name="ecrImageHashInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput"></a>
 
 ```java
-public java.lang.Object getEcrImageHashInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageHash> getEcrImageHashInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>>
 
 ---
 
 ##### `ecrImageInUseCountInput`<sup>Optional</sup> <a name="ecrImageInUseCountInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput"></a>
 
 ```java
-public java.lang.Object getEcrImageInUseCountInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageInUseCount> getEcrImageInUseCountInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>>
 
 ---
 
 ##### `ecrImageLastInUseAtInput`<sup>Optional</sup> <a name="ecrImageLastInUseAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput"></a>
 
 ```java
-public java.lang.Object getEcrImageLastInUseAtInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageLastInUseAt> getEcrImageLastInUseAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>>
 
 ---
 
 ##### `ecrImagePushedAtInput`<sup>Optional</sup> <a name="ecrImagePushedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput"></a>
 
 ```java
-public java.lang.Object getEcrImagePushedAtInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImagePushedAt> getEcrImagePushedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>>
 
 ---
 
 ##### `ecrImageRegistryInput`<sup>Optional</sup> <a name="ecrImageRegistryInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput"></a>
 
 ```java
-public java.lang.Object getEcrImageRegistryInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRegistry> getEcrImageRegistryInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>>
 
 ---
 
 ##### `ecrImageRepositoryNameInput`<sup>Optional</sup> <a name="ecrImageRepositoryNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput"></a>
 
 ```java
-public java.lang.Object getEcrImageRepositoryNameInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageRepositoryName> getEcrImageRepositoryNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>>
 
 ---
 
 ##### `ecrImageTagsInput`<sup>Optional</sup> <a name="ecrImageTagsInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageTagsInput"></a>
 
 ```java
-public java.lang.Object getEcrImageTagsInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEcrImageTags> getEcrImageTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags">Inspector2FilterFilterCriteriaEcrImageTags</a>>
 
 ---
 
 ##### `epssScoreInput`<sup>Optional</sup> <a name="epssScoreInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.epssScoreInput"></a>
 
 ```java
-public java.lang.Object getEpssScoreInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaEpssScore> getEpssScoreInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore">Inspector2FilterFilterCriteriaEpssScore</a>>
 
 ---
 
 ##### `exploitAvailableInput`<sup>Optional</sup> <a name="exploitAvailableInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.exploitAvailableInput"></a>
 
 ```java
-public java.lang.Object getExploitAvailableInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaExploitAvailable> getExploitAvailableInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable">Inspector2FilterFilterCriteriaExploitAvailable</a>>
 
 ---
 
 ##### `findingArnInput`<sup>Optional</sup> <a name="findingArnInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingArnInput"></a>
 
 ```java
-public java.lang.Object getFindingArnInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingArn> getFindingArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn">Inspector2FilterFilterCriteriaFindingArn</a>>
 
 ---
 
 ##### `findingStatusInput`<sup>Optional</sup> <a name="findingStatusInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingStatusInput"></a>
 
 ```java
-public java.lang.Object getFindingStatusInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingStatus> getFindingStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus">Inspector2FilterFilterCriteriaFindingStatus</a>>
 
 ---
 
 ##### `findingTypeInput`<sup>Optional</sup> <a name="findingTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.findingTypeInput"></a>
 
 ```java
-public java.lang.Object getFindingTypeInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFindingType> getFindingTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType">Inspector2FilterFilterCriteriaFindingType</a>>
 
 ---
 
 ##### `firstObservedAtInput`<sup>Optional</sup> <a name="firstObservedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.firstObservedAtInput"></a>
 
 ```java
-public java.lang.Object getFirstObservedAtInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFirstObservedAt> getFirstObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt">Inspector2FilterFilterCriteriaFirstObservedAt</a>>
 
 ---
 
 ##### `fixAvailableInput`<sup>Optional</sup> <a name="fixAvailableInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fixAvailableInput"></a>
 
 ```java
-public java.lang.Object getFixAvailableInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaFixAvailable> getFixAvailableInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable">Inspector2FilterFilterCriteriaFixAvailable</a>>
 
 ---
 
 ##### `inspectorScoreInput`<sup>Optional</sup> <a name="inspectorScoreInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.inspectorScoreInput"></a>
 
 ```java
-public java.lang.Object getInspectorScoreInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaInspectorScore> getInspectorScoreInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore">Inspector2FilterFilterCriteriaInspectorScore</a>>
 
 ---
 
 ##### `lambdaFunctionExecutionRoleArnInput`<sup>Optional</sup> <a name="lambdaFunctionExecutionRoleArnInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionExecutionRoleArnInput"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionExecutionRoleArnInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn> getLambdaFunctionExecutionRoleArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn">Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn</a>>
 
 ---
 
 ##### `lambdaFunctionLastModifiedAtInput`<sup>Optional</sup> <a name="lambdaFunctionLastModifiedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLastModifiedAtInput"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionLastModifiedAtInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt> getLambdaFunctionLastModifiedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt">Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt</a>>
 
 ---
 
 ##### `lambdaFunctionLayersInput`<sup>Optional</sup> <a name="lambdaFunctionLayersInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionLayersInput"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionLayersInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionLayers> getLambdaFunctionLayersInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers">Inspector2FilterFilterCriteriaLambdaFunctionLayers</a>>
 
 ---
 
 ##### `lambdaFunctionNameInput`<sup>Optional</sup> <a name="lambdaFunctionNameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionNameInput"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionNameInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionName> getLambdaFunctionNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName">Inspector2FilterFilterCriteriaLambdaFunctionName</a>>
 
 ---
 
 ##### `lambdaFunctionRuntimeInput`<sup>Optional</sup> <a name="lambdaFunctionRuntimeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lambdaFunctionRuntimeInput"></a>
 
 ```java
-public java.lang.Object getLambdaFunctionRuntimeInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLambdaFunctionRuntime> getLambdaFunctionRuntimeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime">Inspector2FilterFilterCriteriaLambdaFunctionRuntime</a>>
 
 ---
 
 ##### `lastObservedAtInput`<sup>Optional</sup> <a name="lastObservedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.lastObservedAtInput"></a>
 
 ```java
-public java.lang.Object getLastObservedAtInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaLastObservedAt> getLastObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt">Inspector2FilterFilterCriteriaLastObservedAt</a>>
 
 ---
 
 ##### `networkProtocolInput`<sup>Optional</sup> <a name="networkProtocolInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.networkProtocolInput"></a>
 
 ```java
-public java.lang.Object getNetworkProtocolInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaNetworkProtocol> getNetworkProtocolInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol">Inspector2FilterFilterCriteriaNetworkProtocol</a>>
 
 ---
 
 ##### `portRangeInput`<sup>Optional</sup> <a name="portRangeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.portRangeInput"></a>
 
 ```java
-public java.lang.Object getPortRangeInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaPortRange> getPortRangeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
 
 ---
 
 ##### `relatedVulnerabilitiesInput`<sup>Optional</sup> <a name="relatedVulnerabilitiesInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.relatedVulnerabilitiesInput"></a>
 
 ```java
-public java.lang.Object getRelatedVulnerabilitiesInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities> getRelatedVulnerabilitiesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
 
 ---
 
 ##### `resourceIdInput`<sup>Optional</sup> <a name="resourceIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceIdInput"></a>
 
 ```java
-public java.lang.Object getResourceIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceId> getResourceIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
 
 ---
 
 ##### `resourceTagsInput`<sup>Optional</sup> <a name="resourceTagsInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTagsInput"></a>
 
 ```java
-public java.lang.Object getResourceTagsInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceTags> getResourceTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
 
 ---
 
 ##### `resourceTypeInput`<sup>Optional</sup> <a name="resourceTypeInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.resourceTypeInput"></a>
 
 ```java
-public java.lang.Object getResourceTypeInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceType> getResourceTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
 
 ---
 
 ##### `severityInput`<sup>Optional</sup> <a name="severityInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.severityInput"></a>
 
 ```java
-public java.lang.Object getSeverityInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaSeverity> getSeverityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
 
 ---
 
 ##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.titleInput"></a>
 
 ```java
-public java.lang.Object getTitleInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaTitle> getTitleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
 
 ---
 
 ##### `updatedAtInput`<sup>Optional</sup> <a name="updatedAtInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.updatedAtInput"></a>
 
 ```java
-public java.lang.Object getUpdatedAtInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaUpdatedAt> getUpdatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
 
 ---
 
 ##### `vendorSeverityInput`<sup>Optional</sup> <a name="vendorSeverityInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vendorSeverityInput"></a>
 
 ```java
-public java.lang.Object getVendorSeverityInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVendorSeverity> getVendorSeverityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
 
 ---
 
 ##### `vulnerabilityIdInput`<sup>Optional</sup> <a name="vulnerabilityIdInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilityIdInput"></a>
 
 ```java
-public java.lang.Object getVulnerabilityIdInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId> getVulnerabilityIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
 
 ---
 
 ##### `vulnerabilitySourceInput`<sup>Optional</sup> <a name="vulnerabilitySourceInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySourceInput"></a>
 
 ```java
-public java.lang.Object getVulnerabilitySourceInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource> getVulnerabilitySourceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
 
 ---
 
 ##### `vulnerablePackagesInput`<sup>Optional</sup> <a name="vulnerablePackagesInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackagesInput"></a>
 
 ```java
-public java.lang.Object getVulnerablePackagesInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages> getVulnerablePackagesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteria getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>
 
 ---
 
@@ -23198,7 +23134,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>></code> | *No description.* |
 
 ---
 
@@ -23229,10 +23165,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaPortRange> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>>
 
 ---
 
@@ -23469,7 +23405,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusiveInput">endInclusiveInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.beginInclusive">beginInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a></code> | *No description.* |
 
 ---
 
@@ -23540,10 +23476,10 @@ public java.lang.Number getEndInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRangeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaPortRange getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange">Inspector2FilterFilterCriteriaPortRange</a>
 
 ---
 
@@ -23669,7 +23605,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>></code> | *No description.* |
 
 ---
 
@@ -23700,10 +23636,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaRelatedVulnerabilities> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>>
 
 ---
 
@@ -23940,7 +23876,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a></code> | *No description.* |
 
 ---
 
@@ -24011,10 +23947,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilitiesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaRelatedVulnerabilities getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities">Inspector2FilterFilterCriteriaRelatedVulnerabilities</a>
 
 ---
 
@@ -24140,7 +24076,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>></code> | *No description.* |
 
 ---
 
@@ -24171,10 +24107,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>>
 
 ---
 
@@ -24411,7 +24347,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -24482,10 +24418,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaResourceId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId">Inspector2FilterFilterCriteriaResourceId</a>
 
 ---
 
@@ -24611,7 +24547,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>></code> | *No description.* |
 
 ---
 
@@ -24642,10 +24578,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceTags> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>>
 
 ---
 
@@ -24884,7 +24820,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -24975,10 +24911,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTagsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaResourceTags getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags">Inspector2FilterFilterCriteriaResourceTags</a>
 
 ---
 
@@ -25104,7 +25040,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>></code> | *No description.* |
 
 ---
 
@@ -25135,10 +25071,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaResourceType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>>
 
 ---
 
@@ -25375,7 +25311,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -25446,10 +25382,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaResourceType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType">Inspector2FilterFilterCriteriaResourceType</a>
 
 ---
 
@@ -25575,7 +25511,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>></code> | *No description.* |
 
 ---
 
@@ -25606,10 +25542,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaSeverity> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>>
 
 ---
 
@@ -25846,7 +25782,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a></code> | *No description.* |
 
 ---
 
@@ -25917,10 +25853,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverityOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaSeverity getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity">Inspector2FilterFilterCriteriaSeverity</a>
 
 ---
 
@@ -26046,7 +25982,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>></code> | *No description.* |
 
 ---
 
@@ -26077,10 +26013,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaTitle> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>>
 
 ---
 
@@ -26317,7 +26253,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -26388,10 +26324,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaTitle getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle">Inspector2FilterFilterCriteriaTitle</a>
 
 ---
 
@@ -26517,7 +26453,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -26548,10 +26484,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaUpdatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>>
 
 ---
 
@@ -26802,7 +26738,7 @@ public void resetStartInclusive()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusiveInput">startInclusiveInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.endInclusive">endInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.startInclusive">startInclusive</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -26873,10 +26809,10 @@ public java.lang.String getStartInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaUpdatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt">Inspector2FilterFilterCriteriaUpdatedAt</a>
 
 ---
 
@@ -27002,7 +26938,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>></code> | *No description.* |
 
 ---
 
@@ -27033,10 +26969,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVendorSeverity> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>>
 
 ---
 
@@ -27273,7 +27209,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a></code> | *No description.* |
 
 ---
 
@@ -27344,10 +27280,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverityOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVendorSeverity getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity">Inspector2FilterFilterCriteriaVendorSeverity</a>
 
 ---
 
@@ -27473,7 +27409,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>></code> | *No description.* |
 
 ---
 
@@ -27504,10 +27440,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilityId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>>
 
 ---
 
@@ -27744,7 +27680,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a></code> | *No description.* |
 
 ---
 
@@ -27815,10 +27751,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilityId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId">Inspector2FilterFilterCriteriaVulnerabilityId</a>
 
 ---
 
@@ -27944,7 +27880,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>></code> | *No description.* |
 
 ---
 
@@ -27975,10 +27911,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerabilitySource> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>>
 
 ---
 
@@ -28215,7 +28151,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a></code> | *No description.* |
 
 ---
 
@@ -28286,10 +28222,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerabilitySource getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource">Inspector2FilterFilterCriteriaVulnerabilitySource</a>
 
 ---
 
@@ -28415,7 +28351,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>></code> | *No description.* |
 
 ---
 
@@ -28446,10 +28382,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
 
 ---
 
@@ -28686,7 +28622,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a></code> | *No description.* |
 
 ---
 
@@ -28757,10 +28693,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>
 
 ---
 
@@ -28886,7 +28822,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>></code> | *No description.* |
 
 ---
 
@@ -28917,10 +28853,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
 
 ---
 
@@ -29157,7 +29093,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusiveInput">upperInclusiveInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.lowerInclusive">lowerInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.upperInclusive">upperInclusive</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a></code> | *No description.* |
 
 ---
 
@@ -29228,10 +29164,10 @@ public java.lang.Number getUpperInclusive();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpochOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesEpoch getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>
 
 ---
 
@@ -29357,7 +29293,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>></code> | *No description.* |
 
 ---
 
@@ -29388,10 +29324,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
 
 ---
 
@@ -29628,7 +29564,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a></code> | *No description.* |
 
 ---
 
@@ -29699,10 +29635,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePathOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesFilePath getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>
 
 ---
 
@@ -29828,7 +29764,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>></code> | *No description.* |
 
 ---
 
@@ -29859,10 +29795,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackages> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>>
 
 ---
 
@@ -29988,7 +29924,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>></code> | *No description.* |
 
 ---
 
@@ -30019,10 +29955,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
 
 ---
 
@@ -30259,7 +30195,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a></code> | *No description.* |
 
 ---
 
@@ -30330,10 +30266,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>
 
 ---
 
@@ -30578,96 +30514,96 @@ Returns a reversible string representation.
 ##### `putArchitecture` <a name="putArchitecture" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putArchitecture"></a>
 
 ```java
-public void putArchitecture(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture> value)
+public void putArchitecture(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putArchitecture.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
 
 ---
 
 ##### `putEpoch` <a name="putEpoch" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putEpoch"></a>
 
 ```java
-public void putEpoch(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch> value)
+public void putEpoch(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putEpoch.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
 
 ---
 
 ##### `putFilePath` <a name="putFilePath" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putFilePath"></a>
 
 ```java
-public void putFilePath(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath> value)
+public void putFilePath(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putFilePath.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
 
 ---
 
 ##### `putName` <a name="putName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putName"></a>
 
 ```java
-public void putName(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName> value)
+public void putName(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
 
 ---
 
 ##### `putRelease` <a name="putRelease" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putRelease"></a>
 
 ```java
-public void putRelease(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease> value)
+public void putRelease(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putRelease.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
 
 ---
 
 ##### `putSourceLambdaLayerArn` <a name="putSourceLambdaLayerArn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLambdaLayerArn"></a>
 
 ```java
-public void putSourceLambdaLayerArn(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn> value)
+public void putSourceLambdaLayerArn(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLambdaLayerArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
 
 ---
 
 ##### `putSourceLayerHash` <a name="putSourceLayerHash" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLayerHash"></a>
 
 ```java
-public void putSourceLayerHash(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash> value)
+public void putSourceLayerHash(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putSourceLayerHash.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
 
 ---
 
 ##### `putVersion` <a name="putVersion" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putVersion"></a>
 
 ```java
-public void putVersion(IResolvable OR java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion> value)
+public void putVersion(IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.putVersion.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
 
 ---
 
@@ -30734,15 +30670,15 @@ public void resetVersion()
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArn">sourceLambdaLayerArn</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHash">sourceLayerHash</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.version">version</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList">Inspector2FilterFilterCriteriaVulnerablePackagesVersionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">architectureInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">epochInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">filePathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">nameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">releaseInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">sourceLambdaLayerArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">sourceLayerHashInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">versionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput">architectureInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput">epochInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput">filePathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput">nameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput">releaseInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput">sourceLambdaLayerArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput">sourceLayerHashInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput">versionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a></code> | *No description.* |
 
 ---
 
@@ -30853,90 +30789,90 @@ public Inspector2FilterFilterCriteriaVulnerablePackagesVersionList getVersion();
 ##### `architectureInput`<sup>Optional</sup> <a name="architectureInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.architectureInput"></a>
 
 ```java
-public java.lang.Object getArchitectureInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture> getArchitectureInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture">Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture</a>>
 
 ---
 
 ##### `epochInput`<sup>Optional</sup> <a name="epochInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.epochInput"></a>
 
 ```java
-public java.lang.Object getEpochInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesEpoch> getEpochInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch">Inspector2FilterFilterCriteriaVulnerablePackagesEpoch</a>>
 
 ---
 
 ##### `filePathInput`<sup>Optional</sup> <a name="filePathInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.filePathInput"></a>
 
 ```java
-public java.lang.Object getFilePathInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesFilePath> getFilePathInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath">Inspector2FilterFilterCriteriaVulnerablePackagesFilePath</a>>
 
 ---
 
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.nameInput"></a>
 
 ```java
-public java.lang.Object getNameInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesName> getNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName">Inspector2FilterFilterCriteriaVulnerablePackagesName</a>>
 
 ---
 
 ##### `releaseInput`<sup>Optional</sup> <a name="releaseInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.releaseInput"></a>
 
 ```java
-public java.lang.Object getReleaseInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease> getReleaseInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
 
 ---
 
 ##### `sourceLambdaLayerArnInput`<sup>Optional</sup> <a name="sourceLambdaLayerArnInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLambdaLayerArnInput"></a>
 
 ```java
-public java.lang.Object getSourceLambdaLayerArnInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn> getSourceLambdaLayerArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
 
 ---
 
 ##### `sourceLayerHashInput`<sup>Optional</sup> <a name="sourceLayerHashInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.sourceLayerHashInput"></a>
 
 ```java
-public java.lang.Object getSourceLayerHashInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash> getSourceLayerHashInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
 
 ---
 
 ##### `versionInput`<sup>Optional</sup> <a name="versionInput" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.versionInput"></a>
 
 ```java
-public java.lang.Object getVersionInput();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion> getVersionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackages getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackages">Inspector2FilterFilterCriteriaVulnerablePackages</a>
 
 ---
 
@@ -31062,7 +30998,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>></code> | *No description.* |
 
 ---
 
@@ -31093,10 +31029,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesRelease> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>>
 
 ---
 
@@ -31333,7 +31269,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a></code> | *No description.* |
 
 ---
 
@@ -31404,10 +31340,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesRelease getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease">Inspector2FilterFilterCriteriaVulnerablePackagesRelease</a>
 
 ---
 
@@ -31533,7 +31469,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>></code> | *No description.* |
 
 ---
 
@@ -31564,10 +31500,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>>
 
 ---
 
@@ -31804,7 +31740,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a></code> | *No description.* |
 
 ---
 
@@ -31875,10 +31811,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn</a>
 
 ---
 
@@ -32004,7 +31940,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>></code> | *No description.* |
 
 ---
 
@@ -32035,10 +31971,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>>
 
 ---
 
@@ -32275,7 +32211,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a></code> | *No description.* |
 
 ---
 
@@ -32346,10 +32282,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash">Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash</a>
 
 ---
 
@@ -32475,7 +32411,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>></code> | *No description.* |
 
 ---
 
@@ -32506,10 +32442,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<Inspector2FilterFilterCriteriaVulnerablePackagesVersion> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>>
 
 ---
 
@@ -32746,7 +32682,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a></code> | *No description.* |
 
 ---
 
@@ -32817,10 +32753,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|Inspector2FilterFilterCriteriaVulnerablePackagesVersion getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion">Inspector2FilterFilterCriteriaVulnerablePackagesVersion</a>
 
 ---
 

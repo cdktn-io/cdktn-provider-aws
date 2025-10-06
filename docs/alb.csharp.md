@@ -313,7 +313,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.alb.Alb.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.alb.Alb.importFrom"></a>
@@ -367,7 +367,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.alb.Alb.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -382,7 +382,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.alb.Alb.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -455,12 +455,12 @@ private void PutMinimumLoadBalancerCapacity(AlbMinimumLoadBalancerCapacity Value
 ##### `PutSubnetMapping` <a name="PutSubnetMapping" id="@cdktf/provider-aws.alb.Alb.putSubnetMapping"></a>
 
 ```csharp
-private void PutSubnetMapping(object Value)
+private void PutSubnetMapping(IResolvable|AlbSubnetMapping[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.alb.Alb.putSubnetMapping.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]
 
 ---
 
@@ -806,13 +806,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference">AlbAccessLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.arnSuffix">ArnSuffix</a></code> | <code>string</code> | *No description.* |
@@ -830,55 +830,55 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.customerOwnedIpv4PoolInput">CustomerOwnedIpv4PoolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.desyncMitigationModeInput">DesyncMitigationModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.dnsRecordClientRoutingPolicyInput">DnsRecordClientRoutingPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFieldsInput">DropInvalidHeaderFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancingInput">EnableCrossZoneLoadBalancingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableDeletionProtectionInput">EnableDeletionProtectionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableHttp2Input">EnableHttp2Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeadersInput">EnableTlsVersionAndCipherSuiteHeadersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableWafFailOpenInput">EnableWafFailOpenInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableXffClientPortInput">EnableXffClientPortInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableZonalShiftInput">EnableZonalShiftInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFieldsInput">DropInvalidHeaderFieldsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancingInput">EnableCrossZoneLoadBalancingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableDeletionProtectionInput">EnableDeletionProtectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableHttp2Input">EnableHttp2Input</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeadersInput">EnableTlsVersionAndCipherSuiteHeadersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableWafFailOpenInput">EnableWafFailOpenInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableXffClientPortInput">EnableXffClientPortInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableZonalShiftInput">EnableZonalShiftInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput">EnforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.idleTimeoutInput">IdleTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.internalInput">InternalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.internalInput">InternalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.ipAddressTypeInput">IpAddressTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.ipamPoolsInput">IpamPoolsInput</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbIpamPools">AlbIpamPools</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.loadBalancerTypeInput">LoadBalancerTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.minimumLoadBalancerCapacityInput">MinimumLoadBalancerCapacityInput</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbMinimumLoadBalancerCapacity">AlbMinimumLoadBalancerCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.namePrefixInput">NamePrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.preserveHostHeaderInput">PreserveHostHeaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.preserveHostHeaderInput">PreserveHostHeaderInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.secondaryIpsAutoAssignedPerSubnetInput">SecondaryIpsAutoAssignedPerSubnetInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.securityGroupsInput">SecurityGroupsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.subnetMappingInput">SubnetMappingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.subnetMappingInput">SubnetMappingInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.subnetsInput">SubnetsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.xffHeaderProcessingModeInput">XffHeaderProcessingModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.clientKeepAlive">ClientKeepAlive</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.dnsRecordClientRoutingPolicy">DnsRecordClientRoutingPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFields">DropInvalidHeaderFields</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableHttp2">EnableHttp2</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableZonalShift">EnableZonalShift</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFields">DropInvalidHeaderFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableHttp2">EnableHttp2</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableZonalShift">EnableZonalShift</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enforceSecurityGroupInboundRulesOnPrivateLinkTraffic">EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.idleTimeout">IdleTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.internal">Internal</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.internal">Internal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.ipAddressType">IpAddressType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.loadBalancerType">LoadBalancerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.namePrefix">NamePrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.preserveHostHeader">PreserveHostHeader</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.preserveHostHeader">PreserveHostHeader</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.secondaryIpsAutoAssignedPerSubnet">SecondaryIpsAutoAssignedPerSubnet</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.securityGroups">SecurityGroups</a></code> | <code>string[]</code> | *No description.* |
@@ -964,20 +964,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.alb.Alb.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.alb.Alb.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1024,10 +1024,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.alb.Alb.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1204,80 +1204,80 @@ public string DnsRecordClientRoutingPolicyInput { get; }
 ##### `DropInvalidHeaderFieldsInput`<sup>Optional</sup> <a name="DropInvalidHeaderFieldsInput" id="@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFieldsInput"></a>
 
 ```csharp
-public object DropInvalidHeaderFieldsInput { get; }
+public bool|IResolvable DropInvalidHeaderFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableCrossZoneLoadBalancingInput`<sup>Optional</sup> <a name="EnableCrossZoneLoadBalancingInput" id="@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancingInput"></a>
 
 ```csharp
-public object EnableCrossZoneLoadBalancingInput { get; }
+public bool|IResolvable EnableCrossZoneLoadBalancingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableDeletionProtectionInput`<sup>Optional</sup> <a name="EnableDeletionProtectionInput" id="@cdktf/provider-aws.alb.Alb.property.enableDeletionProtectionInput"></a>
 
 ```csharp
-public object EnableDeletionProtectionInput { get; }
+public bool|IResolvable EnableDeletionProtectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableHttp2Input`<sup>Optional</sup> <a name="EnableHttp2Input" id="@cdktf/provider-aws.alb.Alb.property.enableHttp2Input"></a>
 
 ```csharp
-public object EnableHttp2Input { get; }
+public bool|IResolvable EnableHttp2Input { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableTlsVersionAndCipherSuiteHeadersInput`<sup>Optional</sup> <a name="EnableTlsVersionAndCipherSuiteHeadersInput" id="@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeadersInput"></a>
 
 ```csharp
-public object EnableTlsVersionAndCipherSuiteHeadersInput { get; }
+public bool|IResolvable EnableTlsVersionAndCipherSuiteHeadersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableWafFailOpenInput`<sup>Optional</sup> <a name="EnableWafFailOpenInput" id="@cdktf/provider-aws.alb.Alb.property.enableWafFailOpenInput"></a>
 
 ```csharp
-public object EnableWafFailOpenInput { get; }
+public bool|IResolvable EnableWafFailOpenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableXffClientPortInput`<sup>Optional</sup> <a name="EnableXffClientPortInput" id="@cdktf/provider-aws.alb.Alb.property.enableXffClientPortInput"></a>
 
 ```csharp
-public object EnableXffClientPortInput { get; }
+public bool|IResolvable EnableXffClientPortInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableZonalShiftInput`<sup>Optional</sup> <a name="EnableZonalShiftInput" id="@cdktf/provider-aws.alb.Alb.property.enableZonalShiftInput"></a>
 
 ```csharp
-public object EnableZonalShiftInput { get; }
+public bool|IResolvable EnableZonalShiftInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1314,10 +1314,10 @@ public double IdleTimeoutInput { get; }
 ##### `InternalInput`<sup>Optional</sup> <a name="InternalInput" id="@cdktf/provider-aws.alb.Alb.property.internalInput"></a>
 
 ```csharp
-public object InternalInput { get; }
+public bool|IResolvable InternalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1384,10 +1384,10 @@ public string NamePrefixInput { get; }
 ##### `PreserveHostHeaderInput`<sup>Optional</sup> <a name="PreserveHostHeaderInput" id="@cdktf/provider-aws.alb.Alb.property.preserveHostHeaderInput"></a>
 
 ```csharp
-public object PreserveHostHeaderInput { get; }
+public bool|IResolvable PreserveHostHeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1424,10 +1424,10 @@ public string[] SecurityGroupsInput { get; }
 ##### `SubnetMappingInput`<sup>Optional</sup> <a name="SubnetMappingInput" id="@cdktf/provider-aws.alb.Alb.property.subnetMappingInput"></a>
 
 ```csharp
-public object SubnetMappingInput { get; }
+public IResolvable|AlbSubnetMapping[] SubnetMappingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]
 
 ---
 
@@ -1464,10 +1464,10 @@ public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.alb.Alb.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|AlbTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>
 
 ---
 
@@ -1524,80 +1524,80 @@ public string DnsRecordClientRoutingPolicy { get; }
 ##### `DropInvalidHeaderFields`<sup>Required</sup> <a name="DropInvalidHeaderFields" id="@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFields"></a>
 
 ```csharp
-public object DropInvalidHeaderFields { get; }
+public bool|IResolvable DropInvalidHeaderFields { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableCrossZoneLoadBalancing`<sup>Required</sup> <a name="EnableCrossZoneLoadBalancing" id="@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancing"></a>
 
 ```csharp
-public object EnableCrossZoneLoadBalancing { get; }
+public bool|IResolvable EnableCrossZoneLoadBalancing { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableDeletionProtection`<sup>Required</sup> <a name="EnableDeletionProtection" id="@cdktf/provider-aws.alb.Alb.property.enableDeletionProtection"></a>
 
 ```csharp
-public object EnableDeletionProtection { get; }
+public bool|IResolvable EnableDeletionProtection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableHttp2`<sup>Required</sup> <a name="EnableHttp2" id="@cdktf/provider-aws.alb.Alb.property.enableHttp2"></a>
 
 ```csharp
-public object EnableHttp2 { get; }
+public bool|IResolvable EnableHttp2 { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableTlsVersionAndCipherSuiteHeaders`<sup>Required</sup> <a name="EnableTlsVersionAndCipherSuiteHeaders" id="@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeaders"></a>
 
 ```csharp
-public object EnableTlsVersionAndCipherSuiteHeaders { get; }
+public bool|IResolvable EnableTlsVersionAndCipherSuiteHeaders { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableWafFailOpen`<sup>Required</sup> <a name="EnableWafFailOpen" id="@cdktf/provider-aws.alb.Alb.property.enableWafFailOpen"></a>
 
 ```csharp
-public object EnableWafFailOpen { get; }
+public bool|IResolvable EnableWafFailOpen { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableXffClientPort`<sup>Required</sup> <a name="EnableXffClientPort" id="@cdktf/provider-aws.alb.Alb.property.enableXffClientPort"></a>
 
 ```csharp
-public object EnableXffClientPort { get; }
+public bool|IResolvable EnableXffClientPort { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableZonalShift`<sup>Required</sup> <a name="EnableZonalShift" id="@cdktf/provider-aws.alb.Alb.property.enableZonalShift"></a>
 
 ```csharp
-public object EnableZonalShift { get; }
+public bool|IResolvable EnableZonalShift { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1634,10 +1634,10 @@ public double IdleTimeout { get; }
 ##### `Internal`<sup>Required</sup> <a name="Internal" id="@cdktf/provider-aws.alb.Alb.property.internal"></a>
 
 ```csharp
-public object Internal { get; }
+public bool|IResolvable Internal { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1684,10 +1684,10 @@ public string NamePrefix { get; }
 ##### `PreserveHostHeader`<sup>Required</sup> <a name="PreserveHostHeader" id="@cdktf/provider-aws.alb.Alb.property.preserveHostHeader"></a>
 
 ```csharp
-public object PreserveHostHeader { get; }
+public bool|IResolvable PreserveHostHeader { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1790,7 +1790,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new AlbAccessLogs {
     string Bucket,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     string Prefix = null
 };
 ```
@@ -1800,7 +1800,7 @@ new AlbAccessLogs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogs.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#bucket Alb#bucket}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogs.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enabled Alb#enabled}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogs.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enabled Alb#enabled}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogs.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#prefix Alb#prefix}. |
 
 ---
@@ -1820,10 +1820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-aws.alb.AlbAccessLogs.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enabled Alb#enabled}.
 
@@ -1849,42 +1849,42 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new AlbConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     AlbAccessLogs AccessLogs = null,
     double ClientKeepAlive = null,
     AlbConnectionLogs ConnectionLogs = null,
     string CustomerOwnedIpv4Pool = null,
     string DesyncMitigationMode = null,
     string DnsRecordClientRoutingPolicy = null,
-    object DropInvalidHeaderFields = null,
-    object EnableCrossZoneLoadBalancing = null,
-    object EnableDeletionProtection = null,
-    object EnableHttp2 = null,
-    object EnableTlsVersionAndCipherSuiteHeaders = null,
-    object EnableWafFailOpen = null,
-    object EnableXffClientPort = null,
-    object EnableZonalShift = null,
+    bool|IResolvable DropInvalidHeaderFields = null,
+    bool|IResolvable EnableCrossZoneLoadBalancing = null,
+    bool|IResolvable EnableDeletionProtection = null,
+    bool|IResolvable EnableHttp2 = null,
+    bool|IResolvable EnableTlsVersionAndCipherSuiteHeaders = null,
+    bool|IResolvable EnableWafFailOpen = null,
+    bool|IResolvable EnableXffClientPort = null,
+    bool|IResolvable EnableZonalShift = null,
     string EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic = null,
     string Id = null,
     double IdleTimeout = null,
-    object Internal = null,
+    bool|IResolvable Internal = null,
     string IpAddressType = null,
     AlbIpamPools IpamPools = null,
     string LoadBalancerType = null,
     AlbMinimumLoadBalancerCapacity MinimumLoadBalancerCapacity = null,
     string Name = null,
     string NamePrefix = null,
-    object PreserveHostHeader = null,
+    bool|IResolvable PreserveHostHeader = null,
     string Region = null,
     double SecondaryIpsAutoAssignedPerSubnet = null,
     string[] SecurityGroups = null,
-    object SubnetMapping = null,
+    IResolvable|AlbSubnetMapping[] SubnetMapping = null,
     string[] Subnets = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null,
@@ -1897,42 +1897,42 @@ new AlbConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogs">AlbAccessLogs</a></code> | access_logs block. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.clientKeepAlive">ClientKeepAlive</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#client_keep_alive Alb#client_keep_alive}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.connectionLogs">ConnectionLogs</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogs">AlbConnectionLogs</a></code> | connection_logs block. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#customer_owned_ipv4_pool Alb#customer_owned_ipv4_pool}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#desync_mitigation_mode Alb#desync_mitigation_mode}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.dnsRecordClientRoutingPolicy">DnsRecordClientRoutingPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#dns_record_client_routing_policy Alb#dns_record_client_routing_policy}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.dropInvalidHeaderFields">DropInvalidHeaderFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableHttp2">EnableHttp2</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_http2 Alb#enable_http2}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_xff_client_port Alb#enable_xff_client_port}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableZonalShift">EnableZonalShift</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_zonal_shift Alb#enable_zonal_shift}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.dropInvalidHeaderFields">DropInvalidHeaderFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableHttp2">EnableHttp2</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_http2 Alb#enable_http2}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_xff_client_port Alb#enable_xff_client_port}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableZonalShift">EnableZonalShift</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_zonal_shift Alb#enable_zonal_shift}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enforceSecurityGroupInboundRulesOnPrivateLinkTraffic">EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enforce_security_group_inbound_rules_on_private_link_traffic Alb#enforce_security_group_inbound_rules_on_private_link_traffic}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#id Alb#id}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.idleTimeout">IdleTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#idle_timeout Alb#idle_timeout}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.internal">Internal</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#internal Alb#internal}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.internal">Internal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#internal Alb#internal}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.ipAddressType">IpAddressType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#ip_address_type Alb#ip_address_type}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.ipamPools">IpamPools</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbIpamPools">AlbIpamPools</a></code> | ipam_pools block. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.loadBalancerType">LoadBalancerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#load_balancer_type Alb#load_balancer_type}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.minimumLoadBalancerCapacity">MinimumLoadBalancerCapacity</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbMinimumLoadBalancerCapacity">AlbMinimumLoadBalancerCapacity</a></code> | minimum_load_balancer_capacity block. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#name Alb#name}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#name_prefix Alb#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.preserveHostHeader">PreserveHostHeader</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#preserve_host_header Alb#preserve_host_header}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.preserveHostHeader">PreserveHostHeader</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#preserve_host_header Alb#preserve_host_header}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.secondaryIpsAutoAssignedPerSubnet">SecondaryIpsAutoAssignedPerSubnet</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#secondary_ips_auto_assigned_per_subnet Alb#secondary_ips_auto_assigned_per_subnet}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.securityGroups">SecurityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#security_groups Alb#security_groups}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.subnetMapping">SubnetMapping</a></code> | <code>object</code> | subnet_mapping block. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.subnetMapping">SubnetMapping</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]</code> | subnet_mapping block. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.subnets">Subnets</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#subnets Alb#subnets}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#tags Alb#tags}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#tags_all Alb#tags_all}. |
@@ -1944,20 +1944,20 @@ new AlbConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.alb.AlbConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.alb.AlbConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2004,10 +2004,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.alb.AlbConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2090,10 +2090,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DropInvalidHeaderFields`<sup>Optional</sup> <a name="DropInvalidHeaderFields" id="@cdktf/provider-aws.alb.AlbConfig.property.dropInvalidHeaderFields"></a>
 
 ```csharp
-public object DropInvalidHeaderFields { get; set; }
+public bool|IResolvable DropInvalidHeaderFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}.
 
@@ -2102,10 +2102,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableCrossZoneLoadBalancing`<sup>Optional</sup> <a name="EnableCrossZoneLoadBalancing" id="@cdktf/provider-aws.alb.AlbConfig.property.enableCrossZoneLoadBalancing"></a>
 
 ```csharp
-public object EnableCrossZoneLoadBalancing { get; set; }
+public bool|IResolvable EnableCrossZoneLoadBalancing { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}.
 
@@ -2114,10 +2114,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableDeletionProtection`<sup>Optional</sup> <a name="EnableDeletionProtection" id="@cdktf/provider-aws.alb.AlbConfig.property.enableDeletionProtection"></a>
 
 ```csharp
-public object EnableDeletionProtection { get; set; }
+public bool|IResolvable EnableDeletionProtection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}.
 
@@ -2126,10 +2126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableHttp2`<sup>Optional</sup> <a name="EnableHttp2" id="@cdktf/provider-aws.alb.AlbConfig.property.enableHttp2"></a>
 
 ```csharp
-public object EnableHttp2 { get; set; }
+public bool|IResolvable EnableHttp2 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_http2 Alb#enable_http2}.
 
@@ -2138,10 +2138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableTlsVersionAndCipherSuiteHeaders`<sup>Optional</sup> <a name="EnableTlsVersionAndCipherSuiteHeaders" id="@cdktf/provider-aws.alb.AlbConfig.property.enableTlsVersionAndCipherSuiteHeaders"></a>
 
 ```csharp
-public object EnableTlsVersionAndCipherSuiteHeaders { get; set; }
+public bool|IResolvable EnableTlsVersionAndCipherSuiteHeaders { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}.
 
@@ -2150,10 +2150,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableWafFailOpen`<sup>Optional</sup> <a name="EnableWafFailOpen" id="@cdktf/provider-aws.alb.AlbConfig.property.enableWafFailOpen"></a>
 
 ```csharp
-public object EnableWafFailOpen { get; set; }
+public bool|IResolvable EnableWafFailOpen { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}.
 
@@ -2162,10 +2162,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableXffClientPort`<sup>Optional</sup> <a name="EnableXffClientPort" id="@cdktf/provider-aws.alb.AlbConfig.property.enableXffClientPort"></a>
 
 ```csharp
-public object EnableXffClientPort { get; set; }
+public bool|IResolvable EnableXffClientPort { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_xff_client_port Alb#enable_xff_client_port}.
 
@@ -2174,10 +2174,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableZonalShift`<sup>Optional</sup> <a name="EnableZonalShift" id="@cdktf/provider-aws.alb.AlbConfig.property.enableZonalShift"></a>
 
 ```csharp
-public object EnableZonalShift { get; set; }
+public bool|IResolvable EnableZonalShift { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enable_zonal_shift Alb#enable_zonal_shift}.
 
@@ -2225,10 +2225,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Internal`<sup>Optional</sup> <a name="Internal" id="@cdktf/provider-aws.alb.AlbConfig.property.internal"></a>
 
 ```csharp
-public object Internal { get; set; }
+public bool|IResolvable Internal { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#internal Alb#internal}.
 
@@ -2313,10 +2313,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PreserveHostHeader`<sup>Optional</sup> <a name="PreserveHostHeader" id="@cdktf/provider-aws.alb.AlbConfig.property.preserveHostHeader"></a>
 
 ```csharp
-public object PreserveHostHeader { get; set; }
+public bool|IResolvable PreserveHostHeader { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#preserve_host_header Alb#preserve_host_header}.
 
@@ -2363,10 +2363,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SubnetMapping`<sup>Optional</sup> <a name="SubnetMapping" id="@cdktf/provider-aws.alb.AlbConfig.property.subnetMapping"></a>
 
 ```csharp
-public object SubnetMapping { get; set; }
+public IResolvable|AlbSubnetMapping[] SubnetMapping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]
 
 subnet_mapping block.
 
@@ -2445,7 +2445,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new AlbConnectionLogs {
     string Bucket,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     string Prefix = null
 };
 ```
@@ -2455,7 +2455,7 @@ new AlbConnectionLogs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogs.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#bucket Alb#bucket}. |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogs.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enabled Alb#enabled}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogs.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enabled Alb#enabled}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogs.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#prefix Alb#prefix}. |
 
 ---
@@ -2475,10 +2475,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-aws.alb.AlbConnectionLogs.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb#enabled Alb#enabled}.
 
@@ -2921,10 +2921,10 @@ private void ResetPrefix()
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.prefixInput">PrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.prefix">Prefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbAccessLogs">AlbAccessLogs</a></code> | *No description.* |
 
@@ -2967,10 +2967,10 @@ public string BucketInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2997,10 +2997,10 @@ public string Bucket { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3250,10 +3250,10 @@ private void ResetPrefix()
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.prefixInput">PrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.prefix">Prefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbConnectionLogs">AlbConnectionLogs</a></code> | *No description.* |
 
@@ -3296,10 +3296,10 @@ public string BucketInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3326,10 +3326,10 @@ public string Bucket { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4017,7 +4017,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]</code> | *No description.* |
 
 ---
 
@@ -4048,10 +4048,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.alb.AlbSubnetMappingList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbSubnetMapping[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>[]
 
 ---
 
@@ -4314,7 +4314,7 @@ private void ResetPrivateIpv4Address()
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.ipv6Address">Ipv6Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.privateIpv4Address">PrivateIpv4Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.subnetId">SubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a></code> | *No description.* |
 
 ---
 
@@ -4435,10 +4435,10 @@ public string SubnetId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbSubnetMapping InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>
 
 ---
 
@@ -4680,7 +4680,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4771,10 +4771,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>
 
 ---
 

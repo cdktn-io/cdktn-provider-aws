@@ -12,17 +12,13 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 import com.hashicorp.cdktf.providers.aws.securityhub_insight.SecurityhubInsight;
 
 SecurityhubInsight.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .filters(SecurityhubInsightFilters)
     .groupByAttribute(java.lang.String)
     .name(java.lang.String)
@@ -35,13 +31,13 @@ SecurityhubInsight.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.filters">filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.groupByAttribute">groupByAttribute</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
@@ -70,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -106,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -387,7 +383,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.importFrom"></a>
@@ -443,7 +439,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -458,7 +454,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -630,13 +626,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.arn">arn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference">SecurityhubInsightFiltersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.filtersInput">filtersInput</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | *No description.* |
@@ -726,20 +722,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -786,10 +782,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -931,17 +927,13 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.aws.securityhub_insight.SecurityhubInsightConfig;
 
 SecurityhubInsightConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .filters(SecurityhubInsightFilters)
     .groupByAttribute(java.lang.String)
     .name(java.lang.String)
@@ -954,13 +946,13 @@ SecurityhubInsightConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">groupByAttribute</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
@@ -972,20 +964,20 @@ SecurityhubInsightConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1032,10 +1024,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1114,182 +1106,94 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_insight.SecurityhubInsightFilters;
 
 SecurityhubInsightFilters.builder()
-//  .awsAccountId(IResolvable)
-//  .awsAccountId(java.util.List<SecurityhubInsightFiltersAwsAccountId>)
-//  .companyName(IResolvable)
-//  .companyName(java.util.List<SecurityhubInsightFiltersCompanyName>)
-//  .complianceStatus(IResolvable)
-//  .complianceStatus(java.util.List<SecurityhubInsightFiltersComplianceStatus>)
-//  .confidence(IResolvable)
-//  .confidence(java.util.List<SecurityhubInsightFiltersConfidence>)
-//  .createdAt(IResolvable)
-//  .createdAt(java.util.List<SecurityhubInsightFiltersCreatedAt>)
-//  .criticality(IResolvable)
-//  .criticality(java.util.List<SecurityhubInsightFiltersCriticality>)
-//  .description(IResolvable)
-//  .description(java.util.List<SecurityhubInsightFiltersDescription>)
-//  .findingProviderFieldsConfidence(IResolvable)
-//  .findingProviderFieldsConfidence(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence>)
-//  .findingProviderFieldsCriticality(IResolvable)
-//  .findingProviderFieldsCriticality(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality>)
-//  .findingProviderFieldsRelatedFindingsId(IResolvable)
-//  .findingProviderFieldsRelatedFindingsId(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId>)
-//  .findingProviderFieldsRelatedFindingsProductArn(IResolvable)
-//  .findingProviderFieldsRelatedFindingsProductArn(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn>)
-//  .findingProviderFieldsSeverityLabel(IResolvable)
-//  .findingProviderFieldsSeverityLabel(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel>)
-//  .findingProviderFieldsSeverityOriginal(IResolvable)
-//  .findingProviderFieldsSeverityOriginal(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal>)
-//  .findingProviderFieldsTypes(IResolvable)
-//  .findingProviderFieldsTypes(java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes>)
-//  .firstObservedAt(IResolvable)
-//  .firstObservedAt(java.util.List<SecurityhubInsightFiltersFirstObservedAt>)
-//  .generatorId(IResolvable)
-//  .generatorId(java.util.List<SecurityhubInsightFiltersGeneratorId>)
-//  .id(IResolvable)
-//  .id(java.util.List<SecurityhubInsightFiltersId>)
-//  .keyword(IResolvable)
-//  .keyword(java.util.List<SecurityhubInsightFiltersKeyword>)
-//  .lastObservedAt(IResolvable)
-//  .lastObservedAt(java.util.List<SecurityhubInsightFiltersLastObservedAt>)
-//  .malwareName(IResolvable)
-//  .malwareName(java.util.List<SecurityhubInsightFiltersMalwareName>)
-//  .malwarePath(IResolvable)
-//  .malwarePath(java.util.List<SecurityhubInsightFiltersMalwarePath>)
-//  .malwareState(IResolvable)
-//  .malwareState(java.util.List<SecurityhubInsightFiltersMalwareState>)
-//  .malwareType(IResolvable)
-//  .malwareType(java.util.List<SecurityhubInsightFiltersMalwareType>)
-//  .networkDestinationDomain(IResolvable)
-//  .networkDestinationDomain(java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain>)
-//  .networkDestinationIpv4(IResolvable)
-//  .networkDestinationIpv4(java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4>)
-//  .networkDestinationIpv6(IResolvable)
-//  .networkDestinationIpv6(java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6>)
-//  .networkDestinationPort(IResolvable)
-//  .networkDestinationPort(java.util.List<SecurityhubInsightFiltersNetworkDestinationPort>)
-//  .networkDirection(IResolvable)
-//  .networkDirection(java.util.List<SecurityhubInsightFiltersNetworkDirection>)
-//  .networkProtocol(IResolvable)
-//  .networkProtocol(java.util.List<SecurityhubInsightFiltersNetworkProtocol>)
-//  .networkSourceDomain(IResolvable)
-//  .networkSourceDomain(java.util.List<SecurityhubInsightFiltersNetworkSourceDomain>)
-//  .networkSourceIpv4(IResolvable)
-//  .networkSourceIpv4(java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4>)
-//  .networkSourceIpv6(IResolvable)
-//  .networkSourceIpv6(java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6>)
-//  .networkSourceMac(IResolvable)
-//  .networkSourceMac(java.util.List<SecurityhubInsightFiltersNetworkSourceMac>)
-//  .networkSourcePort(IResolvable)
-//  .networkSourcePort(java.util.List<SecurityhubInsightFiltersNetworkSourcePort>)
-//  .noteText(IResolvable)
-//  .noteText(java.util.List<SecurityhubInsightFiltersNoteText>)
-//  .noteUpdatedAt(IResolvable)
-//  .noteUpdatedAt(java.util.List<SecurityhubInsightFiltersNoteUpdatedAt>)
-//  .noteUpdatedBy(IResolvable)
-//  .noteUpdatedBy(java.util.List<SecurityhubInsightFiltersNoteUpdatedBy>)
-//  .processLaunchedAt(IResolvable)
-//  .processLaunchedAt(java.util.List<SecurityhubInsightFiltersProcessLaunchedAt>)
-//  .processName(IResolvable)
-//  .processName(java.util.List<SecurityhubInsightFiltersProcessName>)
-//  .processParentPid(IResolvable)
-//  .processParentPid(java.util.List<SecurityhubInsightFiltersProcessParentPid>)
-//  .processPath(IResolvable)
-//  .processPath(java.util.List<SecurityhubInsightFiltersProcessPath>)
-//  .processPid(IResolvable)
-//  .processPid(java.util.List<SecurityhubInsightFiltersProcessPid>)
-//  .processTerminatedAt(IResolvable)
-//  .processTerminatedAt(java.util.List<SecurityhubInsightFiltersProcessTerminatedAt>)
-//  .productArn(IResolvable)
-//  .productArn(java.util.List<SecurityhubInsightFiltersProductArn>)
-//  .productFields(IResolvable)
-//  .productFields(java.util.List<SecurityhubInsightFiltersProductFields>)
-//  .productName(IResolvable)
-//  .productName(java.util.List<SecurityhubInsightFiltersProductName>)
-//  .recommendationText(IResolvable)
-//  .recommendationText(java.util.List<SecurityhubInsightFiltersRecommendationText>)
-//  .recordState(IResolvable)
-//  .recordState(java.util.List<SecurityhubInsightFiltersRecordState>)
-//  .relatedFindingsId(IResolvable)
-//  .relatedFindingsId(java.util.List<SecurityhubInsightFiltersRelatedFindingsId>)
-//  .relatedFindingsProductArn(IResolvable)
-//  .relatedFindingsProductArn(java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn>)
-//  .resourceAwsEc2InstanceIamInstanceProfileArn(IResolvable)
-//  .resourceAwsEc2InstanceIamInstanceProfileArn(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn>)
-//  .resourceAwsEc2InstanceImageId(IResolvable)
-//  .resourceAwsEc2InstanceImageId(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId>)
-//  .resourceAwsEc2InstanceIpv4Addresses(IResolvable)
-//  .resourceAwsEc2InstanceIpv4Addresses(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses>)
-//  .resourceAwsEc2InstanceIpv6Addresses(IResolvable)
-//  .resourceAwsEc2InstanceIpv6Addresses(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses>)
-//  .resourceAwsEc2InstanceKeyName(IResolvable)
-//  .resourceAwsEc2InstanceKeyName(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName>)
-//  .resourceAwsEc2InstanceLaunchedAt(IResolvable)
-//  .resourceAwsEc2InstanceLaunchedAt(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt>)
-//  .resourceAwsEc2InstanceSubnetId(IResolvable)
-//  .resourceAwsEc2InstanceSubnetId(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId>)
-//  .resourceAwsEc2InstanceType(IResolvable)
-//  .resourceAwsEc2InstanceType(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType>)
-//  .resourceAwsEc2InstanceVpcId(IResolvable)
-//  .resourceAwsEc2InstanceVpcId(java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId>)
-//  .resourceAwsIamAccessKeyCreatedAt(IResolvable)
-//  .resourceAwsIamAccessKeyCreatedAt(java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt>)
-//  .resourceAwsIamAccessKeyStatus(IResolvable)
-//  .resourceAwsIamAccessKeyStatus(java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus>)
-//  .resourceAwsIamAccessKeyUserName(IResolvable)
-//  .resourceAwsIamAccessKeyUserName(java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName>)
-//  .resourceAwsS3BucketOwnerId(IResolvable)
-//  .resourceAwsS3BucketOwnerId(java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId>)
-//  .resourceAwsS3BucketOwnerName(IResolvable)
-//  .resourceAwsS3BucketOwnerName(java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName>)
-//  .resourceContainerImageId(IResolvable)
-//  .resourceContainerImageId(java.util.List<SecurityhubInsightFiltersResourceContainerImageId>)
-//  .resourceContainerImageName(IResolvable)
-//  .resourceContainerImageName(java.util.List<SecurityhubInsightFiltersResourceContainerImageName>)
-//  .resourceContainerLaunchedAt(IResolvable)
-//  .resourceContainerLaunchedAt(java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt>)
-//  .resourceContainerName(IResolvable)
-//  .resourceContainerName(java.util.List<SecurityhubInsightFiltersResourceContainerName>)
-//  .resourceDetailsOther(IResolvable)
-//  .resourceDetailsOther(java.util.List<SecurityhubInsightFiltersResourceDetailsOther>)
-//  .resourceId(IResolvable)
-//  .resourceId(java.util.List<SecurityhubInsightFiltersResourceId>)
-//  .resourcePartition(IResolvable)
-//  .resourcePartition(java.util.List<SecurityhubInsightFiltersResourcePartition>)
-//  .resourceRegion(IResolvable)
-//  .resourceRegion(java.util.List<SecurityhubInsightFiltersResourceRegion>)
-//  .resourceTags(IResolvable)
-//  .resourceTags(java.util.List<SecurityhubInsightFiltersResourceTags>)
-//  .resourceType(IResolvable)
-//  .resourceType(java.util.List<SecurityhubInsightFiltersResourceType>)
-//  .severityLabel(IResolvable)
-//  .severityLabel(java.util.List<SecurityhubInsightFiltersSeverityLabel>)
-//  .sourceUrl(IResolvable)
-//  .sourceUrl(java.util.List<SecurityhubInsightFiltersSourceUrl>)
-//  .threatIntelIndicatorCategory(IResolvable)
-//  .threatIntelIndicatorCategory(java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory>)
-//  .threatIntelIndicatorLastObservedAt(IResolvable)
-//  .threatIntelIndicatorLastObservedAt(java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt>)
-//  .threatIntelIndicatorSource(IResolvable)
-//  .threatIntelIndicatorSource(java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource>)
-//  .threatIntelIndicatorSourceUrl(IResolvable)
-//  .threatIntelIndicatorSourceUrl(java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl>)
-//  .threatIntelIndicatorType(IResolvable)
-//  .threatIntelIndicatorType(java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType>)
-//  .threatIntelIndicatorValue(IResolvable)
-//  .threatIntelIndicatorValue(java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue>)
-//  .title(IResolvable)
-//  .title(java.util.List<SecurityhubInsightFiltersTitle>)
-//  .type(IResolvable)
-//  .type(java.util.List<SecurityhubInsightFiltersType>)
-//  .updatedAt(IResolvable)
-//  .updatedAt(java.util.List<SecurityhubInsightFiltersUpdatedAt>)
-//  .userDefinedValues(IResolvable)
-//  .userDefinedValues(java.util.List<SecurityhubInsightFiltersUserDefinedValues>)
-//  .verificationState(IResolvable)
-//  .verificationState(java.util.List<SecurityhubInsightFiltersVerificationState>)
-//  .workflowStatus(IResolvable)
-//  .workflowStatus(java.util.List<SecurityhubInsightFiltersWorkflowStatus>)
+//  .awsAccountId(IResolvable|java.util.List<SecurityhubInsightFiltersAwsAccountId>)
+//  .companyName(IResolvable|java.util.List<SecurityhubInsightFiltersCompanyName>)
+//  .complianceStatus(IResolvable|java.util.List<SecurityhubInsightFiltersComplianceStatus>)
+//  .confidence(IResolvable|java.util.List<SecurityhubInsightFiltersConfidence>)
+//  .createdAt(IResolvable|java.util.List<SecurityhubInsightFiltersCreatedAt>)
+//  .criticality(IResolvable|java.util.List<SecurityhubInsightFiltersCriticality>)
+//  .description(IResolvable|java.util.List<SecurityhubInsightFiltersDescription>)
+//  .findingProviderFieldsConfidence(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence>)
+//  .findingProviderFieldsCriticality(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality>)
+//  .findingProviderFieldsRelatedFindingsId(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId>)
+//  .findingProviderFieldsRelatedFindingsProductArn(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn>)
+//  .findingProviderFieldsSeverityLabel(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel>)
+//  .findingProviderFieldsSeverityOriginal(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal>)
+//  .findingProviderFieldsTypes(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes>)
+//  .firstObservedAt(IResolvable|java.util.List<SecurityhubInsightFiltersFirstObservedAt>)
+//  .generatorId(IResolvable|java.util.List<SecurityhubInsightFiltersGeneratorId>)
+//  .id(IResolvable|java.util.List<SecurityhubInsightFiltersId>)
+//  .keyword(IResolvable|java.util.List<SecurityhubInsightFiltersKeyword>)
+//  .lastObservedAt(IResolvable|java.util.List<SecurityhubInsightFiltersLastObservedAt>)
+//  .malwareName(IResolvable|java.util.List<SecurityhubInsightFiltersMalwareName>)
+//  .malwarePath(IResolvable|java.util.List<SecurityhubInsightFiltersMalwarePath>)
+//  .malwareState(IResolvable|java.util.List<SecurityhubInsightFiltersMalwareState>)
+//  .malwareType(IResolvable|java.util.List<SecurityhubInsightFiltersMalwareType>)
+//  .networkDestinationDomain(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain>)
+//  .networkDestinationIpv4(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4>)
+//  .networkDestinationIpv6(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6>)
+//  .networkDestinationPort(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationPort>)
+//  .networkDirection(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDirection>)
+//  .networkProtocol(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkProtocol>)
+//  .networkSourceDomain(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceDomain>)
+//  .networkSourceIpv4(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4>)
+//  .networkSourceIpv6(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6>)
+//  .networkSourceMac(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceMac>)
+//  .networkSourcePort(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourcePort>)
+//  .noteText(IResolvable|java.util.List<SecurityhubInsightFiltersNoteText>)
+//  .noteUpdatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedAt>)
+//  .noteUpdatedBy(IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedBy>)
+//  .processLaunchedAt(IResolvable|java.util.List<SecurityhubInsightFiltersProcessLaunchedAt>)
+//  .processName(IResolvable|java.util.List<SecurityhubInsightFiltersProcessName>)
+//  .processParentPid(IResolvable|java.util.List<SecurityhubInsightFiltersProcessParentPid>)
+//  .processPath(IResolvable|java.util.List<SecurityhubInsightFiltersProcessPath>)
+//  .processPid(IResolvable|java.util.List<SecurityhubInsightFiltersProcessPid>)
+//  .processTerminatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersProcessTerminatedAt>)
+//  .productArn(IResolvable|java.util.List<SecurityhubInsightFiltersProductArn>)
+//  .productFields(IResolvable|java.util.List<SecurityhubInsightFiltersProductFields>)
+//  .productName(IResolvable|java.util.List<SecurityhubInsightFiltersProductName>)
+//  .recommendationText(IResolvable|java.util.List<SecurityhubInsightFiltersRecommendationText>)
+//  .recordState(IResolvable|java.util.List<SecurityhubInsightFiltersRecordState>)
+//  .relatedFindingsId(IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsId>)
+//  .relatedFindingsProductArn(IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn>)
+//  .resourceAwsEc2InstanceIamInstanceProfileArn(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn>)
+//  .resourceAwsEc2InstanceImageId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId>)
+//  .resourceAwsEc2InstanceIpv4Addresses(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses>)
+//  .resourceAwsEc2InstanceIpv6Addresses(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses>)
+//  .resourceAwsEc2InstanceKeyName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName>)
+//  .resourceAwsEc2InstanceLaunchedAt(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt>)
+//  .resourceAwsEc2InstanceSubnetId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId>)
+//  .resourceAwsEc2InstanceType(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType>)
+//  .resourceAwsEc2InstanceVpcId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId>)
+//  .resourceAwsIamAccessKeyCreatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt>)
+//  .resourceAwsIamAccessKeyStatus(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus>)
+//  .resourceAwsIamAccessKeyUserName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName>)
+//  .resourceAwsS3BucketOwnerId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId>)
+//  .resourceAwsS3BucketOwnerName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName>)
+//  .resourceContainerImageId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageId>)
+//  .resourceContainerImageName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageName>)
+//  .resourceContainerLaunchedAt(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt>)
+//  .resourceContainerName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerName>)
+//  .resourceDetailsOther(IResolvable|java.util.List<SecurityhubInsightFiltersResourceDetailsOther>)
+//  .resourceId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceId>)
+//  .resourcePartition(IResolvable|java.util.List<SecurityhubInsightFiltersResourcePartition>)
+//  .resourceRegion(IResolvable|java.util.List<SecurityhubInsightFiltersResourceRegion>)
+//  .resourceTags(IResolvable|java.util.List<SecurityhubInsightFiltersResourceTags>)
+//  .resourceType(IResolvable|java.util.List<SecurityhubInsightFiltersResourceType>)
+//  .severityLabel(IResolvable|java.util.List<SecurityhubInsightFiltersSeverityLabel>)
+//  .sourceUrl(IResolvable|java.util.List<SecurityhubInsightFiltersSourceUrl>)
+//  .threatIntelIndicatorCategory(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory>)
+//  .threatIntelIndicatorLastObservedAt(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt>)
+//  .threatIntelIndicatorSource(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource>)
+//  .threatIntelIndicatorSourceUrl(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl>)
+//  .threatIntelIndicatorType(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType>)
+//  .threatIntelIndicatorValue(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue>)
+//  .title(IResolvable|java.util.List<SecurityhubInsightFiltersTitle>)
+//  .type(IResolvable|java.util.List<SecurityhubInsightFiltersType>)
+//  .updatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersUpdatedAt>)
+//  .userDefinedValues(IResolvable|java.util.List<SecurityhubInsightFiltersUserDefinedValues>)
+//  .verificationState(IResolvable|java.util.List<SecurityhubInsightFiltersVerificationState>)
+//  .workflowStatus(IResolvable|java.util.List<SecurityhubInsightFiltersWorkflowStatus>)
     .build();
 ```
 
@@ -1297,104 +1201,104 @@ SecurityhubInsightFilters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId">awsAccountId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>></code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName">companyName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>></code> | company_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus">complianceStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>></code> | compliance_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence">confidence</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>></code> | confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt">createdAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>></code> | created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality">criticality</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>></code> | criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description">description</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>></code> | description block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence">findingProviderFieldsConfidence</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>></code> | finding_provider_fields_confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality">findingProviderFieldsCriticality</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>></code> | finding_provider_fields_criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId">findingProviderFieldsRelatedFindingsId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>></code> | finding_provider_fields_related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn">findingProviderFieldsRelatedFindingsProductArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>></code> | finding_provider_fields_related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel">findingProviderFieldsSeverityLabel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>></code> | finding_provider_fields_severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal">findingProviderFieldsSeverityOriginal</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>></code> | finding_provider_fields_severity_original block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes">findingProviderFieldsTypes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>></code> | finding_provider_fields_types block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt">firstObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>></code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId">generatorId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>></code> | generator_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id">id</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>></code> | id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword">keyword</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>></code> | keyword block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt">lastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>></code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName">malwareName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>></code> | malware_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath">malwarePath</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>></code> | malware_path block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState">malwareState</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>></code> | malware_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType">malwareType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>></code> | malware_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain">networkDestinationDomain</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>></code> | network_destination_domain block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4">networkDestinationIpv4</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>></code> | network_destination_ipv4 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6">networkDestinationIpv6</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>></code> | network_destination_ipv6 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort">networkDestinationPort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>></code> | network_destination_port block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection">networkDirection</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>></code> | network_direction block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol">networkProtocol</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>></code> | network_protocol block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain">networkSourceDomain</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>></code> | network_source_domain block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4">networkSourceIpv4</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>></code> | network_source_ipv4 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6">networkSourceIpv6</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>></code> | network_source_ipv6 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac">networkSourceMac</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>></code> | network_source_mac block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort">networkSourcePort</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>></code> | network_source_port block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText">noteText</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>></code> | note_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt">noteUpdatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>></code> | note_updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy">noteUpdatedBy</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>></code> | note_updated_by block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt">processLaunchedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>></code> | process_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName">processName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>></code> | process_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid">processParentPid</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>></code> | process_parent_pid block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath">processPath</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>></code> | process_path block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid">processPid</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>></code> | process_pid block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt">processTerminatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>></code> | process_terminated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn">productArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>></code> | product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields">productFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>></code> | product_fields block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName">productName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>></code> | product_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText">recommendationText</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>></code> | recommendation_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState">recordState</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>></code> | record_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId">relatedFindingsId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>></code> | related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn">relatedFindingsProductArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>></code> | related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn">resourceAwsEc2InstanceIamInstanceProfileArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>></code> | resource_aws_ec2_instance_iam_instance_profile_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId">resourceAwsEc2InstanceImageId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>></code> | resource_aws_ec2_instance_image_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses">resourceAwsEc2InstanceIpv4Addresses</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>></code> | resource_aws_ec2_instance_ipv4_addresses block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses">resourceAwsEc2InstanceIpv6Addresses</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>></code> | resource_aws_ec2_instance_ipv6_addresses block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName">resourceAwsEc2InstanceKeyName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>></code> | resource_aws_ec2_instance_key_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt">resourceAwsEc2InstanceLaunchedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>></code> | resource_aws_ec2_instance_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId">resourceAwsEc2InstanceSubnetId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>></code> | resource_aws_ec2_instance_subnet_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType">resourceAwsEc2InstanceType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>></code> | resource_aws_ec2_instance_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId">resourceAwsEc2InstanceVpcId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>></code> | resource_aws_ec2_instance_vpc_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt">resourceAwsIamAccessKeyCreatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>></code> | resource_aws_iam_access_key_created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus">resourceAwsIamAccessKeyStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>></code> | resource_aws_iam_access_key_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName">resourceAwsIamAccessKeyUserName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>></code> | resource_aws_iam_access_key_user_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId">resourceAwsS3BucketOwnerId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>></code> | resource_aws_s3_bucket_owner_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName">resourceAwsS3BucketOwnerName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>></code> | resource_aws_s3_bucket_owner_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId">resourceContainerImageId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>></code> | resource_container_image_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName">resourceContainerImageName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>></code> | resource_container_image_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt">resourceContainerLaunchedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>></code> | resource_container_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName">resourceContainerName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>></code> | resource_container_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther">resourceDetailsOther</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>></code> | resource_details_other block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId">resourceId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>></code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition">resourcePartition</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>></code> | resource_partition block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion">resourceRegion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>></code> | resource_region block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>></code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType">resourceType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>></code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel">severityLabel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>></code> | severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl">sourceUrl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>></code> | source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory">threatIntelIndicatorCategory</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>></code> | threat_intel_indicator_category block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt">threatIntelIndicatorLastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>></code> | threat_intel_indicator_last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource">threatIntelIndicatorSource</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>></code> | threat_intel_indicator_source block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl">threatIntelIndicatorSourceUrl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>></code> | threat_intel_indicator_source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType">threatIntelIndicatorType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>></code> | threat_intel_indicator_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue">threatIntelIndicatorValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>></code> | threat_intel_indicator_value block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title">title</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>></code> | title block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type">type</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>></code> | type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt">updatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>></code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues">userDefinedValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>></code> | user_defined_values block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState">verificationState</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>></code> | verification_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus">workflowStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>></code> | workflow_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId">awsAccountId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>></code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName">companyName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>></code> | company_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus">complianceStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>></code> | compliance_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence">confidence</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>></code> | confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt">createdAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>></code> | created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality">criticality</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>></code> | criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description">description</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>></code> | description block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence">findingProviderFieldsConfidence</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>></code> | finding_provider_fields_confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality">findingProviderFieldsCriticality</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>></code> | finding_provider_fields_criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId">findingProviderFieldsRelatedFindingsId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>></code> | finding_provider_fields_related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn">findingProviderFieldsRelatedFindingsProductArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>></code> | finding_provider_fields_related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel">findingProviderFieldsSeverityLabel</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>></code> | finding_provider_fields_severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal">findingProviderFieldsSeverityOriginal</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>></code> | finding_provider_fields_severity_original block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes">findingProviderFieldsTypes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>></code> | finding_provider_fields_types block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt">firstObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>></code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId">generatorId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>></code> | generator_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id">id</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>></code> | id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword">keyword</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>></code> | keyword block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt">lastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>></code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName">malwareName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>></code> | malware_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath">malwarePath</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>></code> | malware_path block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState">malwareState</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>></code> | malware_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType">malwareType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>></code> | malware_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain">networkDestinationDomain</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>></code> | network_destination_domain block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4">networkDestinationIpv4</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>></code> | network_destination_ipv4 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6">networkDestinationIpv6</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>></code> | network_destination_ipv6 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort">networkDestinationPort</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>></code> | network_destination_port block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection">networkDirection</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>></code> | network_direction block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol">networkProtocol</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>></code> | network_protocol block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain">networkSourceDomain</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>></code> | network_source_domain block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4">networkSourceIpv4</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>></code> | network_source_ipv4 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6">networkSourceIpv6</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>></code> | network_source_ipv6 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac">networkSourceMac</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>></code> | network_source_mac block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort">networkSourcePort</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>></code> | network_source_port block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText">noteText</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>></code> | note_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt">noteUpdatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>></code> | note_updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy">noteUpdatedBy</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>></code> | note_updated_by block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt">processLaunchedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>></code> | process_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName">processName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>></code> | process_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid">processParentPid</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>></code> | process_parent_pid block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath">processPath</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>></code> | process_path block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid">processPid</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>></code> | process_pid block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt">processTerminatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>></code> | process_terminated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn">productArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>></code> | product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields">productFields</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>></code> | product_fields block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName">productName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>></code> | product_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText">recommendationText</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>></code> | recommendation_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState">recordState</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>></code> | record_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId">relatedFindingsId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>></code> | related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn">relatedFindingsProductArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>></code> | related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn">resourceAwsEc2InstanceIamInstanceProfileArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>></code> | resource_aws_ec2_instance_iam_instance_profile_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId">resourceAwsEc2InstanceImageId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>></code> | resource_aws_ec2_instance_image_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses">resourceAwsEc2InstanceIpv4Addresses</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>></code> | resource_aws_ec2_instance_ipv4_addresses block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses">resourceAwsEc2InstanceIpv6Addresses</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>></code> | resource_aws_ec2_instance_ipv6_addresses block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName">resourceAwsEc2InstanceKeyName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>></code> | resource_aws_ec2_instance_key_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt">resourceAwsEc2InstanceLaunchedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>></code> | resource_aws_ec2_instance_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId">resourceAwsEc2InstanceSubnetId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>></code> | resource_aws_ec2_instance_subnet_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType">resourceAwsEc2InstanceType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>></code> | resource_aws_ec2_instance_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId">resourceAwsEc2InstanceVpcId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>></code> | resource_aws_ec2_instance_vpc_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt">resourceAwsIamAccessKeyCreatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>></code> | resource_aws_iam_access_key_created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus">resourceAwsIamAccessKeyStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>></code> | resource_aws_iam_access_key_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName">resourceAwsIamAccessKeyUserName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>></code> | resource_aws_iam_access_key_user_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId">resourceAwsS3BucketOwnerId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>></code> | resource_aws_s3_bucket_owner_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName">resourceAwsS3BucketOwnerName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>></code> | resource_aws_s3_bucket_owner_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId">resourceContainerImageId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>></code> | resource_container_image_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName">resourceContainerImageName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>></code> | resource_container_image_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt">resourceContainerLaunchedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>></code> | resource_container_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName">resourceContainerName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>></code> | resource_container_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther">resourceDetailsOther</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>></code> | resource_details_other block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId">resourceId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>></code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition">resourcePartition</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>></code> | resource_partition block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion">resourceRegion</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>></code> | resource_region block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>></code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType">resourceType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>></code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel">severityLabel</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>></code> | severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl">sourceUrl</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>></code> | source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory">threatIntelIndicatorCategory</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>></code> | threat_intel_indicator_category block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt">threatIntelIndicatorLastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>></code> | threat_intel_indicator_last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource">threatIntelIndicatorSource</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>></code> | threat_intel_indicator_source block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl">threatIntelIndicatorSourceUrl</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>></code> | threat_intel_indicator_source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType">threatIntelIndicatorType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>></code> | threat_intel_indicator_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue">threatIntelIndicatorValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>></code> | threat_intel_indicator_value block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title">title</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>></code> | title block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type">type</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>></code> | type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt">updatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>></code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues">userDefinedValues</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>></code> | user_defined_values block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState">verificationState</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>></code> | verification_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus">workflowStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>></code> | workflow_status block. |
 
 ---
 
 ##### `awsAccountId`<sup>Optional</sup> <a name="awsAccountId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId"></a>
 
 ```java
-public java.lang.Object getAwsAccountId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersAwsAccountId> getAwsAccountId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
 
 aws_account_id block.
 
@@ -1405,10 +1309,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `companyName`<sup>Optional</sup> <a name="companyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName"></a>
 
 ```java
-public java.lang.Object getCompanyName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCompanyName> getCompanyName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
 
 company_name block.
 
@@ -1419,10 +1323,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `complianceStatus`<sup>Optional</sup> <a name="complianceStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus"></a>
 
 ```java
-public java.lang.Object getComplianceStatus();
+public IResolvable|java.util.List<SecurityhubInsightFiltersComplianceStatus> getComplianceStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
 
 compliance_status block.
 
@@ -1433,10 +1337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `confidence`<sup>Optional</sup> <a name="confidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence"></a>
 
 ```java
-public java.lang.Object getConfidence();
+public IResolvable|java.util.List<SecurityhubInsightFiltersConfidence> getConfidence();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
 
 confidence block.
 
@@ -1447,10 +1351,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `createdAt`<sup>Optional</sup> <a name="createdAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt"></a>
 
 ```java
-public java.lang.Object getCreatedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCreatedAt> getCreatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
 
 created_at block.
 
@@ -1461,10 +1365,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `criticality`<sup>Optional</sup> <a name="criticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality"></a>
 
 ```java
-public java.lang.Object getCriticality();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCriticality> getCriticality();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
 
 criticality block.
 
@@ -1475,10 +1379,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description"></a>
 
 ```java
-public java.lang.Object getDescription();
+public IResolvable|java.util.List<SecurityhubInsightFiltersDescription> getDescription();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
 
 description block.
 
@@ -1489,10 +1393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsConfidence`<sup>Optional</sup> <a name="findingProviderFieldsConfidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsConfidence();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence> getFindingProviderFieldsConfidence();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
 
 finding_provider_fields_confidence block.
 
@@ -1503,10 +1407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsCriticality`<sup>Optional</sup> <a name="findingProviderFieldsCriticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsCriticality();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality> getFindingProviderFieldsCriticality();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
 
 finding_provider_fields_criticality block.
 
@@ -1517,10 +1421,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsRelatedFindingsId`<sup>Optional</sup> <a name="findingProviderFieldsRelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsRelatedFindingsId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId> getFindingProviderFieldsRelatedFindingsId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
 
 finding_provider_fields_related_findings_id block.
 
@@ -1531,10 +1435,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsRelatedFindingsProductArn`<sup>Optional</sup> <a name="findingProviderFieldsRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsRelatedFindingsProductArn();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn> getFindingProviderFieldsRelatedFindingsProductArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
 
 finding_provider_fields_related_findings_product_arn block.
 
@@ -1545,10 +1449,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsSeverityLabel`<sup>Optional</sup> <a name="findingProviderFieldsSeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsSeverityLabel();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel> getFindingProviderFieldsSeverityLabel();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
 
 finding_provider_fields_severity_label block.
 
@@ -1559,10 +1463,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsSeverityOriginal`<sup>Optional</sup> <a name="findingProviderFieldsSeverityOriginal" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsSeverityOriginal();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal> getFindingProviderFieldsSeverityOriginal();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
 
 finding_provider_fields_severity_original block.
 
@@ -1573,10 +1477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `findingProviderFieldsTypes`<sup>Optional</sup> <a name="findingProviderFieldsTypes" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsTypes();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes> getFindingProviderFieldsTypes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
 
 finding_provider_fields_types block.
 
@@ -1587,10 +1491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `firstObservedAt`<sup>Optional</sup> <a name="firstObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt"></a>
 
 ```java
-public java.lang.Object getFirstObservedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFirstObservedAt> getFirstObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
 
 first_observed_at block.
 
@@ -1601,10 +1505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `generatorId`<sup>Optional</sup> <a name="generatorId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId"></a>
 
 ```java
-public java.lang.Object getGeneratorId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersGeneratorId> getGeneratorId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
 
 generator_id block.
 
@@ -1615,10 +1519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id"></a>
 
 ```java
-public java.lang.Object getId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersId> getId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
 
 id block.
 
@@ -1632,10 +1536,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `keyword`<sup>Optional</sup> <a name="keyword" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword"></a>
 
 ```java
-public java.lang.Object getKeyword();
+public IResolvable|java.util.List<SecurityhubInsightFiltersKeyword> getKeyword();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
 
 keyword block.
 
@@ -1646,10 +1550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lastObservedAt`<sup>Optional</sup> <a name="lastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt"></a>
 
 ```java
-public java.lang.Object getLastObservedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersLastObservedAt> getLastObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
 
 last_observed_at block.
 
@@ -1660,10 +1564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malwareName`<sup>Optional</sup> <a name="malwareName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName"></a>
 
 ```java
-public java.lang.Object getMalwareName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareName> getMalwareName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
 
 malware_name block.
 
@@ -1674,10 +1578,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malwarePath`<sup>Optional</sup> <a name="malwarePath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath"></a>
 
 ```java
-public java.lang.Object getMalwarePath();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwarePath> getMalwarePath();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
 
 malware_path block.
 
@@ -1688,10 +1592,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malwareState`<sup>Optional</sup> <a name="malwareState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState"></a>
 
 ```java
-public java.lang.Object getMalwareState();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareState> getMalwareState();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
 
 malware_state block.
 
@@ -1702,10 +1606,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `malwareType`<sup>Optional</sup> <a name="malwareType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType"></a>
 
 ```java
-public java.lang.Object getMalwareType();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareType> getMalwareType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
 
 malware_type block.
 
@@ -1716,10 +1620,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkDestinationDomain`<sup>Optional</sup> <a name="networkDestinationDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationDomain();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain> getNetworkDestinationDomain();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
 
 network_destination_domain block.
 
@@ -1730,10 +1634,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkDestinationIpv4`<sup>Optional</sup> <a name="networkDestinationIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationIpv4();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4> getNetworkDestinationIpv4();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
 
 network_destination_ipv4 block.
 
@@ -1744,10 +1648,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkDestinationIpv6`<sup>Optional</sup> <a name="networkDestinationIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationIpv6();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6> getNetworkDestinationIpv6();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
 
 network_destination_ipv6 block.
 
@@ -1758,10 +1662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkDestinationPort`<sup>Optional</sup> <a name="networkDestinationPort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationPort();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationPort> getNetworkDestinationPort();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
 
 network_destination_port block.
 
@@ -1772,10 +1676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkDirection`<sup>Optional</sup> <a name="networkDirection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection"></a>
 
 ```java
-public java.lang.Object getNetworkDirection();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDirection> getNetworkDirection();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
 
 network_direction block.
 
@@ -1786,10 +1690,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkProtocol`<sup>Optional</sup> <a name="networkProtocol" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol"></a>
 
 ```java
-public java.lang.Object getNetworkProtocol();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkProtocol> getNetworkProtocol();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
 
 network_protocol block.
 
@@ -1800,10 +1704,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkSourceDomain`<sup>Optional</sup> <a name="networkSourceDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain"></a>
 
 ```java
-public java.lang.Object getNetworkSourceDomain();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceDomain> getNetworkSourceDomain();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
 
 network_source_domain block.
 
@@ -1814,10 +1718,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkSourceIpv4`<sup>Optional</sup> <a name="networkSourceIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4"></a>
 
 ```java
-public java.lang.Object getNetworkSourceIpv4();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4> getNetworkSourceIpv4();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
 
 network_source_ipv4 block.
 
@@ -1828,10 +1732,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkSourceIpv6`<sup>Optional</sup> <a name="networkSourceIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6"></a>
 
 ```java
-public java.lang.Object getNetworkSourceIpv6();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6> getNetworkSourceIpv6();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
 
 network_source_ipv6 block.
 
@@ -1842,10 +1746,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkSourceMac`<sup>Optional</sup> <a name="networkSourceMac" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac"></a>
 
 ```java
-public java.lang.Object getNetworkSourceMac();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceMac> getNetworkSourceMac();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
 
 network_source_mac block.
 
@@ -1856,10 +1760,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `networkSourcePort`<sup>Optional</sup> <a name="networkSourcePort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort"></a>
 
 ```java
-public java.lang.Object getNetworkSourcePort();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourcePort> getNetworkSourcePort();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
 
 network_source_port block.
 
@@ -1870,10 +1774,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `noteText`<sup>Optional</sup> <a name="noteText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText"></a>
 
 ```java
-public java.lang.Object getNoteText();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteText> getNoteText();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
 
 note_text block.
 
@@ -1884,10 +1788,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `noteUpdatedAt`<sup>Optional</sup> <a name="noteUpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedAt> getNoteUpdatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
 
 note_updated_at block.
 
@@ -1898,10 +1802,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `noteUpdatedBy`<sup>Optional</sup> <a name="noteUpdatedBy" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedBy();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedBy> getNoteUpdatedBy();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
 
 note_updated_by block.
 
@@ -1912,10 +1816,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `processLaunchedAt`<sup>Optional</sup> <a name="processLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt"></a>
 
 ```java
-public java.lang.Object getProcessLaunchedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessLaunchedAt> getProcessLaunchedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
 
 process_launched_at block.
 
@@ -1926,10 +1830,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `processName`<sup>Optional</sup> <a name="processName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName"></a>
 
 ```java
-public java.lang.Object getProcessName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessName> getProcessName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
 
 process_name block.
 
@@ -1940,10 +1844,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `processParentPid`<sup>Optional</sup> <a name="processParentPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid"></a>
 
 ```java
-public java.lang.Object getProcessParentPid();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessParentPid> getProcessParentPid();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
 
 process_parent_pid block.
 
@@ -1954,10 +1858,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `processPath`<sup>Optional</sup> <a name="processPath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath"></a>
 
 ```java
-public java.lang.Object getProcessPath();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessPath> getProcessPath();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
 
 process_path block.
 
@@ -1968,10 +1872,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `processPid`<sup>Optional</sup> <a name="processPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid"></a>
 
 ```java
-public java.lang.Object getProcessPid();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessPid> getProcessPid();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
 
 process_pid block.
 
@@ -1982,10 +1886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `processTerminatedAt`<sup>Optional</sup> <a name="processTerminatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt"></a>
 
 ```java
-public java.lang.Object getProcessTerminatedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessTerminatedAt> getProcessTerminatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
 
 process_terminated_at block.
 
@@ -1996,10 +1900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `productArn`<sup>Optional</sup> <a name="productArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn"></a>
 
 ```java
-public java.lang.Object getProductArn();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductArn> getProductArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
 
 product_arn block.
 
@@ -2010,10 +1914,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `productFields`<sup>Optional</sup> <a name="productFields" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields"></a>
 
 ```java
-public java.lang.Object getProductFields();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductFields> getProductFields();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
 
 product_fields block.
 
@@ -2024,10 +1928,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `productName`<sup>Optional</sup> <a name="productName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName"></a>
 
 ```java
-public java.lang.Object getProductName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductName> getProductName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
 
 product_name block.
 
@@ -2038,10 +1942,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `recommendationText`<sup>Optional</sup> <a name="recommendationText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText"></a>
 
 ```java
-public java.lang.Object getRecommendationText();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRecommendationText> getRecommendationText();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
 
 recommendation_text block.
 
@@ -2052,10 +1956,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `recordState`<sup>Optional</sup> <a name="recordState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState"></a>
 
 ```java
-public java.lang.Object getRecordState();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRecordState> getRecordState();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
 
 record_state block.
 
@@ -2066,10 +1970,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `relatedFindingsId`<sup>Optional</sup> <a name="relatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsId> getRelatedFindingsId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
 
 related_findings_id block.
 
@@ -2080,10 +1984,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `relatedFindingsProductArn`<sup>Optional</sup> <a name="relatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsProductArn();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn> getRelatedFindingsProductArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
 
 related_findings_product_arn block.
 
@@ -2094,10 +1998,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceIamInstanceProfileArn`<sup>Optional</sup> <a name="resourceAwsEc2InstanceIamInstanceProfileArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceIamInstanceProfileArn();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn> getResourceAwsEc2InstanceIamInstanceProfileArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
@@ -2108,10 +2012,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceImageId`<sup>Optional</sup> <a name="resourceAwsEc2InstanceImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceImageId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId> getResourceAwsEc2InstanceImageId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
 
 resource_aws_ec2_instance_image_id block.
 
@@ -2122,10 +2026,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceIpv4Addresses`<sup>Optional</sup> <a name="resourceAwsEc2InstanceIpv4Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceIpv4Addresses();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses> getResourceAwsEc2InstanceIpv4Addresses();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
@@ -2136,10 +2040,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceIpv6Addresses`<sup>Optional</sup> <a name="resourceAwsEc2InstanceIpv6Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceIpv6Addresses();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses> getResourceAwsEc2InstanceIpv6Addresses();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
@@ -2150,10 +2054,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceKeyName`<sup>Optional</sup> <a name="resourceAwsEc2InstanceKeyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceKeyName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName> getResourceAwsEc2InstanceKeyName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
 
 resource_aws_ec2_instance_key_name block.
 
@@ -2164,10 +2068,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceLaunchedAt`<sup>Optional</sup> <a name="resourceAwsEc2InstanceLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceLaunchedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt> getResourceAwsEc2InstanceLaunchedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
 
 resource_aws_ec2_instance_launched_at block.
 
@@ -2178,10 +2082,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceSubnetId`<sup>Optional</sup> <a name="resourceAwsEc2InstanceSubnetId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceSubnetId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId> getResourceAwsEc2InstanceSubnetId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
 
 resource_aws_ec2_instance_subnet_id block.
 
@@ -2192,10 +2096,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceType`<sup>Optional</sup> <a name="resourceAwsEc2InstanceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceType();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType> getResourceAwsEc2InstanceType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
 
 resource_aws_ec2_instance_type block.
 
@@ -2206,10 +2110,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsEc2InstanceVpcId`<sup>Optional</sup> <a name="resourceAwsEc2InstanceVpcId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceVpcId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId> getResourceAwsEc2InstanceVpcId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
 
 resource_aws_ec2_instance_vpc_id block.
 
@@ -2220,10 +2124,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsIamAccessKeyCreatedAt`<sup>Optional</sup> <a name="resourceAwsIamAccessKeyCreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt"></a>
 
 ```java
-public java.lang.Object getResourceAwsIamAccessKeyCreatedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt> getResourceAwsIamAccessKeyCreatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
 
 resource_aws_iam_access_key_created_at block.
 
@@ -2234,10 +2138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsIamAccessKeyStatus`<sup>Optional</sup> <a name="resourceAwsIamAccessKeyStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus"></a>
 
 ```java
-public java.lang.Object getResourceAwsIamAccessKeyStatus();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus> getResourceAwsIamAccessKeyStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
 
 resource_aws_iam_access_key_status block.
 
@@ -2248,10 +2152,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsIamAccessKeyUserName`<sup>Optional</sup> <a name="resourceAwsIamAccessKeyUserName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName"></a>
 
 ```java
-public java.lang.Object getResourceAwsIamAccessKeyUserName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName> getResourceAwsIamAccessKeyUserName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
 
 resource_aws_iam_access_key_user_name block.
 
@@ -2262,10 +2166,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsS3BucketOwnerId`<sup>Optional</sup> <a name="resourceAwsS3BucketOwnerId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId"></a>
 
 ```java
-public java.lang.Object getResourceAwsS3BucketOwnerId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId> getResourceAwsS3BucketOwnerId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
 
 resource_aws_s3_bucket_owner_id block.
 
@@ -2276,10 +2180,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceAwsS3BucketOwnerName`<sup>Optional</sup> <a name="resourceAwsS3BucketOwnerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName"></a>
 
 ```java
-public java.lang.Object getResourceAwsS3BucketOwnerName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName> getResourceAwsS3BucketOwnerName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
 
 resource_aws_s3_bucket_owner_name block.
 
@@ -2290,10 +2194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceContainerImageId`<sup>Optional</sup> <a name="resourceContainerImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId"></a>
 
 ```java
-public java.lang.Object getResourceContainerImageId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageId> getResourceContainerImageId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
 
 resource_container_image_id block.
 
@@ -2304,10 +2208,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceContainerImageName`<sup>Optional</sup> <a name="resourceContainerImageName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName"></a>
 
 ```java
-public java.lang.Object getResourceContainerImageName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageName> getResourceContainerImageName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
 
 resource_container_image_name block.
 
@@ -2318,10 +2222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceContainerLaunchedAt`<sup>Optional</sup> <a name="resourceContainerLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt"></a>
 
 ```java
-public java.lang.Object getResourceContainerLaunchedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt> getResourceContainerLaunchedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
 
 resource_container_launched_at block.
 
@@ -2332,10 +2236,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceContainerName`<sup>Optional</sup> <a name="resourceContainerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName"></a>
 
 ```java
-public java.lang.Object getResourceContainerName();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerName> getResourceContainerName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
 
 resource_container_name block.
 
@@ -2346,10 +2250,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceDetailsOther`<sup>Optional</sup> <a name="resourceDetailsOther" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther"></a>
 
 ```java
-public java.lang.Object getResourceDetailsOther();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceDetailsOther> getResourceDetailsOther();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
 
 resource_details_other block.
 
@@ -2360,10 +2264,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceId`<sup>Optional</sup> <a name="resourceId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId"></a>
 
 ```java
-public java.lang.Object getResourceId();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceId> getResourceId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
 
 resource_id block.
 
@@ -2374,10 +2278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourcePartition`<sup>Optional</sup> <a name="resourcePartition" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition"></a>
 
 ```java
-public java.lang.Object getResourcePartition();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourcePartition> getResourcePartition();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
 
 resource_partition block.
 
@@ -2388,10 +2292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceRegion`<sup>Optional</sup> <a name="resourceRegion" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion"></a>
 
 ```java
-public java.lang.Object getResourceRegion();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceRegion> getResourceRegion();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
 
 resource_region block.
 
@@ -2402,10 +2306,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceTags`<sup>Optional</sup> <a name="resourceTags" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags"></a>
 
 ```java
-public java.lang.Object getResourceTags();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceTags> getResourceTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
 
 resource_tags block.
 
@@ -2416,10 +2320,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceType`<sup>Optional</sup> <a name="resourceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType"></a>
 
 ```java
-public java.lang.Object getResourceType();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceType> getResourceType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
 
 resource_type block.
 
@@ -2430,10 +2334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severityLabel`<sup>Optional</sup> <a name="severityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel"></a>
 
 ```java
-public java.lang.Object getSeverityLabel();
+public IResolvable|java.util.List<SecurityhubInsightFiltersSeverityLabel> getSeverityLabel();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
 
 severity_label block.
 
@@ -2444,10 +2348,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sourceUrl`<sup>Optional</sup> <a name="sourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl"></a>
 
 ```java
-public java.lang.Object getSourceUrl();
+public IResolvable|java.util.List<SecurityhubInsightFiltersSourceUrl> getSourceUrl();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
 
 source_url block.
 
@@ -2458,10 +2362,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threatIntelIndicatorCategory`<sup>Optional</sup> <a name="threatIntelIndicatorCategory" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorCategory();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory> getThreatIntelIndicatorCategory();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
 
 threat_intel_indicator_category block.
 
@@ -2472,10 +2376,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threatIntelIndicatorLastObservedAt`<sup>Optional</sup> <a name="threatIntelIndicatorLastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorLastObservedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt> getThreatIntelIndicatorLastObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
 
 threat_intel_indicator_last_observed_at block.
 
@@ -2486,10 +2390,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threatIntelIndicatorSource`<sup>Optional</sup> <a name="threatIntelIndicatorSource" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorSource();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource> getThreatIntelIndicatorSource();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
 
 threat_intel_indicator_source block.
 
@@ -2500,10 +2404,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threatIntelIndicatorSourceUrl`<sup>Optional</sup> <a name="threatIntelIndicatorSourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorSourceUrl();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl> getThreatIntelIndicatorSourceUrl();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
 
 threat_intel_indicator_source_url block.
 
@@ -2514,10 +2418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threatIntelIndicatorType`<sup>Optional</sup> <a name="threatIntelIndicatorType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorType();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType> getThreatIntelIndicatorType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
 
 threat_intel_indicator_type block.
 
@@ -2528,10 +2432,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `threatIntelIndicatorValue`<sup>Optional</sup> <a name="threatIntelIndicatorValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue> getThreatIntelIndicatorValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
 
 threat_intel_indicator_value block.
 
@@ -2542,10 +2446,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title"></a>
 
 ```java
-public java.lang.Object getTitle();
+public IResolvable|java.util.List<SecurityhubInsightFiltersTitle> getTitle();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
 
 title block.
 
@@ -2556,10 +2460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type"></a>
 
 ```java
-public java.lang.Object getType();
+public IResolvable|java.util.List<SecurityhubInsightFiltersType> getType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
 
 type block.
 
@@ -2570,10 +2474,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `updatedAt`<sup>Optional</sup> <a name="updatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt"></a>
 
 ```java
-public java.lang.Object getUpdatedAt();
+public IResolvable|java.util.List<SecurityhubInsightFiltersUpdatedAt> getUpdatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
 
 updated_at block.
 
@@ -2584,10 +2488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `userDefinedValues`<sup>Optional</sup> <a name="userDefinedValues" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues"></a>
 
 ```java
-public java.lang.Object getUserDefinedValues();
+public IResolvable|java.util.List<SecurityhubInsightFiltersUserDefinedValues> getUserDefinedValues();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
 
 user_defined_values block.
 
@@ -2598,10 +2502,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `verificationState`<sup>Optional</sup> <a name="verificationState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState"></a>
 
 ```java
-public java.lang.Object getVerificationState();
+public IResolvable|java.util.List<SecurityhubInsightFiltersVerificationState> getVerificationState();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
 
 verification_state block.
 
@@ -2612,10 +2516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workflowStatus`<sup>Optional</sup> <a name="workflowStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus"></a>
 
 ```java
-public java.lang.Object getWorkflowStatus();
+public IResolvable|java.util.List<SecurityhubInsightFiltersWorkflowStatus> getWorkflowStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
 
 workflow_status block.
 
@@ -7546,7 +7450,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>></code> | *No description.* |
 
 ---
 
@@ -7577,10 +7481,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersAwsAccountId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
 
 ---
 
@@ -7817,7 +7721,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -7888,10 +7792,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersAwsAccountId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>
 
 ---
 
@@ -8017,7 +7921,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>></code> | *No description.* |
 
 ---
 
@@ -8048,10 +7952,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCompanyName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
 
 ---
 
@@ -8288,7 +8192,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -8359,10 +8263,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersCompanyName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>
 
 ---
 
@@ -8488,7 +8392,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>></code> | *No description.* |
 
 ---
 
@@ -8519,10 +8423,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersComplianceStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
 
 ---
 
@@ -8759,7 +8663,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -8830,10 +8734,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersComplianceStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>
 
 ---
 
@@ -8959,7 +8863,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>></code> | *No description.* |
 
 ---
 
@@ -8990,10 +8894,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersConfidence> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
 
 ---
 
@@ -9253,7 +9157,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a></code> | *No description.* |
 
 ---
 
@@ -9344,10 +9248,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersConfidence getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>
 
 ---
 
@@ -9766,7 +9670,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -9797,10 +9701,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCreatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
 
 ---
 
@@ -10073,7 +9977,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -10164,10 +10068,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersCreatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>
 
 ---
 
@@ -10293,7 +10197,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>></code> | *No description.* |
 
 ---
 
@@ -10324,10 +10228,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCriticality> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
 
 ---
 
@@ -10587,7 +10491,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a></code> | *No description.* |
 
 ---
 
@@ -10678,10 +10582,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersCriticality getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>
 
 ---
 
@@ -10807,7 +10711,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>></code> | *No description.* |
 
 ---
 
@@ -10838,10 +10742,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersDescription> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
 
 ---
 
@@ -11078,7 +10982,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a></code> | *No description.* |
 
 ---
 
@@ -11149,10 +11053,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersDescription getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>
 
 ---
 
@@ -11278,7 +11182,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>></code> | *No description.* |
 
 ---
 
@@ -11309,10 +11213,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
 
 ---
 
@@ -11572,7 +11476,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a></code> | *No description.* |
 
 ---
 
@@ -11663,10 +11567,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>
 
 ---
 
@@ -11792,7 +11696,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>></code> | *No description.* |
 
 ---
 
@@ -11823,10 +11727,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
 
 ---
 
@@ -12086,7 +11990,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a></code> | *No description.* |
 
 ---
 
@@ -12177,10 +12081,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>
 
 ---
 
@@ -12306,7 +12210,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>></code> | *No description.* |
 
 ---
 
@@ -12337,10 +12241,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
 
 ---
 
@@ -12577,7 +12481,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -12648,10 +12552,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>
 
 ---
 
@@ -12777,7 +12681,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>></code> | *No description.* |
 
 ---
 
@@ -12808,10 +12712,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
 
 ---
 
@@ -13048,7 +12952,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -13119,10 +13023,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>
 
 ---
 
@@ -13248,7 +13152,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>></code> | *No description.* |
 
 ---
 
@@ -13279,10 +13183,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
 
 ---
 
@@ -13519,7 +13423,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -13590,10 +13494,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>
 
 ---
 
@@ -13719,7 +13623,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>></code> | *No description.* |
 
 ---
 
@@ -13750,10 +13654,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
 
 ---
 
@@ -13990,7 +13894,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a></code> | *No description.* |
 
 ---
 
@@ -14061,10 +13965,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>
 
 ---
 
@@ -14190,7 +14094,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>></code> | *No description.* |
 
 ---
 
@@ -14221,10 +14125,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
 
 ---
 
@@ -14461,7 +14365,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a></code> | *No description.* |
 
 ---
 
@@ -14532,10 +14436,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>
 
 ---
 
@@ -14954,7 +14858,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -14985,10 +14889,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFirstObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
 
 ---
 
@@ -15261,7 +15165,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -15352,10 +15256,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersFirstObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>
 
 ---
 
@@ -15481,7 +15385,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>></code> | *No description.* |
 
 ---
 
@@ -15512,10 +15416,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersGeneratorId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
 
 ---
 
@@ -15752,7 +15656,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -15823,10 +15727,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersGeneratorId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>
 
 ---
 
@@ -15952,7 +15856,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>></code> | *No description.* |
 
 ---
 
@@ -15983,10 +15887,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
 
 ---
 
@@ -16223,7 +16127,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a></code> | *No description.* |
 
 ---
 
@@ -16294,10 +16198,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>
 
 ---
 
@@ -16423,7 +16327,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>></code> | *No description.* |
 
 ---
 
@@ -16454,10 +16358,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersKeyword> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
 
 ---
 
@@ -16692,7 +16596,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a></code> | *No description.* |
 
 ---
 
@@ -16743,10 +16647,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersKeyword getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>
 
 ---
 
@@ -17165,7 +17069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -17196,10 +17100,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersLastObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
 
 ---
 
@@ -17472,7 +17376,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -17563,10 +17467,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersLastObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>
 
 ---
 
@@ -17692,7 +17596,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>></code> | *No description.* |
 
 ---
 
@@ -17723,10 +17627,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
 
 ---
 
@@ -17963,7 +17867,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a></code> | *No description.* |
 
 ---
 
@@ -18034,10 +17938,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersMalwareName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>
 
 ---
 
@@ -18163,7 +18067,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>></code> | *No description.* |
 
 ---
 
@@ -18194,10 +18098,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwarePath> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
 
 ---
 
@@ -18434,7 +18338,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a></code> | *No description.* |
 
 ---
 
@@ -18505,10 +18409,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersMalwarePath getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>
 
 ---
 
@@ -18634,7 +18538,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>></code> | *No description.* |
 
 ---
 
@@ -18665,10 +18569,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareState> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
 
 ---
 
@@ -18905,7 +18809,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a></code> | *No description.* |
 
 ---
 
@@ -18976,10 +18880,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersMalwareState getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>
 
 ---
 
@@ -19105,7 +19009,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>></code> | *No description.* |
 
 ---
 
@@ -19136,10 +19040,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
 
 ---
 
@@ -19376,7 +19280,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a></code> | *No description.* |
 
 ---
 
@@ -19447,10 +19351,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersMalwareType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>
 
 ---
 
@@ -19576,7 +19480,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>></code> | *No description.* |
 
 ---
 
@@ -19607,10 +19511,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
 
 ---
 
@@ -19847,7 +19751,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a></code> | *No description.* |
 
 ---
 
@@ -19918,10 +19822,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>
 
 ---
 
@@ -20047,7 +19951,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>></code> | *No description.* |
 
 ---
 
@@ -20078,10 +19982,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
 
 ---
 
@@ -20316,7 +20220,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidrInput">cidrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidr">cidr</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a></code> | *No description.* |
 
 ---
 
@@ -20367,10 +20271,10 @@ public java.lang.String getCidr();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>
 
 ---
 
@@ -20496,7 +20400,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>></code> | *No description.* |
 
 ---
 
@@ -20527,10 +20431,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
 
 ---
 
@@ -20765,7 +20669,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidrInput">cidrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidr">cidr</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a></code> | *No description.* |
 
 ---
 
@@ -20816,10 +20720,10 @@ public java.lang.String getCidr();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>
 
 ---
 
@@ -20945,7 +20849,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>></code> | *No description.* |
 
 ---
 
@@ -20976,10 +20880,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationPort> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
 
 ---
 
@@ -21239,7 +21143,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a></code> | *No description.* |
 
 ---
 
@@ -21330,10 +21234,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationPort getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>
 
 ---
 
@@ -21459,7 +21363,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>></code> | *No description.* |
 
 ---
 
@@ -21490,10 +21394,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDirection> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
 
 ---
 
@@ -21730,7 +21634,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a></code> | *No description.* |
 
 ---
 
@@ -21801,10 +21705,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkDirection getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>
 
 ---
 
@@ -21930,7 +21834,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>></code> | *No description.* |
 
 ---
 
@@ -21961,10 +21865,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkProtocol> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
 
 ---
 
@@ -22201,7 +22105,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -22272,10 +22176,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkProtocol getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>
 
 ---
 
@@ -22401,7 +22305,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>></code> | *No description.* |
 
 ---
 
@@ -22432,10 +22336,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceDomain> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
 
 ---
 
@@ -22672,7 +22576,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a></code> | *No description.* |
 
 ---
 
@@ -22743,10 +22647,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkSourceDomain getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>
 
 ---
 
@@ -22872,7 +22776,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>></code> | *No description.* |
 
 ---
 
@@ -22903,10 +22807,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
 
 ---
 
@@ -23141,7 +23045,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidrInput">cidrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidr">cidr</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a></code> | *No description.* |
 
 ---
 
@@ -23192,10 +23096,10 @@ public java.lang.String getCidr();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>
 
 ---
 
@@ -23321,7 +23225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>></code> | *No description.* |
 
 ---
 
@@ -23352,10 +23256,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
 
 ---
 
@@ -23590,7 +23494,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidrInput">cidrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidr">cidr</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a></code> | *No description.* |
 
 ---
 
@@ -23641,10 +23545,10 @@ public java.lang.String getCidr();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>
 
 ---
 
@@ -23770,7 +23674,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>></code> | *No description.* |
 
 ---
 
@@ -23801,10 +23705,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceMac> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
 
 ---
 
@@ -24041,7 +23945,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a></code> | *No description.* |
 
 ---
 
@@ -24112,10 +24016,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkSourceMac getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>
 
 ---
 
@@ -24241,7 +24145,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>></code> | *No description.* |
 
 ---
 
@@ -24272,10 +24176,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourcePort> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
 
 ---
 
@@ -24535,7 +24439,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a></code> | *No description.* |
 
 ---
 
@@ -24626,10 +24530,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNetworkSourcePort getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>
 
 ---
 
@@ -24755,7 +24659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>></code> | *No description.* |
 
 ---
 
@@ -24786,10 +24690,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteText> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
 
 ---
 
@@ -25026,7 +24930,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a></code> | *No description.* |
 
 ---
 
@@ -25097,10 +25001,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNoteText getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>
 
 ---
 
@@ -25519,7 +25423,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -25550,10 +25454,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
 
 ---
 
@@ -25826,7 +25730,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -25917,10 +25821,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>
 
 ---
 
@@ -26046,7 +25950,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>></code> | *No description.* |
 
 ---
 
@@ -26077,10 +25981,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedBy> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
 
 ---
 
@@ -26317,7 +26221,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -26388,10 +26292,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedBy getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>
 
 ---
 
@@ -26778,1056 +26682,1056 @@ Returns a reversible string representation.
 ##### `putAwsAccountId` <a name="putAwsAccountId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putAwsAccountId"></a>
 
 ```java
-public void putAwsAccountId(IResolvable OR java.util.List<SecurityhubInsightFiltersAwsAccountId> value)
+public void putAwsAccountId(IResolvable|java.util.List<SecurityhubInsightFiltersAwsAccountId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
 
 ---
 
 ##### `putCompanyName` <a name="putCompanyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCompanyName"></a>
 
 ```java
-public void putCompanyName(IResolvable OR java.util.List<SecurityhubInsightFiltersCompanyName> value)
+public void putCompanyName(IResolvable|java.util.List<SecurityhubInsightFiltersCompanyName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCompanyName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
 
 ---
 
 ##### `putComplianceStatus` <a name="putComplianceStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putComplianceStatus"></a>
 
 ```java
-public void putComplianceStatus(IResolvable OR java.util.List<SecurityhubInsightFiltersComplianceStatus> value)
+public void putComplianceStatus(IResolvable|java.util.List<SecurityhubInsightFiltersComplianceStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putComplianceStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
 
 ---
 
 ##### `putConfidence` <a name="putConfidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putConfidence"></a>
 
 ```java
-public void putConfidence(IResolvable OR java.util.List<SecurityhubInsightFiltersConfidence> value)
+public void putConfidence(IResolvable|java.util.List<SecurityhubInsightFiltersConfidence> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putConfidence.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
 
 ---
 
 ##### `putCreatedAt` <a name="putCreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCreatedAt"></a>
 
 ```java
-public void putCreatedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersCreatedAt> value)
+public void putCreatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersCreatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCreatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
 
 ---
 
 ##### `putCriticality` <a name="putCriticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCriticality"></a>
 
 ```java
-public void putCriticality(IResolvable OR java.util.List<SecurityhubInsightFiltersCriticality> value)
+public void putCriticality(IResolvable|java.util.List<SecurityhubInsightFiltersCriticality> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCriticality.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
 
 ---
 
 ##### `putDescription` <a name="putDescription" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putDescription"></a>
 
 ```java
-public void putDescription(IResolvable OR java.util.List<SecurityhubInsightFiltersDescription> value)
+public void putDescription(IResolvable|java.util.List<SecurityhubInsightFiltersDescription> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putDescription.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
 
 ---
 
 ##### `putFindingProviderFieldsConfidence` <a name="putFindingProviderFieldsConfidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsConfidence"></a>
 
 ```java
-public void putFindingProviderFieldsConfidence(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence> value)
+public void putFindingProviderFieldsConfidence(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsConfidence.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
 
 ---
 
 ##### `putFindingProviderFieldsCriticality` <a name="putFindingProviderFieldsCriticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsCriticality"></a>
 
 ```java
-public void putFindingProviderFieldsCriticality(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality> value)
+public void putFindingProviderFieldsCriticality(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsCriticality.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
 
 ---
 
 ##### `putFindingProviderFieldsRelatedFindingsId` <a name="putFindingProviderFieldsRelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsId"></a>
 
 ```java
-public void putFindingProviderFieldsRelatedFindingsId(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId> value)
+public void putFindingProviderFieldsRelatedFindingsId(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
 
 ---
 
 ##### `putFindingProviderFieldsRelatedFindingsProductArn` <a name="putFindingProviderFieldsRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsProductArn"></a>
 
 ```java
-public void putFindingProviderFieldsRelatedFindingsProductArn(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn> value)
+public void putFindingProviderFieldsRelatedFindingsProductArn(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
 
 ---
 
 ##### `putFindingProviderFieldsSeverityLabel` <a name="putFindingProviderFieldsSeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityLabel"></a>
 
 ```java
-public void putFindingProviderFieldsSeverityLabel(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel> value)
+public void putFindingProviderFieldsSeverityLabel(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityLabel.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
 
 ---
 
 ##### `putFindingProviderFieldsSeverityOriginal` <a name="putFindingProviderFieldsSeverityOriginal" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityOriginal"></a>
 
 ```java
-public void putFindingProviderFieldsSeverityOriginal(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal> value)
+public void putFindingProviderFieldsSeverityOriginal(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityOriginal.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
 
 ---
 
 ##### `putFindingProviderFieldsTypes` <a name="putFindingProviderFieldsTypes" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsTypes"></a>
 
 ```java
-public void putFindingProviderFieldsTypes(IResolvable OR java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes> value)
+public void putFindingProviderFieldsTypes(IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsTypes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
 
 ---
 
 ##### `putFirstObservedAt` <a name="putFirstObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFirstObservedAt"></a>
 
 ```java
-public void putFirstObservedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersFirstObservedAt> value)
+public void putFirstObservedAt(IResolvable|java.util.List<SecurityhubInsightFiltersFirstObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
 
 ---
 
 ##### `putGeneratorId` <a name="putGeneratorId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putGeneratorId"></a>
 
 ```java
-public void putGeneratorId(IResolvable OR java.util.List<SecurityhubInsightFiltersGeneratorId> value)
+public void putGeneratorId(IResolvable|java.util.List<SecurityhubInsightFiltersGeneratorId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putGeneratorId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
 
 ---
 
 ##### `putId` <a name="putId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putId"></a>
 
 ```java
-public void putId(IResolvable OR java.util.List<SecurityhubInsightFiltersId> value)
+public void putId(IResolvable|java.util.List<SecurityhubInsightFiltersId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
 
 ---
 
 ##### `putKeyword` <a name="putKeyword" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putKeyword"></a>
 
 ```java
-public void putKeyword(IResolvable OR java.util.List<SecurityhubInsightFiltersKeyword> value)
+public void putKeyword(IResolvable|java.util.List<SecurityhubInsightFiltersKeyword> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putKeyword.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
 
 ---
 
 ##### `putLastObservedAt` <a name="putLastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putLastObservedAt"></a>
 
 ```java
-public void putLastObservedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersLastObservedAt> value)
+public void putLastObservedAt(IResolvable|java.util.List<SecurityhubInsightFiltersLastObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
 
 ---
 
 ##### `putMalwareName` <a name="putMalwareName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareName"></a>
 
 ```java
-public void putMalwareName(IResolvable OR java.util.List<SecurityhubInsightFiltersMalwareName> value)
+public void putMalwareName(IResolvable|java.util.List<SecurityhubInsightFiltersMalwareName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
 
 ---
 
 ##### `putMalwarePath` <a name="putMalwarePath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwarePath"></a>
 
 ```java
-public void putMalwarePath(IResolvable OR java.util.List<SecurityhubInsightFiltersMalwarePath> value)
+public void putMalwarePath(IResolvable|java.util.List<SecurityhubInsightFiltersMalwarePath> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwarePath.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
 
 ---
 
 ##### `putMalwareState` <a name="putMalwareState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareState"></a>
 
 ```java
-public void putMalwareState(IResolvable OR java.util.List<SecurityhubInsightFiltersMalwareState> value)
+public void putMalwareState(IResolvable|java.util.List<SecurityhubInsightFiltersMalwareState> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareState.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
 
 ---
 
 ##### `putMalwareType` <a name="putMalwareType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareType"></a>
 
 ```java
-public void putMalwareType(IResolvable OR java.util.List<SecurityhubInsightFiltersMalwareType> value)
+public void putMalwareType(IResolvable|java.util.List<SecurityhubInsightFiltersMalwareType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
 
 ---
 
 ##### `putNetworkDestinationDomain` <a name="putNetworkDestinationDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationDomain"></a>
 
 ```java
-public void putNetworkDestinationDomain(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain> value)
+public void putNetworkDestinationDomain(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationDomain.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
 
 ---
 
 ##### `putNetworkDestinationIpv4` <a name="putNetworkDestinationIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv4"></a>
 
 ```java
-public void putNetworkDestinationIpv4(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4> value)
+public void putNetworkDestinationIpv4(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv4.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
 
 ---
 
 ##### `putNetworkDestinationIpv6` <a name="putNetworkDestinationIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv6"></a>
 
 ```java
-public void putNetworkDestinationIpv6(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6> value)
+public void putNetworkDestinationIpv6(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv6.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
 
 ---
 
 ##### `putNetworkDestinationPort` <a name="putNetworkDestinationPort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationPort"></a>
 
 ```java
-public void putNetworkDestinationPort(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkDestinationPort> value)
+public void putNetworkDestinationPort(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationPort> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationPort.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
 
 ---
 
 ##### `putNetworkDirection` <a name="putNetworkDirection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDirection"></a>
 
 ```java
-public void putNetworkDirection(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkDirection> value)
+public void putNetworkDirection(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDirection> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDirection.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
 
 ---
 
 ##### `putNetworkProtocol` <a name="putNetworkProtocol" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkProtocol"></a>
 
 ```java
-public void putNetworkProtocol(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkProtocol> value)
+public void putNetworkProtocol(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkProtocol> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
 
 ---
 
 ##### `putNetworkSourceDomain` <a name="putNetworkSourceDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceDomain"></a>
 
 ```java
-public void putNetworkSourceDomain(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkSourceDomain> value)
+public void putNetworkSourceDomain(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceDomain> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceDomain.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
 
 ---
 
 ##### `putNetworkSourceIpv4` <a name="putNetworkSourceIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv4"></a>
 
 ```java
-public void putNetworkSourceIpv4(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4> value)
+public void putNetworkSourceIpv4(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv4.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
 
 ---
 
 ##### `putNetworkSourceIpv6` <a name="putNetworkSourceIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv6"></a>
 
 ```java
-public void putNetworkSourceIpv6(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6> value)
+public void putNetworkSourceIpv6(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv6.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
 
 ---
 
 ##### `putNetworkSourceMac` <a name="putNetworkSourceMac" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceMac"></a>
 
 ```java
-public void putNetworkSourceMac(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkSourceMac> value)
+public void putNetworkSourceMac(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceMac> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceMac.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
 
 ---
 
 ##### `putNetworkSourcePort` <a name="putNetworkSourcePort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourcePort"></a>
 
 ```java
-public void putNetworkSourcePort(IResolvable OR java.util.List<SecurityhubInsightFiltersNetworkSourcePort> value)
+public void putNetworkSourcePort(IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourcePort> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourcePort.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
 
 ---
 
 ##### `putNoteText` <a name="putNoteText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteText"></a>
 
 ```java
-public void putNoteText(IResolvable OR java.util.List<SecurityhubInsightFiltersNoteText> value)
+public void putNoteText(IResolvable|java.util.List<SecurityhubInsightFiltersNoteText> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteText.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
 
 ---
 
 ##### `putNoteUpdatedAt` <a name="putNoteUpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedAt"></a>
 
 ```java
-public void putNoteUpdatedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersNoteUpdatedAt> value)
+public void putNoteUpdatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
 
 ---
 
 ##### `putNoteUpdatedBy` <a name="putNoteUpdatedBy" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedBy"></a>
 
 ```java
-public void putNoteUpdatedBy(IResolvable OR java.util.List<SecurityhubInsightFiltersNoteUpdatedBy> value)
+public void putNoteUpdatedBy(IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedBy> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedBy.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
 
 ---
 
 ##### `putProcessLaunchedAt` <a name="putProcessLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessLaunchedAt"></a>
 
 ```java
-public void putProcessLaunchedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersProcessLaunchedAt> value)
+public void putProcessLaunchedAt(IResolvable|java.util.List<SecurityhubInsightFiltersProcessLaunchedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessLaunchedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
 
 ---
 
 ##### `putProcessName` <a name="putProcessName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessName"></a>
 
 ```java
-public void putProcessName(IResolvable OR java.util.List<SecurityhubInsightFiltersProcessName> value)
+public void putProcessName(IResolvable|java.util.List<SecurityhubInsightFiltersProcessName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
 
 ---
 
 ##### `putProcessParentPid` <a name="putProcessParentPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessParentPid"></a>
 
 ```java
-public void putProcessParentPid(IResolvable OR java.util.List<SecurityhubInsightFiltersProcessParentPid> value)
+public void putProcessParentPid(IResolvable|java.util.List<SecurityhubInsightFiltersProcessParentPid> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessParentPid.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
 
 ---
 
 ##### `putProcessPath` <a name="putProcessPath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPath"></a>
 
 ```java
-public void putProcessPath(IResolvable OR java.util.List<SecurityhubInsightFiltersProcessPath> value)
+public void putProcessPath(IResolvable|java.util.List<SecurityhubInsightFiltersProcessPath> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPath.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
 
 ---
 
 ##### `putProcessPid` <a name="putProcessPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPid"></a>
 
 ```java
-public void putProcessPid(IResolvable OR java.util.List<SecurityhubInsightFiltersProcessPid> value)
+public void putProcessPid(IResolvable|java.util.List<SecurityhubInsightFiltersProcessPid> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPid.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
 
 ---
 
 ##### `putProcessTerminatedAt` <a name="putProcessTerminatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessTerminatedAt"></a>
 
 ```java
-public void putProcessTerminatedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersProcessTerminatedAt> value)
+public void putProcessTerminatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersProcessTerminatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessTerminatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
 
 ---
 
 ##### `putProductArn` <a name="putProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductArn"></a>
 
 ```java
-public void putProductArn(IResolvable OR java.util.List<SecurityhubInsightFiltersProductArn> value)
+public void putProductArn(IResolvable|java.util.List<SecurityhubInsightFiltersProductArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
 
 ---
 
 ##### `putProductFields` <a name="putProductFields" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductFields"></a>
 
 ```java
-public void putProductFields(IResolvable OR java.util.List<SecurityhubInsightFiltersProductFields> value)
+public void putProductFields(IResolvable|java.util.List<SecurityhubInsightFiltersProductFields> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductFields.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
 
 ---
 
 ##### `putProductName` <a name="putProductName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductName"></a>
 
 ```java
-public void putProductName(IResolvable OR java.util.List<SecurityhubInsightFiltersProductName> value)
+public void putProductName(IResolvable|java.util.List<SecurityhubInsightFiltersProductName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
 
 ---
 
 ##### `putRecommendationText` <a name="putRecommendationText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecommendationText"></a>
 
 ```java
-public void putRecommendationText(IResolvable OR java.util.List<SecurityhubInsightFiltersRecommendationText> value)
+public void putRecommendationText(IResolvable|java.util.List<SecurityhubInsightFiltersRecommendationText> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecommendationText.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
 
 ---
 
 ##### `putRecordState` <a name="putRecordState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecordState"></a>
 
 ```java
-public void putRecordState(IResolvable OR java.util.List<SecurityhubInsightFiltersRecordState> value)
+public void putRecordState(IResolvable|java.util.List<SecurityhubInsightFiltersRecordState> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecordState.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
 
 ---
 
 ##### `putRelatedFindingsId` <a name="putRelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsId"></a>
 
 ```java
-public void putRelatedFindingsId(IResolvable OR java.util.List<SecurityhubInsightFiltersRelatedFindingsId> value)
+public void putRelatedFindingsId(IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
 
 ---
 
 ##### `putRelatedFindingsProductArn` <a name="putRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsProductArn"></a>
 
 ```java
-public void putRelatedFindingsProductArn(IResolvable OR java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn> value)
+public void putRelatedFindingsProductArn(IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceIamInstanceProfileArn` <a name="putResourceAwsEc2InstanceIamInstanceProfileArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIamInstanceProfileArn"></a>
 
 ```java
-public void putResourceAwsEc2InstanceIamInstanceProfileArn(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn> value)
+public void putResourceAwsEc2InstanceIamInstanceProfileArn(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIamInstanceProfileArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceImageId` <a name="putResourceAwsEc2InstanceImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceImageId"></a>
 
 ```java
-public void putResourceAwsEc2InstanceImageId(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId> value)
+public void putResourceAwsEc2InstanceImageId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceIpv4Addresses` <a name="putResourceAwsEc2InstanceIpv4Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv4Addresses"></a>
 
 ```java
-public void putResourceAwsEc2InstanceIpv4Addresses(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses> value)
+public void putResourceAwsEc2InstanceIpv4Addresses(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv4Addresses.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceIpv6Addresses` <a name="putResourceAwsEc2InstanceIpv6Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv6Addresses"></a>
 
 ```java
-public void putResourceAwsEc2InstanceIpv6Addresses(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses> value)
+public void putResourceAwsEc2InstanceIpv6Addresses(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv6Addresses.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceKeyName` <a name="putResourceAwsEc2InstanceKeyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceKeyName"></a>
 
 ```java
-public void putResourceAwsEc2InstanceKeyName(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName> value)
+public void putResourceAwsEc2InstanceKeyName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceKeyName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceLaunchedAt` <a name="putResourceAwsEc2InstanceLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceLaunchedAt"></a>
 
 ```java
-public void putResourceAwsEc2InstanceLaunchedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt> value)
+public void putResourceAwsEc2InstanceLaunchedAt(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceLaunchedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceSubnetId` <a name="putResourceAwsEc2InstanceSubnetId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceSubnetId"></a>
 
 ```java
-public void putResourceAwsEc2InstanceSubnetId(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId> value)
+public void putResourceAwsEc2InstanceSubnetId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceType` <a name="putResourceAwsEc2InstanceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceType"></a>
 
 ```java
-public void putResourceAwsEc2InstanceType(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType> value)
+public void putResourceAwsEc2InstanceType(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
 
 ---
 
 ##### `putResourceAwsEc2InstanceVpcId` <a name="putResourceAwsEc2InstanceVpcId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceVpcId"></a>
 
 ```java
-public void putResourceAwsEc2InstanceVpcId(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId> value)
+public void putResourceAwsEc2InstanceVpcId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
 
 ---
 
 ##### `putResourceAwsIamAccessKeyCreatedAt` <a name="putResourceAwsIamAccessKeyCreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyCreatedAt"></a>
 
 ```java
-public void putResourceAwsIamAccessKeyCreatedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt> value)
+public void putResourceAwsIamAccessKeyCreatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyCreatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
 
 ---
 
 ##### `putResourceAwsIamAccessKeyStatus` <a name="putResourceAwsIamAccessKeyStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyStatus"></a>
 
 ```java
-public void putResourceAwsIamAccessKeyStatus(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus> value)
+public void putResourceAwsIamAccessKeyStatus(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
 
 ---
 
 ##### `putResourceAwsIamAccessKeyUserName` <a name="putResourceAwsIamAccessKeyUserName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyUserName"></a>
 
 ```java
-public void putResourceAwsIamAccessKeyUserName(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName> value)
+public void putResourceAwsIamAccessKeyUserName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyUserName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
 
 ---
 
 ##### `putResourceAwsS3BucketOwnerId` <a name="putResourceAwsS3BucketOwnerId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerId"></a>
 
 ```java
-public void putResourceAwsS3BucketOwnerId(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId> value)
+public void putResourceAwsS3BucketOwnerId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
 
 ---
 
 ##### `putResourceAwsS3BucketOwnerName` <a name="putResourceAwsS3BucketOwnerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerName"></a>
 
 ```java
-public void putResourceAwsS3BucketOwnerName(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName> value)
+public void putResourceAwsS3BucketOwnerName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
 
 ---
 
 ##### `putResourceContainerImageId` <a name="putResourceContainerImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageId"></a>
 
 ```java
-public void putResourceContainerImageId(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceContainerImageId> value)
+public void putResourceContainerImageId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
 
 ---
 
 ##### `putResourceContainerImageName` <a name="putResourceContainerImageName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageName"></a>
 
 ```java
-public void putResourceContainerImageName(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceContainerImageName> value)
+public void putResourceContainerImageName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
 
 ---
 
 ##### `putResourceContainerLaunchedAt` <a name="putResourceContainerLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerLaunchedAt"></a>
 
 ```java
-public void putResourceContainerLaunchedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt> value)
+public void putResourceContainerLaunchedAt(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerLaunchedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
 
 ---
 
 ##### `putResourceContainerName` <a name="putResourceContainerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerName"></a>
 
 ```java
-public void putResourceContainerName(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceContainerName> value)
+public void putResourceContainerName(IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
 
 ---
 
 ##### `putResourceDetailsOther` <a name="putResourceDetailsOther" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceDetailsOther"></a>
 
 ```java
-public void putResourceDetailsOther(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceDetailsOther> value)
+public void putResourceDetailsOther(IResolvable|java.util.List<SecurityhubInsightFiltersResourceDetailsOther> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceDetailsOther.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
 
 ---
 
 ##### `putResourceId` <a name="putResourceId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceId"></a>
 
 ```java
-public void putResourceId(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceId> value)
+public void putResourceId(IResolvable|java.util.List<SecurityhubInsightFiltersResourceId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
 
 ---
 
 ##### `putResourcePartition` <a name="putResourcePartition" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourcePartition"></a>
 
 ```java
-public void putResourcePartition(IResolvable OR java.util.List<SecurityhubInsightFiltersResourcePartition> value)
+public void putResourcePartition(IResolvable|java.util.List<SecurityhubInsightFiltersResourcePartition> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourcePartition.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
 
 ---
 
 ##### `putResourceRegion` <a name="putResourceRegion" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceRegion"></a>
 
 ```java
-public void putResourceRegion(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceRegion> value)
+public void putResourceRegion(IResolvable|java.util.List<SecurityhubInsightFiltersResourceRegion> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceRegion.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
 
 ---
 
 ##### `putResourceTags` <a name="putResourceTags" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceTags"></a>
 
 ```java
-public void putResourceTags(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceTags> value)
+public void putResourceTags(IResolvable|java.util.List<SecurityhubInsightFiltersResourceTags> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
 
 ---
 
 ##### `putResourceType` <a name="putResourceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceType"></a>
 
 ```java
-public void putResourceType(IResolvable OR java.util.List<SecurityhubInsightFiltersResourceType> value)
+public void putResourceType(IResolvable|java.util.List<SecurityhubInsightFiltersResourceType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
 
 ---
 
 ##### `putSeverityLabel` <a name="putSeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSeverityLabel"></a>
 
 ```java
-public void putSeverityLabel(IResolvable OR java.util.List<SecurityhubInsightFiltersSeverityLabel> value)
+public void putSeverityLabel(IResolvable|java.util.List<SecurityhubInsightFiltersSeverityLabel> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSeverityLabel.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
 
 ---
 
 ##### `putSourceUrl` <a name="putSourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSourceUrl"></a>
 
 ```java
-public void putSourceUrl(IResolvable OR java.util.List<SecurityhubInsightFiltersSourceUrl> value)
+public void putSourceUrl(IResolvable|java.util.List<SecurityhubInsightFiltersSourceUrl> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSourceUrl.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
 
 ---
 
 ##### `putThreatIntelIndicatorCategory` <a name="putThreatIntelIndicatorCategory" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorCategory"></a>
 
 ```java
-public void putThreatIntelIndicatorCategory(IResolvable OR java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory> value)
+public void putThreatIntelIndicatorCategory(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorCategory.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
 
 ---
 
 ##### `putThreatIntelIndicatorLastObservedAt` <a name="putThreatIntelIndicatorLastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorLastObservedAt"></a>
 
 ```java
-public void putThreatIntelIndicatorLastObservedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt> value)
+public void putThreatIntelIndicatorLastObservedAt(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorLastObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
 
 ---
 
 ##### `putThreatIntelIndicatorSource` <a name="putThreatIntelIndicatorSource" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSource"></a>
 
 ```java
-public void putThreatIntelIndicatorSource(IResolvable OR java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource> value)
+public void putThreatIntelIndicatorSource(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSource.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
 
 ---
 
 ##### `putThreatIntelIndicatorSourceUrl` <a name="putThreatIntelIndicatorSourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSourceUrl"></a>
 
 ```java
-public void putThreatIntelIndicatorSourceUrl(IResolvable OR java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl> value)
+public void putThreatIntelIndicatorSourceUrl(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSourceUrl.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
 
 ---
 
 ##### `putThreatIntelIndicatorType` <a name="putThreatIntelIndicatorType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorType"></a>
 
 ```java
-public void putThreatIntelIndicatorType(IResolvable OR java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType> value)
+public void putThreatIntelIndicatorType(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
 
 ---
 
 ##### `putThreatIntelIndicatorValue` <a name="putThreatIntelIndicatorValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorValue"></a>
 
 ```java
-public void putThreatIntelIndicatorValue(IResolvable OR java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue> value)
+public void putThreatIntelIndicatorValue(IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorValue.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
 
 ---
 
 ##### `putTitle` <a name="putTitle" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putTitle"></a>
 
 ```java
-public void putTitle(IResolvable OR java.util.List<SecurityhubInsightFiltersTitle> value)
+public void putTitle(IResolvable|java.util.List<SecurityhubInsightFiltersTitle> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
 
 ---
 
 ##### `putType` <a name="putType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putType"></a>
 
 ```java
-public void putType(IResolvable OR java.util.List<SecurityhubInsightFiltersType> value)
+public void putType(IResolvable|java.util.List<SecurityhubInsightFiltersType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
 
 ---
 
 ##### `putUpdatedAt` <a name="putUpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUpdatedAt"></a>
 
 ```java
-public void putUpdatedAt(IResolvable OR java.util.List<SecurityhubInsightFiltersUpdatedAt> value)
+public void putUpdatedAt(IResolvable|java.util.List<SecurityhubInsightFiltersUpdatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
 
 ---
 
 ##### `putUserDefinedValues` <a name="putUserDefinedValues" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUserDefinedValues"></a>
 
 ```java
-public void putUserDefinedValues(IResolvable OR java.util.List<SecurityhubInsightFiltersUserDefinedValues> value)
+public void putUserDefinedValues(IResolvable|java.util.List<SecurityhubInsightFiltersUserDefinedValues> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUserDefinedValues.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
 
 ---
 
 ##### `putVerificationState` <a name="putVerificationState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putVerificationState"></a>
 
 ```java
-public void putVerificationState(IResolvable OR java.util.List<SecurityhubInsightFiltersVerificationState> value)
+public void putVerificationState(IResolvable|java.util.List<SecurityhubInsightFiltersVerificationState> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putVerificationState.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
 
 ---
 
 ##### `putWorkflowStatus` <a name="putWorkflowStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putWorkflowStatus"></a>
 
 ```java
-public void putWorkflowStatus(IResolvable OR java.util.List<SecurityhubInsightFiltersWorkflowStatus> value)
+public void putWorkflowStatus(IResolvable|java.util.List<SecurityhubInsightFiltersWorkflowStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putWorkflowStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
 
 ---
 
@@ -28454,94 +28358,94 @@ public void resetWorkflowStatus()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValues">userDefinedValues</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList">SecurityhubInsightFiltersUserDefinedValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationState">verificationState</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList">SecurityhubInsightFiltersVerificationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatus">workflowStatus</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList">SecurityhubInsightFiltersWorkflowStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput">companyNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput">createdAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput">findingProviderFieldsConfidenceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput">findingProviderFieldsCriticalityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput">findingProviderFieldsRelatedFindingsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput">findingProviderFieldsRelatedFindingsProductArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput">findingProviderFieldsSeverityLabelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput">findingProviderFieldsSeverityOriginalInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput">findingProviderFieldsTypesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput">generatorIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput">idInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput">keywordInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput">malwareNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput">malwarePathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput">malwareStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput">malwareTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput">networkDestinationDomainInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input">networkDestinationIpv4Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input">networkDestinationIpv6Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput">networkDestinationPortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput">networkDirectionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput">networkProtocolInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput">networkSourceDomainInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input">networkSourceIpv4Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input">networkSourceIpv6Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput">networkSourceMacInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput">networkSourcePortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput">noteTextInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput">noteUpdatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput">noteUpdatedByInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput">processLaunchedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput">processNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput">processParentPidInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput">processPathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput">processPidInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput">processTerminatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput">productArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput">productFieldsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput">productNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput">recommendationTextInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput">recordStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput">relatedFindingsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput">relatedFindingsProductArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput">resourceAwsEc2InstanceIamInstanceProfileArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput">resourceAwsEc2InstanceImageIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput">resourceAwsEc2InstanceIpv4AddressesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput">resourceAwsEc2InstanceIpv6AddressesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput">resourceAwsEc2InstanceKeyNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput">resourceAwsEc2InstanceLaunchedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput">resourceAwsEc2InstanceSubnetIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput">resourceAwsEc2InstanceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput">resourceAwsEc2InstanceVpcIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput">resourceAwsIamAccessKeyCreatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput">resourceAwsIamAccessKeyStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput">resourceAwsIamAccessKeyUserNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput">resourceAwsS3BucketOwnerIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput">resourceAwsS3BucketOwnerNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput">resourceContainerImageIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput">resourceContainerImageNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput">resourceContainerLaunchedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput">resourceContainerNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput">resourceDetailsOtherInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput">resourcePartitionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput">resourceRegionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput">severityLabelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput">sourceUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput">threatIntelIndicatorCategoryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput">threatIntelIndicatorLastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput">threatIntelIndicatorSourceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput">threatIntelIndicatorSourceUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput">threatIntelIndicatorTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput">threatIntelIndicatorValueInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput">titleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput">typeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput">userDefinedValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput">workflowStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput">companyNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput">createdAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput">findingProviderFieldsConfidenceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput">findingProviderFieldsCriticalityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput">findingProviderFieldsRelatedFindingsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput">findingProviderFieldsRelatedFindingsProductArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput">findingProviderFieldsSeverityLabelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput">findingProviderFieldsSeverityOriginalInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput">findingProviderFieldsTypesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput">generatorIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput">idInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput">keywordInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput">malwareNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput">malwarePathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput">malwareStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput">malwareTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput">networkDestinationDomainInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input">networkDestinationIpv4Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input">networkDestinationIpv6Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput">networkDestinationPortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput">networkDirectionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput">networkProtocolInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput">networkSourceDomainInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input">networkSourceIpv4Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input">networkSourceIpv6Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput">networkSourceMacInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput">networkSourcePortInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput">noteTextInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput">noteUpdatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput">noteUpdatedByInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput">processLaunchedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput">processNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput">processParentPidInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput">processPathInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput">processPidInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput">processTerminatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput">productArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput">productFieldsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput">productNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput">recommendationTextInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput">recordStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput">relatedFindingsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput">relatedFindingsProductArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput">resourceAwsEc2InstanceIamInstanceProfileArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput">resourceAwsEc2InstanceImageIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput">resourceAwsEc2InstanceIpv4AddressesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput">resourceAwsEc2InstanceIpv6AddressesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput">resourceAwsEc2InstanceKeyNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput">resourceAwsEc2InstanceLaunchedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput">resourceAwsEc2InstanceSubnetIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput">resourceAwsEc2InstanceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput">resourceAwsEc2InstanceVpcIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput">resourceAwsIamAccessKeyCreatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput">resourceAwsIamAccessKeyStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput">resourceAwsIamAccessKeyUserNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput">resourceAwsS3BucketOwnerIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput">resourceAwsS3BucketOwnerNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput">resourceContainerImageIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput">resourceContainerImageNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput">resourceContainerLaunchedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput">resourceContainerNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput">resourceDetailsOtherInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput">resourcePartitionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput">resourceRegionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput">severityLabelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput">sourceUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput">threatIntelIndicatorCategoryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput">threatIntelIndicatorLastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput">threatIntelIndicatorSourceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput">threatIntelIndicatorSourceUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput">threatIntelIndicatorTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput">threatIntelIndicatorValueInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput">titleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput">typeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput">userDefinedValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput">workflowStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | *No description.* |
 
 ---
@@ -29453,880 +29357,880 @@ public SecurityhubInsightFiltersWorkflowStatusList getWorkflowStatus();
 ##### `awsAccountIdInput`<sup>Optional</sup> <a name="awsAccountIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput"></a>
 
 ```java
-public java.lang.Object getAwsAccountIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersAwsAccountId> getAwsAccountIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>>
 
 ---
 
 ##### `companyNameInput`<sup>Optional</sup> <a name="companyNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput"></a>
 
 ```java
-public java.lang.Object getCompanyNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCompanyName> getCompanyNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>>
 
 ---
 
 ##### `complianceStatusInput`<sup>Optional</sup> <a name="complianceStatusInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput"></a>
 
 ```java
-public java.lang.Object getComplianceStatusInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersComplianceStatus> getComplianceStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>>
 
 ---
 
 ##### `confidenceInput`<sup>Optional</sup> <a name="confidenceInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput"></a>
 
 ```java
-public java.lang.Object getConfidenceInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersConfidence> getConfidenceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>>
 
 ---
 
 ##### `createdAtInput`<sup>Optional</sup> <a name="createdAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput"></a>
 
 ```java
-public java.lang.Object getCreatedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCreatedAt> getCreatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>>
 
 ---
 
 ##### `criticalityInput`<sup>Optional</sup> <a name="criticalityInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput"></a>
 
 ```java
-public java.lang.Object getCriticalityInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersCriticality> getCriticalityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>>
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput"></a>
 
 ```java
-public java.lang.Object getDescriptionInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersDescription> getDescriptionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>>
 
 ---
 
 ##### `findingProviderFieldsConfidenceInput`<sup>Optional</sup> <a name="findingProviderFieldsConfidenceInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsConfidenceInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsConfidence> getFindingProviderFieldsConfidenceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>>
 
 ---
 
 ##### `findingProviderFieldsCriticalityInput`<sup>Optional</sup> <a name="findingProviderFieldsCriticalityInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsCriticalityInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsCriticality> getFindingProviderFieldsCriticalityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>>
 
 ---
 
 ##### `findingProviderFieldsRelatedFindingsIdInput`<sup>Optional</sup> <a name="findingProviderFieldsRelatedFindingsIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsRelatedFindingsIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId> getFindingProviderFieldsRelatedFindingsIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>>
 
 ---
 
 ##### `findingProviderFieldsRelatedFindingsProductArnInput`<sup>Optional</sup> <a name="findingProviderFieldsRelatedFindingsProductArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsRelatedFindingsProductArnInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn> getFindingProviderFieldsRelatedFindingsProductArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>>
 
 ---
 
 ##### `findingProviderFieldsSeverityLabelInput`<sup>Optional</sup> <a name="findingProviderFieldsSeverityLabelInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsSeverityLabelInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel> getFindingProviderFieldsSeverityLabelInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>>
 
 ---
 
 ##### `findingProviderFieldsSeverityOriginalInput`<sup>Optional</sup> <a name="findingProviderFieldsSeverityOriginalInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsSeverityOriginalInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal> getFindingProviderFieldsSeverityOriginalInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>>
 
 ---
 
 ##### `findingProviderFieldsTypesInput`<sup>Optional</sup> <a name="findingProviderFieldsTypesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput"></a>
 
 ```java
-public java.lang.Object getFindingProviderFieldsTypesInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFindingProviderFieldsTypes> getFindingProviderFieldsTypesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>>
 
 ---
 
 ##### `firstObservedAtInput`<sup>Optional</sup> <a name="firstObservedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput"></a>
 
 ```java
-public java.lang.Object getFirstObservedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersFirstObservedAt> getFirstObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>>
 
 ---
 
 ##### `generatorIdInput`<sup>Optional</sup> <a name="generatorIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput"></a>
 
 ```java
-public java.lang.Object getGeneratorIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersGeneratorId> getGeneratorIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>>
 
 ---
 
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput"></a>
 
 ```java
-public java.lang.Object getIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersId> getIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>>
 
 ---
 
 ##### `keywordInput`<sup>Optional</sup> <a name="keywordInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput"></a>
 
 ```java
-public java.lang.Object getKeywordInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersKeyword> getKeywordInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>>
 
 ---
 
 ##### `lastObservedAtInput`<sup>Optional</sup> <a name="lastObservedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput"></a>
 
 ```java
-public java.lang.Object getLastObservedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersLastObservedAt> getLastObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>>
 
 ---
 
 ##### `malwareNameInput`<sup>Optional</sup> <a name="malwareNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput"></a>
 
 ```java
-public java.lang.Object getMalwareNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareName> getMalwareNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>>
 
 ---
 
 ##### `malwarePathInput`<sup>Optional</sup> <a name="malwarePathInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput"></a>
 
 ```java
-public java.lang.Object getMalwarePathInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwarePath> getMalwarePathInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>>
 
 ---
 
 ##### `malwareStateInput`<sup>Optional</sup> <a name="malwareStateInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput"></a>
 
 ```java
-public java.lang.Object getMalwareStateInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareState> getMalwareStateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>>
 
 ---
 
 ##### `malwareTypeInput`<sup>Optional</sup> <a name="malwareTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput"></a>
 
 ```java
-public java.lang.Object getMalwareTypeInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersMalwareType> getMalwareTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>>
 
 ---
 
 ##### `networkDestinationDomainInput`<sup>Optional</sup> <a name="networkDestinationDomainInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationDomainInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationDomain> getNetworkDestinationDomainInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>>
 
 ---
 
 ##### `networkDestinationIpv4Input`<sup>Optional</sup> <a name="networkDestinationIpv4Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationIpv4Input();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv4> getNetworkDestinationIpv4Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>>
 
 ---
 
 ##### `networkDestinationIpv6Input`<sup>Optional</sup> <a name="networkDestinationIpv6Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationIpv6Input();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationIpv6> getNetworkDestinationIpv6Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>>
 
 ---
 
 ##### `networkDestinationPortInput`<sup>Optional</sup> <a name="networkDestinationPortInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput"></a>
 
 ```java
-public java.lang.Object getNetworkDestinationPortInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDestinationPort> getNetworkDestinationPortInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>>
 
 ---
 
 ##### `networkDirectionInput`<sup>Optional</sup> <a name="networkDirectionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput"></a>
 
 ```java
-public java.lang.Object getNetworkDirectionInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkDirection> getNetworkDirectionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>>
 
 ---
 
 ##### `networkProtocolInput`<sup>Optional</sup> <a name="networkProtocolInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput"></a>
 
 ```java
-public java.lang.Object getNetworkProtocolInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkProtocol> getNetworkProtocolInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>>
 
 ---
 
 ##### `networkSourceDomainInput`<sup>Optional</sup> <a name="networkSourceDomainInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput"></a>
 
 ```java
-public java.lang.Object getNetworkSourceDomainInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceDomain> getNetworkSourceDomainInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>>
 
 ---
 
 ##### `networkSourceIpv4Input`<sup>Optional</sup> <a name="networkSourceIpv4Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input"></a>
 
 ```java
-public java.lang.Object getNetworkSourceIpv4Input();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv4> getNetworkSourceIpv4Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>>
 
 ---
 
 ##### `networkSourceIpv6Input`<sup>Optional</sup> <a name="networkSourceIpv6Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input"></a>
 
 ```java
-public java.lang.Object getNetworkSourceIpv6Input();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceIpv6> getNetworkSourceIpv6Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>>
 
 ---
 
 ##### `networkSourceMacInput`<sup>Optional</sup> <a name="networkSourceMacInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput"></a>
 
 ```java
-public java.lang.Object getNetworkSourceMacInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourceMac> getNetworkSourceMacInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>>
 
 ---
 
 ##### `networkSourcePortInput`<sup>Optional</sup> <a name="networkSourcePortInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput"></a>
 
 ```java
-public java.lang.Object getNetworkSourcePortInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNetworkSourcePort> getNetworkSourcePortInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>>
 
 ---
 
 ##### `noteTextInput`<sup>Optional</sup> <a name="noteTextInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput"></a>
 
 ```java
-public java.lang.Object getNoteTextInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteText> getNoteTextInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>>
 
 ---
 
 ##### `noteUpdatedAtInput`<sup>Optional</sup> <a name="noteUpdatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedAt> getNoteUpdatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>>
 
 ---
 
 ##### `noteUpdatedByInput`<sup>Optional</sup> <a name="noteUpdatedByInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedByInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersNoteUpdatedBy> getNoteUpdatedByInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>>
 
 ---
 
 ##### `processLaunchedAtInput`<sup>Optional</sup> <a name="processLaunchedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput"></a>
 
 ```java
-public java.lang.Object getProcessLaunchedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessLaunchedAt> getProcessLaunchedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
 
 ---
 
 ##### `processNameInput`<sup>Optional</sup> <a name="processNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput"></a>
 
 ```java
-public java.lang.Object getProcessNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessName> getProcessNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
 
 ---
 
 ##### `processParentPidInput`<sup>Optional</sup> <a name="processParentPidInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput"></a>
 
 ```java
-public java.lang.Object getProcessParentPidInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessParentPid> getProcessParentPidInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
 
 ---
 
 ##### `processPathInput`<sup>Optional</sup> <a name="processPathInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput"></a>
 
 ```java
-public java.lang.Object getProcessPathInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessPath> getProcessPathInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
 
 ---
 
 ##### `processPidInput`<sup>Optional</sup> <a name="processPidInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput"></a>
 
 ```java
-public java.lang.Object getProcessPidInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessPid> getProcessPidInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
 
 ---
 
 ##### `processTerminatedAtInput`<sup>Optional</sup> <a name="processTerminatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput"></a>
 
 ```java
-public java.lang.Object getProcessTerminatedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessTerminatedAt> getProcessTerminatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
 
 ---
 
 ##### `productArnInput`<sup>Optional</sup> <a name="productArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput"></a>
 
 ```java
-public java.lang.Object getProductArnInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductArn> getProductArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
 
 ---
 
 ##### `productFieldsInput`<sup>Optional</sup> <a name="productFieldsInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput"></a>
 
 ```java
-public java.lang.Object getProductFieldsInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductFields> getProductFieldsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
 
 ---
 
 ##### `productNameInput`<sup>Optional</sup> <a name="productNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput"></a>
 
 ```java
-public java.lang.Object getProductNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductName> getProductNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
 
 ---
 
 ##### `recommendationTextInput`<sup>Optional</sup> <a name="recommendationTextInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput"></a>
 
 ```java
-public java.lang.Object getRecommendationTextInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRecommendationText> getRecommendationTextInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
 
 ---
 
 ##### `recordStateInput`<sup>Optional</sup> <a name="recordStateInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput"></a>
 
 ```java
-public java.lang.Object getRecordStateInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRecordState> getRecordStateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
 
 ---
 
 ##### `relatedFindingsIdInput`<sup>Optional</sup> <a name="relatedFindingsIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsId> getRelatedFindingsIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
 
 ---
 
 ##### `relatedFindingsProductArnInput`<sup>Optional</sup> <a name="relatedFindingsProductArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsProductArnInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn> getRelatedFindingsProductArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceIamInstanceProfileArnInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceIamInstanceProfileArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceIamInstanceProfileArnInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn> getResourceAwsEc2InstanceIamInstanceProfileArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceImageIdInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceImageIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceImageIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId> getResourceAwsEc2InstanceImageIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceIpv4AddressesInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceIpv4AddressesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceIpv4AddressesInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses> getResourceAwsEc2InstanceIpv4AddressesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceIpv6AddressesInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceIpv6AddressesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceIpv6AddressesInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses> getResourceAwsEc2InstanceIpv6AddressesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceKeyNameInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceKeyNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceKeyNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName> getResourceAwsEc2InstanceKeyNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceLaunchedAtInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceLaunchedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceLaunchedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt> getResourceAwsEc2InstanceLaunchedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceSubnetIdInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceSubnetIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceSubnetIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId> getResourceAwsEc2InstanceSubnetIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceTypeInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceTypeInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType> getResourceAwsEc2InstanceTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
 
 ---
 
 ##### `resourceAwsEc2InstanceVpcIdInput`<sup>Optional</sup> <a name="resourceAwsEc2InstanceVpcIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsEc2InstanceVpcIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId> getResourceAwsEc2InstanceVpcIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
 
 ---
 
 ##### `resourceAwsIamAccessKeyCreatedAtInput`<sup>Optional</sup> <a name="resourceAwsIamAccessKeyCreatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsIamAccessKeyCreatedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt> getResourceAwsIamAccessKeyCreatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
 
 ---
 
 ##### `resourceAwsIamAccessKeyStatusInput`<sup>Optional</sup> <a name="resourceAwsIamAccessKeyStatusInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsIamAccessKeyStatusInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus> getResourceAwsIamAccessKeyStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
 
 ---
 
 ##### `resourceAwsIamAccessKeyUserNameInput`<sup>Optional</sup> <a name="resourceAwsIamAccessKeyUserNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsIamAccessKeyUserNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName> getResourceAwsIamAccessKeyUserNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
 
 ---
 
 ##### `resourceAwsS3BucketOwnerIdInput`<sup>Optional</sup> <a name="resourceAwsS3BucketOwnerIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsS3BucketOwnerIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId> getResourceAwsS3BucketOwnerIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
 
 ---
 
 ##### `resourceAwsS3BucketOwnerNameInput`<sup>Optional</sup> <a name="resourceAwsS3BucketOwnerNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput"></a>
 
 ```java
-public java.lang.Object getResourceAwsS3BucketOwnerNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName> getResourceAwsS3BucketOwnerNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
 
 ---
 
 ##### `resourceContainerImageIdInput`<sup>Optional</sup> <a name="resourceContainerImageIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput"></a>
 
 ```java
-public java.lang.Object getResourceContainerImageIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageId> getResourceContainerImageIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
 
 ---
 
 ##### `resourceContainerImageNameInput`<sup>Optional</sup> <a name="resourceContainerImageNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput"></a>
 
 ```java
-public java.lang.Object getResourceContainerImageNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageName> getResourceContainerImageNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
 
 ---
 
 ##### `resourceContainerLaunchedAtInput`<sup>Optional</sup> <a name="resourceContainerLaunchedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput"></a>
 
 ```java
-public java.lang.Object getResourceContainerLaunchedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt> getResourceContainerLaunchedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
 
 ---
 
 ##### `resourceContainerNameInput`<sup>Optional</sup> <a name="resourceContainerNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput"></a>
 
 ```java
-public java.lang.Object getResourceContainerNameInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerName> getResourceContainerNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
 
 ---
 
 ##### `resourceDetailsOtherInput`<sup>Optional</sup> <a name="resourceDetailsOtherInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput"></a>
 
 ```java
-public java.lang.Object getResourceDetailsOtherInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceDetailsOther> getResourceDetailsOtherInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
 
 ---
 
 ##### `resourceIdInput`<sup>Optional</sup> <a name="resourceIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput"></a>
 
 ```java
-public java.lang.Object getResourceIdInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceId> getResourceIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
 
 ---
 
 ##### `resourcePartitionInput`<sup>Optional</sup> <a name="resourcePartitionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput"></a>
 
 ```java
-public java.lang.Object getResourcePartitionInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourcePartition> getResourcePartitionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
 
 ---
 
 ##### `resourceRegionInput`<sup>Optional</sup> <a name="resourceRegionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput"></a>
 
 ```java
-public java.lang.Object getResourceRegionInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceRegion> getResourceRegionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
 
 ---
 
 ##### `resourceTagsInput`<sup>Optional</sup> <a name="resourceTagsInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput"></a>
 
 ```java
-public java.lang.Object getResourceTagsInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceTags> getResourceTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
 
 ---
 
 ##### `resourceTypeInput`<sup>Optional</sup> <a name="resourceTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput"></a>
 
 ```java
-public java.lang.Object getResourceTypeInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceType> getResourceTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
 
 ---
 
 ##### `severityLabelInput`<sup>Optional</sup> <a name="severityLabelInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput"></a>
 
 ```java
-public java.lang.Object getSeverityLabelInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersSeverityLabel> getSeverityLabelInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
 
 ---
 
 ##### `sourceUrlInput`<sup>Optional</sup> <a name="sourceUrlInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput"></a>
 
 ```java
-public java.lang.Object getSourceUrlInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersSourceUrl> getSourceUrlInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
 
 ---
 
 ##### `threatIntelIndicatorCategoryInput`<sup>Optional</sup> <a name="threatIntelIndicatorCategoryInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorCategoryInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory> getThreatIntelIndicatorCategoryInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
 
 ---
 
 ##### `threatIntelIndicatorLastObservedAtInput`<sup>Optional</sup> <a name="threatIntelIndicatorLastObservedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorLastObservedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt> getThreatIntelIndicatorLastObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
 
 ---
 
 ##### `threatIntelIndicatorSourceInput`<sup>Optional</sup> <a name="threatIntelIndicatorSourceInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorSourceInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource> getThreatIntelIndicatorSourceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
 
 ---
 
 ##### `threatIntelIndicatorSourceUrlInput`<sup>Optional</sup> <a name="threatIntelIndicatorSourceUrlInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorSourceUrlInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl> getThreatIntelIndicatorSourceUrlInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
 
 ---
 
 ##### `threatIntelIndicatorTypeInput`<sup>Optional</sup> <a name="threatIntelIndicatorTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorTypeInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType> getThreatIntelIndicatorTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
 
 ---
 
 ##### `threatIntelIndicatorValueInput`<sup>Optional</sup> <a name="threatIntelIndicatorValueInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput"></a>
 
 ```java
-public java.lang.Object getThreatIntelIndicatorValueInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue> getThreatIntelIndicatorValueInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
 
 ---
 
 ##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput"></a>
 
 ```java
-public java.lang.Object getTitleInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersTitle> getTitleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
 
 ---
 
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput"></a>
 
 ```java
-public java.lang.Object getTypeInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersType> getTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
 
 ---
 
 ##### `updatedAtInput`<sup>Optional</sup> <a name="updatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput"></a>
 
 ```java
-public java.lang.Object getUpdatedAtInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersUpdatedAt> getUpdatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
 
 ---
 
 ##### `userDefinedValuesInput`<sup>Optional</sup> <a name="userDefinedValuesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput"></a>
 
 ```java
-public java.lang.Object getUserDefinedValuesInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersUserDefinedValues> getUserDefinedValuesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
 
 ---
 
 ##### `verificationStateInput`<sup>Optional</sup> <a name="verificationStateInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput"></a>
 
 ```java
-public java.lang.Object getVerificationStateInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersVerificationState> getVerificationStateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
 
 ---
 
 ##### `workflowStatusInput`<sup>Optional</sup> <a name="workflowStatusInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput"></a>
 
 ```java
-public java.lang.Object getWorkflowStatusInput();
+public IResolvable|java.util.List<SecurityhubInsightFiltersWorkflowStatus> getWorkflowStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
 
 ---
 
@@ -30755,7 +30659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>></code> | *No description.* |
 
 ---
 
@@ -30786,10 +30690,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessLaunchedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>>
 
 ---
 
@@ -31062,7 +30966,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -31153,10 +31057,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProcessLaunchedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>
 
 ---
 
@@ -31282,7 +31186,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>></code> | *No description.* |
 
 ---
 
@@ -31313,10 +31217,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>>
 
 ---
 
@@ -31553,7 +31457,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a></code> | *No description.* |
 
 ---
 
@@ -31624,10 +31528,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProcessName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>
 
 ---
 
@@ -31753,7 +31657,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>></code> | *No description.* |
 
 ---
 
@@ -31784,10 +31688,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessParentPid> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>>
 
 ---
 
@@ -32047,7 +31951,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a></code> | *No description.* |
 
 ---
 
@@ -32138,10 +32042,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProcessParentPid getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>
 
 ---
 
@@ -32267,7 +32171,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>></code> | *No description.* |
 
 ---
 
@@ -32298,10 +32202,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessPath> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>>
 
 ---
 
@@ -32538,7 +32442,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a></code> | *No description.* |
 
 ---
 
@@ -32609,10 +32513,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProcessPath getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>
 
 ---
 
@@ -32738,7 +32642,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>></code> | *No description.* |
 
 ---
 
@@ -32769,10 +32673,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessPid> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>>
 
 ---
 
@@ -33032,7 +32936,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.eq">eq</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.gte">gte</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.lte">lte</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a></code> | *No description.* |
 
 ---
 
@@ -33123,10 +33027,10 @@ public java.lang.String getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProcessPid getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>
 
 ---
 
@@ -33545,7 +33449,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -33576,10 +33480,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProcessTerminatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>>
 
 ---
 
@@ -33852,7 +33756,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a></code> | *No description.* |
 
 ---
 
@@ -33943,10 +33847,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProcessTerminatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>
 
 ---
 
@@ -34072,7 +33976,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>></code> | *No description.* |
 
 ---
 
@@ -34103,10 +34007,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>>
 
 ---
 
@@ -34343,7 +34247,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a></code> | *No description.* |
 
 ---
 
@@ -34414,10 +34318,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProductArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>
 
 ---
 
@@ -34543,7 +34447,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>></code> | *No description.* |
 
 ---
 
@@ -34574,10 +34478,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductFields> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>>
 
 ---
 
@@ -34816,7 +34720,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a></code> | *No description.* |
 
 ---
 
@@ -34907,10 +34811,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProductFields getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>
 
 ---
 
@@ -35036,7 +34940,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>></code> | *No description.* |
 
 ---
 
@@ -35067,10 +34971,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersProductName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>>
 
 ---
 
@@ -35307,7 +35211,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a></code> | *No description.* |
 
 ---
 
@@ -35378,10 +35282,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersProductName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>
 
 ---
 
@@ -35507,7 +35411,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>></code> | *No description.* |
 
 ---
 
@@ -35538,10 +35442,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRecommendationText> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>>
 
 ---
 
@@ -35778,7 +35682,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a></code> | *No description.* |
 
 ---
 
@@ -35849,10 +35753,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersRecommendationText getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>
 
 ---
 
@@ -35978,7 +35882,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>></code> | *No description.* |
 
 ---
 
@@ -36009,10 +35913,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRecordState> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>>
 
 ---
 
@@ -36249,7 +36153,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a></code> | *No description.* |
 
 ---
 
@@ -36320,10 +36224,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersRecordState getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>
 
 ---
 
@@ -36449,7 +36353,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>></code> | *No description.* |
 
 ---
 
@@ -36480,10 +36384,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>>
 
 ---
 
@@ -36720,7 +36624,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -36791,10 +36695,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>
 
 ---
 
@@ -36920,7 +36824,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>></code> | *No description.* |
 
 ---
 
@@ -36951,10 +36855,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersRelatedFindingsProductArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>>
 
 ---
 
@@ -37191,7 +37095,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -37262,10 +37166,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>
 
 ---
 
@@ -37391,7 +37295,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>></code> | *No description.* |
 
 ---
 
@@ -37422,10 +37326,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>>
 
 ---
 
@@ -37662,7 +37566,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | *No description.* |
 
 ---
 
@@ -37733,10 +37637,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>
 
 ---
 
@@ -37862,7 +37766,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>></code> | *No description.* |
 
 ---
 
@@ -37893,10 +37797,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceImageId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>>
 
 ---
 
@@ -38133,7 +38037,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -38204,10 +38108,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>
 
 ---
 
@@ -38333,7 +38237,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>></code> | *No description.* |
 
 ---
 
@@ -38364,10 +38268,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>>
 
 ---
 
@@ -38602,7 +38506,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidrInput">cidrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidr">cidr</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a></code> | *No description.* |
 
 ---
 
@@ -38653,10 +38557,10 @@ public java.lang.String getCidr();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>
 
 ---
 
@@ -38782,7 +38686,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>></code> | *No description.* |
 
 ---
 
@@ -38813,10 +38717,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>>
 
 ---
 
@@ -39051,7 +38955,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidrInput">cidrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidr">cidr</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a></code> | *No description.* |
 
 ---
 
@@ -39102,10 +39006,10 @@ public java.lang.String getCidr();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>
 
 ---
 
@@ -39231,7 +39135,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>></code> | *No description.* |
 
 ---
 
@@ -39262,10 +39166,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>>
 
 ---
 
@@ -39502,7 +39406,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a></code> | *No description.* |
 
 ---
 
@@ -39573,10 +39477,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>
 
 ---
 
@@ -39995,7 +39899,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>></code> | *No description.* |
 
 ---
 
@@ -40026,10 +39930,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>>
 
 ---
 
@@ -40302,7 +40206,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -40393,10 +40297,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>
 
 ---
 
@@ -40522,7 +40426,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>></code> | *No description.* |
 
 ---
 
@@ -40553,10 +40457,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>>
 
 ---
 
@@ -40793,7 +40697,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -40864,10 +40768,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>
 
 ---
 
@@ -40993,7 +40897,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>></code> | *No description.* |
 
 ---
 
@@ -41024,10 +40928,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>>
 
 ---
 
@@ -41264,7 +41168,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a></code> | *No description.* |
 
 ---
 
@@ -41335,10 +41239,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>
 
 ---
 
@@ -41464,7 +41368,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>></code> | *No description.* |
 
 ---
 
@@ -41495,10 +41399,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>>
 
 ---
 
@@ -41735,7 +41639,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -41806,10 +41710,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>
 
 ---
 
@@ -42228,7 +42132,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -42259,10 +42163,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>>
 
 ---
 
@@ -42535,7 +42439,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -42626,10 +42530,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>
 
 ---
 
@@ -42755,7 +42659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>></code> | *No description.* |
 
 ---
 
@@ -42786,10 +42690,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>>
 
 ---
 
@@ -43026,7 +42930,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a></code> | *No description.* |
 
 ---
 
@@ -43097,10 +43001,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>
 
 ---
 
@@ -43226,7 +43130,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>></code> | *No description.* |
 
 ---
 
@@ -43257,10 +43161,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>>
 
 ---
 
@@ -43497,7 +43401,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a></code> | *No description.* |
 
 ---
 
@@ -43568,10 +43472,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>
 
 ---
 
@@ -43697,7 +43601,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>></code> | *No description.* |
 
 ---
 
@@ -43728,10 +43632,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>>
 
 ---
 
@@ -43968,7 +43872,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a></code> | *No description.* |
 
 ---
 
@@ -44039,10 +43943,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>
 
 ---
 
@@ -44168,7 +44072,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>></code> | *No description.* |
 
 ---
 
@@ -44199,10 +44103,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceAwsS3BucketOwnerName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>>
 
 ---
 
@@ -44439,7 +44343,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a></code> | *No description.* |
 
 ---
 
@@ -44510,10 +44414,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>
 
 ---
 
@@ -44639,7 +44543,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>></code> | *No description.* |
 
 ---
 
@@ -44670,10 +44574,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>>
 
 ---
 
@@ -44910,7 +44814,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a></code> | *No description.* |
 
 ---
 
@@ -44981,10 +44885,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>
 
 ---
 
@@ -45110,7 +45014,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>></code> | *No description.* |
 
 ---
 
@@ -45141,10 +45045,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerImageName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>>
 
 ---
 
@@ -45381,7 +45285,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a></code> | *No description.* |
 
 ---
 
@@ -45452,10 +45356,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>
 
 ---
 
@@ -45874,7 +45778,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>></code> | *No description.* |
 
 ---
 
@@ -45905,10 +45809,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerLaunchedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>>
 
 ---
 
@@ -46181,7 +46085,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -46272,10 +46176,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>
 
 ---
 
@@ -46401,7 +46305,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>></code> | *No description.* |
 
 ---
 
@@ -46432,10 +46336,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceContainerName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>>
 
 ---
 
@@ -46672,7 +46576,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a></code> | *No description.* |
 
 ---
 
@@ -46743,10 +46647,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceContainerName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>
 
 ---
 
@@ -46872,7 +46776,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>></code> | *No description.* |
 
 ---
 
@@ -46903,10 +46807,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceDetailsOther> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>>
 
 ---
 
@@ -47145,7 +47049,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -47236,10 +47140,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceDetailsOther getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>
 
 ---
 
@@ -47365,7 +47269,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>></code> | *No description.* |
 
 ---
 
@@ -47396,10 +47300,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>>
 
 ---
 
@@ -47636,7 +47540,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a></code> | *No description.* |
 
 ---
 
@@ -47707,10 +47611,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>
 
 ---
 
@@ -47836,7 +47740,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>></code> | *No description.* |
 
 ---
 
@@ -47867,10 +47771,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourcePartition> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>>
 
 ---
 
@@ -48107,7 +48011,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -48178,10 +48082,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourcePartition getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>
 
 ---
 
@@ -48307,7 +48211,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>></code> | *No description.* |
 
 ---
 
@@ -48338,10 +48242,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceRegion> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>>
 
 ---
 
@@ -48578,7 +48482,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -48649,10 +48553,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceRegion getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>
 
 ---
 
@@ -48778,7 +48682,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>></code> | *No description.* |
 
 ---
 
@@ -48809,10 +48713,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceTags> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>>
 
 ---
 
@@ -49051,7 +48955,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -49142,10 +49046,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceTags getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>
 
 ---
 
@@ -49271,7 +49175,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>></code> | *No description.* |
 
 ---
 
@@ -49302,10 +49206,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersResourceType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>>
 
 ---
 
@@ -49542,7 +49446,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a></code> | *No description.* |
 
 ---
 
@@ -49613,10 +49517,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersResourceType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>
 
 ---
 
@@ -49742,7 +49646,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>></code> | *No description.* |
 
 ---
 
@@ -49773,10 +49677,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersSeverityLabel> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>>
 
 ---
 
@@ -50013,7 +49917,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -50084,10 +49988,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersSeverityLabel getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>
 
 ---
 
@@ -50213,7 +50117,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>></code> | *No description.* |
 
 ---
 
@@ -50244,10 +50148,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersSourceUrl> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>>
 
 ---
 
@@ -50484,7 +50388,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -50555,10 +50459,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersSourceUrl getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>
 
 ---
 
@@ -50684,7 +50588,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>></code> | *No description.* |
 
 ---
 
@@ -50715,10 +50619,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorCategory> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>>
 
 ---
 
@@ -50955,7 +50859,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a></code> | *No description.* |
 
 ---
 
@@ -51026,10 +50930,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>
 
 ---
 
@@ -51448,7 +51352,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -51479,10 +51383,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>>
 
 ---
 
@@ -51755,7 +51659,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -51846,10 +51750,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>
 
 ---
 
@@ -51975,7 +51879,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>></code> | *No description.* |
 
 ---
 
@@ -52006,10 +51910,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSource> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>>
 
 ---
 
@@ -52246,7 +52150,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a></code> | *No description.* |
 
 ---
 
@@ -52317,10 +52221,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>
 
 ---
 
@@ -52446,7 +52350,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>></code> | *No description.* |
 
 ---
 
@@ -52477,10 +52381,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>>
 
 ---
 
@@ -52717,7 +52621,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -52788,10 +52692,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>
 
 ---
 
@@ -52917,7 +52821,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>></code> | *No description.* |
 
 ---
 
@@ -52948,10 +52852,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>>
 
 ---
 
@@ -53188,7 +53092,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a></code> | *No description.* |
 
 ---
 
@@ -53259,10 +53163,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>
 
 ---
 
@@ -53388,7 +53292,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>></code> | *No description.* |
 
 ---
 
@@ -53419,10 +53323,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersThreatIntelIndicatorValue> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>>
 
 ---
 
@@ -53659,7 +53563,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a></code> | *No description.* |
 
 ---
 
@@ -53730,10 +53634,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>
 
 ---
 
@@ -53859,7 +53763,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>></code> | *No description.* |
 
 ---
 
@@ -53890,10 +53794,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersTitle> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>>
 
 ---
 
@@ -54130,7 +54034,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a></code> | *No description.* |
 
 ---
 
@@ -54201,10 +54105,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersTitle getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>
 
 ---
 
@@ -54330,7 +54234,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>></code> | *No description.* |
 
 ---
 
@@ -54361,10 +54265,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>>
 
 ---
 
@@ -54601,7 +54505,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a></code> | *No description.* |
 
 ---
 
@@ -54672,10 +54576,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>
 
 ---
 
@@ -55094,7 +54998,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -55125,10 +55029,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersUpdatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>>
 
 ---
 
@@ -55401,7 +55305,7 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -55492,10 +55396,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersUpdatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>
 
 ---
 
@@ -55621,7 +55525,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>></code> | *No description.* |
 
 ---
 
@@ -55652,10 +55556,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersUserDefinedValues> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>>
 
 ---
 
@@ -55894,7 +55798,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a></code> | *No description.* |
 
 ---
 
@@ -55985,10 +55889,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersUserDefinedValues getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>
 
 ---
 
@@ -56114,7 +56018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>></code> | *No description.* |
 
 ---
 
@@ -56145,10 +56049,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersVerificationState> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>>
 
 ---
 
@@ -56385,7 +56289,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -56456,10 +56360,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersVerificationState getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>
 
 ---
 
@@ -56585,7 +56489,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>></code> | *No description.* |
 
 ---
 
@@ -56616,10 +56520,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubInsightFiltersWorkflowStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>>
 
 ---
 
@@ -56856,7 +56760,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -56927,10 +56831,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubInsightFiltersWorkflowStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>
 
 ---
 

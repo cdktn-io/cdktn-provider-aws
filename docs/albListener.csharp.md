@@ -307,7 +307,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.albListener.AlbListener.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.albListener.AlbListener.importFrom"></a>
@@ -361,7 +361,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.albListener.AlbListener.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -376,7 +376,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.albListener.AlbListener.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -401,12 +401,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutDefaultAction` <a name="PutDefaultAction" id="@cdktf/provider-aws.albListener.AlbListener.putDefaultAction"></a>
 
 ```csharp
-private void PutDefaultAction(object Value)
+private void PutDefaultAction(IResolvable|AlbListenerDefaultAction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.albListener.AlbListener.putDefaultAction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]
 
 ---
 
@@ -746,20 +746,20 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.defaultAction">DefaultAction</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList">AlbListenerDefaultActionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.mutualAuthentication">MutualAuthentication</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference">AlbListenerMutualAuthenticationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference">AlbListenerTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.alpnPolicyInput">AlpnPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.certificateArnInput">CertificateArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.defaultActionInput">DefaultActionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.defaultActionInput">DefaultActionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.loadBalancerArnInput">LoadBalancerArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.mutualAuthenticationInput">MutualAuthenticationInput</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication">AlbListenerMutualAuthentication</a></code> | *No description.* |
@@ -781,7 +781,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValueInput">RoutingHttpResponseAccessControlExposeHeadersHeaderValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValueInput">RoutingHttpResponseAccessControlMaxAgeHeaderValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseContentSecurityPolicyHeaderValueInput">RoutingHttpResponseContentSecurityPolicyHeaderValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabledInput">RoutingHttpResponseServerEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabledInput">RoutingHttpResponseServerEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseStrictTransportSecurityHeaderValueInput">RoutingHttpResponseStrictTransportSecurityHeaderValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXContentTypeOptionsHeaderValueInput">RoutingHttpResponseXContentTypeOptionsHeaderValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXFrameOptionsHeaderValueInput">RoutingHttpResponseXFrameOptionsHeaderValueInput</a></code> | <code>string</code> | *No description.* |
@@ -789,7 +789,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tcpIdleTimeoutSecondsInput">TcpIdleTimeoutSecondsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.alpnPolicy">AlpnPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.certificateArn">CertificateArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -812,7 +812,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValue">RoutingHttpResponseAccessControlExposeHeadersHeaderValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValue">RoutingHttpResponseAccessControlMaxAgeHeaderValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseContentSecurityPolicyHeaderValue">RoutingHttpResponseContentSecurityPolicyHeaderValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabled">RoutingHttpResponseServerEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabled">RoutingHttpResponseServerEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseStrictTransportSecurityHeaderValue">RoutingHttpResponseStrictTransportSecurityHeaderValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXContentTypeOptionsHeaderValue">RoutingHttpResponseXContentTypeOptionsHeaderValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXFrameOptionsHeaderValue">RoutingHttpResponseXFrameOptionsHeaderValue</a></code> | <code>string</code> | *No description.* |
@@ -898,20 +898,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.albListener.AlbListener.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.albListener.AlbListener.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -958,10 +958,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.albListener.AlbListener.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1028,10 +1028,10 @@ public string CertificateArnInput { get; }
 ##### `DefaultActionInput`<sup>Optional</sup> <a name="DefaultActionInput" id="@cdktf/provider-aws.albListener.AlbListener.property.defaultActionInput"></a>
 
 ```csharp
-public object DefaultActionInput { get; }
+public IResolvable|AlbListenerDefaultAction[] DefaultActionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]
 
 ---
 
@@ -1248,10 +1248,10 @@ public string RoutingHttpResponseContentSecurityPolicyHeaderValueInput { get; }
 ##### `RoutingHttpResponseServerEnabledInput`<sup>Optional</sup> <a name="RoutingHttpResponseServerEnabledInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabledInput"></a>
 
 ```csharp
-public object RoutingHttpResponseServerEnabledInput { get; }
+public bool|IResolvable RoutingHttpResponseServerEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1328,10 +1328,10 @@ public double TcpIdleTimeoutSecondsInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.albListener.AlbListener.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|AlbListenerTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>
 
 ---
 
@@ -1558,10 +1558,10 @@ public string RoutingHttpResponseContentSecurityPolicyHeaderValue { get; }
 ##### `RoutingHttpResponseServerEnabled`<sup>Required</sup> <a name="RoutingHttpResponseServerEnabled" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabled"></a>
 
 ```csharp
-public object RoutingHttpResponseServerEnabled { get; }
+public bool|IResolvable RoutingHttpResponseServerEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1663,14 +1663,14 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new AlbListenerConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object DefaultAction,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|AlbListenerDefaultAction[] DefaultAction,
     string LoadBalancerArn,
     string AlpnPolicy = null,
     string CertificateArn = null,
@@ -1694,7 +1694,7 @@ new AlbListenerConfig {
     string RoutingHttpResponseAccessControlExposeHeadersHeaderValue = null,
     string RoutingHttpResponseAccessControlMaxAgeHeaderValue = null,
     string RoutingHttpResponseContentSecurityPolicyHeaderValue = null,
-    object RoutingHttpResponseServerEnabled = null,
+    bool|IResolvable RoutingHttpResponseServerEnabled = null,
     string RoutingHttpResponseStrictTransportSecurityHeaderValue = null,
     string RoutingHttpResponseXContentTypeOptionsHeaderValue = null,
     string RoutingHttpResponseXFrameOptionsHeaderValue = null,
@@ -1710,14 +1710,14 @@ new AlbListenerConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.defaultAction">DefaultAction</a></code> | <code>object</code> | default_action block. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.defaultAction">DefaultAction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]</code> | default_action block. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.loadBalancerArn">LoadBalancerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.alpnPolicy">AlpnPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.certificateArn">CertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}. |
@@ -1741,7 +1741,7 @@ new AlbListenerConfig {
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlExposeHeadersHeaderValue">RoutingHttpResponseAccessControlExposeHeadersHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_access_control_expose_headers_header_value AlbListener#routing_http_response_access_control_expose_headers_header_value}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlMaxAgeHeaderValue">RoutingHttpResponseAccessControlMaxAgeHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_access_control_max_age_header_value AlbListener#routing_http_response_access_control_max_age_header_value}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseContentSecurityPolicyHeaderValue">RoutingHttpResponseContentSecurityPolicyHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_content_security_policy_header_value AlbListener#routing_http_response_content_security_policy_header_value}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseServerEnabled">RoutingHttpResponseServerEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_server_enabled AlbListener#routing_http_response_server_enabled}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseServerEnabled">RoutingHttpResponseServerEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_server_enabled AlbListener#routing_http_response_server_enabled}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseStrictTransportSecurityHeaderValue">RoutingHttpResponseStrictTransportSecurityHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_strict_transport_security_header_value AlbListener#routing_http_response_strict_transport_security_header_value}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseXContentTypeOptionsHeaderValue">RoutingHttpResponseXContentTypeOptionsHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_x_content_type_options_header_value AlbListener#routing_http_response_x_content_type_options_header_value}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseXFrameOptionsHeaderValue">RoutingHttpResponseXFrameOptionsHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_x_frame_options_header_value AlbListener#routing_http_response_x_frame_options_header_value}. |
@@ -1756,20 +1756,20 @@ new AlbListenerConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1816,20 +1816,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `DefaultAction`<sup>Required</sup> <a name="DefaultAction" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.defaultAction"></a>
 
 ```csharp
-public object DefaultAction { get; set; }
+public IResolvable|AlbListenerDefaultAction[] DefaultAction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]
 
 default_action block.
 
@@ -2123,10 +2123,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RoutingHttpResponseServerEnabled`<sup>Optional</sup> <a name="RoutingHttpResponseServerEnabled" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseServerEnabled"></a>
 
 ```csharp
-public object RoutingHttpResponseServerEnabled { get; set; }
+public bool|IResolvable RoutingHttpResponseServerEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#routing_http_response_server_enabled AlbListener#routing_http_response_server_enabled}.
 
@@ -2740,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new AlbListenerDefaultActionForward {
-    object TargetGroup,
+    IResolvable|AlbListenerDefaultActionForwardTargetGroup[] TargetGroup,
     AlbListenerDefaultActionForwardStickiness Stickiness = null
 };
 ```
@@ -2749,7 +2749,7 @@ new AlbListenerDefaultActionForward {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward.property.targetGroup">TargetGroup</a></code> | <code>object</code> | target_group block. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward.property.targetGroup">TargetGroup</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]</code> | target_group block. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward.property.stickiness">Stickiness</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness">AlbListenerDefaultActionForwardStickiness</a></code> | stickiness block. |
 
 ---
@@ -2757,10 +2757,10 @@ new AlbListenerDefaultActionForward {
 ##### `TargetGroup`<sup>Required</sup> <a name="TargetGroup" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward.property.targetGroup"></a>
 
 ```csharp
-public object TargetGroup { get; set; }
+public IResolvable|AlbListenerDefaultActionForwardTargetGroup[] TargetGroup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]
 
 target_group block.
 
@@ -2791,7 +2791,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new AlbListenerDefaultActionForwardStickiness {
     double Duration,
-    object Enabled = null
+    bool|IResolvable Enabled = null
 };
 ```
 
@@ -2800,7 +2800,7 @@ new AlbListenerDefaultActionForwardStickiness {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.duration">Duration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#duration AlbListener#duration}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#enabled AlbListener#enabled}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#enabled AlbListener#enabled}. |
 
 ---
 
@@ -2819,10 +2819,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#enabled AlbListener#enabled}.
 
@@ -2986,7 +2986,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AlbListenerMutualAuthentication {
     string Mode,
     string AdvertiseTrustStoreCaNames = null,
-    object IgnoreClientCertificateExpiry = null,
+    bool|IResolvable IgnoreClientCertificateExpiry = null,
     string TrustStoreArn = null
 };
 ```
@@ -2997,7 +2997,7 @@ new AlbListenerMutualAuthentication {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#mode AlbListener#mode}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.advertiseTrustStoreCaNames">AdvertiseTrustStoreCaNames</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#advertise_trust_store_ca_names AlbListener#advertise_trust_store_ca_names}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.ignoreClientCertificateExpiry">IgnoreClientCertificateExpiry</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.ignoreClientCertificateExpiry">IgnoreClientCertificateExpiry</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.trustStoreArn">TrustStoreArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#trust_store_arn AlbListener#trust_store_arn}. |
 
 ---
@@ -3029,10 +3029,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IgnoreClientCertificateExpiry`<sup>Optional</sup> <a name="IgnoreClientCertificateExpiry" id="@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.ignoreClientCertificateExpiry"></a>
 
 ```csharp
-public object IgnoreClientCertificateExpiry { get; set; }
+public bool|IResolvable IgnoreClientCertificateExpiry { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}.
 
@@ -4634,12 +4634,12 @@ private void PutStickiness(AlbListenerDefaultActionForwardStickiness Value)
 ##### `PutTargetGroup` <a name="PutTargetGroup" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.putTargetGroup"></a>
 
 ```csharp
-private void PutTargetGroup(object Value)
+private void PutTargetGroup(IResolvable|AlbListenerDefaultActionForwardTargetGroup[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.putTargetGroup.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]
 
 ---
 
@@ -4659,7 +4659,7 @@ private void ResetStickiness()
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.stickiness">Stickiness</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference">AlbListenerDefaultActionForwardStickinessOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.targetGroup">TargetGroup</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList">AlbListenerDefaultActionForwardTargetGroupList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.stickinessInput">StickinessInput</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness">AlbListenerDefaultActionForwardStickiness</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.targetGroupInput">TargetGroupInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.targetGroupInput">TargetGroupInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward">AlbListenerDefaultActionForward</a></code> | *No description.* |
 
 ---
@@ -4721,10 +4721,10 @@ public AlbListenerDefaultActionForwardStickiness StickinessInput { get; }
 ##### `TargetGroupInput`<sup>Optional</sup> <a name="TargetGroupInput" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference.property.targetGroupInput"></a>
 
 ```csharp
-public object TargetGroupInput { get; }
+public IResolvable|AlbListenerDefaultActionForwardTargetGroup[] TargetGroupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]
 
 ---
 
@@ -4957,9 +4957,9 @@ private void ResetEnabled()
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.durationInput">DurationInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.duration">Duration</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness">AlbListenerDefaultActionForwardStickiness</a></code> | *No description.* |
 
 ---
@@ -5001,10 +5001,10 @@ public double DurationInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5021,10 +5021,10 @@ public double Duration { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5160,7 +5160,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]</code> | *No description.* |
 
 ---
 
@@ -5191,10 +5191,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbListenerDefaultActionForwardTargetGroup[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>[]
 
 ---
 
@@ -5438,7 +5438,7 @@ private void ResetWeight()
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.weightInput">WeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.weight">Weight</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a></code> | *No description.* |
 
 ---
 
@@ -5509,10 +5509,10 @@ public double Weight { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbListenerDefaultActionForwardTargetGroup InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>
 
 ---
 
@@ -5638,7 +5638,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]</code> | *No description.* |
 
 ---
 
@@ -5669,10 +5669,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbListenerDefaultAction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]
 
 ---
 
@@ -6035,7 +6035,7 @@ private void ResetTargetGroupArn()
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.order">Order</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.targetGroupArn">TargetGroupArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a></code> | *No description.* |
 
 ---
 
@@ -6226,10 +6226,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbListenerDefaultAction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>
 
 ---
 
@@ -6882,11 +6882,11 @@ private void ResetTrustStoreArn()
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.advertiseTrustStoreCaNamesInput">AdvertiseTrustStoreCaNamesInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.ignoreClientCertificateExpiryInput">IgnoreClientCertificateExpiryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.ignoreClientCertificateExpiryInput">IgnoreClientCertificateExpiryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.trustStoreArnInput">TrustStoreArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.advertiseTrustStoreCaNames">AdvertiseTrustStoreCaNames</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.ignoreClientCertificateExpiry">IgnoreClientCertificateExpiry</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.ignoreClientCertificateExpiry">IgnoreClientCertificateExpiry</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.trustStoreArn">TrustStoreArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication">AlbListenerMutualAuthentication</a></code> | *No description.* |
@@ -6930,10 +6930,10 @@ public string AdvertiseTrustStoreCaNamesInput { get; }
 ##### `IgnoreClientCertificateExpiryInput`<sup>Optional</sup> <a name="IgnoreClientCertificateExpiryInput" id="@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.ignoreClientCertificateExpiryInput"></a>
 
 ```csharp
-public object IgnoreClientCertificateExpiryInput { get; }
+public bool|IResolvable IgnoreClientCertificateExpiryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6970,10 +6970,10 @@ public string AdvertiseTrustStoreCaNames { get; }
 ##### `IgnoreClientCertificateExpiry`<sup>Required</sup> <a name="IgnoreClientCertificateExpiry" id="@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference.property.ignoreClientCertificateExpiry"></a>
 
 ```csharp
-public object IgnoreClientCertificateExpiry { get; }
+public bool|IResolvable IgnoreClientCertificateExpiry { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7236,7 +7236,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -7307,10 +7307,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AlbListenerTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>
 
 ---
 

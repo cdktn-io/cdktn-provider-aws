@@ -285,7 +285,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.importFrom"></a>
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -379,12 +379,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutDestinationFlowConfig` <a name="PutDestinationFlowConfig" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.putDestinationFlowConfig"></a>
 
 ```csharp
-private void PutDestinationFlowConfig(object Value)
+private void PutDestinationFlowConfig(IResolvable|AppflowFlowDestinationFlowConfig[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.putDestinationFlowConfig.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]
 
 ---
 
@@ -415,12 +415,12 @@ private void PutSourceFlowConfig(AppflowFlowSourceFlowConfig Value)
 ##### `PutTask` <a name="PutTask" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.putTask"></a>
 
 ```csharp
-private void PutTask(object Value)
+private void PutTask(IResolvable|AppflowFlowTask[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.putTask.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]
 
 ---
 
@@ -604,13 +604,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfig">DestinationFlowConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList">AppflowFlowDestinationFlowConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.flowStatus">FlowStatus</a></code> | <code>string</code> | *No description.* |
@@ -619,7 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.task">Task</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList">AppflowFlowTaskList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.triggerConfig">TriggerConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference">AppflowFlowTriggerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfigInput">DestinationFlowConfigInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfigInput">DestinationFlowConfigInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.kmsArnInput">KmsArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.metadataCatalogConfigInput">MetadataCatalogConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowMetadataCatalogConfig">AppflowFlowMetadataCatalogConfig</a></code> | *No description.* |
@@ -628,7 +628,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.sourceFlowConfigInput">SourceFlowConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig">AppflowFlowSourceFlowConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.taskInput">TaskInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.taskInput">TaskInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.triggerConfigInput">TriggerConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig">AppflowFlowTriggerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -715,20 +715,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -775,10 +775,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -865,10 +865,10 @@ public string DescriptionInput { get; }
 ##### `DestinationFlowConfigInput`<sup>Optional</sup> <a name="DestinationFlowConfigInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfigInput"></a>
 
 ```csharp
-public object DestinationFlowConfigInput { get; }
+public IResolvable|AppflowFlowDestinationFlowConfig[] DestinationFlowConfigInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]
 
 ---
 
@@ -955,10 +955,10 @@ public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
 ##### `TaskInput`<sup>Optional</sup> <a name="TaskInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.taskInput"></a>
 
 ```csharp
-public object TaskInput { get; }
+public IResolvable|AppflowFlowTask[] TaskInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]
 
 ---
 
@@ -1070,17 +1070,17 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new AppflowFlowConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object DestinationFlowConfig,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|AppflowFlowDestinationFlowConfig[] DestinationFlowConfig,
     string Name,
     AppflowFlowSourceFlowConfig SourceFlowConfig,
-    object Task,
+    IResolvable|AppflowFlowTask[] Task,
     AppflowFlowTriggerConfig TriggerConfig,
     string Description = null,
     string Id = null,
@@ -1096,17 +1096,17 @@ new AppflowFlowConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig">DestinationFlowConfig</a></code> | <code>object</code> | destination_flow_config block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig">DestinationFlowConfig</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]</code> | destination_flow_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#name AppflowFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.sourceFlowConfig">SourceFlowConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig">AppflowFlowSourceFlowConfig</a></code> | source_flow_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task">Task</a></code> | <code>object</code> | task block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task">Task</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]</code> | task block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.triggerConfig">TriggerConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig">AppflowFlowTriggerConfig</a></code> | trigger_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#description AppflowFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#id AppflowFlow#id}. |
@@ -1121,20 +1121,20 @@ new AppflowFlowConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1181,20 +1181,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `DestinationFlowConfig`<sup>Required</sup> <a name="DestinationFlowConfig" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig"></a>
 
 ```csharp
-public object DestinationFlowConfig { get; set; }
+public IResolvable|AppflowFlowDestinationFlowConfig[] DestinationFlowConfig { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]
 
 destination_flow_config block.
 
@@ -1231,10 +1231,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Task`<sup>Required</sup> <a name="Task" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task"></a>
 
 ```csharp
-public object Task { get; set; }
+public IResolvable|AppflowFlowTask[] Task { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]
 
 task block.
 
@@ -1749,7 +1749,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -1759,7 +1759,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnecto
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -1790,10 +1790,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -1903,7 +1903,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -1913,7 +1913,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErr
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -1944,10 +1944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2011,7 +2011,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -2021,7 +2021,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeError
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2052,10 +2052,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2132,7 +2132,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -2142,7 +2142,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHa
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2173,10 +2173,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2268,7 +2268,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -2278,7 +2278,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorH
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2309,10 +2309,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2391,7 +2391,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputForm
     AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig AggregationConfig = null,
     string FileType = null,
     AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig PrefixConfig = null,
-    object PreserveSourceDataTyping = null
+    bool|IResolvable PreserveSourceDataTyping = null
 };
 ```
 
@@ -2402,7 +2402,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputForm
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.aggregationConfig">AggregationConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | aggregation_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.fileType">FileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.prefixConfig">PrefixConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | prefix_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
 
 ---
 
@@ -2449,10 +2449,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PreserveSourceDataTyping`<sup>Optional</sup> <a name="PreserveSourceDataTyping" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping"></a>
 
 ```csharp
-public object PreserveSourceDataTyping { get; set; }
+public bool|IResolvable PreserveSourceDataTyping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}.
 
@@ -2664,7 +2664,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -2674,7 +2674,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErro
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2705,10 +2705,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2816,7 +2816,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -2826,7 +2826,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorH
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2857,10 +2857,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2998,7 +2998,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -3008,7 +3008,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeError
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3039,10 +3039,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -3352,7 +3352,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig {
     string BucketName = null,
     string BucketPrefix = null,
-    object FailOnFirstDestinationError = null
+    bool|IResolvable FailOnFirstDestinationError = null
 };
 ```
 
@@ -3362,7 +3362,7 @@ new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHa
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3393,10 +3393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FailOnFirstDestinationError`<sup>Optional</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; set; }
+public bool|IResolvable FailOnFirstDestinationError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -4236,8 +4236,8 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce {
     string Object,
     string DataTransferApi = null,
-    object EnableDynamicFieldUpdate = null,
-    object IncludeDeletedRecords = null
+    bool|IResolvable EnableDynamicFieldUpdate = null,
+    bool|IResolvable IncludeDeletedRecords = null
 };
 ```
 
@@ -4247,8 +4247,8 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.dataTransferApi">DataTransferApi</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#data_transfer_api AppflowFlow#data_transfer_api}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate">EnableDynamicFieldUpdate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords">IncludeDeletedRecords</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate">EnableDynamicFieldUpdate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords">IncludeDeletedRecords</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}. |
 
 ---
 
@@ -4279,10 +4279,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableDynamicFieldUpdate`<sup>Optional</sup> <a name="EnableDynamicFieldUpdate" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate"></a>
 
 ```csharp
-public object EnableDynamicFieldUpdate { get; set; }
+public bool|IResolvable EnableDynamicFieldUpdate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}.
 
@@ -4291,10 +4291,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IncludeDeletedRecords`<sup>Optional</sup> <a name="IncludeDeletedRecords" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords"></a>
 
 ```csharp
-public object IncludeDeletedRecords { get; set; }
+public bool|IResolvable IncludeDeletedRecords { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}.
 
@@ -4566,9 +4566,9 @@ using HashiCorp.Cdktf.Providers.Aws;
 new AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva {
     string Object,
     string DocumentType = null,
-    object IncludeAllVersions = null,
-    object IncludeRenditions = null,
-    object IncludeSourceFiles = null
+    bool|IResolvable IncludeAllVersions = null,
+    bool|IResolvable IncludeRenditions = null,
+    bool|IResolvable IncludeSourceFiles = null
 };
 ```
 
@@ -4578,9 +4578,9 @@ new AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.object">Object</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.documentType">DocumentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#document_type AppflowFlow#document_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions">IncludeAllVersions</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions">IncludeRenditions</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles">IncludeSourceFiles</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions">IncludeAllVersions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions">IncludeRenditions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles">IncludeSourceFiles</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}. |
 
 ---
 
@@ -4611,10 +4611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IncludeAllVersions`<sup>Optional</sup> <a name="IncludeAllVersions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions"></a>
 
 ```csharp
-public object IncludeAllVersions { get; set; }
+public bool|IResolvable IncludeAllVersions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}.
 
@@ -4623,10 +4623,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IncludeRenditions`<sup>Optional</sup> <a name="IncludeRenditions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions"></a>
 
 ```csharp
-public object IncludeRenditions { get; set; }
+public bool|IResolvable IncludeRenditions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}.
 
@@ -4635,10 +4635,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IncludeSourceFiles`<sup>Optional</sup> <a name="IncludeSourceFiles" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles"></a>
 
 ```csharp
-public object IncludeSourceFiles { get; set; }
+public bool|IResolvable IncludeSourceFiles { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}.
 
@@ -4685,7 +4685,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new AppflowFlowTask {
     string TaskType,
-    object ConnectorOperator = null,
+    IResolvable|AppflowFlowTaskConnectorOperator[] ConnectorOperator = null,
     string DestinationField = null,
     string[] SourceFields = null,
     System.Collections.Generic.IDictionary<string, string> TaskProperties = null
@@ -4697,7 +4697,7 @@ new AppflowFlowTask {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskType">TaskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator">ConnectorOperator</a></code> | <code>object</code> | connector_operator block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator">ConnectorOperator</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]</code> | connector_operator block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.destinationField">DestinationField</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.sourceFields">SourceFields</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskProperties">TaskProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}. |
@@ -4719,10 +4719,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ConnectorOperator`<sup>Optional</sup> <a name="ConnectorOperator" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator"></a>
 
 ```csharp
-public object ConnectorOperator { get; set; }
+public IResolvable|AppflowFlowTaskConnectorOperator[] ConnectorOperator { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]
 
 connector_operator block.
 
@@ -5441,10 +5441,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -5496,10 +5496,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5526,10 +5526,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6477,10 +6477,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -6532,10 +6532,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6562,10 +6562,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7126,10 +7126,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -7181,10 +7181,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7211,10 +7211,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8024,10 +8024,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -8079,10 +8079,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8109,10 +8109,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9468,10 +9468,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -9523,10 +9523,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9553,10 +9553,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10853,9 +10853,9 @@ private void ResetPreserveSourceDataTyping()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.aggregationConfigInput">AggregationConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileTypeInput">FileTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.prefixConfigInput">PrefixConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput">PreserveSourceDataTypingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput">PreserveSourceDataTypingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileType">FileType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig</a></code> | *No description.* |
 
 ---
@@ -10937,10 +10937,10 @@ public AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputF
 ##### `PreserveSourceDataTypingInput`<sup>Optional</sup> <a name="PreserveSourceDataTypingInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput"></a>
 
 ```csharp
-public object PreserveSourceDataTypingInput { get; }
+public bool|IResolvable PreserveSourceDataTypingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10957,10 +10957,10 @@ public string FileType { get; }
 ##### `PreserveSourceDataTyping`<sup>Required</sup> <a name="PreserveSourceDataTyping" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping"></a>
 
 ```csharp
-public object PreserveSourceDataTyping { get; }
+public bool|IResolvable PreserveSourceDataTyping { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11544,10 +11544,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -11599,10 +11599,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11629,10 +11629,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12280,10 +12280,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -12335,10 +12335,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12365,10 +12365,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13336,10 +13336,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -13391,10 +13391,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13421,10 +13421,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15333,10 +15333,10 @@ private void ResetFailOnFirstDestinationError()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">FailOnFirstDestinationErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">FailOnFirstDestinationError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -15388,10 +15388,10 @@ public string BucketPrefixInput { get; }
 ##### `FailOnFirstDestinationErrorInput`<sup>Optional</sup> <a name="FailOnFirstDestinationErrorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```csharp
-public object FailOnFirstDestinationErrorInput { get; }
+public bool|IResolvable FailOnFirstDestinationErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15418,10 +15418,10 @@ public string BucketPrefix { get; }
 ##### `FailOnFirstDestinationError`<sup>Required</sup> <a name="FailOnFirstDestinationError" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```csharp
-public object FailOnFirstDestinationError { get; }
+public bool|IResolvable FailOnFirstDestinationError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15928,7 +15928,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -15959,10 +15959,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppflowFlowDestinationFlowConfig[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>[]
 
 ---
 
@@ -16230,7 +16230,7 @@ private void ResetConnectorProfileName()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.apiVersion">ApiVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorProfileName">ConnectorProfileName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorType">ConnectorType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a></code> | *No description.* |
 
 ---
 
@@ -16341,10 +16341,10 @@ public string ConnectorType { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppflowFlowDestinationFlowConfig InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>
 
 ---
 
@@ -21331,12 +21331,12 @@ private void ResetIncludeDeletedRecords()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.dataTransferApiInput">DataTransferApiInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdateInput">EnableDynamicFieldUpdateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecordsInput">IncludeDeletedRecordsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdateInput">EnableDynamicFieldUpdateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecordsInput">IncludeDeletedRecordsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.objectInput">ObjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.dataTransferApi">DataTransferApi</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdate">EnableDynamicFieldUpdate</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecords">IncludeDeletedRecords</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdate">EnableDynamicFieldUpdate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecords">IncludeDeletedRecords</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.object">Object</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce">AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce</a></code> | *No description.* |
 
@@ -21379,20 +21379,20 @@ public string DataTransferApiInput { get; }
 ##### `EnableDynamicFieldUpdateInput`<sup>Optional</sup> <a name="EnableDynamicFieldUpdateInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdateInput"></a>
 
 ```csharp
-public object EnableDynamicFieldUpdateInput { get; }
+public bool|IResolvable EnableDynamicFieldUpdateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeDeletedRecordsInput`<sup>Optional</sup> <a name="IncludeDeletedRecordsInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecordsInput"></a>
 
 ```csharp
-public object IncludeDeletedRecordsInput { get; }
+public bool|IResolvable IncludeDeletedRecordsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21419,20 +21419,20 @@ public string DataTransferApi { get; }
 ##### `EnableDynamicFieldUpdate`<sup>Required</sup> <a name="EnableDynamicFieldUpdate" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdate"></a>
 
 ```csharp
-public object EnableDynamicFieldUpdate { get; }
+public bool|IResolvable EnableDynamicFieldUpdate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeDeletedRecords`<sup>Required</sup> <a name="IncludeDeletedRecords" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecords"></a>
 
 ```csharp
-public object IncludeDeletedRecords { get; }
+public bool|IResolvable IncludeDeletedRecords { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23677,14 +23677,14 @@ private void ResetIncludeSourceFiles()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.documentTypeInput">DocumentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersionsInput">IncludeAllVersionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditionsInput">IncludeRenditionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFilesInput">IncludeSourceFilesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersionsInput">IncludeAllVersionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditionsInput">IncludeRenditionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFilesInput">IncludeSourceFilesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.objectInput">ObjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.documentType">DocumentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersions">IncludeAllVersions</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditions">IncludeRenditions</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFiles">IncludeSourceFiles</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersions">IncludeAllVersions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditions">IncludeRenditions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFiles">IncludeSourceFiles</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.object">Object</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva">AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva</a></code> | *No description.* |
 
@@ -23727,30 +23727,30 @@ public string DocumentTypeInput { get; }
 ##### `IncludeAllVersionsInput`<sup>Optional</sup> <a name="IncludeAllVersionsInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersionsInput"></a>
 
 ```csharp
-public object IncludeAllVersionsInput { get; }
+public bool|IResolvable IncludeAllVersionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeRenditionsInput`<sup>Optional</sup> <a name="IncludeRenditionsInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditionsInput"></a>
 
 ```csharp
-public object IncludeRenditionsInput { get; }
+public bool|IResolvable IncludeRenditionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeSourceFilesInput`<sup>Optional</sup> <a name="IncludeSourceFilesInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFilesInput"></a>
 
 ```csharp
-public object IncludeSourceFilesInput { get; }
+public bool|IResolvable IncludeSourceFilesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23777,30 +23777,30 @@ public string DocumentType { get; }
 ##### `IncludeAllVersions`<sup>Required</sup> <a name="IncludeAllVersions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersions"></a>
 
 ```csharp
-public object IncludeAllVersions { get; }
+public bool|IResolvable IncludeAllVersions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeRenditions`<sup>Required</sup> <a name="IncludeRenditions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditions"></a>
 
 ```csharp
-public object IncludeRenditions { get; }
+public bool|IResolvable IncludeRenditions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeSourceFiles`<sup>Required</sup> <a name="IncludeSourceFiles" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFiles"></a>
 
 ```csharp
-public object IncludeSourceFiles { get; }
+public bool|IResolvable IncludeSourceFiles { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24217,7 +24217,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]</code> | *No description.* |
 
 ---
 
@@ -24248,10 +24248,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppflowFlowTaskConnectorOperator[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]
 
 ---
 
@@ -24628,7 +24628,7 @@ private void ResetZendesk()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.trendmicro">Trendmicro</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.veeva">Veeva</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.zendesk">Zendesk</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a></code> | *No description.* |
 
 ---
 
@@ -24979,10 +24979,10 @@ public string Zendesk { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppflowFlowTaskConnectorOperator InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>
 
 ---
 
@@ -25108,7 +25108,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]</code> | *No description.* |
 
 ---
 
@@ -25139,10 +25139,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppflowFlowTask[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>[]
 
 ---
 
@@ -25376,12 +25376,12 @@ Returns a reversible string representation.
 ##### `PutConnectorOperator` <a name="PutConnectorOperator" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.putConnectorOperator"></a>
 
 ```csharp
-private void PutConnectorOperator(object Value)
+private void PutConnectorOperator(IResolvable|AppflowFlowTaskConnectorOperator[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.putConnectorOperator.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]
 
 ---
 
@@ -25417,7 +25417,7 @@ private void ResetTaskProperties()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperator">ConnectorOperator</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList">AppflowFlowTaskConnectorOperatorList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperatorInput">ConnectorOperatorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperatorInput">ConnectorOperatorInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.destinationFieldInput">DestinationFieldInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFieldsInput">SourceFieldsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskPropertiesInput">TaskPropertiesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -25426,7 +25426,7 @@ private void ResetTaskProperties()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFields">SourceFields</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskProperties">TaskProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskType">TaskType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a></code> | *No description.* |
 
 ---
 
@@ -25467,10 +25467,10 @@ public AppflowFlowTaskConnectorOperatorList ConnectorOperator { get; }
 ##### `ConnectorOperatorInput`<sup>Optional</sup> <a name="ConnectorOperatorInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperatorInput"></a>
 
 ```csharp
-public object ConnectorOperatorInput { get; }
+public IResolvable|AppflowFlowTaskConnectorOperator[] ConnectorOperatorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>[]
 
 ---
 
@@ -25557,10 +25557,10 @@ public string TaskType { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppflowFlowTask InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>
 
 ---
 

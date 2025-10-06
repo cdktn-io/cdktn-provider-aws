@@ -12,26 +12,19 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRule;
 
 SecurityhubAutomationRule.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .description(java.lang.String)
     .ruleName(java.lang.String)
     .ruleOrder(java.lang.Number)
-//  .actions(IResolvable)
-//  .actions(java.util.List<SecurityhubAutomationRuleActions>)
-//  .criteria(IResolvable)
-//  .criteria(java.util.List<SecurityhubAutomationRuleCriteria>)
-//  .isTerminal(java.lang.Boolean)
-//  .isTerminal(IResolvable)
+//  .actions(IResolvable|java.util.List<SecurityhubAutomationRuleActions>)
+//  .criteria(IResolvable|java.util.List<SecurityhubAutomationRuleCriteria>)
+//  .isTerminal(java.lang.Boolean|IResolvable)
 //  .region(java.lang.String)
 //  .ruleStatus(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
@@ -42,19 +35,19 @@ SecurityhubAutomationRule.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleName">ruleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions">actions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | actions block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria">criteria</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | criteria block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions">actions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | actions block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria">criteria</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | criteria block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleStatus">ruleStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
@@ -81,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -147,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
 
 actions block.
 
@@ -157,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `criteria`<sup>Optional</sup> <a name="criteria" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
 
 criteria block.
 
@@ -167,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `isTerminal`<sup>Optional</sup> <a name="isTerminal" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
@@ -434,7 +427,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.importFrom"></a>
@@ -490,7 +483,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -505,7 +498,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -530,24 +523,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putActions` <a name="putActions" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putActions"></a>
 
 ```java
-public void putActions(IResolvable OR java.util.List<SecurityhubAutomationRuleActions> value)
+public void putActions(IResolvable|java.util.List<SecurityhubAutomationRuleActions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putActions.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
 
 ---
 
 ##### `putCriteria` <a name="putCriteria" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putCriteria"></a>
 
 ```java
-public void putCriteria(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteria> value)
+public void putCriteria(IResolvable|java.util.List<SecurityhubAutomationRuleCriteria> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.putCriteria.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
 
 ---
 
@@ -713,29 +706,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList">SecurityhubAutomationRuleActionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.arn">arn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteria">criteria</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList">SecurityhubAutomationRuleCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsAll">tagsAll</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput">actionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput">criteriaInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput">actionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput">criteriaInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput">isTerminalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput">isTerminalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleNameInput">ruleNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleOrderInput">ruleOrderInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleStatusInput">ruleStatusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleName">ruleName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -819,20 +812,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -879,10 +872,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -939,20 +932,20 @@ public StringMap getTagsAll();
 ##### `actionsInput`<sup>Optional</sup> <a name="actionsInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.actionsInput"></a>
 
 ```java
-public java.lang.Object getActionsInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActions> getActionsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
 
 ---
 
 ##### `criteriaInput`<sup>Optional</sup> <a name="criteriaInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.criteriaInput"></a>
 
 ```java
-public java.lang.Object getCriteriaInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteria> getCriteriaInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
 
 ---
 
@@ -969,10 +962,10 @@ public java.lang.String getDescriptionInput();
 ##### `isTerminalInput`<sup>Optional</sup> <a name="isTerminalInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminalInput"></a>
 
 ```java
-public java.lang.Object getIsTerminalInput();
+public java.lang.Boolean|IResolvable getIsTerminalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1039,10 +1032,10 @@ public java.lang.String getDescription();
 ##### `isTerminal`<sup>Required</sup> <a name="isTerminal" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.property.isTerminal"></a>
 
 ```java
-public java.lang.Object getIsTerminal();
+public java.lang.Boolean|IResolvable getIsTerminal();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1124,8 +1117,7 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleActions;
 
 SecurityhubAutomationRuleActions.builder()
-//  .findingFieldsUpdate(IResolvable)
-//  .findingFieldsUpdate(java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate>)
+//  .findingFieldsUpdate(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate>)
 //  .type(java.lang.String)
     .build();
 ```
@@ -1134,7 +1126,7 @@ SecurityhubAutomationRuleActions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | finding_fields_update block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | finding_fields_update block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
 
 ---
@@ -1142,10 +1134,10 @@ SecurityhubAutomationRuleActions.builder()
 ##### `findingFieldsUpdate`<sup>Optional</sup> <a name="findingFieldsUpdate" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate"></a>
 
 ```java
-public java.lang.Object getFindingFieldsUpdate();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate> getFindingFieldsUpdate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
 
 finding_fields_update block.
 
@@ -1175,17 +1167,13 @@ import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.Securityhub
 SecurityhubAutomationRuleActionsFindingFieldsUpdate.builder()
 //  .confidence(java.lang.Number)
 //  .criticality(java.lang.Number)
-//  .note(IResolvable)
-//  .note(java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote>)
-//  .relatedFindings(IResolvable)
-//  .relatedFindings(java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings>)
-//  .severity(IResolvable)
-//  .severity(java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity>)
+//  .note(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote>)
+//  .relatedFindings(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings>)
+//  .severity(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity>)
 //  .types(java.util.List<java.lang.String>)
 //  .userDefinedFields(java.util.Map<java.lang.String, java.lang.String>)
 //  .verificationState(java.lang.String)
-//  .workflow(IResolvable)
-//  .workflow(java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow>)
+//  .workflow(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow>)
     .build();
 ```
 
@@ -1195,13 +1183,13 @@ SecurityhubAutomationRuleActionsFindingFieldsUpdate.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">confidence</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">criticality</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | note block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">relatedFindings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | related_findings block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | severity block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | note block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">relatedFindings</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | related_findings block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | severity block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">types</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">userDefinedFields</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">verificationState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | workflow block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | workflow block. |
 
 ---
 
@@ -1232,10 +1220,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `note`<sup>Optional</sup> <a name="note" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note"></a>
 
 ```java
-public java.lang.Object getNote();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote> getNote();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
 
 note block.
 
@@ -1246,10 +1234,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `relatedFindings`<sup>Optional</sup> <a name="relatedFindings" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings"></a>
 
 ```java
-public java.lang.Object getRelatedFindings();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings> getRelatedFindings();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
 
 related_findings block.
 
@@ -1260,10 +1248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severity`<sup>Optional</sup> <a name="severity" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity"></a>
 
 ```java
-public java.lang.Object getSeverity();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity> getSeverity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
 
 severity block.
 
@@ -1310,10 +1298,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workflow`<sup>Optional</sup> <a name="workflow" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow"></a>
 
 ```java
-public java.lang.Object getWorkflow();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow> getWorkflow();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
 
 workflow block.
 
@@ -1502,26 +1490,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleConfig;
 
 SecurityhubAutomationRuleConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .description(java.lang.String)
     .ruleName(java.lang.String)
     .ruleOrder(java.lang.Number)
-//  .actions(IResolvable)
-//  .actions(java.util.List<SecurityhubAutomationRuleActions>)
-//  .criteria(IResolvable)
-//  .criteria(java.util.List<SecurityhubAutomationRuleCriteria>)
-//  .isTerminal(java.lang.Boolean)
-//  .isTerminal(IResolvable)
+//  .actions(IResolvable|java.util.List<SecurityhubAutomationRuleActions>)
+//  .criteria(IResolvable|java.util.List<SecurityhubAutomationRuleCriteria>)
+//  .isTerminal(java.lang.Boolean|IResolvable)
 //  .region(java.lang.String)
 //  .ruleStatus(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
@@ -1532,19 +1513,19 @@ SecurityhubAutomationRuleConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">ruleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | actions block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | criteria block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | actions block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | criteria block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">ruleStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
@@ -1554,20 +1535,20 @@ SecurityhubAutomationRuleConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1614,10 +1595,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1660,10 +1641,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions"></a>
 
 ```java
-public java.lang.Object getActions();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActions> getActions();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
 
 actions block.
 
@@ -1674,10 +1655,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `criteria`<sup>Optional</sup> <a name="criteria" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria"></a>
 
 ```java
-public java.lang.Object getCriteria();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteria> getCriteria();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
 
 criteria block.
 
@@ -1688,10 +1669,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `isTerminal`<sup>Optional</sup> <a name="isTerminal" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal"></a>
 
 ```java
-public java.lang.Object getIsTerminal();
+public java.lang.Boolean|IResolvable getIsTerminal();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
@@ -1743,82 +1724,44 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleCriteria;
 
 SecurityhubAutomationRuleCriteria.builder()
-//  .awsAccountId(IResolvable)
-//  .awsAccountId(java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId>)
-//  .awsAccountName(IResolvable)
-//  .awsAccountName(java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName>)
-//  .companyName(IResolvable)
-//  .companyName(java.util.List<SecurityhubAutomationRuleCriteriaCompanyName>)
-//  .complianceAssociatedStandardsId(IResolvable)
-//  .complianceAssociatedStandardsId(java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId>)
-//  .complianceSecurityControlId(IResolvable)
-//  .complianceSecurityControlId(java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId>)
-//  .complianceStatus(IResolvable)
-//  .complianceStatus(java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus>)
-//  .confidence(IResolvable)
-//  .confidence(java.util.List<SecurityhubAutomationRuleCriteriaConfidence>)
-//  .createdAt(IResolvable)
-//  .createdAt(java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt>)
-//  .criticality(IResolvable)
-//  .criticality(java.util.List<SecurityhubAutomationRuleCriteriaCriticality>)
-//  .description(IResolvable)
-//  .description(java.util.List<SecurityhubAutomationRuleCriteriaDescription>)
-//  .firstObservedAt(IResolvable)
-//  .firstObservedAt(java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt>)
-//  .generatorId(IResolvable)
-//  .generatorId(java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId>)
-//  .id(IResolvable)
-//  .id(java.util.List<SecurityhubAutomationRuleCriteriaId>)
-//  .lastObservedAt(IResolvable)
-//  .lastObservedAt(java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt>)
-//  .noteText(IResolvable)
-//  .noteText(java.util.List<SecurityhubAutomationRuleCriteriaNoteText>)
-//  .noteUpdatedAt(IResolvable)
-//  .noteUpdatedAt(java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt>)
-//  .noteUpdatedBy(IResolvable)
-//  .noteUpdatedBy(java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy>)
-//  .productArn(IResolvable)
-//  .productArn(java.util.List<SecurityhubAutomationRuleCriteriaProductArn>)
-//  .productName(IResolvable)
-//  .productName(java.util.List<SecurityhubAutomationRuleCriteriaProductName>)
-//  .recordState(IResolvable)
-//  .recordState(java.util.List<SecurityhubAutomationRuleCriteriaRecordState>)
-//  .relatedFindingsId(IResolvable)
-//  .relatedFindingsId(java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId>)
-//  .relatedFindingsProductArn(IResolvable)
-//  .relatedFindingsProductArn(java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn>)
-//  .resourceApplicationArn(IResolvable)
-//  .resourceApplicationArn(java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn>)
-//  .resourceApplicationName(IResolvable)
-//  .resourceApplicationName(java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName>)
-//  .resourceDetailsOther(IResolvable)
-//  .resourceDetailsOther(java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther>)
-//  .resourceId(IResolvable)
-//  .resourceId(java.util.List<SecurityhubAutomationRuleCriteriaResourceId>)
-//  .resourcePartition(IResolvable)
-//  .resourcePartition(java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition>)
-//  .resourceRegion(IResolvable)
-//  .resourceRegion(java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion>)
-//  .resourceTags(IResolvable)
-//  .resourceTags(java.util.List<SecurityhubAutomationRuleCriteriaResourceTags>)
-//  .resourceType(IResolvable)
-//  .resourceType(java.util.List<SecurityhubAutomationRuleCriteriaResourceType>)
-//  .severityLabel(IResolvable)
-//  .severityLabel(java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel>)
-//  .sourceUrl(IResolvable)
-//  .sourceUrl(java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl>)
-//  .title(IResolvable)
-//  .title(java.util.List<SecurityhubAutomationRuleCriteriaTitle>)
-//  .type(IResolvable)
-//  .type(java.util.List<SecurityhubAutomationRuleCriteriaType>)
-//  .updatedAt(IResolvable)
-//  .updatedAt(java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt>)
-//  .userDefinedFields(IResolvable)
-//  .userDefinedFields(java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields>)
-//  .verificationState(IResolvable)
-//  .verificationState(java.util.List<SecurityhubAutomationRuleCriteriaVerificationState>)
-//  .workflowStatus(IResolvable)
-//  .workflowStatus(java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus>)
+//  .awsAccountId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId>)
+//  .awsAccountName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName>)
+//  .companyName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCompanyName>)
+//  .complianceAssociatedStandardsId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId>)
+//  .complianceSecurityControlId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId>)
+//  .complianceStatus(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus>)
+//  .confidence(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaConfidence>)
+//  .createdAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt>)
+//  .criticality(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCriticality>)
+//  .description(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaDescription>)
+//  .firstObservedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt>)
+//  .generatorId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId>)
+//  .id(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaId>)
+//  .lastObservedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt>)
+//  .noteText(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteText>)
+//  .noteUpdatedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt>)
+//  .noteUpdatedBy(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy>)
+//  .productArn(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductArn>)
+//  .productName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductName>)
+//  .recordState(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRecordState>)
+//  .relatedFindingsId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId>)
+//  .relatedFindingsProductArn(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn>)
+//  .resourceApplicationArn(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn>)
+//  .resourceApplicationName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName>)
+//  .resourceDetailsOther(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther>)
+//  .resourceId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceId>)
+//  .resourcePartition(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition>)
+//  .resourceRegion(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion>)
+//  .resourceTags(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceTags>)
+//  .resourceType(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceType>)
+//  .severityLabel(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel>)
+//  .sourceUrl(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl>)
+//  .title(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaTitle>)
+//  .type(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaType>)
+//  .updatedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt>)
+//  .userDefinedFields(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields>)
+//  .verificationState(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaVerificationState>)
+//  .workflowStatus(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus>)
     .build();
 ```
 
@@ -1826,54 +1769,54 @@ SecurityhubAutomationRuleCriteria.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId">awsAccountId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>></code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName">awsAccountName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>></code> | aws_account_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName">companyName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>></code> | company_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId">complianceAssociatedStandardsId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>></code> | compliance_associated_standards_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId">complianceSecurityControlId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>></code> | compliance_security_control_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus">complianceStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>></code> | compliance_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence">confidence</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>></code> | confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt">createdAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>></code> | created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality">criticality</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>></code> | criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description">description</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>></code> | description block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>></code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId">generatorId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>></code> | generator_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id">id</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>></code> | id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>></code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText">noteText</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>></code> | note_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt">noteUpdatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>></code> | note_updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy">noteUpdatedBy</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>></code> | note_updated_by block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn">productArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>></code> | product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName">productName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>></code> | product_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState">recordState</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>></code> | record_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId">relatedFindingsId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>></code> | related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn">relatedFindingsProductArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>></code> | related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn">resourceApplicationArn</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>></code> | resource_application_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName">resourceApplicationName</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>></code> | resource_application_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther">resourceDetailsOther</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>></code> | resource_details_other block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId">resourceId</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>></code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition">resourcePartition</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>></code> | resource_partition block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion">resourceRegion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>></code> | resource_region block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>></code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType">resourceType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>></code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel">severityLabel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>></code> | severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl">sourceUrl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>></code> | source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title">title</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>></code> | title block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type">type</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>></code> | type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt">updatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>></code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields">userDefinedFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>></code> | user_defined_fields block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState">verificationState</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>></code> | verification_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus">workflowStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>></code> | workflow_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId">awsAccountId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>></code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName">awsAccountName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>></code> | aws_account_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName">companyName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>></code> | company_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId">complianceAssociatedStandardsId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>></code> | compliance_associated_standards_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId">complianceSecurityControlId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>></code> | compliance_security_control_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus">complianceStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>></code> | compliance_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence">confidence</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>></code> | confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt">createdAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>></code> | created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality">criticality</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>></code> | criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description">description</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>></code> | description block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt">firstObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>></code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId">generatorId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>></code> | generator_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id">id</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>></code> | id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt">lastObservedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>></code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText">noteText</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>></code> | note_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt">noteUpdatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>></code> | note_updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy">noteUpdatedBy</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>></code> | note_updated_by block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn">productArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>></code> | product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName">productName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>></code> | product_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState">recordState</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>></code> | record_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId">relatedFindingsId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>></code> | related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn">relatedFindingsProductArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>></code> | related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn">resourceApplicationArn</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>></code> | resource_application_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName">resourceApplicationName</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>></code> | resource_application_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther">resourceDetailsOther</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>></code> | resource_details_other block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId">resourceId</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>></code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition">resourcePartition</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>></code> | resource_partition block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion">resourceRegion</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>></code> | resource_region block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>></code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType">resourceType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>></code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel">severityLabel</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>></code> | severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl">sourceUrl</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>></code> | source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title">title</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>></code> | title block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type">type</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>></code> | type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt">updatedAt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>></code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields">userDefinedFields</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>></code> | user_defined_fields block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState">verificationState</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>></code> | verification_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus">workflowStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>></code> | workflow_status block. |
 
 ---
 
 ##### `awsAccountId`<sup>Optional</sup> <a name="awsAccountId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountId"></a>
 
 ```java
-public java.lang.Object getAwsAccountId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId> getAwsAccountId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
 
 aws_account_id block.
 
@@ -1884,10 +1827,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `awsAccountName`<sup>Optional</sup> <a name="awsAccountName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.awsAccountName"></a>
 
 ```java
-public java.lang.Object getAwsAccountName();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName> getAwsAccountName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
 
 aws_account_name block.
 
@@ -1898,10 +1841,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `companyName`<sup>Optional</sup> <a name="companyName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.companyName"></a>
 
 ```java
-public java.lang.Object getCompanyName();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCompanyName> getCompanyName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
 
 company_name block.
 
@@ -1912,10 +1855,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `complianceAssociatedStandardsId`<sup>Optional</sup> <a name="complianceAssociatedStandardsId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceAssociatedStandardsId"></a>
 
 ```java
-public java.lang.Object getComplianceAssociatedStandardsId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId> getComplianceAssociatedStandardsId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
 
 compliance_associated_standards_id block.
 
@@ -1926,10 +1869,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `complianceSecurityControlId`<sup>Optional</sup> <a name="complianceSecurityControlId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceSecurityControlId"></a>
 
 ```java
-public java.lang.Object getComplianceSecurityControlId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId> getComplianceSecurityControlId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
 
 compliance_security_control_id block.
 
@@ -1940,10 +1883,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `complianceStatus`<sup>Optional</sup> <a name="complianceStatus" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.complianceStatus"></a>
 
 ```java
-public java.lang.Object getComplianceStatus();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus> getComplianceStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
 
 compliance_status block.
 
@@ -1954,10 +1897,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `confidence`<sup>Optional</sup> <a name="confidence" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.confidence"></a>
 
 ```java
-public java.lang.Object getConfidence();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaConfidence> getConfidence();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
 
 confidence block.
 
@@ -1968,10 +1911,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `createdAt`<sup>Optional</sup> <a name="createdAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.createdAt"></a>
 
 ```java
-public java.lang.Object getCreatedAt();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt> getCreatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
 
 created_at block.
 
@@ -1982,10 +1925,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `criticality`<sup>Optional</sup> <a name="criticality" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.criticality"></a>
 
 ```java
-public java.lang.Object getCriticality();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCriticality> getCriticality();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
 
 criticality block.
 
@@ -1996,10 +1939,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.description"></a>
 
 ```java
-public java.lang.Object getDescription();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaDescription> getDescription();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
 
 description block.
 
@@ -2010,10 +1953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `firstObservedAt`<sup>Optional</sup> <a name="firstObservedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.firstObservedAt"></a>
 
 ```java
-public java.lang.Object getFirstObservedAt();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt> getFirstObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
 
 first_observed_at block.
 
@@ -2024,10 +1967,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `generatorId`<sup>Optional</sup> <a name="generatorId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.generatorId"></a>
 
 ```java
-public java.lang.Object getGeneratorId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId> getGeneratorId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
 
 generator_id block.
 
@@ -2038,10 +1981,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.id"></a>
 
 ```java
-public java.lang.Object getId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaId> getId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
 
 id block.
 
@@ -2055,10 +1998,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `lastObservedAt`<sup>Optional</sup> <a name="lastObservedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.lastObservedAt"></a>
 
 ```java
-public java.lang.Object getLastObservedAt();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt> getLastObservedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
 
 last_observed_at block.
 
@@ -2069,10 +2012,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `noteText`<sup>Optional</sup> <a name="noteText" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteText"></a>
 
 ```java
-public java.lang.Object getNoteText();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteText> getNoteText();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
 
 note_text block.
 
@@ -2083,10 +2026,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `noteUpdatedAt`<sup>Optional</sup> <a name="noteUpdatedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedAt"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedAt();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt> getNoteUpdatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
 
 note_updated_at block.
 
@@ -2097,10 +2040,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `noteUpdatedBy`<sup>Optional</sup> <a name="noteUpdatedBy" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.noteUpdatedBy"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedBy();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy> getNoteUpdatedBy();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
 
 note_updated_by block.
 
@@ -2111,10 +2054,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `productArn`<sup>Optional</sup> <a name="productArn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productArn"></a>
 
 ```java
-public java.lang.Object getProductArn();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductArn> getProductArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
 
 product_arn block.
 
@@ -2125,10 +2068,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `productName`<sup>Optional</sup> <a name="productName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.productName"></a>
 
 ```java
-public java.lang.Object getProductName();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductName> getProductName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
 
 product_name block.
 
@@ -2139,10 +2082,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `recordState`<sup>Optional</sup> <a name="recordState" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.recordState"></a>
 
 ```java
-public java.lang.Object getRecordState();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRecordState> getRecordState();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
 
 record_state block.
 
@@ -2153,10 +2096,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `relatedFindingsId`<sup>Optional</sup> <a name="relatedFindingsId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsId"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId> getRelatedFindingsId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
 
 related_findings_id block.
 
@@ -2167,10 +2110,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `relatedFindingsProductArn`<sup>Optional</sup> <a name="relatedFindingsProductArn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.relatedFindingsProductArn"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsProductArn();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn> getRelatedFindingsProductArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
 
 related_findings_product_arn block.
 
@@ -2181,10 +2124,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceApplicationArn`<sup>Optional</sup> <a name="resourceApplicationArn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationArn"></a>
 
 ```java
-public java.lang.Object getResourceApplicationArn();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn> getResourceApplicationArn();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
 
 resource_application_arn block.
 
@@ -2195,10 +2138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceApplicationName`<sup>Optional</sup> <a name="resourceApplicationName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceApplicationName"></a>
 
 ```java
-public java.lang.Object getResourceApplicationName();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName> getResourceApplicationName();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
 
 resource_application_name block.
 
@@ -2209,10 +2152,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceDetailsOther`<sup>Optional</sup> <a name="resourceDetailsOther" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceDetailsOther"></a>
 
 ```java
-public java.lang.Object getResourceDetailsOther();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther> getResourceDetailsOther();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
 
 resource_details_other block.
 
@@ -2223,10 +2166,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceId`<sup>Optional</sup> <a name="resourceId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceId"></a>
 
 ```java
-public java.lang.Object getResourceId();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceId> getResourceId();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
 
 resource_id block.
 
@@ -2237,10 +2180,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourcePartition`<sup>Optional</sup> <a name="resourcePartition" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourcePartition"></a>
 
 ```java
-public java.lang.Object getResourcePartition();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition> getResourcePartition();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
 
 resource_partition block.
 
@@ -2251,10 +2194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceRegion`<sup>Optional</sup> <a name="resourceRegion" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceRegion"></a>
 
 ```java
-public java.lang.Object getResourceRegion();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion> getResourceRegion();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
 
 resource_region block.
 
@@ -2265,10 +2208,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceTags`<sup>Optional</sup> <a name="resourceTags" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceTags"></a>
 
 ```java
-public java.lang.Object getResourceTags();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceTags> getResourceTags();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
 
 resource_tags block.
 
@@ -2279,10 +2222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `resourceType`<sup>Optional</sup> <a name="resourceType" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.resourceType"></a>
 
 ```java
-public java.lang.Object getResourceType();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceType> getResourceType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
 
 resource_type block.
 
@@ -2293,10 +2236,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `severityLabel`<sup>Optional</sup> <a name="severityLabel" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.severityLabel"></a>
 
 ```java
-public java.lang.Object getSeverityLabel();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel> getSeverityLabel();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
 
 severity_label block.
 
@@ -2307,10 +2250,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `sourceUrl`<sup>Optional</sup> <a name="sourceUrl" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.sourceUrl"></a>
 
 ```java
-public java.lang.Object getSourceUrl();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl> getSourceUrl();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
 
 source_url block.
 
@@ -2321,10 +2264,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.title"></a>
 
 ```java
-public java.lang.Object getTitle();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaTitle> getTitle();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
 
 title block.
 
@@ -2335,10 +2278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.type"></a>
 
 ```java
-public java.lang.Object getType();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaType> getType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
 
 type block.
 
@@ -2349,10 +2292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `updatedAt`<sup>Optional</sup> <a name="updatedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.updatedAt"></a>
 
 ```java
-public java.lang.Object getUpdatedAt();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt> getUpdatedAt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
 
 updated_at block.
 
@@ -2363,10 +2306,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `userDefinedFields`<sup>Optional</sup> <a name="userDefinedFields" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.userDefinedFields"></a>
 
 ```java
-public java.lang.Object getUserDefinedFields();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields> getUserDefinedFields();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
 
 user_defined_fields block.
 
@@ -2377,10 +2320,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `verificationState`<sup>Optional</sup> <a name="verificationState" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.verificationState"></a>
 
 ```java
-public java.lang.Object getVerificationState();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaVerificationState> getVerificationState();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
 
 verification_state block.
 
@@ -2391,10 +2334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workflowStatus`<sup>Optional</sup> <a name="workflowStatus" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.property.workflowStatus"></a>
 
 ```java
-public java.lang.Object getWorkflowStatus();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus> getWorkflowStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
 
 workflow_status block.
 
@@ -2774,8 +2717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleCriteriaCreatedAt;
 
 SecurityhubAutomationRuleCriteriaCreatedAt.builder()
-//  .dateRange(IResolvable)
-//  .dateRange(java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange>)
+//  .dateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange>)
 //  .end(java.lang.String)
 //  .start(java.lang.String)
     .build();
@@ -2785,7 +2727,7 @@ SecurityhubAutomationRuleCriteriaCreatedAt.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -2794,10 +2736,10 @@ SecurityhubAutomationRuleCriteriaCreatedAt.builder()
 ##### `dateRange`<sup>Optional</sup> <a name="dateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange"></a>
 
 ```java
-public java.lang.Object getDateRange();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange> getDateRange();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
 
 date_range block.
 
@@ -3017,8 +2959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleCriteriaFirstObservedAt;
 
 SecurityhubAutomationRuleCriteriaFirstObservedAt.builder()
-//  .dateRange(IResolvable)
-//  .dateRange(java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange>)
+//  .dateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange>)
 //  .end(java.lang.String)
 //  .start(java.lang.String)
     .build();
@@ -3028,7 +2969,7 @@ SecurityhubAutomationRuleCriteriaFirstObservedAt.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3037,10 +2978,10 @@ SecurityhubAutomationRuleCriteriaFirstObservedAt.builder()
 ##### `dateRange`<sup>Optional</sup> <a name="dateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange"></a>
 
 ```java
-public java.lang.Object getDateRange();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange> getDateRange();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
 
 date_range block.
 
@@ -3218,8 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleCriteriaLastObservedAt;
 
 SecurityhubAutomationRuleCriteriaLastObservedAt.builder()
-//  .dateRange(IResolvable)
-//  .dateRange(java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange>)
+//  .dateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange>)
 //  .end(java.lang.String)
 //  .start(java.lang.String)
     .build();
@@ -3229,7 +3169,7 @@ SecurityhubAutomationRuleCriteriaLastObservedAt.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3238,10 +3178,10 @@ SecurityhubAutomationRuleCriteriaLastObservedAt.builder()
 ##### `dateRange`<sup>Optional</sup> <a name="dateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange"></a>
 
 ```java
-public java.lang.Object getDateRange();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange> getDateRange();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
 
 date_range block.
 
@@ -3373,8 +3313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt;
 
 SecurityhubAutomationRuleCriteriaNoteUpdatedAt.builder()
-//  .dateRange(IResolvable)
-//  .dateRange(java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange>)
+//  .dateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange>)
 //  .end(java.lang.String)
 //  .start(java.lang.String)
     .build();
@@ -3384,7 +3323,7 @@ SecurityhubAutomationRuleCriteriaNoteUpdatedAt.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -3393,10 +3332,10 @@ SecurityhubAutomationRuleCriteriaNoteUpdatedAt.builder()
 ##### `dateRange`<sup>Optional</sup> <a name="dateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange"></a>
 
 ```java
-public java.lang.Object getDateRange();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange> getDateRange();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
 
 date_range block.
 
@@ -4338,8 +4277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.aws.securityhub_automation_rule.SecurityhubAutomationRuleCriteriaUpdatedAt;
 
 SecurityhubAutomationRuleCriteriaUpdatedAt.builder()
-//  .dateRange(IResolvable)
-//  .dateRange(java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange>)
+//  .dateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange>)
 //  .end(java.lang.String)
 //  .start(java.lang.String)
     .build();
@@ -4349,7 +4287,7 @@ SecurityhubAutomationRuleCriteriaUpdatedAt.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | date_range block. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">dateRange</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | date_range block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
@@ -4358,10 +4296,10 @@ SecurityhubAutomationRuleCriteriaUpdatedAt.builder()
 ##### `dateRange`<sup>Optional</sup> <a name="dateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange"></a>
 
 ```java
-public java.lang.Object getDateRange();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange> getDateRange();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
 
 date_range block.
 
@@ -4714,7 +4652,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | *No description.* |
 
 ---
 
@@ -4745,10 +4683,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
 
 ---
 
@@ -4874,7 +4812,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | *No description.* |
 
 ---
 
@@ -4905,10 +4843,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
 
 ---
 
@@ -5145,7 +5083,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.updatedByInput">updatedByInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.text">text</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.updatedBy">updatedBy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a></code> | *No description.* |
 
 ---
 
@@ -5216,10 +5154,10 @@ public java.lang.String getUpdatedBy();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleActionsFindingFieldsUpdateNote getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>
 
 ---
 
@@ -5461,48 +5399,48 @@ Returns a reversible string representation.
 ##### `putNote` <a name="putNote" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putNote"></a>
 
 ```java
-public void putNote(IResolvable OR java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote> value)
+public void putNote(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putNote.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
 
 ---
 
 ##### `putRelatedFindings` <a name="putRelatedFindings" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putRelatedFindings"></a>
 
 ```java
-public void putRelatedFindings(IResolvable OR java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings> value)
+public void putRelatedFindings(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putRelatedFindings.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
 
 ---
 
 ##### `putSeverity` <a name="putSeverity" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putSeverity"></a>
 
 ```java
-public void putSeverity(IResolvable OR java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity> value)
+public void putSeverity(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
 
 ---
 
 ##### `putWorkflow` <a name="putWorkflow" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putWorkflow"></a>
 
 ```java
-public void putWorkflow(IResolvable OR java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow> value)
+public void putWorkflow(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.putWorkflow.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
 
 ---
 
@@ -5573,19 +5511,19 @@ public void resetWorkflow()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflow">workflow</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput">noteInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput">relatedFindingsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput">severityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput">noteInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput">relatedFindingsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput">severityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.typesInput">typesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.userDefinedFieldsInput">userDefinedFieldsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput">workflowInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput">workflowInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.confidence">confidence</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.criticality">criticality</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.types">types</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.userDefinedFields">userDefinedFields</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.verificationState">verificationState</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a></code> | *No description.* |
 
 ---
 
@@ -5676,30 +5614,30 @@ public java.lang.Number getCriticalityInput();
 ##### `noteInput`<sup>Optional</sup> <a name="noteInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.noteInput"></a>
 
 ```java
-public java.lang.Object getNoteInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateNote> getNoteInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>>
 
 ---
 
 ##### `relatedFindingsInput`<sup>Optional</sup> <a name="relatedFindingsInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.relatedFindingsInput"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings> getRelatedFindingsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
 
 ---
 
 ##### `severityInput`<sup>Optional</sup> <a name="severityInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.severityInput"></a>
 
 ```java
-public java.lang.Object getSeverityInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity> getSeverityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
 
 ---
 
@@ -5736,10 +5674,10 @@ public java.lang.String getVerificationStateInput();
 ##### `workflowInput`<sup>Optional</sup> <a name="workflowInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.workflowInput"></a>
 
 ```java
-public java.lang.Object getWorkflowInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow> getWorkflowInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
 
 ---
 
@@ -5796,10 +5734,10 @@ public java.lang.String getVerificationState();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleActionsFindingFieldsUpdate getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>
 
 ---
 
@@ -5925,7 +5863,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | *No description.* |
 
 ---
 
@@ -5956,10 +5894,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>>
 
 ---
 
@@ -6196,7 +6134,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.productArnInput">productArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.productArn">productArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a></code> | *No description.* |
 
 ---
 
@@ -6267,10 +6205,10 @@ public java.lang.String getProductArn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>
 
 ---
 
@@ -6396,7 +6334,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | *No description.* |
 
 ---
 
@@ -6427,10 +6365,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>>
 
 ---
 
@@ -6681,7 +6619,7 @@ public void resetProduct()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.productInput">productInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.product">product</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a></code> | *No description.* |
 
 ---
 
@@ -6752,10 +6690,10 @@ public java.lang.Number getProduct();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>
 
 ---
 
@@ -6881,7 +6819,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | *No description.* |
 
 ---
 
@@ -6912,10 +6850,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>>
 
 ---
 
@@ -7157,7 +7095,7 @@ public void resetStatus()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a></code> | *No description.* |
 
 ---
 
@@ -7208,10 +7146,10 @@ public java.lang.String getStatus();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>
 
 ---
 
@@ -7337,7 +7275,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | *No description.* |
 
 ---
 
@@ -7368,10 +7306,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActions> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>>
 
 ---
 
@@ -7603,12 +7541,12 @@ Returns a reversible string representation.
 ##### `putFindingFieldsUpdate` <a name="putFindingFieldsUpdate" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.putFindingFieldsUpdate"></a>
 
 ```java
-public void putFindingFieldsUpdate(IResolvable OR java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate> value)
+public void putFindingFieldsUpdate(IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.putFindingFieldsUpdate.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
 
 ---
 
@@ -7632,10 +7570,10 @@ public void resetType()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList">SecurityhubAutomationRuleActionsFindingFieldsUpdateList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput">findingFieldsUpdateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput">findingFieldsUpdateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a></code> | *No description.* |
 
 ---
 
@@ -7676,10 +7614,10 @@ public SecurityhubAutomationRuleActionsFindingFieldsUpdateList getFindingFieldsU
 ##### `findingFieldsUpdateInput`<sup>Optional</sup> <a name="findingFieldsUpdateInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.findingFieldsUpdateInput"></a>
 
 ```java
-public java.lang.Object getFindingFieldsUpdateInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsUpdate> getFindingFieldsUpdateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>>
 
 ---
 
@@ -7706,10 +7644,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleActions getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>
 
 ---
 
@@ -7835,7 +7773,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>></code> | *No description.* |
 
 ---
 
@@ -7866,10 +7804,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
 
 ---
 
@@ -8106,7 +8044,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -8177,10 +8115,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaAwsAccountId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>
 
 ---
 
@@ -8306,7 +8244,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>></code> | *No description.* |
 
 ---
 
@@ -8337,10 +8275,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
 
 ---
 
@@ -8577,7 +8515,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a></code> | *No description.* |
 
 ---
 
@@ -8648,10 +8586,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaAwsAccountName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>
 
 ---
 
@@ -8777,7 +8715,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>></code> | *No description.* |
 
 ---
 
@@ -8808,10 +8746,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCompanyName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
 
 ---
 
@@ -9048,7 +8986,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -9119,10 +9057,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaCompanyName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>
 
 ---
 
@@ -9248,7 +9186,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>></code> | *No description.* |
 
 ---
 
@@ -9279,10 +9217,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
 
 ---
 
@@ -9519,7 +9457,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a></code> | *No description.* |
 
 ---
 
@@ -9590,10 +9528,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>
 
 ---
 
@@ -9719,7 +9657,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>></code> | *No description.* |
 
 ---
 
@@ -9750,10 +9688,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
 
 ---
 
@@ -9990,7 +9928,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a></code> | *No description.* |
 
 ---
 
@@ -10061,10 +9999,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaComplianceSecurityControlId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>
 
 ---
 
@@ -10190,7 +10128,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>></code> | *No description.* |
 
 ---
 
@@ -10221,10 +10159,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
 
 ---
 
@@ -10461,7 +10399,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -10532,10 +10470,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaComplianceStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>
 
 ---
 
@@ -10661,7 +10599,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>></code> | *No description.* |
 
 ---
 
@@ -10692,10 +10630,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaConfidence> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
 
 ---
 
@@ -10973,7 +10911,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.gte">gte</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.lt">lt</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.lte">lte</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a></code> | *No description.* |
 
 ---
 
@@ -11104,10 +11042,10 @@ public java.lang.Number getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaConfidence getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>
 
 ---
 
@@ -11233,7 +11171,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | *No description.* |
 
 ---
 
@@ -11264,10 +11202,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
 
 ---
 
@@ -11504,7 +11442,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -11575,10 +11513,10 @@ public java.lang.Number getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaCreatedAtDateRange getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>
 
 ---
 
@@ -11704,7 +11642,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -11735,10 +11673,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
 
 ---
 
@@ -11971,12 +11909,12 @@ Returns a reversible string representation.
 ##### `putDateRange` <a name="putDateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.putDateRange"></a>
 
 ```java
-public void putDateRange(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange> value)
+public void putDateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
 
 ---
 
@@ -12006,12 +11944,12 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList">SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.endInput">endInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -12052,10 +11990,10 @@ public SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList getDateRange();
 ##### `dateRangeInput`<sup>Optional</sup> <a name="dateRangeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.dateRangeInput"></a>
 
 ```java
-public java.lang.Object getDateRangeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDateRange> getDateRangeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>>
 
 ---
 
@@ -12102,10 +12040,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaCreatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>
 
 ---
 
@@ -12231,7 +12169,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>></code> | *No description.* |
 
 ---
 
@@ -12262,10 +12200,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCriticality> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
 
 ---
 
@@ -12543,7 +12481,7 @@ public void resetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.gte">gte</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.lt">lt</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.lte">lte</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a></code> | *No description.* |
 
 ---
 
@@ -12674,10 +12612,10 @@ public java.lang.Number getLte();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaCriticality getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>
 
 ---
 
@@ -12803,7 +12741,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>></code> | *No description.* |
 
 ---
 
@@ -12834,10 +12772,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaDescription> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
 
 ---
 
@@ -13074,7 +13012,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a></code> | *No description.* |
 
 ---
 
@@ -13145,10 +13083,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaDescription getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>
 
 ---
 
@@ -13274,7 +13212,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | *No description.* |
 
 ---
 
@@ -13305,10 +13243,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
 
 ---
 
@@ -13545,7 +13483,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -13616,10 +13554,10 @@ public java.lang.Number getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>
 
 ---
 
@@ -13745,7 +13683,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -13776,10 +13714,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
 
 ---
 
@@ -14012,12 +13950,12 @@ Returns a reversible string representation.
 ##### `putDateRange` <a name="putDateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.putDateRange"></a>
 
 ```java
-public void putDateRange(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange> value)
+public void putDateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
 
 ---
 
@@ -14047,12 +13985,12 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.endInput">endInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -14093,10 +14031,10 @@ public SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList getDateRang
 ##### `dateRangeInput`<sup>Optional</sup> <a name="dateRangeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.dateRangeInput"></a>
 
 ```java
-public java.lang.Object getDateRangeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange> getDateRangeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>>
 
 ---
 
@@ -14143,10 +14081,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaFirstObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>
 
 ---
 
@@ -14272,7 +14210,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>></code> | *No description.* |
 
 ---
 
@@ -14303,10 +14241,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
 
 ---
 
@@ -14543,7 +14481,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -14614,10 +14552,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaGeneratorId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>
 
 ---
 
@@ -14743,7 +14681,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>></code> | *No description.* |
 
 ---
 
@@ -14774,10 +14712,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
 
 ---
 
@@ -15014,7 +14952,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a></code> | *No description.* |
 
 ---
 
@@ -15085,10 +15023,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>
 
 ---
 
@@ -15214,7 +15152,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | *No description.* |
 
 ---
 
@@ -15245,10 +15183,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
 
 ---
 
@@ -15485,7 +15423,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -15556,10 +15494,10 @@ public java.lang.Number getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaLastObservedAtDateRange getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>
 
 ---
 
@@ -15685,7 +15623,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>></code> | *No description.* |
 
 ---
 
@@ -15716,10 +15654,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
 
 ---
 
@@ -15952,12 +15890,12 @@ Returns a reversible string representation.
 ##### `putDateRange` <a name="putDateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.putDateRange"></a>
 
 ```java
-public void putDateRange(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange> value)
+public void putDateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
 
 ---
 
@@ -15987,12 +15925,12 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList">SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.endInput">endInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16033,10 +15971,10 @@ public SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList getDateRange
 ##### `dateRangeInput`<sup>Optional</sup> <a name="dateRangeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.dateRangeInput"></a>
 
 ```java
-public java.lang.Object getDateRangeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAtDateRange> getDateRangeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>>
 
 ---
 
@@ -16083,10 +16021,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaLastObservedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>
 
 ---
 
@@ -16212,7 +16150,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | *No description.* |
 
 ---
 
@@ -16243,10 +16181,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteria> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>>
 
 ---
 
@@ -16372,7 +16310,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>></code> | *No description.* |
 
 ---
 
@@ -16403,10 +16341,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteText> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
 
 ---
 
@@ -16643,7 +16581,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a></code> | *No description.* |
 
 ---
 
@@ -16714,10 +16652,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaNoteText getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>
 
 ---
 
@@ -16843,7 +16781,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | *No description.* |
 
 ---
 
@@ -16874,10 +16812,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
 
 ---
 
@@ -17114,7 +17052,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -17185,10 +17123,10 @@ public java.lang.Number getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>
 
 ---
 
@@ -17314,7 +17252,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -17345,10 +17283,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
 
 ---
 
@@ -17581,12 +17519,12 @@ Returns a reversible string representation.
 ##### `putDateRange` <a name="putDateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.putDateRange"></a>
 
 ```java
-public void putDateRange(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange> value)
+public void putDateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
 
 ---
 
@@ -17616,12 +17554,12 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.endInput">endInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -17662,10 +17600,10 @@ public SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList getDateRange(
 ##### `dateRangeInput`<sup>Optional</sup> <a name="dateRangeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.dateRangeInput"></a>
 
 ```java
-public java.lang.Object getDateRangeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange> getDateRangeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>>
 
 ---
 
@@ -17712,10 +17650,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaNoteUpdatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>
 
 ---
 
@@ -17841,7 +17779,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>></code> | *No description.* |
 
 ---
 
@@ -17872,10 +17810,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
 
 ---
 
@@ -18112,7 +18050,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -18183,10 +18121,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaNoteUpdatedBy getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>
 
 ---
 
@@ -18491,456 +18429,456 @@ Returns a reversible string representation.
 ##### `putAwsAccountId` <a name="putAwsAccountId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountId"></a>
 
 ```java
-public void putAwsAccountId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId> value)
+public void putAwsAccountId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
 
 ---
 
 ##### `putAwsAccountName` <a name="putAwsAccountName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountName"></a>
 
 ```java
-public void putAwsAccountName(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName> value)
+public void putAwsAccountName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putAwsAccountName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
 
 ---
 
 ##### `putCompanyName` <a name="putCompanyName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCompanyName"></a>
 
 ```java
-public void putCompanyName(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaCompanyName> value)
+public void putCompanyName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCompanyName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCompanyName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
 
 ---
 
 ##### `putComplianceAssociatedStandardsId` <a name="putComplianceAssociatedStandardsId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceAssociatedStandardsId"></a>
 
 ```java
-public void putComplianceAssociatedStandardsId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId> value)
+public void putComplianceAssociatedStandardsId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceAssociatedStandardsId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
 
 ---
 
 ##### `putComplianceSecurityControlId` <a name="putComplianceSecurityControlId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceSecurityControlId"></a>
 
 ```java
-public void putComplianceSecurityControlId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId> value)
+public void putComplianceSecurityControlId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceSecurityControlId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
 
 ---
 
 ##### `putComplianceStatus` <a name="putComplianceStatus" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceStatus"></a>
 
 ```java
-public void putComplianceStatus(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus> value)
+public void putComplianceStatus(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putComplianceStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
 
 ---
 
 ##### `putConfidence` <a name="putConfidence" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putConfidence"></a>
 
 ```java
-public void putConfidence(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaConfidence> value)
+public void putConfidence(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaConfidence> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putConfidence.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
 
 ---
 
 ##### `putCreatedAt` <a name="putCreatedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCreatedAt"></a>
 
 ```java
-public void putCreatedAt(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt> value)
+public void putCreatedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCreatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
 
 ---
 
 ##### `putCriticality` <a name="putCriticality" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCriticality"></a>
 
 ```java
-public void putCriticality(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaCriticality> value)
+public void putCriticality(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCriticality> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putCriticality.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
 
 ---
 
 ##### `putDescription` <a name="putDescription" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putDescription"></a>
 
 ```java
-public void putDescription(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaDescription> value)
+public void putDescription(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaDescription> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putDescription.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
 
 ---
 
 ##### `putFirstObservedAt` <a name="putFirstObservedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putFirstObservedAt"></a>
 
 ```java
-public void putFirstObservedAt(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt> value)
+public void putFirstObservedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
 
 ---
 
 ##### `putGeneratorId` <a name="putGeneratorId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putGeneratorId"></a>
 
 ```java
-public void putGeneratorId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId> value)
+public void putGeneratorId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putGeneratorId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
 
 ---
 
 ##### `putId` <a name="putId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putId"></a>
 
 ```java
-public void putId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaId> value)
+public void putId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
 
 ---
 
 ##### `putLastObservedAt` <a name="putLastObservedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putLastObservedAt"></a>
 
 ```java
-public void putLastObservedAt(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt> value)
+public void putLastObservedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
 
 ---
 
 ##### `putNoteText` <a name="putNoteText" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteText"></a>
 
 ```java
-public void putNoteText(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaNoteText> value)
+public void putNoteText(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteText> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteText.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
 
 ---
 
 ##### `putNoteUpdatedAt` <a name="putNoteUpdatedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedAt"></a>
 
 ```java
-public void putNoteUpdatedAt(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt> value)
+public void putNoteUpdatedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
 
 ---
 
 ##### `putNoteUpdatedBy` <a name="putNoteUpdatedBy" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedBy"></a>
 
 ```java
-public void putNoteUpdatedBy(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy> value)
+public void putNoteUpdatedBy(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putNoteUpdatedBy.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
 
 ---
 
 ##### `putProductArn` <a name="putProductArn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductArn"></a>
 
 ```java
-public void putProductArn(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaProductArn> value)
+public void putProductArn(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
 
 ---
 
 ##### `putProductName` <a name="putProductName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductName"></a>
 
 ```java
-public void putProductName(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaProductName> value)
+public void putProductName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putProductName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
 
 ---
 
 ##### `putRecordState` <a name="putRecordState" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRecordState"></a>
 
 ```java
-public void putRecordState(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaRecordState> value)
+public void putRecordState(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRecordState> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRecordState.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
 
 ---
 
 ##### `putRelatedFindingsId` <a name="putRelatedFindingsId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsId"></a>
 
 ```java
-public void putRelatedFindingsId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId> value)
+public void putRelatedFindingsId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
 
 ---
 
 ##### `putRelatedFindingsProductArn` <a name="putRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsProductArn"></a>
 
 ```java
-public void putRelatedFindingsProductArn(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn> value)
+public void putRelatedFindingsProductArn(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
 
 ---
 
 ##### `putResourceApplicationArn` <a name="putResourceApplicationArn" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationArn"></a>
 
 ```java
-public void putResourceApplicationArn(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn> value)
+public void putResourceApplicationArn(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationArn.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
 
 ---
 
 ##### `putResourceApplicationName` <a name="putResourceApplicationName" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationName"></a>
 
 ```java
-public void putResourceApplicationName(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName> value)
+public void putResourceApplicationName(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceApplicationName.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
 
 ---
 
 ##### `putResourceDetailsOther` <a name="putResourceDetailsOther" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceDetailsOther"></a>
 
 ```java
-public void putResourceDetailsOther(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther> value)
+public void putResourceDetailsOther(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceDetailsOther.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
 
 ---
 
 ##### `putResourceId` <a name="putResourceId" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceId"></a>
 
 ```java
-public void putResourceId(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceId> value)
+public void putResourceId(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceId> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
 
 ---
 
 ##### `putResourcePartition` <a name="putResourcePartition" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourcePartition"></a>
 
 ```java
-public void putResourcePartition(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition> value)
+public void putResourcePartition(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourcePartition.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
 
 ---
 
 ##### `putResourceRegion` <a name="putResourceRegion" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceRegion"></a>
 
 ```java
-public void putResourceRegion(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion> value)
+public void putResourceRegion(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceRegion.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
 
 ---
 
 ##### `putResourceTags` <a name="putResourceTags" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceTags"></a>
 
 ```java
-public void putResourceTags(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceTags> value)
+public void putResourceTags(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceTags> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
 
 ---
 
 ##### `putResourceType` <a name="putResourceType" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceType"></a>
 
 ```java
-public void putResourceType(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaResourceType> value)
+public void putResourceType(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
 
 ---
 
 ##### `putSeverityLabel` <a name="putSeverityLabel" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSeverityLabel"></a>
 
 ```java
-public void putSeverityLabel(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel> value)
+public void putSeverityLabel(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSeverityLabel.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
 
 ---
 
 ##### `putSourceUrl` <a name="putSourceUrl" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSourceUrl"></a>
 
 ```java
-public void putSourceUrl(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl> value)
+public void putSourceUrl(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putSourceUrl.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
 
 ---
 
 ##### `putTitle` <a name="putTitle" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putTitle"></a>
 
 ```java
-public void putTitle(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaTitle> value)
+public void putTitle(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaTitle> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
 
 ---
 
 ##### `putType` <a name="putType" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putType"></a>
 
 ```java
-public void putType(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaType> value)
+public void putType(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
 
 ---
 
 ##### `putUpdatedAt` <a name="putUpdatedAt" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUpdatedAt"></a>
 
 ```java
-public void putUpdatedAt(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt> value)
+public void putUpdatedAt(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
 
 ---
 
 ##### `putUserDefinedFields` <a name="putUserDefinedFields" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUserDefinedFields"></a>
 
 ```java
-public void putUserDefinedFields(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields> value)
+public void putUserDefinedFields(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putUserDefinedFields.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
 
 ---
 
 ##### `putVerificationState` <a name="putVerificationState" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putVerificationState"></a>
 
 ```java
-public void putVerificationState(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaVerificationState> value)
+public void putVerificationState(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaVerificationState> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putVerificationState.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
 
 ---
 
 ##### `putWorkflowStatus` <a name="putWorkflowStatus" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putWorkflowStatus"></a>
 
 ```java
-public void putWorkflowStatus(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus> value)
+public void putWorkflowStatus(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.putWorkflowStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
 
 ---
 
@@ -19217,45 +19155,45 @@ public void resetWorkflowStatus()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFields">userDefinedFields</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList">SecurityhubAutomationRuleCriteriaUserDefinedFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationState">verificationState</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList">SecurityhubAutomationRuleCriteriaVerificationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatus">workflowStatus</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList">SecurityhubAutomationRuleCriteriaWorkflowStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput">awsAccountNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput">companyNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput">complianceAssociatedStandardsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput">complianceSecurityControlIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput">createdAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput">generatorIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput">idInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput">noteTextInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput">noteUpdatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput">noteUpdatedByInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput">productArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput">productNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput">recordStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput">relatedFindingsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput">relatedFindingsProductArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput">resourceApplicationArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput">resourceApplicationNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput">resourceDetailsOtherInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput">resourcePartitionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput">resourceRegionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput">severityLabelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput">sourceUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput">typeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput">userDefinedFieldsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput">workflowStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput">awsAccountNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput">companyNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput">complianceAssociatedStandardsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput">complianceSecurityControlIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput">confidenceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput">createdAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput">criticalityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput">firstObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput">generatorIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput">idInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput">lastObservedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput">noteTextInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput">noteUpdatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput">noteUpdatedByInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput">productArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput">productNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput">recordStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput">relatedFindingsIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput">relatedFindingsProductArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput">resourceApplicationArnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput">resourceApplicationNameInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput">resourceDetailsOtherInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput">resourceIdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput">resourcePartitionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput">resourceRegionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput">severityLabelInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput">sourceUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput">titleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput">typeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput">updatedAtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput">userDefinedFieldsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput">verificationStateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput">workflowStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a></code> | *No description.* |
 
 ---
 
@@ -19666,390 +19604,390 @@ public SecurityhubAutomationRuleCriteriaWorkflowStatusList getWorkflowStatus();
 ##### `awsAccountIdInput`<sup>Optional</sup> <a name="awsAccountIdInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountIdInput"></a>
 
 ```java
-public java.lang.Object getAwsAccountIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId> getAwsAccountIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId">SecurityhubAutomationRuleCriteriaAwsAccountId</a>>
 
 ---
 
 ##### `awsAccountNameInput`<sup>Optional</sup> <a name="awsAccountNameInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.awsAccountNameInput"></a>
 
 ```java
-public java.lang.Object getAwsAccountNameInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountName> getAwsAccountNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName">SecurityhubAutomationRuleCriteriaAwsAccountName</a>>
 
 ---
 
 ##### `companyNameInput`<sup>Optional</sup> <a name="companyNameInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.companyNameInput"></a>
 
 ```java
-public java.lang.Object getCompanyNameInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCompanyName> getCompanyNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName">SecurityhubAutomationRuleCriteriaCompanyName</a>>
 
 ---
 
 ##### `complianceAssociatedStandardsIdInput`<sup>Optional</sup> <a name="complianceAssociatedStandardsIdInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceAssociatedStandardsIdInput"></a>
 
 ```java
-public java.lang.Object getComplianceAssociatedStandardsIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId> getComplianceAssociatedStandardsIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId">SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId</a>>
 
 ---
 
 ##### `complianceSecurityControlIdInput`<sup>Optional</sup> <a name="complianceSecurityControlIdInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceSecurityControlIdInput"></a>
 
 ```java
-public java.lang.Object getComplianceSecurityControlIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSecurityControlId> getComplianceSecurityControlIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId">SecurityhubAutomationRuleCriteriaComplianceSecurityControlId</a>>
 
 ---
 
 ##### `complianceStatusInput`<sup>Optional</sup> <a name="complianceStatusInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.complianceStatusInput"></a>
 
 ```java
-public java.lang.Object getComplianceStatusInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceStatus> getComplianceStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus">SecurityhubAutomationRuleCriteriaComplianceStatus</a>>
 
 ---
 
 ##### `confidenceInput`<sup>Optional</sup> <a name="confidenceInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.confidenceInput"></a>
 
 ```java
-public java.lang.Object getConfidenceInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaConfidence> getConfidenceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence">SecurityhubAutomationRuleCriteriaConfidence</a>>
 
 ---
 
 ##### `createdAtInput`<sup>Optional</sup> <a name="createdAtInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.createdAtInput"></a>
 
 ```java
-public java.lang.Object getCreatedAtInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt> getCreatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt">SecurityhubAutomationRuleCriteriaCreatedAt</a>>
 
 ---
 
 ##### `criticalityInput`<sup>Optional</sup> <a name="criticalityInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.criticalityInput"></a>
 
 ```java
-public java.lang.Object getCriticalityInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCriticality> getCriticalityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality">SecurityhubAutomationRuleCriteriaCriticality</a>>
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.descriptionInput"></a>
 
 ```java
-public java.lang.Object getDescriptionInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaDescription> getDescriptionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription">SecurityhubAutomationRuleCriteriaDescription</a>>
 
 ---
 
 ##### `firstObservedAtInput`<sup>Optional</sup> <a name="firstObservedAtInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.firstObservedAtInput"></a>
 
 ```java
-public java.lang.Object getFirstObservedAtInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObservedAt> getFirstObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt">SecurityhubAutomationRuleCriteriaFirstObservedAt</a>>
 
 ---
 
 ##### `generatorIdInput`<sup>Optional</sup> <a name="generatorIdInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.generatorIdInput"></a>
 
 ```java
-public java.lang.Object getGeneratorIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId> getGeneratorIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId">SecurityhubAutomationRuleCriteriaGeneratorId</a>>
 
 ---
 
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.idInput"></a>
 
 ```java
-public java.lang.Object getIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaId> getIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId">SecurityhubAutomationRuleCriteriaId</a>>
 
 ---
 
 ##### `lastObservedAtInput`<sup>Optional</sup> <a name="lastObservedAtInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.lastObservedAtInput"></a>
 
 ```java
-public java.lang.Object getLastObservedAtInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedAt> getLastObservedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt">SecurityhubAutomationRuleCriteriaLastObservedAt</a>>
 
 ---
 
 ##### `noteTextInput`<sup>Optional</sup> <a name="noteTextInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteTextInput"></a>
 
 ```java
-public java.lang.Object getNoteTextInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteText> getNoteTextInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText">SecurityhubAutomationRuleCriteriaNoteText</a>>
 
 ---
 
 ##### `noteUpdatedAtInput`<sup>Optional</sup> <a name="noteUpdatedAtInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedAtInput"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedAtInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt> getNoteUpdatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt">SecurityhubAutomationRuleCriteriaNoteUpdatedAt</a>>
 
 ---
 
 ##### `noteUpdatedByInput`<sup>Optional</sup> <a name="noteUpdatedByInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.noteUpdatedByInput"></a>
 
 ```java
-public java.lang.Object getNoteUpdatedByInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy> getNoteUpdatedByInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy">SecurityhubAutomationRuleCriteriaNoteUpdatedBy</a>>
 
 ---
 
 ##### `productArnInput`<sup>Optional</sup> <a name="productArnInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productArnInput"></a>
 
 ```java
-public java.lang.Object getProductArnInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductArn> getProductArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
 
 ---
 
 ##### `productNameInput`<sup>Optional</sup> <a name="productNameInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.productNameInput"></a>
 
 ```java
-public java.lang.Object getProductNameInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductName> getProductNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
 
 ---
 
 ##### `recordStateInput`<sup>Optional</sup> <a name="recordStateInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.recordStateInput"></a>
 
 ```java
-public java.lang.Object getRecordStateInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRecordState> getRecordStateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
 
 ---
 
 ##### `relatedFindingsIdInput`<sup>Optional</sup> <a name="relatedFindingsIdInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsIdInput"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId> getRelatedFindingsIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
 
 ---
 
 ##### `relatedFindingsProductArnInput`<sup>Optional</sup> <a name="relatedFindingsProductArnInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.relatedFindingsProductArnInput"></a>
 
 ```java
-public java.lang.Object getRelatedFindingsProductArnInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn> getRelatedFindingsProductArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
 
 ---
 
 ##### `resourceApplicationArnInput`<sup>Optional</sup> <a name="resourceApplicationArnInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationArnInput"></a>
 
 ```java
-public java.lang.Object getResourceApplicationArnInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn> getResourceApplicationArnInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
 
 ---
 
 ##### `resourceApplicationNameInput`<sup>Optional</sup> <a name="resourceApplicationNameInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceApplicationNameInput"></a>
 
 ```java
-public java.lang.Object getResourceApplicationNameInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName> getResourceApplicationNameInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
 
 ---
 
 ##### `resourceDetailsOtherInput`<sup>Optional</sup> <a name="resourceDetailsOtherInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceDetailsOtherInput"></a>
 
 ```java
-public java.lang.Object getResourceDetailsOtherInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther> getResourceDetailsOtherInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
 
 ---
 
 ##### `resourceIdInput`<sup>Optional</sup> <a name="resourceIdInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceIdInput"></a>
 
 ```java
-public java.lang.Object getResourceIdInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceId> getResourceIdInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
 
 ---
 
 ##### `resourcePartitionInput`<sup>Optional</sup> <a name="resourcePartitionInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourcePartitionInput"></a>
 
 ```java
-public java.lang.Object getResourcePartitionInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition> getResourcePartitionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
 
 ---
 
 ##### `resourceRegionInput`<sup>Optional</sup> <a name="resourceRegionInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceRegionInput"></a>
 
 ```java
-public java.lang.Object getResourceRegionInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion> getResourceRegionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
 
 ---
 
 ##### `resourceTagsInput`<sup>Optional</sup> <a name="resourceTagsInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTagsInput"></a>
 
 ```java
-public java.lang.Object getResourceTagsInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceTags> getResourceTagsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
 
 ---
 
 ##### `resourceTypeInput`<sup>Optional</sup> <a name="resourceTypeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.resourceTypeInput"></a>
 
 ```java
-public java.lang.Object getResourceTypeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceType> getResourceTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
 
 ---
 
 ##### `severityLabelInput`<sup>Optional</sup> <a name="severityLabelInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.severityLabelInput"></a>
 
 ```java
-public java.lang.Object getSeverityLabelInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel> getSeverityLabelInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
 
 ---
 
 ##### `sourceUrlInput`<sup>Optional</sup> <a name="sourceUrlInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.sourceUrlInput"></a>
 
 ```java
-public java.lang.Object getSourceUrlInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl> getSourceUrlInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
 
 ---
 
 ##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.titleInput"></a>
 
 ```java
-public java.lang.Object getTitleInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaTitle> getTitleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
 
 ---
 
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.typeInput"></a>
 
 ```java
-public java.lang.Object getTypeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaType> getTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
 
 ---
 
 ##### `updatedAtInput`<sup>Optional</sup> <a name="updatedAtInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.updatedAtInput"></a>
 
 ```java
-public java.lang.Object getUpdatedAtInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt> getUpdatedAtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
 
 ---
 
 ##### `userDefinedFieldsInput`<sup>Optional</sup> <a name="userDefinedFieldsInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.userDefinedFieldsInput"></a>
 
 ```java
-public java.lang.Object getUserDefinedFieldsInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields> getUserDefinedFieldsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
 
 ---
 
 ##### `verificationStateInput`<sup>Optional</sup> <a name="verificationStateInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.verificationStateInput"></a>
 
 ```java
-public java.lang.Object getVerificationStateInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaVerificationState> getVerificationStateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
 
 ---
 
 ##### `workflowStatusInput`<sup>Optional</sup> <a name="workflowStatusInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.workflowStatusInput"></a>
 
 ```java
-public java.lang.Object getWorkflowStatusInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus> getWorkflowStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteria getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>
 
 ---
 
@@ -20175,7 +20113,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>></code> | *No description.* |
 
 ---
 
@@ -20206,10 +20144,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>>
 
 ---
 
@@ -20446,7 +20384,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a></code> | *No description.* |
 
 ---
 
@@ -20517,10 +20455,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaProductArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn">SecurityhubAutomationRuleCriteriaProductArn</a>
 
 ---
 
@@ -20646,7 +20584,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>></code> | *No description.* |
 
 ---
 
@@ -20677,10 +20615,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>>
 
 ---
 
@@ -20917,7 +20855,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a></code> | *No description.* |
 
 ---
 
@@ -20988,10 +20926,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaProductName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName">SecurityhubAutomationRuleCriteriaProductName</a>
 
 ---
 
@@ -21117,7 +21055,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>></code> | *No description.* |
 
 ---
 
@@ -21148,10 +21086,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRecordState> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>>
 
 ---
 
@@ -21388,7 +21326,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a></code> | *No description.* |
 
 ---
 
@@ -21459,10 +21397,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaRecordState getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState">SecurityhubAutomationRuleCriteriaRecordState</a>
 
 ---
 
@@ -21588,7 +21526,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>></code> | *No description.* |
 
 ---
 
@@ -21619,10 +21557,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>>
 
 ---
 
@@ -21859,7 +21797,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -21930,10 +21868,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaRelatedFindingsId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId">SecurityhubAutomationRuleCriteriaRelatedFindingsId</a>
 
 ---
 
@@ -22059,7 +21997,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>></code> | *No description.* |
 
 ---
 
@@ -22090,10 +22028,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>>
 
 ---
 
@@ -22330,7 +22268,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -22401,10 +22339,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn">SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn</a>
 
 ---
 
@@ -22530,7 +22468,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>></code> | *No description.* |
 
 ---
 
@@ -22561,10 +22499,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationArn> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>>
 
 ---
 
@@ -22801,7 +22739,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a></code> | *No description.* |
 
 ---
 
@@ -22872,10 +22810,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceApplicationArn getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn">SecurityhubAutomationRuleCriteriaResourceApplicationArn</a>
 
 ---
 
@@ -23001,7 +22939,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>></code> | *No description.* |
 
 ---
 
@@ -23032,10 +22970,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceApplicationName> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>>
 
 ---
 
@@ -23272,7 +23210,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a></code> | *No description.* |
 
 ---
 
@@ -23343,10 +23281,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceApplicationName getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName">SecurityhubAutomationRuleCriteriaResourceApplicationName</a>
 
 ---
 
@@ -23472,7 +23410,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>></code> | *No description.* |
 
 ---
 
@@ -23503,10 +23441,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceDetailsOther> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>>
 
 ---
 
@@ -23745,7 +23683,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -23836,10 +23774,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceDetailsOther getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther">SecurityhubAutomationRuleCriteriaResourceDetailsOther</a>
 
 ---
 
@@ -23965,7 +23903,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>></code> | *No description.* |
 
 ---
 
@@ -23996,10 +23934,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceId> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>>
 
 ---
 
@@ -24236,7 +24174,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a></code> | *No description.* |
 
 ---
 
@@ -24307,10 +24245,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceId getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId">SecurityhubAutomationRuleCriteriaResourceId</a>
 
 ---
 
@@ -24436,7 +24374,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>></code> | *No description.* |
 
 ---
 
@@ -24467,10 +24405,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourcePartition> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>>
 
 ---
 
@@ -24707,7 +24645,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -24778,10 +24716,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourcePartition getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition">SecurityhubAutomationRuleCriteriaResourcePartition</a>
 
 ---
 
@@ -24907,7 +24845,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>></code> | *No description.* |
 
 ---
 
@@ -24938,10 +24876,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceRegion> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>>
 
 ---
 
@@ -25178,7 +25116,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -25249,10 +25187,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceRegion getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion">SecurityhubAutomationRuleCriteriaResourceRegion</a>
 
 ---
 
@@ -25378,7 +25316,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>></code> | *No description.* |
 
 ---
 
@@ -25409,10 +25347,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceTags> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>>
 
 ---
 
@@ -25651,7 +25589,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -25742,10 +25680,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceTags getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags">SecurityhubAutomationRuleCriteriaResourceTags</a>
 
 ---
 
@@ -25871,7 +25809,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>></code> | *No description.* |
 
 ---
 
@@ -25902,10 +25840,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>>
 
 ---
 
@@ -26142,7 +26080,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a></code> | *No description.* |
 
 ---
 
@@ -26213,10 +26151,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaResourceType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType">SecurityhubAutomationRuleCriteriaResourceType</a>
 
 ---
 
@@ -26342,7 +26280,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>></code> | *No description.* |
 
 ---
 
@@ -26373,10 +26311,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>>
 
 ---
 
@@ -26613,7 +26551,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -26684,10 +26622,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaSeverityLabel getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel">SecurityhubAutomationRuleCriteriaSeverityLabel</a>
 
 ---
 
@@ -26813,7 +26751,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>></code> | *No description.* |
 
 ---
 
@@ -26844,10 +26782,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>>
 
 ---
 
@@ -27084,7 +27022,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -27155,10 +27093,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaSourceUrl getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl">SecurityhubAutomationRuleCriteriaSourceUrl</a>
 
 ---
 
@@ -27284,7 +27222,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>></code> | *No description.* |
 
 ---
 
@@ -27315,10 +27253,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaTitle> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>>
 
 ---
 
@@ -27555,7 +27493,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a></code> | *No description.* |
 
 ---
 
@@ -27626,10 +27564,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaTitle getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle">SecurityhubAutomationRuleCriteriaTitle</a>
 
 ---
 
@@ -27755,7 +27693,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>></code> | *No description.* |
 
 ---
 
@@ -27786,10 +27724,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>>
 
 ---
 
@@ -28026,7 +27964,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a></code> | *No description.* |
 
 ---
 
@@ -28097,10 +28035,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType">SecurityhubAutomationRuleCriteriaType</a>
 
 ---
 
@@ -28226,7 +28164,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | *No description.* |
 
 ---
 
@@ -28257,10 +28195,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
 
 ---
 
@@ -28497,7 +28435,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.unit">unit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a></code> | *No description.* |
 
 ---
 
@@ -28568,10 +28506,10 @@ public java.lang.Number getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaUpdatedAtDateRange getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>
 
 ---
 
@@ -28697,7 +28635,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>></code> | *No description.* |
 
 ---
 
@@ -28728,10 +28666,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>>
 
 ---
 
@@ -28964,12 +28902,12 @@ Returns a reversible string representation.
 ##### `putDateRange` <a name="putDateRange" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.putDateRange"></a>
 
 ```java
-public void putDateRange(IResolvable OR java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange> value)
+public void putDateRange(IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.putDateRange.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
 
 ---
 
@@ -28999,12 +28937,12 @@ public void resetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRange">dateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList">SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput">dateRangeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.endInput">endInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.end">end</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.start">start</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -29045,10 +28983,10 @@ public SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList getDateRange();
 ##### `dateRangeInput`<sup>Optional</sup> <a name="dateRangeInput" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.dateRangeInput"></a>
 
 ```java
-public java.lang.Object getDateRangeInput();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDateRange> getDateRangeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>>
 
 ---
 
@@ -29095,10 +29033,10 @@ public java.lang.String getStart();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaUpdatedAt getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt">SecurityhubAutomationRuleCriteriaUpdatedAt</a>
 
 ---
 
@@ -29224,7 +29162,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>></code> | *No description.* |
 
 ---
 
@@ -29255,10 +29193,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFields> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>>
 
 ---
 
@@ -29497,7 +29435,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a></code> | *No description.* |
 
 ---
 
@@ -29588,10 +29526,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaUserDefinedFields getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields">SecurityhubAutomationRuleCriteriaUserDefinedFields</a>
 
 ---
 
@@ -29717,7 +29655,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>></code> | *No description.* |
 
 ---
 
@@ -29748,10 +29686,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaVerificationState> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>>
 
 ---
 
@@ -29988,7 +29926,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -30059,10 +29997,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaVerificationState getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState">SecurityhubAutomationRuleCriteriaVerificationState</a>
 
 ---
 
@@ -30188,7 +30126,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>></code> | *No description.* |
 
 ---
 
@@ -30219,10 +30157,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>>
 
 ---
 
@@ -30459,7 +30397,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -30530,10 +30468,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SecurityhubAutomationRuleCriteriaWorkflowStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus">SecurityhubAutomationRuleCriteriaWorkflowStatus</a>
 
 ---
 

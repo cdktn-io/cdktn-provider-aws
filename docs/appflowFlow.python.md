@@ -14,17 +14,17 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlow(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  destination_flow_config: typing.Union[IResolvable, typing.List[AppflowFlowDestinationFlowConfig]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  destination_flow_config: IResolvable | typing.List[AppflowFlowDestinationFlowConfig],
   name: str,
   source_flow_config: AppflowFlowSourceFlowConfig,
-  task: typing.Union[IResolvable, typing.List[AppflowFlowTask]],
+  task: IResolvable | typing.List[AppflowFlowTask],
   trigger_config: AppflowFlowTriggerConfig,
   description: str = None,
   id: str = None,
@@ -40,17 +40,17 @@ appflowFlow.AppflowFlow(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.destinationFlowConfig">destination_flow_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]</code> | destination_flow_config block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.destinationFlowConfig">destination_flow_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]</code> | destination_flow_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#name AppflowFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.sourceFlowConfig">source_flow_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig">AppflowFlowSourceFlowConfig</a></code> | source_flow_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.task">task</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]</code> | task block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.task">task</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]</code> | task block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.triggerConfig">trigger_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig">AppflowFlowTriggerConfig</a></code> | trigger_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#description AppflowFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#id AppflowFlow#id}. |
@@ -82,13 +82,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -118,13 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `destination_flow_config`<sup>Required</sup> <a name="destination_flow_config" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.destinationFlowConfig"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
 
 destination_flow_config block.
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `task`<sup>Required</sup> <a name="task" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer.parameter.task"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
 
 task block.
 
@@ -497,7 +497,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.importFrom"></a>
@@ -560,7 +560,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -576,7 +576,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -604,13 +604,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_destination_flow_config(
-  value: typing.Union[IResolvable, typing.List[AppflowFlowDestinationFlowConfig]]
+  value: IResolvable | typing.List[AppflowFlowDestinationFlowConfig]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.putDestinationFlowConfig.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
 
 ---
 
@@ -692,13 +692,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_task(
-  value: typing.Union[IResolvable, typing.List[AppflowFlowTask]]
+  value: IResolvable | typing.List[AppflowFlowTask]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.putTask.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
 
 ---
 
@@ -908,13 +908,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfig">destination_flow_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList">AppflowFlowDestinationFlowConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.flowStatus">flow_status</a></code> | <code>str</code> | *No description.* |
@@ -923,7 +923,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.task">task</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList">AppflowFlowTaskList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.triggerConfig">trigger_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference">AppflowFlowTriggerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfigInput">destination_flow_config_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfigInput">destination_flow_config_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.kmsArnInput">kms_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.metadataCatalogConfigInput">metadata_catalog_config_input</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowMetadataCatalogConfig">AppflowFlowMetadataCatalogConfig</a></code> | *No description.* |
@@ -932,7 +932,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.sourceFlowConfigInput">source_flow_config_input</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig">AppflowFlowSourceFlowConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.taskInput">task_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.taskInput">task_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.triggerConfigInput">trigger_config_input</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig">AppflowFlowTriggerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1019,20 +1019,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1079,10 +1079,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1169,10 +1169,10 @@ description_input: str
 ##### `destination_flow_config_input`<sup>Optional</sup> <a name="destination_flow_config_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.destinationFlowConfigInput"></a>
 
 ```python
-destination_flow_config_input: typing.Union[IResolvable, typing.List[AppflowFlowDestinationFlowConfig]]
+destination_flow_config_input: IResolvable | typing.List[AppflowFlowDestinationFlowConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
 
 ---
 
@@ -1259,10 +1259,10 @@ tags_input: typing.Mapping[str]
 ##### `task_input`<sup>Optional</sup> <a name="task_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.property.taskInput"></a>
 
 ```python
-task_input: typing.Union[IResolvable, typing.List[AppflowFlowTask]]
+task_input: IResolvable | typing.List[AppflowFlowTask]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
 
 ---
 
@@ -1374,17 +1374,17 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import appflow_flow
 
 appflowFlow.AppflowFlowConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  destination_flow_config: typing.Union[IResolvable, typing.List[AppflowFlowDestinationFlowConfig]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  destination_flow_config: IResolvable | typing.List[AppflowFlowDestinationFlowConfig],
   name: str,
   source_flow_config: AppflowFlowSourceFlowConfig,
-  task: typing.Union[IResolvable, typing.List[AppflowFlowTask]],
+  task: IResolvable | typing.List[AppflowFlowTask],
   trigger_config: AppflowFlowTriggerConfig,
   description: str = None,
   id: str = None,
@@ -1400,17 +1400,17 @@ appflowFlow.AppflowFlowConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig">destination_flow_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]</code> | destination_flow_config block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig">destination_flow_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]</code> | destination_flow_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#name AppflowFlow#name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.sourceFlowConfig">source_flow_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig">AppflowFlowSourceFlowConfig</a></code> | source_flow_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task">task</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]</code> | task block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task">task</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]</code> | task block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.triggerConfig">trigger_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig">AppflowFlowTriggerConfig</a></code> | trigger_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#description AppflowFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#id AppflowFlow#id}. |
@@ -1425,20 +1425,20 @@ appflowFlow.AppflowFlowConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1485,20 +1485,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `destination_flow_config`<sup>Required</sup> <a name="destination_flow_config" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.destinationFlowConfig"></a>
 
 ```python
-destination_flow_config: typing.Union[IResolvable, typing.List[AppflowFlowDestinationFlowConfig]]
+destination_flow_config: IResolvable | typing.List[AppflowFlowDestinationFlowConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
 
 destination_flow_config block.
 
@@ -1535,10 +1535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `task`<sup>Required</sup> <a name="task" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.property.task"></a>
 
 ```python
-task: typing.Union[IResolvable, typing.List[AppflowFlowTask]]
+task: IResolvable | typing.List[AppflowFlowTask]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
 
 task block.
 
@@ -2053,7 +2053,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -2063,7 +2063,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustom
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2094,10 +2094,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2207,7 +2207,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -2217,7 +2217,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventB
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2248,10 +2248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2315,7 +2315,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -2325,7 +2325,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneyc
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2356,10 +2356,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2434,7 +2434,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -2444,7 +2444,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarket
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2475,10 +2475,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2570,7 +2570,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -2580,7 +2580,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshi
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -2611,10 +2611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -2693,7 +2693,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3Ou
   aggregation_config: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig = None,
   file_type: str = None,
   prefix_config: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig = None,
-  preserve_source_data_typing: typing.Union[bool, IResolvable] = None
+  preserve_source_data_typing: bool | IResolvable = None
 )
 ```
 
@@ -2704,7 +2704,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3Ou
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.aggregationConfig">aggregation_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | aggregation_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.fileType">file_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#file_type AppflowFlow#file_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.prefixConfig">prefix_config</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | prefix_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">preserve_source_data_typing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">preserve_source_data_typing</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
 
 ---
 
@@ -2751,10 +2751,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `preserve_source_data_typing`<sup>Optional</sup> <a name="preserve_source_data_typing" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping"></a>
 
 ```python
-preserve_source_data_typing: typing.Union[bool, IResolvable]
+preserve_source_data_typing: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}.
 
@@ -2966,7 +2966,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -2976,7 +2976,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesf
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3007,10 +3007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -3118,7 +3118,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -3128,7 +3128,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDa
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3159,10 +3159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -3300,7 +3300,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -3310,7 +3310,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowfl
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3341,10 +3341,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -3654,7 +3654,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 )
 ```
 
@@ -3664,7 +3664,7 @@ appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendes
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}. |
 
 ---
 
@@ -3695,10 +3695,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -4538,8 +4538,8 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce(
   object: str,
   data_transfer_api: str = None,
-  enable_dynamic_field_update: typing.Union[bool, IResolvable] = None,
-  include_deleted_records: typing.Union[bool, IResolvable] = None
+  enable_dynamic_field_update: bool | IResolvable = None,
+  include_deleted_records: bool | IResolvable = None
 )
 ```
 
@@ -4549,8 +4549,8 @@ appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.object">object</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.dataTransferApi">data_transfer_api</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#data_transfer_api AppflowFlow#data_transfer_api}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate">enable_dynamic_field_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords">include_deleted_records</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate">enable_dynamic_field_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords">include_deleted_records</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}. |
 
 ---
 
@@ -4581,10 +4581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_dynamic_field_update`<sup>Optional</sup> <a name="enable_dynamic_field_update" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.enableDynamicFieldUpdate"></a>
 
 ```python
-enable_dynamic_field_update: typing.Union[bool, IResolvable]
+enable_dynamic_field_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}.
 
@@ -4593,10 +4593,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `include_deleted_records`<sup>Optional</sup> <a name="include_deleted_records" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.property.includeDeletedRecords"></a>
 
 ```python
-include_deleted_records: typing.Union[bool, IResolvable]
+include_deleted_records: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}.
 
@@ -4868,9 +4868,9 @@ from cdktf_cdktf_provider_aws import appflow_flow
 appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva(
   object: str,
   document_type: str = None,
-  include_all_versions: typing.Union[bool, IResolvable] = None,
-  include_renditions: typing.Union[bool, IResolvable] = None,
-  include_source_files: typing.Union[bool, IResolvable] = None
+  include_all_versions: bool | IResolvable = None,
+  include_renditions: bool | IResolvable = None,
+  include_source_files: bool | IResolvable = None
 )
 ```
 
@@ -4880,9 +4880,9 @@ appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.object">object</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#object AppflowFlow#object}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.documentType">document_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#document_type AppflowFlow#document_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions">include_all_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions">include_renditions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles">include_source_files</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions">include_all_versions</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions">include_renditions</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles">include_source_files</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}. |
 
 ---
 
@@ -4913,10 +4913,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `include_all_versions`<sup>Optional</sup> <a name="include_all_versions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeAllVersions"></a>
 
 ```python
-include_all_versions: typing.Union[bool, IResolvable]
+include_all_versions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}.
 
@@ -4925,10 +4925,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `include_renditions`<sup>Optional</sup> <a name="include_renditions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeRenditions"></a>
 
 ```python
-include_renditions: typing.Union[bool, IResolvable]
+include_renditions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}.
 
@@ -4937,10 +4937,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `include_source_files`<sup>Optional</sup> <a name="include_source_files" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.property.includeSourceFiles"></a>
 
 ```python
-include_source_files: typing.Union[bool, IResolvable]
+include_source_files: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}.
 
@@ -4987,7 +4987,7 @@ from cdktf_cdktf_provider_aws import appflow_flow
 
 appflowFlow.AppflowFlowTask(
   task_type: str,
-  connector_operator: typing.Union[IResolvable, typing.List[AppflowFlowTaskConnectorOperator]] = None,
+  connector_operator: IResolvable | typing.List[AppflowFlowTaskConnectorOperator] = None,
   destination_field: str = None,
   source_fields: typing.List[str] = None,
   task_properties: typing.Mapping[str] = None
@@ -4999,7 +4999,7 @@ appflowFlow.AppflowFlowTask(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskType">task_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator">connector_operator</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]</code> | connector_operator block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator">connector_operator</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]</code> | connector_operator block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.destinationField">destination_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.sourceFields">source_fields</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.taskProperties">task_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}. |
@@ -5021,10 +5021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `connector_operator`<sup>Optional</sup> <a name="connector_operator" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTask.property.connectorOperator"></a>
 
 ```python
-connector_operator: typing.Union[IResolvable, typing.List[AppflowFlowTaskConnectorOperator]]
+connector_operator: IResolvable | typing.List[AppflowFlowTaskConnectorOperator]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]
 
 connector_operator block.
 
@@ -5768,10 +5768,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -5823,10 +5823,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5853,10 +5853,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6110,7 +6110,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -6132,7 +6132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -6901,10 +6901,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -6956,10 +6956,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6986,10 +6986,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7240,7 +7240,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -7262,7 +7262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -7622,10 +7622,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -7677,10 +7677,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7707,10 +7707,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7961,7 +7961,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -7983,7 +7983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -8617,10 +8617,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -8672,10 +8672,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8702,10 +8702,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8956,7 +8956,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -8978,7 +8978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -10485,10 +10485,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -10540,10 +10540,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10570,10 +10570,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10825,7 +10825,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -10847,7 +10847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -11237,7 +11237,7 @@ def put_s3_output_format_config(
   aggregation_config: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig = None,
   file_type: str = None,
   prefix_config: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig = None,
-  preserve_source_data_typing: typing.Union[bool, IResolvable] = None
+  preserve_source_data_typing: bool | IResolvable = None
 ) -> None
 ```
 
@@ -11271,7 +11271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `preserve_source_data_typing`<sup>Optional</sup> <a name="preserve_source_data_typing" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference.putS3OutputFormatConfig.parameter.preserveSourceDataTyping"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}.
 
@@ -12062,9 +12062,9 @@ def reset_preserve_source_data_typing() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.aggregationConfigInput">aggregation_config_input</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileTypeInput">file_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.prefixConfigInput">prefix_config_input</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput">preserve_source_data_typing_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput">preserve_source_data_typing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileType">file_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping">preserve_source_data_typing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping">preserve_source_data_typing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig</a></code> | *No description.* |
 
 ---
@@ -12146,10 +12146,10 @@ prefix_config_input: AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 ##### `preserve_source_data_typing_input`<sup>Optional</sup> <a name="preserve_source_data_typing_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput"></a>
 
 ```python
-preserve_source_data_typing_input: typing.Union[bool, IResolvable]
+preserve_source_data_typing_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12166,10 +12166,10 @@ file_type: str
 ##### `preserve_source_data_typing`<sup>Required</sup> <a name="preserve_source_data_typing" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping"></a>
 
 ```python
-preserve_source_data_typing: typing.Union[bool, IResolvable]
+preserve_source_data_typing: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12803,10 +12803,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -12858,10 +12858,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12888,10 +12888,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13145,7 +13145,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -13167,7 +13167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -13611,10 +13611,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -13666,10 +13666,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13696,10 +13696,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13954,7 +13954,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -13976,7 +13976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -14777,10 +14777,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -14832,10 +14832,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -14862,10 +14862,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -15117,7 +15117,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -15139,7 +15139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -16998,10 +16998,10 @@ def reset_fail_on_first_destination_error() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketPrefixInput">bucket_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput">fail_on_first_destination_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.bucketPrefix">bucket_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationError">fail_on_first_destination_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig</a></code> | *No description.* |
 
 ---
@@ -17053,10 +17053,10 @@ bucket_prefix_input: str
 ##### `fail_on_first_destination_error_input`<sup>Optional</sup> <a name="fail_on_first_destination_error_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationErrorInput"></a>
 
 ```python
-fail_on_first_destination_error_input: typing.Union[bool, IResolvable]
+fail_on_first_destination_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17083,10 +17083,10 @@ bucket_prefix: str
 ##### `fail_on_first_destination_error`<sup>Required</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.property.failOnFirstDestinationError"></a>
 
 ```python
-fail_on_first_destination_error: typing.Union[bool, IResolvable]
+fail_on_first_destination_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17339,7 +17339,7 @@ Returns a reversible string representation.
 def put_error_handling_config(
   bucket_name: str = None,
   bucket_prefix: str = None,
-  fail_on_first_destination_error: typing.Union[bool, IResolvable] = None
+  fail_on_first_destination_error: bool | IResolvable = None
 ) -> None
 ```
 
@@ -17361,7 +17361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `fail_on_first_destination_error`<sup>Optional</sup> <a name="fail_on_first_destination_error" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference.putErrorHandlingConfig.parameter.failOnFirstDestinationError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 
@@ -17650,7 +17650,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -17681,10 +17681,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppflowFlowDestinationFlowConfig]]
+internal_value: IResolvable | typing.List[AppflowFlowDestinationFlowConfig]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
 
 ---
 
@@ -18117,7 +18117,7 @@ def reset_connector_profile_name() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.apiVersion">api_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorProfileName">connector_profile_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorType">connector_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a></code> | *No description.* |
 
 ---
 
@@ -18228,10 +18228,10 @@ connector_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppflowFlowDestinationFlowConfig]
+internal_value: IResolvable | AppflowFlowDestinationFlowConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>
 
 ---
 
@@ -22347,8 +22347,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 def put_salesforce(
   object: str,
   data_transfer_api: str = None,
-  enable_dynamic_field_update: typing.Union[bool, IResolvable] = None,
-  include_deleted_records: typing.Union[bool, IResolvable] = None
+  enable_dynamic_field_update: bool | IResolvable = None,
+  include_deleted_records: bool | IResolvable = None
 ) -> None
 ```
 
@@ -22370,7 +22370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_dynamic_field_update`<sup>Optional</sup> <a name="enable_dynamic_field_update" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference.putSalesforce.parameter.enableDynamicFieldUpdate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#enable_dynamic_field_update AppflowFlow#enable_dynamic_field_update}.
 
@@ -22378,7 +22378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `include_deleted_records`<sup>Optional</sup> <a name="include_deleted_records" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference.putSalesforce.parameter.includeDeletedRecords"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_deleted_records AppflowFlow#include_deleted_records}.
 
@@ -22492,9 +22492,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 def put_veeva(
   object: str,
   document_type: str = None,
-  include_all_versions: typing.Union[bool, IResolvable] = None,
-  include_renditions: typing.Union[bool, IResolvable] = None,
-  include_source_files: typing.Union[bool, IResolvable] = None
+  include_all_versions: bool | IResolvable = None,
+  include_renditions: bool | IResolvable = None,
+  include_source_files: bool | IResolvable = None
 ) -> None
 ```
 
@@ -22516,7 +22516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `include_all_versions`<sup>Optional</sup> <a name="include_all_versions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference.putVeeva.parameter.includeAllVersions"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_all_versions AppflowFlow#include_all_versions}.
 
@@ -22524,7 +22524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `include_renditions`<sup>Optional</sup> <a name="include_renditions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference.putVeeva.parameter.includeRenditions"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_renditions AppflowFlow#include_renditions}.
 
@@ -22532,7 +22532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `include_source_files`<sup>Optional</sup> <a name="include_source_files" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference.putVeeva.parameter.includeSourceFiles"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#include_source_files AppflowFlow#include_source_files}.
 
@@ -23972,12 +23972,12 @@ def reset_include_deleted_records() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.dataTransferApiInput">data_transfer_api_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdateInput">enable_dynamic_field_update_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecordsInput">include_deleted_records_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdateInput">enable_dynamic_field_update_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecordsInput">include_deleted_records_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.objectInput">object_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.dataTransferApi">data_transfer_api</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdate">enable_dynamic_field_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecords">include_deleted_records</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdate">enable_dynamic_field_update</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecords">include_deleted_records</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.object">object</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce">AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce</a></code> | *No description.* |
 
@@ -24020,20 +24020,20 @@ data_transfer_api_input: str
 ##### `enable_dynamic_field_update_input`<sup>Optional</sup> <a name="enable_dynamic_field_update_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdateInput"></a>
 
 ```python
-enable_dynamic_field_update_input: typing.Union[bool, IResolvable]
+enable_dynamic_field_update_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `include_deleted_records_input`<sup>Optional</sup> <a name="include_deleted_records_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecordsInput"></a>
 
 ```python
-include_deleted_records_input: typing.Union[bool, IResolvable]
+include_deleted_records_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24060,20 +24060,20 @@ data_transfer_api: str
 ##### `enable_dynamic_field_update`<sup>Required</sup> <a name="enable_dynamic_field_update" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.enableDynamicFieldUpdate"></a>
 
 ```python
-enable_dynamic_field_update: typing.Union[bool, IResolvable]
+enable_dynamic_field_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `include_deleted_records`<sup>Required</sup> <a name="include_deleted_records" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.property.includeDeletedRecords"></a>
 
 ```python
-include_deleted_records: typing.Union[bool, IResolvable]
+include_deleted_records: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26526,14 +26526,14 @@ def reset_include_source_files() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.documentTypeInput">document_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersionsInput">include_all_versions_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditionsInput">include_renditions_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFilesInput">include_source_files_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersionsInput">include_all_versions_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditionsInput">include_renditions_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFilesInput">include_source_files_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.objectInput">object_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.documentType">document_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersions">include_all_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditions">include_renditions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFiles">include_source_files</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersions">include_all_versions</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditions">include_renditions</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFiles">include_source_files</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.object">object</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva">AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva</a></code> | *No description.* |
 
@@ -26576,30 +26576,30 @@ document_type_input: str
 ##### `include_all_versions_input`<sup>Optional</sup> <a name="include_all_versions_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersionsInput"></a>
 
 ```python
-include_all_versions_input: typing.Union[bool, IResolvable]
+include_all_versions_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `include_renditions_input`<sup>Optional</sup> <a name="include_renditions_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditionsInput"></a>
 
 ```python
-include_renditions_input: typing.Union[bool, IResolvable]
+include_renditions_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `include_source_files_input`<sup>Optional</sup> <a name="include_source_files_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFilesInput"></a>
 
 ```python
-include_source_files_input: typing.Union[bool, IResolvable]
+include_source_files_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26626,30 +26626,30 @@ document_type: str
 ##### `include_all_versions`<sup>Required</sup> <a name="include_all_versions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeAllVersions"></a>
 
 ```python
-include_all_versions: typing.Union[bool, IResolvable]
+include_all_versions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `include_renditions`<sup>Required</sup> <a name="include_renditions" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeRenditions"></a>
 
 ```python
-include_renditions: typing.Union[bool, IResolvable]
+include_renditions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `include_source_files`<sup>Required</sup> <a name="include_source_files" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.property.includeSourceFiles"></a>
 
 ```python
-include_source_files: typing.Union[bool, IResolvable]
+include_source_files: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -27101,7 +27101,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]</code> | *No description.* |
 
 ---
 
@@ -27132,10 +27132,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppflowFlowTaskConnectorOperator]]
+internal_value: IResolvable | typing.List[AppflowFlowTaskConnectorOperator]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]
 
 ---
 
@@ -27539,7 +27539,7 @@ def reset_zendesk() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.trendmicro">trendmicro</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.veeva">veeva</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.zendesk">zendesk</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a></code> | *No description.* |
 
 ---
 
@@ -27890,10 +27890,10 @@ zendesk: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppflowFlowTaskConnectorOperator]
+internal_value: IResolvable | AppflowFlowTaskConnectorOperator
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>
 
 ---
 
@@ -28029,7 +28029,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]</code> | *No description.* |
 
 ---
 
@@ -28060,10 +28060,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppflowFlowTask]]
+internal_value: IResolvable | typing.List[AppflowFlowTask]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
 
 ---
 
@@ -28325,13 +28325,13 @@ Returns a reversible string representation.
 
 ```python
 def put_connector_operator(
-  value: typing.Union[IResolvable, typing.List[AppflowFlowTaskConnectorOperator]]
+  value: IResolvable | typing.List[AppflowFlowTaskConnectorOperator]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.putConnectorOperator.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]
 
 ---
 
@@ -28367,7 +28367,7 @@ def reset_task_properties() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperator">connector_operator</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList">AppflowFlowTaskConnectorOperatorList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperatorInput">connector_operator_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperatorInput">connector_operator_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.destinationFieldInput">destination_field_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFieldsInput">source_fields_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskPropertiesInput">task_properties_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -28376,7 +28376,7 @@ def reset_task_properties() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFields">source_fields</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskProperties">task_properties</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskType">task_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a></code> | *No description.* |
 
 ---
 
@@ -28417,10 +28417,10 @@ connector_operator: AppflowFlowTaskConnectorOperatorList
 ##### `connector_operator_input`<sup>Optional</sup> <a name="connector_operator_input" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.connectorOperatorInput"></a>
 
 ```python
-connector_operator_input: typing.Union[IResolvable, typing.List[AppflowFlowTaskConnectorOperator]]
+connector_operator_input: IResolvable | typing.List[AppflowFlowTaskConnectorOperator]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]
 
 ---
 
@@ -28507,10 +28507,10 @@ task_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppflowFlowTask]
+internal_value: IResolvable | AppflowFlowTask
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>
 
 ---
 

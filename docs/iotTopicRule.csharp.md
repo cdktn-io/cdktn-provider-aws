@@ -318,7 +318,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.importFrom"></a>
@@ -372,7 +372,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -387,7 +387,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -412,72 +412,72 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutCloudwatchAlarm` <a name="PutCloudwatchAlarm" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchAlarm"></a>
 
 ```csharp
-private void PutCloudwatchAlarm(object Value)
+private void PutCloudwatchAlarm(IResolvable|IotTopicRuleCloudwatchAlarm[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchAlarm.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]
 
 ---
 
 ##### `PutCloudwatchLogs` <a name="PutCloudwatchLogs" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchLogs"></a>
 
 ```csharp
-private void PutCloudwatchLogs(object Value)
+private void PutCloudwatchLogs(IResolvable|IotTopicRuleCloudwatchLogs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchLogs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]
 
 ---
 
 ##### `PutCloudwatchMetric` <a name="PutCloudwatchMetric" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchMetric"></a>
 
 ```csharp
-private void PutCloudwatchMetric(object Value)
+private void PutCloudwatchMetric(IResolvable|IotTopicRuleCloudwatchMetric[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putCloudwatchMetric.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]
 
 ---
 
 ##### `PutDynamodb` <a name="PutDynamodb" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putDynamodb"></a>
 
 ```csharp
-private void PutDynamodb(object Value)
+private void PutDynamodb(IResolvable|IotTopicRuleDynamodb[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putDynamodb.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]
 
 ---
 
 ##### `PutDynamodbv2` <a name="PutDynamodbv2" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putDynamodbv2"></a>
 
 ```csharp
-private void PutDynamodbv2(object Value)
+private void PutDynamodbv2(IResolvable|IotTopicRuleDynamodbv2[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putDynamodbv2.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]
 
 ---
 
 ##### `PutElasticsearch` <a name="PutElasticsearch" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putElasticsearch"></a>
 
 ```csharp
-private void PutElasticsearch(object Value)
+private void PutElasticsearch(IResolvable|IotTopicRuleElasticsearch[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putElasticsearch.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]
 
 ---
 
@@ -496,156 +496,156 @@ private void PutErrorAction(IotTopicRuleErrorAction Value)
 ##### `PutFirehose` <a name="PutFirehose" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putFirehose"></a>
 
 ```csharp
-private void PutFirehose(object Value)
+private void PutFirehose(IResolvable|IotTopicRuleFirehose[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putFirehose.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]
 
 ---
 
 ##### `PutHttp` <a name="PutHttp" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putHttp"></a>
 
 ```csharp
-private void PutHttp(object Value)
+private void PutHttp(IResolvable|IotTopicRuleHttp[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putHttp.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]
 
 ---
 
 ##### `PutIotAnalytics` <a name="PutIotAnalytics" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putIotAnalytics"></a>
 
 ```csharp
-private void PutIotAnalytics(object Value)
+private void PutIotAnalytics(IResolvable|IotTopicRuleIotAnalytics[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putIotAnalytics.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]
 
 ---
 
 ##### `PutIotEvents` <a name="PutIotEvents" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putIotEvents"></a>
 
 ```csharp
-private void PutIotEvents(object Value)
+private void PutIotEvents(IResolvable|IotTopicRuleIotEvents[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putIotEvents.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]
 
 ---
 
 ##### `PutKafka` <a name="PutKafka" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putKafka"></a>
 
 ```csharp
-private void PutKafka(object Value)
+private void PutKafka(IResolvable|IotTopicRuleKafka[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putKafka.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]
 
 ---
 
 ##### `PutKinesis` <a name="PutKinesis" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putKinesis"></a>
 
 ```csharp
-private void PutKinesis(object Value)
+private void PutKinesis(IResolvable|IotTopicRuleKinesis[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putKinesis.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]
 
 ---
 
 ##### `PutLambda` <a name="PutLambda" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putLambda"></a>
 
 ```csharp
-private void PutLambda(object Value)
+private void PutLambda(IResolvable|IotTopicRuleLambda[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putLambda.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]
 
 ---
 
 ##### `PutRepublish` <a name="PutRepublish" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putRepublish"></a>
 
 ```csharp
-private void PutRepublish(object Value)
+private void PutRepublish(IResolvable|IotTopicRuleRepublish[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putRepublish.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]
 
 ---
 
 ##### `PutS3` <a name="PutS3" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putS3"></a>
 
 ```csharp
-private void PutS3(object Value)
+private void PutS3(IResolvable|IotTopicRuleS3[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putS3.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]
 
 ---
 
 ##### `PutSns` <a name="PutSns" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putSns"></a>
 
 ```csharp
-private void PutSns(object Value)
+private void PutSns(IResolvable|IotTopicRuleSns[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putSns.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]
 
 ---
 
 ##### `PutSqs` <a name="PutSqs" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putSqs"></a>
 
 ```csharp
-private void PutSqs(object Value)
+private void PutSqs(IResolvable|IotTopicRuleSqs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putSqs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]
 
 ---
 
 ##### `PutStepFunctions` <a name="PutStepFunctions" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putStepFunctions"></a>
 
 ```csharp
-private void PutStepFunctions(object Value)
+private void PutStepFunctions(IResolvable|IotTopicRuleStepFunctions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putStepFunctions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]
 
 ---
 
 ##### `PutTimestream` <a name="PutTimestream" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putTimestream"></a>
 
 ```csharp
-private void PutTimestream(object Value)
+private void PutTimestream(IResolvable|IotTopicRuleTimestream[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.putTimestream.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]
 
 ---
 
@@ -925,13 +925,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarm">CloudwatchAlarm</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList">IotTopicRuleCloudwatchAlarmList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogs">CloudwatchLogs</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList">IotTopicRuleCloudwatchLogsList</a></code> | *No description.* |
@@ -953,37 +953,37 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.sqs">Sqs</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList">IotTopicRuleSqsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctions">StepFunctions</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList">IotTopicRuleStepFunctionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.timestream">Timestream</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList">IotTopicRuleTimestreamList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarmInput">CloudwatchAlarmInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogsInput">CloudwatchLogsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchMetricInput">CloudwatchMetricInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarmInput">CloudwatchAlarmInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogsInput">CloudwatchLogsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchMetricInput">CloudwatchMetricInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbInput">DynamodbInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbv2Input">Dynamodbv2Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbInput">DynamodbInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbv2Input">Dynamodbv2Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.errorActionInput">ErrorActionInput</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.firehoseInput">FirehoseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.httpInput">HttpInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.firehoseInput">FirehoseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.httpInput">HttpInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.iotAnalyticsInput">IotAnalyticsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.iotEventsInput">IotEventsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.kafkaInput">KafkaInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.kinesisInput">KinesisInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.lambdaInput">LambdaInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.iotAnalyticsInput">IotAnalyticsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.iotEventsInput">IotEventsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.kafkaInput">KafkaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.kinesisInput">KinesisInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.lambdaInput">LambdaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.republishInput">RepublishInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.s3Input">S3Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.snsInput">SnsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.republishInput">RepublishInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.s3Input">S3Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.snsInput">SnsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.sqlInput">SqlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.sqlVersionInput">SqlVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.sqsInput">SqsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctionsInput">StepFunctionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.sqsInput">SqsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctionsInput">StepFunctionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.timestreamInput">TimestreamInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.timestreamInput">TimestreamInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.region">Region</a></code> | <code>string</code> | *No description.* |
@@ -1069,20 +1069,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1129,10 +1129,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1349,30 +1349,30 @@ public IotTopicRuleTimestreamList Timestream { get; }
 ##### `CloudwatchAlarmInput`<sup>Optional</sup> <a name="CloudwatchAlarmInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchAlarmInput"></a>
 
 ```csharp
-public object CloudwatchAlarmInput { get; }
+public IResolvable|IotTopicRuleCloudwatchAlarm[] CloudwatchAlarmInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]
 
 ---
 
 ##### `CloudwatchLogsInput`<sup>Optional</sup> <a name="CloudwatchLogsInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchLogsInput"></a>
 
 ```csharp
-public object CloudwatchLogsInput { get; }
+public IResolvable|IotTopicRuleCloudwatchLogs[] CloudwatchLogsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]
 
 ---
 
 ##### `CloudwatchMetricInput`<sup>Optional</sup> <a name="CloudwatchMetricInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.cloudwatchMetricInput"></a>
 
 ```csharp
-public object CloudwatchMetricInput { get; }
+public IResolvable|IotTopicRuleCloudwatchMetric[] CloudwatchMetricInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]
 
 ---
 
@@ -1389,40 +1389,40 @@ public string DescriptionInput { get; }
 ##### `DynamodbInput`<sup>Optional</sup> <a name="DynamodbInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbInput"></a>
 
 ```csharp
-public object DynamodbInput { get; }
+public IResolvable|IotTopicRuleDynamodb[] DynamodbInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]
 
 ---
 
 ##### `Dynamodbv2Input`<sup>Optional</sup> <a name="Dynamodbv2Input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.dynamodbv2Input"></a>
 
 ```csharp
-public object Dynamodbv2Input { get; }
+public IResolvable|IotTopicRuleDynamodbv2[] Dynamodbv2Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]
 
 ---
 
 ##### `ElasticsearchInput`<sup>Optional</sup> <a name="ElasticsearchInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.elasticsearchInput"></a>
 
 ```csharp
-public object ElasticsearchInput { get; }
+public IResolvable|IotTopicRuleElasticsearch[] ElasticsearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]
 
 ---
 
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1439,20 +1439,20 @@ public IotTopicRuleErrorAction ErrorActionInput { get; }
 ##### `FirehoseInput`<sup>Optional</sup> <a name="FirehoseInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.firehoseInput"></a>
 
 ```csharp
-public object FirehoseInput { get; }
+public IResolvable|IotTopicRuleFirehose[] FirehoseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]
 
 ---
 
 ##### `HttpInput`<sup>Optional</sup> <a name="HttpInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.httpInput"></a>
 
 ```csharp
-public object HttpInput { get; }
+public IResolvable|IotTopicRuleHttp[] HttpInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]
 
 ---
 
@@ -1469,50 +1469,50 @@ public string IdInput { get; }
 ##### `IotAnalyticsInput`<sup>Optional</sup> <a name="IotAnalyticsInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.iotAnalyticsInput"></a>
 
 ```csharp
-public object IotAnalyticsInput { get; }
+public IResolvable|IotTopicRuleIotAnalytics[] IotAnalyticsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]
 
 ---
 
 ##### `IotEventsInput`<sup>Optional</sup> <a name="IotEventsInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.iotEventsInput"></a>
 
 ```csharp
-public object IotEventsInput { get; }
+public IResolvable|IotTopicRuleIotEvents[] IotEventsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]
 
 ---
 
 ##### `KafkaInput`<sup>Optional</sup> <a name="KafkaInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.kafkaInput"></a>
 
 ```csharp
-public object KafkaInput { get; }
+public IResolvable|IotTopicRuleKafka[] KafkaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]
 
 ---
 
 ##### `KinesisInput`<sup>Optional</sup> <a name="KinesisInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.kinesisInput"></a>
 
 ```csharp
-public object KinesisInput { get; }
+public IResolvable|IotTopicRuleKinesis[] KinesisInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]
 
 ---
 
 ##### `LambdaInput`<sup>Optional</sup> <a name="LambdaInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.lambdaInput"></a>
 
 ```csharp
-public object LambdaInput { get; }
+public IResolvable|IotTopicRuleLambda[] LambdaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]
 
 ---
 
@@ -1539,30 +1539,30 @@ public string RegionInput { get; }
 ##### `RepublishInput`<sup>Optional</sup> <a name="RepublishInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.republishInput"></a>
 
 ```csharp
-public object RepublishInput { get; }
+public IResolvable|IotTopicRuleRepublish[] RepublishInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]
 
 ---
 
 ##### `S3Input`<sup>Optional</sup> <a name="S3Input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.s3Input"></a>
 
 ```csharp
-public object S3Input { get; }
+public IResolvable|IotTopicRuleS3[] S3Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]
 
 ---
 
 ##### `SnsInput`<sup>Optional</sup> <a name="SnsInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.snsInput"></a>
 
 ```csharp
-public object SnsInput { get; }
+public IResolvable|IotTopicRuleSns[] SnsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]
 
 ---
 
@@ -1589,20 +1589,20 @@ public string SqlVersionInput { get; }
 ##### `SqsInput`<sup>Optional</sup> <a name="SqsInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.sqsInput"></a>
 
 ```csharp
-public object SqsInput { get; }
+public IResolvable|IotTopicRuleSqs[] SqsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]
 
 ---
 
 ##### `StepFunctionsInput`<sup>Optional</sup> <a name="StepFunctionsInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.stepFunctionsInput"></a>
 
 ```csharp
-public object StepFunctionsInput { get; }
+public IResolvable|IotTopicRuleStepFunctions[] StepFunctionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]
 
 ---
 
@@ -1629,10 +1629,10 @@ public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
 ##### `TimestreamInput`<sup>Optional</sup> <a name="TimestreamInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.timestreamInput"></a>
 
 ```csharp
-public object TimestreamInput { get; }
+public IResolvable|IotTopicRuleTimestream[] TimestreamInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]
 
 ---
 
@@ -1649,10 +1649,10 @@ public string Description { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1830,7 +1830,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleCloudwatchLogs {
     string LogGroupName,
     string RoleArn,
-    object BatchMode = null
+    bool|IResolvable BatchMode = null
 };
 ```
 
@@ -1840,7 +1840,7 @@ new IotTopicRuleCloudwatchLogs {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.logGroupName">LogGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -1871,10 +1871,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -1990,42 +1990,42 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new IotTopicRuleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Enabled,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    bool|IResolvable Enabled,
     string Name,
     string Sql,
     string SqlVersion,
-    object CloudwatchAlarm = null,
-    object CloudwatchLogs = null,
-    object CloudwatchMetric = null,
+    IResolvable|IotTopicRuleCloudwatchAlarm[] CloudwatchAlarm = null,
+    IResolvable|IotTopicRuleCloudwatchLogs[] CloudwatchLogs = null,
+    IResolvable|IotTopicRuleCloudwatchMetric[] CloudwatchMetric = null,
     string Description = null,
-    object Dynamodb = null,
-    object Dynamodbv2 = null,
-    object Elasticsearch = null,
+    IResolvable|IotTopicRuleDynamodb[] Dynamodb = null,
+    IResolvable|IotTopicRuleDynamodbv2[] Dynamodbv2 = null,
+    IResolvable|IotTopicRuleElasticsearch[] Elasticsearch = null,
     IotTopicRuleErrorAction ErrorAction = null,
-    object Firehose = null,
-    object Http = null,
+    IResolvable|IotTopicRuleFirehose[] Firehose = null,
+    IResolvable|IotTopicRuleHttp[] Http = null,
     string Id = null,
-    object IotAnalytics = null,
-    object IotEvents = null,
-    object Kafka = null,
-    object Kinesis = null,
-    object Lambda = null,
+    IResolvable|IotTopicRuleIotAnalytics[] IotAnalytics = null,
+    IResolvable|IotTopicRuleIotEvents[] IotEvents = null,
+    IResolvable|IotTopicRuleKafka[] Kafka = null,
+    IResolvable|IotTopicRuleKinesis[] Kinesis = null,
+    IResolvable|IotTopicRuleLambda[] Lambda = null,
     string Region = null,
-    object Republish = null,
-    object S3 = null,
-    object Sns = null,
-    object Sqs = null,
-    object StepFunctions = null,
+    IResolvable|IotTopicRuleRepublish[] Republish = null,
+    IResolvable|IotTopicRuleS3[] S3 = null,
+    IResolvable|IotTopicRuleSns[] Sns = null,
+    IResolvable|IotTopicRuleSqs[] Sqs = null,
+    IResolvable|IotTopicRuleStepFunctions[] StepFunctions = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null,
-    object Timestream = null
+    IResolvable|IotTopicRuleTimestream[] Timestream = null
 };
 ```
 
@@ -2033,62 +2033,62 @@ new IotTopicRuleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sql">Sql</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqlVersion">SqlVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchAlarm">CloudwatchAlarm</a></code> | <code>object</code> | cloudwatch_alarm block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchLogs">CloudwatchLogs</a></code> | <code>object</code> | cloudwatch_logs block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchMetric">CloudwatchMetric</a></code> | <code>object</code> | cloudwatch_metric block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchAlarm">CloudwatchAlarm</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]</code> | cloudwatch_alarm block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchLogs">CloudwatchLogs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]</code> | cloudwatch_logs block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchMetric">CloudwatchMetric</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]</code> | cloudwatch_metric block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodb">Dynamodb</a></code> | <code>object</code> | dynamodb block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodbv2">Dynamodbv2</a></code> | <code>object</code> | dynamodbv2 block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.elasticsearch">Elasticsearch</a></code> | <code>object</code> | elasticsearch block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodb">Dynamodb</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]</code> | dynamodb block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodbv2">Dynamodbv2</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]</code> | dynamodbv2 block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.elasticsearch">Elasticsearch</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]</code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.errorAction">ErrorAction</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | error_action block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.firehose">Firehose</a></code> | <code>object</code> | firehose block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.http">Http</a></code> | <code>object</code> | http block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.firehose">Firehose</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]</code> | firehose block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.http">Http</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]</code> | http block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotAnalytics">IotAnalytics</a></code> | <code>object</code> | iot_analytics block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotEvents">IotEvents</a></code> | <code>object</code> | iot_events block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kafka">Kafka</a></code> | <code>object</code> | kafka block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kinesis">Kinesis</a></code> | <code>object</code> | kinesis block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lambda">Lambda</a></code> | <code>object</code> | lambda block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotAnalytics">IotAnalytics</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]</code> | iot_analytics block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotEvents">IotEvents</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]</code> | iot_events block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kafka">Kafka</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]</code> | kafka block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kinesis">Kinesis</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]</code> | kinesis block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lambda">Lambda</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]</code> | lambda block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.republish">Republish</a></code> | <code>object</code> | republish block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.s3">S3</a></code> | <code>object</code> | s3 block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sns">Sns</a></code> | <code>object</code> | sns block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqs">Sqs</a></code> | <code>object</code> | sqs block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.stepFunctions">StepFunctions</a></code> | <code>object</code> | step_functions block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.republish">Republish</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]</code> | republish block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.s3">S3</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]</code> | s3 block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sns">Sns</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]</code> | sns block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqs">Sqs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]</code> | sqs block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.stepFunctions">StepFunctions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]</code> | step_functions block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.timestream">Timestream</a></code> | <code>object</code> | timestream block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.timestream">Timestream</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]</code> | timestream block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2135,20 +2135,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
 
@@ -2193,10 +2193,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CloudwatchAlarm`<sup>Optional</sup> <a name="CloudwatchAlarm" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchAlarm"></a>
 
 ```csharp
-public object CloudwatchAlarm { get; set; }
+public IResolvable|IotTopicRuleCloudwatchAlarm[] CloudwatchAlarm { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]
 
 cloudwatch_alarm block.
 
@@ -2207,10 +2207,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CloudwatchLogs`<sup>Optional</sup> <a name="CloudwatchLogs" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchLogs"></a>
 
 ```csharp
-public object CloudwatchLogs { get; set; }
+public IResolvable|IotTopicRuleCloudwatchLogs[] CloudwatchLogs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]
 
 cloudwatch_logs block.
 
@@ -2221,10 +2221,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CloudwatchMetric`<sup>Optional</sup> <a name="CloudwatchMetric" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchMetric"></a>
 
 ```csharp
-public object CloudwatchMetric { get; set; }
+public IResolvable|IotTopicRuleCloudwatchMetric[] CloudwatchMetric { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]
 
 cloudwatch_metric block.
 
@@ -2247,10 +2247,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Dynamodb`<sup>Optional</sup> <a name="Dynamodb" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodb"></a>
 
 ```csharp
-public object Dynamodb { get; set; }
+public IResolvable|IotTopicRuleDynamodb[] Dynamodb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]
 
 dynamodb block.
 
@@ -2261,10 +2261,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Dynamodbv2`<sup>Optional</sup> <a name="Dynamodbv2" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodbv2"></a>
 
 ```csharp
-public object Dynamodbv2 { get; set; }
+public IResolvable|IotTopicRuleDynamodbv2[] Dynamodbv2 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]
 
 dynamodbv2 block.
 
@@ -2275,10 +2275,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Elasticsearch`<sup>Optional</sup> <a name="Elasticsearch" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.elasticsearch"></a>
 
 ```csharp
-public object Elasticsearch { get; set; }
+public IResolvable|IotTopicRuleElasticsearch[] Elasticsearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]
 
 elasticsearch block.
 
@@ -2303,10 +2303,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Firehose`<sup>Optional</sup> <a name="Firehose" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.firehose"></a>
 
 ```csharp
-public object Firehose { get; set; }
+public IResolvable|IotTopicRuleFirehose[] Firehose { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]
 
 firehose block.
 
@@ -2317,10 +2317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Http`<sup>Optional</sup> <a name="Http" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.http"></a>
 
 ```csharp
-public object Http { get; set; }
+public IResolvable|IotTopicRuleHttp[] Http { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]
 
 http block.
 
@@ -2346,10 +2346,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IotAnalytics`<sup>Optional</sup> <a name="IotAnalytics" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotAnalytics"></a>
 
 ```csharp
-public object IotAnalytics { get; set; }
+public IResolvable|IotTopicRuleIotAnalytics[] IotAnalytics { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]
 
 iot_analytics block.
 
@@ -2360,10 +2360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IotEvents`<sup>Optional</sup> <a name="IotEvents" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotEvents"></a>
 
 ```csharp
-public object IotEvents { get; set; }
+public IResolvable|IotTopicRuleIotEvents[] IotEvents { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]
 
 iot_events block.
 
@@ -2374,10 +2374,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Kafka`<sup>Optional</sup> <a name="Kafka" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kafka"></a>
 
 ```csharp
-public object Kafka { get; set; }
+public IResolvable|IotTopicRuleKafka[] Kafka { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]
 
 kafka block.
 
@@ -2388,10 +2388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Kinesis`<sup>Optional</sup> <a name="Kinesis" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kinesis"></a>
 
 ```csharp
-public object Kinesis { get; set; }
+public IResolvable|IotTopicRuleKinesis[] Kinesis { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]
 
 kinesis block.
 
@@ -2402,10 +2402,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Lambda`<sup>Optional</sup> <a name="Lambda" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lambda"></a>
 
 ```csharp
-public object Lambda { get; set; }
+public IResolvable|IotTopicRuleLambda[] Lambda { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]
 
 lambda block.
 
@@ -2430,10 +2430,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Republish`<sup>Optional</sup> <a name="Republish" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.republish"></a>
 
 ```csharp
-public object Republish { get; set; }
+public IResolvable|IotTopicRuleRepublish[] Republish { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]
 
 republish block.
 
@@ -2444,10 +2444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `S3`<sup>Optional</sup> <a name="S3" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.s3"></a>
 
 ```csharp
-public object S3 { get; set; }
+public IResolvable|IotTopicRuleS3[] S3 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]
 
 s3 block.
 
@@ -2458,10 +2458,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Sns`<sup>Optional</sup> <a name="Sns" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sns"></a>
 
 ```csharp
-public object Sns { get; set; }
+public IResolvable|IotTopicRuleSns[] Sns { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]
 
 sns block.
 
@@ -2472,10 +2472,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Sqs`<sup>Optional</sup> <a name="Sqs" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqs"></a>
 
 ```csharp
-public object Sqs { get; set; }
+public IResolvable|IotTopicRuleSqs[] Sqs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]
 
 sqs block.
 
@@ -2486,10 +2486,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `StepFunctions`<sup>Optional</sup> <a name="StepFunctions" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.stepFunctions"></a>
 
 ```csharp
-public object StepFunctions { get; set; }
+public IResolvable|IotTopicRuleStepFunctions[] StepFunctions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]
 
 step_functions block.
 
@@ -2524,10 +2524,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Timestream`<sup>Optional</sup> <a name="Timestream" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.timestream"></a>
 
 ```csharp
-public object Timestream { get; set; }
+public IResolvable|IotTopicRuleTimestream[] Timestream { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]
 
 timestream block.
 
@@ -3270,7 +3270,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleErrorActionCloudwatchLogs {
     string LogGroupName,
     string RoleArn,
-    object BatchMode = null
+    bool|IResolvable BatchMode = null
 };
 ```
 
@@ -3280,7 +3280,7 @@ new IotTopicRuleErrorActionCloudwatchLogs {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.logGroupName">LogGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -3311,10 +3311,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -3761,7 +3761,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleErrorActionFirehose {
     string DeliveryStreamName,
     string RoleArn,
-    object BatchMode = null,
+    bool|IResolvable BatchMode = null,
     string Separator = null
 };
 ```
@@ -3772,7 +3772,7 @@ new IotTopicRuleErrorActionFirehose {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.deliveryStreamName">DeliveryStreamName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.separator">Separator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
 
 ---
@@ -3804,10 +3804,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -3835,7 +3835,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleErrorActionHttp {
     string Url,
     string ConfirmationUrl = null,
-    object HttpHeader = null
+    IResolvable|IotTopicRuleErrorActionHttpHttpHeader[] HttpHeader = null
 };
 ```
 
@@ -3845,7 +3845,7 @@ new IotTopicRuleErrorActionHttp {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.confirmationUrl">ConfirmationUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.httpHeader">HttpHeader</a></code> | <code>object</code> | http_header block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.httpHeader">HttpHeader</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]</code> | http_header block. |
 
 ---
 
@@ -3876,10 +3876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpHeader`<sup>Optional</sup> <a name="HttpHeader" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.httpHeader"></a>
 
 ```csharp
-public object HttpHeader { get; set; }
+public IResolvable|IotTopicRuleErrorActionHttpHttpHeader[] HttpHeader { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]
 
 http_header block.
 
@@ -3943,7 +3943,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleErrorActionIotAnalytics {
     string ChannelName,
     string RoleArn,
-    object BatchMode = null
+    bool|IResolvable BatchMode = null
 };
 ```
 
@@ -3953,7 +3953,7 @@ new IotTopicRuleErrorActionIotAnalytics {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.channelName">ChannelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -3984,10 +3984,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4003,7 +4003,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleErrorActionIotEvents {
     string InputName,
     string RoleArn,
-    object BatchMode = null,
+    bool|IResolvable BatchMode = null,
     string MessageId = null
 };
 ```
@@ -4014,7 +4014,7 @@ new IotTopicRuleErrorActionIotEvents {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.inputName">InputName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.messageId">MessageId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
 
 ---
@@ -4046,10 +4046,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4078,7 +4078,7 @@ new IotTopicRuleErrorActionKafka {
     System.Collections.Generic.IDictionary<string, string> ClientProperties,
     string DestinationArn,
     string Topic,
-    object Header = null,
+    IResolvable|IotTopicRuleErrorActionKafkaHeader[] Header = null,
     string Key = null,
     string Partition = null
 };
@@ -4091,7 +4091,7 @@ new IotTopicRuleErrorActionKafka {
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.clientProperties">ClientProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.destinationArn">DestinationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.header">Header</a></code> | <code>object</code> | header block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.header">Header</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]</code> | header block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
 
@@ -4136,10 +4136,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Header`<sup>Optional</sup> <a name="Header" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.header"></a>
 
 ```csharp
-public object Header { get; set; }
+public IResolvable|IotTopicRuleErrorActionKafkaHeader[] Header { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]
 
 header block.
 
@@ -4513,7 +4513,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleErrorActionSqs {
     string QueueUrl,
     string RoleArn,
-    object UseBase64
+    bool|IResolvable UseBase64
 };
 ```
 
@@ -4523,7 +4523,7 @@ new IotTopicRuleErrorActionSqs {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64">UseBase64</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64">UseBase64</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
 
 ---
 
@@ -4554,10 +4554,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseBase64`<sup>Required</sup> <a name="UseBase64" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64"></a>
 
 ```csharp
-public object UseBase64 { get; set; }
+public bool|IResolvable UseBase64 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
@@ -4632,7 +4632,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new IotTopicRuleErrorActionTimestream {
     string DatabaseName,
-    object Dimension,
+    IResolvable|IotTopicRuleErrorActionTimestreamDimension[] Dimension,
     string RoleArn,
     string TableName,
     IotTopicRuleErrorActionTimestreamTimestamp Timestamp = null
@@ -4644,7 +4644,7 @@ new IotTopicRuleErrorActionTimestream {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.dimension">Dimension</a></code> | <code>object</code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.dimension">Dimension</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]</code> | dimension block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.tableName">TableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.timestamp">Timestamp</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp">IotTopicRuleErrorActionTimestreamTimestamp</a></code> | timestamp block. |
@@ -4666,10 +4666,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Dimension`<sup>Required</sup> <a name="Dimension" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.dimension"></a>
 
 ```csharp
-public object Dimension { get; set; }
+public IResolvable|IotTopicRuleErrorActionTimestreamDimension[] Dimension { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]
 
 dimension block.
 
@@ -4817,7 +4817,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleFirehose {
     string DeliveryStreamName,
     string RoleArn,
-    object BatchMode = null,
+    bool|IResolvable BatchMode = null,
     string Separator = null
 };
 ```
@@ -4828,7 +4828,7 @@ new IotTopicRuleFirehose {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.deliveryStreamName">DeliveryStreamName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.separator">Separator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
 
 ---
@@ -4860,10 +4860,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -4891,7 +4891,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleHttp {
     string Url,
     string ConfirmationUrl = null,
-    object HttpHeader = null
+    IResolvable|IotTopicRuleHttpHttpHeader[] HttpHeader = null
 };
 ```
 
@@ -4901,7 +4901,7 @@ new IotTopicRuleHttp {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.confirmationUrl">ConfirmationUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.httpHeader">HttpHeader</a></code> | <code>object</code> | http_header block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.httpHeader">HttpHeader</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]</code> | http_header block. |
 
 ---
 
@@ -4932,10 +4932,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HttpHeader`<sup>Optional</sup> <a name="HttpHeader" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.httpHeader"></a>
 
 ```csharp
-public object HttpHeader { get; set; }
+public IResolvable|IotTopicRuleHttpHttpHeader[] HttpHeader { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]
 
 http_header block.
 
@@ -4999,7 +4999,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleIotAnalytics {
     string ChannelName,
     string RoleArn,
-    object BatchMode = null
+    bool|IResolvable BatchMode = null
 };
 ```
 
@@ -5009,7 +5009,7 @@ new IotTopicRuleIotAnalytics {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.channelName">ChannelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -5040,10 +5040,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -5059,7 +5059,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleIotEvents {
     string InputName,
     string RoleArn,
-    object BatchMode = null,
+    bool|IResolvable BatchMode = null,
     string MessageId = null
 };
 ```
@@ -5070,7 +5070,7 @@ new IotTopicRuleIotEvents {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.inputName">InputName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode">BatchMode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.messageId">MessageId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
 
 ---
@@ -5102,10 +5102,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `BatchMode`<sup>Optional</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; set; }
+public bool|IResolvable BatchMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
@@ -5134,7 +5134,7 @@ new IotTopicRuleKafka {
     System.Collections.Generic.IDictionary<string, string> ClientProperties,
     string DestinationArn,
     string Topic,
-    object Header = null,
+    IResolvable|IotTopicRuleKafkaHeader[] Header = null,
     string Key = null,
     string Partition = null
 };
@@ -5147,7 +5147,7 @@ new IotTopicRuleKafka {
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.clientProperties">ClientProperties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.destinationArn">DestinationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.header">Header</a></code> | <code>object</code> | header block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.header">Header</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]</code> | header block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
 
@@ -5192,10 +5192,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Header`<sup>Optional</sup> <a name="Header" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.header"></a>
 
 ```csharp
-public object Header { get; set; }
+public IResolvable|IotTopicRuleKafkaHeader[] Header { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]
 
 header block.
 
@@ -5569,7 +5569,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 new IotTopicRuleSqs {
     string QueueUrl,
     string RoleArn,
-    object UseBase64
+    bool|IResolvable UseBase64
 };
 ```
 
@@ -5579,7 +5579,7 @@ new IotTopicRuleSqs {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64">UseBase64</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64">UseBase64</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
 
 ---
 
@@ -5610,10 +5610,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseBase64`<sup>Required</sup> <a name="UseBase64" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64"></a>
 
 ```csharp
-public object UseBase64 { get; set; }
+public bool|IResolvable UseBase64 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
@@ -5688,7 +5688,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new IotTopicRuleTimestream {
     string DatabaseName,
-    object Dimension,
+    IResolvable|IotTopicRuleTimestreamDimension[] Dimension,
     string RoleArn,
     string TableName,
     IotTopicRuleTimestreamTimestamp Timestamp = null
@@ -5700,7 +5700,7 @@ new IotTopicRuleTimestream {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.dimension">Dimension</a></code> | <code>object</code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.dimension">Dimension</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]</code> | dimension block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.tableName">TableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.timestamp">Timestamp</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp">IotTopicRuleTimestreamTimestamp</a></code> | timestamp block. |
@@ -5722,10 +5722,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Dimension`<sup>Required</sup> <a name="Dimension" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.dimension"></a>
 
 ```csharp
-public object Dimension { get; set; }
+public IResolvable|IotTopicRuleTimestreamDimension[] Dimension { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]
 
 dimension block.
 
@@ -5986,7 +5986,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]</code> | *No description.* |
 
 ---
 
@@ -6017,10 +6017,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleCloudwatchAlarm[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>[]
 
 ---
 
@@ -6261,7 +6261,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateReason">StateReason</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateValue">StateValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a></code> | *No description.* |
 
 ---
 
@@ -6372,10 +6372,10 @@ public string StateValue { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleCloudwatchAlarm InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>
 
 ---
 
@@ -6501,7 +6501,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]</code> | *No description.* |
 
 ---
 
@@ -6532,10 +6532,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleCloudwatchLogs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>[]
 
 ---
 
@@ -6775,13 +6775,13 @@ private void ResetBatchMode()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupNameInput">LogGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupName">LogGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a></code> | *No description.* |
 
 ---
 
@@ -6812,10 +6812,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6842,10 +6842,10 @@ public string RoleArnInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6872,10 +6872,10 @@ public string RoleArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleCloudwatchLogs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>
 
 ---
 
@@ -7001,7 +7001,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]</code> | *No description.* |
 
 ---
 
@@ -7032,10 +7032,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleCloudwatchMetric[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>[]
 
 ---
 
@@ -7287,7 +7287,7 @@ private void ResetMetricTimestamp()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricUnit">MetricUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricValue">MetricValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a></code> | *No description.* |
 
 ---
 
@@ -7438,10 +7438,10 @@ public string RoleArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleCloudwatchMetric InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>
 
 ---
 
@@ -7567,7 +7567,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]</code> | *No description.* |
 
 ---
 
@@ -7598,10 +7598,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleDynamodb[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>[]
 
 ---
 
@@ -7896,7 +7896,7 @@ private void ResetRangeKeyValue()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.rangeKeyValue">RangeKeyValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.tableName">TableName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a></code> | *No description.* |
 
 ---
 
@@ -8127,10 +8127,10 @@ public string TableName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleDynamodb InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>
 
 ---
 
@@ -8256,7 +8256,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]</code> | *No description.* |
 
 ---
 
@@ -8287,10 +8287,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleDynamodbv2[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>[]
 
 ---
 
@@ -8547,7 +8547,7 @@ private void ResetPutItem()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.putItemInput">PutItemInput</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem">IotTopicRuleDynamodbv2PutItem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a></code> | *No description.* |
 
 ---
 
@@ -8618,10 +8618,10 @@ public string RoleArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleDynamodbv2 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>
 
 ---
 
@@ -9018,7 +9018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]</code> | *No description.* |
 
 ---
 
@@ -9049,10 +9049,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleElasticsearch[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>[]
 
 ---
 
@@ -9295,7 +9295,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.index">Index</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a></code> | *No description.* |
 
 ---
 
@@ -9426,10 +9426,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleElasticsearch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>
 
 ---
 
@@ -9988,10 +9988,10 @@ private void ResetBatchMode()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupNameInput">LogGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupName">LogGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs">IotTopicRuleErrorActionCloudwatchLogs</a></code> | *No description.* |
@@ -10025,10 +10025,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10055,10 +10055,10 @@ public string RoleArnInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12159,11 +12159,11 @@ private void ResetSeparator()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.deliveryStreamNameInput">DeliveryStreamNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.separatorInput">SeparatorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.deliveryStreamName">DeliveryStreamName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.separator">Separator</a></code> | <code>string</code> | *No description.* |
@@ -12198,10 +12198,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12238,10 +12238,10 @@ public string SeparatorInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12407,7 +12407,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -12438,10 +12438,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleErrorActionHttpHttpHeader[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]
 
 ---
 
@@ -12678,7 +12678,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -12749,10 +12749,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleErrorActionHttpHttpHeader InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>
 
 ---
 
@@ -12966,12 +12966,12 @@ Returns a reversible string representation.
 ##### `PutHttpHeader` <a name="PutHttpHeader" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.putHttpHeader"></a>
 
 ```csharp
-private void PutHttpHeader(object Value)
+private void PutHttpHeader(IResolvable|IotTopicRuleErrorActionHttpHttpHeader[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.putHttpHeader.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]
 
 ---
 
@@ -12996,7 +12996,7 @@ private void ResetHttpHeader()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeader">HttpHeader</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList">IotTopicRuleErrorActionHttpHttpHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.confirmationUrlInput">ConfirmationUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeaderInput">HttpHeaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeaderInput">HttpHeaderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.confirmationUrl">ConfirmationUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
@@ -13051,10 +13051,10 @@ public string ConfirmationUrlInput { get; }
 ##### `HttpHeaderInput`<sup>Optional</sup> <a name="HttpHeaderInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.property.httpHeaderInput"></a>
 
 ```csharp
-public object HttpHeaderInput { get; }
+public IResolvable|IotTopicRuleErrorActionHttpHttpHeader[] HttpHeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>[]
 
 ---
 
@@ -13316,10 +13316,10 @@ private void ResetBatchMode()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.channelNameInput">ChannelNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.channelName">ChannelName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics">IotTopicRuleErrorActionIotAnalytics</a></code> | *No description.* |
@@ -13353,10 +13353,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13383,10 +13383,10 @@ public string RoleArnInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13645,11 +13645,11 @@ private void ResetMessageId()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.inputNameInput">InputNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.messageIdInput">MessageIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.inputName">InputName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.messageId">MessageId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
@@ -13684,10 +13684,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13724,10 +13724,10 @@ public string RoleArnInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13893,7 +13893,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -13924,10 +13924,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleErrorActionKafkaHeader[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]
 
 ---
 
@@ -14164,7 +14164,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a></code> | *No description.* |
 
 ---
 
@@ -14235,10 +14235,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleErrorActionKafkaHeader InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>
 
 ---
 
@@ -14453,12 +14453,12 @@ Returns a reversible string representation.
 ##### `PutHeader` <a name="PutHeader" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.putHeader"></a>
 
 ```csharp
-private void PutHeader(object Value)
+private void PutHeader(IResolvable|IotTopicRuleErrorActionKafkaHeader[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]
 
 ---
 
@@ -14490,7 +14490,7 @@ private void ResetPartition()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.header">Header</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList">IotTopicRuleErrorActionKafkaHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.clientPropertiesInput">ClientPropertiesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.destinationArnInput">DestinationArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.headerInput">HeaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.headerInput">HeaderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.partitionInput">PartitionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.topicInput">TopicInput</a></code> | <code>string</code> | *No description.* |
@@ -14560,10 +14560,10 @@ public string DestinationArnInput { get; }
 ##### `HeaderInput`<sup>Optional</sup> <a name="HeaderInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.property.headerInput"></a>
 
 ```csharp
-public object HeaderInput { get; }
+public IResolvable|IotTopicRuleErrorActionKafkaHeader[] HeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>[]
 
 ---
 
@@ -17498,10 +17498,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.queueUrlInput">QueueUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64Input">UseBase64Input</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64Input">UseBase64Input</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.queueUrl">QueueUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64">UseBase64</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64">UseBase64</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs">IotTopicRuleErrorActionSqs</a></code> | *No description.* |
 
 ---
@@ -17553,10 +17553,10 @@ public string RoleArnInput { get; }
 ##### `UseBase64Input`<sup>Optional</sup> <a name="UseBase64Input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64Input"></a>
 
 ```csharp
-public object UseBase64Input { get; }
+public bool|IResolvable UseBase64Input { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17583,10 +17583,10 @@ public string RoleArn { get; }
 ##### `UseBase64`<sup>Required</sup> <a name="UseBase64" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.property.useBase64"></a>
 
 ```csharp
-public object UseBase64 { get; }
+public bool|IResolvable UseBase64 { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18044,7 +18044,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]</code> | *No description.* |
 
 ---
 
@@ -18075,10 +18075,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleErrorActionTimestreamDimension[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]
 
 ---
 
@@ -18315,7 +18315,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a></code> | *No description.* |
 
 ---
 
@@ -18386,10 +18386,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleErrorActionTimestreamDimension InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>
 
 ---
 
@@ -18603,12 +18603,12 @@ Returns a reversible string representation.
 ##### `PutDimension` <a name="PutDimension" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.putDimension"></a>
 
 ```csharp
-private void PutDimension(object Value)
+private void PutDimension(IResolvable|IotTopicRuleErrorActionTimestreamDimension[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.putDimension.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]
 
 ---
 
@@ -18640,7 +18640,7 @@ private void ResetTimestamp()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimension">Dimension</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList">IotTopicRuleErrorActionTimestreamDimensionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.timestamp">Timestamp</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference">IotTopicRuleErrorActionTimestreamTimestampOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.databaseNameInput">DatabaseNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimensionInput">DimensionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimensionInput">DimensionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.tableNameInput">TableNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.timestampInput">TimestampInput</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp">IotTopicRuleErrorActionTimestreamTimestamp</a></code> | *No description.* |
@@ -18708,10 +18708,10 @@ public string DatabaseNameInput { get; }
 ##### `DimensionInput`<sup>Optional</sup> <a name="DimensionInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.property.dimensionInput"></a>
 
 ```csharp
-public object DimensionInput { get; }
+public IResolvable|IotTopicRuleErrorActionTimestreamDimension[] DimensionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>[]
 
 ---
 
@@ -19200,7 +19200,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]</code> | *No description.* |
 
 ---
 
@@ -19231,10 +19231,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleFirehose[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>[]
 
 ---
 
@@ -19481,15 +19481,15 @@ private void ResetSeparator()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.deliveryStreamNameInput">DeliveryStreamNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.separatorInput">SeparatorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.deliveryStreamName">DeliveryStreamName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.separator">Separator</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a></code> | *No description.* |
 
 ---
 
@@ -19520,10 +19520,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19560,10 +19560,10 @@ public string SeparatorInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19600,10 +19600,10 @@ public string Separator { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleFirehose InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>
 
 ---
 
@@ -19729,7 +19729,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -19760,10 +19760,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleHttpHttpHeader[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]
 
 ---
 
@@ -20000,7 +20000,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -20071,10 +20071,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleHttpHttpHeader InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>
 
 ---
 
@@ -20200,7 +20200,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]</code> | *No description.* |
 
 ---
 
@@ -20231,10 +20231,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleHttp[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>[]
 
 ---
 
@@ -20466,12 +20466,12 @@ Returns a reversible string representation.
 ##### `PutHttpHeader` <a name="PutHttpHeader" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.putHttpHeader"></a>
 
 ```csharp
-private void PutHttpHeader(object Value)
+private void PutHttpHeader(IResolvable|IotTopicRuleHttpHttpHeader[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.putHttpHeader.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]
 
 ---
 
@@ -20496,11 +20496,11 @@ private void ResetHttpHeader()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeader">HttpHeader</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList">IotTopicRuleHttpHttpHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.confirmationUrlInput">ConfirmationUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeaderInput">HttpHeaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeaderInput">HttpHeaderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.confirmationUrl">ConfirmationUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a></code> | *No description.* |
 
 ---
 
@@ -20551,10 +20551,10 @@ public string ConfirmationUrlInput { get; }
 ##### `HttpHeaderInput`<sup>Optional</sup> <a name="HttpHeaderInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.httpHeaderInput"></a>
 
 ```csharp
-public object HttpHeaderInput { get; }
+public IResolvable|IotTopicRuleHttpHttpHeader[] HttpHeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>[]
 
 ---
 
@@ -20591,10 +20591,10 @@ public string Url { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleHttp InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>
 
 ---
 
@@ -20720,7 +20720,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]</code> | *No description.* |
 
 ---
 
@@ -20751,10 +20751,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleIotAnalytics[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>[]
 
 ---
 
@@ -20994,13 +20994,13 @@ private void ResetBatchMode()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.channelNameInput">ChannelNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.channelName">ChannelName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a></code> | *No description.* |
 
 ---
 
@@ -21031,10 +21031,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21061,10 +21061,10 @@ public string RoleArnInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21091,10 +21091,10 @@ public string RoleArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleIotAnalytics InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>
 
 ---
 
@@ -21220,7 +21220,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]</code> | *No description.* |
 
 ---
 
@@ -21251,10 +21251,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleIotEvents[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>[]
 
 ---
 
@@ -21501,15 +21501,15 @@ private void ResetMessageId()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchModeInput">BatchModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.inputNameInput">InputNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.messageIdInput">MessageIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchMode">BatchMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchMode">BatchMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.inputName">InputName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.messageId">MessageId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a></code> | *No description.* |
 
 ---
 
@@ -21540,10 +21540,10 @@ public string Fqn { get; }
 ##### `BatchModeInput`<sup>Optional</sup> <a name="BatchModeInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchModeInput"></a>
 
 ```csharp
-public object BatchModeInput { get; }
+public bool|IResolvable BatchModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21580,10 +21580,10 @@ public string RoleArnInput { get; }
 ##### `BatchMode`<sup>Required</sup> <a name="BatchMode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.batchMode"></a>
 
 ```csharp
-public object BatchMode { get; }
+public bool|IResolvable BatchMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21620,10 +21620,10 @@ public string RoleArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleIotEvents InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>
 
 ---
 
@@ -21749,7 +21749,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -21780,10 +21780,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleKafkaHeader[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]
 
 ---
 
@@ -22020,7 +22020,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a></code> | *No description.* |
 
 ---
 
@@ -22091,10 +22091,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleKafkaHeader InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>
 
 ---
 
@@ -22220,7 +22220,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]</code> | *No description.* |
 
 ---
 
@@ -22251,10 +22251,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleKafka[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>[]
 
 ---
 
@@ -22487,12 +22487,12 @@ Returns a reversible string representation.
 ##### `PutHeader` <a name="PutHeader" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.putHeader"></a>
 
 ```csharp
-private void PutHeader(object Value)
+private void PutHeader(IResolvable|IotTopicRuleKafkaHeader[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]
 
 ---
 
@@ -22524,7 +22524,7 @@ private void ResetPartition()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.header">Header</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList">IotTopicRuleKafkaHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.clientPropertiesInput">ClientPropertiesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.destinationArnInput">DestinationArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.headerInput">HeaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.headerInput">HeaderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.partitionInput">PartitionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.topicInput">TopicInput</a></code> | <code>string</code> | *No description.* |
@@ -22533,7 +22533,7 @@ private void ResetPartition()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.partition">Partition</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.topic">Topic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a></code> | *No description.* |
 
 ---
 
@@ -22594,10 +22594,10 @@ public string DestinationArnInput { get; }
 ##### `HeaderInput`<sup>Optional</sup> <a name="HeaderInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.headerInput"></a>
 
 ```csharp
-public object HeaderInput { get; }
+public IResolvable|IotTopicRuleKafkaHeader[] HeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>[]
 
 ---
 
@@ -22684,10 +22684,10 @@ public string Topic { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleKafka InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>
 
 ---
 
@@ -22813,7 +22813,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]</code> | *No description.* |
 
 ---
 
@@ -22844,10 +22844,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleKinesis[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>[]
 
 ---
 
@@ -23093,7 +23093,7 @@ private void ResetPartitionKey()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.partitionKey">PartitionKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.streamName">StreamName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a></code> | *No description.* |
 
 ---
 
@@ -23184,10 +23184,10 @@ public string StreamName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleKinesis InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>
 
 ---
 
@@ -23313,7 +23313,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]</code> | *No description.* |
 
 ---
 
@@ -23344,10 +23344,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleLambda[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>[]
 
 ---
 
@@ -23582,7 +23582,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArnInput">FunctionArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArn">FunctionArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a></code> | *No description.* |
 
 ---
 
@@ -23633,10 +23633,10 @@ public string FunctionArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleLambda InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>
 
 ---
 
@@ -23762,7 +23762,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]</code> | *No description.* |
 
 ---
 
@@ -23793,10 +23793,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleRepublish[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>[]
 
 ---
 
@@ -24042,7 +24042,7 @@ private void ResetQos()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.qos">Qos</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.topic">Topic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a></code> | *No description.* |
 
 ---
 
@@ -24133,10 +24133,10 @@ public string Topic { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleRepublish InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>
 
 ---
 
@@ -24262,7 +24262,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]</code> | *No description.* |
 
 ---
 
@@ -24293,10 +24293,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleS3[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>[]
 
 ---
 
@@ -24544,7 +24544,7 @@ private void ResetCannedAcl()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a></code> | *No description.* |
 
 ---
 
@@ -24655,10 +24655,10 @@ public string RoleArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleS3 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>
 
 ---
 
@@ -24784,7 +24784,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]</code> | *No description.* |
 
 ---
 
@@ -24815,10 +24815,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleSns[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>[]
 
 ---
 
@@ -25064,7 +25064,7 @@ private void ResetMessageFormat()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.messageFormat">MessageFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.targetArn">TargetArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a></code> | *No description.* |
 
 ---
 
@@ -25155,10 +25155,10 @@ public string TargetArn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleSns InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>
 
 ---
 
@@ -25284,7 +25284,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]</code> | *No description.* |
 
 ---
 
@@ -25315,10 +25315,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleSqs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>[]
 
 ---
 
@@ -25553,11 +25553,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.queueUrlInput">QueueUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64Input">UseBase64Input</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64Input">UseBase64Input</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.queueUrl">QueueUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64">UseBase64</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64">UseBase64</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a></code> | *No description.* |
 
 ---
 
@@ -25608,10 +25608,10 @@ public string RoleArnInput { get; }
 ##### `UseBase64Input`<sup>Optional</sup> <a name="UseBase64Input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64Input"></a>
 
 ```csharp
-public object UseBase64Input { get; }
+public bool|IResolvable UseBase64Input { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25638,20 +25638,20 @@ public string RoleArn { get; }
 ##### `UseBase64`<sup>Required</sup> <a name="UseBase64" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64"></a>
 
 ```csharp
-public object UseBase64 { get; }
+public bool|IResolvable UseBase64 { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleSqs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>
 
 ---
 
@@ -25777,7 +25777,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]</code> | *No description.* |
 
 ---
 
@@ -25808,10 +25808,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleStepFunctions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>[]
 
 ---
 
@@ -26057,7 +26057,7 @@ private void ResetExecutionNamePrefix()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.executionNamePrefix">ExecutionNamePrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.stateMachineName">StateMachineName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a></code> | *No description.* |
 
 ---
 
@@ -26148,10 +26148,10 @@ public string StateMachineName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleStepFunctions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>
 
 ---
 
@@ -26277,7 +26277,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]</code> | *No description.* |
 
 ---
 
@@ -26308,10 +26308,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleTimestreamDimension[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]
 
 ---
 
@@ -26548,7 +26548,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a></code> | *No description.* |
 
 ---
 
@@ -26619,10 +26619,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleTimestreamDimension InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>
 
 ---
 
@@ -26748,7 +26748,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]</code> | *No description.* |
 
 ---
 
@@ -26779,10 +26779,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleTimestream[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>[]
 
 ---
 
@@ -27014,12 +27014,12 @@ Returns a reversible string representation.
 ##### `PutDimension` <a name="PutDimension" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.putDimension"></a>
 
 ```csharp
-private void PutDimension(object Value)
+private void PutDimension(IResolvable|IotTopicRuleTimestreamDimension[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.putDimension.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]
 
 ---
 
@@ -27051,14 +27051,14 @@ private void ResetTimestamp()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimension">Dimension</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList">IotTopicRuleTimestreamDimensionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.timestamp">Timestamp</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference">IotTopicRuleTimestreamTimestampOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.databaseNameInput">DatabaseNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimensionInput">DimensionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimensionInput">DimensionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.tableNameInput">TableNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.timestampInput">TimestampInput</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp">IotTopicRuleTimestreamTimestamp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.databaseName">DatabaseName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.tableName">TableName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a></code> | *No description.* |
 
 ---
 
@@ -27119,10 +27119,10 @@ public string DatabaseNameInput { get; }
 ##### `DimensionInput`<sup>Optional</sup> <a name="DimensionInput" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.dimensionInput"></a>
 
 ```csharp
-public object DimensionInput { get; }
+public IResolvable|IotTopicRuleTimestreamDimension[] DimensionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>[]
 
 ---
 
@@ -27189,10 +27189,10 @@ public string TableName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|IotTopicRuleTimestream InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>
 
 ---
 

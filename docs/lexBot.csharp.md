@@ -290,7 +290,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.lexBot.LexBot.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.lexBot.LexBot.importFrom"></a>
@@ -344,7 +344,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.lexBot.LexBot.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -359,7 +359,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.lexBot.LexBot.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -408,12 +408,12 @@ private void PutClarificationPrompt(LexBotClarificationPrompt Value)
 ##### `PutIntent` <a name="PutIntent" id="@cdktf/provider-aws.lexBot.LexBot.putIntent"></a>
 
 ```csharp
-private void PutIntent(object Value)
+private void PutIntent(IResolvable|LexBotIntent[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexBot.LexBot.putIntent.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]
 
 ---
 
@@ -633,13 +633,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.abortStatement">AbortStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference">LexBotAbortStatementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.checksum">Checksum</a></code> | <code>string</code> | *No description.* |
@@ -652,27 +652,27 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference">LexBotTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.version">Version</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.abortStatementInput">AbortStatementInput</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirectedInput">ChildDirectedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirectedInput">ChildDirectedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.clarificationPromptInput">ClarificationPromptInput</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersionInput">CreateVersionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersionInput">CreateVersionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.detectSentimentInput">DetectSentimentInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput">EnableModelImprovementsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.detectSentimentInput">DetectSentimentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput">EnableModelImprovementsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.idleSessionTtlInSecondsInput">IdleSessionTtlInSecondsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.intentInput">IntentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.intentInput">IntentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.localeInput">LocaleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput">NluIntentConfidenceThresholdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.processBehaviorInput">ProcessBehaviorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.voiceIdInput">VoiceIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirected">ChildDirected</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersion">CreateVersion</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirected">ChildDirected</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersion">CreateVersion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.detectSentiment">DetectSentiment</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovements">EnableModelImprovements</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.detectSentiment">DetectSentiment</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovements">EnableModelImprovements</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.idleSessionTtlInSeconds">IdleSessionTtlInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.locale">Locale</a></code> | <code>string</code> | *No description.* |
@@ -759,20 +759,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.lexBot.LexBot.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.lexBot.LexBot.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -819,10 +819,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.lexBot.LexBot.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -949,10 +949,10 @@ public LexBotAbortStatement AbortStatementInput { get; }
 ##### `ChildDirectedInput`<sup>Optional</sup> <a name="ChildDirectedInput" id="@cdktf/provider-aws.lexBot.LexBot.property.childDirectedInput"></a>
 
 ```csharp
-public object ChildDirectedInput { get; }
+public bool|IResolvable ChildDirectedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -969,10 +969,10 @@ public LexBotClarificationPrompt ClarificationPromptInput { get; }
 ##### `CreateVersionInput`<sup>Optional</sup> <a name="CreateVersionInput" id="@cdktf/provider-aws.lexBot.LexBot.property.createVersionInput"></a>
 
 ```csharp
-public object CreateVersionInput { get; }
+public bool|IResolvable CreateVersionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -989,20 +989,20 @@ public string DescriptionInput { get; }
 ##### `DetectSentimentInput`<sup>Optional</sup> <a name="DetectSentimentInput" id="@cdktf/provider-aws.lexBot.LexBot.property.detectSentimentInput"></a>
 
 ```csharp
-public object DetectSentimentInput { get; }
+public bool|IResolvable DetectSentimentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableModelImprovementsInput`<sup>Optional</sup> <a name="EnableModelImprovementsInput" id="@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput"></a>
 
 ```csharp
-public object EnableModelImprovementsInput { get; }
+public bool|IResolvable EnableModelImprovementsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1029,10 +1029,10 @@ public double IdleSessionTtlInSecondsInput { get; }
 ##### `IntentInput`<sup>Optional</sup> <a name="IntentInput" id="@cdktf/provider-aws.lexBot.LexBot.property.intentInput"></a>
 
 ```csharp
-public object IntentInput { get; }
+public IResolvable|LexBotIntent[] IntentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]
 
 ---
 
@@ -1089,10 +1089,10 @@ public string RegionInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|LexBotTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 ---
 
@@ -1109,20 +1109,20 @@ public string VoiceIdInput { get; }
 ##### `ChildDirected`<sup>Required</sup> <a name="ChildDirected" id="@cdktf/provider-aws.lexBot.LexBot.property.childDirected"></a>
 
 ```csharp
-public object ChildDirected { get; }
+public bool|IResolvable ChildDirected { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CreateVersion`<sup>Required</sup> <a name="CreateVersion" id="@cdktf/provider-aws.lexBot.LexBot.property.createVersion"></a>
 
 ```csharp
-public object CreateVersion { get; }
+public bool|IResolvable CreateVersion { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1139,20 +1139,20 @@ public string Description { get; }
 ##### `DetectSentiment`<sup>Required</sup> <a name="DetectSentiment" id="@cdktf/provider-aws.lexBot.LexBot.property.detectSentiment"></a>
 
 ```csharp
-public object DetectSentiment { get; }
+public bool|IResolvable DetectSentiment { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableModelImprovements`<sup>Required</sup> <a name="EnableModelImprovements" id="@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovements"></a>
 
 ```csharp
-public object EnableModelImprovements { get; }
+public bool|IResolvable EnableModelImprovements { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1264,7 +1264,7 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new LexBotAbortStatement {
-    object Message,
+    IResolvable|LexBotAbortStatementMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -1273,7 +1273,7 @@ new LexBotAbortStatement {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
 
 ---
@@ -1281,10 +1281,10 @@ new LexBotAbortStatement {
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexBotAbortStatementMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]
 
 message block.
 
@@ -1373,7 +1373,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new LexBotClarificationPrompt {
     double MaxAttempts,
-    object Message,
+    IResolvable|LexBotClarificationPromptMessage[] Message,
     string ResponseCard = null
 };
 ```
@@ -1383,7 +1383,7 @@ new LexBotClarificationPrompt {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.message">Message</a></code> | <code>object</code> | message block. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.message">Message</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]</code> | message block. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard">ResponseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
 
 ---
@@ -1403,10 +1403,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Message`<sup>Required</sup> <a name="Message" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.message"></a>
 
 ```csharp
-public object Message { get; set; }
+public IResolvable|LexBotClarificationPromptMessage[] Message { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]
 
 message block.
 
@@ -1494,22 +1494,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new LexBotConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     LexBotAbortStatement AbortStatement,
-    object ChildDirected,
-    object Intent,
+    bool|IResolvable ChildDirected,
+    IResolvable|LexBotIntent[] Intent,
     string Name,
     LexBotClarificationPrompt ClarificationPrompt = null,
-    object CreateVersion = null,
+    bool|IResolvable CreateVersion = null,
     string Description = null,
-    object DetectSentiment = null,
-    object EnableModelImprovements = null,
+    bool|IResolvable DetectSentiment = null,
+    bool|IResolvable EnableModelImprovements = null,
     string Id = null,
     double IdleSessionTtlInSeconds = null,
     string Locale = null,
@@ -1525,22 +1525,22 @@ new LexBotConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.abortStatement">AbortStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | abort_statement block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected">ChildDirected</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.intent">Intent</a></code> | <code>object</code> | intent block. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected">ChildDirected</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.intent">Intent</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]</code> | intent block. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#name LexBot#name}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.clarificationPrompt">ClarificationPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | clarification_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion">CreateVersion</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion">CreateVersion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#description LexBot#description}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment">DetectSentiment</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements">EnableModelImprovements</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment">DetectSentiment</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements">EnableModelImprovements</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#id LexBot#id}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds">IdleSessionTtlInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.locale">Locale</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#locale LexBot#locale}. |
@@ -1555,20 +1555,20 @@ new LexBotConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1615,10 +1615,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1639,10 +1639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ChildDirected`<sup>Required</sup> <a name="ChildDirected" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected"></a>
 
 ```csharp
-public object ChildDirected { get; set; }
+public bool|IResolvable ChildDirected { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
 
@@ -1651,10 +1651,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Intent`<sup>Required</sup> <a name="Intent" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.intent"></a>
 
 ```csharp
-public object Intent { get; set; }
+public IResolvable|LexBotIntent[] Intent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]
 
 intent block.
 
@@ -1691,10 +1691,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CreateVersion`<sup>Optional</sup> <a name="CreateVersion" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion"></a>
 
 ```csharp
-public object CreateVersion { get; set; }
+public bool|IResolvable CreateVersion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#create_version LexBot#create_version}.
 
@@ -1715,10 +1715,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DetectSentiment`<sup>Optional</sup> <a name="DetectSentiment" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment"></a>
 
 ```csharp
-public object DetectSentiment { get; set; }
+public bool|IResolvable DetectSentiment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
 
@@ -1727,10 +1727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableModelImprovements`<sup>Optional</sup> <a name="EnableModelImprovements" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements"></a>
 
 ```csharp
-public object EnableModelImprovements { get; set; }
+public bool|IResolvable EnableModelImprovements { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
 
@@ -2068,7 +2068,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -2099,10 +2099,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotAbortStatementMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]
 
 ---
 
@@ -2348,7 +2348,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a></code> | *No description.* |
 
 ---
 
@@ -2439,10 +2439,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotAbortStatementMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>
 
 ---
 
@@ -2655,12 +2655,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexBotAbortStatementMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]
 
 ---
 
@@ -2678,7 +2678,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList">LexBotAbortStatementMessageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | *No description.* |
@@ -2722,10 +2722,10 @@ public LexBotAbortStatementMessageList Message { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexBotAbortStatementMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>[]
 
 ---
 
@@ -2881,7 +2881,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]</code> | *No description.* |
 
 ---
 
@@ -2912,10 +2912,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotClarificationPromptMessage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]
 
 ---
 
@@ -3161,7 +3161,7 @@ private void ResetGroupNumber()
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber">GroupNumber</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a></code> | *No description.* |
 
 ---
 
@@ -3252,10 +3252,10 @@ public double GroupNumber { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotClarificationPromptMessage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>
 
 ---
 
@@ -3468,12 +3468,12 @@ Returns a reversible string representation.
 ##### `PutMessage` <a name="PutMessage" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage"></a>
 
 ```csharp
-private void PutMessage(object Value)
+private void PutMessage(IResolvable|LexBotClarificationPromptMessage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]
 
 ---
 
@@ -3492,7 +3492,7 @@ private void ResetResponseCard()
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.message">Message</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList">LexBotClarificationPromptMessageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttemptsInput">MaxAttemptsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput">MessageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCardInput">ResponseCardInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttempts">MaxAttempts</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCard">ResponseCard</a></code> | <code>string</code> | *No description.* |
@@ -3547,10 +3547,10 @@ public double MaxAttemptsInput { get; }
 ##### `MessageInput`<sup>Optional</sup> <a name="MessageInput" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput"></a>
 
 ```csharp
-public object MessageInput { get; }
+public IResolvable|LexBotClarificationPromptMessage[] MessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>[]
 
 ---
 
@@ -3716,7 +3716,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]</code> | *No description.* |
 
 ---
 
@@ -3747,10 +3747,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotIntentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotIntent[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>[]
 
 ---
 
@@ -3987,7 +3987,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput">IntentVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName">IntentName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion">IntentVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a></code> | *No description.* |
 
 ---
 
@@ -4058,10 +4058,10 @@ public string IntentVersion { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotIntent InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>
 
 ---
 
@@ -4303,7 +4303,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4394,10 +4394,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|LexBotTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 ---
 

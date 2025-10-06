@@ -278,7 +278,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.importFrom"></a>
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -372,24 +372,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutAction` <a name="PutAction" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.putAction"></a>
 
 ```csharp
-private void PutAction(object Value)
+private void PutAction(IResolvable|DataexchangeEventActionAction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.putAction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]
 
 ---
 
 ##### `PutEvent` <a name="PutEvent" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.putEvent"></a>
 
 ```csharp
-private void PutEvent(object Value)
+private void PutEvent(IResolvable|DataexchangeEventActionEvent[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.putEvent.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]
 
 ---
 
@@ -537,21 +537,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.action">Action</a></code> | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList">DataexchangeEventActionActionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.event">Event</a></code> | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList">DataexchangeEventActionEventList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.updatedAt">UpdatedAt</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.actionInput">ActionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.eventInput">EventInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.actionInput">ActionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.eventInput">EventInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
@@ -632,20 +632,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -692,10 +692,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -762,20 +762,20 @@ public string UpdatedAt { get; }
 ##### `ActionInput`<sup>Optional</sup> <a name="ActionInput" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.actionInput"></a>
 
 ```csharp
-public object ActionInput { get; }
+public IResolvable|DataexchangeEventActionAction[] ActionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]
 
 ---
 
 ##### `EventInput`<sup>Optional</sup> <a name="EventInput" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventAction.property.eventInput"></a>
 
 ```csharp
-public object EventInput { get; }
+public IResolvable|DataexchangeEventActionEvent[] EventInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]
 
 ---
 
@@ -827,7 +827,7 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new DataexchangeEventActionAction {
-    object ExportRevisionToS3 = null
+    IResolvable|DataexchangeEventActionActionExportRevisionToS3[] ExportRevisionToS3 = null
 };
 ```
 
@@ -835,17 +835,17 @@ new DataexchangeEventActionAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction.property.exportRevisionToS3">ExportRevisionToS3</a></code> | <code>object</code> | export_revision_to_s3 block. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction.property.exportRevisionToS3">ExportRevisionToS3</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]</code> | export_revision_to_s3 block. |
 
 ---
 
 ##### `ExportRevisionToS3`<sup>Optional</sup> <a name="ExportRevisionToS3" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction.property.exportRevisionToS3"></a>
 
 ```csharp
-public object ExportRevisionToS3 { get; set; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3[] ExportRevisionToS3 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]
 
 export_revision_to_s3 block.
 
@@ -861,8 +861,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new DataexchangeEventActionActionExportRevisionToS3 {
-    object Encryption = null,
-    object RevisionDestination = null
+    IResolvable|DataexchangeEventActionActionExportRevisionToS3Encryption[] Encryption = null,
+    IResolvable|DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] RevisionDestination = null
 };
 ```
 
@@ -870,18 +870,18 @@ new DataexchangeEventActionActionExportRevisionToS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.property.encryption">Encryption</a></code> | <code>object</code> | encryption block. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.property.revisionDestination">RevisionDestination</a></code> | <code>object</code> | revision_destination block. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.property.encryption">Encryption</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]</code> | encryption block. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.property.revisionDestination">RevisionDestination</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]</code> | revision_destination block. |
 
 ---
 
 ##### `Encryption`<sup>Optional</sup> <a name="Encryption" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.property.encryption"></a>
 
 ```csharp
-public object Encryption { get; set; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3Encryption[] Encryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]
 
 encryption block.
 
@@ -892,10 +892,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RevisionDestination`<sup>Optional</sup> <a name="RevisionDestination" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3.property.revisionDestination"></a>
 
 ```csharp
-public object RevisionDestination { get; set; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] RevisionDestination { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]
 
 revision_destination block.
 
@@ -1003,15 +1003,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new DataexchangeEventActionConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Action = null,
-    object Event = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|DataexchangeEventActionAction[] Action = null,
+    IResolvable|DataexchangeEventActionEvent[] Event = null,
     string Region = null
 };
 ```
@@ -1020,15 +1020,15 @@ new DataexchangeEventActionConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.action">Action</a></code> | <code>object</code> | action block. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.event">Event</a></code> | <code>object</code> | event block. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.action">Action</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]</code> | action block. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.event">Event</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]</code> | event block. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1036,20 +1036,20 @@ new DataexchangeEventActionConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1096,20 +1096,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Action`<sup>Optional</sup> <a name="Action" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.action"></a>
 
 ```csharp
-public object Action { get; set; }
+public IResolvable|DataexchangeEventActionAction[] Action { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]
 
 action block.
 
@@ -1120,10 +1120,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Event`<sup>Optional</sup> <a name="Event" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionConfig.property.event"></a>
 
 ```csharp
-public object Event { get; set; }
+public IResolvable|DataexchangeEventActionEvent[] Event { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]
 
 event block.
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new DataexchangeEventActionEvent {
-    object RevisionPublished = null
+    IResolvable|DataexchangeEventActionEventRevisionPublished[] RevisionPublished = null
 };
 ```
 
@@ -1161,17 +1161,17 @@ new DataexchangeEventActionEvent {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent.property.revisionPublished">RevisionPublished</a></code> | <code>object</code> | revision_published block. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent.property.revisionPublished">RevisionPublished</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]</code> | revision_published block. |
 
 ---
 
 ##### `RevisionPublished`<sup>Optional</sup> <a name="RevisionPublished" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent.property.revisionPublished"></a>
 
 ```csharp
-public object RevisionPublished { get; set; }
+public IResolvable|DataexchangeEventActionEventRevisionPublished[] RevisionPublished { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]
 
 revision_published block.
 
@@ -1334,7 +1334,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]</code> | *No description.* |
 
 ---
 
@@ -1365,10 +1365,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3Encryption[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]
 
 ---
 
@@ -1619,7 +1619,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a></code> | *No description.* |
 
 ---
 
@@ -1690,10 +1690,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3Encryption InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>
 
 ---
 
@@ -1819,7 +1819,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]</code> | *No description.* |
 
 ---
 
@@ -1850,10 +1850,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]
 
 ---
 
@@ -2086,24 +2086,24 @@ Returns a reversible string representation.
 ##### `PutEncryption` <a name="PutEncryption" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.putEncryption"></a>
 
 ```csharp
-private void PutEncryption(object Value)
+private void PutEncryption(IResolvable|DataexchangeEventActionActionExportRevisionToS3Encryption[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.putEncryption.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]
 
 ---
 
 ##### `PutRevisionDestination` <a name="PutRevisionDestination" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.putRevisionDestination"></a>
 
 ```csharp
-private void PutRevisionDestination(object Value)
+private void PutRevisionDestination(IResolvable|DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.putRevisionDestination.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]
 
 ---
 
@@ -2128,9 +2128,9 @@ private void ResetRevisionDestination()
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.encryption">Encryption</a></code> | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3EncryptionList">DataexchangeEventActionActionExportRevisionToS3EncryptionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.revisionDestination">RevisionDestination</a></code> | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList">DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.encryptionInput">EncryptionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.revisionDestinationInput">RevisionDestinationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.encryptionInput">EncryptionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.revisionDestinationInput">RevisionDestinationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a></code> | *No description.* |
 
 ---
 
@@ -2181,30 +2181,30 @@ public DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList Re
 ##### `EncryptionInput`<sup>Optional</sup> <a name="EncryptionInput" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.encryptionInput"></a>
 
 ```csharp
-public object EncryptionInput { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3Encryption[] EncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption">DataexchangeEventActionActionExportRevisionToS3Encryption</a>[]
 
 ---
 
 ##### `RevisionDestinationInput`<sup>Optional</sup> <a name="RevisionDestinationInput" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.revisionDestinationInput"></a>
 
 ```csharp
-public object RevisionDestinationInput { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] RevisionDestinationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>
 
 ---
 
@@ -2330,7 +2330,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]</code> | *No description.* |
 
 ---
 
@@ -2361,10 +2361,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>[]
 
 ---
 
@@ -2608,7 +2608,7 @@ private void ResetKeyPattern()
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.property.keyPatternInput">KeyPatternInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.property.keyPattern">KeyPattern</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a></code> | *No description.* |
 
 ---
 
@@ -2679,10 +2679,10 @@ public string KeyPattern { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestinationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3RevisionDestination InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination">DataexchangeEventActionActionExportRevisionToS3RevisionDestination</a>
 
 ---
 
@@ -2808,7 +2808,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]</code> | *No description.* |
 
 ---
 
@@ -2839,10 +2839,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionAction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>[]
 
 ---
 
@@ -3073,12 +3073,12 @@ Returns a reversible string representation.
 ##### `PutExportRevisionToS3` <a name="PutExportRevisionToS3" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.putExportRevisionToS3"></a>
 
 ```csharp
-private void PutExportRevisionToS3(object Value)
+private void PutExportRevisionToS3(IResolvable|DataexchangeEventActionActionExportRevisionToS3[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.putExportRevisionToS3.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]
 
 ---
 
@@ -3096,8 +3096,8 @@ private void ResetExportRevisionToS3()
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.exportRevisionToS3">ExportRevisionToS3</a></code> | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3List">DataexchangeEventActionActionExportRevisionToS3List</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.exportRevisionToS3Input">ExportRevisionToS3Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.exportRevisionToS3Input">ExportRevisionToS3Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a></code> | *No description.* |
 
 ---
 
@@ -3138,20 +3138,20 @@ public DataexchangeEventActionActionExportRevisionToS3List ExportRevisionToS3 { 
 ##### `ExportRevisionToS3Input`<sup>Optional</sup> <a name="ExportRevisionToS3Input" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.exportRevisionToS3Input"></a>
 
 ```csharp
-public object ExportRevisionToS3Input { get; }
+public IResolvable|DataexchangeEventActionActionExportRevisionToS3[] ExportRevisionToS3Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3">DataexchangeEventActionActionExportRevisionToS3</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionAction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionAction">DataexchangeEventActionAction</a>
 
 ---
 
@@ -3277,7 +3277,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]</code> | *No description.* |
 
 ---
 
@@ -3308,10 +3308,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionEvent[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>[]
 
 ---
 
@@ -3542,12 +3542,12 @@ Returns a reversible string representation.
 ##### `PutRevisionPublished` <a name="PutRevisionPublished" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.putRevisionPublished"></a>
 
 ```csharp
-private void PutRevisionPublished(object Value)
+private void PutRevisionPublished(IResolvable|DataexchangeEventActionEventRevisionPublished[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.putRevisionPublished.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]
 
 ---
 
@@ -3565,8 +3565,8 @@ private void ResetRevisionPublished()
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.revisionPublished">RevisionPublished</a></code> | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList">DataexchangeEventActionEventRevisionPublishedList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.revisionPublishedInput">RevisionPublishedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.revisionPublishedInput">RevisionPublishedInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a></code> | *No description.* |
 
 ---
 
@@ -3607,20 +3607,20 @@ public DataexchangeEventActionEventRevisionPublishedList RevisionPublished { get
 ##### `RevisionPublishedInput`<sup>Optional</sup> <a name="RevisionPublishedInput" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.revisionPublishedInput"></a>
 
 ```csharp
-public object RevisionPublishedInput { get; }
+public IResolvable|DataexchangeEventActionEventRevisionPublished[] RevisionPublishedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionEvent InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEvent">DataexchangeEventActionEvent</a>
 
 ---
 
@@ -3746,7 +3746,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]</code> | *No description.* |
 
 ---
 
@@ -3777,10 +3777,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionEventRevisionPublished[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>[]
 
 ---
 
@@ -4015,7 +4015,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.property.dataSetIdInput">DataSetIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.property.dataSetId">DataSetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a></code> | *No description.* |
 
 ---
 
@@ -4066,10 +4066,10 @@ public string DataSetId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublishedOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataexchangeEventActionEventRevisionPublished InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished">DataexchangeEventActionEventRevisionPublished</a>
 
 ---
 

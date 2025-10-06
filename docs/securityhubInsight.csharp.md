@@ -276,7 +276,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.importFrom"></a>
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -517,13 +517,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.filters">Filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference">SecurityhubInsightFiltersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.filtersInput">FiltersInput</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | *No description.* |
@@ -613,20 +613,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -673,10 +673,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -818,13 +818,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new SecurityhubInsightConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     SecurityhubInsightFilters Filters,
     string GroupByAttribute,
     string Name,
@@ -837,13 +837,13 @@ new SecurityhubInsightConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.filters">Filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">GroupByAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
@@ -855,20 +855,20 @@ new SecurityhubInsightConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -915,10 +915,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -997,94 +997,94 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Aws;
 
 new SecurityhubInsightFilters {
-    object AwsAccountId = null,
-    object CompanyName = null,
-    object ComplianceStatus = null,
-    object Confidence = null,
-    object CreatedAt = null,
-    object Criticality = null,
-    object Description = null,
-    object FindingProviderFieldsConfidence = null,
-    object FindingProviderFieldsCriticality = null,
-    object FindingProviderFieldsRelatedFindingsId = null,
-    object FindingProviderFieldsRelatedFindingsProductArn = null,
-    object FindingProviderFieldsSeverityLabel = null,
-    object FindingProviderFieldsSeverityOriginal = null,
-    object FindingProviderFieldsTypes = null,
-    object FirstObservedAt = null,
-    object GeneratorId = null,
-    object Id = null,
-    object Keyword = null,
-    object LastObservedAt = null,
-    object MalwareName = null,
-    object MalwarePath = null,
-    object MalwareState = null,
-    object MalwareType = null,
-    object NetworkDestinationDomain = null,
-    object NetworkDestinationIpv4 = null,
-    object NetworkDestinationIpv6 = null,
-    object NetworkDestinationPort = null,
-    object NetworkDirection = null,
-    object NetworkProtocol = null,
-    object NetworkSourceDomain = null,
-    object NetworkSourceIpv4 = null,
-    object NetworkSourceIpv6 = null,
-    object NetworkSourceMac = null,
-    object NetworkSourcePort = null,
-    object NoteText = null,
-    object NoteUpdatedAt = null,
-    object NoteUpdatedBy = null,
-    object ProcessLaunchedAt = null,
-    object ProcessName = null,
-    object ProcessParentPid = null,
-    object ProcessPath = null,
-    object ProcessPid = null,
-    object ProcessTerminatedAt = null,
-    object ProductArn = null,
-    object ProductFields = null,
-    object ProductName = null,
-    object RecommendationText = null,
-    object RecordState = null,
-    object RelatedFindingsId = null,
-    object RelatedFindingsProductArn = null,
-    object ResourceAwsEc2InstanceIamInstanceProfileArn = null,
-    object ResourceAwsEc2InstanceImageId = null,
-    object ResourceAwsEc2InstanceIpv4Addresses = null,
-    object ResourceAwsEc2InstanceIpv6Addresses = null,
-    object ResourceAwsEc2InstanceKeyName = null,
-    object ResourceAwsEc2InstanceLaunchedAt = null,
-    object ResourceAwsEc2InstanceSubnetId = null,
-    object ResourceAwsEc2InstanceType = null,
-    object ResourceAwsEc2InstanceVpcId = null,
-    object ResourceAwsIamAccessKeyCreatedAt = null,
-    object ResourceAwsIamAccessKeyStatus = null,
-    object ResourceAwsIamAccessKeyUserName = null,
-    object ResourceAwsS3BucketOwnerId = null,
-    object ResourceAwsS3BucketOwnerName = null,
-    object ResourceContainerImageId = null,
-    object ResourceContainerImageName = null,
-    object ResourceContainerLaunchedAt = null,
-    object ResourceContainerName = null,
-    object ResourceDetailsOther = null,
-    object ResourceId = null,
-    object ResourcePartition = null,
-    object ResourceRegion = null,
-    object ResourceTags = null,
-    object ResourceType = null,
-    object SeverityLabel = null,
-    object SourceUrl = null,
-    object ThreatIntelIndicatorCategory = null,
-    object ThreatIntelIndicatorLastObservedAt = null,
-    object ThreatIntelIndicatorSource = null,
-    object ThreatIntelIndicatorSourceUrl = null,
-    object ThreatIntelIndicatorType = null,
-    object ThreatIntelIndicatorValue = null,
-    object Title = null,
-    object Type = null,
-    object UpdatedAt = null,
-    object UserDefinedValues = null,
-    object VerificationState = null,
-    object WorkflowStatus = null
+    IResolvable|SecurityhubInsightFiltersAwsAccountId[] AwsAccountId = null,
+    IResolvable|SecurityhubInsightFiltersCompanyName[] CompanyName = null,
+    IResolvable|SecurityhubInsightFiltersComplianceStatus[] ComplianceStatus = null,
+    IResolvable|SecurityhubInsightFiltersConfidence[] Confidence = null,
+    IResolvable|SecurityhubInsightFiltersCreatedAt[] CreatedAt = null,
+    IResolvable|SecurityhubInsightFiltersCriticality[] Criticality = null,
+    IResolvable|SecurityhubInsightFiltersDescription[] Description = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence[] FindingProviderFieldsConfidence = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality[] FindingProviderFieldsCriticality = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId[] FindingProviderFieldsRelatedFindingsId = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn[] FindingProviderFieldsRelatedFindingsProductArn = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel[] FindingProviderFieldsSeverityLabel = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal[] FindingProviderFieldsSeverityOriginal = null,
+    IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes[] FindingProviderFieldsTypes = null,
+    IResolvable|SecurityhubInsightFiltersFirstObservedAt[] FirstObservedAt = null,
+    IResolvable|SecurityhubInsightFiltersGeneratorId[] GeneratorId = null,
+    IResolvable|SecurityhubInsightFiltersId[] Id = null,
+    IResolvable|SecurityhubInsightFiltersKeyword[] Keyword = null,
+    IResolvable|SecurityhubInsightFiltersLastObservedAt[] LastObservedAt = null,
+    IResolvable|SecurityhubInsightFiltersMalwareName[] MalwareName = null,
+    IResolvable|SecurityhubInsightFiltersMalwarePath[] MalwarePath = null,
+    IResolvable|SecurityhubInsightFiltersMalwareState[] MalwareState = null,
+    IResolvable|SecurityhubInsightFiltersMalwareType[] MalwareType = null,
+    IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain[] NetworkDestinationDomain = null,
+    IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4[] NetworkDestinationIpv4 = null,
+    IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6[] NetworkDestinationIpv6 = null,
+    IResolvable|SecurityhubInsightFiltersNetworkDestinationPort[] NetworkDestinationPort = null,
+    IResolvable|SecurityhubInsightFiltersNetworkDirection[] NetworkDirection = null,
+    IResolvable|SecurityhubInsightFiltersNetworkProtocol[] NetworkProtocol = null,
+    IResolvable|SecurityhubInsightFiltersNetworkSourceDomain[] NetworkSourceDomain = null,
+    IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4[] NetworkSourceIpv4 = null,
+    IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6[] NetworkSourceIpv6 = null,
+    IResolvable|SecurityhubInsightFiltersNetworkSourceMac[] NetworkSourceMac = null,
+    IResolvable|SecurityhubInsightFiltersNetworkSourcePort[] NetworkSourcePort = null,
+    IResolvable|SecurityhubInsightFiltersNoteText[] NoteText = null,
+    IResolvable|SecurityhubInsightFiltersNoteUpdatedAt[] NoteUpdatedAt = null,
+    IResolvable|SecurityhubInsightFiltersNoteUpdatedBy[] NoteUpdatedBy = null,
+    IResolvable|SecurityhubInsightFiltersProcessLaunchedAt[] ProcessLaunchedAt = null,
+    IResolvable|SecurityhubInsightFiltersProcessName[] ProcessName = null,
+    IResolvable|SecurityhubInsightFiltersProcessParentPid[] ProcessParentPid = null,
+    IResolvable|SecurityhubInsightFiltersProcessPath[] ProcessPath = null,
+    IResolvable|SecurityhubInsightFiltersProcessPid[] ProcessPid = null,
+    IResolvable|SecurityhubInsightFiltersProcessTerminatedAt[] ProcessTerminatedAt = null,
+    IResolvable|SecurityhubInsightFiltersProductArn[] ProductArn = null,
+    IResolvable|SecurityhubInsightFiltersProductFields[] ProductFields = null,
+    IResolvable|SecurityhubInsightFiltersProductName[] ProductName = null,
+    IResolvable|SecurityhubInsightFiltersRecommendationText[] RecommendationText = null,
+    IResolvable|SecurityhubInsightFiltersRecordState[] RecordState = null,
+    IResolvable|SecurityhubInsightFiltersRelatedFindingsId[] RelatedFindingsId = null,
+    IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn[] RelatedFindingsProductArn = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn[] ResourceAwsEc2InstanceIamInstanceProfileArn = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId[] ResourceAwsEc2InstanceImageId = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses[] ResourceAwsEc2InstanceIpv4Addresses = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses[] ResourceAwsEc2InstanceIpv6Addresses = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName[] ResourceAwsEc2InstanceKeyName = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt[] ResourceAwsEc2InstanceLaunchedAt = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId[] ResourceAwsEc2InstanceSubnetId = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType[] ResourceAwsEc2InstanceType = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId[] ResourceAwsEc2InstanceVpcId = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt[] ResourceAwsIamAccessKeyCreatedAt = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus[] ResourceAwsIamAccessKeyStatus = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName[] ResourceAwsIamAccessKeyUserName = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId[] ResourceAwsS3BucketOwnerId = null,
+    IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName[] ResourceAwsS3BucketOwnerName = null,
+    IResolvable|SecurityhubInsightFiltersResourceContainerImageId[] ResourceContainerImageId = null,
+    IResolvable|SecurityhubInsightFiltersResourceContainerImageName[] ResourceContainerImageName = null,
+    IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt[] ResourceContainerLaunchedAt = null,
+    IResolvable|SecurityhubInsightFiltersResourceContainerName[] ResourceContainerName = null,
+    IResolvable|SecurityhubInsightFiltersResourceDetailsOther[] ResourceDetailsOther = null,
+    IResolvable|SecurityhubInsightFiltersResourceId[] ResourceId = null,
+    IResolvable|SecurityhubInsightFiltersResourcePartition[] ResourcePartition = null,
+    IResolvable|SecurityhubInsightFiltersResourceRegion[] ResourceRegion = null,
+    IResolvable|SecurityhubInsightFiltersResourceTags[] ResourceTags = null,
+    IResolvable|SecurityhubInsightFiltersResourceType[] ResourceType = null,
+    IResolvable|SecurityhubInsightFiltersSeverityLabel[] SeverityLabel = null,
+    IResolvable|SecurityhubInsightFiltersSourceUrl[] SourceUrl = null,
+    IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory[] ThreatIntelIndicatorCategory = null,
+    IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt[] ThreatIntelIndicatorLastObservedAt = null,
+    IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource[] ThreatIntelIndicatorSource = null,
+    IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl[] ThreatIntelIndicatorSourceUrl = null,
+    IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType[] ThreatIntelIndicatorType = null,
+    IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue[] ThreatIntelIndicatorValue = null,
+    IResolvable|SecurityhubInsightFiltersTitle[] Title = null,
+    IResolvable|SecurityhubInsightFiltersType[] Type = null,
+    IResolvable|SecurityhubInsightFiltersUpdatedAt[] UpdatedAt = null,
+    IResolvable|SecurityhubInsightFiltersUserDefinedValues[] UserDefinedValues = null,
+    IResolvable|SecurityhubInsightFiltersVerificationState[] VerificationState = null,
+    IResolvable|SecurityhubInsightFiltersWorkflowStatus[] WorkflowStatus = null
 };
 ```
 
@@ -1092,104 +1092,104 @@ new SecurityhubInsightFilters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId">AwsAccountId</a></code> | <code>object</code> | aws_account_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName">CompanyName</a></code> | <code>object</code> | company_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus">ComplianceStatus</a></code> | <code>object</code> | compliance_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence">Confidence</a></code> | <code>object</code> | confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt">CreatedAt</a></code> | <code>object</code> | created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality">Criticality</a></code> | <code>object</code> | criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description">Description</a></code> | <code>object</code> | description block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence">FindingProviderFieldsConfidence</a></code> | <code>object</code> | finding_provider_fields_confidence block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality">FindingProviderFieldsCriticality</a></code> | <code>object</code> | finding_provider_fields_criticality block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId">FindingProviderFieldsRelatedFindingsId</a></code> | <code>object</code> | finding_provider_fields_related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn">FindingProviderFieldsRelatedFindingsProductArn</a></code> | <code>object</code> | finding_provider_fields_related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel">FindingProviderFieldsSeverityLabel</a></code> | <code>object</code> | finding_provider_fields_severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal">FindingProviderFieldsSeverityOriginal</a></code> | <code>object</code> | finding_provider_fields_severity_original block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes">FindingProviderFieldsTypes</a></code> | <code>object</code> | finding_provider_fields_types block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt">FirstObservedAt</a></code> | <code>object</code> | first_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId">GeneratorId</a></code> | <code>object</code> | generator_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id">Id</a></code> | <code>object</code> | id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword">Keyword</a></code> | <code>object</code> | keyword block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt">LastObservedAt</a></code> | <code>object</code> | last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName">MalwareName</a></code> | <code>object</code> | malware_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath">MalwarePath</a></code> | <code>object</code> | malware_path block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState">MalwareState</a></code> | <code>object</code> | malware_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType">MalwareType</a></code> | <code>object</code> | malware_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain">NetworkDestinationDomain</a></code> | <code>object</code> | network_destination_domain block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4">NetworkDestinationIpv4</a></code> | <code>object</code> | network_destination_ipv4 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6">NetworkDestinationIpv6</a></code> | <code>object</code> | network_destination_ipv6 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort">NetworkDestinationPort</a></code> | <code>object</code> | network_destination_port block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection">NetworkDirection</a></code> | <code>object</code> | network_direction block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol">NetworkProtocol</a></code> | <code>object</code> | network_protocol block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain">NetworkSourceDomain</a></code> | <code>object</code> | network_source_domain block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4">NetworkSourceIpv4</a></code> | <code>object</code> | network_source_ipv4 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6">NetworkSourceIpv6</a></code> | <code>object</code> | network_source_ipv6 block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac">NetworkSourceMac</a></code> | <code>object</code> | network_source_mac block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort">NetworkSourcePort</a></code> | <code>object</code> | network_source_port block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText">NoteText</a></code> | <code>object</code> | note_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt">NoteUpdatedAt</a></code> | <code>object</code> | note_updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy">NoteUpdatedBy</a></code> | <code>object</code> | note_updated_by block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt">ProcessLaunchedAt</a></code> | <code>object</code> | process_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName">ProcessName</a></code> | <code>object</code> | process_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid">ProcessParentPid</a></code> | <code>object</code> | process_parent_pid block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath">ProcessPath</a></code> | <code>object</code> | process_path block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid">ProcessPid</a></code> | <code>object</code> | process_pid block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt">ProcessTerminatedAt</a></code> | <code>object</code> | process_terminated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn">ProductArn</a></code> | <code>object</code> | product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields">ProductFields</a></code> | <code>object</code> | product_fields block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName">ProductName</a></code> | <code>object</code> | product_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText">RecommendationText</a></code> | <code>object</code> | recommendation_text block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState">RecordState</a></code> | <code>object</code> | record_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId">RelatedFindingsId</a></code> | <code>object</code> | related_findings_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn">RelatedFindingsProductArn</a></code> | <code>object</code> | related_findings_product_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn">ResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | <code>object</code> | resource_aws_ec2_instance_iam_instance_profile_arn block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId">ResourceAwsEc2InstanceImageId</a></code> | <code>object</code> | resource_aws_ec2_instance_image_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses">ResourceAwsEc2InstanceIpv4Addresses</a></code> | <code>object</code> | resource_aws_ec2_instance_ipv4_addresses block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses">ResourceAwsEc2InstanceIpv6Addresses</a></code> | <code>object</code> | resource_aws_ec2_instance_ipv6_addresses block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName">ResourceAwsEc2InstanceKeyName</a></code> | <code>object</code> | resource_aws_ec2_instance_key_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt">ResourceAwsEc2InstanceLaunchedAt</a></code> | <code>object</code> | resource_aws_ec2_instance_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId">ResourceAwsEc2InstanceSubnetId</a></code> | <code>object</code> | resource_aws_ec2_instance_subnet_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType">ResourceAwsEc2InstanceType</a></code> | <code>object</code> | resource_aws_ec2_instance_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId">ResourceAwsEc2InstanceVpcId</a></code> | <code>object</code> | resource_aws_ec2_instance_vpc_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt">ResourceAwsIamAccessKeyCreatedAt</a></code> | <code>object</code> | resource_aws_iam_access_key_created_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus">ResourceAwsIamAccessKeyStatus</a></code> | <code>object</code> | resource_aws_iam_access_key_status block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName">ResourceAwsIamAccessKeyUserName</a></code> | <code>object</code> | resource_aws_iam_access_key_user_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId">ResourceAwsS3BucketOwnerId</a></code> | <code>object</code> | resource_aws_s3_bucket_owner_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName">ResourceAwsS3BucketOwnerName</a></code> | <code>object</code> | resource_aws_s3_bucket_owner_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId">ResourceContainerImageId</a></code> | <code>object</code> | resource_container_image_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName">ResourceContainerImageName</a></code> | <code>object</code> | resource_container_image_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt">ResourceContainerLaunchedAt</a></code> | <code>object</code> | resource_container_launched_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName">ResourceContainerName</a></code> | <code>object</code> | resource_container_name block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther">ResourceDetailsOther</a></code> | <code>object</code> | resource_details_other block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId">ResourceId</a></code> | <code>object</code> | resource_id block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition">ResourcePartition</a></code> | <code>object</code> | resource_partition block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion">ResourceRegion</a></code> | <code>object</code> | resource_region block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags">ResourceTags</a></code> | <code>object</code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType">ResourceType</a></code> | <code>object</code> | resource_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel">SeverityLabel</a></code> | <code>object</code> | severity_label block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl">SourceUrl</a></code> | <code>object</code> | source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory">ThreatIntelIndicatorCategory</a></code> | <code>object</code> | threat_intel_indicator_category block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt">ThreatIntelIndicatorLastObservedAt</a></code> | <code>object</code> | threat_intel_indicator_last_observed_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource">ThreatIntelIndicatorSource</a></code> | <code>object</code> | threat_intel_indicator_source block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl">ThreatIntelIndicatorSourceUrl</a></code> | <code>object</code> | threat_intel_indicator_source_url block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType">ThreatIntelIndicatorType</a></code> | <code>object</code> | threat_intel_indicator_type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue">ThreatIntelIndicatorValue</a></code> | <code>object</code> | threat_intel_indicator_value block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title">Title</a></code> | <code>object</code> | title block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type">Type</a></code> | <code>object</code> | type block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt">UpdatedAt</a></code> | <code>object</code> | updated_at block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues">UserDefinedValues</a></code> | <code>object</code> | user_defined_values block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState">VerificationState</a></code> | <code>object</code> | verification_state block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus">WorkflowStatus</a></code> | <code>object</code> | workflow_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId">AwsAccountId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]</code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName">CompanyName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]</code> | company_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus">ComplianceStatus</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]</code> | compliance_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence">Confidence</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]</code> | confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt">CreatedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]</code> | created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality">Criticality</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]</code> | criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description">Description</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]</code> | description block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence">FindingProviderFieldsConfidence</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]</code> | finding_provider_fields_confidence block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality">FindingProviderFieldsCriticality</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]</code> | finding_provider_fields_criticality block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId">FindingProviderFieldsRelatedFindingsId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]</code> | finding_provider_fields_related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn">FindingProviderFieldsRelatedFindingsProductArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]</code> | finding_provider_fields_related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel">FindingProviderFieldsSeverityLabel</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]</code> | finding_provider_fields_severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal">FindingProviderFieldsSeverityOriginal</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]</code> | finding_provider_fields_severity_original block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes">FindingProviderFieldsTypes</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]</code> | finding_provider_fields_types block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt">FirstObservedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]</code> | first_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId">GeneratorId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]</code> | generator_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id">Id</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]</code> | id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword">Keyword</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]</code> | keyword block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt">LastObservedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]</code> | last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName">MalwareName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]</code> | malware_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath">MalwarePath</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]</code> | malware_path block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState">MalwareState</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]</code> | malware_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType">MalwareType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]</code> | malware_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain">NetworkDestinationDomain</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]</code> | network_destination_domain block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4">NetworkDestinationIpv4</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]</code> | network_destination_ipv4 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6">NetworkDestinationIpv6</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]</code> | network_destination_ipv6 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort">NetworkDestinationPort</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]</code> | network_destination_port block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection">NetworkDirection</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]</code> | network_direction block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol">NetworkProtocol</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]</code> | network_protocol block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain">NetworkSourceDomain</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]</code> | network_source_domain block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4">NetworkSourceIpv4</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]</code> | network_source_ipv4 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6">NetworkSourceIpv6</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]</code> | network_source_ipv6 block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac">NetworkSourceMac</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]</code> | network_source_mac block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort">NetworkSourcePort</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]</code> | network_source_port block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText">NoteText</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]</code> | note_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt">NoteUpdatedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]</code> | note_updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy">NoteUpdatedBy</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]</code> | note_updated_by block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt">ProcessLaunchedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]</code> | process_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName">ProcessName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]</code> | process_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid">ProcessParentPid</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]</code> | process_parent_pid block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath">ProcessPath</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]</code> | process_path block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid">ProcessPid</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]</code> | process_pid block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt">ProcessTerminatedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]</code> | process_terminated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn">ProductArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]</code> | product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields">ProductFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]</code> | product_fields block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName">ProductName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]</code> | product_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText">RecommendationText</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]</code> | recommendation_text block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState">RecordState</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]</code> | record_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId">RelatedFindingsId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]</code> | related_findings_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn">RelatedFindingsProductArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]</code> | related_findings_product_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn">ResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]</code> | resource_aws_ec2_instance_iam_instance_profile_arn block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId">ResourceAwsEc2InstanceImageId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]</code> | resource_aws_ec2_instance_image_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses">ResourceAwsEc2InstanceIpv4Addresses</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]</code> | resource_aws_ec2_instance_ipv4_addresses block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses">ResourceAwsEc2InstanceIpv6Addresses</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]</code> | resource_aws_ec2_instance_ipv6_addresses block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName">ResourceAwsEc2InstanceKeyName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]</code> | resource_aws_ec2_instance_key_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt">ResourceAwsEc2InstanceLaunchedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]</code> | resource_aws_ec2_instance_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId">ResourceAwsEc2InstanceSubnetId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]</code> | resource_aws_ec2_instance_subnet_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType">ResourceAwsEc2InstanceType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]</code> | resource_aws_ec2_instance_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId">ResourceAwsEc2InstanceVpcId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]</code> | resource_aws_ec2_instance_vpc_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt">ResourceAwsIamAccessKeyCreatedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]</code> | resource_aws_iam_access_key_created_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus">ResourceAwsIamAccessKeyStatus</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]</code> | resource_aws_iam_access_key_status block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName">ResourceAwsIamAccessKeyUserName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]</code> | resource_aws_iam_access_key_user_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId">ResourceAwsS3BucketOwnerId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]</code> | resource_aws_s3_bucket_owner_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName">ResourceAwsS3BucketOwnerName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]</code> | resource_aws_s3_bucket_owner_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId">ResourceContainerImageId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]</code> | resource_container_image_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName">ResourceContainerImageName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]</code> | resource_container_image_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt">ResourceContainerLaunchedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]</code> | resource_container_launched_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName">ResourceContainerName</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]</code> | resource_container_name block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther">ResourceDetailsOther</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]</code> | resource_details_other block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId">ResourceId</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]</code> | resource_id block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition">ResourcePartition</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]</code> | resource_partition block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion">ResourceRegion</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]</code> | resource_region block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags">ResourceTags</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]</code> | resource_tags block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType">ResourceType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]</code> | resource_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel">SeverityLabel</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]</code> | severity_label block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl">SourceUrl</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]</code> | source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory">ThreatIntelIndicatorCategory</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]</code> | threat_intel_indicator_category block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt">ThreatIntelIndicatorLastObservedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]</code> | threat_intel_indicator_last_observed_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource">ThreatIntelIndicatorSource</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]</code> | threat_intel_indicator_source block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl">ThreatIntelIndicatorSourceUrl</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]</code> | threat_intel_indicator_source_url block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType">ThreatIntelIndicatorType</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]</code> | threat_intel_indicator_type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue">ThreatIntelIndicatorValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]</code> | threat_intel_indicator_value block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title">Title</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]</code> | title block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type">Type</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]</code> | type block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt">UpdatedAt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]</code> | updated_at block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues">UserDefinedValues</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]</code> | user_defined_values block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState">VerificationState</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]</code> | verification_state block. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus">WorkflowStatus</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]</code> | workflow_status block. |
 
 ---
 
 ##### `AwsAccountId`<sup>Optional</sup> <a name="AwsAccountId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.awsAccountId"></a>
 
 ```csharp
-public object AwsAccountId { get; set; }
+public IResolvable|SecurityhubInsightFiltersAwsAccountId[] AwsAccountId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]
 
 aws_account_id block.
 
@@ -1200,10 +1200,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CompanyName`<sup>Optional</sup> <a name="CompanyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.companyName"></a>
 
 ```csharp
-public object CompanyName { get; set; }
+public IResolvable|SecurityhubInsightFiltersCompanyName[] CompanyName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]
 
 company_name block.
 
@@ -1214,10 +1214,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ComplianceStatus`<sup>Optional</sup> <a name="ComplianceStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.complianceStatus"></a>
 
 ```csharp
-public object ComplianceStatus { get; set; }
+public IResolvable|SecurityhubInsightFiltersComplianceStatus[] ComplianceStatus { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]
 
 compliance_status block.
 
@@ -1228,10 +1228,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Confidence`<sup>Optional</sup> <a name="Confidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.confidence"></a>
 
 ```csharp
-public object Confidence { get; set; }
+public IResolvable|SecurityhubInsightFiltersConfidence[] Confidence { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]
 
 confidence block.
 
@@ -1242,10 +1242,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `CreatedAt`<sup>Optional</sup> <a name="CreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.createdAt"></a>
 
 ```csharp
-public object CreatedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersCreatedAt[] CreatedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]
 
 created_at block.
 
@@ -1256,10 +1256,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Criticality`<sup>Optional</sup> <a name="Criticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.criticality"></a>
 
 ```csharp
-public object Criticality { get; set; }
+public IResolvable|SecurityhubInsightFiltersCriticality[] Criticality { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]
 
 criticality block.
 
@@ -1270,10 +1270,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.description"></a>
 
 ```csharp
-public object Description { get; set; }
+public IResolvable|SecurityhubInsightFiltersDescription[] Description { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]
 
 description block.
 
@@ -1284,10 +1284,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsConfidence`<sup>Optional</sup> <a name="FindingProviderFieldsConfidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsConfidence"></a>
 
 ```csharp
-public object FindingProviderFieldsConfidence { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence[] FindingProviderFieldsConfidence { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]
 
 finding_provider_fields_confidence block.
 
@@ -1298,10 +1298,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsCriticality`<sup>Optional</sup> <a name="FindingProviderFieldsCriticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsCriticality"></a>
 
 ```csharp
-public object FindingProviderFieldsCriticality { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality[] FindingProviderFieldsCriticality { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]
 
 finding_provider_fields_criticality block.
 
@@ -1312,10 +1312,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsRelatedFindingsId`<sup>Optional</sup> <a name="FindingProviderFieldsRelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsId"></a>
 
 ```csharp
-public object FindingProviderFieldsRelatedFindingsId { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId[] FindingProviderFieldsRelatedFindingsId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]
 
 finding_provider_fields_related_findings_id block.
 
@@ -1326,10 +1326,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsRelatedFindingsProductArn`<sup>Optional</sup> <a name="FindingProviderFieldsRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsRelatedFindingsProductArn"></a>
 
 ```csharp
-public object FindingProviderFieldsRelatedFindingsProductArn { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn[] FindingProviderFieldsRelatedFindingsProductArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]
 
 finding_provider_fields_related_findings_product_arn block.
 
@@ -1340,10 +1340,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsSeverityLabel`<sup>Optional</sup> <a name="FindingProviderFieldsSeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityLabel"></a>
 
 ```csharp
-public object FindingProviderFieldsSeverityLabel { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel[] FindingProviderFieldsSeverityLabel { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]
 
 finding_provider_fields_severity_label block.
 
@@ -1354,10 +1354,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsSeverityOriginal`<sup>Optional</sup> <a name="FindingProviderFieldsSeverityOriginal" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsSeverityOriginal"></a>
 
 ```csharp
-public object FindingProviderFieldsSeverityOriginal { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal[] FindingProviderFieldsSeverityOriginal { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]
 
 finding_provider_fields_severity_original block.
 
@@ -1368,10 +1368,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FindingProviderFieldsTypes`<sup>Optional</sup> <a name="FindingProviderFieldsTypes" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.findingProviderFieldsTypes"></a>
 
 ```csharp
-public object FindingProviderFieldsTypes { get; set; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes[] FindingProviderFieldsTypes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]
 
 finding_provider_fields_types block.
 
@@ -1382,10 +1382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `FirstObservedAt`<sup>Optional</sup> <a name="FirstObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.firstObservedAt"></a>
 
 ```csharp
-public object FirstObservedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersFirstObservedAt[] FirstObservedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]
 
 first_observed_at block.
 
@@ -1396,10 +1396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GeneratorId`<sup>Optional</sup> <a name="GeneratorId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.generatorId"></a>
 
 ```csharp
-public object GeneratorId { get; set; }
+public IResolvable|SecurityhubInsightFiltersGeneratorId[] GeneratorId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]
 
 generator_id block.
 
@@ -1410,10 +1410,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.id"></a>
 
 ```csharp
-public object Id { get; set; }
+public IResolvable|SecurityhubInsightFiltersId[] Id { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]
 
 id block.
 
@@ -1427,10 +1427,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Keyword`<sup>Optional</sup> <a name="Keyword" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.keyword"></a>
 
 ```csharp
-public object Keyword { get; set; }
+public IResolvable|SecurityhubInsightFiltersKeyword[] Keyword { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]
 
 keyword block.
 
@@ -1441,10 +1441,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `LastObservedAt`<sup>Optional</sup> <a name="LastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.lastObservedAt"></a>
 
 ```csharp
-public object LastObservedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersLastObservedAt[] LastObservedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]
 
 last_observed_at block.
 
@@ -1455,10 +1455,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MalwareName`<sup>Optional</sup> <a name="MalwareName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareName"></a>
 
 ```csharp
-public object MalwareName { get; set; }
+public IResolvable|SecurityhubInsightFiltersMalwareName[] MalwareName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]
 
 malware_name block.
 
@@ -1469,10 +1469,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MalwarePath`<sup>Optional</sup> <a name="MalwarePath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwarePath"></a>
 
 ```csharp
-public object MalwarePath { get; set; }
+public IResolvable|SecurityhubInsightFiltersMalwarePath[] MalwarePath { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]
 
 malware_path block.
 
@@ -1483,10 +1483,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MalwareState`<sup>Optional</sup> <a name="MalwareState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareState"></a>
 
 ```csharp
-public object MalwareState { get; set; }
+public IResolvable|SecurityhubInsightFiltersMalwareState[] MalwareState { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]
 
 malware_state block.
 
@@ -1497,10 +1497,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MalwareType`<sup>Optional</sup> <a name="MalwareType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.malwareType"></a>
 
 ```csharp
-public object MalwareType { get; set; }
+public IResolvable|SecurityhubInsightFiltersMalwareType[] MalwareType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]
 
 malware_type block.
 
@@ -1511,10 +1511,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkDestinationDomain`<sup>Optional</sup> <a name="NetworkDestinationDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationDomain"></a>
 
 ```csharp
-public object NetworkDestinationDomain { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain[] NetworkDestinationDomain { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]
 
 network_destination_domain block.
 
@@ -1525,10 +1525,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkDestinationIpv4`<sup>Optional</sup> <a name="NetworkDestinationIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv4"></a>
 
 ```csharp
-public object NetworkDestinationIpv4 { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4[] NetworkDestinationIpv4 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]
 
 network_destination_ipv4 block.
 
@@ -1539,10 +1539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkDestinationIpv6`<sup>Optional</sup> <a name="NetworkDestinationIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationIpv6"></a>
 
 ```csharp
-public object NetworkDestinationIpv6 { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6[] NetworkDestinationIpv6 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]
 
 network_destination_ipv6 block.
 
@@ -1553,10 +1553,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkDestinationPort`<sup>Optional</sup> <a name="NetworkDestinationPort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDestinationPort"></a>
 
 ```csharp
-public object NetworkDestinationPort { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationPort[] NetworkDestinationPort { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]
 
 network_destination_port block.
 
@@ -1567,10 +1567,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkDirection`<sup>Optional</sup> <a name="NetworkDirection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkDirection"></a>
 
 ```csharp
-public object NetworkDirection { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkDirection[] NetworkDirection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]
 
 network_direction block.
 
@@ -1581,10 +1581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkProtocol`<sup>Optional</sup> <a name="NetworkProtocol" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkProtocol"></a>
 
 ```csharp
-public object NetworkProtocol { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkProtocol[] NetworkProtocol { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]
 
 network_protocol block.
 
@@ -1595,10 +1595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkSourceDomain`<sup>Optional</sup> <a name="NetworkSourceDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceDomain"></a>
 
 ```csharp
-public object NetworkSourceDomain { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceDomain[] NetworkSourceDomain { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]
 
 network_source_domain block.
 
@@ -1609,10 +1609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkSourceIpv4`<sup>Optional</sup> <a name="NetworkSourceIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv4"></a>
 
 ```csharp
-public object NetworkSourceIpv4 { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4[] NetworkSourceIpv4 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]
 
 network_source_ipv4 block.
 
@@ -1623,10 +1623,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkSourceIpv6`<sup>Optional</sup> <a name="NetworkSourceIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceIpv6"></a>
 
 ```csharp
-public object NetworkSourceIpv6 { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6[] NetworkSourceIpv6 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]
 
 network_source_ipv6 block.
 
@@ -1637,10 +1637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkSourceMac`<sup>Optional</sup> <a name="NetworkSourceMac" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourceMac"></a>
 
 ```csharp
-public object NetworkSourceMac { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceMac[] NetworkSourceMac { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]
 
 network_source_mac block.
 
@@ -1651,10 +1651,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NetworkSourcePort`<sup>Optional</sup> <a name="NetworkSourcePort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.networkSourcePort"></a>
 
 ```csharp
-public object NetworkSourcePort { get; set; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourcePort[] NetworkSourcePort { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]
 
 network_source_port block.
 
@@ -1665,10 +1665,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NoteText`<sup>Optional</sup> <a name="NoteText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteText"></a>
 
 ```csharp
-public object NoteText { get; set; }
+public IResolvable|SecurityhubInsightFiltersNoteText[] NoteText { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]
 
 note_text block.
 
@@ -1679,10 +1679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NoteUpdatedAt`<sup>Optional</sup> <a name="NoteUpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedAt"></a>
 
 ```csharp
-public object NoteUpdatedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedAt[] NoteUpdatedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]
 
 note_updated_at block.
 
@@ -1693,10 +1693,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NoteUpdatedBy`<sup>Optional</sup> <a name="NoteUpdatedBy" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.noteUpdatedBy"></a>
 
 ```csharp
-public object NoteUpdatedBy { get; set; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedBy[] NoteUpdatedBy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]
 
 note_updated_by block.
 
@@ -1707,10 +1707,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProcessLaunchedAt`<sup>Optional</sup> <a name="ProcessLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processLaunchedAt"></a>
 
 ```csharp
-public object ProcessLaunchedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersProcessLaunchedAt[] ProcessLaunchedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]
 
 process_launched_at block.
 
@@ -1721,10 +1721,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProcessName`<sup>Optional</sup> <a name="ProcessName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processName"></a>
 
 ```csharp
-public object ProcessName { get; set; }
+public IResolvable|SecurityhubInsightFiltersProcessName[] ProcessName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]
 
 process_name block.
 
@@ -1735,10 +1735,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProcessParentPid`<sup>Optional</sup> <a name="ProcessParentPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processParentPid"></a>
 
 ```csharp
-public object ProcessParentPid { get; set; }
+public IResolvable|SecurityhubInsightFiltersProcessParentPid[] ProcessParentPid { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]
 
 process_parent_pid block.
 
@@ -1749,10 +1749,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProcessPath`<sup>Optional</sup> <a name="ProcessPath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPath"></a>
 
 ```csharp
-public object ProcessPath { get; set; }
+public IResolvable|SecurityhubInsightFiltersProcessPath[] ProcessPath { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]
 
 process_path block.
 
@@ -1763,10 +1763,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProcessPid`<sup>Optional</sup> <a name="ProcessPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processPid"></a>
 
 ```csharp
-public object ProcessPid { get; set; }
+public IResolvable|SecurityhubInsightFiltersProcessPid[] ProcessPid { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]
 
 process_pid block.
 
@@ -1777,10 +1777,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProcessTerminatedAt`<sup>Optional</sup> <a name="ProcessTerminatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.processTerminatedAt"></a>
 
 ```csharp
-public object ProcessTerminatedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersProcessTerminatedAt[] ProcessTerminatedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]
 
 process_terminated_at block.
 
@@ -1791,10 +1791,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProductArn`<sup>Optional</sup> <a name="ProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productArn"></a>
 
 ```csharp
-public object ProductArn { get; set; }
+public IResolvable|SecurityhubInsightFiltersProductArn[] ProductArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]
 
 product_arn block.
 
@@ -1805,10 +1805,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProductFields`<sup>Optional</sup> <a name="ProductFields" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productFields"></a>
 
 ```csharp
-public object ProductFields { get; set; }
+public IResolvable|SecurityhubInsightFiltersProductFields[] ProductFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]
 
 product_fields block.
 
@@ -1819,10 +1819,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ProductName`<sup>Optional</sup> <a name="ProductName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.productName"></a>
 
 ```csharp
-public object ProductName { get; set; }
+public IResolvable|SecurityhubInsightFiltersProductName[] ProductName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]
 
 product_name block.
 
@@ -1833,10 +1833,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RecommendationText`<sup>Optional</sup> <a name="RecommendationText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recommendationText"></a>
 
 ```csharp
-public object RecommendationText { get; set; }
+public IResolvable|SecurityhubInsightFiltersRecommendationText[] RecommendationText { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]
 
 recommendation_text block.
 
@@ -1847,10 +1847,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RecordState`<sup>Optional</sup> <a name="RecordState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.recordState"></a>
 
 ```csharp
-public object RecordState { get; set; }
+public IResolvable|SecurityhubInsightFiltersRecordState[] RecordState { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]
 
 record_state block.
 
@@ -1861,10 +1861,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RelatedFindingsId`<sup>Optional</sup> <a name="RelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsId"></a>
 
 ```csharp
-public object RelatedFindingsId { get; set; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsId[] RelatedFindingsId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]
 
 related_findings_id block.
 
@@ -1875,10 +1875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RelatedFindingsProductArn`<sup>Optional</sup> <a name="RelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.relatedFindingsProductArn"></a>
 
 ```csharp
-public object RelatedFindingsProductArn { get; set; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn[] RelatedFindingsProductArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]
 
 related_findings_product_arn block.
 
@@ -1889,10 +1889,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceIamInstanceProfileArn`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceIamInstanceProfileArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIamInstanceProfileArn"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceIamInstanceProfileArn { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn[] ResourceAwsEc2InstanceIamInstanceProfileArn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
@@ -1903,10 +1903,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceImageId`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceImageId"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceImageId { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId[] ResourceAwsEc2InstanceImageId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]
 
 resource_aws_ec2_instance_image_id block.
 
@@ -1917,10 +1917,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceIpv4Addresses`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceIpv4Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv4Addresses"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceIpv4Addresses { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses[] ResourceAwsEc2InstanceIpv4Addresses { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
@@ -1931,10 +1931,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceIpv6Addresses`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceIpv6Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceIpv6Addresses"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceIpv6Addresses { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses[] ResourceAwsEc2InstanceIpv6Addresses { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
@@ -1945,10 +1945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceKeyName`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceKeyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceKeyName"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceKeyName { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName[] ResourceAwsEc2InstanceKeyName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]
 
 resource_aws_ec2_instance_key_name block.
 
@@ -1959,10 +1959,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceLaunchedAt`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceLaunchedAt"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceLaunchedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt[] ResourceAwsEc2InstanceLaunchedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]
 
 resource_aws_ec2_instance_launched_at block.
 
@@ -1973,10 +1973,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceSubnetId`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceSubnetId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceSubnetId"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceSubnetId { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId[] ResourceAwsEc2InstanceSubnetId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]
 
 resource_aws_ec2_instance_subnet_id block.
 
@@ -1987,10 +1987,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceType`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceType"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceType { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType[] ResourceAwsEc2InstanceType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]
 
 resource_aws_ec2_instance_type block.
 
@@ -2001,10 +2001,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsEc2InstanceVpcId`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceVpcId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsEc2InstanceVpcId"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceVpcId { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId[] ResourceAwsEc2InstanceVpcId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]
 
 resource_aws_ec2_instance_vpc_id block.
 
@@ -2015,10 +2015,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsIamAccessKeyCreatedAt`<sup>Optional</sup> <a name="ResourceAwsIamAccessKeyCreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyCreatedAt"></a>
 
 ```csharp
-public object ResourceAwsIamAccessKeyCreatedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt[] ResourceAwsIamAccessKeyCreatedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]
 
 resource_aws_iam_access_key_created_at block.
 
@@ -2029,10 +2029,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsIamAccessKeyStatus`<sup>Optional</sup> <a name="ResourceAwsIamAccessKeyStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyStatus"></a>
 
 ```csharp
-public object ResourceAwsIamAccessKeyStatus { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus[] ResourceAwsIamAccessKeyStatus { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]
 
 resource_aws_iam_access_key_status block.
 
@@ -2043,10 +2043,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsIamAccessKeyUserName`<sup>Optional</sup> <a name="ResourceAwsIamAccessKeyUserName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsIamAccessKeyUserName"></a>
 
 ```csharp
-public object ResourceAwsIamAccessKeyUserName { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName[] ResourceAwsIamAccessKeyUserName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]
 
 resource_aws_iam_access_key_user_name block.
 
@@ -2057,10 +2057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsS3BucketOwnerId`<sup>Optional</sup> <a name="ResourceAwsS3BucketOwnerId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerId"></a>
 
 ```csharp
-public object ResourceAwsS3BucketOwnerId { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId[] ResourceAwsS3BucketOwnerId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]
 
 resource_aws_s3_bucket_owner_id block.
 
@@ -2071,10 +2071,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceAwsS3BucketOwnerName`<sup>Optional</sup> <a name="ResourceAwsS3BucketOwnerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceAwsS3BucketOwnerName"></a>
 
 ```csharp
-public object ResourceAwsS3BucketOwnerName { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName[] ResourceAwsS3BucketOwnerName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]
 
 resource_aws_s3_bucket_owner_name block.
 
@@ -2085,10 +2085,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceContainerImageId`<sup>Optional</sup> <a name="ResourceContainerImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageId"></a>
 
 ```csharp
-public object ResourceContainerImageId { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageId[] ResourceContainerImageId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]
 
 resource_container_image_id block.
 
@@ -2099,10 +2099,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceContainerImageName`<sup>Optional</sup> <a name="ResourceContainerImageName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerImageName"></a>
 
 ```csharp
-public object ResourceContainerImageName { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageName[] ResourceContainerImageName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]
 
 resource_container_image_name block.
 
@@ -2113,10 +2113,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceContainerLaunchedAt`<sup>Optional</sup> <a name="ResourceContainerLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerLaunchedAt"></a>
 
 ```csharp
-public object ResourceContainerLaunchedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt[] ResourceContainerLaunchedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]
 
 resource_container_launched_at block.
 
@@ -2127,10 +2127,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceContainerName`<sup>Optional</sup> <a name="ResourceContainerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceContainerName"></a>
 
 ```csharp
-public object ResourceContainerName { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerName[] ResourceContainerName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]
 
 resource_container_name block.
 
@@ -2141,10 +2141,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceDetailsOther`<sup>Optional</sup> <a name="ResourceDetailsOther" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceDetailsOther"></a>
 
 ```csharp
-public object ResourceDetailsOther { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceDetailsOther[] ResourceDetailsOther { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]
 
 resource_details_other block.
 
@@ -2155,10 +2155,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceId`<sup>Optional</sup> <a name="ResourceId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceId"></a>
 
 ```csharp
-public object ResourceId { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceId[] ResourceId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]
 
 resource_id block.
 
@@ -2169,10 +2169,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourcePartition`<sup>Optional</sup> <a name="ResourcePartition" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourcePartition"></a>
 
 ```csharp
-public object ResourcePartition { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourcePartition[] ResourcePartition { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]
 
 resource_partition block.
 
@@ -2183,10 +2183,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceRegion`<sup>Optional</sup> <a name="ResourceRegion" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceRegion"></a>
 
 ```csharp
-public object ResourceRegion { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceRegion[] ResourceRegion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]
 
 resource_region block.
 
@@ -2197,10 +2197,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceTags`<sup>Optional</sup> <a name="ResourceTags" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceTags"></a>
 
 ```csharp
-public object ResourceTags { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceTags[] ResourceTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]
 
 resource_tags block.
 
@@ -2211,10 +2211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ResourceType`<sup>Optional</sup> <a name="ResourceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.resourceType"></a>
 
 ```csharp
-public object ResourceType { get; set; }
+public IResolvable|SecurityhubInsightFiltersResourceType[] ResourceType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]
 
 resource_type block.
 
@@ -2225,10 +2225,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SeverityLabel`<sup>Optional</sup> <a name="SeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.severityLabel"></a>
 
 ```csharp
-public object SeverityLabel { get; set; }
+public IResolvable|SecurityhubInsightFiltersSeverityLabel[] SeverityLabel { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]
 
 severity_label block.
 
@@ -2239,10 +2239,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SourceUrl`<sup>Optional</sup> <a name="SourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.sourceUrl"></a>
 
 ```csharp
-public object SourceUrl { get; set; }
+public IResolvable|SecurityhubInsightFiltersSourceUrl[] SourceUrl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]
 
 source_url block.
 
@@ -2253,10 +2253,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ThreatIntelIndicatorCategory`<sup>Optional</sup> <a name="ThreatIntelIndicatorCategory" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorCategory"></a>
 
 ```csharp
-public object ThreatIntelIndicatorCategory { get; set; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory[] ThreatIntelIndicatorCategory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]
 
 threat_intel_indicator_category block.
 
@@ -2267,10 +2267,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ThreatIntelIndicatorLastObservedAt`<sup>Optional</sup> <a name="ThreatIntelIndicatorLastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorLastObservedAt"></a>
 
 ```csharp
-public object ThreatIntelIndicatorLastObservedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt[] ThreatIntelIndicatorLastObservedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]
 
 threat_intel_indicator_last_observed_at block.
 
@@ -2281,10 +2281,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ThreatIntelIndicatorSource`<sup>Optional</sup> <a name="ThreatIntelIndicatorSource" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSource"></a>
 
 ```csharp
-public object ThreatIntelIndicatorSource { get; set; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource[] ThreatIntelIndicatorSource { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]
 
 threat_intel_indicator_source block.
 
@@ -2295,10 +2295,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ThreatIntelIndicatorSourceUrl`<sup>Optional</sup> <a name="ThreatIntelIndicatorSourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorSourceUrl"></a>
 
 ```csharp
-public object ThreatIntelIndicatorSourceUrl { get; set; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl[] ThreatIntelIndicatorSourceUrl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]
 
 threat_intel_indicator_source_url block.
 
@@ -2309,10 +2309,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ThreatIntelIndicatorType`<sup>Optional</sup> <a name="ThreatIntelIndicatorType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorType"></a>
 
 ```csharp
-public object ThreatIntelIndicatorType { get; set; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType[] ThreatIntelIndicatorType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]
 
 threat_intel_indicator_type block.
 
@@ -2323,10 +2323,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ThreatIntelIndicatorValue`<sup>Optional</sup> <a name="ThreatIntelIndicatorValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.threatIntelIndicatorValue"></a>
 
 ```csharp
-public object ThreatIntelIndicatorValue { get; set; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue[] ThreatIntelIndicatorValue { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]
 
 threat_intel_indicator_value block.
 
@@ -2337,10 +2337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Title`<sup>Optional</sup> <a name="Title" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.title"></a>
 
 ```csharp
-public object Title { get; set; }
+public IResolvable|SecurityhubInsightFiltersTitle[] Title { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]
 
 title block.
 
@@ -2351,10 +2351,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.type"></a>
 
 ```csharp
-public object Type { get; set; }
+public IResolvable|SecurityhubInsightFiltersType[] Type { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]
 
 type block.
 
@@ -2365,10 +2365,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UpdatedAt`<sup>Optional</sup> <a name="UpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.updatedAt"></a>
 
 ```csharp
-public object UpdatedAt { get; set; }
+public IResolvable|SecurityhubInsightFiltersUpdatedAt[] UpdatedAt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]
 
 updated_at block.
 
@@ -2379,10 +2379,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UserDefinedValues`<sup>Optional</sup> <a name="UserDefinedValues" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.userDefinedValues"></a>
 
 ```csharp
-public object UserDefinedValues { get; set; }
+public IResolvable|SecurityhubInsightFiltersUserDefinedValues[] UserDefinedValues { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]
 
 user_defined_values block.
 
@@ -2393,10 +2393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerificationState`<sup>Optional</sup> <a name="VerificationState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.verificationState"></a>
 
 ```csharp
-public object VerificationState { get; set; }
+public IResolvable|SecurityhubInsightFiltersVerificationState[] VerificationState { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]
 
 verification_state block.
 
@@ -2407,10 +2407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WorkflowStatus`<sup>Optional</sup> <a name="WorkflowStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.property.workflowStatus"></a>
 
 ```csharp
-public object WorkflowStatus { get; set; }
+public IResolvable|SecurityhubInsightFiltersWorkflowStatus[] WorkflowStatus { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]
 
 workflow_status block.
 
@@ -7341,7 +7341,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]</code> | *No description.* |
 
 ---
 
@@ -7372,10 +7372,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersAwsAccountId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]
 
 ---
 
@@ -7612,7 +7612,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -7683,10 +7683,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersAwsAccountId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>
 
 ---
 
@@ -7812,7 +7812,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]</code> | *No description.* |
 
 ---
 
@@ -7843,10 +7843,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersCompanyName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]
 
 ---
 
@@ -8083,7 +8083,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -8154,10 +8154,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersCompanyName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>
 
 ---
 
@@ -8283,7 +8283,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -8314,10 +8314,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersComplianceStatus[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]
 
 ---
 
@@ -8554,7 +8554,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -8625,10 +8625,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersComplianceStatus InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>
 
 ---
 
@@ -8754,7 +8754,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]</code> | *No description.* |
 
 ---
 
@@ -8785,10 +8785,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersConfidence[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]
 
 ---
 
@@ -9048,7 +9048,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a></code> | *No description.* |
 
 ---
 
@@ -9139,10 +9139,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersConfidence InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>
 
 ---
 
@@ -9561,7 +9561,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -9592,10 +9592,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersCreatedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]
 
 ---
 
@@ -9868,7 +9868,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -9959,10 +9959,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersCreatedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>
 
 ---
 
@@ -10088,7 +10088,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]</code> | *No description.* |
 
 ---
 
@@ -10119,10 +10119,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersCriticality[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]
 
 ---
 
@@ -10382,7 +10382,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a></code> | *No description.* |
 
 ---
 
@@ -10473,10 +10473,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersCriticality InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>
 
 ---
 
@@ -10602,7 +10602,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]</code> | *No description.* |
 
 ---
 
@@ -10633,10 +10633,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersDescription[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]
 
 ---
 
@@ -10873,7 +10873,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a></code> | *No description.* |
 
 ---
 
@@ -10944,10 +10944,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersDescription InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>
 
 ---
 
@@ -11073,7 +11073,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]</code> | *No description.* |
 
 ---
 
@@ -11104,10 +11104,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]
 
 ---
 
@@ -11367,7 +11367,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a></code> | *No description.* |
 
 ---
 
@@ -11458,10 +11458,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>
 
 ---
 
@@ -11587,7 +11587,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]</code> | *No description.* |
 
 ---
 
@@ -11618,10 +11618,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]
 
 ---
 
@@ -11881,7 +11881,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a></code> | *No description.* |
 
 ---
 
@@ -11972,10 +11972,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>
 
 ---
 
@@ -12101,7 +12101,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]</code> | *No description.* |
 
 ---
 
@@ -12132,10 +12132,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]
 
 ---
 
@@ -12372,7 +12372,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -12443,10 +12443,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>
 
 ---
 
@@ -12572,7 +12572,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -12603,10 +12603,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]
 
 ---
 
@@ -12843,7 +12843,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -12914,10 +12914,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>
 
 ---
 
@@ -13043,7 +13043,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]</code> | *No description.* |
 
 ---
 
@@ -13074,10 +13074,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]
 
 ---
 
@@ -13314,7 +13314,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -13385,10 +13385,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>
 
 ---
 
@@ -13514,7 +13514,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]</code> | *No description.* |
 
 ---
 
@@ -13545,10 +13545,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]
 
 ---
 
@@ -13785,7 +13785,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a></code> | *No description.* |
 
 ---
 
@@ -13856,10 +13856,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>
 
 ---
 
@@ -13985,7 +13985,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]</code> | *No description.* |
 
 ---
 
@@ -14016,10 +14016,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]
 
 ---
 
@@ -14256,7 +14256,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a></code> | *No description.* |
 
 ---
 
@@ -14327,10 +14327,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>
 
 ---
 
@@ -14749,7 +14749,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -14780,10 +14780,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFirstObservedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]
 
 ---
 
@@ -15056,7 +15056,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -15147,10 +15147,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersFirstObservedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>
 
 ---
 
@@ -15276,7 +15276,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]</code> | *No description.* |
 
 ---
 
@@ -15307,10 +15307,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersGeneratorId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]
 
 ---
 
@@ -15547,7 +15547,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -15618,10 +15618,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersGeneratorId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>
 
 ---
 
@@ -15747,7 +15747,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]</code> | *No description.* |
 
 ---
 
@@ -15778,10 +15778,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]
 
 ---
 
@@ -16018,7 +16018,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a></code> | *No description.* |
 
 ---
 
@@ -16089,10 +16089,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>
 
 ---
 
@@ -16218,7 +16218,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]</code> | *No description.* |
 
 ---
 
@@ -16249,10 +16249,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersKeyword[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]
 
 ---
 
@@ -16487,7 +16487,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a></code> | *No description.* |
 
 ---
 
@@ -16538,10 +16538,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersKeyword InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>
 
 ---
 
@@ -16960,7 +16960,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -16991,10 +16991,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersLastObservedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]
 
 ---
 
@@ -17267,7 +17267,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -17358,10 +17358,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersLastObservedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>
 
 ---
 
@@ -17487,7 +17487,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]</code> | *No description.* |
 
 ---
 
@@ -17518,10 +17518,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]
 
 ---
 
@@ -17758,7 +17758,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a></code> | *No description.* |
 
 ---
 
@@ -17829,10 +17829,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>
 
 ---
 
@@ -17958,7 +17958,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]</code> | *No description.* |
 
 ---
 
@@ -17989,10 +17989,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwarePath[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]
 
 ---
 
@@ -18229,7 +18229,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a></code> | *No description.* |
 
 ---
 
@@ -18300,10 +18300,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwarePath InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>
 
 ---
 
@@ -18429,7 +18429,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]</code> | *No description.* |
 
 ---
 
@@ -18460,10 +18460,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareState[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]
 
 ---
 
@@ -18700,7 +18700,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a></code> | *No description.* |
 
 ---
 
@@ -18771,10 +18771,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareState InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>
 
 ---
 
@@ -18900,7 +18900,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]</code> | *No description.* |
 
 ---
 
@@ -18931,10 +18931,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]
 
 ---
 
@@ -19171,7 +19171,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a></code> | *No description.* |
 
 ---
 
@@ -19242,10 +19242,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>
 
 ---
 
@@ -19371,7 +19371,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]</code> | *No description.* |
 
 ---
 
@@ -19402,10 +19402,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]
 
 ---
 
@@ -19642,7 +19642,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a></code> | *No description.* |
 
 ---
 
@@ -19713,10 +19713,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>
 
 ---
 
@@ -19842,7 +19842,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]</code> | *No description.* |
 
 ---
 
@@ -19873,10 +19873,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]
 
 ---
 
@@ -20111,7 +20111,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidrInput">CidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidr">Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a></code> | *No description.* |
 
 ---
 
@@ -20162,10 +20162,10 @@ public string Cidr { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>
 
 ---
 
@@ -20291,7 +20291,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]</code> | *No description.* |
 
 ---
 
@@ -20322,10 +20322,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]
 
 ---
 
@@ -20560,7 +20560,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidrInput">CidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidr">Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a></code> | *No description.* |
 
 ---
 
@@ -20611,10 +20611,10 @@ public string Cidr { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>
 
 ---
 
@@ -20740,7 +20740,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]</code> | *No description.* |
 
 ---
 
@@ -20771,10 +20771,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationPort[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]
 
 ---
 
@@ -21034,7 +21034,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a></code> | *No description.* |
 
 ---
 
@@ -21125,10 +21125,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationPort InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>
 
 ---
 
@@ -21254,7 +21254,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]</code> | *No description.* |
 
 ---
 
@@ -21285,10 +21285,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDirection[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]
 
 ---
 
@@ -21525,7 +21525,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a></code> | *No description.* |
 
 ---
 
@@ -21596,10 +21596,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDirection InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>
 
 ---
 
@@ -21725,7 +21725,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]</code> | *No description.* |
 
 ---
 
@@ -21756,10 +21756,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkProtocol[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]
 
 ---
 
@@ -21996,7 +21996,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -22067,10 +22067,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkProtocol InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>
 
 ---
 
@@ -22196,7 +22196,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]</code> | *No description.* |
 
 ---
 
@@ -22227,10 +22227,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceDomain[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]
 
 ---
 
@@ -22467,7 +22467,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a></code> | *No description.* |
 
 ---
 
@@ -22538,10 +22538,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceDomain InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>
 
 ---
 
@@ -22667,7 +22667,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]</code> | *No description.* |
 
 ---
 
@@ -22698,10 +22698,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]
 
 ---
 
@@ -22936,7 +22936,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidrInput">CidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidr">Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a></code> | *No description.* |
 
 ---
 
@@ -22987,10 +22987,10 @@ public string Cidr { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>
 
 ---
 
@@ -23116,7 +23116,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]</code> | *No description.* |
 
 ---
 
@@ -23147,10 +23147,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]
 
 ---
 
@@ -23385,7 +23385,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidrInput">CidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidr">Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a></code> | *No description.* |
 
 ---
 
@@ -23436,10 +23436,10 @@ public string Cidr { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>
 
 ---
 
@@ -23565,7 +23565,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]</code> | *No description.* |
 
 ---
 
@@ -23596,10 +23596,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceMac[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]
 
 ---
 
@@ -23836,7 +23836,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a></code> | *No description.* |
 
 ---
 
@@ -23907,10 +23907,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceMac InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>
 
 ---
 
@@ -24036,7 +24036,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]</code> | *No description.* |
 
 ---
 
@@ -24067,10 +24067,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourcePort[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]
 
 ---
 
@@ -24330,7 +24330,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a></code> | *No description.* |
 
 ---
 
@@ -24421,10 +24421,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourcePort InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>
 
 ---
 
@@ -24550,7 +24550,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]</code> | *No description.* |
 
 ---
 
@@ -24581,10 +24581,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNoteText[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]
 
 ---
 
@@ -24821,7 +24821,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a></code> | *No description.* |
 
 ---
 
@@ -24892,10 +24892,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNoteText InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>
 
 ---
 
@@ -25314,7 +25314,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -25345,10 +25345,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]
 
 ---
 
@@ -25621,7 +25621,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -25712,10 +25712,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>
 
 ---
 
@@ -25841,7 +25841,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]</code> | *No description.* |
 
 ---
 
@@ -25872,10 +25872,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedBy[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]
 
 ---
 
@@ -26112,7 +26112,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -26183,10 +26183,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedBy InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>
 
 ---
 
@@ -26573,1056 +26573,1056 @@ Returns a reversible string representation.
 ##### `PutAwsAccountId` <a name="PutAwsAccountId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putAwsAccountId"></a>
 
 ```csharp
-private void PutAwsAccountId(object Value)
+private void PutAwsAccountId(IResolvable|SecurityhubInsightFiltersAwsAccountId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putAwsAccountId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]
 
 ---
 
 ##### `PutCompanyName` <a name="PutCompanyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCompanyName"></a>
 
 ```csharp
-private void PutCompanyName(object Value)
+private void PutCompanyName(IResolvable|SecurityhubInsightFiltersCompanyName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCompanyName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]
 
 ---
 
 ##### `PutComplianceStatus` <a name="PutComplianceStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putComplianceStatus"></a>
 
 ```csharp
-private void PutComplianceStatus(object Value)
+private void PutComplianceStatus(IResolvable|SecurityhubInsightFiltersComplianceStatus[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putComplianceStatus.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]
 
 ---
 
 ##### `PutConfidence` <a name="PutConfidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putConfidence"></a>
 
 ```csharp
-private void PutConfidence(object Value)
+private void PutConfidence(IResolvable|SecurityhubInsightFiltersConfidence[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putConfidence.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]
 
 ---
 
 ##### `PutCreatedAt` <a name="PutCreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCreatedAt"></a>
 
 ```csharp
-private void PutCreatedAt(object Value)
+private void PutCreatedAt(IResolvable|SecurityhubInsightFiltersCreatedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCreatedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]
 
 ---
 
 ##### `PutCriticality` <a name="PutCriticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCriticality"></a>
 
 ```csharp
-private void PutCriticality(object Value)
+private void PutCriticality(IResolvable|SecurityhubInsightFiltersCriticality[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putCriticality.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]
 
 ---
 
 ##### `PutDescription` <a name="PutDescription" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putDescription"></a>
 
 ```csharp
-private void PutDescription(object Value)
+private void PutDescription(IResolvable|SecurityhubInsightFiltersDescription[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putDescription.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsConfidence` <a name="PutFindingProviderFieldsConfidence" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsConfidence"></a>
 
 ```csharp
-private void PutFindingProviderFieldsConfidence(object Value)
+private void PutFindingProviderFieldsConfidence(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsConfidence.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsCriticality` <a name="PutFindingProviderFieldsCriticality" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsCriticality"></a>
 
 ```csharp
-private void PutFindingProviderFieldsCriticality(object Value)
+private void PutFindingProviderFieldsCriticality(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsCriticality.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsRelatedFindingsId` <a name="PutFindingProviderFieldsRelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsId"></a>
 
 ```csharp
-private void PutFindingProviderFieldsRelatedFindingsId(object Value)
+private void PutFindingProviderFieldsRelatedFindingsId(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsRelatedFindingsProductArn` <a name="PutFindingProviderFieldsRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsProductArn"></a>
 
 ```csharp
-private void PutFindingProviderFieldsRelatedFindingsProductArn(object Value)
+private void PutFindingProviderFieldsRelatedFindingsProductArn(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsSeverityLabel` <a name="PutFindingProviderFieldsSeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityLabel"></a>
 
 ```csharp
-private void PutFindingProviderFieldsSeverityLabel(object Value)
+private void PutFindingProviderFieldsSeverityLabel(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityLabel.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsSeverityOriginal` <a name="PutFindingProviderFieldsSeverityOriginal" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityOriginal"></a>
 
 ```csharp
-private void PutFindingProviderFieldsSeverityOriginal(object Value)
+private void PutFindingProviderFieldsSeverityOriginal(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsSeverityOriginal.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]
 
 ---
 
 ##### `PutFindingProviderFieldsTypes` <a name="PutFindingProviderFieldsTypes" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsTypes"></a>
 
 ```csharp
-private void PutFindingProviderFieldsTypes(object Value)
+private void PutFindingProviderFieldsTypes(IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFindingProviderFieldsTypes.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]
 
 ---
 
 ##### `PutFirstObservedAt` <a name="PutFirstObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFirstObservedAt"></a>
 
 ```csharp
-private void PutFirstObservedAt(object Value)
+private void PutFirstObservedAt(IResolvable|SecurityhubInsightFiltersFirstObservedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putFirstObservedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]
 
 ---
 
 ##### `PutGeneratorId` <a name="PutGeneratorId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putGeneratorId"></a>
 
 ```csharp
-private void PutGeneratorId(object Value)
+private void PutGeneratorId(IResolvable|SecurityhubInsightFiltersGeneratorId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putGeneratorId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]
 
 ---
 
 ##### `PutId` <a name="PutId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putId"></a>
 
 ```csharp
-private void PutId(object Value)
+private void PutId(IResolvable|SecurityhubInsightFiltersId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]
 
 ---
 
 ##### `PutKeyword` <a name="PutKeyword" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putKeyword"></a>
 
 ```csharp
-private void PutKeyword(object Value)
+private void PutKeyword(IResolvable|SecurityhubInsightFiltersKeyword[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putKeyword.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]
 
 ---
 
 ##### `PutLastObservedAt` <a name="PutLastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putLastObservedAt"></a>
 
 ```csharp
-private void PutLastObservedAt(object Value)
+private void PutLastObservedAt(IResolvable|SecurityhubInsightFiltersLastObservedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putLastObservedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]
 
 ---
 
 ##### `PutMalwareName` <a name="PutMalwareName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareName"></a>
 
 ```csharp
-private void PutMalwareName(object Value)
+private void PutMalwareName(IResolvable|SecurityhubInsightFiltersMalwareName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]
 
 ---
 
 ##### `PutMalwarePath` <a name="PutMalwarePath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwarePath"></a>
 
 ```csharp
-private void PutMalwarePath(object Value)
+private void PutMalwarePath(IResolvable|SecurityhubInsightFiltersMalwarePath[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwarePath.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]
 
 ---
 
 ##### `PutMalwareState` <a name="PutMalwareState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareState"></a>
 
 ```csharp
-private void PutMalwareState(object Value)
+private void PutMalwareState(IResolvable|SecurityhubInsightFiltersMalwareState[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareState.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]
 
 ---
 
 ##### `PutMalwareType` <a name="PutMalwareType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareType"></a>
 
 ```csharp
-private void PutMalwareType(object Value)
+private void PutMalwareType(IResolvable|SecurityhubInsightFiltersMalwareType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putMalwareType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]
 
 ---
 
 ##### `PutNetworkDestinationDomain` <a name="PutNetworkDestinationDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationDomain"></a>
 
 ```csharp
-private void PutNetworkDestinationDomain(object Value)
+private void PutNetworkDestinationDomain(IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationDomain.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]
 
 ---
 
 ##### `PutNetworkDestinationIpv4` <a name="PutNetworkDestinationIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv4"></a>
 
 ```csharp
-private void PutNetworkDestinationIpv4(object Value)
+private void PutNetworkDestinationIpv4(IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv4.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]
 
 ---
 
 ##### `PutNetworkDestinationIpv6` <a name="PutNetworkDestinationIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv6"></a>
 
 ```csharp
-private void PutNetworkDestinationIpv6(object Value)
+private void PutNetworkDestinationIpv6(IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationIpv6.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]
 
 ---
 
 ##### `PutNetworkDestinationPort` <a name="PutNetworkDestinationPort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationPort"></a>
 
 ```csharp
-private void PutNetworkDestinationPort(object Value)
+private void PutNetworkDestinationPort(IResolvable|SecurityhubInsightFiltersNetworkDestinationPort[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDestinationPort.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]
 
 ---
 
 ##### `PutNetworkDirection` <a name="PutNetworkDirection" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDirection"></a>
 
 ```csharp
-private void PutNetworkDirection(object Value)
+private void PutNetworkDirection(IResolvable|SecurityhubInsightFiltersNetworkDirection[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkDirection.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]
 
 ---
 
 ##### `PutNetworkProtocol` <a name="PutNetworkProtocol" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkProtocol"></a>
 
 ```csharp
-private void PutNetworkProtocol(object Value)
+private void PutNetworkProtocol(IResolvable|SecurityhubInsightFiltersNetworkProtocol[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkProtocol.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]
 
 ---
 
 ##### `PutNetworkSourceDomain` <a name="PutNetworkSourceDomain" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceDomain"></a>
 
 ```csharp
-private void PutNetworkSourceDomain(object Value)
+private void PutNetworkSourceDomain(IResolvable|SecurityhubInsightFiltersNetworkSourceDomain[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceDomain.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]
 
 ---
 
 ##### `PutNetworkSourceIpv4` <a name="PutNetworkSourceIpv4" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv4"></a>
 
 ```csharp
-private void PutNetworkSourceIpv4(object Value)
+private void PutNetworkSourceIpv4(IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv4.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]
 
 ---
 
 ##### `PutNetworkSourceIpv6` <a name="PutNetworkSourceIpv6" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv6"></a>
 
 ```csharp
-private void PutNetworkSourceIpv6(object Value)
+private void PutNetworkSourceIpv6(IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceIpv6.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]
 
 ---
 
 ##### `PutNetworkSourceMac` <a name="PutNetworkSourceMac" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceMac"></a>
 
 ```csharp
-private void PutNetworkSourceMac(object Value)
+private void PutNetworkSourceMac(IResolvable|SecurityhubInsightFiltersNetworkSourceMac[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourceMac.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]
 
 ---
 
 ##### `PutNetworkSourcePort` <a name="PutNetworkSourcePort" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourcePort"></a>
 
 ```csharp
-private void PutNetworkSourcePort(object Value)
+private void PutNetworkSourcePort(IResolvable|SecurityhubInsightFiltersNetworkSourcePort[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNetworkSourcePort.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]
 
 ---
 
 ##### `PutNoteText` <a name="PutNoteText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteText"></a>
 
 ```csharp
-private void PutNoteText(object Value)
+private void PutNoteText(IResolvable|SecurityhubInsightFiltersNoteText[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteText.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]
 
 ---
 
 ##### `PutNoteUpdatedAt` <a name="PutNoteUpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedAt"></a>
 
 ```csharp
-private void PutNoteUpdatedAt(object Value)
+private void PutNoteUpdatedAt(IResolvable|SecurityhubInsightFiltersNoteUpdatedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]
 
 ---
 
 ##### `PutNoteUpdatedBy` <a name="PutNoteUpdatedBy" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedBy"></a>
 
 ```csharp
-private void PutNoteUpdatedBy(object Value)
+private void PutNoteUpdatedBy(IResolvable|SecurityhubInsightFiltersNoteUpdatedBy[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putNoteUpdatedBy.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]
 
 ---
 
 ##### `PutProcessLaunchedAt` <a name="PutProcessLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessLaunchedAt"></a>
 
 ```csharp
-private void PutProcessLaunchedAt(object Value)
+private void PutProcessLaunchedAt(IResolvable|SecurityhubInsightFiltersProcessLaunchedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessLaunchedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]
 
 ---
 
 ##### `PutProcessName` <a name="PutProcessName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessName"></a>
 
 ```csharp
-private void PutProcessName(object Value)
+private void PutProcessName(IResolvable|SecurityhubInsightFiltersProcessName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]
 
 ---
 
 ##### `PutProcessParentPid` <a name="PutProcessParentPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessParentPid"></a>
 
 ```csharp
-private void PutProcessParentPid(object Value)
+private void PutProcessParentPid(IResolvable|SecurityhubInsightFiltersProcessParentPid[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessParentPid.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]
 
 ---
 
 ##### `PutProcessPath` <a name="PutProcessPath" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPath"></a>
 
 ```csharp
-private void PutProcessPath(object Value)
+private void PutProcessPath(IResolvable|SecurityhubInsightFiltersProcessPath[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPath.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]
 
 ---
 
 ##### `PutProcessPid` <a name="PutProcessPid" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPid"></a>
 
 ```csharp
-private void PutProcessPid(object Value)
+private void PutProcessPid(IResolvable|SecurityhubInsightFiltersProcessPid[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessPid.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]
 
 ---
 
 ##### `PutProcessTerminatedAt` <a name="PutProcessTerminatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessTerminatedAt"></a>
 
 ```csharp
-private void PutProcessTerminatedAt(object Value)
+private void PutProcessTerminatedAt(IResolvable|SecurityhubInsightFiltersProcessTerminatedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProcessTerminatedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]
 
 ---
 
 ##### `PutProductArn` <a name="PutProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductArn"></a>
 
 ```csharp
-private void PutProductArn(object Value)
+private void PutProductArn(IResolvable|SecurityhubInsightFiltersProductArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]
 
 ---
 
 ##### `PutProductFields` <a name="PutProductFields" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductFields"></a>
 
 ```csharp
-private void PutProductFields(object Value)
+private void PutProductFields(IResolvable|SecurityhubInsightFiltersProductFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]
 
 ---
 
 ##### `PutProductName` <a name="PutProductName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductName"></a>
 
 ```csharp
-private void PutProductName(object Value)
+private void PutProductName(IResolvable|SecurityhubInsightFiltersProductName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putProductName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]
 
 ---
 
 ##### `PutRecommendationText` <a name="PutRecommendationText" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecommendationText"></a>
 
 ```csharp
-private void PutRecommendationText(object Value)
+private void PutRecommendationText(IResolvable|SecurityhubInsightFiltersRecommendationText[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecommendationText.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]
 
 ---
 
 ##### `PutRecordState` <a name="PutRecordState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecordState"></a>
 
 ```csharp
-private void PutRecordState(object Value)
+private void PutRecordState(IResolvable|SecurityhubInsightFiltersRecordState[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRecordState.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]
 
 ---
 
 ##### `PutRelatedFindingsId` <a name="PutRelatedFindingsId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsId"></a>
 
 ```csharp
-private void PutRelatedFindingsId(object Value)
+private void PutRelatedFindingsId(IResolvable|SecurityhubInsightFiltersRelatedFindingsId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]
 
 ---
 
 ##### `PutRelatedFindingsProductArn` <a name="PutRelatedFindingsProductArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsProductArn"></a>
 
 ```csharp
-private void PutRelatedFindingsProductArn(object Value)
+private void PutRelatedFindingsProductArn(IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putRelatedFindingsProductArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceIamInstanceProfileArn` <a name="PutResourceAwsEc2InstanceIamInstanceProfileArn" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIamInstanceProfileArn"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceIamInstanceProfileArn(object Value)
+private void PutResourceAwsEc2InstanceIamInstanceProfileArn(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIamInstanceProfileArn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceImageId` <a name="PutResourceAwsEc2InstanceImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceImageId"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceImageId(object Value)
+private void PutResourceAwsEc2InstanceImageId(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceImageId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceIpv4Addresses` <a name="PutResourceAwsEc2InstanceIpv4Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv4Addresses"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceIpv4Addresses(object Value)
+private void PutResourceAwsEc2InstanceIpv4Addresses(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv4Addresses.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceIpv6Addresses` <a name="PutResourceAwsEc2InstanceIpv6Addresses" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv6Addresses"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceIpv6Addresses(object Value)
+private void PutResourceAwsEc2InstanceIpv6Addresses(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceIpv6Addresses.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceKeyName` <a name="PutResourceAwsEc2InstanceKeyName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceKeyName"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceKeyName(object Value)
+private void PutResourceAwsEc2InstanceKeyName(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceKeyName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceLaunchedAt` <a name="PutResourceAwsEc2InstanceLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceLaunchedAt"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceLaunchedAt(object Value)
+private void PutResourceAwsEc2InstanceLaunchedAt(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceLaunchedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceSubnetId` <a name="PutResourceAwsEc2InstanceSubnetId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceSubnetId"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceSubnetId(object Value)
+private void PutResourceAwsEc2InstanceSubnetId(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceSubnetId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceType` <a name="PutResourceAwsEc2InstanceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceType"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceType(object Value)
+private void PutResourceAwsEc2InstanceType(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]
 
 ---
 
 ##### `PutResourceAwsEc2InstanceVpcId` <a name="PutResourceAwsEc2InstanceVpcId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceVpcId"></a>
 
 ```csharp
-private void PutResourceAwsEc2InstanceVpcId(object Value)
+private void PutResourceAwsEc2InstanceVpcId(IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsEc2InstanceVpcId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]
 
 ---
 
 ##### `PutResourceAwsIamAccessKeyCreatedAt` <a name="PutResourceAwsIamAccessKeyCreatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyCreatedAt"></a>
 
 ```csharp
-private void PutResourceAwsIamAccessKeyCreatedAt(object Value)
+private void PutResourceAwsIamAccessKeyCreatedAt(IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyCreatedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]
 
 ---
 
 ##### `PutResourceAwsIamAccessKeyStatus` <a name="PutResourceAwsIamAccessKeyStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyStatus"></a>
 
 ```csharp
-private void PutResourceAwsIamAccessKeyStatus(object Value)
+private void PutResourceAwsIamAccessKeyStatus(IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyStatus.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]
 
 ---
 
 ##### `PutResourceAwsIamAccessKeyUserName` <a name="PutResourceAwsIamAccessKeyUserName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyUserName"></a>
 
 ```csharp
-private void PutResourceAwsIamAccessKeyUserName(object Value)
+private void PutResourceAwsIamAccessKeyUserName(IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsIamAccessKeyUserName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]
 
 ---
 
 ##### `PutResourceAwsS3BucketOwnerId` <a name="PutResourceAwsS3BucketOwnerId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerId"></a>
 
 ```csharp
-private void PutResourceAwsS3BucketOwnerId(object Value)
+private void PutResourceAwsS3BucketOwnerId(IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]
 
 ---
 
 ##### `PutResourceAwsS3BucketOwnerName` <a name="PutResourceAwsS3BucketOwnerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerName"></a>
 
 ```csharp
-private void PutResourceAwsS3BucketOwnerName(object Value)
+private void PutResourceAwsS3BucketOwnerName(IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceAwsS3BucketOwnerName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]
 
 ---
 
 ##### `PutResourceContainerImageId` <a name="PutResourceContainerImageId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageId"></a>
 
 ```csharp
-private void PutResourceContainerImageId(object Value)
+private void PutResourceContainerImageId(IResolvable|SecurityhubInsightFiltersResourceContainerImageId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]
 
 ---
 
 ##### `PutResourceContainerImageName` <a name="PutResourceContainerImageName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageName"></a>
 
 ```csharp
-private void PutResourceContainerImageName(object Value)
+private void PutResourceContainerImageName(IResolvable|SecurityhubInsightFiltersResourceContainerImageName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerImageName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]
 
 ---
 
 ##### `PutResourceContainerLaunchedAt` <a name="PutResourceContainerLaunchedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerLaunchedAt"></a>
 
 ```csharp
-private void PutResourceContainerLaunchedAt(object Value)
+private void PutResourceContainerLaunchedAt(IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerLaunchedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]
 
 ---
 
 ##### `PutResourceContainerName` <a name="PutResourceContainerName" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerName"></a>
 
 ```csharp
-private void PutResourceContainerName(object Value)
+private void PutResourceContainerName(IResolvable|SecurityhubInsightFiltersResourceContainerName[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceContainerName.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]
 
 ---
 
 ##### `PutResourceDetailsOther` <a name="PutResourceDetailsOther" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceDetailsOther"></a>
 
 ```csharp
-private void PutResourceDetailsOther(object Value)
+private void PutResourceDetailsOther(IResolvable|SecurityhubInsightFiltersResourceDetailsOther[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceDetailsOther.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]
 
 ---
 
 ##### `PutResourceId` <a name="PutResourceId" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceId"></a>
 
 ```csharp
-private void PutResourceId(object Value)
+private void PutResourceId(IResolvable|SecurityhubInsightFiltersResourceId[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceId.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]
 
 ---
 
 ##### `PutResourcePartition` <a name="PutResourcePartition" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourcePartition"></a>
 
 ```csharp
-private void PutResourcePartition(object Value)
+private void PutResourcePartition(IResolvable|SecurityhubInsightFiltersResourcePartition[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourcePartition.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]
 
 ---
 
 ##### `PutResourceRegion` <a name="PutResourceRegion" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceRegion"></a>
 
 ```csharp
-private void PutResourceRegion(object Value)
+private void PutResourceRegion(IResolvable|SecurityhubInsightFiltersResourceRegion[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceRegion.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]
 
 ---
 
 ##### `PutResourceTags` <a name="PutResourceTags" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceTags"></a>
 
 ```csharp
-private void PutResourceTags(object Value)
+private void PutResourceTags(IResolvable|SecurityhubInsightFiltersResourceTags[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceTags.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]
 
 ---
 
 ##### `PutResourceType` <a name="PutResourceType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceType"></a>
 
 ```csharp
-private void PutResourceType(object Value)
+private void PutResourceType(IResolvable|SecurityhubInsightFiltersResourceType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putResourceType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]
 
 ---
 
 ##### `PutSeverityLabel` <a name="PutSeverityLabel" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSeverityLabel"></a>
 
 ```csharp
-private void PutSeverityLabel(object Value)
+private void PutSeverityLabel(IResolvable|SecurityhubInsightFiltersSeverityLabel[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSeverityLabel.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]
 
 ---
 
 ##### `PutSourceUrl` <a name="PutSourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSourceUrl"></a>
 
 ```csharp
-private void PutSourceUrl(object Value)
+private void PutSourceUrl(IResolvable|SecurityhubInsightFiltersSourceUrl[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putSourceUrl.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]
 
 ---
 
 ##### `PutThreatIntelIndicatorCategory` <a name="PutThreatIntelIndicatorCategory" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorCategory"></a>
 
 ```csharp
-private void PutThreatIntelIndicatorCategory(object Value)
+private void PutThreatIntelIndicatorCategory(IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorCategory.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]
 
 ---
 
 ##### `PutThreatIntelIndicatorLastObservedAt` <a name="PutThreatIntelIndicatorLastObservedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorLastObservedAt"></a>
 
 ```csharp
-private void PutThreatIntelIndicatorLastObservedAt(object Value)
+private void PutThreatIntelIndicatorLastObservedAt(IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorLastObservedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]
 
 ---
 
 ##### `PutThreatIntelIndicatorSource` <a name="PutThreatIntelIndicatorSource" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSource"></a>
 
 ```csharp
-private void PutThreatIntelIndicatorSource(object Value)
+private void PutThreatIntelIndicatorSource(IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSource.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]
 
 ---
 
 ##### `PutThreatIntelIndicatorSourceUrl` <a name="PutThreatIntelIndicatorSourceUrl" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSourceUrl"></a>
 
 ```csharp
-private void PutThreatIntelIndicatorSourceUrl(object Value)
+private void PutThreatIntelIndicatorSourceUrl(IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorSourceUrl.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]
 
 ---
 
 ##### `PutThreatIntelIndicatorType` <a name="PutThreatIntelIndicatorType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorType"></a>
 
 ```csharp
-private void PutThreatIntelIndicatorType(object Value)
+private void PutThreatIntelIndicatorType(IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]
 
 ---
 
 ##### `PutThreatIntelIndicatorValue` <a name="PutThreatIntelIndicatorValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorValue"></a>
 
 ```csharp
-private void PutThreatIntelIndicatorValue(object Value)
+private void PutThreatIntelIndicatorValue(IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putThreatIntelIndicatorValue.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]
 
 ---
 
 ##### `PutTitle` <a name="PutTitle" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putTitle"></a>
 
 ```csharp
-private void PutTitle(object Value)
+private void PutTitle(IResolvable|SecurityhubInsightFiltersTitle[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putTitle.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]
 
 ---
 
 ##### `PutType` <a name="PutType" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putType"></a>
 
 ```csharp
-private void PutType(object Value)
+private void PutType(IResolvable|SecurityhubInsightFiltersType[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putType.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]
 
 ---
 
 ##### `PutUpdatedAt` <a name="PutUpdatedAt" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUpdatedAt"></a>
 
 ```csharp
-private void PutUpdatedAt(object Value)
+private void PutUpdatedAt(IResolvable|SecurityhubInsightFiltersUpdatedAt[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUpdatedAt.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]
 
 ---
 
 ##### `PutUserDefinedValues` <a name="PutUserDefinedValues" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUserDefinedValues"></a>
 
 ```csharp
-private void PutUserDefinedValues(object Value)
+private void PutUserDefinedValues(IResolvable|SecurityhubInsightFiltersUserDefinedValues[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putUserDefinedValues.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]
 
 ---
 
 ##### `PutVerificationState` <a name="PutVerificationState" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putVerificationState"></a>
 
 ```csharp
-private void PutVerificationState(object Value)
+private void PutVerificationState(IResolvable|SecurityhubInsightFiltersVerificationState[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putVerificationState.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]
 
 ---
 
 ##### `PutWorkflowStatus` <a name="PutWorkflowStatus" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putWorkflowStatus"></a>
 
 ```csharp
-private void PutWorkflowStatus(object Value)
+private void PutWorkflowStatus(IResolvable|SecurityhubInsightFiltersWorkflowStatus[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.putWorkflowStatus.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]
 
 ---
 
@@ -28249,94 +28249,94 @@ private void ResetWorkflowStatus()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValues">UserDefinedValues</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList">SecurityhubInsightFiltersUserDefinedValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationState">VerificationState</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList">SecurityhubInsightFiltersVerificationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatus">WorkflowStatus</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList">SecurityhubInsightFiltersWorkflowStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput">CompanyNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput">ComplianceStatusInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput">ConfidenceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput">CreatedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput">CriticalityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput">FindingProviderFieldsConfidenceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput">FindingProviderFieldsCriticalityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput">FindingProviderFieldsRelatedFindingsIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput">FindingProviderFieldsRelatedFindingsProductArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput">FindingProviderFieldsSeverityLabelInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput">FindingProviderFieldsSeverityOriginalInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput">FindingProviderFieldsTypesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput">FirstObservedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput">GeneratorIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput">IdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput">KeywordInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput">LastObservedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput">MalwareNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput">MalwarePathInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput">MalwareStateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput">MalwareTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput">NetworkDestinationDomainInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input">NetworkDestinationIpv4Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input">NetworkDestinationIpv6Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput">NetworkDestinationPortInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput">NetworkDirectionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput">NetworkProtocolInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput">NetworkSourceDomainInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input">NetworkSourceIpv4Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input">NetworkSourceIpv6Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput">NetworkSourceMacInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput">NetworkSourcePortInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput">NoteTextInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput">NoteUpdatedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput">NoteUpdatedByInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput">ProcessLaunchedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput">ProcessNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput">ProcessParentPidInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput">ProcessPathInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput">ProcessPidInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput">ProcessTerminatedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput">ProductArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput">ProductFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput">ProductNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput">RecommendationTextInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput">RecordStateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput">RelatedFindingsIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput">RelatedFindingsProductArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput">ResourceAwsEc2InstanceIamInstanceProfileArnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput">ResourceAwsEc2InstanceImageIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput">ResourceAwsEc2InstanceIpv4AddressesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput">ResourceAwsEc2InstanceIpv6AddressesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput">ResourceAwsEc2InstanceKeyNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput">ResourceAwsEc2InstanceLaunchedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput">ResourceAwsEc2InstanceSubnetIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput">ResourceAwsEc2InstanceTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput">ResourceAwsEc2InstanceVpcIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput">ResourceAwsIamAccessKeyCreatedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput">ResourceAwsIamAccessKeyStatusInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput">ResourceAwsIamAccessKeyUserNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput">ResourceAwsS3BucketOwnerIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput">ResourceAwsS3BucketOwnerNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput">ResourceContainerImageIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput">ResourceContainerImageNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput">ResourceContainerLaunchedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput">ResourceContainerNameInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput">ResourceDetailsOtherInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput">ResourceIdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput">ResourcePartitionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput">ResourceRegionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput">ResourceTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput">ResourceTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput">SeverityLabelInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput">SourceUrlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput">ThreatIntelIndicatorCategoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput">ThreatIntelIndicatorLastObservedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput">ThreatIntelIndicatorSourceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput">ThreatIntelIndicatorSourceUrlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput">ThreatIntelIndicatorTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput">ThreatIntelIndicatorValueInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput">TitleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput">TypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput">UpdatedAtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput">UserDefinedValuesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput">VerificationStateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput">WorkflowStatusInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput">CompanyNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput">ComplianceStatusInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput">ConfidenceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput">CreatedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput">CriticalityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput">FindingProviderFieldsConfidenceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput">FindingProviderFieldsCriticalityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput">FindingProviderFieldsRelatedFindingsIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput">FindingProviderFieldsRelatedFindingsProductArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput">FindingProviderFieldsSeverityLabelInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput">FindingProviderFieldsSeverityOriginalInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput">FindingProviderFieldsTypesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput">FirstObservedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput">GeneratorIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput">IdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput">KeywordInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput">LastObservedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput">MalwareNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput">MalwarePathInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput">MalwareStateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput">MalwareTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput">NetworkDestinationDomainInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input">NetworkDestinationIpv4Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input">NetworkDestinationIpv6Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput">NetworkDestinationPortInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput">NetworkDirectionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput">NetworkProtocolInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput">NetworkSourceDomainInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input">NetworkSourceIpv4Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input">NetworkSourceIpv6Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput">NetworkSourceMacInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput">NetworkSourcePortInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput">NoteTextInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput">NoteUpdatedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput">NoteUpdatedByInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput">ProcessLaunchedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput">ProcessNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput">ProcessParentPidInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput">ProcessPathInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput">ProcessPidInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput">ProcessTerminatedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput">ProductArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput">ProductFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput">ProductNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput">RecommendationTextInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput">RecordStateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput">RelatedFindingsIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput">RelatedFindingsProductArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput">ResourceAwsEc2InstanceIamInstanceProfileArnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput">ResourceAwsEc2InstanceImageIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput">ResourceAwsEc2InstanceIpv4AddressesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput">ResourceAwsEc2InstanceIpv6AddressesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput">ResourceAwsEc2InstanceKeyNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput">ResourceAwsEc2InstanceLaunchedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput">ResourceAwsEc2InstanceSubnetIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput">ResourceAwsEc2InstanceTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput">ResourceAwsEc2InstanceVpcIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput">ResourceAwsIamAccessKeyCreatedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput">ResourceAwsIamAccessKeyStatusInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput">ResourceAwsIamAccessKeyUserNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput">ResourceAwsS3BucketOwnerIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput">ResourceAwsS3BucketOwnerNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput">ResourceContainerImageIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput">ResourceContainerImageNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput">ResourceContainerLaunchedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput">ResourceContainerNameInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput">ResourceDetailsOtherInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput">ResourceIdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput">ResourcePartitionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput">ResourceRegionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput">ResourceTagsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput">ResourceTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput">SeverityLabelInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput">SourceUrlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput">ThreatIntelIndicatorCategoryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput">ThreatIntelIndicatorLastObservedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput">ThreatIntelIndicatorSourceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput">ThreatIntelIndicatorSourceUrlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput">ThreatIntelIndicatorTypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput">ThreatIntelIndicatorValueInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput">TitleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput">TypeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput">UpdatedAtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput">UserDefinedValuesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput">VerificationStateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput">WorkflowStatusInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | *No description.* |
 
 ---
@@ -29248,880 +29248,880 @@ public SecurityhubInsightFiltersWorkflowStatusList WorkflowStatus { get; }
 ##### `AwsAccountIdInput`<sup>Optional</sup> <a name="AwsAccountIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.awsAccountIdInput"></a>
 
 ```csharp
-public object AwsAccountIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersAwsAccountId[] AwsAccountIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>[]
 
 ---
 
 ##### `CompanyNameInput`<sup>Optional</sup> <a name="CompanyNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.companyNameInput"></a>
 
 ```csharp
-public object CompanyNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersCompanyName[] CompanyNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>[]
 
 ---
 
 ##### `ComplianceStatusInput`<sup>Optional</sup> <a name="ComplianceStatusInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.complianceStatusInput"></a>
 
 ```csharp
-public object ComplianceStatusInput { get; }
+public IResolvable|SecurityhubInsightFiltersComplianceStatus[] ComplianceStatusInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>[]
 
 ---
 
 ##### `ConfidenceInput`<sup>Optional</sup> <a name="ConfidenceInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.confidenceInput"></a>
 
 ```csharp
-public object ConfidenceInput { get; }
+public IResolvable|SecurityhubInsightFiltersConfidence[] ConfidenceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>[]
 
 ---
 
 ##### `CreatedAtInput`<sup>Optional</sup> <a name="CreatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.createdAtInput"></a>
 
 ```csharp
-public object CreatedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersCreatedAt[] CreatedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>[]
 
 ---
 
 ##### `CriticalityInput`<sup>Optional</sup> <a name="CriticalityInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.criticalityInput"></a>
 
 ```csharp
-public object CriticalityInput { get; }
+public IResolvable|SecurityhubInsightFiltersCriticality[] CriticalityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>[]
 
 ---
 
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.descriptionInput"></a>
 
 ```csharp
-public object DescriptionInput { get; }
+public IResolvable|SecurityhubInsightFiltersDescription[] DescriptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>[]
 
 ---
 
 ##### `FindingProviderFieldsConfidenceInput`<sup>Optional</sup> <a name="FindingProviderFieldsConfidenceInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsConfidenceInput"></a>
 
 ```csharp
-public object FindingProviderFieldsConfidenceInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsConfidence[] FindingProviderFieldsConfidenceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>[]
 
 ---
 
 ##### `FindingProviderFieldsCriticalityInput`<sup>Optional</sup> <a name="FindingProviderFieldsCriticalityInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsCriticalityInput"></a>
 
 ```csharp
-public object FindingProviderFieldsCriticalityInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsCriticality[] FindingProviderFieldsCriticalityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>[]
 
 ---
 
 ##### `FindingProviderFieldsRelatedFindingsIdInput`<sup>Optional</sup> <a name="FindingProviderFieldsRelatedFindingsIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsIdInput"></a>
 
 ```csharp
-public object FindingProviderFieldsRelatedFindingsIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId[] FindingProviderFieldsRelatedFindingsIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>[]
 
 ---
 
 ##### `FindingProviderFieldsRelatedFindingsProductArnInput`<sup>Optional</sup> <a name="FindingProviderFieldsRelatedFindingsProductArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsRelatedFindingsProductArnInput"></a>
 
 ```csharp
-public object FindingProviderFieldsRelatedFindingsProductArnInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn[] FindingProviderFieldsRelatedFindingsProductArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>[]
 
 ---
 
 ##### `FindingProviderFieldsSeverityLabelInput`<sup>Optional</sup> <a name="FindingProviderFieldsSeverityLabelInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityLabelInput"></a>
 
 ```csharp
-public object FindingProviderFieldsSeverityLabelInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel[] FindingProviderFieldsSeverityLabelInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>[]
 
 ---
 
 ##### `FindingProviderFieldsSeverityOriginalInput`<sup>Optional</sup> <a name="FindingProviderFieldsSeverityOriginalInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsSeverityOriginalInput"></a>
 
 ```csharp
-public object FindingProviderFieldsSeverityOriginalInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal[] FindingProviderFieldsSeverityOriginalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>[]
 
 ---
 
 ##### `FindingProviderFieldsTypesInput`<sup>Optional</sup> <a name="FindingProviderFieldsTypesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.findingProviderFieldsTypesInput"></a>
 
 ```csharp
-public object FindingProviderFieldsTypesInput { get; }
+public IResolvable|SecurityhubInsightFiltersFindingProviderFieldsTypes[] FindingProviderFieldsTypesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>[]
 
 ---
 
 ##### `FirstObservedAtInput`<sup>Optional</sup> <a name="FirstObservedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.firstObservedAtInput"></a>
 
 ```csharp
-public object FirstObservedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersFirstObservedAt[] FirstObservedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>[]
 
 ---
 
 ##### `GeneratorIdInput`<sup>Optional</sup> <a name="GeneratorIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.generatorIdInput"></a>
 
 ```csharp
-public object GeneratorIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersGeneratorId[] GeneratorIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>[]
 
 ---
 
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.idInput"></a>
 
 ```csharp
-public object IdInput { get; }
+public IResolvable|SecurityhubInsightFiltersId[] IdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>[]
 
 ---
 
 ##### `KeywordInput`<sup>Optional</sup> <a name="KeywordInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.keywordInput"></a>
 
 ```csharp
-public object KeywordInput { get; }
+public IResolvable|SecurityhubInsightFiltersKeyword[] KeywordInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>[]
 
 ---
 
 ##### `LastObservedAtInput`<sup>Optional</sup> <a name="LastObservedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.lastObservedAtInput"></a>
 
 ```csharp
-public object LastObservedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersLastObservedAt[] LastObservedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>[]
 
 ---
 
 ##### `MalwareNameInput`<sup>Optional</sup> <a name="MalwareNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareNameInput"></a>
 
 ```csharp
-public object MalwareNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareName[] MalwareNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>[]
 
 ---
 
 ##### `MalwarePathInput`<sup>Optional</sup> <a name="MalwarePathInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwarePathInput"></a>
 
 ```csharp
-public object MalwarePathInput { get; }
+public IResolvable|SecurityhubInsightFiltersMalwarePath[] MalwarePathInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>[]
 
 ---
 
 ##### `MalwareStateInput`<sup>Optional</sup> <a name="MalwareStateInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareStateInput"></a>
 
 ```csharp
-public object MalwareStateInput { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareState[] MalwareStateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>[]
 
 ---
 
 ##### `MalwareTypeInput`<sup>Optional</sup> <a name="MalwareTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.malwareTypeInput"></a>
 
 ```csharp
-public object MalwareTypeInput { get; }
+public IResolvable|SecurityhubInsightFiltersMalwareType[] MalwareTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>[]
 
 ---
 
 ##### `NetworkDestinationDomainInput`<sup>Optional</sup> <a name="NetworkDestinationDomainInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationDomainInput"></a>
 
 ```csharp
-public object NetworkDestinationDomainInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationDomain[] NetworkDestinationDomainInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>[]
 
 ---
 
 ##### `NetworkDestinationIpv4Input`<sup>Optional</sup> <a name="NetworkDestinationIpv4Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv4Input"></a>
 
 ```csharp
-public object NetworkDestinationIpv4Input { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv4[] NetworkDestinationIpv4Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>[]
 
 ---
 
 ##### `NetworkDestinationIpv6Input`<sup>Optional</sup> <a name="NetworkDestinationIpv6Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationIpv6Input"></a>
 
 ```csharp
-public object NetworkDestinationIpv6Input { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationIpv6[] NetworkDestinationIpv6Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>[]
 
 ---
 
 ##### `NetworkDestinationPortInput`<sup>Optional</sup> <a name="NetworkDestinationPortInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDestinationPortInput"></a>
 
 ```csharp
-public object NetworkDestinationPortInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDestinationPort[] NetworkDestinationPortInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>[]
 
 ---
 
 ##### `NetworkDirectionInput`<sup>Optional</sup> <a name="NetworkDirectionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkDirectionInput"></a>
 
 ```csharp
-public object NetworkDirectionInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkDirection[] NetworkDirectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>[]
 
 ---
 
 ##### `NetworkProtocolInput`<sup>Optional</sup> <a name="NetworkProtocolInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkProtocolInput"></a>
 
 ```csharp
-public object NetworkProtocolInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkProtocol[] NetworkProtocolInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>[]
 
 ---
 
 ##### `NetworkSourceDomainInput`<sup>Optional</sup> <a name="NetworkSourceDomainInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceDomainInput"></a>
 
 ```csharp
-public object NetworkSourceDomainInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceDomain[] NetworkSourceDomainInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>[]
 
 ---
 
 ##### `NetworkSourceIpv4Input`<sup>Optional</sup> <a name="NetworkSourceIpv4Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv4Input"></a>
 
 ```csharp
-public object NetworkSourceIpv4Input { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv4[] NetworkSourceIpv4Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>[]
 
 ---
 
 ##### `NetworkSourceIpv6Input`<sup>Optional</sup> <a name="NetworkSourceIpv6Input" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceIpv6Input"></a>
 
 ```csharp
-public object NetworkSourceIpv6Input { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceIpv6[] NetworkSourceIpv6Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>[]
 
 ---
 
 ##### `NetworkSourceMacInput`<sup>Optional</sup> <a name="NetworkSourceMacInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourceMacInput"></a>
 
 ```csharp
-public object NetworkSourceMacInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourceMac[] NetworkSourceMacInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>[]
 
 ---
 
 ##### `NetworkSourcePortInput`<sup>Optional</sup> <a name="NetworkSourcePortInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.networkSourcePortInput"></a>
 
 ```csharp
-public object NetworkSourcePortInput { get; }
+public IResolvable|SecurityhubInsightFiltersNetworkSourcePort[] NetworkSourcePortInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>[]
 
 ---
 
 ##### `NoteTextInput`<sup>Optional</sup> <a name="NoteTextInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteTextInput"></a>
 
 ```csharp
-public object NoteTextInput { get; }
+public IResolvable|SecurityhubInsightFiltersNoteText[] NoteTextInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>[]
 
 ---
 
 ##### `NoteUpdatedAtInput`<sup>Optional</sup> <a name="NoteUpdatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedAtInput"></a>
 
 ```csharp
-public object NoteUpdatedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedAt[] NoteUpdatedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>[]
 
 ---
 
 ##### `NoteUpdatedByInput`<sup>Optional</sup> <a name="NoteUpdatedByInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.noteUpdatedByInput"></a>
 
 ```csharp
-public object NoteUpdatedByInput { get; }
+public IResolvable|SecurityhubInsightFiltersNoteUpdatedBy[] NoteUpdatedByInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>[]
 
 ---
 
 ##### `ProcessLaunchedAtInput`<sup>Optional</sup> <a name="ProcessLaunchedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processLaunchedAtInput"></a>
 
 ```csharp
-public object ProcessLaunchedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersProcessLaunchedAt[] ProcessLaunchedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]
 
 ---
 
 ##### `ProcessNameInput`<sup>Optional</sup> <a name="ProcessNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processNameInput"></a>
 
 ```csharp
-public object ProcessNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersProcessName[] ProcessNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]
 
 ---
 
 ##### `ProcessParentPidInput`<sup>Optional</sup> <a name="ProcessParentPidInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processParentPidInput"></a>
 
 ```csharp
-public object ProcessParentPidInput { get; }
+public IResolvable|SecurityhubInsightFiltersProcessParentPid[] ProcessParentPidInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]
 
 ---
 
 ##### `ProcessPathInput`<sup>Optional</sup> <a name="ProcessPathInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPathInput"></a>
 
 ```csharp
-public object ProcessPathInput { get; }
+public IResolvable|SecurityhubInsightFiltersProcessPath[] ProcessPathInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]
 
 ---
 
 ##### `ProcessPidInput`<sup>Optional</sup> <a name="ProcessPidInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processPidInput"></a>
 
 ```csharp
-public object ProcessPidInput { get; }
+public IResolvable|SecurityhubInsightFiltersProcessPid[] ProcessPidInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]
 
 ---
 
 ##### `ProcessTerminatedAtInput`<sup>Optional</sup> <a name="ProcessTerminatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.processTerminatedAtInput"></a>
 
 ```csharp
-public object ProcessTerminatedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersProcessTerminatedAt[] ProcessTerminatedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]
 
 ---
 
 ##### `ProductArnInput`<sup>Optional</sup> <a name="ProductArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productArnInput"></a>
 
 ```csharp
-public object ProductArnInput { get; }
+public IResolvable|SecurityhubInsightFiltersProductArn[] ProductArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]
 
 ---
 
 ##### `ProductFieldsInput`<sup>Optional</sup> <a name="ProductFieldsInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productFieldsInput"></a>
 
 ```csharp
-public object ProductFieldsInput { get; }
+public IResolvable|SecurityhubInsightFiltersProductFields[] ProductFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]
 
 ---
 
 ##### `ProductNameInput`<sup>Optional</sup> <a name="ProductNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.productNameInput"></a>
 
 ```csharp
-public object ProductNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersProductName[] ProductNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]
 
 ---
 
 ##### `RecommendationTextInput`<sup>Optional</sup> <a name="RecommendationTextInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recommendationTextInput"></a>
 
 ```csharp
-public object RecommendationTextInput { get; }
+public IResolvable|SecurityhubInsightFiltersRecommendationText[] RecommendationTextInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]
 
 ---
 
 ##### `RecordStateInput`<sup>Optional</sup> <a name="RecordStateInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.recordStateInput"></a>
 
 ```csharp
-public object RecordStateInput { get; }
+public IResolvable|SecurityhubInsightFiltersRecordState[] RecordStateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]
 
 ---
 
 ##### `RelatedFindingsIdInput`<sup>Optional</sup> <a name="RelatedFindingsIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsIdInput"></a>
 
 ```csharp
-public object RelatedFindingsIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsId[] RelatedFindingsIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]
 
 ---
 
 ##### `RelatedFindingsProductArnInput`<sup>Optional</sup> <a name="RelatedFindingsProductArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.relatedFindingsProductArnInput"></a>
 
 ```csharp
-public object RelatedFindingsProductArnInput { get; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn[] RelatedFindingsProductArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceIamInstanceProfileArnInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceIamInstanceProfileArnInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIamInstanceProfileArnInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceIamInstanceProfileArnInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn[] ResourceAwsEc2InstanceIamInstanceProfileArnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceImageIdInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceImageIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceImageIdInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceImageIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId[] ResourceAwsEc2InstanceImageIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceIpv4AddressesInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceIpv4AddressesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv4AddressesInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceIpv4AddressesInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses[] ResourceAwsEc2InstanceIpv4AddressesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceIpv6AddressesInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceIpv6AddressesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceIpv6AddressesInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceIpv6AddressesInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses[] ResourceAwsEc2InstanceIpv6AddressesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceKeyNameInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceKeyNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceKeyNameInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceKeyNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName[] ResourceAwsEc2InstanceKeyNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceLaunchedAtInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceLaunchedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceLaunchedAtInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceLaunchedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt[] ResourceAwsEc2InstanceLaunchedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceSubnetIdInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceSubnetIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceSubnetIdInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceSubnetIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId[] ResourceAwsEc2InstanceSubnetIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceTypeInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceTypeInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceTypeInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType[] ResourceAwsEc2InstanceTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]
 
 ---
 
 ##### `ResourceAwsEc2InstanceVpcIdInput`<sup>Optional</sup> <a name="ResourceAwsEc2InstanceVpcIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsEc2InstanceVpcIdInput"></a>
 
 ```csharp
-public object ResourceAwsEc2InstanceVpcIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId[] ResourceAwsEc2InstanceVpcIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]
 
 ---
 
 ##### `ResourceAwsIamAccessKeyCreatedAtInput`<sup>Optional</sup> <a name="ResourceAwsIamAccessKeyCreatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyCreatedAtInput"></a>
 
 ```csharp
-public object ResourceAwsIamAccessKeyCreatedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt[] ResourceAwsIamAccessKeyCreatedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]
 
 ---
 
 ##### `ResourceAwsIamAccessKeyStatusInput`<sup>Optional</sup> <a name="ResourceAwsIamAccessKeyStatusInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyStatusInput"></a>
 
 ```csharp
-public object ResourceAwsIamAccessKeyStatusInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus[] ResourceAwsIamAccessKeyStatusInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]
 
 ---
 
 ##### `ResourceAwsIamAccessKeyUserNameInput`<sup>Optional</sup> <a name="ResourceAwsIamAccessKeyUserNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsIamAccessKeyUserNameInput"></a>
 
 ```csharp
-public object ResourceAwsIamAccessKeyUserNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName[] ResourceAwsIamAccessKeyUserNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]
 
 ---
 
 ##### `ResourceAwsS3BucketOwnerIdInput`<sup>Optional</sup> <a name="ResourceAwsS3BucketOwnerIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerIdInput"></a>
 
 ```csharp
-public object ResourceAwsS3BucketOwnerIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId[] ResourceAwsS3BucketOwnerIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]
 
 ---
 
 ##### `ResourceAwsS3BucketOwnerNameInput`<sup>Optional</sup> <a name="ResourceAwsS3BucketOwnerNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceAwsS3BucketOwnerNameInput"></a>
 
 ```csharp
-public object ResourceAwsS3BucketOwnerNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName[] ResourceAwsS3BucketOwnerNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]
 
 ---
 
 ##### `ResourceContainerImageIdInput`<sup>Optional</sup> <a name="ResourceContainerImageIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageIdInput"></a>
 
 ```csharp
-public object ResourceContainerImageIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageId[] ResourceContainerImageIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]
 
 ---
 
 ##### `ResourceContainerImageNameInput`<sup>Optional</sup> <a name="ResourceContainerImageNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerImageNameInput"></a>
 
 ```csharp
-public object ResourceContainerImageNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageName[] ResourceContainerImageNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]
 
 ---
 
 ##### `ResourceContainerLaunchedAtInput`<sup>Optional</sup> <a name="ResourceContainerLaunchedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerLaunchedAtInput"></a>
 
 ```csharp
-public object ResourceContainerLaunchedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt[] ResourceContainerLaunchedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]
 
 ---
 
 ##### `ResourceContainerNameInput`<sup>Optional</sup> <a name="ResourceContainerNameInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceContainerNameInput"></a>
 
 ```csharp
-public object ResourceContainerNameInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerName[] ResourceContainerNameInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]
 
 ---
 
 ##### `ResourceDetailsOtherInput`<sup>Optional</sup> <a name="ResourceDetailsOtherInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceDetailsOtherInput"></a>
 
 ```csharp
-public object ResourceDetailsOtherInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceDetailsOther[] ResourceDetailsOtherInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]
 
 ---
 
 ##### `ResourceIdInput`<sup>Optional</sup> <a name="ResourceIdInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceIdInput"></a>
 
 ```csharp
-public object ResourceIdInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceId[] ResourceIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]
 
 ---
 
 ##### `ResourcePartitionInput`<sup>Optional</sup> <a name="ResourcePartitionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourcePartitionInput"></a>
 
 ```csharp
-public object ResourcePartitionInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourcePartition[] ResourcePartitionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]
 
 ---
 
 ##### `ResourceRegionInput`<sup>Optional</sup> <a name="ResourceRegionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceRegionInput"></a>
 
 ```csharp
-public object ResourceRegionInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceRegion[] ResourceRegionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]
 
 ---
 
 ##### `ResourceTagsInput`<sup>Optional</sup> <a name="ResourceTagsInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTagsInput"></a>
 
 ```csharp
-public object ResourceTagsInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceTags[] ResourceTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]
 
 ---
 
 ##### `ResourceTypeInput`<sup>Optional</sup> <a name="ResourceTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.resourceTypeInput"></a>
 
 ```csharp
-public object ResourceTypeInput { get; }
+public IResolvable|SecurityhubInsightFiltersResourceType[] ResourceTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]
 
 ---
 
 ##### `SeverityLabelInput`<sup>Optional</sup> <a name="SeverityLabelInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.severityLabelInput"></a>
 
 ```csharp
-public object SeverityLabelInput { get; }
+public IResolvable|SecurityhubInsightFiltersSeverityLabel[] SeverityLabelInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]
 
 ---
 
 ##### `SourceUrlInput`<sup>Optional</sup> <a name="SourceUrlInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.sourceUrlInput"></a>
 
 ```csharp
-public object SourceUrlInput { get; }
+public IResolvable|SecurityhubInsightFiltersSourceUrl[] SourceUrlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]
 
 ---
 
 ##### `ThreatIntelIndicatorCategoryInput`<sup>Optional</sup> <a name="ThreatIntelIndicatorCategoryInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorCategoryInput"></a>
 
 ```csharp
-public object ThreatIntelIndicatorCategoryInput { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory[] ThreatIntelIndicatorCategoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]
 
 ---
 
 ##### `ThreatIntelIndicatorLastObservedAtInput`<sup>Optional</sup> <a name="ThreatIntelIndicatorLastObservedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorLastObservedAtInput"></a>
 
 ```csharp
-public object ThreatIntelIndicatorLastObservedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt[] ThreatIntelIndicatorLastObservedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]
 
 ---
 
 ##### `ThreatIntelIndicatorSourceInput`<sup>Optional</sup> <a name="ThreatIntelIndicatorSourceInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceInput"></a>
 
 ```csharp
-public object ThreatIntelIndicatorSourceInput { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource[] ThreatIntelIndicatorSourceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]
 
 ---
 
 ##### `ThreatIntelIndicatorSourceUrlInput`<sup>Optional</sup> <a name="ThreatIntelIndicatorSourceUrlInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorSourceUrlInput"></a>
 
 ```csharp
-public object ThreatIntelIndicatorSourceUrlInput { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl[] ThreatIntelIndicatorSourceUrlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]
 
 ---
 
 ##### `ThreatIntelIndicatorTypeInput`<sup>Optional</sup> <a name="ThreatIntelIndicatorTypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorTypeInput"></a>
 
 ```csharp
-public object ThreatIntelIndicatorTypeInput { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType[] ThreatIntelIndicatorTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]
 
 ---
 
 ##### `ThreatIntelIndicatorValueInput`<sup>Optional</sup> <a name="ThreatIntelIndicatorValueInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.threatIntelIndicatorValueInput"></a>
 
 ```csharp
-public object ThreatIntelIndicatorValueInput { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue[] ThreatIntelIndicatorValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]
 
 ---
 
 ##### `TitleInput`<sup>Optional</sup> <a name="TitleInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.titleInput"></a>
 
 ```csharp
-public object TitleInput { get; }
+public IResolvable|SecurityhubInsightFiltersTitle[] TitleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]
 
 ---
 
 ##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.typeInput"></a>
 
 ```csharp
-public object TypeInput { get; }
+public IResolvable|SecurityhubInsightFiltersType[] TypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]
 
 ---
 
 ##### `UpdatedAtInput`<sup>Optional</sup> <a name="UpdatedAtInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.updatedAtInput"></a>
 
 ```csharp
-public object UpdatedAtInput { get; }
+public IResolvable|SecurityhubInsightFiltersUpdatedAt[] UpdatedAtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]
 
 ---
 
 ##### `UserDefinedValuesInput`<sup>Optional</sup> <a name="UserDefinedValuesInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.userDefinedValuesInput"></a>
 
 ```csharp
-public object UserDefinedValuesInput { get; }
+public IResolvable|SecurityhubInsightFiltersUserDefinedValues[] UserDefinedValuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]
 
 ---
 
 ##### `VerificationStateInput`<sup>Optional</sup> <a name="VerificationStateInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.verificationStateInput"></a>
 
 ```csharp
-public object VerificationStateInput { get; }
+public IResolvable|SecurityhubInsightFiltersVerificationState[] VerificationStateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]
 
 ---
 
 ##### `WorkflowStatusInput`<sup>Optional</sup> <a name="WorkflowStatusInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.property.workflowStatusInput"></a>
 
 ```csharp
-public object WorkflowStatusInput { get; }
+public IResolvable|SecurityhubInsightFiltersWorkflowStatus[] WorkflowStatusInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]
 
 ---
 
@@ -30550,7 +30550,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -30581,10 +30581,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessLaunchedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>[]
 
 ---
 
@@ -30857,7 +30857,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -30948,10 +30948,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessLaunchedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>
 
 ---
 
@@ -31077,7 +31077,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]</code> | *No description.* |
 
 ---
 
@@ -31108,10 +31108,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>[]
 
 ---
 
@@ -31348,7 +31348,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a></code> | *No description.* |
 
 ---
 
@@ -31419,10 +31419,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>
 
 ---
 
@@ -31548,7 +31548,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]</code> | *No description.* |
 
 ---
 
@@ -31579,10 +31579,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessParentPid[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>[]
 
 ---
 
@@ -31842,7 +31842,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a></code> | *No description.* |
 
 ---
 
@@ -31933,10 +31933,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessParentPid InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>
 
 ---
 
@@ -32062,7 +32062,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]</code> | *No description.* |
 
 ---
 
@@ -32093,10 +32093,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessPath[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>[]
 
 ---
 
@@ -32333,7 +32333,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a></code> | *No description.* |
 
 ---
 
@@ -32404,10 +32404,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessPath InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>
 
 ---
 
@@ -32533,7 +32533,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]</code> | *No description.* |
 
 ---
 
@@ -32564,10 +32564,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessPid[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>[]
 
 ---
 
@@ -32827,7 +32827,7 @@ private void ResetLte()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.eq">Eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.gte">Gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.lte">Lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a></code> | *No description.* |
 
 ---
 
@@ -32918,10 +32918,10 @@ public string Lte { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessPid InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>
 
 ---
 
@@ -33340,7 +33340,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -33371,10 +33371,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessTerminatedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>[]
 
 ---
 
@@ -33647,7 +33647,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a></code> | *No description.* |
 
 ---
 
@@ -33738,10 +33738,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProcessTerminatedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>
 
 ---
 
@@ -33867,7 +33867,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -33898,10 +33898,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProductArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>[]
 
 ---
 
@@ -34138,7 +34138,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a></code> | *No description.* |
 
 ---
 
@@ -34209,10 +34209,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProductArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>
 
 ---
 
@@ -34338,7 +34338,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -34369,10 +34369,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProductFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>[]
 
 ---
 
@@ -34611,7 +34611,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a></code> | *No description.* |
 
 ---
 
@@ -34702,10 +34702,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProductFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>
 
 ---
 
@@ -34831,7 +34831,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]</code> | *No description.* |
 
 ---
 
@@ -34862,10 +34862,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProductName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>[]
 
 ---
 
@@ -35102,7 +35102,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a></code> | *No description.* |
 
 ---
 
@@ -35173,10 +35173,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersProductName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>
 
 ---
 
@@ -35302,7 +35302,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]</code> | *No description.* |
 
 ---
 
@@ -35333,10 +35333,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRecommendationText[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>[]
 
 ---
 
@@ -35573,7 +35573,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a></code> | *No description.* |
 
 ---
 
@@ -35644,10 +35644,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRecommendationText InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>
 
 ---
 
@@ -35773,7 +35773,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]</code> | *No description.* |
 
 ---
 
@@ -35804,10 +35804,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRecordState[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>[]
 
 ---
 
@@ -36044,7 +36044,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a></code> | *No description.* |
 
 ---
 
@@ -36115,10 +36115,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRecordState InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>
 
 ---
 
@@ -36244,7 +36244,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]</code> | *No description.* |
 
 ---
 
@@ -36275,10 +36275,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>[]
 
 ---
 
@@ -36515,7 +36515,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -36586,10 +36586,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>
 
 ---
 
@@ -36715,7 +36715,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -36746,10 +36746,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>[]
 
 ---
 
@@ -36986,7 +36986,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -37057,10 +37057,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersRelatedFindingsProductArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>
 
 ---
 
@@ -37186,7 +37186,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]</code> | *No description.* |
 
 ---
 
@@ -37217,10 +37217,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>[]
 
 ---
 
@@ -37457,7 +37457,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | *No description.* |
 
 ---
 
@@ -37528,10 +37528,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>
 
 ---
 
@@ -37657,7 +37657,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]</code> | *No description.* |
 
 ---
 
@@ -37688,10 +37688,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>[]
 
 ---
 
@@ -37928,7 +37928,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -37999,10 +37999,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceImageId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>
 
 ---
 
@@ -38128,7 +38128,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]</code> | *No description.* |
 
 ---
 
@@ -38159,10 +38159,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>[]
 
 ---
 
@@ -38397,7 +38397,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidrInput">CidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidr">Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a></code> | *No description.* |
 
 ---
 
@@ -38448,10 +38448,10 @@ public string Cidr { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>
 
 ---
 
@@ -38577,7 +38577,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]</code> | *No description.* |
 
 ---
 
@@ -38608,10 +38608,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>[]
 
 ---
 
@@ -38846,7 +38846,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidrInput">CidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidr">Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a></code> | *No description.* |
 
 ---
 
@@ -38897,10 +38897,10 @@ public string Cidr { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>
 
 ---
 
@@ -39026,7 +39026,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]</code> | *No description.* |
 
 ---
 
@@ -39057,10 +39057,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>[]
 
 ---
 
@@ -39297,7 +39297,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a></code> | *No description.* |
 
 ---
 
@@ -39368,10 +39368,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>
 
 ---
 
@@ -39790,7 +39790,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -39821,10 +39821,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>[]
 
 ---
 
@@ -40097,7 +40097,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -40188,10 +40188,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>
 
 ---
 
@@ -40317,7 +40317,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]</code> | *No description.* |
 
 ---
 
@@ -40348,10 +40348,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>[]
 
 ---
 
@@ -40588,7 +40588,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -40659,10 +40659,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>
 
 ---
 
@@ -40788,7 +40788,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]</code> | *No description.* |
 
 ---
 
@@ -40819,10 +40819,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>[]
 
 ---
 
@@ -41059,7 +41059,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a></code> | *No description.* |
 
 ---
 
@@ -41130,10 +41130,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>
 
 ---
 
@@ -41259,7 +41259,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]</code> | *No description.* |
 
 ---
 
@@ -41290,10 +41290,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>[]
 
 ---
 
@@ -41530,7 +41530,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -41601,10 +41601,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>
 
 ---
 
@@ -42023,7 +42023,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -42054,10 +42054,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>[]
 
 ---
 
@@ -42330,7 +42330,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -42421,10 +42421,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>
 
 ---
 
@@ -42550,7 +42550,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -42581,10 +42581,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>[]
 
 ---
 
@@ -42821,7 +42821,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a></code> | *No description.* |
 
 ---
 
@@ -42892,10 +42892,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>
 
 ---
 
@@ -43021,7 +43021,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]</code> | *No description.* |
 
 ---
 
@@ -43052,10 +43052,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>[]
 
 ---
 
@@ -43292,7 +43292,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a></code> | *No description.* |
 
 ---
 
@@ -43363,10 +43363,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>
 
 ---
 
@@ -43492,7 +43492,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]</code> | *No description.* |
 
 ---
 
@@ -43523,10 +43523,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>[]
 
 ---
 
@@ -43763,7 +43763,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a></code> | *No description.* |
 
 ---
 
@@ -43834,10 +43834,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>
 
 ---
 
@@ -43963,7 +43963,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]</code> | *No description.* |
 
 ---
 
@@ -43994,10 +43994,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>[]
 
 ---
 
@@ -44234,7 +44234,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a></code> | *No description.* |
 
 ---
 
@@ -44305,10 +44305,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceAwsS3BucketOwnerName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>
 
 ---
 
@@ -44434,7 +44434,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]</code> | *No description.* |
 
 ---
 
@@ -44465,10 +44465,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>[]
 
 ---
 
@@ -44705,7 +44705,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a></code> | *No description.* |
 
 ---
 
@@ -44776,10 +44776,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>
 
 ---
 
@@ -44905,7 +44905,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]</code> | *No description.* |
 
 ---
 
@@ -44936,10 +44936,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>[]
 
 ---
 
@@ -45176,7 +45176,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a></code> | *No description.* |
 
 ---
 
@@ -45247,10 +45247,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerImageName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>
 
 ---
 
@@ -45669,7 +45669,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -45700,10 +45700,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>[]
 
 ---
 
@@ -45976,7 +45976,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -46067,10 +46067,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerLaunchedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>
 
 ---
 
@@ -46196,7 +46196,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]</code> | *No description.* |
 
 ---
 
@@ -46227,10 +46227,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerName[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>[]
 
 ---
 
@@ -46467,7 +46467,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a></code> | *No description.* |
 
 ---
 
@@ -46538,10 +46538,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceContainerName InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>
 
 ---
 
@@ -46667,7 +46667,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]</code> | *No description.* |
 
 ---
 
@@ -46698,10 +46698,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceDetailsOther[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>[]
 
 ---
 
@@ -46940,7 +46940,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -47031,10 +47031,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceDetailsOther InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>
 
 ---
 
@@ -47160,7 +47160,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]</code> | *No description.* |
 
 ---
 
@@ -47191,10 +47191,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceId[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>[]
 
 ---
 
@@ -47431,7 +47431,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a></code> | *No description.* |
 
 ---
 
@@ -47502,10 +47502,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceId InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>
 
 ---
 
@@ -47631,7 +47631,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]</code> | *No description.* |
 
 ---
 
@@ -47662,10 +47662,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourcePartition[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>[]
 
 ---
 
@@ -47902,7 +47902,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -47973,10 +47973,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourcePartition InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>
 
 ---
 
@@ -48102,7 +48102,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]</code> | *No description.* |
 
 ---
 
@@ -48133,10 +48133,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceRegion[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>[]
 
 ---
 
@@ -48373,7 +48373,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -48444,10 +48444,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceRegion InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>
 
 ---
 
@@ -48573,7 +48573,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -48604,10 +48604,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceTags[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>[]
 
 ---
 
@@ -48846,7 +48846,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -48937,10 +48937,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceTags InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>
 
 ---
 
@@ -49066,7 +49066,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]</code> | *No description.* |
 
 ---
 
@@ -49097,10 +49097,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>[]
 
 ---
 
@@ -49337,7 +49337,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a></code> | *No description.* |
 
 ---
 
@@ -49408,10 +49408,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersResourceType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>
 
 ---
 
@@ -49537,7 +49537,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]</code> | *No description.* |
 
 ---
 
@@ -49568,10 +49568,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersSeverityLabel[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>[]
 
 ---
 
@@ -49808,7 +49808,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -49879,10 +49879,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersSeverityLabel InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>
 
 ---
 
@@ -50008,7 +50008,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]</code> | *No description.* |
 
 ---
 
@@ -50039,10 +50039,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersSourceUrl[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>[]
 
 ---
 
@@ -50279,7 +50279,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -50350,10 +50350,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersSourceUrl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>
 
 ---
 
@@ -50479,7 +50479,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]</code> | *No description.* |
 
 ---
 
@@ -50510,10 +50510,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>[]
 
 ---
 
@@ -50750,7 +50750,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a></code> | *No description.* |
 
 ---
 
@@ -50821,10 +50821,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorCategory InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>
 
 ---
 
@@ -51243,7 +51243,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -51274,10 +51274,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>[]
 
 ---
 
@@ -51550,7 +51550,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -51641,10 +51641,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>
 
 ---
 
@@ -51770,7 +51770,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]</code> | *No description.* |
 
 ---
 
@@ -51801,10 +51801,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>[]
 
 ---
 
@@ -52041,7 +52041,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a></code> | *No description.* |
 
 ---
 
@@ -52112,10 +52112,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSource InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>
 
 ---
 
@@ -52241,7 +52241,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]</code> | *No description.* |
 
 ---
 
@@ -52272,10 +52272,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>[]
 
 ---
 
@@ -52512,7 +52512,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -52583,10 +52583,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>
 
 ---
 
@@ -52712,7 +52712,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]</code> | *No description.* |
 
 ---
 
@@ -52743,10 +52743,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>[]
 
 ---
 
@@ -52983,7 +52983,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a></code> | *No description.* |
 
 ---
 
@@ -53054,10 +53054,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>
 
 ---
 
@@ -53183,7 +53183,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]</code> | *No description.* |
 
 ---
 
@@ -53214,10 +53214,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>[]
 
 ---
 
@@ -53454,7 +53454,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a></code> | *No description.* |
 
 ---
 
@@ -53525,10 +53525,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersThreatIntelIndicatorValue InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>
 
 ---
 
@@ -53654,7 +53654,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]</code> | *No description.* |
 
 ---
 
@@ -53685,10 +53685,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersTitle[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>[]
 
 ---
 
@@ -53925,7 +53925,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a></code> | *No description.* |
 
 ---
 
@@ -53996,10 +53996,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersTitle InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>
 
 ---
 
@@ -54125,7 +54125,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]</code> | *No description.* |
 
 ---
 
@@ -54156,10 +54156,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersType[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>[]
 
 ---
 
@@ -54396,7 +54396,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a></code> | *No description.* |
 
 ---
 
@@ -54467,10 +54467,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersType InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>
 
 ---
 
@@ -54889,7 +54889,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]</code> | *No description.* |
 
 ---
 
@@ -54920,10 +54920,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersUpdatedAt[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>[]
 
 ---
 
@@ -55196,7 +55196,7 @@ private void ResetStart()
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.end">End</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -55287,10 +55287,10 @@ public string Start { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersUpdatedAt InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>
 
 ---
 
@@ -55416,7 +55416,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]</code> | *No description.* |
 
 ---
 
@@ -55447,10 +55447,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersUserDefinedValues[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>[]
 
 ---
 
@@ -55689,7 +55689,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a></code> | *No description.* |
 
 ---
 
@@ -55780,10 +55780,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersUserDefinedValues InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>
 
 ---
 
@@ -55909,7 +55909,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]</code> | *No description.* |
 
 ---
 
@@ -55940,10 +55940,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersVerificationState[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>[]
 
 ---
 
@@ -56180,7 +56180,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -56251,10 +56251,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersVerificationState InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>
 
 ---
 
@@ -56380,7 +56380,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]</code> | *No description.* |
 
 ---
 
@@ -56411,10 +56411,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersWorkflowStatus[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>[]
 
 ---
 
@@ -56651,7 +56651,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -56722,10 +56722,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SecurityhubInsightFiltersWorkflowStatus InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>
 
 ---
 
