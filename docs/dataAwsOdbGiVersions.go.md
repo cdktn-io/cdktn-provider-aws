@@ -4,7 +4,7 @@
 
 ### DataAwsOdbGiVersions <a name="DataAwsOdbGiVersions" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_gi_versions aws_odb_gi_versions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_gi_versions aws_odb_gi_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsOdbGiVersions to im
 
 The id of the existing DataAwsOdbGiVersions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_gi_versions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_gi_versions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,7 +723,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_gi_versions#region DataAwsOdbGiVersions#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_gi_versions#region DataAwsOdbGiVersions#region}
 
 ---
 
@@ -737,7 +737,7 @@ Shape *string
 
 The system shape.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_gi_versions#shape DataAwsOdbGiVersions#shape}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_gi_versions#shape DataAwsOdbGiVersions#shape}
 
 ---
 
