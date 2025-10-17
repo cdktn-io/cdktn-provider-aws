@@ -182,6 +182,13 @@ Object.defineProperty(exports, 'bedrockagentDataSource', { get: function () { re
 Object.defineProperty(exports, 'bedrockagentFlow', { get: function () { return require('./bedrockagent-flow'); } });
 Object.defineProperty(exports, 'bedrockagentKnowledgeBase', { get: function () { return require('./bedrockagent-knowledge-base'); } });
 Object.defineProperty(exports, 'bedrockagentPrompt', { get: function () { return require('./bedrockagent-prompt'); } });
+Object.defineProperty(exports, 'bedrockagentcoreAgentRuntime', { get: function () { return require('./bedrockagentcore-agent-runtime'); } });
+Object.defineProperty(exports, 'bedrockagentcoreAgentRuntimeEndpoint', { get: function () { return require('./bedrockagentcore-agent-runtime-endpoint'); } });
+Object.defineProperty(exports, 'bedrockagentcoreApiKeyCredentialProvider', { get: function () { return require('./bedrockagentcore-api-key-credential-provider'); } });
+Object.defineProperty(exports, 'bedrockagentcoreBrowser', { get: function () { return require('./bedrockagentcore-browser'); } });
+Object.defineProperty(exports, 'bedrockagentcoreCodeInterpreter', { get: function () { return require('./bedrockagentcore-code-interpreter'); } });
+Object.defineProperty(exports, 'bedrockagentcoreGateway', { get: function () { return require('./bedrockagentcore-gateway'); } });
+Object.defineProperty(exports, 'bedrockagentcoreGatewayTarget', { get: function () { return require('./bedrockagentcore-gateway-target'); } });
 Object.defineProperty(exports, 'budgetsBudget', { get: function () { return require('./budgets-budget'); } });
 Object.defineProperty(exports, 'budgetsBudgetAction', { get: function () { return require('./budgets-budget-action'); } });
 Object.defineProperty(exports, 'ceAnomalyMonitor', { get: function () { return require('./ce-anomaly-monitor'); } });
@@ -2020,6 +2027,7 @@ Object.defineProperty(exports, 'dataAwsRdsCluster', { get: function () { return 
 Object.defineProperty(exports, 'dataAwsRdsClusterParameterGroup', { get: function () { return require('./data-aws-rds-cluster-parameter-group'); } });
 Object.defineProperty(exports, 'dataAwsRdsClusters', { get: function () { return require('./data-aws-rds-clusters'); } });
 Object.defineProperty(exports, 'dataAwsRdsEngineVersion', { get: function () { return require('./data-aws-rds-engine-version'); } });
+Object.defineProperty(exports, 'dataAwsRdsGlobalCluster', { get: function () { return require('./data-aws-rds-global-cluster'); } });
 Object.defineProperty(exports, 'dataAwsRdsOrderableDbInstance', { get: function () { return require('./data-aws-rds-orderable-db-instance'); } });
 Object.defineProperty(exports, 'dataAwsRdsReservedInstanceOffering', { get: function () { return require('./data-aws-rds-reserved-instance-offering'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftCluster', { get: function () { return require('./data-aws-redshift-cluster'); } });
@@ -2160,6 +2168,7 @@ Object.defineProperty(exports, 'dataAwsVpclatticeResourcePolicy', { get: functio
 Object.defineProperty(exports, 'dataAwsVpclatticeService', { get: function () { return require('./data-aws-vpclattice-service'); } });
 Object.defineProperty(exports, 'dataAwsVpclatticeServiceNetwork', { get: function () { return require('./data-aws-vpclattice-service-network'); } });
 Object.defineProperty(exports, 'dataAwsVpcs', { get: function () { return require('./data-aws-vpcs'); } });
+Object.defineProperty(exports, 'dataAwsVpnConnection', { get: function () { return require('./data-aws-vpn-connection'); } });
 Object.defineProperty(exports, 'dataAwsVpnGateway', { get: function () { return require('./data-aws-vpn-gateway'); } });
 Object.defineProperty(exports, 'dataAwsWafIpset', { get: function () { return require('./data-aws-waf-ipset'); } });
 Object.defineProperty(exports, 'dataAwsWafRateBasedRule', { get: function () { return require('./data-aws-waf-rate-based-rule'); } });
