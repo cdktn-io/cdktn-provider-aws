@@ -4,7 +4,7 @@
 
 ### LakeformationLfTagExpression <a name="LakeformationLfTagExpression" id="@cdktf/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression aws_lakeformation_lf_tag_expression}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression aws_lakeformation_lf_tag_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the LF-Tag Expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the Data Catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the LF-Tag Expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
 
 ---
 
@@ -670,7 +670,7 @@ The construct id used in the generated config for the LakeformationLfTagExpressi
 
 The id of the existing LakeformationLfTagExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,7 +1097,7 @@ name: str
 
 The name of the LF-Tag Expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
 
 ---
 
@@ -1111,7 +1111,7 @@ catalog_id: str
 
 The ID of the Data Catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
 
 ---
 
@@ -1125,7 +1125,7 @@ description: str
 
 A description of the LF-Tag Expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
 
 ---
 
@@ -1139,7 +1139,7 @@ expression: IResolvable | typing.List[LakeformationLfTagExpressionExpression]
 
 expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
 
 ---
 
@@ -1153,7 +1153,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
 
 ---
 
@@ -1174,8 +1174,8 @@ lakeformationLfTagExpression.LakeformationLfTagExpressionExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpression.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#tag_key LakeformationLfTagExpression#tag_key}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpression.property.tagValues">tag_values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#tag_values LakeformationLfTagExpression#tag_values}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpression.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#tag_key LakeformationLfTagExpression#tag_key}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpression.property.tagValues">tag_values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#tag_values LakeformationLfTagExpression#tag_values}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ tag_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#tag_key LakeformationLfTagExpression#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#tag_key LakeformationLfTagExpression#tag_key}.
 
 ---
 
@@ -1199,7 +1199,7 @@ tag_values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_lf_tag_expression#tag_values LakeformationLfTagExpression#tag_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_lf_tag_expression#tag_values LakeformationLfTagExpression#tag_values}.
 
 ---
 
