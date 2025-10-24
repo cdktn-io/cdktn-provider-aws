@@ -189,6 +189,11 @@ Object.defineProperty(exports, 'bedrockagentcoreBrowser', { get: function () { r
 Object.defineProperty(exports, 'bedrockagentcoreCodeInterpreter', { get: function () { return require('./bedrockagentcore-code-interpreter'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGateway', { get: function () { return require('./bedrockagentcore-gateway'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGatewayTarget', { get: function () { return require('./bedrockagentcore-gateway-target'); } });
+Object.defineProperty(exports, 'bedrockagentcoreMemory', { get: function () { return require('./bedrockagentcore-memory'); } });
+Object.defineProperty(exports, 'bedrockagentcoreMemoryStrategy', { get: function () { return require('./bedrockagentcore-memory-strategy'); } });
+Object.defineProperty(exports, 'bedrockagentcoreOauth2CredentialProvider', { get: function () { return require('./bedrockagentcore-oauth2-credential-provider'); } });
+Object.defineProperty(exports, 'bedrockagentcoreTokenVaultCmk', { get: function () { return require('./bedrockagentcore-token-vault-cmk'); } });
+Object.defineProperty(exports, 'bedrockagentcoreWorkloadIdentity', { get: function () { return require('./bedrockagentcore-workload-identity'); } });
 Object.defineProperty(exports, 'budgetsBudget', { get: function () { return require('./budgets-budget'); } });
 Object.defineProperty(exports, 'budgetsBudgetAction', { get: function () { return require('./budgets-budget-action'); } });
 Object.defineProperty(exports, 'ceAnomalyMonitor', { get: function () { return require('./ce-anomaly-monitor'); } });
