@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server
+// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataAwsOdbDbServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The identifier of the database server to retrieve information about.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server#cloud_exadata_infrastructure_id DataAwsOdbDbServer#cloud_exadata_infrastructure_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server#cloud_exadata_infrastructure_id DataAwsOdbDbServer#cloud_exadata_infrastructure_id}
   */
   readonly cloudExadataInfrastructureId: string;
   /**
   * The identifier of the the database server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server#id DataAwsOdbDbServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server#id DataAwsOdbDbServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface DataAwsOdbDbServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server#region DataAwsOdbDbServer#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server#region DataAwsOdbDbServer#region}
   */
   readonly region?: string;
 }
@@ -126,7 +126,7 @@ export class DataAwsOdbDbServerDbServerPatchingDetailsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server aws_odb_db_server}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server aws_odb_db_server}
 */
 export class DataAwsOdbDbServer extends cdktf.TerraformDataSource {
 
@@ -142,7 +142,7 @@ export class DataAwsOdbDbServer extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsOdbDbServer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbDbServer to import
-  * @param importFromId The id of the existing DataAwsOdbDbServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbDbServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbDbServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -154,7 +154,7 @@ export class DataAwsOdbDbServer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_db_server aws_odb_db_server} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/odb_db_server aws_odb_db_server} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class DataAwsOdbDbServer extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_odb_db_server',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.18.0',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

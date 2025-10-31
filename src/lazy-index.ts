@@ -812,6 +812,7 @@ Object.defineProperty(exports, 'kmsReplicaExternalKey', { get: function () { ret
 Object.defineProperty(exports, 'kmsReplicaKey', { get: function () { return require('./kms-replica-key'); } });
 Object.defineProperty(exports, 'lakeformationDataCellsFilter', { get: function () { return require('./lakeformation-data-cells-filter'); } });
 Object.defineProperty(exports, 'lakeformationDataLakeSettings', { get: function () { return require('./lakeformation-data-lake-settings'); } });
+Object.defineProperty(exports, 'lakeformationIdentityCenterConfiguration', { get: function () { return require('./lakeformation-identity-center-configuration'); } });
 Object.defineProperty(exports, 'lakeformationLfTag', { get: function () { return require('./lakeformation-lf-tag'); } });
 Object.defineProperty(exports, 'lakeformationLfTagExpression', { get: function () { return require('./lakeformation-lf-tag-expression'); } });
 Object.defineProperty(exports, 'lakeformationOptIn', { get: function () { return require('./lakeformation-opt-in'); } });
@@ -1780,6 +1781,7 @@ Object.defineProperty(exports, 'dataAwsEcrRepositories', { get: function () { re
 Object.defineProperty(exports, 'dataAwsEcrRepository', { get: function () { return require('./data-aws-ecr-repository'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepositoryCreationTemplate', { get: function () { return require('./data-aws-ecr-repository-creation-template'); } });
 Object.defineProperty(exports, 'dataAwsEcrpublicAuthorizationToken', { get: function () { return require('./data-aws-ecrpublic-authorization-token'); } });
+Object.defineProperty(exports, 'dataAwsEcrpublicImages', { get: function () { return require('./data-aws-ecrpublic-images'); } });
 Object.defineProperty(exports, 'dataAwsEcsCluster', { get: function () { return require('./data-aws-ecs-cluster'); } });
 Object.defineProperty(exports, 'dataAwsEcsClusters', { get: function () { return require('./data-aws-ecs-clusters'); } });
 Object.defineProperty(exports, 'dataAwsEcsContainerDefinition', { get: function () { return require('./data-aws-ecs-container-definition'); } });
