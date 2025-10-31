@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,41 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
   */
   readonly listenerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
   */
   readonly priority?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
   */
   readonly region?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
   */
   readonly action?: DataAwsLbListenerRuleAction[] | cdktf.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
   */
   readonly condition?: DataAwsLbListenerRuleCondition[] | cdktf.IResolvable;
+  /**
+  * transform block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
+  */
+  readonly transform?: DataAwsLbListenerRuleTransform[] | cdktf.IResolvable;
 }
 export interface DataAwsLbListenerRuleActionAuthenticateCognito {
 }
@@ -579,13 +585,13 @@ export interface DataAwsLbListenerRuleActionForward {
   /**
   * stickiness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
   */
   readonly stickiness?: DataAwsLbListenerRuleActionForwardStickiness[] | cdktf.IResolvable;
   /**
   * target_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
   */
   readonly targetGroup?: DataAwsLbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable;
 }
@@ -843,31 +849,31 @@ export interface DataAwsLbListenerRuleAction {
   /**
   * authenticate_cognito block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
   */
   readonly authenticateCognito?: DataAwsLbListenerRuleActionAuthenticateCognito[] | cdktf.IResolvable;
   /**
   * authenticate_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
   */
   readonly authenticateOidc?: DataAwsLbListenerRuleActionAuthenticateOidc[] | cdktf.IResolvable;
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
   */
   readonly fixedResponse?: DataAwsLbListenerRuleActionFixedResponse[] | cdktf.IResolvable;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
   */
   readonly forward?: DataAwsLbListenerRuleActionForward[] | cdktf.IResolvable;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
   */
   readonly redirect?: DataAwsLbListenerRuleActionRedirect[] | cdktf.IResolvable;
 }
@@ -1168,6 +1174,11 @@ export class DataAwsLbListenerRuleConditionHostHeaderOutputReference extends cdk
     }
   }
 
+  // regex_values - computed: true, optional: false, required: false
+  public get regexValues() {
+    return cdktf.Fn.tolist(this.getListAttribute('regex_values'));
+  }
+
   // values - computed: true, optional: false, required: false
   public get values() {
     return cdktf.Fn.tolist(this.getListAttribute('values'));
@@ -1257,6 +1268,11 @@ export class DataAwsLbListenerRuleConditionHttpHeaderOutputReference extends cdk
   // http_header_name - computed: true, optional: false, required: false
   public get httpHeaderName() {
     return this.getStringAttribute('http_header_name');
+  }
+
+  // regex_values - computed: true, optional: false, required: false
+  public get regexValues() {
+    return cdktf.Fn.tolist(this.getListAttribute('regex_values'));
   }
 
   // values - computed: true, optional: false, required: false
@@ -1431,6 +1447,11 @@ export class DataAwsLbListenerRuleConditionPathPatternOutputReference extends cd
     }
   }
 
+  // regex_values - computed: true, optional: false, required: false
+  public get regexValues() {
+    return cdktf.Fn.tolist(this.getListAttribute('regex_values'));
+  }
+
   // values - computed: true, optional: false, required: false
   public get values() {
     return cdktf.Fn.tolist(this.getListAttribute('values'));
@@ -1551,7 +1572,7 @@ export interface DataAwsLbListenerRuleConditionQueryString {
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
   */
   readonly values?: DataAwsLbListenerRuleConditionQueryStringValues[] | cdktf.IResolvable;
 }
@@ -1755,37 +1776,37 @@ export interface DataAwsLbListenerRuleCondition {
   /**
   * host_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
   */
   readonly hostHeader?: DataAwsLbListenerRuleConditionHostHeader[] | cdktf.IResolvable;
   /**
   * http_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
   */
   readonly httpHeader?: DataAwsLbListenerRuleConditionHttpHeader[] | cdktf.IResolvable;
   /**
   * http_request_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
   */
   readonly httpRequestMethod?: DataAwsLbListenerRuleConditionHttpRequestMethod[] | cdktf.IResolvable;
   /**
   * path_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
   */
   readonly pathPattern?: DataAwsLbListenerRuleConditionPathPattern[] | cdktf.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
   */
   readonly queryString?: DataAwsLbListenerRuleConditionQueryString[] | cdktf.IResolvable;
   /**
   * source_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
   */
   readonly sourceIp?: DataAwsLbListenerRuleConditionSourceIp[] | cdktf.IResolvable;
 }
@@ -2044,9 +2065,585 @@ export class DataAwsLbListenerRuleConditionList extends cdktf.ComplexList {
     return new DataAwsLbListenerRuleConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite {
+}
+
+export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToHclTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // regex - computed: true, optional: false, required: false
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+
+  // replace - computed: true, optional: false, required: false
+  public get replace() {
+    return this.getStringAttribute('replace');
+  }
+}
+
+export class DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteList extends cdktf.ComplexList {
+  public internalValue? : DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference {
+    return new DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLbListenerRuleTransformHostHeaderRewriteConfig {
+  /**
+  * rewrite block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+  */
+  readonly rewrite?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite[] | cdktf.IResolvable;
+}
+
+export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rewrite: cdktf.listMapper(dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToTerraform, true)(struct!.rewrite),
+  }
+}
+
+
+export function dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToHclTerraform(struct?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rewrite: {
+      value: cdktf.listMapperHcl(dataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteToHclTerraform, true)(struct!.rewrite),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataAwsLbListenerRuleTransformHostHeaderRewriteConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbListenerRuleTransformHostHeaderRewriteConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rewrite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rewrite = this._rewrite?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._rewrite.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._rewrite.internalValue = value.rewrite;
+    }
+  }
+
+  // rewrite - computed: false, optional: true, required: false
+  private _rewrite = new DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteList(this, "rewrite", false);
+  public get rewrite() {
+    return this._rewrite;
+  }
+  public putRewrite(value: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite[] | cdktf.IResolvable) {
+    this._rewrite.internalValue = value;
+  }
+  public resetRewrite() {
+    this._rewrite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rewriteInput() {
+    return this._rewrite.internalValue;
+  }
+}
+
+export class DataAwsLbListenerRuleTransformHostHeaderRewriteConfigList extends cdktf.ComplexList {
+  public internalValue? : DataAwsLbListenerRuleTransformHostHeaderRewriteConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbListenerRuleTransformHostHeaderRewriteConfigOutputReference {
+    return new DataAwsLbListenerRuleTransformHostHeaderRewriteConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite {
+}
+
+export function dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToHclTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsLbListenerRuleTransformUrlRewriteConfigRewriteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // regex - computed: true, optional: false, required: false
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+
+  // replace - computed: true, optional: false, required: false
+  public get replace() {
+    return this.getStringAttribute('replace');
+  }
+}
+
+export class DataAwsLbListenerRuleTransformUrlRewriteConfigRewriteList extends cdktf.ComplexList {
+  public internalValue? : DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbListenerRuleTransformUrlRewriteConfigRewriteOutputReference {
+    return new DataAwsLbListenerRuleTransformUrlRewriteConfigRewriteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLbListenerRuleTransformUrlRewriteConfig {
+  /**
+  * rewrite block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+  */
+  readonly rewrite?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite[] | cdktf.IResolvable;
+}
+
+export function dataAwsLbListenerRuleTransformUrlRewriteConfigToTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rewrite: cdktf.listMapper(dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToTerraform, true)(struct!.rewrite),
+  }
+}
+
+
+export function dataAwsLbListenerRuleTransformUrlRewriteConfigToHclTerraform(struct?: DataAwsLbListenerRuleTransformUrlRewriteConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rewrite: {
+      value: cdktf.listMapperHcl(dataAwsLbListenerRuleTransformUrlRewriteConfigRewriteToHclTerraform, true)(struct!.rewrite),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsLbListenerRuleTransformUrlRewriteConfigRewriteList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataAwsLbListenerRuleTransformUrlRewriteConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbListenerRuleTransformUrlRewriteConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rewrite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rewrite = this._rewrite?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbListenerRuleTransformUrlRewriteConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._rewrite.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._rewrite.internalValue = value.rewrite;
+    }
+  }
+
+  // rewrite - computed: false, optional: true, required: false
+  private _rewrite = new DataAwsLbListenerRuleTransformUrlRewriteConfigRewriteList(this, "rewrite", false);
+  public get rewrite() {
+    return this._rewrite;
+  }
+  public putRewrite(value: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite[] | cdktf.IResolvable) {
+    this._rewrite.internalValue = value;
+  }
+  public resetRewrite() {
+    this._rewrite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rewriteInput() {
+    return this._rewrite.internalValue;
+  }
+}
+
+export class DataAwsLbListenerRuleTransformUrlRewriteConfigList extends cdktf.ComplexList {
+  public internalValue? : DataAwsLbListenerRuleTransformUrlRewriteConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbListenerRuleTransformUrlRewriteConfigOutputReference {
+    return new DataAwsLbListenerRuleTransformUrlRewriteConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLbListenerRuleTransform {
+  /**
+  * host_header_rewrite_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
+  */
+  readonly hostHeaderRewriteConfig?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig[] | cdktf.IResolvable;
+  /**
+  * url_rewrite_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
+  */
+  readonly urlRewriteConfig?: DataAwsLbListenerRuleTransformUrlRewriteConfig[] | cdktf.IResolvable;
+}
+
+export function dataAwsLbListenerRuleTransformToTerraform(struct?: DataAwsLbListenerRuleTransform | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    host_header_rewrite_config: cdktf.listMapper(dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToTerraform, true)(struct!.hostHeaderRewriteConfig),
+    url_rewrite_config: cdktf.listMapper(dataAwsLbListenerRuleTransformUrlRewriteConfigToTerraform, true)(struct!.urlRewriteConfig),
+  }
+}
+
+
+export function dataAwsLbListenerRuleTransformToHclTerraform(struct?: DataAwsLbListenerRuleTransform | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_header_rewrite_config: {
+      value: cdktf.listMapperHcl(dataAwsLbListenerRuleTransformHostHeaderRewriteConfigToHclTerraform, true)(struct!.hostHeaderRewriteConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsLbListenerRuleTransformHostHeaderRewriteConfigList",
+    },
+    url_rewrite_config: {
+      value: cdktf.listMapperHcl(dataAwsLbListenerRuleTransformUrlRewriteConfigToHclTerraform, true)(struct!.urlRewriteConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsLbListenerRuleTransformUrlRewriteConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataAwsLbListenerRuleTransformOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbListenerRuleTransform | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostHeaderRewriteConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostHeaderRewriteConfig = this._hostHeaderRewriteConfig?.internalValue;
+    }
+    if (this._urlRewriteConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urlRewriteConfig = this._urlRewriteConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbListenerRuleTransform | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hostHeaderRewriteConfig.internalValue = undefined;
+      this._urlRewriteConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hostHeaderRewriteConfig.internalValue = value.hostHeaderRewriteConfig;
+      this._urlRewriteConfig.internalValue = value.urlRewriteConfig;
+    }
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // host_header_rewrite_config - computed: false, optional: true, required: false
+  private _hostHeaderRewriteConfig = new DataAwsLbListenerRuleTransformHostHeaderRewriteConfigList(this, "host_header_rewrite_config", false);
+  public get hostHeaderRewriteConfig() {
+    return this._hostHeaderRewriteConfig;
+  }
+  public putHostHeaderRewriteConfig(value: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig[] | cdktf.IResolvable) {
+    this._hostHeaderRewriteConfig.internalValue = value;
+  }
+  public resetHostHeaderRewriteConfig() {
+    this._hostHeaderRewriteConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostHeaderRewriteConfigInput() {
+    return this._hostHeaderRewriteConfig.internalValue;
+  }
+
+  // url_rewrite_config - computed: false, optional: true, required: false
+  private _urlRewriteConfig = new DataAwsLbListenerRuleTransformUrlRewriteConfigList(this, "url_rewrite_config", false);
+  public get urlRewriteConfig() {
+    return this._urlRewriteConfig;
+  }
+  public putUrlRewriteConfig(value: DataAwsLbListenerRuleTransformUrlRewriteConfig[] | cdktf.IResolvable) {
+    this._urlRewriteConfig.internalValue = value;
+  }
+  public resetUrlRewriteConfig() {
+    this._urlRewriteConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlRewriteConfigInput() {
+    return this._urlRewriteConfig.internalValue;
+  }
+}
+
+export class DataAwsLbListenerRuleTransformList extends cdktf.ComplexList {
+  public internalValue? : DataAwsLbListenerRuleTransform[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbListenerRuleTransformOutputReference {
+    return new DataAwsLbListenerRuleTransformOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
 */
 export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
 
@@ -2062,7 +2659,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLbListenerRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLbListenerRule to import
-  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLbListenerRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2074,7 +2671,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2085,7 +2682,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb_listener_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.18.0',
+        providerVersion: '6.19.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -2102,6 +2699,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
     this._region = config.region;
     this._action.internalValue = config.action;
     this._condition.internalValue = config.condition;
+    this._transform.internalValue = config.transform;
   }
 
   // ==========
@@ -2210,6 +2808,22 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
     return this._condition.internalValue;
   }
 
+  // transform - computed: false, optional: true, required: false
+  private _transform = new DataAwsLbListenerRuleTransformList(this, "transform", true);
+  public get transform() {
+    return this._transform;
+  }
+  public putTransform(value: DataAwsLbListenerRuleTransform[] | cdktf.IResolvable) {
+    this._transform.internalValue = value;
+  }
+  public resetTransform() {
+    this._transform.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformInput() {
+    return this._transform.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -2222,6 +2836,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
       region: cdktf.stringToTerraform(this._region),
       action: cdktf.listMapper(dataAwsLbListenerRuleActionToTerraform, true)(this._action.internalValue),
       condition: cdktf.listMapper(dataAwsLbListenerRuleConditionToTerraform, true)(this._condition.internalValue),
+      transform: cdktf.listMapper(dataAwsLbListenerRuleTransformToTerraform, true)(this._transform.internalValue),
     };
   }
 
@@ -2262,6 +2877,12 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
         isBlock: true,
         type: "set",
         storageClassType: "DataAwsLbListenerRuleConditionList",
+      },
+      transform: {
+        value: cdktf.listMapperHcl(dataAwsLbListenerRuleTransformToHclTerraform, true)(this._transform.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsLbListenerRuleTransformList",
       },
     };
 
