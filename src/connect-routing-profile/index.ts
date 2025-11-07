@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile
+// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,151 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectRoutingProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#default_outbound_queue_id ConnectRoutingProfile#default_outbound_queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#default_outbound_queue_id ConnectRoutingProfile#default_outbound_queue_id}
   */
   readonly defaultOutboundQueueId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#description ConnectRoutingProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#description ConnectRoutingProfile#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#id ConnectRoutingProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#id ConnectRoutingProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#instance_id ConnectRoutingProfile#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#instance_id ConnectRoutingProfile#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#name ConnectRoutingProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#name ConnectRoutingProfile#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#region ConnectRoutingProfile#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#region ConnectRoutingProfile#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#tags ConnectRoutingProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#tags ConnectRoutingProfile#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#tags_all ConnectRoutingProfile#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#tags_all ConnectRoutingProfile#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * media_concurrencies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#media_concurrencies ConnectRoutingProfile#media_concurrencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#media_concurrencies ConnectRoutingProfile#media_concurrencies}
   */
   readonly mediaConcurrencies: ConnectRoutingProfileMediaConcurrencies[] | cdktf.IResolvable;
   /**
   * queue_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#queue_configs ConnectRoutingProfile#queue_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#queue_configs ConnectRoutingProfile#queue_configs}
   */
   readonly queueConfigs?: ConnectRoutingProfileQueueConfigs[] | cdktf.IResolvable;
 }
+export interface ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#behavior_type ConnectRoutingProfile#behavior_type}
+  */
+  readonly behaviorType: string;
+}
+
+export function connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToTerraform(struct?: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference | ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    behavior_type: cdktf.stringToTerraform(struct!.behaviorType),
+  }
+}
+
+
+export function connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToHclTerraform(struct?: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference | ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    behavior_type: {
+      value: cdktf.stringToHclTerraform(struct!.behaviorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behaviorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behaviorType = this._behaviorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._behaviorType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._behaviorType = value.behaviorType;
+    }
+  }
+
+  // behavior_type - computed: false, optional: false, required: true
+  private _behaviorType?: string; 
+  public get behaviorType() {
+    return this.getStringAttribute('behavior_type');
+  }
+  public set behaviorType(value: string) {
+    this._behaviorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorTypeInput() {
+    return this._behaviorType;
+  }
+}
 export interface ConnectRoutingProfileMediaConcurrencies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#channel ConnectRoutingProfile#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#channel ConnectRoutingProfile#channel}
   */
   readonly channel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#concurrency ConnectRoutingProfile#concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#concurrency ConnectRoutingProfile#concurrency}
   */
   readonly concurrency: number;
+  /**
+  * cross_channel_behavior block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#cross_channel_behavior ConnectRoutingProfile#cross_channel_behavior}
+  */
+  readonly crossChannelBehavior?: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior;
 }
 
 export function connectRoutingProfileMediaConcurrenciesToTerraform(struct?: ConnectRoutingProfileMediaConcurrencies | cdktf.IResolvable): any {
@@ -81,6 +168,7 @@ export function connectRoutingProfileMediaConcurrenciesToTerraform(struct?: Conn
   return {
     channel: cdktf.stringToTerraform(struct!.channel),
     concurrency: cdktf.numberToTerraform(struct!.concurrency),
+    cross_channel_behavior: connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToTerraform(struct!.crossChannelBehavior),
   }
 }
 
@@ -102,6 +190,12 @@ export function connectRoutingProfileMediaConcurrenciesToHclTerraform(struct?: C
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    cross_channel_behavior: {
+      value: connectRoutingProfileMediaConcurrenciesCrossChannelBehaviorToHclTerraform(struct!.crossChannelBehavior),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorList",
     },
   };
 
@@ -137,6 +231,10 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.concurrency = this._concurrency;
     }
+    if (this._crossChannelBehavior?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossChannelBehavior = this._crossChannelBehavior?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -146,6 +244,7 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
       this.resolvableValue = undefined;
       this._channel = undefined;
       this._concurrency = undefined;
+      this._crossChannelBehavior.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -156,6 +255,7 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
       this.resolvableValue = undefined;
       this._channel = value.channel;
       this._concurrency = value.concurrency;
+      this._crossChannelBehavior.internalValue = value.crossChannelBehavior;
     }
   }
 
@@ -184,6 +284,22 @@ export class ConnectRoutingProfileMediaConcurrenciesOutputReference extends cdkt
   public get concurrencyInput() {
     return this._concurrency;
   }
+
+  // cross_channel_behavior - computed: false, optional: true, required: false
+  private _crossChannelBehavior = new ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference(this, "cross_channel_behavior");
+  public get crossChannelBehavior() {
+    return this._crossChannelBehavior;
+  }
+  public putCrossChannelBehavior(value: ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior) {
+    this._crossChannelBehavior.internalValue = value;
+  }
+  public resetCrossChannelBehavior() {
+    this._crossChannelBehavior.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossChannelBehaviorInput() {
+    return this._crossChannelBehavior.internalValue;
+  }
 }
 
 export class ConnectRoutingProfileMediaConcurrenciesList extends cdktf.ComplexList {
@@ -207,19 +323,19 @@ export class ConnectRoutingProfileMediaConcurrenciesList extends cdktf.ComplexLi
 }
 export interface ConnectRoutingProfileQueueConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#channel ConnectRoutingProfile#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#channel ConnectRoutingProfile#channel}
   */
   readonly channel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#delay ConnectRoutingProfile#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#delay ConnectRoutingProfile#delay}
   */
   readonly delay: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#priority ConnectRoutingProfile#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#priority ConnectRoutingProfile#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#queue_id ConnectRoutingProfile#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#queue_id ConnectRoutingProfile#queue_id}
   */
   readonly queueId: string;
 }
@@ -420,7 +536,7 @@ export class ConnectRoutingProfileQueueConfigsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile aws_connect_routing_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile aws_connect_routing_profile}
 */
 export class ConnectRoutingProfile extends cdktf.TerraformResource {
 
@@ -436,7 +552,7 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConnectRoutingProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectRoutingProfile to import
-  * @param importFromId The id of the existing ConnectRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectRoutingProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectRoutingProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -448,7 +564,7 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -459,7 +575,7 @@ export class ConnectRoutingProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_routing_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

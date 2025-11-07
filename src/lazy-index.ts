@@ -501,6 +501,7 @@ Object.defineProperty(exports, 'ebsSnapshotBlockPublicAccess', { get: function (
 Object.defineProperty(exports, 'ebsSnapshotCopy', { get: function () { return require('./ebs-snapshot-copy'); } });
 Object.defineProperty(exports, 'ebsSnapshotImport', { get: function () { return require('./ebs-snapshot-import'); } });
 Object.defineProperty(exports, 'ebsVolume', { get: function () { return require('./ebs-volume'); } });
+Object.defineProperty(exports, 'ec2AllowedImagesSettings', { get: function () { return require('./ec2-allowed-images-settings'); } });
 Object.defineProperty(exports, 'ec2AvailabilityZoneGroup', { get: function () { return require('./ec2-availability-zone-group'); } });
 Object.defineProperty(exports, 'ec2CapacityBlockReservation', { get: function () { return require('./ec2-capacity-block-reservation'); } });
 Object.defineProperty(exports, 'ec2CapacityReservation', { get: function () { return require('./ec2-capacity-reservation'); } });
@@ -631,6 +632,7 @@ Object.defineProperty(exports, 'finspaceKxScalingGroup', { get: function () { re
 Object.defineProperty(exports, 'finspaceKxUser', { get: function () { return require('./finspace-kx-user'); } });
 Object.defineProperty(exports, 'finspaceKxVolume', { get: function () { return require('./finspace-kx-volume'); } });
 Object.defineProperty(exports, 'fisExperimentTemplate', { get: function () { return require('./fis-experiment-template'); } });
+Object.defineProperty(exports, 'fisTargetAccountConfiguration', { get: function () { return require('./fis-target-account-configuration'); } });
 Object.defineProperty(exports, 'flowLog', { get: function () { return require('./flow-log'); } });
 Object.defineProperty(exports, 'fmsAdminAccount', { get: function () { return require('./fms-admin-account'); } });
 Object.defineProperty(exports, 'fmsPolicy', { get: function () { return require('./fms-policy'); } });
@@ -760,6 +762,7 @@ Object.defineProperty(exports, 'instance', { get: function () { return require('
 Object.defineProperty(exports, 'internetGateway', { get: function () { return require('./internet-gateway'); } });
 Object.defineProperty(exports, 'internetGatewayAttachment', { get: function () { return require('./internet-gateway-attachment'); } });
 Object.defineProperty(exports, 'internetmonitorMonitor', { get: function () { return require('./internetmonitor-monitor'); } });
+Object.defineProperty(exports, 'invoicingInvoiceUnit', { get: function () { return require('./invoicing-invoice-unit'); } });
 Object.defineProperty(exports, 'iotAuthorizer', { get: function () { return require('./iot-authorizer'); } });
 Object.defineProperty(exports, 'iotBillingGroup', { get: function () { return require('./iot-billing-group'); } });
 Object.defineProperty(exports, 'iotCaCertificate', { get: function () { return require('./iot-ca-certificate'); } });

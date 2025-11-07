@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsElasticacheReplicationGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group#id DataAwsElasticacheReplicationGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group#id DataAwsElasticacheReplicationGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,11 +22,11 @@ export interface DataAwsElasticacheReplicationGroupConfig extends cdktf.Terrafor
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group#region DataAwsElasticacheReplicationGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group#region DataAwsElasticacheReplicationGroup#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group#replication_group_id DataAwsElasticacheReplicationGroup#replication_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group#replication_group_id DataAwsElasticacheReplicationGroup#replication_group_id}
   */
   readonly replicationGroupId: string;
 }
@@ -120,9 +120,114 @@ export class DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList exte
     return new DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsElasticacheReplicationGroupNodeGroupConfiguration {
+}
+
+export function dataAwsElasticacheReplicationGroupNodeGroupConfigurationToTerraform(struct?: DataAwsElasticacheReplicationGroupNodeGroupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsElasticacheReplicationGroupNodeGroupConfigurationToHclTerraform(struct?: DataAwsElasticacheReplicationGroupNodeGroupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsElasticacheReplicationGroupNodeGroupConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsElasticacheReplicationGroupNodeGroupConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsElasticacheReplicationGroupNodeGroupConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // node_group_id - computed: true, optional: false, required: false
+  public get nodeGroupId() {
+    return this.getStringAttribute('node_group_id');
+  }
+
+  // primary_availability_zone - computed: true, optional: false, required: false
+  public get primaryAvailabilityZone() {
+    return this.getStringAttribute('primary_availability_zone');
+  }
+
+  // primary_outpost_arn - computed: true, optional: false, required: false
+  public get primaryOutpostArn() {
+    return this.getStringAttribute('primary_outpost_arn');
+  }
+
+  // replica_availability_zones - computed: true, optional: false, required: false
+  public get replicaAvailabilityZones() {
+    return this.getListAttribute('replica_availability_zones');
+  }
+
+  // replica_count - computed: true, optional: false, required: false
+  public get replicaCount() {
+    return this.getNumberAttribute('replica_count');
+  }
+
+  // replica_outpost_arns - computed: true, optional: false, required: false
+  public get replicaOutpostArns() {
+    return this.getListAttribute('replica_outpost_arns');
+  }
+
+  // slots - computed: true, optional: false, required: false
+  public get slots() {
+    return this.getStringAttribute('slots');
+  }
+}
+
+export class DataAwsElasticacheReplicationGroupNodeGroupConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsElasticacheReplicationGroupNodeGroupConfigurationOutputReference {
+    return new DataAwsElasticacheReplicationGroupNodeGroupConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}
 */
 export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSource {
 
@@ -138,7 +243,7 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataAwsElasticacheReplicationGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsElasticacheReplicationGroup to import
-  * @param importFromId The id of the existing DataAwsElasticacheReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsElasticacheReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsElasticacheReplicationGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +255,7 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +266,7 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_elasticache_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -241,6 +346,12 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
   // multi_az_enabled - computed: true, optional: false, required: false
   public get multiAzEnabled() {
     return this.getBooleanAttribute('multi_az_enabled');
+  }
+
+  // node_group_configuration - computed: true, optional: false, required: false
+  private _nodeGroupConfiguration = new DataAwsElasticacheReplicationGroupNodeGroupConfigurationList(this, "node_group_configuration", true);
+  public get nodeGroupConfiguration() {
+    return this._nodeGroupConfiguration;
   }
 
   // node_type - computed: true, optional: false, required: false
