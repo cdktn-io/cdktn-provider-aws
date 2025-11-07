@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,118 +13,118 @@ import * as cdktf from 'cdktf';
 
 export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}
   */
   readonly amiType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}
   */
   readonly capacityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}
   */
   readonly diskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}
   */
   readonly forceUpdateVersion?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}
   */
   readonly instanceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}
   */
   readonly nodeGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}
   */
   readonly nodeGroupNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}
   */
   readonly nodeRoleArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#region EksNodeGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#region EksNodeGroup#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}
   */
   readonly releaseVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}
   */
   readonly version?: string;
   /**
   * launch_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
   */
   readonly launchTemplate?: EksNodeGroupLaunchTemplate;
   /**
   * node_repair_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
   */
   readonly nodeRepairConfig?: EksNodeGroupNodeRepairConfig;
   /**
   * remote_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
   */
   readonly remoteAccess?: EksNodeGroupRemoteAccess;
   /**
   * scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
   */
   readonly scalingConfig: EksNodeGroupScalingConfig;
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
   */
   readonly taint?: EksNodeGroupTaint[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
   */
   readonly timeouts?: EksNodeGroupTimeouts;
   /**
   * update_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
   */
   readonly updateConfig?: EksNodeGroupUpdateConfig;
 }
@@ -286,18 +286,18 @@ export class EksNodeGroupResourcesList extends cdktf.ComplexList {
 }
 export interface EksNodeGroupLaunchTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#name EksNodeGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#name EksNodeGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}
   */
   readonly version: string;
 }
@@ -434,11 +434,236 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
     return this._version;
   }
 }
+export interface EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}
+  */
+  readonly minRepairWaitTimeMins: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}
+  */
+  readonly nodeMonitoringCondition: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}
+  */
+  readonly nodeUnhealthyReason: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}
+  */
+  readonly repairAction: string;
+}
+
+export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToTerraform(struct?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    min_repair_wait_time_mins: cdktf.numberToTerraform(struct!.minRepairWaitTimeMins),
+    node_monitoring_condition: cdktf.stringToTerraform(struct!.nodeMonitoringCondition),
+    node_unhealthy_reason: cdktf.stringToTerraform(struct!.nodeUnhealthyReason),
+    repair_action: cdktf.stringToTerraform(struct!.repairAction),
+  }
+}
+
+
+export function eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraform(struct?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    min_repair_wait_time_mins: {
+      value: cdktf.numberToHclTerraform(struct!.minRepairWaitTimeMins),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    node_monitoring_condition: {
+      value: cdktf.stringToHclTerraform(struct!.nodeMonitoringCondition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    node_unhealthy_reason: {
+      value: cdktf.stringToHclTerraform(struct!.nodeUnhealthyReason),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repair_action: {
+      value: cdktf.stringToHclTerraform(struct!.repairAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._minRepairWaitTimeMins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minRepairWaitTimeMins = this._minRepairWaitTimeMins;
+    }
+    if (this._nodeMonitoringCondition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeMonitoringCondition = this._nodeMonitoringCondition;
+    }
+    if (this._nodeUnhealthyReason !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeUnhealthyReason = this._nodeUnhealthyReason;
+    }
+    if (this._repairAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repairAction = this._repairAction;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._minRepairWaitTimeMins = undefined;
+      this._nodeMonitoringCondition = undefined;
+      this._nodeUnhealthyReason = undefined;
+      this._repairAction = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._minRepairWaitTimeMins = value.minRepairWaitTimeMins;
+      this._nodeMonitoringCondition = value.nodeMonitoringCondition;
+      this._nodeUnhealthyReason = value.nodeUnhealthyReason;
+      this._repairAction = value.repairAction;
+    }
+  }
+
+  // min_repair_wait_time_mins - computed: false, optional: false, required: true
+  private _minRepairWaitTimeMins?: number; 
+  public get minRepairWaitTimeMins() {
+    return this.getNumberAttribute('min_repair_wait_time_mins');
+  }
+  public set minRepairWaitTimeMins(value: number) {
+    this._minRepairWaitTimeMins = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minRepairWaitTimeMinsInput() {
+    return this._minRepairWaitTimeMins;
+  }
+
+  // node_monitoring_condition - computed: false, optional: false, required: true
+  private _nodeMonitoringCondition?: string; 
+  public get nodeMonitoringCondition() {
+    return this.getStringAttribute('node_monitoring_condition');
+  }
+  public set nodeMonitoringCondition(value: string) {
+    this._nodeMonitoringCondition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeMonitoringConditionInput() {
+    return this._nodeMonitoringCondition;
+  }
+
+  // node_unhealthy_reason - computed: false, optional: false, required: true
+  private _nodeUnhealthyReason?: string; 
+  public get nodeUnhealthyReason() {
+    return this.getStringAttribute('node_unhealthy_reason');
+  }
+  public set nodeUnhealthyReason(value: string) {
+    this._nodeUnhealthyReason = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeUnhealthyReasonInput() {
+    return this._nodeUnhealthyReason;
+  }
+
+  // repair_action - computed: false, optional: false, required: true
+  private _repairAction?: string; 
+  public get repairAction() {
+    return this.getStringAttribute('repair_action');
+  }
+  public set repairAction(value: string) {
+    this._repairAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repairActionInput() {
+    return this._repairAction;
+  }
+}
+
+export class EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList extends cdktf.ComplexList {
+  public internalValue? : EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference {
+    return new EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EksNodeGroupNodeRepairConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}
+  */
+  readonly maxParallelNodesRepairedCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}
+  */
+  readonly maxParallelNodesRepairedPercentage?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}
+  */
+  readonly maxUnhealthyNodeThresholdCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}
+  */
+  readonly maxUnhealthyNodeThresholdPercentage?: number;
+  /**
+  * node_repair_config_overrides block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_repair_config_overrides EksNodeGroup#node_repair_config_overrides}
+  */
+  readonly nodeRepairConfigOverrides?: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktf.IResolvable;
 }
 
 export function eksNodeGroupNodeRepairConfigToTerraform(struct?: EksNodeGroupNodeRepairConfigOutputReference | EksNodeGroupNodeRepairConfig): any {
@@ -448,6 +673,11 @@ export function eksNodeGroupNodeRepairConfigToTerraform(struct?: EksNodeGroupNod
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
+    max_parallel_nodes_repaired_count: cdktf.numberToTerraform(struct!.maxParallelNodesRepairedCount),
+    max_parallel_nodes_repaired_percentage: cdktf.numberToTerraform(struct!.maxParallelNodesRepairedPercentage),
+    max_unhealthy_node_threshold_count: cdktf.numberToTerraform(struct!.maxUnhealthyNodeThresholdCount),
+    max_unhealthy_node_threshold_percentage: cdktf.numberToTerraform(struct!.maxUnhealthyNodeThresholdPercentage),
+    node_repair_config_overrides: cdktf.listMapper(eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToTerraform, true)(struct!.nodeRepairConfigOverrides),
   }
 }
 
@@ -463,6 +693,36 @@ export function eksNodeGroupNodeRepairConfigToHclTerraform(struct?: EksNodeGroup
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    max_parallel_nodes_repaired_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxParallelNodesRepairedCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_parallel_nodes_repaired_percentage: {
+      value: cdktf.numberToHclTerraform(struct!.maxParallelNodesRepairedPercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_unhealthy_node_threshold_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyNodeThresholdCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_unhealthy_node_threshold_percentage: {
+      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyNodeThresholdPercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    node_repair_config_overrides: {
+      value: cdktf.listMapperHcl(eksNodeGroupNodeRepairConfigNodeRepairConfigOverridesToHclTerraform, true)(struct!.nodeRepairConfigOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList",
     },
   };
 
@@ -488,6 +748,26 @@ export class EksNodeGroupNodeRepairConfigOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
+    if (this._maxParallelNodesRepairedCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxParallelNodesRepairedCount = this._maxParallelNodesRepairedCount;
+    }
+    if (this._maxParallelNodesRepairedPercentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxParallelNodesRepairedPercentage = this._maxParallelNodesRepairedPercentage;
+    }
+    if (this._maxUnhealthyNodeThresholdCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxUnhealthyNodeThresholdCount = this._maxUnhealthyNodeThresholdCount;
+    }
+    if (this._maxUnhealthyNodeThresholdPercentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxUnhealthyNodeThresholdPercentage = this._maxUnhealthyNodeThresholdPercentage;
+    }
+    if (this._nodeRepairConfigOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeRepairConfigOverrides = this._nodeRepairConfigOverrides?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -495,10 +775,20 @@ export class EksNodeGroupNodeRepairConfigOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
+      this._maxParallelNodesRepairedCount = undefined;
+      this._maxParallelNodesRepairedPercentage = undefined;
+      this._maxUnhealthyNodeThresholdCount = undefined;
+      this._maxUnhealthyNodeThresholdPercentage = undefined;
+      this._nodeRepairConfigOverrides.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
+      this._maxParallelNodesRepairedCount = value.maxParallelNodesRepairedCount;
+      this._maxParallelNodesRepairedPercentage = value.maxParallelNodesRepairedPercentage;
+      this._maxUnhealthyNodeThresholdCount = value.maxUnhealthyNodeThresholdCount;
+      this._maxUnhealthyNodeThresholdPercentage = value.maxUnhealthyNodeThresholdPercentage;
+      this._nodeRepairConfigOverrides.internalValue = value.nodeRepairConfigOverrides;
     }
   }
 
@@ -517,14 +807,94 @@ export class EksNodeGroupNodeRepairConfigOutputReference extends cdktf.ComplexOb
   public get enabledInput() {
     return this._enabled;
   }
+
+  // max_parallel_nodes_repaired_count - computed: false, optional: true, required: false
+  private _maxParallelNodesRepairedCount?: number; 
+  public get maxParallelNodesRepairedCount() {
+    return this.getNumberAttribute('max_parallel_nodes_repaired_count');
+  }
+  public set maxParallelNodesRepairedCount(value: number) {
+    this._maxParallelNodesRepairedCount = value;
+  }
+  public resetMaxParallelNodesRepairedCount() {
+    this._maxParallelNodesRepairedCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxParallelNodesRepairedCountInput() {
+    return this._maxParallelNodesRepairedCount;
+  }
+
+  // max_parallel_nodes_repaired_percentage - computed: false, optional: true, required: false
+  private _maxParallelNodesRepairedPercentage?: number; 
+  public get maxParallelNodesRepairedPercentage() {
+    return this.getNumberAttribute('max_parallel_nodes_repaired_percentage');
+  }
+  public set maxParallelNodesRepairedPercentage(value: number) {
+    this._maxParallelNodesRepairedPercentage = value;
+  }
+  public resetMaxParallelNodesRepairedPercentage() {
+    this._maxParallelNodesRepairedPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxParallelNodesRepairedPercentageInput() {
+    return this._maxParallelNodesRepairedPercentage;
+  }
+
+  // max_unhealthy_node_threshold_count - computed: false, optional: true, required: false
+  private _maxUnhealthyNodeThresholdCount?: number; 
+  public get maxUnhealthyNodeThresholdCount() {
+    return this.getNumberAttribute('max_unhealthy_node_threshold_count');
+  }
+  public set maxUnhealthyNodeThresholdCount(value: number) {
+    this._maxUnhealthyNodeThresholdCount = value;
+  }
+  public resetMaxUnhealthyNodeThresholdCount() {
+    this._maxUnhealthyNodeThresholdCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxUnhealthyNodeThresholdCountInput() {
+    return this._maxUnhealthyNodeThresholdCount;
+  }
+
+  // max_unhealthy_node_threshold_percentage - computed: false, optional: true, required: false
+  private _maxUnhealthyNodeThresholdPercentage?: number; 
+  public get maxUnhealthyNodeThresholdPercentage() {
+    return this.getNumberAttribute('max_unhealthy_node_threshold_percentage');
+  }
+  public set maxUnhealthyNodeThresholdPercentage(value: number) {
+    this._maxUnhealthyNodeThresholdPercentage = value;
+  }
+  public resetMaxUnhealthyNodeThresholdPercentage() {
+    this._maxUnhealthyNodeThresholdPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxUnhealthyNodeThresholdPercentageInput() {
+    return this._maxUnhealthyNodeThresholdPercentage;
+  }
+
+  // node_repair_config_overrides - computed: false, optional: true, required: false
+  private _nodeRepairConfigOverrides = new EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList(this, "node_repair_config_overrides", false);
+  public get nodeRepairConfigOverrides() {
+    return this._nodeRepairConfigOverrides;
+  }
+  public putNodeRepairConfigOverrides(value: EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides[] | cdktf.IResolvable) {
+    this._nodeRepairConfigOverrides.internalValue = value;
+  }
+  public resetNodeRepairConfigOverrides() {
+    this._nodeRepairConfigOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeRepairConfigOverridesInput() {
+    return this._nodeRepairConfigOverrides.internalValue;
+  }
 }
 export interface EksNodeGroupRemoteAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}
   */
   readonly ec2SshKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}
   */
   readonly sourceSecurityGroupIds?: string[];
 }
@@ -637,15 +1007,15 @@ export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject
 }
 export interface EksNodeGroupScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}
   */
   readonly desiredSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}
   */
   readonly maxSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}
   */
   readonly minSize: number;
 }
@@ -778,15 +1148,15 @@ export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObjec
 }
 export interface EksNodeGroupTaint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}
   */
   readonly effect: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#key EksNodeGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#key EksNodeGroup#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#value EksNodeGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#value EksNodeGroup#value}
   */
   readonly value?: string;
 }
@@ -954,15 +1324,15 @@ export class EksNodeGroupTaintList extends cdktf.ComplexList {
 }
 export interface EksNodeGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#create EksNodeGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#create EksNodeGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update EksNodeGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update EksNodeGroup#update}
   */
   readonly update?: string;
 }
@@ -1114,11 +1484,11 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface EksNodeGroupUpdateConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}
   */
   readonly maxUnavailable?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}
   */
   readonly maxUnavailablePercentage?: number;
 }
@@ -1231,7 +1601,7 @@ export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group aws_eks_node_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group aws_eks_node_group}
 */
 export class EksNodeGroup extends cdktf.TerraformResource {
 
@@ -1247,7 +1617,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EksNodeGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksNodeGroup to import
-  * @param importFromId The id of the existing EksNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksNodeGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1259,7 +1629,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group aws_eks_node_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group aws_eks_node_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1270,7 +1640,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_node_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/billing_views
+// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBillingViewsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}
   */
   readonly billingViewTypes?: string[];
 }
@@ -114,7 +114,7 @@ export class DataAwsBillingViewsBillingViewList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/billing_views aws_billing_views}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views aws_billing_views}
 */
 export class DataAwsBillingViews extends cdktf.TerraformDataSource {
 
@@ -130,7 +130,7 @@ export class DataAwsBillingViews extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsBillingViews resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBillingViews to import
-  * @param importFromId The id of the existing DataAwsBillingViews that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBillingViews that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBillingViews to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -142,7 +142,7 @@ export class DataAwsBillingViews extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/billing_views aws_billing_views} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views aws_billing_views} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +153,7 @@ export class DataAwsBillingViews extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_billing_views',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

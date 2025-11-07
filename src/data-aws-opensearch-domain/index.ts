@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain
+// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOpensearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,19 +26,13 @@ export interface DataAwsOpensearchDomainConfig extends cdktf.TerraformMetaArgume
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain#region DataAwsOpensearchDomain#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain#region DataAwsOpensearchDomain#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
   */
   readonly tags?: { [key: string]: string };
-  /**
-  * off_peak_window_options block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain#off_peak_window_options DataAwsOpensearchDomain#off_peak_window_options}
-  */
-  readonly offPeakWindowOptions?: DataAwsOpensearchDomainOffPeakWindowOptions;
 }
 export interface DataAwsOpensearchDomainAdvancedSecurityOptions {
 }
@@ -1101,6 +1095,96 @@ export class DataAwsOpensearchDomainEncryptionAtRestList extends cdktf.ComplexLi
     return new DataAwsOpensearchDomainEncryptionAtRestOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsOpensearchDomainIdentityCenterOptions {
+}
+
+export function dataAwsOpensearchDomainIdentityCenterOptionsToTerraform(struct?: DataAwsOpensearchDomainIdentityCenterOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsOpensearchDomainIdentityCenterOptionsToHclTerraform(struct?: DataAwsOpensearchDomainIdentityCenterOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsOpensearchDomainIdentityCenterOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOpensearchDomainIdentityCenterOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOpensearchDomainIdentityCenterOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled_api_access - computed: true, optional: false, required: false
+  public get enabledApiAccess() {
+    return this.getBooleanAttribute('enabled_api_access');
+  }
+
+  // identity_center_instance_arn - computed: true, optional: false, required: false
+  public get identityCenterInstanceArn() {
+    return this.getStringAttribute('identity_center_instance_arn');
+  }
+
+  // roles_key - computed: true, optional: false, required: false
+  public get rolesKey() {
+    return this.getStringAttribute('roles_key');
+  }
+
+  // subject_key - computed: true, optional: false, required: false
+  public get subjectKey() {
+    return this.getStringAttribute('subject_key');
+  }
+}
+
+export class DataAwsOpensearchDomainIdentityCenterOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOpensearchDomainIdentityCenterOptionsOutputReference {
+    return new DataAwsOpensearchDomainIdentityCenterOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsOpensearchDomainLogPublishingOptions {
 }
 
@@ -1259,6 +1343,243 @@ export class DataAwsOpensearchDomainNodeToNodeEncryptionList extends cdktf.Compl
   */
   public get(index: number): DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference {
     return new DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime {
+}
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // hours - computed: true, optional: false, required: false
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+
+  // minutes - computed: true, optional: false, required: false
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+}
+
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference {
+    return new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow {
+}
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // window_start_time - computed: true, optional: false, required: false
+  private _windowStartTime = new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList(this, "window_start_time", false);
+  public get windowStartTime() {
+    return this._windowStartTime;
+  }
+}
+
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference {
+    return new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsOpensearchDomainOffPeakWindowOptions {
+}
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOpensearchDomainOffPeakWindowOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOpensearchDomainOffPeakWindowOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // off_peak_window - computed: true, optional: false, required: false
+  private _offPeakWindow = new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList(this, "off_peak_window", false);
+  public get offPeakWindow() {
+    return this._offPeakWindow;
+  }
+}
+
+export class DataAwsOpensearchDomainOffPeakWindowOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference {
+    return new DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsOpensearchDomainSnapshotOptions {
@@ -1501,225 +1822,9 @@ export class DataAwsOpensearchDomainVpcOptionsList extends cdktf.ComplexList {
     return new DataAwsOpensearchDomainVpcOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime {
-}
-
-export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // hours - computed: true, optional: false, required: false
-  public get hours() {
-    return this.getNumberAttribute('hours');
-  }
-
-  // minutes - computed: true, optional: false, required: false
-  public get minutes() {
-    return this.getNumberAttribute('minutes');
-  }
-}
-
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference {
-    return new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow {
-}
-
-export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindow | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // window_start_time - computed: true, optional: false, required: false
-  private _windowStartTime = new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList(this, "window_start_time", false);
-  public get windowStartTime() {
-    return this._windowStartTime;
-  }
-}
-
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference {
-    return new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAwsOpensearchDomainOffPeakWindowOptions {
-}
-
-export function dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference | DataAwsOpensearchDomainOffPeakWindowOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(struct?: DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference | DataAwsOpensearchDomainOffPeakWindowOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DataAwsOpensearchDomainOffPeakWindowOptions | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAwsOpensearchDomainOffPeakWindowOptions | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-
-  // off_peak_window - computed: true, optional: false, required: false
-  private _offPeakWindow = new DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList(this, "off_peak_window", false);
-  public get offPeakWindow() {
-    return this._offPeakWindow;
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
 */
 export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
 
@@ -1735,7 +1840,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsOpensearchDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOpensearchDomain to import
-  * @param importFromId The id of the existing DataAwsOpensearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOpensearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOpensearchDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1747,7 +1852,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1758,7 +1863,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.19.0',
+        providerVersion: '6.20.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1773,7 +1878,6 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._region = config.region;
     this._tags = config.tags;
-    this._offPeakWindowOptions.internalValue = config.offPeakWindowOptions;
   }
 
   // ==========
@@ -1906,6 +2010,12 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // identity_center_options - computed: true, optional: false, required: false
+  private _identityCenterOptions = new DataAwsOpensearchDomainIdentityCenterOptionsList(this, "identity_center_options", false);
+  public get identityCenterOptions() {
+    return this._identityCenterOptions;
+  }
+
   // ip_address_type - computed: true, optional: false, required: false
   public get ipAddressType() {
     return this.getStringAttribute('ip_address_type');
@@ -1921,6 +2031,12 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   private _nodeToNodeEncryption = new DataAwsOpensearchDomainNodeToNodeEncryptionList(this, "node_to_node_encryption", false);
   public get nodeToNodeEncryption() {
     return this._nodeToNodeEncryption;
+  }
+
+  // off_peak_window_options - computed: true, optional: false, required: false
+  private _offPeakWindowOptions = new DataAwsOpensearchDomainOffPeakWindowOptionsList(this, "off_peak_window_options", false);
+  public get offPeakWindowOptions() {
+    return this._offPeakWindowOptions;
   }
 
   // processing - computed: true, optional: false, required: false
@@ -1978,22 +2094,6 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
     return this._vpcOptions;
   }
 
-  // off_peak_window_options - computed: false, optional: true, required: false
-  private _offPeakWindowOptions = new DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference(this, "off_peak_window_options");
-  public get offPeakWindowOptions() {
-    return this._offPeakWindowOptions;
-  }
-  public putOffPeakWindowOptions(value: DataAwsOpensearchDomainOffPeakWindowOptions) {
-    this._offPeakWindowOptions.internalValue = value;
-  }
-  public resetOffPeakWindowOptions() {
-    this._offPeakWindowOptions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get offPeakWindowOptionsInput() {
-    return this._offPeakWindowOptions.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -2004,7 +2104,6 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      off_peak_window_options: dataAwsOpensearchDomainOffPeakWindowOptionsToTerraform(this._offPeakWindowOptions.internalValue),
     };
   }
 
@@ -2033,12 +2132,6 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
-      },
-      off_peak_window_options: {
-        value: dataAwsOpensearchDomainOffPeakWindowOptionsToHclTerraform(this._offPeakWindowOptions.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsOpensearchDomainOffPeakWindowOptionsList",
       },
     };
 
