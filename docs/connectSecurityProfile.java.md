@@ -4,7 +4,7 @@
 
 ### ConnectSecurityProfile <a name="ConnectSecurityProfile" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile aws_connect_security_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile aws_connect_security_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer"></a>
 
@@ -41,14 +41,14 @@ ConnectSecurityProfile.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.permissions">permissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.permissions">permissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}. |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#region ConnectSecurityProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#region ConnectSecurityProfile#region}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}.
 
 ---
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the ConnectSecurityProfile to 
 
 The id of the existing ConnectSecurityProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1087,14 +1087,14 @@ ConnectSecurityProfileConfig.builder()
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.permissions">permissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.permissions">permissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}. |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}. |
 
 ---
 
@@ -1176,7 +1176,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}.
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}.
 
 ---
 
@@ -1212,7 +1212,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1227,7 +1227,7 @@ public java.util.List<java.lang.String> getPermissions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}.
 
 ---
 
@@ -1241,7 +1241,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#region ConnectSecurityProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#region ConnectSecurityProfile#region}
 
 ---
 
@@ -1253,7 +1253,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}.
 
 ---
 
@@ -1265,7 +1265,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}.
 
 ---
 

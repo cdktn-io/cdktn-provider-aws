@@ -4,7 +4,7 @@
 
 ### EksNodeGroup <a name="EksNodeGroup" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group aws_eks_node_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group aws_eks_node_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer"></a>
 
@@ -59,30 +59,30 @@ eksNodeGroup.EksNodeGroup(
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeRoleArn">node_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeRoleArn">node_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.scalingConfig">scaling_config</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig">EksNodeGroupScalingConfig</a></code> | scaling_config block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.amiType">ami_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.capacityType">capacity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.diskSize">disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.instanceTypes">instance_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.amiType">ami_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.capacityType">capacity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.diskSize">disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.instanceTypes">instance_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.launchTemplate">launch_template</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate">EksNodeGroupLaunchTemplate</a></code> | launch_template block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeGroupName">node_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeGroupNamePrefix">node_group_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeGroupName">node_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeGroupNamePrefix">node_group_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.nodeRepairConfig">node_repair_config</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig">EksNodeGroupNodeRepairConfig</a></code> | node_repair_config block. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.releaseVersion">release_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.releaseVersion">release_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.remoteAccess">remote_access</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess">EksNodeGroupRemoteAccess</a></code> | remote_access block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.taint">taint</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint">EksNodeGroupTaint</a>]</code> | taint block. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts">EksNodeGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.updateConfig">update_config</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig">EksNodeGroupUpdateConfig</a></code> | update_config block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
 
 ---
 
@@ -150,7 +150,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -227,7 +227,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 launch_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_repair_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#region EksNodeGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#region EksNodeGroup#region}
 
 ---
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
 
 ---
 
@@ -299,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 remote_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
 
 ---
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
 
 ---
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 update_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
 
 ---
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 
 ---
 
@@ -753,7 +753,7 @@ def put_launch_template(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#name EksNodeGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#name EksNodeGroup#name}.
 
 ---
 
@@ -780,7 +780,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_node_repair_config(
-  enabled: bool | IResolvable = None
+  enabled: bool | IResolvable = None,
+  max_parallel_nodes_repaired_count: typing.Union[int, float] = None,
+  max_parallel_nodes_repaired_percentage: typing.Union[int, float] = None,
+  max_unhealthy_node_threshold_count: typing.Union[int, float] = None,
+  max_unhealthy_node_threshold_percentage: typing.Union[int, float] = None,
+  node_repair_config_overrides: IResolvable | typing.List[EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides] = None
 ) -> None
 ```
 
@@ -788,7 +793,49 @@ def put_node_repair_config(
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
+
+---
+
+###### `max_parallel_nodes_repaired_count`<sup>Optional</sup> <a name="max_parallel_nodes_repaired_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.putNodeRepairConfig.parameter.maxParallelNodesRepairedCount"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}.
+
+---
+
+###### `max_parallel_nodes_repaired_percentage`<sup>Optional</sup> <a name="max_parallel_nodes_repaired_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.putNodeRepairConfig.parameter.maxParallelNodesRepairedPercentage"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}.
+
+---
+
+###### `max_unhealthy_node_threshold_count`<sup>Optional</sup> <a name="max_unhealthy_node_threshold_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.putNodeRepairConfig.parameter.maxUnhealthyNodeThresholdCount"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}.
+
+---
+
+###### `max_unhealthy_node_threshold_percentage`<sup>Optional</sup> <a name="max_unhealthy_node_threshold_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.putNodeRepairConfig.parameter.maxUnhealthyNodeThresholdPercentage"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}.
+
+---
+
+###### `node_repair_config_overrides`<sup>Optional</sup> <a name="node_repair_config_overrides" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroup.putNodeRepairConfig.parameter.nodeRepairConfigOverrides"></a>
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]
+
+node_repair_config_overrides block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_repair_config_overrides EksNodeGroup#node_repair_config_overrides}
 
 ---
 
@@ -805,7 +852,7 @@ def put_remote_access(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}.
 
 ---
 
@@ -813,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}.
 
 ---
 
@@ -831,7 +878,7 @@ def put_scaling_config(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}.
 
 ---
 
@@ -839,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}.
 
 ---
 
@@ -847,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
 
 ---
 
@@ -879,7 +926,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#create EksNodeGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#create EksNodeGroup#create}.
 
 ---
 
@@ -887,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}.
 
 ---
 
@@ -895,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update EksNodeGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update EksNodeGroup#update}.
 
 ---
 
@@ -912,7 +959,7 @@ def put_update_config(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}.
 
 ---
 
@@ -920,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}.
 
 ---
 
@@ -1158,7 +1205,7 @@ The construct id used in the generated config for the EksNodeGroup to import.
 
 The id of the existing EksNodeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1967,30 +2014,30 @@ eksNodeGroup.EksNodeGroupConfig(
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeRoleArn">node_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeRoleArn">node_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.scalingConfig">scaling_config</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig">EksNodeGroupScalingConfig</a></code> | scaling_config block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.amiType">ami_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.capacityType">capacity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.diskSize">disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.instanceTypes">instance_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.amiType">ami_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.capacityType">capacity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.diskSize">disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.instanceTypes">instance_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.launchTemplate">launch_template</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate">EksNodeGroupLaunchTemplate</a></code> | launch_template block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupName">node_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupNamePrefix">node_group_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupName">node_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeGroupNamePrefix">node_group_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.nodeRepairConfig">node_repair_config</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig">EksNodeGroupNodeRepairConfig</a></code> | node_repair_config block. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.releaseVersion">release_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.releaseVersion">release_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.remoteAccess">remote_access</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess">EksNodeGroupRemoteAccess</a></code> | remote_access block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.taint">taint</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint">EksNodeGroupTaint</a>]</code> | taint block. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts">EksNodeGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.updateConfig">update_config</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig">EksNodeGroupUpdateConfig</a></code> | update_config block. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
 
 ---
 
@@ -2072,7 +2119,7 @@ cluster_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
 
 ---
 
@@ -2084,7 +2131,7 @@ node_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
 
 ---
 
@@ -2098,7 +2145,7 @@ scaling_config: EksNodeGroupScalingConfig
 
 scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
 
 ---
 
@@ -2110,7 +2157,7 @@ subnet_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
 
 ---
 
@@ -2122,7 +2169,7 @@ ami_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
 
 ---
 
@@ -2134,7 +2181,7 @@ capacity_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
 
 ---
 
@@ -2146,7 +2193,7 @@ disk_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
 
 ---
 
@@ -2158,7 +2205,7 @@ force_update_version: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
 
 ---
 
@@ -2170,7 +2217,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2185,7 +2232,7 @@ instance_types: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
 
 ---
 
@@ -2197,7 +2244,7 @@ labels: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
 
 ---
 
@@ -2211,7 +2258,7 @@ launch_template: EksNodeGroupLaunchTemplate
 
 launch_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
 
 ---
 
@@ -2223,7 +2270,7 @@ node_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
 
 ---
 
@@ -2235,7 +2282,7 @@ node_group_name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
 
 ---
 
@@ -2249,7 +2296,7 @@ node_repair_config: EksNodeGroupNodeRepairConfig
 
 node_repair_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
 
 ---
 
@@ -2263,7 +2310,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#region EksNodeGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#region EksNodeGroup#region}
 
 ---
 
@@ -2275,7 +2322,7 @@ release_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
 
 ---
 
@@ -2289,7 +2336,7 @@ remote_access: EksNodeGroupRemoteAccess
 
 remote_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
 
 ---
 
@@ -2301,7 +2348,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
 
 ---
 
@@ -2313,7 +2360,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
 
 ---
 
@@ -2327,7 +2374,7 @@ taint: IResolvable | typing.List[EksNodeGroupTaint]
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
 
 ---
 
@@ -2341,7 +2388,7 @@ timeouts: EksNodeGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
 
 ---
 
@@ -2355,7 +2402,7 @@ update_config: EksNodeGroupUpdateConfig
 
 update_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
 
 ---
 
@@ -2367,7 +2414,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 
 ---
 
@@ -2389,9 +2436,9 @@ eksNodeGroup.EksNodeGroupLaunchTemplate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#name EksNodeGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#name EksNodeGroup#name}. |
 
 ---
 
@@ -2403,7 +2450,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 
 ---
 
@@ -2415,7 +2462,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2430,7 +2477,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#name EksNodeGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#name EksNodeGroup#name}.
 
 ---
 
@@ -2442,7 +2489,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import eks_node_group
 
 eksNodeGroup.EksNodeGroupNodeRepairConfig(
-  enabled: bool | IResolvable = None
+  enabled: bool | IResolvable = None,
+  max_parallel_nodes_repaired_count: typing.Union[int, float] = None,
+  max_parallel_nodes_repaired_percentage: typing.Union[int, float] = None,
+  max_unhealthy_node_threshold_count: typing.Union[int, float] = None,
+  max_unhealthy_node_threshold_percentage: typing.Union[int, float] = None,
+  node_repair_config_overrides: IResolvable | typing.List[EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides] = None
 )
 ```
 
@@ -2450,7 +2502,12 @@ eksNodeGroup.EksNodeGroupNodeRepairConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedCount">max_parallel_nodes_repaired_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedPercentage">max_parallel_nodes_repaired_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdCount">max_unhealthy_node_threshold_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdPercentage">max_unhealthy_node_threshold_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.nodeRepairConfigOverrides">node_repair_config_overrides</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]</code> | node_repair_config_overrides block. |
 
 ---
 
@@ -2462,7 +2519,143 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
+
+---
+
+##### `max_parallel_nodes_repaired_count`<sup>Optional</sup> <a name="max_parallel_nodes_repaired_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedCount"></a>
+
+```python
+max_parallel_nodes_repaired_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_count EksNodeGroup#max_parallel_nodes_repaired_count}.
+
+---
+
+##### `max_parallel_nodes_repaired_percentage`<sup>Optional</sup> <a name="max_parallel_nodes_repaired_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxParallelNodesRepairedPercentage"></a>
+
+```python
+max_parallel_nodes_repaired_percentage: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_parallel_nodes_repaired_percentage EksNodeGroup#max_parallel_nodes_repaired_percentage}.
+
+---
+
+##### `max_unhealthy_node_threshold_count`<sup>Optional</sup> <a name="max_unhealthy_node_threshold_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdCount"></a>
+
+```python
+max_unhealthy_node_threshold_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_count EksNodeGroup#max_unhealthy_node_threshold_count}.
+
+---
+
+##### `max_unhealthy_node_threshold_percentage`<sup>Optional</sup> <a name="max_unhealthy_node_threshold_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.maxUnhealthyNodeThresholdPercentage"></a>
+
+```python
+max_unhealthy_node_threshold_percentage: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unhealthy_node_threshold_percentage EksNodeGroup#max_unhealthy_node_threshold_percentage}.
+
+---
+
+##### `node_repair_config_overrides`<sup>Optional</sup> <a name="node_repair_config_overrides" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig.property.nodeRepairConfigOverrides"></a>
+
+```python
+node_repair_config_overrides: IResolvable | typing.List[EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]
+
+node_repair_config_overrides block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_repair_config_overrides EksNodeGroup#node_repair_config_overrides}
+
+---
+
+### EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides <a name="EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import eks_node_group
+
+eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides(
+  min_repair_wait_time_mins: typing.Union[int, float],
+  node_monitoring_condition: str,
+  node_unhealthy_reason: str,
+  repair_action: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.minRepairWaitTimeMins">min_repair_wait_time_mins</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeMonitoringCondition">node_monitoring_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeUnhealthyReason">node_unhealthy_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.repairAction">repair_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}. |
+
+---
+
+##### `min_repair_wait_time_mins`<sup>Required</sup> <a name="min_repair_wait_time_mins" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.minRepairWaitTimeMins"></a>
+
+```python
+min_repair_wait_time_mins: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_repair_wait_time_mins EksNodeGroup#min_repair_wait_time_mins}.
+
+---
+
+##### `node_monitoring_condition`<sup>Required</sup> <a name="node_monitoring_condition" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeMonitoringCondition"></a>
+
+```python
+node_monitoring_condition: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_monitoring_condition EksNodeGroup#node_monitoring_condition}.
+
+---
+
+##### `node_unhealthy_reason`<sup>Required</sup> <a name="node_unhealthy_reason" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.nodeUnhealthyReason"></a>
+
+```python
+node_unhealthy_reason: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#node_unhealthy_reason EksNodeGroup#node_unhealthy_reason}.
+
+---
+
+##### `repair_action`<sup>Required</sup> <a name="repair_action" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides.property.repairAction"></a>
+
+```python
+repair_action: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#repair_action EksNodeGroup#repair_action}.
 
 ---
 
@@ -2483,8 +2676,8 @@ eksNodeGroup.EksNodeGroupRemoteAccess(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.ec2SshKey">ec2_ssh_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.sourceSecurityGroupIds">source_security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.ec2SshKey">ec2_ssh_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess.property.sourceSecurityGroupIds">source_security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}. |
 
 ---
 
@@ -2496,7 +2689,7 @@ ec2_ssh_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}.
 
 ---
 
@@ -2508,7 +2701,7 @@ source_security_group_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}.
 
 ---
 
@@ -2552,9 +2745,9 @@ eksNodeGroup.EksNodeGroupScalingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.desiredSize">desired_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.maxSize">max_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.minSize">min_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.desiredSize">desired_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.maxSize">max_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig.property.minSize">min_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}. |
 
 ---
 
@@ -2566,7 +2759,7 @@ desired_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}.
 
 ---
 
@@ -2578,7 +2771,7 @@ max_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}.
 
 ---
 
@@ -2590,7 +2783,7 @@ min_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}.
 
 ---
 
@@ -2612,9 +2805,9 @@ eksNodeGroup.EksNodeGroupTaint(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.effect">effect</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#key EksNodeGroup#key}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#value EksNodeGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.effect">effect</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#key EksNodeGroup#key}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#value EksNodeGroup#value}. |
 
 ---
 
@@ -2626,7 +2819,7 @@ effect: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}.
 
 ---
 
@@ -2638,7 +2831,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#key EksNodeGroup#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#key EksNodeGroup#key}.
 
 ---
 
@@ -2650,7 +2843,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#value EksNodeGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#value EksNodeGroup#value}.
 
 ---
 
@@ -2672,9 +2865,9 @@ eksNodeGroup.EksNodeGroupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#create EksNodeGroup#create}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update EksNodeGroup#update}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#create EksNodeGroup#create}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update EksNodeGroup#update}. |
 
 ---
 
@@ -2686,7 +2879,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#create EksNodeGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#create EksNodeGroup#create}.
 
 ---
 
@@ -2698,7 +2891,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}.
 
 ---
 
@@ -2710,7 +2903,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#update EksNodeGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#update EksNodeGroup#update}.
 
 ---
 
@@ -2731,8 +2924,8 @@ eksNodeGroup.EksNodeGroupUpdateConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailable">max_unavailable</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}. |
-| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailablePercentage">max_unavailable_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailable">max_unavailable</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig.property.maxUnavailablePercentage">max_unavailable_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}. |
 
 ---
 
@@ -2744,7 +2937,7 @@ max_unavailable: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}.
 
 ---
 
@@ -2756,7 +2949,7 @@ max_unavailable_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}.
 
 ---
 
@@ -3116,6 +3309,558 @@ internal_value: EksNodeGroupLaunchTemplate
 ---
 
 
+### EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList <a name="EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import eks_node_group
+
+eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]
+
+---
+
+
+### EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference <a name="EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import eks_node_group
+
+eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.minRepairWaitTimeMinsInput">min_repair_wait_time_mins_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeMonitoringConditionInput">node_monitoring_condition_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeUnhealthyReasonInput">node_unhealthy_reason_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.repairActionInput">repair_action_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.minRepairWaitTimeMins">min_repair_wait_time_mins</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeMonitoringCondition">node_monitoring_condition</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeUnhealthyReason">node_unhealthy_reason</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.repairAction">repair_action</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `min_repair_wait_time_mins_input`<sup>Optional</sup> <a name="min_repair_wait_time_mins_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.minRepairWaitTimeMinsInput"></a>
+
+```python
+min_repair_wait_time_mins_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `node_monitoring_condition_input`<sup>Optional</sup> <a name="node_monitoring_condition_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeMonitoringConditionInput"></a>
+
+```python
+node_monitoring_condition_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `node_unhealthy_reason_input`<sup>Optional</sup> <a name="node_unhealthy_reason_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeUnhealthyReasonInput"></a>
+
+```python
+node_unhealthy_reason_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `repair_action_input`<sup>Optional</sup> <a name="repair_action_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.repairActionInput"></a>
+
+```python
+repair_action_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `min_repair_wait_time_mins`<sup>Required</sup> <a name="min_repair_wait_time_mins" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.minRepairWaitTimeMins"></a>
+
+```python
+min_repair_wait_time_mins: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `node_monitoring_condition`<sup>Required</sup> <a name="node_monitoring_condition" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeMonitoringCondition"></a>
+
+```python
+node_monitoring_condition: str
+```
+
+- *Type:* str
+
+---
+
+##### `node_unhealthy_reason`<sup>Required</sup> <a name="node_unhealthy_reason" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.nodeUnhealthyReason"></a>
+
+```python
+node_unhealthy_reason: str
+```
+
+- *Type:* str
+
+---
+
+##### `repair_action`<sup>Required</sup> <a name="repair_action" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.repairAction"></a>
+
+```python
+repair_action: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>
+
+---
+
+
 ### EksNodeGroupNodeRepairConfigOutputReference <a name="EksNodeGroupNodeRepairConfigOutputReference" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.Initializer"></a>
@@ -3169,7 +3914,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.putNodeRepairConfigOverrides">put_node_repair_config_overrides</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxParallelNodesRepairedCount">reset_max_parallel_nodes_repaired_count</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxParallelNodesRepairedPercentage">reset_max_parallel_nodes_repaired_percentage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxUnhealthyNodeThresholdCount">reset_max_unhealthy_node_threshold_count</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxUnhealthyNodeThresholdPercentage">reset_max_unhealthy_node_threshold_percentage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetNodeRepairConfigOverrides">reset_node_repair_config_overrides</a></code> | *No description.* |
 
 ---
 
@@ -3345,10 +4096,54 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_node_repair_config_overrides` <a name="put_node_repair_config_overrides" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.putNodeRepairConfigOverrides"></a>
+
+```python
+def put_node_repair_config_overrides(
+  value: IResolvable | typing.List[EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.putNodeRepairConfigOverrides.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]
+
+---
+
 ##### `reset_enabled` <a name="reset_enabled" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetEnabled"></a>
 
 ```python
 def reset_enabled() -> None
+```
+
+##### `reset_max_parallel_nodes_repaired_count` <a name="reset_max_parallel_nodes_repaired_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxParallelNodesRepairedCount"></a>
+
+```python
+def reset_max_parallel_nodes_repaired_count() -> None
+```
+
+##### `reset_max_parallel_nodes_repaired_percentage` <a name="reset_max_parallel_nodes_repaired_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxParallelNodesRepairedPercentage"></a>
+
+```python
+def reset_max_parallel_nodes_repaired_percentage() -> None
+```
+
+##### `reset_max_unhealthy_node_threshold_count` <a name="reset_max_unhealthy_node_threshold_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxUnhealthyNodeThresholdCount"></a>
+
+```python
+def reset_max_unhealthy_node_threshold_count() -> None
+```
+
+##### `reset_max_unhealthy_node_threshold_percentage` <a name="reset_max_unhealthy_node_threshold_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetMaxUnhealthyNodeThresholdPercentage"></a>
+
+```python
+def reset_max_unhealthy_node_threshold_percentage() -> None
+```
+
+##### `reset_node_repair_config_overrides` <a name="reset_node_repair_config_overrides" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.resetNodeRepairConfigOverrides"></a>
+
+```python
+def reset_node_repair_config_overrides() -> None
 ```
 
 
@@ -3358,8 +4153,18 @@ def reset_enabled() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.nodeRepairConfigOverrides">node_repair_config_overrides</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList">EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedCountInput">max_parallel_nodes_repaired_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedPercentageInput">max_parallel_nodes_repaired_percentage_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdCountInput">max_unhealthy_node_threshold_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdPercentageInput">max_unhealthy_node_threshold_percentage_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.nodeRepairConfigOverridesInput">node_repair_config_overrides_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedCount">max_parallel_nodes_repaired_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedPercentage">max_parallel_nodes_repaired_percentage</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdCount">max_unhealthy_node_threshold_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdPercentage">max_unhealthy_node_threshold_percentage</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig">EksNodeGroupNodeRepairConfig</a></code> | *No description.* |
 
 ---
@@ -3388,6 +4193,16 @@ fqn: str
 
 ---
 
+##### `node_repair_config_overrides`<sup>Required</sup> <a name="node_repair_config_overrides" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.nodeRepairConfigOverrides"></a>
+
+```python
+node_repair_config_overrides: EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList">EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList</a>
+
+---
+
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.enabledInput"></a>
 
 ```python
@@ -3398,6 +4213,56 @@ enabled_input: bool | IResolvable
 
 ---
 
+##### `max_parallel_nodes_repaired_count_input`<sup>Optional</sup> <a name="max_parallel_nodes_repaired_count_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedCountInput"></a>
+
+```python
+max_parallel_nodes_repaired_count_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_parallel_nodes_repaired_percentage_input`<sup>Optional</sup> <a name="max_parallel_nodes_repaired_percentage_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedPercentageInput"></a>
+
+```python
+max_parallel_nodes_repaired_percentage_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_unhealthy_node_threshold_count_input`<sup>Optional</sup> <a name="max_unhealthy_node_threshold_count_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdCountInput"></a>
+
+```python
+max_unhealthy_node_threshold_count_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_unhealthy_node_threshold_percentage_input`<sup>Optional</sup> <a name="max_unhealthy_node_threshold_percentage_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdPercentageInput"></a>
+
+```python
+max_unhealthy_node_threshold_percentage_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `node_repair_config_overrides_input`<sup>Optional</sup> <a name="node_repair_config_overrides_input" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.nodeRepairConfigOverridesInput"></a>
+
+```python
+node_repair_config_overrides_input: IResolvable | typing.List[EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides">EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides</a>]
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.enabled"></a>
 
 ```python
@@ -3405,6 +4270,46 @@ enabled: bool | IResolvable
 ```
 
 - *Type:* bool | cdktf.IResolvable
+
+---
+
+##### `max_parallel_nodes_repaired_count`<sup>Required</sup> <a name="max_parallel_nodes_repaired_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedCount"></a>
+
+```python
+max_parallel_nodes_repaired_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_parallel_nodes_repaired_percentage`<sup>Required</sup> <a name="max_parallel_nodes_repaired_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxParallelNodesRepairedPercentage"></a>
+
+```python
+max_parallel_nodes_repaired_percentage: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_unhealthy_node_threshold_count`<sup>Required</sup> <a name="max_unhealthy_node_threshold_count" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdCount"></a>
+
+```python
+max_unhealthy_node_threshold_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_unhealthy_node_threshold_percentage`<sup>Required</sup> <a name="max_unhealthy_node_threshold_percentage" id="@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference.property.maxUnhealthyNodeThresholdPercentage"></a>
+
+```python
+max_unhealthy_node_threshold_percentage: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
