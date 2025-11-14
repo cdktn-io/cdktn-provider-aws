@@ -4,7 +4,7 @@
 
 ### DataAwsBillingViews <a name="DataAwsBillingViews" id="@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views aws_billing_views}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/billing_views aws_billing_views}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer"></a>
 
@@ -34,7 +34,7 @@ DataAwsBillingViews.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer.parameter.billingViewTypes">billingViewTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer.parameter.billingViewTypes">billingViewTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
 
 ---
 
@@ -432,7 +432,7 @@ The construct id used in the generated config for the DataAwsBillingViews to imp
 
 The id of the existing DataAwsBillingViews that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,7 +680,7 @@ DataAwsBillingViewsConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.billingViewTypes">billingViewTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.billingViewTypes">billingViewTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
 
 ---
 
@@ -762,7 +762,7 @@ public java.util.List<java.lang.String> getBillingViewTypes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
 
 ---
 

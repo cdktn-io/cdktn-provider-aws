@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser
+// https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,58 @@ import * as cdktf from 'cdktf';
 
 export interface BedrockagentcoreBrowserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}
   */
   readonly executionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
   */
   readonly networkConfiguration?: BedrockagentcoreBrowserNetworkConfiguration[] | cdktf.IResolvable;
   /**
   * recording block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
   */
   readonly recording?: BedrockagentcoreBrowserRecording[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
   */
   readonly timeouts?: BedrockagentcoreBrowserTimeouts;
 }
-export interface BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig {
+export interface BedrockagentcoreBrowserNetworkConfigurationVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}
   */
   readonly securityGroups: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}
   */
   readonly subnets: string[];
 }
 
-export function bedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigToTerraform(struct?: BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig | cdktf.IResolvable): any {
+export function bedrockagentcoreBrowserNetworkConfigurationVpcConfigToTerraform(struct?: BedrockagentcoreBrowserNetworkConfigurationVpcConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -76,7 +76,7 @@ export function bedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigToTe
 }
 
 
-export function bedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigToHclTerraform(struct?: BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig | cdktf.IResolvable): any {
+export function bedrockagentcoreBrowserNetworkConfigurationVpcConfigToHclTerraform(struct?: BedrockagentcoreBrowserNetworkConfigurationVpcConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -100,7 +100,7 @@ export function bedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference extends cdktf.ComplexObject {
+export class BedrockagentcoreBrowserNetworkConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -114,7 +114,7 @@ export class BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputR
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): BedrockagentcoreBrowserNetworkConfigurationVpcConfig | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,7 +131,7 @@ export class BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BedrockagentcoreBrowserNetworkConfigurationVpcConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,8 +177,8 @@ export class BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputR
   }
 }
 
-export class BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList extends cdktf.ComplexList {
-  public internalValue? : BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig[] | cdktf.IResolvable
+export class BedrockagentcoreBrowserNetworkConfigurationVpcConfigList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentcoreBrowserNetworkConfigurationVpcConfig[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -192,21 +192,21 @@ export class BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList ex
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference {
-    return new BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): BedrockagentcoreBrowserNetworkConfigurationVpcConfigOutputReference {
+    return new BedrockagentcoreBrowserNetworkConfigurationVpcConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface BedrockagentcoreBrowserNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}
   */
   readonly networkMode: string;
   /**
-  * network_mode_config block
+  * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#network_mode_config BedrockagentcoreBrowser#network_mode_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
   */
-  readonly networkModeConfig?: BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig[] | cdktf.IResolvable;
+  readonly vpcConfig?: BedrockagentcoreBrowserNetworkConfigurationVpcConfig[] | cdktf.IResolvable;
 }
 
 export function bedrockagentcoreBrowserNetworkConfigurationToTerraform(struct?: BedrockagentcoreBrowserNetworkConfiguration | cdktf.IResolvable): any {
@@ -216,7 +216,7 @@ export function bedrockagentcoreBrowserNetworkConfigurationToTerraform(struct?: 
   }
   return {
     network_mode: cdktf.stringToTerraform(struct!.networkMode),
-    network_mode_config: cdktf.listMapper(bedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigToTerraform, true)(struct!.networkModeConfig),
+    vpc_config: cdktf.listMapper(bedrockagentcoreBrowserNetworkConfigurationVpcConfigToTerraform, true)(struct!.vpcConfig),
   }
 }
 
@@ -233,11 +233,11 @@ export function bedrockagentcoreBrowserNetworkConfigurationToHclTerraform(struct
       type: "simple",
       storageClassType: "string",
     },
-    network_mode_config: {
-      value: cdktf.listMapperHcl(bedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigToHclTerraform, true)(struct!.networkModeConfig),
+    vpc_config: {
+      value: cdktf.listMapperHcl(bedrockagentcoreBrowserNetworkConfigurationVpcConfigToHclTerraform, true)(struct!.vpcConfig),
       isBlock: true,
       type: "list",
-      storageClassType: "BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList",
+      storageClassType: "BedrockagentcoreBrowserNetworkConfigurationVpcConfigList",
     },
   };
 
@@ -269,9 +269,9 @@ export class BedrockagentcoreBrowserNetworkConfigurationOutputReference extends 
       hasAnyValues = true;
       internalValueResult.networkMode = this._networkMode;
     }
-    if (this._networkModeConfig?.internalValue !== undefined) {
+    if (this._vpcConfig?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.networkModeConfig = this._networkModeConfig?.internalValue;
+      internalValueResult.vpcConfig = this._vpcConfig?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -281,7 +281,7 @@ export class BedrockagentcoreBrowserNetworkConfigurationOutputReference extends 
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._networkMode = undefined;
-      this._networkModeConfig.internalValue = undefined;
+      this._vpcConfig.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -291,7 +291,7 @@ export class BedrockagentcoreBrowserNetworkConfigurationOutputReference extends 
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._networkMode = value.networkMode;
-      this._networkModeConfig.internalValue = value.networkModeConfig;
+      this._vpcConfig.internalValue = value.vpcConfig;
     }
   }
 
@@ -308,20 +308,20 @@ export class BedrockagentcoreBrowserNetworkConfigurationOutputReference extends 
     return this._networkMode;
   }
 
-  // network_mode_config - computed: false, optional: true, required: false
-  private _networkModeConfig = new BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList(this, "network_mode_config", false);
-  public get networkModeConfig() {
-    return this._networkModeConfig;
+  // vpc_config - computed: false, optional: true, required: false
+  private _vpcConfig = new BedrockagentcoreBrowserNetworkConfigurationVpcConfigList(this, "vpc_config", false);
+  public get vpcConfig() {
+    return this._vpcConfig;
   }
-  public putNetworkModeConfig(value: BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfig[] | cdktf.IResolvable) {
-    this._networkModeConfig.internalValue = value;
+  public putVpcConfig(value: BedrockagentcoreBrowserNetworkConfigurationVpcConfig[] | cdktf.IResolvable) {
+    this._vpcConfig.internalValue = value;
   }
-  public resetNetworkModeConfig() {
-    this._networkModeConfig.internalValue = undefined;
+  public resetVpcConfig() {
+    this._vpcConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get networkModeConfigInput() {
-    return this._networkModeConfig.internalValue;
+  public get vpcConfigInput() {
+    return this._vpcConfig.internalValue;
   }
 }
 
@@ -346,11 +346,11 @@ export class BedrockagentcoreBrowserNetworkConfigurationList extends cdktf.Compl
 }
 export interface BedrockagentcoreBrowserRecordingS3Location {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
   */
   readonly prefix: string;
 }
@@ -489,13 +489,13 @@ export class BedrockagentcoreBrowserRecordingS3LocationList extends cdktf.Comple
 }
 export interface BedrockagentcoreBrowserRecording {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * s3_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
   */
   readonly s3Location?: BedrockagentcoreBrowserRecordingS3Location[] | cdktf.IResolvable;
 }
@@ -642,13 +642,13 @@ export interface BedrockagentcoreBrowserTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
   */
   readonly delete?: string;
 }
@@ -771,7 +771,7 @@ export class BedrockagentcoreBrowserTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}
 */
 export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
 
@@ -787,7 +787,7 @@ export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BedrockagentcoreBrowser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreBrowser to import
-  * @param importFromId The id of the existing BedrockagentcoreBrowser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentcoreBrowser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreBrowser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -799,7 +799,7 @@ export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -810,7 +810,7 @@ export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_bedrockagentcore_browser',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

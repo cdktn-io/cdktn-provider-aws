@@ -4,7 +4,7 @@
 
 ### NotificationsNotificationHub <a name="NotificationsNotificationHub" id="@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer"></a>
 
@@ -35,7 +35,7 @@ NotificationsNotificationHub.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer.parameter.notificationHubRegion">notificationHubRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}. |
+| <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer.parameter.notificationHubRegion">notificationHubRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}. |
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHub.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubTimeouts">NotificationsNotificationHubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#timeouts NotificationsNotificationHub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#timeouts NotificationsNotificationHub#timeouts}
 
 ---
 
@@ -561,7 +561,7 @@ The construct id used in the generated config for the NotificationsNotificationH
 
 The id of the existing NotificationsNotificationHub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ NotificationsNotificationHubConfig.builder()
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.property.notificationHubRegion">notificationHubRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}. |
+| <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.property.notificationHubRegion">notificationHubRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}. |
 | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.notificationsNotificationHub.NotificationsNotificationHubTimeouts">NotificationsNotificationHubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -914,7 +914,7 @@ public java.lang.String getNotificationHubRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}.
 
 ---
 
@@ -928,7 +928,7 @@ public NotificationsNotificationHubTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#timeouts NotificationsNotificationHub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#timeouts NotificationsNotificationHub#timeouts}
 
 ---
 
@@ -964,7 +964,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#create NotificationsNotificationHub#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#create NotificationsNotificationHub#create}
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/notifications_notification_hub#delete NotificationsNotificationHub#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/notifications_notification_hub#delete NotificationsNotificationHub#delete}
 
 ---
 
