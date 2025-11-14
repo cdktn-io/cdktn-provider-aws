@@ -4,7 +4,7 @@
 
 ### Ec2ImageBlockPublicAccess <a name="Ec2ImageBlockPublicAccess" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer"></a>
 
@@ -23,6 +23,7 @@ ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   state: str,
   id: str = None,
+  region: str = None,
   timeouts: Ec2ImageBlockPublicAccessTimeouts = None
 )
 ```
@@ -38,8 +39,9 @@ ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess(
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}. |
-| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeouts">Ec2ImageBlockPublicAccessTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}.
 
 ---
 
@@ -116,10 +118,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#region Ec2ImageBlockPublicAccess#region}
 
 ---
 
@@ -129,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#timeouts Ec2ImageBlockPublicAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#timeouts Ec2ImageBlockPublicAccess#timeouts}
 
 ---
 
@@ -162,6 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -503,7 +516,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#update Ec2ImageBlockPublicAccess#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#update Ec2ImageBlockPublicAccess#update}.
 
 ---
 
@@ -511,6 +524,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.resetRegion"></a>
+
+```python
+def reset_region() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.resetTimeouts"></a>
@@ -633,7 +652,7 @@ The construct id used in the generated config for the Ec2ImageBlockPublicAccess 
 
 The id of the existing Ec2ImageBlockPublicAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,9 +684,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeoutsOutputReference">Ec2ImageBlockPublicAccessTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeouts">Ec2ImageBlockPublicAccessTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.state">state</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -834,6 +855,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.stateInput"></a>
 
 ```python
@@ -858,6 +889,16 @@ timeouts_input: IResolvable | Ec2ImageBlockPublicAccessTimeouts
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccess.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -911,6 +952,7 @@ ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   state: str,
   id: str = None,
+  region: str = None,
   timeouts: Ec2ImageBlockPublicAccessTimeouts = None
 )
 ```
@@ -926,8 +968,9 @@ ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig(
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}. |
-| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeouts">Ec2ImageBlockPublicAccessTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1010,7 +1053,7 @@ state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#state Ec2ImageBlockPublicAccess#state}.
 
 ---
 
@@ -1022,10 +1065,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#id Ec2ImageBlockPublicAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#region Ec2ImageBlockPublicAccess#region}
 
 ---
 
@@ -1039,7 +1096,7 @@ timeouts: Ec2ImageBlockPublicAccessTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#timeouts Ec2ImageBlockPublicAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#timeouts Ec2ImageBlockPublicAccess#timeouts}
 
 ---
 
@@ -1059,7 +1116,7 @@ ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#update Ec2ImageBlockPublicAccess#update}. |
+| <code><a href="#@cdktf/provider-aws.ec2ImageBlockPublicAccess.Ec2ImageBlockPublicAccessTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#update Ec2ImageBlockPublicAccess#update}. |
 
 ---
 
@@ -1071,7 +1128,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access#update Ec2ImageBlockPublicAccess#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access#update Ec2ImageBlockPublicAccess#update}.
 
 ---
 

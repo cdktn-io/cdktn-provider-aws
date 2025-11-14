@@ -4,7 +4,7 @@
 
 ### IamRolePoliciesExclusive <a name="IamRolePoliciesExclusive" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer"></a>
 
@@ -35,8 +35,8 @@ IamRolePoliciesExclusive.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.policyNames">policyNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
-| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
+| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.policyNames">policyNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
+| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer.parameter.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
 
 ---
 
@@ -539,7 +539,7 @@ The construct id used in the generated config for the IamRolePoliciesExclusive t
 
 The id of the existing IamRolePoliciesExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,8 +809,8 @@ IamRolePoliciesExclusiveConfig.builder()
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.policyNames">policyNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
-| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
+| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.policyNames">policyNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
+| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
 
 ---
 
@@ -892,7 +892,7 @@ public java.util.List<java.lang.String> getPolicyNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
 
 ---
 
@@ -904,7 +904,7 @@ public java.lang.String getRoleName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
 
 ---
 

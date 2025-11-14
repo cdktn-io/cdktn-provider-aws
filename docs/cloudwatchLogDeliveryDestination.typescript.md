@@ -4,7 +4,7 @@
 
 ### CloudwatchLogDeliveryDestination <a name="CloudwatchLogDeliveryDestination" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.putDeliveryDestinationConfiguration">putDeliveryDestinationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetDeliveryDestinationConfiguration">resetDeliveryDestinationConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetDeliveryDestinationType">resetDeliveryDestinationType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetOutputFormat">resetOutputFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetTags">resetTags</a></code> | *No description.* |
@@ -387,6 +388,12 @@ public putDeliveryDestinationConfiguration(value: IResolvable | CloudwatchLogDel
 public resetDeliveryDestinationConfiguration(): void
 ```
 
+##### `resetDeliveryDestinationType` <a name="resetDeliveryDestinationType" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetDeliveryDestinationType"></a>
+
+```typescript
+public resetDeliveryDestinationType(): void
+```
+
 ##### `resetOutputFormat` <a name="resetOutputFormat" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.resetOutputFormat"></a>
 
 ```typescript
@@ -508,7 +515,7 @@ The construct id used in the generated config for the CloudwatchLogDeliveryDesti
 
 The id of the existing CloudwatchLogDeliveryDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -540,13 +547,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationConfiguration">deliveryDestinationConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationList">CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationType">deliveryDestinationType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationConfigurationInput">deliveryDestinationConfigurationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration">CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationTypeInput">deliveryDestinationTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.outputFormatInput">outputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationType">deliveryDestinationType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.outputFormat">outputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.region">region</a></code> | <code>string</code> | *No description.* |
@@ -716,16 +724,6 @@ public readonly deliveryDestinationConfiguration: CloudwatchLogDeliveryDestinati
 
 ---
 
-##### `deliveryDestinationType`<sup>Required</sup> <a name="deliveryDestinationType" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationType"></a>
-
-```typescript
-public readonly deliveryDestinationType: string;
-```
-
-- *Type:* string
-
----
-
 ##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.tagsAll"></a>
 
 ```typescript
@@ -743,6 +741,16 @@ public readonly deliveryDestinationConfigurationInput: IResolvable | CloudwatchL
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration">CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration</a>[]
+
+---
+
+##### `deliveryDestinationTypeInput`<sup>Optional</sup> <a name="deliveryDestinationTypeInput" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationTypeInput"></a>
+
+```typescript
+public readonly deliveryDestinationTypeInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -783,6 +791,16 @@ public readonly tagsInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `deliveryDestinationType`<sup>Required</sup> <a name="deliveryDestinationType" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestination.property.deliveryDestinationType"></a>
+
+```typescript
+public readonly deliveryDestinationType: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -867,11 +885,12 @@ const cloudwatchLogDeliveryDestinationConfig: cloudwatchLogDeliveryDestination.C
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#name CloudwatchLogDeliveryDestination#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#name CloudwatchLogDeliveryDestination#name}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.deliveryDestinationConfiguration">deliveryDestinationConfiguration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration">CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration</a>[]</code> | delivery_destination_configuration block. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.outputFormat">outputFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#output_format CloudwatchLogDeliveryDestination#output_format}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.deliveryDestinationType">deliveryDestinationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#delivery_destination_type CloudwatchLogDeliveryDestination#delivery_destination_type}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.outputFormat">outputFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#output_format CloudwatchLogDeliveryDestination#output_format}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#tags CloudwatchLogDeliveryDestination#tags}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#tags CloudwatchLogDeliveryDestination#tags}. |
 
 ---
 
@@ -953,7 +972,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#name CloudwatchLogDeliveryDestination#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#name CloudwatchLogDeliveryDestination#name}.
 
 ---
 
@@ -967,7 +986,19 @@ public readonly deliveryDestinationConfiguration: IResolvable | CloudwatchLogDel
 
 delivery_destination_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#delivery_destination_configuration CloudwatchLogDeliveryDestination#delivery_destination_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#delivery_destination_configuration CloudwatchLogDeliveryDestination#delivery_destination_configuration}
+
+---
+
+##### `deliveryDestinationType`<sup>Optional</sup> <a name="deliveryDestinationType" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationConfig.property.deliveryDestinationType"></a>
+
+```typescript
+public readonly deliveryDestinationType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#delivery_destination_type CloudwatchLogDeliveryDestination#delivery_destination_type}.
 
 ---
 
@@ -979,7 +1010,7 @@ public readonly outputFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#output_format CloudwatchLogDeliveryDestination#output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#output_format CloudwatchLogDeliveryDestination#output_format}.
 
 ---
 
@@ -993,7 +1024,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#region CloudwatchLogDeliveryDestination#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#region CloudwatchLogDeliveryDestination#region}
 
 ---
 
@@ -1005,7 +1036,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#tags CloudwatchLogDeliveryDestination#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#tags CloudwatchLogDeliveryDestination#tags}.
 
 ---
 
@@ -1023,11 +1054,11 @@ const cloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration: cloudwat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration.property.destinationResourceArn">destinationResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration.property.destinationResourceArn">destinationResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}. |
 
 ---
 
-##### `destinationResourceArn`<sup>Required</sup> <a name="destinationResourceArn" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration.property.destinationResourceArn"></a>
+##### `destinationResourceArn`<sup>Optional</sup> <a name="destinationResourceArn" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration.property.destinationResourceArn"></a>
 
 ```typescript
 public readonly destinationResourceArn: string;
@@ -1035,7 +1066,7 @@ public readonly destinationResourceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}.
 
 ---
 
@@ -1269,6 +1300,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference.resetDestinationResourceArn">resetDestinationResourceArn</a></code> | *No description.* |
 
 ---
 
@@ -1421,6 +1453,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetDestinationResourceArn` <a name="resetDestinationResourceArn" id="@cdktf/provider-aws.cloudwatchLogDeliveryDestination.CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference.resetDestinationResourceArn"></a>
+
+```typescript
+public resetDestinationResourceArn(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

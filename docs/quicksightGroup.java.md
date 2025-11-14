@@ -4,7 +4,7 @@
 
 ### QuicksightGroup <a name="QuicksightGroup" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group aws_quicksight_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group aws_quicksight_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer"></a>
 
@@ -39,11 +39,11 @@ QuicksightGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#description QuicksightGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#id QuicksightGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#description QuicksightGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#id QuicksightGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}. |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#description QuicksightGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#description QuicksightGroup#description}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#id QuicksightGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#id QuicksightGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#region QuicksightGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#region QuicksightGroup#region}
 
 ---
 
@@ -619,7 +619,7 @@ The construct id used in the generated config for the QuicksightGroup to import.
 
 The id of the existing QuicksightGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -992,11 +992,11 @@ QuicksightGroupConfig.builder()
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#description QuicksightGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#id QuicksightGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#description QuicksightGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#id QuicksightGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}. |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1079,7 +1079,7 @@ public java.lang.String getGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.String getAwsAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#description QuicksightGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#description QuicksightGroup#description}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#id QuicksightGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#id QuicksightGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1130,7 +1130,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_group#region QuicksightGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_group#region QuicksightGroup#region}
 
 ---
 
