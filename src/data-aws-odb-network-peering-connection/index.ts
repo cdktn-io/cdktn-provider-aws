@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/odb_network_peering_connection
+// https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_network_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsOdbNetworkPeeringConnectionConfig extends cdktf.Terrafor
   /**
   * Network Peering Connection identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/odb_network_peering_connection#id DataAwsOdbNetworkPeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_network_peering_connection#id DataAwsOdbNetworkPeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataAwsOdbNetworkPeeringConnectionConfig extends cdktf.Terrafor
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/odb_network_peering_connection#region DataAwsOdbNetworkPeeringConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_network_peering_connection#region DataAwsOdbNetworkPeeringConnection#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/odb_network_peering_connection aws_odb_network_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_network_peering_connection aws_odb_network_peering_connection}
 */
 export class DataAwsOdbNetworkPeeringConnection extends cdktf.TerraformDataSource {
 
@@ -46,7 +46,7 @@ export class DataAwsOdbNetworkPeeringConnection extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataAwsOdbNetworkPeeringConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbNetworkPeeringConnection to import
-  * @param importFromId The id of the existing DataAwsOdbNetworkPeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbNetworkPeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbNetworkPeeringConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class DataAwsOdbNetworkPeeringConnection extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/odb_network_peering_connection aws_odb_network_peering_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_network_peering_connection aws_odb_network_peering_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class DataAwsOdbNetworkPeeringConnection extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_odb_network_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

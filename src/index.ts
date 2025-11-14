@@ -965,6 +965,8 @@ export * as networkfirewallResourcePolicy from './networkfirewall-resource-polic
 export * as networkfirewallRuleGroup from './networkfirewall-rule-group';
 export * as networkfirewallTlsInspectionConfiguration from './networkfirewall-tls-inspection-configuration';
 export * as networkfirewallVpcEndpointAssociation from './networkfirewall-vpc-endpoint-association';
+export * as networkflowmonitorMonitor from './networkflowmonitor-monitor';
+export * as networkflowmonitorScope from './networkflowmonitor-scope';
 export * as networkmanagerAttachmentAccepter from './networkmanager-attachment-accepter';
 export * as networkmanagerConnectAttachment from './networkmanager-connect-attachment';
 export * as networkmanagerConnectPeer from './networkmanager-connect-peer';
@@ -994,6 +996,7 @@ export * as notificationscontactsEmailContact from './notificationscontacts-emai
 export * as oamLink from './oam-link';
 export * as oamSink from './oam-sink';
 export * as oamSinkPolicy from './oam-sink-policy';
+export * as observabilityadminCentralizationRuleForOrganization from './observabilityadmin-centralization-rule-for-organization';
 export * as odbCloudAutonomousVmCluster from './odb-cloud-autonomous-vm-cluster';
 export * as odbCloudExadataInfrastructure from './odb-cloud-exadata-infrastructure';
 export * as odbCloudVmCluster from './odb-cloud-vm-cluster';

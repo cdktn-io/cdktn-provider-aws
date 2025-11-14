@@ -965,6 +965,8 @@ Object.defineProperty(exports, 'networkfirewallResourcePolicy', { get: function 
 Object.defineProperty(exports, 'networkfirewallRuleGroup', { get: function () { return require('./networkfirewall-rule-group'); } });
 Object.defineProperty(exports, 'networkfirewallTlsInspectionConfiguration', { get: function () { return require('./networkfirewall-tls-inspection-configuration'); } });
 Object.defineProperty(exports, 'networkfirewallVpcEndpointAssociation', { get: function () { return require('./networkfirewall-vpc-endpoint-association'); } });
+Object.defineProperty(exports, 'networkflowmonitorMonitor', { get: function () { return require('./networkflowmonitor-monitor'); } });
+Object.defineProperty(exports, 'networkflowmonitorScope', { get: function () { return require('./networkflowmonitor-scope'); } });
 Object.defineProperty(exports, 'networkmanagerAttachmentAccepter', { get: function () { return require('./networkmanager-attachment-accepter'); } });
 Object.defineProperty(exports, 'networkmanagerConnectAttachment', { get: function () { return require('./networkmanager-connect-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerConnectPeer', { get: function () { return require('./networkmanager-connect-peer'); } });
@@ -994,6 +996,7 @@ Object.defineProperty(exports, 'notificationscontactsEmailContact', { get: funct
 Object.defineProperty(exports, 'oamLink', { get: function () { return require('./oam-link'); } });
 Object.defineProperty(exports, 'oamSink', { get: function () { return require('./oam-sink'); } });
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });
+Object.defineProperty(exports, 'observabilityadminCentralizationRuleForOrganization', { get: function () { return require('./observabilityadmin-centralization-rule-for-organization'); } });
 Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });

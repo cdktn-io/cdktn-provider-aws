@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings
+// https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface Ec2AllowedImagesSettingsConfig extends cdktf.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#region Ec2AllowedImagesSettings#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#region Ec2AllowedImagesSettings#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#state Ec2AllowedImagesSettings#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#state Ec2AllowedImagesSettings#state}
   */
   readonly state: string;
   /**
   * image_criterion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#image_criterion Ec2AllowedImagesSettings#image_criterion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#image_criterion Ec2AllowedImagesSettings#image_criterion}
   */
   readonly imageCriterion?: Ec2AllowedImagesSettingsImageCriterion[] | cdktf.IResolvable;
 }
 export interface Ec2AllowedImagesSettingsImageCriterionCreationDateCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#maximum_days_since_created Ec2AllowedImagesSettings#maximum_days_since_created}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#maximum_days_since_created Ec2AllowedImagesSettings#maximum_days_since_created}
   */
   readonly maximumDaysSinceCreated?: number;
 }
@@ -147,7 +147,7 @@ export class Ec2AllowedImagesSettingsImageCriterionCreationDateConditionList ext
 }
 export interface Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#maximum_days_since_deprecated Ec2AllowedImagesSettings#maximum_days_since_deprecated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#maximum_days_since_deprecated Ec2AllowedImagesSettings#maximum_days_since_deprecated}
   */
   readonly maximumDaysSinceDeprecated?: number;
 }
@@ -263,27 +263,27 @@ export class Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList 
 }
 export interface Ec2AllowedImagesSettingsImageCriterion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#image_names Ec2AllowedImagesSettings#image_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#image_names Ec2AllowedImagesSettings#image_names}
   */
   readonly imageNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#image_providers Ec2AllowedImagesSettings#image_providers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#image_providers Ec2AllowedImagesSettings#image_providers}
   */
   readonly imageProviders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#marketplace_product_codes Ec2AllowedImagesSettings#marketplace_product_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#marketplace_product_codes Ec2AllowedImagesSettings#marketplace_product_codes}
   */
   readonly marketplaceProductCodes?: string[];
   /**
   * creation_date_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#creation_date_condition Ec2AllowedImagesSettings#creation_date_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#creation_date_condition Ec2AllowedImagesSettings#creation_date_condition}
   */
   readonly creationDateCondition?: Ec2AllowedImagesSettingsImageCriterionCreationDateCondition[] | cdktf.IResolvable;
   /**
   * deprecation_time_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#deprecation_time_condition Ec2AllowedImagesSettings#deprecation_time_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#deprecation_time_condition Ec2AllowedImagesSettings#deprecation_time_condition}
   */
   readonly deprecationTimeCondition?: Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition[] | cdktf.IResolvable;
 }
@@ -515,7 +515,7 @@ export class Ec2AllowedImagesSettingsImageCriterionList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings aws_ec2_allowed_images_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings aws_ec2_allowed_images_settings}
 */
 export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
 
@@ -531,7 +531,7 @@ export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Ec2AllowedImagesSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2AllowedImagesSettings to import
-  * @param importFromId The id of the existing Ec2AllowedImagesSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2AllowedImagesSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2AllowedImagesSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -543,7 +543,7 @@ export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_allowed_images_settings aws_ec2_allowed_images_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_allowed_images_settings aws_ec2_allowed_images_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -554,7 +554,7 @@ export class Ec2AllowedImagesSettings extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_allowed_images_settings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.20.0',
+        providerVersion: '6.21.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
