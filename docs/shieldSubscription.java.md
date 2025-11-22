@@ -4,7 +4,7 @@
 
 ### ShieldSubscription <a name="ShieldSubscription" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription aws_shield_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription aws_shield_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer"></a>
 
@@ -36,7 +36,7 @@ ShieldSubscription.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer.parameter.autoRenew">autoRenew</a></code> | <code>java.lang.String</code> | Whether to automatically renew the subscription when it expires. |
-| <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer.parameter.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer.parameter.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Whether to automatically renew the subscription when it expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
 
 ---
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the ShieldSubscription to impo
 
 The id of the existing ShieldSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ ShieldSubscriptionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.autoRenew">autoRenew</a></code> | <code>java.lang.String</code> | Whether to automatically renew the subscription when it expires. |
-| <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
 
 ---
 
@@ -921,7 +921,7 @@ public java.lang.String getAutoRenew();
 
 Whether to automatically renew the subscription when it expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
 
 ---
 
@@ -933,7 +933,7 @@ public java.lang.Boolean|IResolvable getSkipDestroy();
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
 
 ---
 

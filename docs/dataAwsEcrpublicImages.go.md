@@ -4,7 +4,7 @@
 
 ### DataAwsEcrpublicImages <a name="DataAwsEcrpublicImages" id="@cdktf/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images aws_ecrpublic_images}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images aws_ecrpublic_images}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataAwsEcrpublicImages to 
 
 The id of the existing DataAwsEcrpublicImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ RepositoryName *string
 
 Name of the public repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#repository_name DataAwsEcrpublicImages#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#repository_name DataAwsEcrpublicImages#repository_name}
 
 ---
 
@@ -805,7 +805,7 @@ ImageIds interface{}
 
 image_ids block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#image_ids DataAwsEcrpublicImages#image_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#image_ids DataAwsEcrpublicImages#image_ids}
 
 ---
 
@@ -819,7 +819,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#region DataAwsEcrpublicImages#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#region DataAwsEcrpublicImages#region}
 
 ---
 
@@ -835,7 +835,7 @@ AWS account ID associated with the public registry that contains the repository.
 
 If not specified, the default public registry is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#registry_id DataAwsEcrpublicImages#registry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#registry_id DataAwsEcrpublicImages#registry_id}
 
 ---
 
@@ -871,7 +871,7 @@ ImageDigest *string
 
 Image digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#image_digest DataAwsEcrpublicImages#image_digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#image_digest DataAwsEcrpublicImages#image_digest}
 
 ---
 
@@ -885,7 +885,7 @@ ImageTag *string
 
 Image tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecrpublic_images#image_tag DataAwsEcrpublicImages#image_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ecrpublic_images#image_tag DataAwsEcrpublicImages#image_tag}
 
 ---
 
