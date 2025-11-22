@@ -4,7 +4,7 @@
 
 ### DataAwsOdbCloudExadataInfrastructures <a name="DataAwsOdbCloudExadataInfrastructures" id="@cdktf/provider-aws.dataAwsOdbCloudExadataInfrastructures.DataAwsOdbCloudExadataInfrastructures"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_cloud_exadata_infrastructures aws_odb_cloud_exadata_infrastructures}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_cloud_exadata_infrastructures aws_odb_cloud_exadata_infrastructures}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbCloudExadataInfrastructures.DataAwsOdbCloudExadataInfrastructures.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_cloud_exadata_infrastructures#region DataAwsOdbCloudExadataInfrastructures#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_cloud_exadata_infrastructures#region DataAwsOdbCloudExadataInfrastructures#region}
 
 ---
 
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataAwsOdbCloudExadataInfr
 
 The id of the existing DataAwsOdbCloudExadataInfrastructures that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_cloud_exadata_infrastructures#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_cloud_exadata_infrastructures#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/odb_cloud_exadata_infrastructures#region DataAwsOdbCloudExadataInfrastructures#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_cloud_exadata_infrastructures#region DataAwsOdbCloudExadataInfrastructures#region}
 
 ---
 
