@@ -194,6 +194,7 @@ export * as bedrockagentcoreMemoryStrategy from './bedrockagentcore-memory-strat
 export * as bedrockagentcoreOauth2CredentialProvider from './bedrockagentcore-oauth2-credential-provider';
 export * as bedrockagentcoreTokenVaultCmk from './bedrockagentcore-token-vault-cmk';
 export * as bedrockagentcoreWorkloadIdentity from './bedrockagentcore-workload-identity';
+export * as billingView from './billing-view';
 export * as budgetsBudget from './budgets-budget';
 export * as budgetsBudgetAction from './budgets-budget-action';
 export * as ceAnomalyMonitor from './ce-anomaly-monitor';
@@ -1495,6 +1496,7 @@ export * as vpcSecurityGroupIngressRule from './vpc-security-group-ingress-rule'
 export * as vpcSecurityGroupVpcAssociation from './vpc-security-group-vpc-association';
 export * as vpclatticeAccessLogSubscription from './vpclattice-access-log-subscription';
 export * as vpclatticeAuthPolicy from './vpclattice-auth-policy';
+export * as vpclatticeDomainVerification from './vpclattice-domain-verification';
 export * as vpclatticeListener from './vpclattice-listener';
 export * as vpclatticeListenerRule from './vpclattice-listener-rule';
 export * as vpclatticeResourceConfiguration from './vpclattice-resource-configuration';

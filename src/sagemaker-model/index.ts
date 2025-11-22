@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model
+// https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,500 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}
   */
   readonly enableNetworkIsolation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}
   */
   readonly executionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#id SagemakerModel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#id SagemakerModel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#name SagemakerModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#name SagemakerModel#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#region SagemakerModel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#region SagemakerModel#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#tags SagemakerModel#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#container SagemakerModel#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container SagemakerModel#container}
   */
   readonly container?: SagemakerModelContainer[] | cdktf.IResolvable;
   /**
   * inference_execution_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
   */
   readonly inferenceExecutionConfig?: SagemakerModelInferenceExecutionConfig;
   /**
   * primary_container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
   */
   readonly primaryContainer?: SagemakerModelPrimaryContainer;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
   */
   readonly vpcConfig?: SagemakerModelVpcConfig;
 }
+export interface SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}
+  */
+  readonly acceptEula: boolean | cdktf.IResolvable;
+}
+
+export function sagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToTerraform(struct?: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference | SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accept_eula: cdktf.booleanToTerraform(struct!.acceptEula),
+  }
+}
+
+
+export function sagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToHclTerraform(struct?: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference | SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accept_eula: {
+      value: cdktf.booleanToHclTerraform(struct!.acceptEula),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceptEula !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceptEula = this._acceptEula;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._acceptEula = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._acceptEula = value.acceptEula;
+    }
+  }
+
+  // accept_eula - computed: false, optional: false, required: true
+  private _acceptEula?: boolean | cdktf.IResolvable; 
+  public get acceptEula() {
+    return this.getBooleanAttribute('accept_eula');
+  }
+  public set acceptEula(value: boolean | cdktf.IResolvable) {
+    this._acceptEula = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptEulaInput() {
+    return this._acceptEula;
+  }
+}
+export interface SagemakerModelContainerAdditionalModelDataSourceS3DataSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}
+  */
+  readonly compressionType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}
+  */
+  readonly s3DataType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}
+  */
+  readonly s3Uri: string;
+  /**
+  * model_access_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+  */
+  readonly modelAccessConfig?: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig;
+}
+
+export function sagemakerModelContainerAdditionalModelDataSourceS3DataSourceToTerraform(struct?: SagemakerModelContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    compression_type: cdktf.stringToTerraform(struct!.compressionType),
+    s3_data_type: cdktf.stringToTerraform(struct!.s3DataType),
+    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    model_access_config: sagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToTerraform(struct!.modelAccessConfig),
+  }
+}
+
+
+export function sagemakerModelContainerAdditionalModelDataSourceS3DataSourceToHclTerraform(struct?: SagemakerModelContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compression_type: {
+      value: cdktf.stringToHclTerraform(struct!.compressionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_data_type: {
+      value: cdktf.stringToHclTerraform(struct!.s3DataType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_uri: {
+      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_access_config: {
+      value: sagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToHclTerraform(struct!.modelAccessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerModelContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._compressionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compressionType = this._compressionType;
+    }
+    if (this._s3DataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3DataType = this._s3DataType;
+    }
+    if (this._s3Uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3Uri = this._s3Uri;
+    }
+    if (this._modelAccessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelAccessConfig = this._modelAccessConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._compressionType = undefined;
+      this._s3DataType = undefined;
+      this._s3Uri = undefined;
+      this._modelAccessConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._compressionType = value.compressionType;
+      this._s3DataType = value.s3DataType;
+      this._s3Uri = value.s3Uri;
+      this._modelAccessConfig.internalValue = value.modelAccessConfig;
+    }
+  }
+
+  // compression_type - computed: false, optional: false, required: true
+  private _compressionType?: string; 
+  public get compressionType() {
+    return this.getStringAttribute('compression_type');
+  }
+  public set compressionType(value: string) {
+    this._compressionType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compressionTypeInput() {
+    return this._compressionType;
+  }
+
+  // s3_data_type - computed: false, optional: false, required: true
+  private _s3DataType?: string; 
+  public get s3DataType() {
+    return this.getStringAttribute('s3_data_type');
+  }
+  public set s3DataType(value: string) {
+    this._s3DataType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3DataTypeInput() {
+    return this._s3DataType;
+  }
+
+  // s3_uri - computed: false, optional: false, required: true
+  private _s3Uri?: string; 
+  public get s3Uri() {
+    return this.getStringAttribute('s3_uri');
+  }
+  public set s3Uri(value: string) {
+    this._s3Uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3UriInput() {
+    return this._s3Uri;
+  }
+
+  // model_access_config - computed: false, optional: true, required: false
+  private _modelAccessConfig = new SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference(this, "model_access_config");
+  public get modelAccessConfig() {
+    return this._modelAccessConfig;
+  }
+  public putModelAccessConfig(value: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig) {
+    this._modelAccessConfig.internalValue = value;
+  }
+  public resetModelAccessConfig() {
+    this._modelAccessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelAccessConfigInput() {
+    return this._modelAccessConfig.internalValue;
+  }
+}
+
+export class SagemakerModelContainerAdditionalModelDataSourceS3DataSourceList extends cdktf.ComplexList {
+  public internalValue? : SagemakerModelContainerAdditionalModelDataSourceS3DataSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference {
+    return new SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SagemakerModelContainerAdditionalModelDataSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}
+  */
+  readonly channelName: string;
+  /**
+  * s3_data_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+  */
+  readonly s3DataSource: SagemakerModelContainerAdditionalModelDataSourceS3DataSource[] | cdktf.IResolvable;
+}
+
+export function sagemakerModelContainerAdditionalModelDataSourceToTerraform(struct?: SagemakerModelContainerAdditionalModelDataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    channel_name: cdktf.stringToTerraform(struct!.channelName),
+    s3_data_source: cdktf.listMapper(sagemakerModelContainerAdditionalModelDataSourceS3DataSourceToTerraform, true)(struct!.s3DataSource),
+  }
+}
+
+
+export function sagemakerModelContainerAdditionalModelDataSourceToHclTerraform(struct?: SagemakerModelContainerAdditionalModelDataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel_name: {
+      value: cdktf.stringToHclTerraform(struct!.channelName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_data_source: {
+      value: cdktf.listMapperHcl(sagemakerModelContainerAdditionalModelDataSourceS3DataSourceToHclTerraform, true)(struct!.s3DataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerModelContainerAdditionalModelDataSourceS3DataSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerModelContainerAdditionalModelDataSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerModelContainerAdditionalModelDataSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._channelName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channelName = this._channelName;
+    }
+    if (this._s3DataSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3DataSource = this._s3DataSource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelContainerAdditionalModelDataSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._channelName = undefined;
+      this._s3DataSource.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._channelName = value.channelName;
+      this._s3DataSource.internalValue = value.s3DataSource;
+    }
+  }
+
+  // channel_name - computed: false, optional: false, required: true
+  private _channelName?: string; 
+  public get channelName() {
+    return this.getStringAttribute('channel_name');
+  }
+  public set channelName(value: string) {
+    this._channelName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelNameInput() {
+    return this._channelName;
+  }
+
+  // s3_data_source - computed: false, optional: false, required: true
+  private _s3DataSource = new SagemakerModelContainerAdditionalModelDataSourceS3DataSourceList(this, "s3_data_source", false);
+  public get s3DataSource() {
+    return this._s3DataSource;
+  }
+  public putS3DataSource(value: SagemakerModelContainerAdditionalModelDataSourceS3DataSource[] | cdktf.IResolvable) {
+    this._s3DataSource.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3DataSourceInput() {
+    return this._s3DataSource.internalValue;
+  }
+}
+
+export class SagemakerModelContainerAdditionalModelDataSourceList extends cdktf.ComplexList {
+  public internalValue? : SagemakerModelContainerAdditionalModelDataSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerModelContainerAdditionalModelDataSourceOutputReference {
+    return new SagemakerModelContainerAdditionalModelDataSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerModelContainerImageConfigRepositoryAuthConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}
   */
   readonly repositoryCredentialsProviderArn: string;
 }
@@ -153,13 +587,13 @@ export class SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReferen
 }
 export interface SagemakerModelContainerImageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
   */
   readonly repositoryAccessMode: string;
   /**
   * repository_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
   */
   readonly repositoryAuthConfig?: SagemakerModelContainerImageConfigRepositoryAuthConfig;
 }
@@ -269,7 +703,7 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
 }
 export interface SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}
   */
   readonly acceptEula: boolean | cdktf.IResolvable;
 }
@@ -350,21 +784,21 @@ export class SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig
 }
 export interface SagemakerModelContainerModelDataSourceS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}
   */
   readonly compressionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}
   */
   readonly s3Uri: string;
   /**
   * model_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
   */
   readonly modelAccessConfig?: SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig;
 }
@@ -560,7 +994,7 @@ export interface SagemakerModelContainerModelDataSource {
   /**
   * s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
   */
   readonly s3DataSource: SagemakerModelContainerModelDataSourceS3DataSource[] | cdktf.IResolvable;
 }
@@ -641,7 +1075,7 @@ export class SagemakerModelContainerModelDataSourceOutputReference extends cdktf
 }
 export interface SagemakerModelContainerMultiModelConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}
   */
   readonly modelCacheSetting?: string;
 }
@@ -725,49 +1159,55 @@ export class SagemakerModelContainerMultiModelConfigOutputReference extends cdkt
 }
 export interface SagemakerModelContainer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}
   */
   readonly containerHostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#environment SagemakerModel#environment}
   */
   readonly environment?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#image SagemakerModel#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image SagemakerModel#image}
   */
   readonly image?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}
   */
   readonly inferenceSpecificationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}
   */
   readonly modelDataUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}
   */
   readonly modelPackageName?: string;
   /**
+  * additional_model_data_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
+  */
+  readonly additionalModelDataSource?: SagemakerModelContainerAdditionalModelDataSource[] | cdktf.IResolvable;
+  /**
   * image_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
   */
   readonly imageConfig?: SagemakerModelContainerImageConfig;
   /**
   * model_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
   */
   readonly modelDataSource?: SagemakerModelContainerModelDataSource;
   /**
   * multi_model_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
   */
   readonly multiModelConfig?: SagemakerModelContainerMultiModelConfig;
 }
@@ -785,6 +1225,7 @@ export function sagemakerModelContainerToTerraform(struct?: SagemakerModelContai
     mode: cdktf.stringToTerraform(struct!.mode),
     model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
     model_package_name: cdktf.stringToTerraform(struct!.modelPackageName),
+    additional_model_data_source: cdktf.listMapper(sagemakerModelContainerAdditionalModelDataSourceToTerraform, true)(struct!.additionalModelDataSource),
     image_config: sagemakerModelContainerImageConfigToTerraform(struct!.imageConfig),
     model_data_source: sagemakerModelContainerModelDataSourceToTerraform(struct!.modelDataSource),
     multi_model_config: sagemakerModelContainerMultiModelConfigToTerraform(struct!.multiModelConfig),
@@ -839,6 +1280,12 @@ export function sagemakerModelContainerToHclTerraform(struct?: SagemakerModelCon
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    additional_model_data_source: {
+      value: cdktf.listMapperHcl(sagemakerModelContainerAdditionalModelDataSourceToHclTerraform, true)(struct!.additionalModelDataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerModelContainerAdditionalModelDataSourceList",
     },
     image_config: {
       value: sagemakerModelContainerImageConfigToHclTerraform(struct!.imageConfig),
@@ -912,6 +1359,10 @@ export class SagemakerModelContainerOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.modelPackageName = this._modelPackageName;
     }
+    if (this._additionalModelDataSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalModelDataSource = this._additionalModelDataSource?.internalValue;
+    }
     if (this._imageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageConfig = this._imageConfig?.internalValue;
@@ -938,6 +1389,7 @@ export class SagemakerModelContainerOutputReference extends cdktf.ComplexObject 
       this._mode = undefined;
       this._modelDataUrl = undefined;
       this._modelPackageName = undefined;
+      this._additionalModelDataSource.internalValue = undefined;
       this._imageConfig.internalValue = undefined;
       this._modelDataSource.internalValue = undefined;
       this._multiModelConfig.internalValue = undefined;
@@ -956,6 +1408,7 @@ export class SagemakerModelContainerOutputReference extends cdktf.ComplexObject 
       this._mode = value.mode;
       this._modelDataUrl = value.modelDataUrl;
       this._modelPackageName = value.modelPackageName;
+      this._additionalModelDataSource.internalValue = value.additionalModelDataSource;
       this._imageConfig.internalValue = value.imageConfig;
       this._modelDataSource.internalValue = value.modelDataSource;
       this._multiModelConfig.internalValue = value.multiModelConfig;
@@ -1074,6 +1527,22 @@ export class SagemakerModelContainerOutputReference extends cdktf.ComplexObject 
     return this._modelPackageName;
   }
 
+  // additional_model_data_source - computed: false, optional: true, required: false
+  private _additionalModelDataSource = new SagemakerModelContainerAdditionalModelDataSourceList(this, "additional_model_data_source", false);
+  public get additionalModelDataSource() {
+    return this._additionalModelDataSource;
+  }
+  public putAdditionalModelDataSource(value: SagemakerModelContainerAdditionalModelDataSource[] | cdktf.IResolvable) {
+    this._additionalModelDataSource.internalValue = value;
+  }
+  public resetAdditionalModelDataSource() {
+    this._additionalModelDataSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalModelDataSourceInput() {
+    return this._additionalModelDataSource.internalValue;
+  }
+
   // image_config - computed: false, optional: true, required: false
   private _imageConfig = new SagemakerModelContainerImageConfigOutputReference(this, "image_config");
   public get imageConfig() {
@@ -1144,7 +1613,7 @@ export class SagemakerModelContainerList extends cdktf.ComplexList {
 }
 export interface SagemakerModelInferenceExecutionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}
   */
   readonly mode: string;
 }
@@ -1223,9 +1692,443 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
     return this._mode;
   }
 }
+export interface SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}
+  */
+  readonly acceptEula: boolean | cdktf.IResolvable;
+}
+
+export function sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToTerraform(struct?: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference | SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accept_eula: cdktf.booleanToTerraform(struct!.acceptEula),
+  }
+}
+
+
+export function sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToHclTerraform(struct?: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference | SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accept_eula: {
+      value: cdktf.booleanToHclTerraform(struct!.acceptEula),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceptEula !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceptEula = this._acceptEula;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._acceptEula = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._acceptEula = value.acceptEula;
+    }
+  }
+
+  // accept_eula - computed: false, optional: false, required: true
+  private _acceptEula?: boolean | cdktf.IResolvable; 
+  public get acceptEula() {
+    return this.getBooleanAttribute('accept_eula');
+  }
+  public set acceptEula(value: boolean | cdktf.IResolvable) {
+    this._acceptEula = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptEulaInput() {
+    return this._acceptEula;
+  }
+}
+export interface SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}
+  */
+  readonly compressionType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}
+  */
+  readonly s3DataType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}
+  */
+  readonly s3Uri: string;
+  /**
+  * model_access_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+  */
+  readonly modelAccessConfig?: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig;
+}
+
+export function sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceToTerraform(struct?: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    compression_type: cdktf.stringToTerraform(struct!.compressionType),
+    s3_data_type: cdktf.stringToTerraform(struct!.s3DataType),
+    s3_uri: cdktf.stringToTerraform(struct!.s3Uri),
+    model_access_config: sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToTerraform(struct!.modelAccessConfig),
+  }
+}
+
+
+export function sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceToHclTerraform(struct?: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compression_type: {
+      value: cdktf.stringToHclTerraform(struct!.compressionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_data_type: {
+      value: cdktf.stringToHclTerraform(struct!.s3DataType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_uri: {
+      value: cdktf.stringToHclTerraform(struct!.s3Uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_access_config: {
+      value: sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigToHclTerraform(struct!.modelAccessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._compressionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compressionType = this._compressionType;
+    }
+    if (this._s3DataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3DataType = this._s3DataType;
+    }
+    if (this._s3Uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3Uri = this._s3Uri;
+    }
+    if (this._modelAccessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelAccessConfig = this._modelAccessConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._compressionType = undefined;
+      this._s3DataType = undefined;
+      this._s3Uri = undefined;
+      this._modelAccessConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._compressionType = value.compressionType;
+      this._s3DataType = value.s3DataType;
+      this._s3Uri = value.s3Uri;
+      this._modelAccessConfig.internalValue = value.modelAccessConfig;
+    }
+  }
+
+  // compression_type - computed: false, optional: false, required: true
+  private _compressionType?: string; 
+  public get compressionType() {
+    return this.getStringAttribute('compression_type');
+  }
+  public set compressionType(value: string) {
+    this._compressionType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compressionTypeInput() {
+    return this._compressionType;
+  }
+
+  // s3_data_type - computed: false, optional: false, required: true
+  private _s3DataType?: string; 
+  public get s3DataType() {
+    return this.getStringAttribute('s3_data_type');
+  }
+  public set s3DataType(value: string) {
+    this._s3DataType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3DataTypeInput() {
+    return this._s3DataType;
+  }
+
+  // s3_uri - computed: false, optional: false, required: true
+  private _s3Uri?: string; 
+  public get s3Uri() {
+    return this.getStringAttribute('s3_uri');
+  }
+  public set s3Uri(value: string) {
+    this._s3Uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3UriInput() {
+    return this._s3Uri;
+  }
+
+  // model_access_config - computed: false, optional: true, required: false
+  private _modelAccessConfig = new SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference(this, "model_access_config");
+  public get modelAccessConfig() {
+    return this._modelAccessConfig;
+  }
+  public putModelAccessConfig(value: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig) {
+    this._modelAccessConfig.internalValue = value;
+  }
+  public resetModelAccessConfig() {
+    this._modelAccessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelAccessConfigInput() {
+    return this._modelAccessConfig.internalValue;
+  }
+}
+
+export class SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList extends cdktf.ComplexList {
+  public internalValue? : SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference {
+    return new SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SagemakerModelPrimaryContainerAdditionalModelDataSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}
+  */
+  readonly channelName: string;
+  /**
+  * s3_data_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+  */
+  readonly s3DataSource: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource[] | cdktf.IResolvable;
+}
+
+export function sagemakerModelPrimaryContainerAdditionalModelDataSourceToTerraform(struct?: SagemakerModelPrimaryContainerAdditionalModelDataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    channel_name: cdktf.stringToTerraform(struct!.channelName),
+    s3_data_source: cdktf.listMapper(sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceToTerraform, true)(struct!.s3DataSource),
+  }
+}
+
+
+export function sagemakerModelPrimaryContainerAdditionalModelDataSourceToHclTerraform(struct?: SagemakerModelPrimaryContainerAdditionalModelDataSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel_name: {
+      value: cdktf.stringToHclTerraform(struct!.channelName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_data_source: {
+      value: cdktf.listMapperHcl(sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceToHclTerraform, true)(struct!.s3DataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerModelPrimaryContainerAdditionalModelDataSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerModelPrimaryContainerAdditionalModelDataSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._channelName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channelName = this._channelName;
+    }
+    if (this._s3DataSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3DataSource = this._s3DataSource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelPrimaryContainerAdditionalModelDataSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._channelName = undefined;
+      this._s3DataSource.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._channelName = value.channelName;
+      this._s3DataSource.internalValue = value.s3DataSource;
+    }
+  }
+
+  // channel_name - computed: false, optional: false, required: true
+  private _channelName?: string; 
+  public get channelName() {
+    return this.getStringAttribute('channel_name');
+  }
+  public set channelName(value: string) {
+    this._channelName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelNameInput() {
+    return this._channelName;
+  }
+
+  // s3_data_source - computed: false, optional: false, required: true
+  private _s3DataSource = new SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList(this, "s3_data_source", false);
+  public get s3DataSource() {
+    return this._s3DataSource;
+  }
+  public putS3DataSource(value: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource[] | cdktf.IResolvable) {
+    this._s3DataSource.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3DataSourceInput() {
+    return this._s3DataSource.internalValue;
+  }
+}
+
+export class SagemakerModelPrimaryContainerAdditionalModelDataSourceList extends cdktf.ComplexList {
+  public internalValue? : SagemakerModelPrimaryContainerAdditionalModelDataSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerModelPrimaryContainerAdditionalModelDataSourceOutputReference {
+    return new SagemakerModelPrimaryContainerAdditionalModelDataSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}
   */
   readonly repositoryCredentialsProviderArn: string;
 }
@@ -1306,13 +2209,13 @@ export class SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutput
 }
 export interface SagemakerModelPrimaryContainerImageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
   */
   readonly repositoryAccessMode: string;
   /**
   * repository_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
   */
   readonly repositoryAuthConfig?: SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig;
 }
@@ -1422,7 +2325,7 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
 }
 export interface SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}
   */
   readonly acceptEula: boolean | cdktf.IResolvable;
 }
@@ -1503,21 +2406,21 @@ export class SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAcces
 }
 export interface SagemakerModelPrimaryContainerModelDataSourceS3DataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}
   */
   readonly compressionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}
   */
   readonly s3DataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}
   */
   readonly s3Uri: string;
   /**
   * model_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
   */
   readonly modelAccessConfig?: SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig;
 }
@@ -1713,7 +2616,7 @@ export interface SagemakerModelPrimaryContainerModelDataSource {
   /**
   * s3_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
   */
   readonly s3DataSource: SagemakerModelPrimaryContainerModelDataSourceS3DataSource[] | cdktf.IResolvable;
 }
@@ -1794,7 +2697,7 @@ export class SagemakerModelPrimaryContainerModelDataSourceOutputReference extend
 }
 export interface SagemakerModelPrimaryContainerMultiModelConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}
   */
   readonly modelCacheSetting?: string;
 }
@@ -1878,49 +2781,55 @@ export class SagemakerModelPrimaryContainerMultiModelConfigOutputReference exten
 }
 export interface SagemakerModelPrimaryContainer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}
   */
   readonly containerHostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#environment SagemakerModel#environment}
   */
   readonly environment?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#image SagemakerModel#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image SagemakerModel#image}
   */
   readonly image?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}
   */
   readonly inferenceSpecificationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}
   */
   readonly modelDataUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}
   */
   readonly modelPackageName?: string;
   /**
+  * additional_model_data_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
+  */
+  readonly additionalModelDataSource?: SagemakerModelPrimaryContainerAdditionalModelDataSource[] | cdktf.IResolvable;
+  /**
   * image_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
   */
   readonly imageConfig?: SagemakerModelPrimaryContainerImageConfig;
   /**
   * model_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
   */
   readonly modelDataSource?: SagemakerModelPrimaryContainerModelDataSource;
   /**
   * multi_model_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
   */
   readonly multiModelConfig?: SagemakerModelPrimaryContainerMultiModelConfig;
 }
@@ -1938,6 +2847,7 @@ export function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerMode
     mode: cdktf.stringToTerraform(struct!.mode),
     model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
     model_package_name: cdktf.stringToTerraform(struct!.modelPackageName),
+    additional_model_data_source: cdktf.listMapper(sagemakerModelPrimaryContainerAdditionalModelDataSourceToTerraform, true)(struct!.additionalModelDataSource),
     image_config: sagemakerModelPrimaryContainerImageConfigToTerraform(struct!.imageConfig),
     model_data_source: sagemakerModelPrimaryContainerModelDataSourceToTerraform(struct!.modelDataSource),
     multi_model_config: sagemakerModelPrimaryContainerMultiModelConfigToTerraform(struct!.multiModelConfig),
@@ -1992,6 +2902,12 @@ export function sagemakerModelPrimaryContainerToHclTerraform(struct?: SagemakerM
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    additional_model_data_source: {
+      value: cdktf.listMapperHcl(sagemakerModelPrimaryContainerAdditionalModelDataSourceToHclTerraform, true)(struct!.additionalModelDataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerModelPrimaryContainerAdditionalModelDataSourceList",
     },
     image_config: {
       value: sagemakerModelPrimaryContainerImageConfigToHclTerraform(struct!.imageConfig),
@@ -2059,6 +2975,10 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.modelPackageName = this._modelPackageName;
     }
+    if (this._additionalModelDataSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalModelDataSource = this._additionalModelDataSource?.internalValue;
+    }
     if (this._imageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageConfig = this._imageConfig?.internalValue;
@@ -2084,6 +3004,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
       this._mode = undefined;
       this._modelDataUrl = undefined;
       this._modelPackageName = undefined;
+      this._additionalModelDataSource.internalValue = undefined;
       this._imageConfig.internalValue = undefined;
       this._modelDataSource.internalValue = undefined;
       this._multiModelConfig.internalValue = undefined;
@@ -2097,6 +3018,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
       this._mode = value.mode;
       this._modelDataUrl = value.modelDataUrl;
       this._modelPackageName = value.modelPackageName;
+      this._additionalModelDataSource.internalValue = value.additionalModelDataSource;
       this._imageConfig.internalValue = value.imageConfig;
       this._modelDataSource.internalValue = value.modelDataSource;
       this._multiModelConfig.internalValue = value.multiModelConfig;
@@ -2215,6 +3137,22 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
     return this._modelPackageName;
   }
 
+  // additional_model_data_source - computed: false, optional: true, required: false
+  private _additionalModelDataSource = new SagemakerModelPrimaryContainerAdditionalModelDataSourceList(this, "additional_model_data_source", false);
+  public get additionalModelDataSource() {
+    return this._additionalModelDataSource;
+  }
+  public putAdditionalModelDataSource(value: SagemakerModelPrimaryContainerAdditionalModelDataSource[] | cdktf.IResolvable) {
+    this._additionalModelDataSource.internalValue = value;
+  }
+  public resetAdditionalModelDataSource() {
+    this._additionalModelDataSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalModelDataSourceInput() {
+    return this._additionalModelDataSource.internalValue;
+  }
+
   // image_config - computed: false, optional: true, required: false
   private _imageConfig = new SagemakerModelPrimaryContainerImageConfigOutputReference(this, "image_config");
   public get imageConfig() {
@@ -2265,11 +3203,11 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
 }
 export interface SagemakerModelVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}
   */
   readonly subnets: string[];
 }
@@ -2376,7 +3314,7 @@ export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model aws_sagemaker_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model aws_sagemaker_model}
 */
 export class SagemakerModel extends cdktf.TerraformResource {
 
@@ -2392,7 +3330,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SagemakerModel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerModel to import
-  * @param importFromId The id of the existing SagemakerModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2404,7 +3342,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model aws_sagemaker_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2415,7 +3353,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

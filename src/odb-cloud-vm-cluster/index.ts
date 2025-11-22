@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,125 +15,137 @@ export interface OdbCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique identifier of the Exadata infrastructure for this VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#cloud_exadata_infrastructure_id OdbCloudVmCluster#cloud_exadata_infrastructure_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#cloud_exadata_infrastructure_arn OdbCloudVmCluster#cloud_exadata_infrastructure_arn}
   */
-  readonly cloudExadataInfrastructureId: string;
+  readonly cloudExadataInfrastructureArn?: string;
+  /**
+  * The unique identifier of the Exadata infrastructure for this VM cluster. Changing this will create a new resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#cloud_exadata_infrastructure_id OdbCloudVmCluster#cloud_exadata_infrastructure_id}
+  */
+  readonly cloudExadataInfrastructureId?: string;
   /**
   * The name of the Grid Infrastructure (GI) cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#cluster_name OdbCloudVmCluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#cluster_name OdbCloudVmCluster#cluster_name}
   */
   readonly clusterName?: string;
   /**
   * The number of CPU cores to enable on the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#cpu_core_count OdbCloudVmCluster#cpu_core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#cpu_core_count OdbCloudVmCluster#cpu_core_count}
   */
   readonly cpuCoreCount: number;
   /**
   * The size of the data disk group, in terabytes (TBs), to allocate for the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#data_storage_size_in_tbs OdbCloudVmCluster#data_storage_size_in_tbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#data_storage_size_in_tbs OdbCloudVmCluster#data_storage_size_in_tbs}
   */
   readonly dataStorageSizeInTbs: number;
   /**
   * The amount of local node storage, in gigabytes (GBs), to allocate for the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#db_node_storage_size_in_gbs OdbCloudVmCluster#db_node_storage_size_in_gbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#db_node_storage_size_in_gbs OdbCloudVmCluster#db_node_storage_size_in_gbs}
   */
   readonly dbNodeStorageSizeInGbs?: number;
   /**
   * The list of database servers for the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#db_servers OdbCloudVmCluster#db_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#db_servers OdbCloudVmCluster#db_servers}
   */
   readonly dbServers: string[];
   /**
   * A user-friendly name for the VM cluster. This member is required. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#display_name OdbCloudVmCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#display_name OdbCloudVmCluster#display_name}
   */
   readonly displayName: string;
   /**
   * A valid software version of Oracle Grid Infrastructure (GI). To get the list of valid values, use the ListGiVersions operation and specify the shape of the Exadata infrastructure. Example: 19.0.0.0 This member is required. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#gi_version OdbCloudVmCluster#gi_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#gi_version OdbCloudVmCluster#gi_version}
   */
   readonly giVersion: string;
   /**
   * The host name prefix for the VM cluster. Constraints: - Can't be "localhost" or "hostname". - Can't contain "-version". - The maximum length of the combined hostname and domain is 63 characters. - The hostname must be unique within the subnet. This member is required. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#hostname_prefix OdbCloudVmCluster#hostname_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#hostname_prefix OdbCloudVmCluster#hostname_prefix}
   */
   readonly hostnamePrefix: string;
   /**
   * Specifies whether to enable database backups to local Exadata storage for the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#is_local_backup_enabled OdbCloudVmCluster#is_local_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#is_local_backup_enabled OdbCloudVmCluster#is_local_backup_enabled}
   */
   readonly isLocalBackupEnabled?: boolean | cdktf.IResolvable;
   /**
   * Specifies whether to create a sparse disk group for the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#is_sparse_diskgroup_enabled OdbCloudVmCluster#is_sparse_diskgroup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#is_sparse_diskgroup_enabled OdbCloudVmCluster#is_sparse_diskgroup_enabled}
   */
   readonly isSparseDiskgroupEnabled?: boolean | cdktf.IResolvable;
   /**
   * The Oracle license model to apply to the VM cluster. Default: LICENSE_INCLUDED. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#license_model OdbCloudVmCluster#license_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#license_model OdbCloudVmCluster#license_model}
   */
   readonly licenseModel?: string;
   /**
   * The amount of memory, in gigabytes (GBs), to allocate for the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#memory_size_in_gbs OdbCloudVmCluster#memory_size_in_gbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#memory_size_in_gbs OdbCloudVmCluster#memory_size_in_gbs}
   */
   readonly memorySizeInGbs?: number;
   /**
   * The unique identifier of the ODB network for the VM cluster. This member is required. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#odb_network_id OdbCloudVmCluster#odb_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#odb_network_arn OdbCloudVmCluster#odb_network_arn}
   */
-  readonly odbNetworkId: string;
+  readonly odbNetworkArn?: string;
+  /**
+  * The unique identifier of the ODB network for the VM cluster. This member is required. Changing this will create a new resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#odb_network_id OdbCloudVmCluster#odb_network_id}
+  */
+  readonly odbNetworkId?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#region OdbCloudVmCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#region OdbCloudVmCluster#region}
   */
   readonly region?: string;
   /**
   * The port number for TCP connections to the single client access name (SCAN) listener. Valid values: 1024–8999 with the following exceptions: 2484 , 6100 , 6200 , 7060, 7070 , 7085 , and 7879Default: 1521. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#scan_listener_port_tcp OdbCloudVmCluster#scan_listener_port_tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#scan_listener_port_tcp OdbCloudVmCluster#scan_listener_port_tcp}
   */
   readonly scanListenerPortTcp?: number;
   /**
   * The public key portion of one or more key pairs used for SSH access to the VM cluster. This member is required. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#ssh_public_keys OdbCloudVmCluster#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#ssh_public_keys OdbCloudVmCluster#ssh_public_keys}
   */
   readonly sshPublicKeys: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#tags OdbCloudVmCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#tags OdbCloudVmCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * The configured time zone of the VM cluster. Changing this will create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#timezone OdbCloudVmCluster#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#timezone OdbCloudVmCluster#timezone}
   */
   readonly timezone?: string;
   /**
   * data_collection_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#data_collection_options OdbCloudVmCluster#data_collection_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#data_collection_options OdbCloudVmCluster#data_collection_options}
   */
   readonly dataCollectionOptions?: OdbCloudVmClusterDataCollectionOptions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#timeouts OdbCloudVmCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#timeouts OdbCloudVmCluster#timeouts}
   */
   readonly timeouts?: OdbCloudVmClusterTimeouts;
 }
@@ -315,15 +327,15 @@ export class OdbCloudVmClusterIormConfigCacheList extends cdktf.ComplexList {
 }
 export interface OdbCloudVmClusterDataCollectionOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#is_diagnostics_events_enabled OdbCloudVmCluster#is_diagnostics_events_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#is_diagnostics_events_enabled OdbCloudVmCluster#is_diagnostics_events_enabled}
   */
   readonly isDiagnosticsEventsEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#is_health_monitoring_enabled OdbCloudVmCluster#is_health_monitoring_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#is_health_monitoring_enabled OdbCloudVmCluster#is_health_monitoring_enabled}
   */
   readonly isHealthMonitoringEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#is_incident_logs_enabled OdbCloudVmCluster#is_incident_logs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#is_incident_logs_enabled OdbCloudVmCluster#is_incident_logs_enabled}
   */
   readonly isIncidentLogsEnabled: boolean | cdktf.IResolvable;
 }
@@ -490,19 +502,19 @@ export interface OdbCloudVmClusterTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#create OdbCloudVmCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#create OdbCloudVmCluster#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#delete OdbCloudVmCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#delete OdbCloudVmCluster#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#update OdbCloudVmCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#update OdbCloudVmCluster#update}
   */
   readonly update?: string;
 }
@@ -654,7 +666,7 @@ export class OdbCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}
 */
 export class OdbCloudVmCluster extends cdktf.TerraformResource {
 
@@ -670,7 +682,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OdbCloudVmCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbCloudVmCluster to import
-  * @param importFromId The id of the existing OdbCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OdbCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbCloudVmCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -682,7 +694,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -693,7 +705,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_odb_cloud_vm_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.21.0',
+        providerVersion: '6.22.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -704,6 +716,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._cloudExadataInfrastructureArn = config.cloudExadataInfrastructureArn;
     this._cloudExadataInfrastructureId = config.cloudExadataInfrastructureId;
     this._clusterName = config.clusterName;
     this._cpuCoreCount = config.cpuCoreCount;
@@ -717,6 +730,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
     this._isSparseDiskgroupEnabled = config.isSparseDiskgroupEnabled;
     this._licenseModel = config.licenseModel;
     this._memorySizeInGbs = config.memorySizeInGbs;
+    this._odbNetworkArn = config.odbNetworkArn;
     this._odbNetworkId = config.odbNetworkId;
     this._region = config.region;
     this._scanListenerPortTcp = config.scanListenerPortTcp;
@@ -736,13 +750,32 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // cloud_exadata_infrastructure_id - computed: false, optional: false, required: true
+  // cloud_exadata_infrastructure_arn - computed: true, optional: true, required: false
+  private _cloudExadataInfrastructureArn?: string; 
+  public get cloudExadataInfrastructureArn() {
+    return this.getStringAttribute('cloud_exadata_infrastructure_arn');
+  }
+  public set cloudExadataInfrastructureArn(value: string) {
+    this._cloudExadataInfrastructureArn = value;
+  }
+  public resetCloudExadataInfrastructureArn() {
+    this._cloudExadataInfrastructureArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudExadataInfrastructureArnInput() {
+    return this._cloudExadataInfrastructureArn;
+  }
+
+  // cloud_exadata_infrastructure_id - computed: true, optional: true, required: false
   private _cloudExadataInfrastructureId?: string; 
   public get cloudExadataInfrastructureId() {
     return this.getStringAttribute('cloud_exadata_infrastructure_id');
   }
   public set cloudExadataInfrastructureId(value: string) {
     this._cloudExadataInfrastructureId = value;
+  }
+  public resetCloudExadataInfrastructureId() {
+    this._cloudExadataInfrastructureId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cloudExadataInfrastructureIdInput() {
@@ -994,13 +1027,32 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('ocid');
   }
 
-  // odb_network_id - computed: false, optional: false, required: true
+  // odb_network_arn - computed: true, optional: true, required: false
+  private _odbNetworkArn?: string; 
+  public get odbNetworkArn() {
+    return this.getStringAttribute('odb_network_arn');
+  }
+  public set odbNetworkArn(value: string) {
+    this._odbNetworkArn = value;
+  }
+  public resetOdbNetworkArn() {
+    this._odbNetworkArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get odbNetworkArnInput() {
+    return this._odbNetworkArn;
+  }
+
+  // odb_network_id - computed: true, optional: true, required: false
   private _odbNetworkId?: string; 
   public get odbNetworkId() {
     return this.getStringAttribute('odb_network_id');
   }
   public set odbNetworkId(value: string) {
     this._odbNetworkId = value;
+  }
+  public resetOdbNetworkId() {
+    this._odbNetworkId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get odbNetworkIdInput() {
@@ -1178,6 +1230,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cloud_exadata_infrastructure_arn: cdktf.stringToTerraform(this._cloudExadataInfrastructureArn),
       cloud_exadata_infrastructure_id: cdktf.stringToTerraform(this._cloudExadataInfrastructureId),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       cpu_core_count: cdktf.numberToTerraform(this._cpuCoreCount),
@@ -1191,6 +1244,7 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
       is_sparse_diskgroup_enabled: cdktf.booleanToTerraform(this._isSparseDiskgroupEnabled),
       license_model: cdktf.stringToTerraform(this._licenseModel),
       memory_size_in_gbs: cdktf.numberToTerraform(this._memorySizeInGbs),
+      odb_network_arn: cdktf.stringToTerraform(this._odbNetworkArn),
       odb_network_id: cdktf.stringToTerraform(this._odbNetworkId),
       region: cdktf.stringToTerraform(this._region),
       scan_listener_port_tcp: cdktf.numberToTerraform(this._scanListenerPortTcp),
@@ -1204,6 +1258,12 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      cloud_exadata_infrastructure_arn: {
+        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       cloud_exadata_infrastructure_id: {
         value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureId),
         isBlock: false,
@@ -1281,6 +1341,12 @@ export class OdbCloudVmCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      odb_network_arn: {
+        value: cdktf.stringToHclTerraform(this._odbNetworkArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       odb_network_id: {
         value: cdktf.stringToHclTerraform(this._odbNetworkId),

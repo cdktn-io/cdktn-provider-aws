@@ -194,6 +194,7 @@ Object.defineProperty(exports, 'bedrockagentcoreMemoryStrategy', { get: function
 Object.defineProperty(exports, 'bedrockagentcoreOauth2CredentialProvider', { get: function () { return require('./bedrockagentcore-oauth2-credential-provider'); } });
 Object.defineProperty(exports, 'bedrockagentcoreTokenVaultCmk', { get: function () { return require('./bedrockagentcore-token-vault-cmk'); } });
 Object.defineProperty(exports, 'bedrockagentcoreWorkloadIdentity', { get: function () { return require('./bedrockagentcore-workload-identity'); } });
+Object.defineProperty(exports, 'billingView', { get: function () { return require('./billing-view'); } });
 Object.defineProperty(exports, 'budgetsBudget', { get: function () { return require('./budgets-budget'); } });
 Object.defineProperty(exports, 'budgetsBudgetAction', { get: function () { return require('./budgets-budget-action'); } });
 Object.defineProperty(exports, 'ceAnomalyMonitor', { get: function () { return require('./ce-anomaly-monitor'); } });
@@ -1495,6 +1496,7 @@ Object.defineProperty(exports, 'vpcSecurityGroupIngressRule', { get: function ()
 Object.defineProperty(exports, 'vpcSecurityGroupVpcAssociation', { get: function () { return require('./vpc-security-group-vpc-association'); } });
 Object.defineProperty(exports, 'vpclatticeAccessLogSubscription', { get: function () { return require('./vpclattice-access-log-subscription'); } });
 Object.defineProperty(exports, 'vpclatticeAuthPolicy', { get: function () { return require('./vpclattice-auth-policy'); } });
+Object.defineProperty(exports, 'vpclatticeDomainVerification', { get: function () { return require('./vpclattice-domain-verification'); } });
 Object.defineProperty(exports, 'vpclatticeListener', { get: function () { return require('./vpclattice-listener'); } });
 Object.defineProperty(exports, 'vpclatticeListenerRule', { get: function () { return require('./vpclattice-listener-rule'); } });
 Object.defineProperty(exports, 'vpclatticeResourceConfiguration', { get: function () { return require('./vpclattice-resource-configuration'); } });
