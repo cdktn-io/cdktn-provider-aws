@@ -4,7 +4,7 @@
 
 ### SagemakerModel <a name="SagemakerModel" id="@cdktf/provider-aws.sagemakerModel.SagemakerModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model aws_sagemaker_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model aws_sagemaker_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModel.Initializer"></a>
 
@@ -589,7 +589,7 @@ The construct id used in the generated config for the SagemakerModel to import.
 
 The id of the existing SagemakerModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1058,16 +1058,16 @@ const sagemakerModelConfig: sagemakerModel.SagemakerModelConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.executionRoleArn">executionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.executionRoleArn">executionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.container">container</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer">SagemakerModelContainer</a>[]</code> | container block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.enableNetworkIsolation">enableNetworkIsolation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#id SagemakerModel#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.enableNetworkIsolation">enableNetworkIsolation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#id SagemakerModel#id}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.inferenceExecutionConfig">inferenceExecutionConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig">SagemakerModelInferenceExecutionConfig</a></code> | inference_execution_config block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#name SagemakerModel#name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#name SagemakerModel#name}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.primaryContainer">primaryContainer</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer">SagemakerModelPrimaryContainer</a></code> | primary_container block. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#tags SagemakerModel#tags}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.property.vpcConfig">vpcConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig">SagemakerModelVpcConfig</a></code> | vpc_config block. |
 
 ---
@@ -1150,7 +1150,7 @@ public readonly executionRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly container: IResolvable | SagemakerModelContainer[];
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container SagemakerModel#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#container SagemakerModel#container}
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly enableNetworkIsolation: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#id SagemakerModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#id SagemakerModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1205,7 +1205,7 @@ public readonly inferenceExecutionConfig: SagemakerModelInferenceExecutionConfig
 
 inference_execution_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#name SagemakerModel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#name SagemakerModel#name}.
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly primaryContainer: SagemakerModelPrimaryContainer;
 
 primary_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
 
 ---
 
@@ -1245,7 +1245,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#region SagemakerModel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#region SagemakerModel#region}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#tags SagemakerModel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}.
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly vpcConfig: SagemakerModelVpcConfig;
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
 
 ---
 
@@ -1302,15 +1302,15 @@ const sagemakerModelContainer: sagemakerModel.SagemakerModelContainer = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.additionalModelDataSource">additionalModelDataSource</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource">SagemakerModelContainerAdditionalModelDataSource</a>[]</code> | additional_model_data_source block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image SagemakerModel#image}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#image SagemakerModel#image}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.imageConfig">imageConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig">SagemakerModelContainerImageConfig</a></code> | image_config block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelDataSource">modelDataSource</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSource">SagemakerModelContainerModelDataSource</a></code> | model_data_source block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.property.multiModelConfig">multiModelConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerMultiModelConfig">SagemakerModelContainerMultiModelConfig</a></code> | multi_model_config block. |
 
 ---
@@ -1325,7 +1325,7 @@ public readonly additionalModelDataSource: IResolvable | SagemakerModelContainer
 
 additional_model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
 
 ---
 
@@ -1337,7 +1337,7 @@ public readonly containerHostname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
 
 ---
 
@@ -1349,7 +1349,7 @@ public readonly environment: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
 
 ---
 
@@ -1361,7 +1361,7 @@ public readonly image: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image SagemakerModel#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#image SagemakerModel#image}.
 
 ---
 
@@ -1375,7 +1375,7 @@ public readonly imageConfig: SagemakerModelContainerImageConfig;
 
 image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly inferenceSpecificationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
 
 ---
 
@@ -1413,7 +1413,7 @@ public readonly modelDataSource: SagemakerModelContainerModelDataSource;
 
 model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
 
 ---
 
@@ -1425,7 +1425,7 @@ public readonly modelDataUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
 
 ---
 
@@ -1437,7 +1437,7 @@ public readonly modelPackageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly multiModelConfig: SagemakerModelContainerMultiModelConfig;
 
 multi_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
 
 ---
 
@@ -1469,7 +1469,7 @@ const sagemakerModelContainerAdditionalModelDataSource: sagemakerModel.Sagemaker
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource.property.s3DataSource">s3DataSource</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource">SagemakerModelContainerAdditionalModelDataSourceS3DataSource</a>[]</code> | s3_data_source block. |
 
 ---
@@ -1482,7 +1482,7 @@ public readonly channelName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
 
 ---
 
@@ -1496,7 +1496,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelContainerAdditionalMod
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -1514,9 +1514,9 @@ const sagemakerModelContainerAdditionalModelDataSourceS3DataSource: sagemakerMod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -1529,7 +1529,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -1541,7 +1541,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -1553,7 +1553,7 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
 
 ---
 
@@ -1567,7 +1567,7 @@ public readonly modelAccessConfig: SagemakerModelContainerAdditionalModelDataSou
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
 
 ---
 
@@ -1585,7 +1585,7 @@ const sagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -1597,7 +1597,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -1615,7 +1615,7 @@ const sagemakerModelContainerImageConfig: sagemakerModel.SagemakerModelContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.property.repositoryAuthConfig">repositoryAuthConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig">SagemakerModelContainerImageConfigRepositoryAuthConfig</a></code> | repository_auth_config block. |
 
 ---
@@ -1628,7 +1628,7 @@ public readonly repositoryAccessMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
 
 ---
 
@@ -1642,7 +1642,7 @@ public readonly repositoryAuthConfig: SagemakerModelContainerImageConfigReposito
 
 repository_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
 
 ---
 
@@ -1660,7 +1660,7 @@ const sagemakerModelContainerImageConfigRepositoryAuthConfig: sagemakerModel.Sag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
 
 ---
 
@@ -1672,7 +1672,7 @@ public readonly repositoryCredentialsProviderArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
 
 ---
 
@@ -1704,7 +1704,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelContainerModelDataSour
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -1722,9 +1722,9 @@ const sagemakerModelContainerModelDataSourceS3DataSource: sagemakerModel.Sagemak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -1737,7 +1737,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -1749,7 +1749,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
 
 ---
 
@@ -1775,7 +1775,7 @@ public readonly modelAccessConfig: SagemakerModelContainerModelDataSourceS3DataS
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
 
 ---
 
@@ -1793,7 +1793,7 @@ const sagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig: sagem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -1805,7 +1805,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -1823,7 +1823,7 @@ const sagemakerModelContainerMultiModelConfig: sagemakerModel.SagemakerModelCont
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
 
 ---
 
@@ -1835,7 +1835,7 @@ public readonly modelCacheSetting: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
 
 ---
 
@@ -1853,7 +1853,7 @@ const sagemakerModelInferenceExecutionConfig: sagemakerModel.SagemakerModelInfer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
 
 ---
 
@@ -1865,7 +1865,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
 
 ---
 
@@ -1884,15 +1884,15 @@ const sagemakerModelPrimaryContainer: sagemakerModel.SagemakerModelPrimaryContai
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.additionalModelDataSource">additionalModelDataSource</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource">SagemakerModelPrimaryContainerAdditionalModelDataSource</a>[]</code> | additional_model_data_source block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image SagemakerModel#image}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#image SagemakerModel#image}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.imageConfig">imageConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig">SagemakerModelPrimaryContainerImageConfig</a></code> | image_config block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelDataSource">modelDataSource</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSource">SagemakerModelPrimaryContainerModelDataSource</a></code> | model_data_source block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.multiModelConfig">multiModelConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerMultiModelConfig">SagemakerModelPrimaryContainerMultiModelConfig</a></code> | multi_model_config block. |
 
 ---
@@ -1907,7 +1907,7 @@ public readonly additionalModelDataSource: IResolvable | SagemakerModelPrimaryCo
 
 additional_model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly containerHostname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
 
 ---
 
@@ -1931,7 +1931,7 @@ public readonly environment: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
 
 ---
 
@@ -1943,7 +1943,7 @@ public readonly image: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image SagemakerModel#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#image SagemakerModel#image}.
 
 ---
 
@@ -1957,7 +1957,7 @@ public readonly imageConfig: SagemakerModelPrimaryContainerImageConfig;
 
 image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
 
 ---
 
@@ -1969,7 +1969,7 @@ public readonly inferenceSpecificationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly modelDataSource: SagemakerModelPrimaryContainerModelDataSource;
 
 model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly modelDataUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
 
 ---
 
@@ -2019,7 +2019,7 @@ public readonly modelPackageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
 
 ---
 
@@ -2033,7 +2033,7 @@ public readonly multiModelConfig: SagemakerModelPrimaryContainerMultiModelConfig
 
 multi_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
 
 ---
 
@@ -2051,7 +2051,7 @@ const sagemakerModelPrimaryContainerAdditionalModelDataSource: sagemakerModel.Sa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource.property.s3DataSource">s3DataSource</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource</a>[]</code> | s3_data_source block. |
 
 ---
@@ -2064,7 +2064,7 @@ public readonly channelName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
 
 ---
 
@@ -2078,7 +2078,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelPrimaryContainerAdditi
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -2096,9 +2096,9 @@ const sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource: sagem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -2111,7 +2111,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -2123,7 +2123,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -2135,7 +2135,7 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
 
 ---
 
@@ -2149,7 +2149,7 @@ public readonly modelAccessConfig: SagemakerModelPrimaryContainerAdditionalModel
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
 
 ---
 
@@ -2167,7 +2167,7 @@ const sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -2179,7 +2179,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -2197,7 +2197,7 @@ const sagemakerModelPrimaryContainerImageConfig: sagemakerModel.SagemakerModelPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.property.repositoryAuthConfig">repositoryAuthConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig">SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig</a></code> | repository_auth_config block. |
 
 ---
@@ -2210,7 +2210,7 @@ public readonly repositoryAccessMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
 
 ---
 
@@ -2224,7 +2224,7 @@ public readonly repositoryAuthConfig: SagemakerModelPrimaryContainerImageConfigR
 
 repository_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
 
 ---
 
@@ -2242,7 +2242,7 @@ const sagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig: sagemakerMo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
 
 ---
 
@@ -2254,7 +2254,7 @@ public readonly repositoryCredentialsProviderArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
 
 ---
 
@@ -2286,7 +2286,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelPrimaryContainerModelD
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -2304,9 +2304,9 @@ const sagemakerModelPrimaryContainerModelDataSourceS3DataSource: sagemakerModel.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -2319,7 +2319,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -2331,7 +2331,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -2343,7 +2343,7 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
 
 ---
 
@@ -2357,7 +2357,7 @@ public readonly modelAccessConfig: SagemakerModelPrimaryContainerModelDataSource
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
 
 ---
 
@@ -2375,7 +2375,7 @@ const sagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -2387,7 +2387,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -2405,7 +2405,7 @@ const sagemakerModelPrimaryContainerMultiModelConfig: sagemakerModel.SagemakerMo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
 
 ---
 
@@ -2417,7 +2417,7 @@ public readonly modelCacheSetting: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
 
 ---
 
@@ -2435,8 +2435,8 @@ const sagemakerModelVpcConfig: sagemakerModel.SagemakerModelVpcConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.subnets">subnets</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.subnets">subnets</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}. |
 
 ---
 
@@ -2448,7 +2448,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}.
 
 ---
 
@@ -2460,7 +2460,7 @@ public readonly subnets: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}.
 
 ---
 

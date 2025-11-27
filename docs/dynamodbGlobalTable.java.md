@@ -4,7 +4,7 @@
 
 ### DynamodbGlobalTable <a name="DynamodbGlobalTable" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer"></a>
 
@@ -38,9 +38,9 @@ DynamodbGlobalTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.replica">replica</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>></code> | replica block. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | timeouts block. |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#region DynamodbGlobalTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#region DynamodbGlobalTable#region}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
 
 ---
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the DynamodbGlobalTable to imp
 
 The id of the existing DynamodbGlobalTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,9 +975,9 @@ DynamodbGlobalTableConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.replica">replica</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>></code> | replica block. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | timeouts block. |
 
@@ -1061,7 +1061,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public IResolvable|java.util.List<DynamodbGlobalTableReplica> getReplica();
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
 
 ---
 
@@ -1087,7 +1087,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1104,7 +1104,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#region DynamodbGlobalTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#region DynamodbGlobalTable#region}
 
 ---
 
@@ -1118,7 +1118,7 @@ public DynamodbGlobalTableTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
 
 ---
 
@@ -1138,7 +1138,7 @@ DynamodbGlobalTableReplica.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.property.regionName">regionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.property.regionName">regionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.lang.String getRegionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}.
 
 ---
 
@@ -1172,9 +1172,9 @@ DynamodbGlobalTableTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}. |
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}.
 
 ---
 
