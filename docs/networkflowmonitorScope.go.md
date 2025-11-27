@@ -4,7 +4,7 @@
 
 ### NetworkflowmonitorScope <a name="NetworkflowmonitorScope" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope aws_networkflowmonitor_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope aws_networkflowmonitor_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the NetworkflowmonitorScope to
 
 The id of the existing NetworkflowmonitorScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#tags NetworkflowmonitorScope#tags}. |
+| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#tags NetworkflowmonitorScope#tags}. |
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.target">Target</a></code> | <code>interface{}</code> | target block. |
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTimeouts">NetworkflowmonitorScopeTimeouts</a></code> | timeouts block. |
 
@@ -957,7 +957,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}
 
 ---
 
@@ -969,7 +969,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#tags NetworkflowmonitorScope#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#tags NetworkflowmonitorScope#tags}.
 
 ---
 
@@ -983,7 +983,7 @@ Target interface{}
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target NetworkflowmonitorScope#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#target NetworkflowmonitorScope#target}
 
 ---
 
@@ -997,7 +997,7 @@ Timeouts NetworkflowmonitorScopeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#timeouts NetworkflowmonitorScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#timeouts NetworkflowmonitorScope#timeouts}
 
 ---
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTarget.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}. |
+| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTarget.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}. |
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTarget.property.targetIdentifier">TargetIdentifier</a></code> | <code>interface{}</code> | target_identifier block. |
 
 ---
@@ -1031,7 +1031,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}.
 
 ---
 
@@ -1045,7 +1045,7 @@ TargetIdentifier interface{}
 
 target_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target_identifier NetworkflowmonitorScope#target_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#target_identifier NetworkflowmonitorScope#target_identifier}
 
 ---
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifier.property.targetType">TargetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target_type NetworkflowmonitorScope#target_type}. |
+| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifier.property.targetType">TargetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#target_type NetworkflowmonitorScope#target_type}. |
 | <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifier.property.targetId">TargetId</a></code> | <code>interface{}</code> | target_id block. |
 
 ---
@@ -1079,7 +1079,7 @@ TargetType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target_type NetworkflowmonitorScope#target_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#target_type NetworkflowmonitorScope#target_type}.
 
 ---
 
@@ -1093,7 +1093,7 @@ TargetId interface{}
 
 target_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target_id NetworkflowmonitorScope#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#target_id NetworkflowmonitorScope#target_id}
 
 ---
 
@@ -1113,7 +1113,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierTargetId.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#account_id NetworkflowmonitorScope#account_id}. |
+| <code><a href="#@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierTargetId.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#account_id NetworkflowmonitorScope#account_id}. |
 
 ---
 
@@ -1125,7 +1125,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#account_id NetworkflowmonitorScope#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#account_id NetworkflowmonitorScope#account_id}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#create NetworkflowmonitorScope#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#create NetworkflowmonitorScope#create}
 
 ---
 
@@ -1177,7 +1177,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#delete NetworkflowmonitorScope#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#delete NetworkflowmonitorScope#delete}
 
 ---
 
@@ -1191,7 +1191,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#update NetworkflowmonitorScope#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#update NetworkflowmonitorScope#update}
 
 ---
 

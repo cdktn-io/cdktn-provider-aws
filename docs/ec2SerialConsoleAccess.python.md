@@ -4,7 +4,7 @@
 
 ### Ec2SerialConsoleAccess <a name="Ec2SerialConsoleAccess" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer"></a>
 
@@ -38,8 +38,8 @@ ec2SerialConsoleAccess.Ec2SerialConsoleAccess(
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}. |
-| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}. |
+| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}. |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#region Ec2SerialConsoleAccess#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#region Ec2SerialConsoleAccess#region}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the Ec2SerialConsoleAccess to 
 
 The id of the existing Ec2SerialConsoleAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,8 +916,8 @@ ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig(
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}. |
-| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}. |
+| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}. |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1000,7 +1000,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}.
 
 ---
 
@@ -1012,7 +1012,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1029,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ec2_serial_console_access#region Ec2SerialConsoleAccess#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ec2_serial_console_access#region Ec2SerialConsoleAccess#region}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation
+// https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLambdaInvocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation#function_name DataAwsLambdaInvocation#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#function_name DataAwsLambdaInvocation#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation#id DataAwsLambdaInvocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#id DataAwsLambdaInvocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation#input DataAwsLambdaInvocation#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#input DataAwsLambdaInvocation#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation#qualifier DataAwsLambdaInvocation#qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#qualifier DataAwsLambdaInvocation#qualifier}
   */
   readonly qualifier?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation#region DataAwsLambdaInvocation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#region DataAwsLambdaInvocation#region}
   */
   readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#tenant_id DataAwsLambdaInvocation#tenant_id}
+  */
+  readonly tenantId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation aws_lambda_invocation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation aws_lambda_invocation}
 */
 export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
 
@@ -56,7 +60,7 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLambdaInvocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdaInvocation to import
-  * @param importFromId The id of the existing DataAwsLambdaInvocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLambdaInvocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdaInvocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +72,7 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +83,7 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lambda_invocation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.22.1',
+        providerVersion: '6.23.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -95,6 +99,7 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
     this._input = config.input;
     this._qualifier = config.qualifier;
     this._region = config.region;
+    this._tenantId = config.tenantId;
   }
 
   // ==========
@@ -180,6 +185,22 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
     return this.getStringAttribute('result');
   }
 
+  // tenant_id - computed: false, optional: true, required: false
+  private _tenantId?: string; 
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+  public set tenantId(value: string) {
+    this._tenantId = value;
+  }
+  public resetTenantId() {
+    this._tenantId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenantIdInput() {
+    return this._tenantId;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -191,6 +212,7 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
       input: cdktf.stringToTerraform(this._input),
       qualifier: cdktf.stringToTerraform(this._qualifier),
       region: cdktf.stringToTerraform(this._region),
+      tenant_id: cdktf.stringToTerraform(this._tenantId),
     };
   }
 
@@ -222,6 +244,12 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
       },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

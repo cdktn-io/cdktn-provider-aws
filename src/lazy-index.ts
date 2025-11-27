@@ -566,6 +566,7 @@ Object.defineProperty(exports, 'ecsAccountSettingDefault', { get: function () { 
 Object.defineProperty(exports, 'ecsCapacityProvider', { get: function () { return require('./ecs-capacity-provider'); } });
 Object.defineProperty(exports, 'ecsCluster', { get: function () { return require('./ecs-cluster'); } });
 Object.defineProperty(exports, 'ecsClusterCapacityProviders', { get: function () { return require('./ecs-cluster-capacity-providers'); } });
+Object.defineProperty(exports, 'ecsExpressGatewayService', { get: function () { return require('./ecs-express-gateway-service'); } });
 Object.defineProperty(exports, 'ecsService', { get: function () { return require('./ecs-service'); } });
 Object.defineProperty(exports, 'ecsTag', { get: function () { return require('./ecs-tag'); } });
 Object.defineProperty(exports, 'ecsTaskDefinition', { get: function () { return require('./ecs-task-definition'); } });
@@ -1191,6 +1192,7 @@ Object.defineProperty(exports, 'rumMetricsDestination', { get: function () { ret
 Object.defineProperty(exports, 's3AccessPoint', { get: function () { return require('./s3-access-point'); } });
 Object.defineProperty(exports, 's3AccountPublicAccessBlock', { get: function () { return require('./s3-account-public-access-block'); } });
 Object.defineProperty(exports, 's3Bucket', { get: function () { return require('./s3-bucket'); } });
+Object.defineProperty(exports, 's3BucketAbac', { get: function () { return require('./s3-bucket-abac'); } });
 Object.defineProperty(exports, 's3BucketAccelerateConfiguration', { get: function () { return require('./s3-bucket-accelerate-configuration'); } });
 Object.defineProperty(exports, 's3BucketAcl', { get: function () { return require('./s3-bucket-acl'); } });
 Object.defineProperty(exports, 's3BucketAnalyticsConfiguration', { get: function () { return require('./s3-bucket-analytics-configuration'); } });
@@ -1460,6 +1462,7 @@ Object.defineProperty(exports, 'vpcBlockPublicAccessExclusion', { get: function 
 Object.defineProperty(exports, 'vpcBlockPublicAccessOptions', { get: function () { return require('./vpc-block-public-access-options'); } });
 Object.defineProperty(exports, 'vpcDhcpOptions', { get: function () { return require('./vpc-dhcp-options'); } });
 Object.defineProperty(exports, 'vpcDhcpOptionsAssociation', { get: function () { return require('./vpc-dhcp-options-association'); } });
+Object.defineProperty(exports, 'vpcEncryptionControl', { get: function () { return require('./vpc-encryption-control'); } });
 Object.defineProperty(exports, 'vpcEndpoint', { get: function () { return require('./vpc-endpoint'); } });
 Object.defineProperty(exports, 'vpcEndpointConnectionAccepter', { get: function () { return require('./vpc-endpoint-connection-accepter'); } });
 Object.defineProperty(exports, 'vpcEndpointConnectionNotification', { get: function () { return require('./vpc-endpoint-connection-notification'); } });
@@ -1509,6 +1512,7 @@ Object.defineProperty(exports, 'vpclatticeServiceNetworkServiceAssociation', { g
 Object.defineProperty(exports, 'vpclatticeServiceNetworkVpcAssociation', { get: function () { return require('./vpclattice-service-network-vpc-association'); } });
 Object.defineProperty(exports, 'vpclatticeTargetGroup', { get: function () { return require('./vpclattice-target-group'); } });
 Object.defineProperty(exports, 'vpclatticeTargetGroupAttachment', { get: function () { return require('./vpclattice-target-group-attachment'); } });
+Object.defineProperty(exports, 'vpnConcentrator', { get: function () { return require('./vpn-concentrator'); } });
 Object.defineProperty(exports, 'vpnConnection', { get: function () { return require('./vpn-connection'); } });
 Object.defineProperty(exports, 'vpnConnectionRoute', { get: function () { return require('./vpn-connection-route'); } });
 Object.defineProperty(exports, 'vpnGateway', { get: function () { return require('./vpn-gateway'); } });
