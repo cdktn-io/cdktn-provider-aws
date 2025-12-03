@@ -826,6 +826,7 @@ Object.defineProperty(exports, 'lakeformationResource', { get: function () { ret
 Object.defineProperty(exports, 'lakeformationResourceLfTag', { get: function () { return require('./lakeformation-resource-lf-tag'); } });
 Object.defineProperty(exports, 'lakeformationResourceLfTags', { get: function () { return require('./lakeformation-resource-lf-tags'); } });
 Object.defineProperty(exports, 'lambdaAlias', { get: function () { return require('./lambda-alias'); } });
+Object.defineProperty(exports, 'lambdaCapacityProvider', { get: function () { return require('./lambda-capacity-provider'); } });
 Object.defineProperty(exports, 'lambdaCodeSigningConfig', { get: function () { return require('./lambda-code-signing-config'); } });
 Object.defineProperty(exports, 'lambdaEventSourceMapping', { get: function () { return require('./lambda-event-source-mapping'); } });
 Object.defineProperty(exports, 'lambdaFunction', { get: function () { return require('./lambda-function'); } });
@@ -1236,7 +1237,12 @@ Object.defineProperty(exports, 's3TablesNamespace', { get: function () { return 
 Object.defineProperty(exports, 's3TablesTable', { get: function () { return require('./s3tables-table'); } });
 Object.defineProperty(exports, 's3TablesTableBucket', { get: function () { return require('./s3tables-table-bucket'); } });
 Object.defineProperty(exports, 's3TablesTableBucketPolicy', { get: function () { return require('./s3tables-table-bucket-policy'); } });
+Object.defineProperty(exports, 's3TablesTableBucketReplication', { get: function () { return require('./s3tables-table-bucket-replication'); } });
 Object.defineProperty(exports, 's3TablesTablePolicy', { get: function () { return require('./s3tables-table-policy'); } });
+Object.defineProperty(exports, 's3TablesTableReplication', { get: function () { return require('./s3tables-table-replication'); } });
+Object.defineProperty(exports, 's3VectorsIndex', { get: function () { return require('./s3vectors-index'); } });
+Object.defineProperty(exports, 's3VectorsVectorBucket', { get: function () { return require('./s3vectors-vector-bucket'); } });
+Object.defineProperty(exports, 's3VectorsVectorBucketPolicy', { get: function () { return require('./s3vectors-vector-bucket-policy'); } });
 Object.defineProperty(exports, 'sagemakerApp', { get: function () { return require('./sagemaker-app'); } });
 Object.defineProperty(exports, 'sagemakerAppImageConfig', { get: function () { return require('./sagemaker-app-image-config'); } });
 Object.defineProperty(exports, 'sagemakerCodeRepository', { get: function () { return require('./sagemaker-code-repository'); } });

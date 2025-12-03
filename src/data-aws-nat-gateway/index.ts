@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNatGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#id DataAwsNatGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#id DataAwsNatGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,45 +22,235 @@ export interface DataAwsNatGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#region DataAwsNatGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#region DataAwsNatGateway#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#state DataAwsNatGateway#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#state DataAwsNatGateway#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#subnet_id DataAwsNatGateway#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#subnet_id DataAwsNatGateway#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#tags DataAwsNatGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#tags DataAwsNatGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#vpc_id DataAwsNatGateway#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#vpc_id DataAwsNatGateway#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#filter DataAwsNatGateway#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#filter DataAwsNatGateway#filter}
   */
   readonly filter?: DataAwsNatGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#timeouts DataAwsNatGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#timeouts DataAwsNatGateway#timeouts}
   */
   readonly timeouts?: DataAwsNatGatewayTimeouts;
 }
+export interface DataAwsNatGatewayAvailabilityZoneAddress {
+}
+
+export function dataAwsNatGatewayAvailabilityZoneAddressToTerraform(struct?: DataAwsNatGatewayAvailabilityZoneAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsNatGatewayAvailabilityZoneAddressToHclTerraform(struct?: DataAwsNatGatewayAvailabilityZoneAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsNatGatewayAvailabilityZoneAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNatGatewayAvailabilityZoneAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNatGatewayAvailabilityZoneAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allocation_ids - computed: true, optional: false, required: false
+  public get allocationIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('allocation_ids'));
+  }
+
+  // availability_zone - computed: true, optional: false, required: false
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+}
+
+export class DataAwsNatGatewayAvailabilityZoneAddressList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNatGatewayAvailabilityZoneAddressOutputReference {
+    return new DataAwsNatGatewayAvailabilityZoneAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsNatGatewayRegionalNatGatewayAddress {
+}
+
+export function dataAwsNatGatewayRegionalNatGatewayAddressToTerraform(struct?: DataAwsNatGatewayRegionalNatGatewayAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsNatGatewayRegionalNatGatewayAddressToHclTerraform(struct?: DataAwsNatGatewayRegionalNatGatewayAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsNatGatewayRegionalNatGatewayAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNatGatewayRegionalNatGatewayAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNatGatewayRegionalNatGatewayAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allocation_id - computed: true, optional: false, required: false
+  public get allocationId() {
+    return this.getStringAttribute('allocation_id');
+  }
+
+  // association_id - computed: true, optional: false, required: false
+  public get associationId() {
+    return this.getStringAttribute('association_id');
+  }
+
+  // availability_zone - computed: true, optional: false, required: false
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+
+  // network_interface_id - computed: true, optional: false, required: false
+  public get networkInterfaceId() {
+    return this.getStringAttribute('network_interface_id');
+  }
+
+  // public_ip - computed: true, optional: false, required: false
+  public get publicIp() {
+    return this.getStringAttribute('public_ip');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+}
+
+export class DataAwsNatGatewayRegionalNatGatewayAddressList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNatGatewayRegionalNatGatewayAddressOutputReference {
+    return new DataAwsNatGatewayRegionalNatGatewayAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsNatGatewayFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#name DataAwsNatGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#name DataAwsNatGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#values DataAwsNatGateway#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#values DataAwsNatGateway#values}
   */
   readonly values: string[];
 }
@@ -199,7 +389,7 @@ export class DataAwsNatGatewayFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsNatGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#read DataAwsNatGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#read DataAwsNatGateway#read}
   */
   readonly read?: string;
 }
@@ -293,7 +483,7 @@ export class DataAwsNatGatewayTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway aws_nat_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway aws_nat_gateway}
 */
 export class DataAwsNatGateway extends cdktf.TerraformDataSource {
 
@@ -309,7 +499,7 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNatGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNatGateway to import
-  * @param importFromId The id of the existing DataAwsNatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNatGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -321,7 +511,7 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +522,7 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_nat_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.23.0',
+        providerVersion: '6.24.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -365,6 +555,27 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
   // association_id - computed: true, optional: false, required: false
   public get associationId() {
     return this.getStringAttribute('association_id');
+  }
+
+  // auto_provision_zones - computed: true, optional: false, required: false
+  public get autoProvisionZones() {
+    return this.getStringAttribute('auto_provision_zones');
+  }
+
+  // auto_scaling_ips - computed: true, optional: false, required: false
+  public get autoScalingIps() {
+    return this.getStringAttribute('auto_scaling_ips');
+  }
+
+  // availability_mode - computed: true, optional: false, required: false
+  public get availabilityMode() {
+    return this.getStringAttribute('availability_mode');
+  }
+
+  // availability_zone_address - computed: true, optional: false, required: false
+  private _availabilityZoneAddress = new DataAwsNatGatewayAvailabilityZoneAddressList(this, "availability_zone_address", true);
+  public get availabilityZoneAddress() {
+    return this._availabilityZoneAddress;
   }
 
   // connectivity_type - computed: true, optional: false, required: false
@@ -417,6 +628,17 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // regional_nat_gateway_address - computed: true, optional: false, required: false
+  private _regionalNatGatewayAddress = new DataAwsNatGatewayRegionalNatGatewayAddressList(this, "regional_nat_gateway_address", true);
+  public get regionalNatGatewayAddress() {
+    return this._regionalNatGatewayAddress;
+  }
+
+  // route_table_id - computed: true, optional: false, required: false
+  public get routeTableId() {
+    return this.getStringAttribute('route_table_id');
   }
 
   // secondary_allocation_ids - computed: true, optional: false, required: false

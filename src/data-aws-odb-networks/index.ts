@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_networks
+// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/odb_networks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsOdbNetworksConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_networks#region DataAwsOdbNetworks#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/odb_networks#region DataAwsOdbNetworks#region}
   */
   readonly region?: string;
 }
@@ -121,7 +121,7 @@ export class DataAwsOdbNetworksOdbNetworksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_networks aws_odb_networks}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/odb_networks aws_odb_networks}
 */
 export class DataAwsOdbNetworks extends cdktf.TerraformDataSource {
 
@@ -137,7 +137,7 @@ export class DataAwsOdbNetworks extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsOdbNetworks resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbNetworks to import
-  * @param importFromId The id of the existing DataAwsOdbNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_networks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/odb_networks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbNetworks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -149,7 +149,7 @@ export class DataAwsOdbNetworks extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_networks aws_odb_networks} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/odb_networks aws_odb_networks} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -160,7 +160,7 @@ export class DataAwsOdbNetworks extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_odb_networks',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.23.0',
+        providerVersion: '6.24.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

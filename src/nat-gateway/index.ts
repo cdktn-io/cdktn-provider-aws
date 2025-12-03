@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,373 @@ import * as cdktf from 'cdktf';
 
 export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}
   */
   readonly allocationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}
+  */
+  readonly availabilityMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}
   */
   readonly connectivityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#id NatGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#id NatGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}
   */
   readonly privateIp?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#region NatGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#region NatGateway#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}
   */
   readonly secondaryAllocationIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}
   */
   readonly secondaryPrivateIpAddressCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}
   */
   readonly secondaryPrivateIpAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}
   */
-  readonly subnetId: string;
+  readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags NatGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags NatGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}
+  */
+  readonly vpcId?: string;
+  /**
+  * availability_zone_address block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone_address NatGateway#availability_zone_address}
+  */
+  readonly availabilityZoneAddress?: NatGatewayAvailabilityZoneAddress[] | cdktf.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
   */
   readonly timeouts?: NatGatewayTimeouts;
 }
+export interface NatGatewayRegionalNatGatewayAddress {
+}
+
+export function natGatewayRegionalNatGatewayAddressToTerraform(struct?: NatGatewayRegionalNatGatewayAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function natGatewayRegionalNatGatewayAddressToHclTerraform(struct?: NatGatewayRegionalNatGatewayAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class NatGatewayRegionalNatGatewayAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NatGatewayRegionalNatGatewayAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NatGatewayRegionalNatGatewayAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allocation_id - computed: true, optional: false, required: false
+  public get allocationId() {
+    return this.getStringAttribute('allocation_id');
+  }
+
+  // association_id - computed: true, optional: false, required: false
+  public get associationId() {
+    return this.getStringAttribute('association_id');
+  }
+
+  // availability_zone - computed: true, optional: false, required: false
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+
+  // network_interface_id - computed: true, optional: false, required: false
+  public get networkInterfaceId() {
+    return this.getStringAttribute('network_interface_id');
+  }
+
+  // public_ip - computed: true, optional: false, required: false
+  public get publicIp() {
+    return this.getStringAttribute('public_ip');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+}
+
+export class NatGatewayRegionalNatGatewayAddressList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NatGatewayRegionalNatGatewayAddressOutputReference {
+    return new NatGatewayRegionalNatGatewayAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NatGatewayAvailabilityZoneAddress {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}
+  */
+  readonly allocationIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}
+  */
+  readonly availabilityZone?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}
+  */
+  readonly availabilityZoneId?: string;
+}
+
+export function natGatewayAvailabilityZoneAddressToTerraform(struct?: NatGatewayAvailabilityZoneAddress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allocation_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allocationIds),
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    availability_zone_id: cdktf.stringToTerraform(struct!.availabilityZoneId),
+  }
+}
+
+
+export function natGatewayAvailabilityZoneAddressToHclTerraform(struct?: NatGatewayAvailabilityZoneAddress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocation_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allocationIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    availability_zone: {
+      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    availability_zone_id: {
+      value: cdktf.stringToHclTerraform(struct!.availabilityZoneId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NatGatewayAvailabilityZoneAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NatGatewayAvailabilityZoneAddress | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocationIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocationIds = this._allocationIds;
+    }
+    if (this._availabilityZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZone = this._availabilityZone;
+    }
+    if (this._availabilityZoneId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZoneId = this._availabilityZoneId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NatGatewayAvailabilityZoneAddress | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allocationIds = undefined;
+      this._availabilityZone = undefined;
+      this._availabilityZoneId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allocationIds = value.allocationIds;
+      this._availabilityZone = value.availabilityZone;
+      this._availabilityZoneId = value.availabilityZoneId;
+    }
+  }
+
+  // allocation_ids - computed: false, optional: true, required: false
+  private _allocationIds?: string[]; 
+  public get allocationIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('allocation_ids'));
+  }
+  public set allocationIds(value: string[]) {
+    this._allocationIds = value;
+  }
+  public resetAllocationIds() {
+    this._allocationIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationIdsInput() {
+    return this._allocationIds;
+  }
+
+  // availability_zone - computed: false, optional: true, required: false
+  private _availabilityZone?: string; 
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+  public set availabilityZone(value: string) {
+    this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone;
+  }
+
+  // availability_zone_id - computed: true, optional: true, required: false
+  private _availabilityZoneId?: string; 
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+  public set availabilityZoneId(value: string) {
+    this._availabilityZoneId = value;
+  }
+  public resetAvailabilityZoneId() {
+    this._availabilityZoneId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneIdInput() {
+    return this._availabilityZoneId;
+  }
+}
+
+export class NatGatewayAvailabilityZoneAddressList extends cdktf.ComplexList {
+  public internalValue? : NatGatewayAvailabilityZoneAddress[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NatGatewayAvailabilityZoneAddressOutputReference {
+    return new NatGatewayAvailabilityZoneAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NatGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#create NatGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#create NatGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#delete NatGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#delete NatGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#update NatGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#update NatGateway#update}
   */
   readonly update?: string;
 }
@@ -230,7 +531,7 @@ export class NatGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway aws_nat_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway aws_nat_gateway}
 */
 export class NatGateway extends cdktf.TerraformResource {
 
@@ -246,7 +547,7 @@ export class NatGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NatGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NatGateway to import
-  * @param importFromId The id of the existing NatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NatGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NatGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -258,18 +559,18 @@ export class NatGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway aws_nat_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway aws_nat_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options NatGatewayConfig
+  * @param options NatGatewayConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: NatGatewayConfig) {
+  public constructor(scope: Construct, id: string, config: NatGatewayConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_nat_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.23.0',
+        providerVersion: '6.24.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -281,6 +582,7 @@ export class NatGateway extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allocationId = config.allocationId;
+    this._availabilityMode = config.availabilityMode;
     this._connectivityType = config.connectivityType;
     this._id = config.id;
     this._privateIp = config.privateIp;
@@ -291,6 +593,8 @@ export class NatGateway extends cdktf.TerraformResource {
     this._subnetId = config.subnetId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._vpcId = config.vpcId;
+    this._availabilityZoneAddress.internalValue = config.availabilityZoneAddress;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -317,6 +621,32 @@ export class NatGateway extends cdktf.TerraformResource {
   // association_id - computed: true, optional: false, required: false
   public get associationId() {
     return this.getStringAttribute('association_id');
+  }
+
+  // auto_provision_zones - computed: true, optional: false, required: false
+  public get autoProvisionZones() {
+    return this.getStringAttribute('auto_provision_zones');
+  }
+
+  // auto_scaling_ips - computed: true, optional: false, required: false
+  public get autoScalingIps() {
+    return this.getStringAttribute('auto_scaling_ips');
+  }
+
+  // availability_mode - computed: true, optional: true, required: false
+  private _availabilityMode?: string; 
+  public get availabilityMode() {
+    return this.getStringAttribute('availability_mode');
+  }
+  public set availabilityMode(value: string) {
+    this._availabilityMode = value;
+  }
+  public resetAvailabilityMode() {
+    this._availabilityMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityModeInput() {
+    return this._availabilityMode;
   }
 
   // connectivity_type - computed: false, optional: true, required: false
@@ -393,6 +723,22 @@ export class NatGateway extends cdktf.TerraformResource {
     return this._region;
   }
 
+  // regional_nat_gateway_address - computed: true, optional: false, required: false
+  private _regionalNatGatewayAddress = new NatGatewayRegionalNatGatewayAddressList(this, "regional_nat_gateway_address", true);
+  public get regionalNatGatewayAddress() {
+    return this._regionalNatGatewayAddress;
+  }
+
+  // regional_nat_gateway_auto_mode - computed: true, optional: false, required: false
+  public get regionalNatGatewayAutoMode() {
+    return this.getStringAttribute('regional_nat_gateway_auto_mode');
+  }
+
+  // route_table_id - computed: true, optional: false, required: false
+  public get routeTableId() {
+    return this.getStringAttribute('route_table_id');
+  }
+
   // secondary_allocation_ids - computed: true, optional: true, required: false
   private _secondaryAllocationIds?: string[]; 
   public get secondaryAllocationIds() {
@@ -441,13 +787,16 @@ export class NatGateway extends cdktf.TerraformResource {
     return this._secondaryPrivateIpAddresses;
   }
 
-  // subnet_id - computed: false, optional: false, required: true
+  // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
@@ -486,6 +835,38 @@ export class NatGateway extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // vpc_id - computed: true, optional: true, required: false
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
+
+  // availability_zone_address - computed: false, optional: true, required: false
+  private _availabilityZoneAddress = new NatGatewayAvailabilityZoneAddressList(this, "availability_zone_address", true);
+  public get availabilityZoneAddress() {
+    return this._availabilityZoneAddress;
+  }
+  public putAvailabilityZoneAddress(value: NatGatewayAvailabilityZoneAddress[] | cdktf.IResolvable) {
+    this._availabilityZoneAddress.internalValue = value;
+  }
+  public resetAvailabilityZoneAddress() {
+    this._availabilityZoneAddress.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneAddressInput() {
+    return this._availabilityZoneAddress.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new NatGatewayTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -509,6 +890,7 @@ export class NatGateway extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocation_id: cdktf.stringToTerraform(this._allocationId),
+      availability_mode: cdktf.stringToTerraform(this._availabilityMode),
       connectivity_type: cdktf.stringToTerraform(this._connectivityType),
       id: cdktf.stringToTerraform(this._id),
       private_ip: cdktf.stringToTerraform(this._privateIp),
@@ -519,6 +901,8 @@ export class NatGateway extends cdktf.TerraformResource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      availability_zone_address: cdktf.listMapper(natGatewayAvailabilityZoneAddressToTerraform, true)(this._availabilityZoneAddress.internalValue),
       timeouts: natGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -527,6 +911,12 @@ export class NatGateway extends cdktf.TerraformResource {
     const attrs = {
       allocation_id: {
         value: cdktf.stringToHclTerraform(this._allocationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      availability_mode: {
+        value: cdktf.stringToHclTerraform(this._availabilityMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -590,6 +980,18 @@ export class NatGateway extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      availability_zone_address: {
+        value: cdktf.listMapperHcl(natGatewayAvailabilityZoneAddressToHclTerraform, true)(this._availabilityZoneAddress.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "NatGatewayAvailabilityZoneAddressList",
       },
       timeouts: {
         value: natGatewayTimeoutsToHclTerraform(this._timeouts.internalValue),
