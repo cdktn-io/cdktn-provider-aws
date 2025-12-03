@@ -4,7 +4,7 @@
 
 ### NatGateway <a name="NatGateway" id="@cdktf/provider-aws.natGateway.NatGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway aws_nat_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway aws_nat_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer"></a>
 
@@ -21,8 +21,9 @@ natGateway.NatGateway(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  subnet_id: str,
   allocation_id: str = None,
+  availability_mode: str = None,
+  availability_zone_address: IResolvable | typing.List[NatGatewayAvailabilityZoneAddress] = None,
   connectivity_type: str = None,
   id: str = None,
   private_ip: str = None,
@@ -30,9 +31,11 @@ natGateway.NatGateway(
   secondary_allocation_ids: typing.List[str] = None,
   secondary_private_ip_address_count: typing.Union[int, float] = None,
   secondary_private_ip_addresses: typing.List[str] = None,
+  subnet_id: str = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
-  timeouts: NatGatewayTimeouts = None
+  timeouts: NatGatewayTimeouts = None,
+  vpc_id: str = None
 )
 ```
 
@@ -47,18 +50,21 @@ natGateway.NatGateway(
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.allocationId">allocation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.connectivityType">connectivity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#id NatGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.allocationId">allocation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.availabilityMode">availability_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.availabilityZoneAddress">availability_zone_address</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]</code> | availability_zone_address block. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.connectivityType">connectivity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#id NatGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.secondaryAllocationIds">secondary_allocation_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.secondaryPrivateIpAddressCount">secondary_private_ip_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.secondaryPrivateIpAddresses">secondary_private_ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.secondaryAllocationIds">secondary_allocation_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.secondaryPrivateIpAddressCount">secondary_private_ip_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.secondaryPrivateIpAddresses">secondary_private_ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}. |
 
 ---
 
@@ -122,19 +128,29 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.subnetId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
-
----
-
 ##### `allocation_id`<sup>Optional</sup> <a name="allocation_id" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.allocationId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
+
+---
+
+##### `availability_mode`<sup>Optional</sup> <a name="availability_mode" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.availabilityMode"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}.
+
+---
+
+##### `availability_zone_address`<sup>Optional</sup> <a name="availability_zone_address" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.availabilityZoneAddress"></a>
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]
+
+availability_zone_address block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone_address NatGateway#availability_zone_address}
 
 ---
 
@@ -142,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
 
 ---
 
@@ -150,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#id NatGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#id NatGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
 
 ---
 
@@ -171,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#region NatGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#region NatGateway#region}
 
 ---
 
@@ -179,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}.
 
 ---
 
@@ -187,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}.
 
 ---
 
@@ -195,7 +211,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}.
+
+---
+
+##### `subnet_id`<sup>Optional</sup> <a name="subnet_id" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.subnetId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
 
 ---
 
@@ -203,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags NatGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags NatGateway#tags}.
 
 ---
 
@@ -211,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
 
 ---
 
@@ -221,7 +245,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
+
+---
+
+##### `vpc_id`<sup>Optional</sup> <a name="vpc_id" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.vpcId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}.
 
 ---
 
@@ -252,8 +284,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress">put_availability_zone_address</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetAllocationId">reset_allocation_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityMode">reset_availability_mode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityZoneAddress">reset_availability_zone_address</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetConnectivityType">reset_connectivity_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetPrivateIp">reset_private_ip</a></code> | *No description.* |
@@ -261,9 +296,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryAllocationIds">reset_secondary_allocation_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddressCount">reset_secondary_private_ip_address_count</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddresses">reset_secondary_private_ip_addresses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSubnetId">reset_subnet_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetVpcId">reset_vpc_id</a></code> | *No description.* |
 
 ---
 
@@ -592,6 +629,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_availability_zone_address` <a name="put_availability_zone_address" id="@cdktf/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress"></a>
+
+```python
+def put_availability_zone_address(
+  value: IResolvable | typing.List[NatGatewayAvailabilityZoneAddress]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-aws.natGateway.NatGateway.putTimeouts"></a>
 
 ```python
@@ -606,7 +657,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#create NatGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#create NatGateway#create}.
 
 ---
 
@@ -614,7 +665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#delete NatGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#delete NatGateway#delete}.
 
 ---
 
@@ -622,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#update NatGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#update NatGateway#update}.
 
 ---
 
@@ -630,6 +681,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_allocation_id() -> None
+```
+
+##### `reset_availability_mode` <a name="reset_availability_mode" id="@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityMode"></a>
+
+```python
+def reset_availability_mode() -> None
+```
+
+##### `reset_availability_zone_address` <a name="reset_availability_zone_address" id="@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityZoneAddress"></a>
+
+```python
+def reset_availability_zone_address() -> None
 ```
 
 ##### `reset_connectivity_type` <a name="reset_connectivity_type" id="@cdktf/provider-aws.natGateway.NatGateway.resetConnectivityType"></a>
@@ -674,6 +737,12 @@ def reset_secondary_private_ip_address_count() -> None
 def reset_secondary_private_ip_addresses() -> None
 ```
 
+##### `reset_subnet_id` <a name="reset_subnet_id" id="@cdktf/provider-aws.natGateway.NatGateway.resetSubnetId"></a>
+
+```python
+def reset_subnet_id() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.natGateway.NatGateway.resetTags"></a>
 
 ```python
@@ -690,6 +759,12 @@ def reset_tags_all() -> None
 
 ```python
 def reset_timeouts() -> None
+```
+
+##### `reset_vpc_id` <a name="reset_vpc_id" id="@cdktf/provider-aws.natGateway.NatGateway.resetVpcId"></a>
+
+```python
+def reset_vpc_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -806,7 +881,7 @@ The construct id used in the generated config for the NatGateway to import.
 
 The id of the existing NatGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,10 +912,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.associationId">association_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.autoProvisionZones">auto_provision_zones</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.autoScalingIps">auto_scaling_ips</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddress">availability_zone_address</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList">NatGatewayAvailabilityZoneAddressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.networkInterfaceId">network_interface_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.publicIp">public_ip</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAddress">regional_nat_gateway_address</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList">NatGatewayRegionalNatGatewayAddressList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAutoMode">regional_nat_gateway_auto_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.routeTableId">route_table_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference">NatGatewayTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.allocationIdInput">allocation_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityModeInput">availability_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddressInput">availability_zone_address_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.connectivityTypeInput">connectivity_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.privateIpInput">private_ip_input</a></code> | <code>str</code> | *No description.* |
@@ -852,7 +935,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.allocationId">allocation_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityMode">availability_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.connectivityType">connectivity_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.privateIp">private_ip</a></code> | <code>str</code> | *No description.* |
@@ -863,6 +948,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.subnetId">subnet_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.vpcId">vpc_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1018,6 +1104,36 @@ association_id: str
 
 ---
 
+##### `auto_provision_zones`<sup>Required</sup> <a name="auto_provision_zones" id="@cdktf/provider-aws.natGateway.NatGateway.property.autoProvisionZones"></a>
+
+```python
+auto_provision_zones: str
+```
+
+- *Type:* str
+
+---
+
+##### `auto_scaling_ips`<sup>Required</sup> <a name="auto_scaling_ips" id="@cdktf/provider-aws.natGateway.NatGateway.property.autoScalingIps"></a>
+
+```python
+auto_scaling_ips: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_zone_address`<sup>Required</sup> <a name="availability_zone_address" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddress"></a>
+
+```python
+availability_zone_address: NatGatewayAvailabilityZoneAddressList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList">NatGatewayAvailabilityZoneAddressList</a>
+
+---
+
 ##### `network_interface_id`<sup>Required</sup> <a name="network_interface_id" id="@cdktf/provider-aws.natGateway.NatGateway.property.networkInterfaceId"></a>
 
 ```python
@@ -1032,6 +1148,36 @@ network_interface_id: str
 
 ```python
 public_ip: str
+```
+
+- *Type:* str
+
+---
+
+##### `regional_nat_gateway_address`<sup>Required</sup> <a name="regional_nat_gateway_address" id="@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAddress"></a>
+
+```python
+regional_nat_gateway_address: NatGatewayRegionalNatGatewayAddressList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList">NatGatewayRegionalNatGatewayAddressList</a>
+
+---
+
+##### `regional_nat_gateway_auto_mode`<sup>Required</sup> <a name="regional_nat_gateway_auto_mode" id="@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAutoMode"></a>
+
+```python
+regional_nat_gateway_auto_mode: str
+```
+
+- *Type:* str
+
+---
+
+##### `route_table_id`<sup>Required</sup> <a name="route_table_id" id="@cdktf/provider-aws.natGateway.NatGateway.property.routeTableId"></a>
+
+```python
+route_table_id: str
 ```
 
 - *Type:* str
@@ -1055,6 +1201,26 @@ allocation_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `availability_mode_input`<sup>Optional</sup> <a name="availability_mode_input" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityModeInput"></a>
+
+```python
+availability_mode_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_zone_address_input`<sup>Optional</sup> <a name="availability_zone_address_input" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddressInput"></a>
+
+```python
+availability_zone_address_input: IResolvable | typing.List[NatGatewayAvailabilityZoneAddress]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]
 
 ---
 
@@ -1168,10 +1334,30 @@ timeouts_input: IResolvable | NatGatewayTimeouts
 
 ---
 
+##### `vpc_id_input`<sup>Optional</sup> <a name="vpc_id_input" id="@cdktf/provider-aws.natGateway.NatGateway.property.vpcIdInput"></a>
+
+```python
+vpc_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `allocation_id`<sup>Required</sup> <a name="allocation_id" id="@cdktf/provider-aws.natGateway.NatGateway.property.allocationId"></a>
 
 ```python
 allocation_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_mode`<sup>Required</sup> <a name="availability_mode" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityMode"></a>
+
+```python
+availability_mode: str
 ```
 
 - *Type:* str
@@ -1278,6 +1464,16 @@ tags_all: typing.Mapping[str]
 
 ---
 
+##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktf/provider-aws.natGateway.NatGateway.property.vpcId"></a>
+
+```python
+vpc_id: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1298,6 +1494,66 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### NatGatewayAvailabilityZoneAddress <a name="NatGatewayAvailabilityZoneAddress" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import nat_gateway
+
+natGateway.NatGatewayAvailabilityZoneAddress(
+  allocation_ids: typing.List[str] = None,
+  availability_zone: str = None,
+  availability_zone_id: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.allocationIds">allocation_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}. |
+
+---
+
+##### `allocation_ids`<sup>Optional</sup> <a name="allocation_ids" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.allocationIds"></a>
+
+```python
+allocation_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}.
+
+---
+
+##### `availability_zone`<sup>Optional</sup> <a name="availability_zone" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZone"></a>
+
+```python
+availability_zone: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}.
+
+---
+
+##### `availability_zone_id`<sup>Optional</sup> <a name="availability_zone_id" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZoneId"></a>
+
+```python
+availability_zone_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}.
+
+---
+
 ### NatGatewayConfig <a name="NatGatewayConfig" id="@cdktf/provider-aws.natGateway.NatGatewayConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.Initializer"></a>
@@ -1313,8 +1569,9 @@ natGateway.NatGatewayConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  subnet_id: str,
   allocation_id: str = None,
+  availability_mode: str = None,
+  availability_zone_address: IResolvable | typing.List[NatGatewayAvailabilityZoneAddress] = None,
   connectivity_type: str = None,
   id: str = None,
   private_ip: str = None,
@@ -1322,9 +1579,11 @@ natGateway.NatGatewayConfig(
   secondary_allocation_ids: typing.List[str] = None,
   secondary_private_ip_address_count: typing.Union[int, float] = None,
   secondary_private_ip_addresses: typing.List[str] = None,
+  subnet_id: str = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
-  timeouts: NatGatewayTimeouts = None
+  timeouts: NatGatewayTimeouts = None,
+  vpc_id: str = None
 )
 ```
 
@@ -1339,18 +1598,21 @@ natGateway.NatGatewayConfig(
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId">allocation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connectivityType">connectivity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#id NatGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId">allocation_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityMode">availability_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityZoneAddress">availability_zone_address</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]</code> | availability_zone_address block. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connectivityType">connectivity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#id NatGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryAllocationIds">secondary_allocation_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddressCount">secondary_private_ip_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddresses">secondary_private_ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryAllocationIds">secondary_allocation_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddressCount">secondary_private_ip_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddresses">secondary_private_ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}. |
 
 ---
 
@@ -1424,18 +1686,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId"></a>
-
-```python
-subnet_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
-
----
-
 ##### `allocation_id`<sup>Optional</sup> <a name="allocation_id" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId"></a>
 
 ```python
@@ -1444,7 +1694,33 @@ allocation_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
+
+---
+
+##### `availability_mode`<sup>Optional</sup> <a name="availability_mode" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityMode"></a>
+
+```python
+availability_mode: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}.
+
+---
+
+##### `availability_zone_address`<sup>Optional</sup> <a name="availability_zone_address" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityZoneAddress"></a>
+
+```python
+availability_zone_address: IResolvable | typing.List[NatGatewayAvailabilityZoneAddress]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]
+
+availability_zone_address block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#availability_zone_address NatGateway#availability_zone_address}
 
 ---
 
@@ -1456,7 +1732,7 @@ connectivity_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
 
 ---
 
@@ -1468,7 +1744,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#id NatGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#id NatGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1483,7 +1759,7 @@ private_ip: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
 
 ---
 
@@ -1497,7 +1773,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#region NatGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#region NatGateway#region}
 
 ---
 
@@ -1509,7 +1785,7 @@ secondary_allocation_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}.
 
 ---
 
@@ -1521,7 +1797,7 @@ secondary_private_ip_address_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}.
 
 ---
 
@@ -1533,7 +1809,19 @@ secondary_private_ip_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}.
+
+---
+
+##### `subnet_id`<sup>Optional</sup> <a name="subnet_id" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId"></a>
+
+```python
+subnet_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
 
 ---
 
@@ -1545,7 +1833,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags NatGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags NatGateway#tags}.
 
 ---
 
@@ -1557,7 +1845,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
 
 ---
 
@@ -1571,9 +1859,32 @@ timeouts: NatGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
 
 ---
+
+##### `vpc_id`<sup>Optional</sup> <a name="vpc_id" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.vpcId"></a>
+
+```python
+vpc_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}.
+
+---
+
+### NatGatewayRegionalNatGatewayAddress <a name="NatGatewayRegionalNatGatewayAddress" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import nat_gateway
+
+natGateway.NatGatewayRegionalNatGatewayAddress()
+```
+
 
 ### NatGatewayTimeouts <a name="NatGatewayTimeouts" id="@cdktf/provider-aws.natGateway.NatGatewayTimeouts"></a>
 
@@ -1593,9 +1904,9 @@ natGateway.NatGatewayTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#create NatGateway#create}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#delete NatGateway#delete}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#update NatGateway#update}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#create NatGateway#create}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#delete NatGateway#delete}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#update NatGateway#update}. |
 
 ---
 
@@ -1607,7 +1918,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#create NatGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#create NatGateway#create}.
 
 ---
 
@@ -1619,7 +1930,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#delete NatGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#delete NatGateway#delete}.
 
 ---
 
@@ -1631,11 +1942,1092 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway#update NatGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway#update NatGateway#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NatGatewayAvailabilityZoneAddressList <a name="NatGatewayAvailabilityZoneAddressList" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import nat_gateway
+
+natGateway.NatGatewayAvailabilityZoneAddressList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> NatGatewayAvailabilityZoneAddressOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[NatGatewayAvailabilityZoneAddress]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>]
+
+---
+
+
+### NatGatewayAvailabilityZoneAddressOutputReference <a name="NatGatewayAvailabilityZoneAddressOutputReference" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import nat_gateway
+
+natGateway.NatGatewayAvailabilityZoneAddressOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAllocationIds">reset_allocation_ids</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZone">reset_availability_zone</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZoneId">reset_availability_zone_id</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_allocation_ids` <a name="reset_allocation_ids" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAllocationIds"></a>
+
+```python
+def reset_allocation_ids() -> None
+```
+
+##### `reset_availability_zone` <a name="reset_availability_zone" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZone"></a>
+
+```python
+def reset_availability_zone() -> None
+```
+
+##### `reset_availability_zone_id` <a name="reset_availability_zone_id" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZoneId"></a>
+
+```python
+def reset_availability_zone_id() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIdsInput">allocation_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneIdInput">availability_zone_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneInput">availability_zone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIds">allocation_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allocation_ids_input`<sup>Optional</sup> <a name="allocation_ids_input" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIdsInput"></a>
+
+```python
+allocation_ids_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `availability_zone_id_input`<sup>Optional</sup> <a name="availability_zone_id_input" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneIdInput"></a>
+
+```python
+availability_zone_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_zone_input`<sup>Optional</sup> <a name="availability_zone_input" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneInput"></a>
+
+```python
+availability_zone_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `allocation_ids`<sup>Required</sup> <a name="allocation_ids" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIds"></a>
+
+```python
+allocation_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `availability_zone`<sup>Required</sup> <a name="availability_zone" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZone"></a>
+
+```python
+availability_zone: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_zone_id`<sup>Required</sup> <a name="availability_zone_id" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneId"></a>
+
+```python
+availability_zone_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | NatGatewayAvailabilityZoneAddress
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>
+
+---
+
+
+### NatGatewayRegionalNatGatewayAddressList <a name="NatGatewayRegionalNatGatewayAddressList" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import nat_gateway
+
+natGateway.NatGatewayRegionalNatGatewayAddressList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> NatGatewayRegionalNatGatewayAddressOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### NatGatewayRegionalNatGatewayAddressOutputReference <a name="NatGatewayRegionalNatGatewayAddressOutputReference" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import nat_gateway
+
+natGateway.NatGatewayRegionalNatGatewayAddressOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.allocationId">allocation_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.associationId">association_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.networkInterfaceId">network_interface_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.publicIp">public_ip</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress">NatGatewayRegionalNatGatewayAddress</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allocation_id`<sup>Required</sup> <a name="allocation_id" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.allocationId"></a>
+
+```python
+allocation_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `association_id`<sup>Required</sup> <a name="association_id" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.associationId"></a>
+
+```python
+association_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_zone`<sup>Required</sup> <a name="availability_zone" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZone"></a>
+
+```python
+availability_zone: str
+```
+
+- *Type:* str
+
+---
+
+##### `availability_zone_id`<sup>Required</sup> <a name="availability_zone_id" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZoneId"></a>
+
+```python
+availability_zone_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `network_interface_id`<sup>Required</sup> <a name="network_interface_id" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.networkInterfaceId"></a>
+
+```python
+network_interface_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `public_ip`<sup>Required</sup> <a name="public_ip" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.publicIp"></a>
+
+```python
+public_ip: str
+```
+
+- *Type:* str
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.status"></a>
+
+```python
+status: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NatGatewayRegionalNatGatewayAddress
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress">NatGatewayRegionalNatGatewayAddress</a>
+
+---
+
 
 ### NatGatewayTimeoutsOutputReference <a name="NatGatewayTimeoutsOutputReference" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference"></a>
 

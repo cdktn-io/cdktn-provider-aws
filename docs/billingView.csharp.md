@@ -4,7 +4,7 @@
 
 ### BillingView <a name="BillingView" id="@cdktf/provider-aws.billingView.BillingView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view aws_billing_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view aws_billing_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.billingView.BillingView.Initializer"></a>
 
@@ -528,7 +528,7 @@ The construct id used in the generated config for the BillingView to import.
 
 The id of the existing BillingView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,11 +1000,11 @@ new BillingViewConfig {
 | <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#name BillingView#name}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#name BillingView#name}. |
 | <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.dataFilterExpression">DataFilterExpression</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpression">BillingViewDataFilterExpression</a>[]</code> | data_filter_expression block. |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#description BillingView#description}. |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.sourceViews">SourceViews</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#source_views BillingView#source_views}. |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#tags BillingView#tags}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#description BillingView#description}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.sourceViews">SourceViews</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#source_views BillingView#source_views}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#tags BillingView#tags}. |
 | <code><a href="#@cdktf/provider-aws.billingView.BillingViewConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.billingView.BillingViewTimeouts">BillingViewTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1087,7 +1087,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#name BillingView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#name BillingView#name}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public IResolvable|BillingViewDataFilterExpression[] DataFilterExpression { get;
 
 data_filter_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
 
 ---
 
@@ -1113,7 +1113,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#description BillingView#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#description BillingView#description}.
 
 ---
 
@@ -1125,7 +1125,7 @@ public string[] SourceViews { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#source_views BillingView#source_views}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#source_views BillingView#source_views}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#tags BillingView#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#tags BillingView#tags}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public BillingViewTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#timeouts BillingView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#timeouts BillingView#timeouts}
 
 ---
 
@@ -1189,7 +1189,7 @@ public IResolvable|BillingViewDataFilterExpressionDimensions[] Dimensions { get;
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#dimensions BillingView#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#dimensions BillingView#dimensions}
 
 ---
 
@@ -1203,7 +1203,7 @@ public IResolvable|BillingViewDataFilterExpressionTags[] Tags { get; set; }
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#tags BillingView#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#tags BillingView#tags}
 
 ---
 
@@ -1217,7 +1217,7 @@ public IResolvable|BillingViewDataFilterExpressionTimeRange[] TimeRange { get; s
 
 time_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#time_range BillingView#time_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#time_range BillingView#time_range}
 
 ---
 
@@ -1238,8 +1238,8 @@ new BillingViewDataFilterExpressionDimensions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionDimensions.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#key BillingView#key}. |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionDimensions.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#values BillingView#values}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionDimensions.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#key BillingView#key}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionDimensions.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#values BillingView#values}. |
 
 ---
 
@@ -1251,7 +1251,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#key BillingView#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#key BillingView#key}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#values BillingView#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#values BillingView#values}.
 
 ---
 
@@ -1284,8 +1284,8 @@ new BillingViewDataFilterExpressionTags {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTags.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#key BillingView#key}. |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTags.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#values BillingView#values}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTags.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#key BillingView#key}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTags.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#values BillingView#values}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#key BillingView#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#key BillingView#key}.
 
 ---
 
@@ -1309,7 +1309,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#values BillingView#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#values BillingView#values}.
 
 ---
 
@@ -1330,8 +1330,8 @@ new BillingViewDataFilterExpressionTimeRange {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange.property.beginDateInclusive">BeginDateInclusive</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#begin_date_inclusive BillingView#begin_date_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange.property.endDateInclusive">EndDateInclusive</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#end_date_inclusive BillingView#end_date_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange.property.beginDateInclusive">BeginDateInclusive</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#begin_date_inclusive BillingView#begin_date_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange.property.endDateInclusive">EndDateInclusive</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#end_date_inclusive BillingView#end_date_inclusive}. |
 
 ---
 
@@ -1343,7 +1343,7 @@ public string BeginDateInclusive { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#begin_date_inclusive BillingView#begin_date_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#begin_date_inclusive BillingView#begin_date_inclusive}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public string EndDateInclusive { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#end_date_inclusive BillingView#end_date_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#end_date_inclusive BillingView#end_date_inclusive}.
 
 ---
 
@@ -1393,7 +1393,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#create BillingView#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#create BillingView#create}
 
 ---
 
@@ -1407,7 +1407,7 @@ public string Delete { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#delete BillingView#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#delete BillingView#delete}
 
 ---
 
@@ -1421,7 +1421,7 @@ public string Update { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/billing_view#update BillingView#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#update BillingView#update}
 
 ---
 
