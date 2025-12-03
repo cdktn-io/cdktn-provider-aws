@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression
+// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface LakeformationLfTagExpressionConfig extends cdktf.TerraformMetaA
   /**
   * The ID of the Data Catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
   */
   readonly catalogId?: string;
   /**
   * A description of the LF-Tag Expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
   */
   readonly description?: string;
   /**
   * The name of the LF-Tag Expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
   */
   readonly region?: string;
   /**
   * expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
   */
   readonly expression?: LakeformationLfTagExpressionExpression[] | cdktf.IResolvable;
 }
 export interface LakeformationLfTagExpressionExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#tag_key LakeformationLfTagExpression#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#tag_key LakeformationLfTagExpression#tag_key}
   */
   readonly tagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#tag_values LakeformationLfTagExpression#tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#tag_values LakeformationLfTagExpression#tag_values}
   */
   readonly tagValues: string[];
 }
@@ -188,7 +188,7 @@ export class LakeformationLfTagExpressionExpressionList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression aws_lakeformation_lf_tag_expression}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression aws_lakeformation_lf_tag_expression}
 */
 export class LakeformationLfTagExpression extends cdktf.TerraformResource {
 
@@ -204,7 +204,7 @@ export class LakeformationLfTagExpression extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LakeformationLfTagExpression resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationLfTagExpression to import
-  * @param importFromId The id of the existing LakeformationLfTagExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakeformationLfTagExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationLfTagExpression to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -216,7 +216,7 @@ export class LakeformationLfTagExpression extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lakeformation_lf_tag_expression aws_lakeformation_lf_tag_expression} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lakeformation_lf_tag_expression aws_lakeformation_lf_tag_expression} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class LakeformationLfTagExpression extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lakeformation_lf_tag_expression',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.23.0',
+        providerVersion: '6.24.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
