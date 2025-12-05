@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +13,98 @@ import * as cdktf from 'cdktf';
 
 export interface TransferConnectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}
   */
   readonly accessRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#id TransferConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#id TransferConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}
   */
   readonly loggingRole?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#region TransferConnector#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#region TransferConnector#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#security_policy_name TransferConnector#security_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#security_policy_name TransferConnector#security_policy_name}
   */
   readonly securityPolicyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#tags TransferConnector#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#tags TransferConnector#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#url TransferConnector#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#url TransferConnector#url}
   */
-  readonly url: string;
+  readonly url?: string;
   /**
   * as2_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
   */
   readonly as2Config?: TransferConnectorAs2Config;
   /**
+  * egress_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#egress_config TransferConnector#egress_config}
+  */
+  readonly egressConfig?: TransferConnectorEgressConfig;
+  /**
   * sftp_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#sftp_config TransferConnector#sftp_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#sftp_config TransferConnector#sftp_config}
   */
   readonly sftpConfig?: TransferConnectorSftpConfig;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#timeouts TransferConnector#timeouts}
+  */
+  readonly timeouts?: TransferConnectorTimeouts;
 }
 export interface TransferConnectorAs2Config {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#compression TransferConnector#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#compression TransferConnector#compression}
   */
   readonly compression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}
   */
   readonly encryptionAlgorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}
   */
   readonly localProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}
   */
   readonly mdnResponse: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}
   */
   readonly mdnSigningAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}
   */
   readonly messageSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}
   */
   readonly partnerProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}
   */
   readonly signingAlgorithm: string;
 }
@@ -359,13 +371,213 @@ export class TransferConnectorAs2ConfigOutputReference extends cdktf.ComplexObje
     return this._signingAlgorithm;
   }
 }
+export interface TransferConnectorEgressConfigVpcLattice {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#port_number TransferConnector#port_number}
+  */
+  readonly portNumber?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#resource_configuration_arn TransferConnector#resource_configuration_arn}
+  */
+  readonly resourceConfigurationArn: string;
+}
+
+export function transferConnectorEgressConfigVpcLatticeToTerraform(struct?: TransferConnectorEgressConfigVpcLatticeOutputReference | TransferConnectorEgressConfigVpcLattice): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port_number: cdktf.numberToTerraform(struct!.portNumber),
+    resource_configuration_arn: cdktf.stringToTerraform(struct!.resourceConfigurationArn),
+  }
+}
+
+
+export function transferConnectorEgressConfigVpcLatticeToHclTerraform(struct?: TransferConnectorEgressConfigVpcLatticeOutputReference | TransferConnectorEgressConfigVpcLattice): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port_number: {
+      value: cdktf.numberToHclTerraform(struct!.portNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    resource_configuration_arn: {
+      value: cdktf.stringToHclTerraform(struct!.resourceConfigurationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TransferConnectorEgressConfigVpcLatticeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferConnectorEgressConfigVpcLattice | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._portNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.portNumber = this._portNumber;
+    }
+    if (this._resourceConfigurationArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceConfigurationArn = this._resourceConfigurationArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferConnectorEgressConfigVpcLattice | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._portNumber = undefined;
+      this._resourceConfigurationArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._portNumber = value.portNumber;
+      this._resourceConfigurationArn = value.resourceConfigurationArn;
+    }
+  }
+
+  // port_number - computed: false, optional: true, required: false
+  private _portNumber?: number; 
+  public get portNumber() {
+    return this.getNumberAttribute('port_number');
+  }
+  public set portNumber(value: number) {
+    this._portNumber = value;
+  }
+  public resetPortNumber() {
+    this._portNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portNumberInput() {
+    return this._portNumber;
+  }
+
+  // resource_configuration_arn - computed: false, optional: false, required: true
+  private _resourceConfigurationArn?: string; 
+  public get resourceConfigurationArn() {
+    return this.getStringAttribute('resource_configuration_arn');
+  }
+  public set resourceConfigurationArn(value: string) {
+    this._resourceConfigurationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceConfigurationArnInput() {
+    return this._resourceConfigurationArn;
+  }
+}
+export interface TransferConnectorEgressConfig {
+  /**
+  * vpc_lattice block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#vpc_lattice TransferConnector#vpc_lattice}
+  */
+  readonly vpcLattice?: TransferConnectorEgressConfigVpcLattice;
+}
+
+export function transferConnectorEgressConfigToTerraform(struct?: TransferConnectorEgressConfigOutputReference | TransferConnectorEgressConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    vpc_lattice: transferConnectorEgressConfigVpcLatticeToTerraform(struct!.vpcLattice),
+  }
+}
+
+
+export function transferConnectorEgressConfigToHclTerraform(struct?: TransferConnectorEgressConfigOutputReference | TransferConnectorEgressConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vpc_lattice: {
+      value: transferConnectorEgressConfigVpcLatticeToHclTerraform(struct!.vpcLattice),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TransferConnectorEgressConfigVpcLatticeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TransferConnectorEgressConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferConnectorEgressConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._vpcLattice?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcLattice = this._vpcLattice?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferConnectorEgressConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._vpcLattice.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._vpcLattice.internalValue = value.vpcLattice;
+    }
+  }
+
+  // vpc_lattice - computed: false, optional: true, required: false
+  private _vpcLattice = new TransferConnectorEgressConfigVpcLatticeOutputReference(this, "vpc_lattice");
+  public get vpcLattice() {
+    return this._vpcLattice;
+  }
+  public putVpcLattice(value: TransferConnectorEgressConfigVpcLattice) {
+    this._vpcLattice.internalValue = value;
+  }
+  public resetVpcLattice() {
+    this._vpcLattice.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcLatticeInput() {
+    return this._vpcLattice.internalValue;
+  }
+}
 export interface TransferConnectorSftpConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#trusted_host_keys TransferConnector#trusted_host_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#trusted_host_keys TransferConnector#trusted_host_keys}
   */
   readonly trustedHostKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#user_secret_id TransferConnector#user_secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#user_secret_id TransferConnector#user_secret_id}
   */
   readonly userSecretId?: string;
 }
@@ -476,9 +688,169 @@ export class TransferConnectorSftpConfigOutputReference extends cdktf.ComplexObj
     return this._userSecretId;
   }
 }
+export interface TransferConnectorTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#create TransferConnector#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#delete TransferConnector#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#update TransferConnector#update}
+  */
+  readonly update?: string;
+}
+
+export function transferConnectorTimeoutsToTerraform(struct?: TransferConnectorTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function transferConnectorTimeoutsToHclTerraform(struct?: TransferConnectorTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TransferConnectorTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): TransferConnectorTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferConnectorTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector aws_transfer_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector aws_transfer_connector}
 */
 export class TransferConnector extends cdktf.TerraformResource {
 
@@ -494,7 +866,7 @@ export class TransferConnector extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TransferConnector resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferConnector to import
-  * @param importFromId The id of the existing TransferConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransferConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -506,7 +878,7 @@ export class TransferConnector extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector aws_transfer_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector aws_transfer_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -517,7 +889,7 @@ export class TransferConnector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -537,7 +909,9 @@ export class TransferConnector extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._url = config.url;
     this._as2Config.internalValue = config.as2Config;
+    this._egressConfig.internalValue = config.egressConfig;
     this._sftpConfig.internalValue = config.sftpConfig;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -663,13 +1037,16 @@ export class TransferConnector extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // url - computed: false, optional: false, required: true
+  // url - computed: false, optional: true, required: false
   private _url?: string; 
   public get url() {
     return this.getStringAttribute('url');
   }
   public set url(value: string) {
     this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
@@ -692,6 +1069,22 @@ export class TransferConnector extends cdktf.TerraformResource {
     return this._as2Config.internalValue;
   }
 
+  // egress_config - computed: false, optional: true, required: false
+  private _egressConfig = new TransferConnectorEgressConfigOutputReference(this, "egress_config");
+  public get egressConfig() {
+    return this._egressConfig;
+  }
+  public putEgressConfig(value: TransferConnectorEgressConfig) {
+    this._egressConfig.internalValue = value;
+  }
+  public resetEgressConfig() {
+    this._egressConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressConfigInput() {
+    return this._egressConfig.internalValue;
+  }
+
   // sftp_config - computed: false, optional: true, required: false
   private _sftpConfig = new TransferConnectorSftpConfigOutputReference(this, "sftp_config");
   public get sftpConfig() {
@@ -706,6 +1099,22 @@ export class TransferConnector extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get sftpConfigInput() {
     return this._sftpConfig.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new TransferConnectorTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: TransferConnectorTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -723,7 +1132,9 @@ export class TransferConnector extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),
       as2_config: transferConnectorAs2ConfigToTerraform(this._as2Config.internalValue),
+      egress_config: transferConnectorEgressConfigToTerraform(this._egressConfig.internalValue),
       sftp_config: transferConnectorSftpConfigToTerraform(this._sftpConfig.internalValue),
+      timeouts: transferConnectorTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -783,11 +1194,23 @@ export class TransferConnector extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "TransferConnectorAs2ConfigList",
       },
+      egress_config: {
+        value: transferConnectorEgressConfigToHclTerraform(this._egressConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TransferConnectorEgressConfigList",
+      },
       sftp_config: {
         value: transferConnectorSftpConfigToHclTerraform(this._sftpConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TransferConnectorSftpConfigList",
+      },
+      timeouts: {
+        value: transferConnectorTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "TransferConnectorTimeouts",
       },
     };
 

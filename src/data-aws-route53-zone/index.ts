@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#id DataAwsRoute53Zone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#enable_accelerated_recovery DataAwsRoute53Zone#enable_accelerated_recovery}
+  */
+  readonly enableAcceleratedRecovery?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#id DataAwsRoute53Zone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#name DataAwsRoute53Zone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#name DataAwsRoute53Zone#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#private_zone DataAwsRoute53Zone#private_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#private_zone DataAwsRoute53Zone#private_zone}
   */
   readonly privateZone?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#tags DataAwsRoute53Zone#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#tags DataAwsRoute53Zone#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#vpc_id DataAwsRoute53Zone#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#vpc_id DataAwsRoute53Zone#vpc_id}
   */
   readonly vpcId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#zone_id DataAwsRoute53Zone#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#zone_id DataAwsRoute53Zone#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone aws_route53_zone}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone aws_route53_zone}
 */
 export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
 
@@ -58,7 +62,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRoute53Zone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53Zone to import
-  * @param importFromId The id of the existing DataAwsRoute53Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRoute53Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53Zone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +74,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone aws_route53_zone} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone aws_route53_zone} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +85,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -92,6 +96,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._enableAcceleratedRecovery = config.enableAcceleratedRecovery;
     this._id = config.id;
     this._name = config.name;
     this._privateZone = config.privateZone;
@@ -117,6 +122,22 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // comment - computed: true, optional: false, required: false
   public get comment() {
     return this.getStringAttribute('comment');
+  }
+
+  // enable_accelerated_recovery - computed: false, optional: true, required: false
+  private _enableAcceleratedRecovery?: boolean | cdktf.IResolvable; 
+  public get enableAcceleratedRecovery() {
+    return this.getBooleanAttribute('enable_accelerated_recovery');
+  }
+  public set enableAcceleratedRecovery(value: boolean | cdktf.IResolvable) {
+    this._enableAcceleratedRecovery = value;
+  }
+  public resetEnableAcceleratedRecovery() {
+    this._enableAcceleratedRecovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAcceleratedRecoveryInput() {
+    return this._enableAcceleratedRecovery;
   }
 
   // id - computed: true, optional: true, required: false
@@ -246,6 +267,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_accelerated_recovery: cdktf.booleanToTerraform(this._enableAcceleratedRecovery),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       private_zone: cdktf.booleanToTerraform(this._privateZone),
@@ -257,6 +279,12 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      enable_accelerated_recovery: {
+        value: cdktf.booleanToHclTerraform(this._enableAcceleratedRecovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,

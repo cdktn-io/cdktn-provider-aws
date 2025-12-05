@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface KmsCiphertextConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext#context KmsCiphertext#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#context KmsCiphertext#context}
   */
   readonly context?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext#id KmsCiphertext#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#id KmsCiphertext#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext#key_id KmsCiphertext#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#key_id KmsCiphertext#key_id}
   */
   readonly keyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext#plaintext KmsCiphertext#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#plaintext KmsCiphertext#plaintext}
   */
-  readonly plaintext: string;
+  readonly plaintext?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#plaintext_wo KmsCiphertext#plaintext_wo}
+  */
+  readonly plaintextWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#plaintext_wo_version KmsCiphertext#plaintext_wo_version}
+  */
+  readonly plaintextWoVersion?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext#region KmsCiphertext#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#region KmsCiphertext#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext aws_kms_ciphertext}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext aws_kms_ciphertext}
 */
 export class KmsCiphertext extends cdktf.TerraformResource {
 
@@ -56,7 +64,7 @@ export class KmsCiphertext extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KmsCiphertext resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsCiphertext to import
-  * @param importFromId The id of the existing KmsCiphertext that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsCiphertext that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsCiphertext to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +76,7 @@ export class KmsCiphertext extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext aws_kms_ciphertext} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext aws_kms_ciphertext} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +87,7 @@ export class KmsCiphertext extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kms_ciphertext',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -94,6 +102,8 @@ export class KmsCiphertext extends cdktf.TerraformResource {
     this._id = config.id;
     this._keyId = config.keyId;
     this._plaintext = config.plaintext;
+    this._plaintextWo = config.plaintextWo;
+    this._plaintextWoVersion = config.plaintextWoVersion;
     this._region = config.region;
   }
 
@@ -151,7 +161,7 @@ export class KmsCiphertext extends cdktf.TerraformResource {
     return this._keyId;
   }
 
-  // plaintext - computed: false, optional: false, required: true
+  // plaintext - computed: false, optional: true, required: false
   private _plaintext?: string; 
   public get plaintext() {
     return this.getStringAttribute('plaintext');
@@ -159,9 +169,44 @@ export class KmsCiphertext extends cdktf.TerraformResource {
   public set plaintext(value: string) {
     this._plaintext = value;
   }
+  public resetPlaintext() {
+    this._plaintext = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get plaintextInput() {
     return this._plaintext;
+  }
+
+  // plaintext_wo - computed: false, optional: true, required: false
+  private _plaintextWo?: string; 
+  public get plaintextWo() {
+    return this.getStringAttribute('plaintext_wo');
+  }
+  public set plaintextWo(value: string) {
+    this._plaintextWo = value;
+  }
+  public resetPlaintextWo() {
+    this._plaintextWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get plaintextWoInput() {
+    return this._plaintextWo;
+  }
+
+  // plaintext_wo_version - computed: false, optional: true, required: false
+  private _plaintextWoVersion?: string; 
+  public get plaintextWoVersion() {
+    return this.getStringAttribute('plaintext_wo_version');
+  }
+  public set plaintextWoVersion(value: string) {
+    this._plaintextWoVersion = value;
+  }
+  public resetPlaintextWoVersion() {
+    this._plaintextWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get plaintextWoVersionInput() {
+    return this._plaintextWoVersion;
   }
 
   // region - computed: true, optional: true, required: false
@@ -190,6 +235,8 @@ export class KmsCiphertext extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
       plaintext: cdktf.stringToTerraform(this._plaintext),
+      plaintext_wo: cdktf.stringToTerraform(this._plaintextWo),
+      plaintext_wo_version: cdktf.stringToTerraform(this._plaintextWoVersion),
       region: cdktf.stringToTerraform(this._region),
     };
   }
@@ -216,6 +263,18 @@ export class KmsCiphertext extends cdktf.TerraformResource {
       },
       plaintext: {
         value: cdktf.stringToHclTerraform(this._plaintext),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plaintext_wo: {
+        value: cdktf.stringToHclTerraform(this._plaintextWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plaintext_wo_version: {
+        value: cdktf.stringToHclTerraform(this._plaintextWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
