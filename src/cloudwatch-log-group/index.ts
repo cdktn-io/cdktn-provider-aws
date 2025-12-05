@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,58 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#deletion_protection_enabled CloudwatchLogGroup#deletion_protection_enabled}
+  */
+  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#log_group_class CloudwatchLogGroup#log_group_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#log_group_class CloudwatchLogGroup#log_group_class}
   */
   readonly logGroupClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}
   */
   readonly namePrefix?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#region CloudwatchLogGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#region CloudwatchLogGroup#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}
   */
   readonly retentionInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}
   */
   readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}
 */
 export class CloudwatchLogGroup extends cdktf.TerraformResource {
 
@@ -76,7 +80,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchLogGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogGroup to import
-  * @param importFromId The id of the existing CloudwatchLogGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchLogGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -88,7 +92,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +103,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -110,6 +114,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionProtectionEnabled = config.deletionProtectionEnabled;
     this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._logGroupClass = config.logGroupClass;
@@ -129,6 +134,22 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // deletion_protection_enabled - computed: true, optional: true, required: false
+  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  public get deletionProtectionEnabled() {
+    return this.getBooleanAttribute('deletion_protection_enabled');
+  }
+  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+    this._deletionProtectionEnabled = value;
+  }
+  public resetDeletionProtectionEnabled() {
+    this._deletionProtectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionEnabledInput() {
+    return this._deletionProtectionEnabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -297,6 +318,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
       id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       log_group_class: cdktf.stringToTerraform(this._logGroupClass),
@@ -312,6 +334,12 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_protection_enabled: {
+        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,

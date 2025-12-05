@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
   */
   readonly listenerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
   */
   readonly priority?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
   */
   readonly region?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
   */
   readonly action?: DataAwsLbListenerRuleAction[] | cdktf.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
   */
   readonly condition?: DataAwsLbListenerRuleCondition[] | cdktf.IResolvable;
   /**
   * transform block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
   */
   readonly transform?: DataAwsLbListenerRuleTransform[] | cdktf.IResolvable;
 }
@@ -585,13 +585,13 @@ export interface DataAwsLbListenerRuleActionForward {
   /**
   * stickiness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
   */
   readonly stickiness?: DataAwsLbListenerRuleActionForwardStickiness[] | cdktf.IResolvable;
   /**
   * target_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
   */
   readonly targetGroup?: DataAwsLbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable;
 }
@@ -834,7 +834,7 @@ export interface DataAwsLbListenerRuleActionJwtValidation {
   /**
   * additional_claim block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#additional_claim DataAwsLbListenerRule#additional_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#additional_claim DataAwsLbListenerRule#additional_claim}
   */
   readonly additionalClaim?: DataAwsLbListenerRuleActionJwtValidationAdditionalClaim[] | cdktf.IResolvable;
 }
@@ -1073,37 +1073,37 @@ export interface DataAwsLbListenerRuleAction {
   /**
   * authenticate_cognito block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
   */
   readonly authenticateCognito?: DataAwsLbListenerRuleActionAuthenticateCognito[] | cdktf.IResolvable;
   /**
   * authenticate_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
   */
   readonly authenticateOidc?: DataAwsLbListenerRuleActionAuthenticateOidc[] | cdktf.IResolvable;
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
   */
   readonly fixedResponse?: DataAwsLbListenerRuleActionFixedResponse[] | cdktf.IResolvable;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
   */
   readonly forward?: DataAwsLbListenerRuleActionForward[] | cdktf.IResolvable;
   /**
   * jwt_validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#jwt_validation DataAwsLbListenerRule#jwt_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#jwt_validation DataAwsLbListenerRule#jwt_validation}
   */
   readonly jwtValidation?: DataAwsLbListenerRuleActionJwtValidation[] | cdktf.IResolvable;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
   */
   readonly redirect?: DataAwsLbListenerRuleActionRedirect[] | cdktf.IResolvable;
 }
@@ -1831,7 +1831,7 @@ export interface DataAwsLbListenerRuleConditionQueryString {
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
   */
   readonly values?: DataAwsLbListenerRuleConditionQueryStringValues[] | cdktf.IResolvable;
 }
@@ -2035,37 +2035,37 @@ export interface DataAwsLbListenerRuleCondition {
   /**
   * host_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
   */
   readonly hostHeader?: DataAwsLbListenerRuleConditionHostHeader[] | cdktf.IResolvable;
   /**
   * http_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
   */
   readonly httpHeader?: DataAwsLbListenerRuleConditionHttpHeader[] | cdktf.IResolvable;
   /**
   * http_request_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
   */
   readonly httpRequestMethod?: DataAwsLbListenerRuleConditionHttpRequestMethod[] | cdktf.IResolvable;
   /**
   * path_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
   */
   readonly pathPattern?: DataAwsLbListenerRuleConditionPathPattern[] | cdktf.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
   */
   readonly queryString?: DataAwsLbListenerRuleConditionQueryString[] | cdktf.IResolvable;
   /**
   * source_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
   */
   readonly sourceIp?: DataAwsLbListenerRuleConditionSourceIp[] | cdktf.IResolvable;
 }
@@ -2419,7 +2419,7 @@ export interface DataAwsLbListenerRuleTransformHostHeaderRewriteConfig {
   /**
   * rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
   */
   readonly rewrite?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewrite[] | cdktf.IResolvable;
 }
@@ -2628,7 +2628,7 @@ export interface DataAwsLbListenerRuleTransformUrlRewriteConfig {
   /**
   * rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
   */
   readonly rewrite?: DataAwsLbListenerRuleTransformUrlRewriteConfigRewrite[] | cdktf.IResolvable;
 }
@@ -2746,13 +2746,13 @@ export interface DataAwsLbListenerRuleTransform {
   /**
   * host_header_rewrite_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
   */
   readonly hostHeaderRewriteConfig?: DataAwsLbListenerRuleTransformHostHeaderRewriteConfig[] | cdktf.IResolvable;
   /**
   * url_rewrite_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
   */
   readonly urlRewriteConfig?: DataAwsLbListenerRuleTransformUrlRewriteConfig[] | cdktf.IResolvable;
 }
@@ -2902,7 +2902,7 @@ export class DataAwsLbListenerRuleTransformList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
 */
 export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
 
@@ -2918,7 +2918,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLbListenerRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLbListenerRule to import
-  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLbListenerRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2930,7 +2930,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2941,7 +2941,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb_listener_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

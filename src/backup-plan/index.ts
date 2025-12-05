@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface BackupPlanConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#id BackupPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#id BackupPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#name BackupPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#name BackupPlan#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#region BackupPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#region BackupPlan#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#tags BackupPlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#tags BackupPlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_backup_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
   */
   readonly advancedBackupSetting?: BackupPlanAdvancedBackupSetting[] | cdktf.IResolvable;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#rule BackupPlan#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#rule BackupPlan#rule}
   */
   readonly rule: BackupPlanRule[] | cdktf.IResolvable;
+  /**
+  * scan_setting block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_setting BackupPlan#scan_setting}
+  */
+  readonly scanSetting?: BackupPlanScanSetting[] | cdktf.IResolvable;
 }
 export interface BackupPlanAdvancedBackupSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}
   */
   readonly backupOptions: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}
   */
   readonly resourceType: string;
 }
@@ -195,15 +201,15 @@ export class BackupPlanAdvancedBackupSettingList extends cdktf.ComplexList {
 }
 export interface BackupPlanRuleCopyActionLifecycle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
   */
   readonly coldStorageAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
   */
   readonly deleteAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
   */
   readonly optInToArchiveForSupportedResources?: boolean | cdktf.IResolvable;
 }
@@ -345,13 +351,13 @@ export class BackupPlanRuleCopyActionLifecycleOutputReference extends cdktf.Comp
 }
 export interface BackupPlanRuleCopyAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}
   */
   readonly destinationVaultArn: string;
   /**
   * lifecycle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
   */
   readonly lifecycle?: BackupPlanRuleCopyActionLifecycle;
 }
@@ -493,15 +499,15 @@ export class BackupPlanRuleCopyActionList extends cdktf.ComplexList {
 }
 export interface BackupPlanRuleLifecycle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
   */
   readonly coldStorageAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
   */
   readonly deleteAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
   */
   readonly optInToArchiveForSupportedResources?: boolean | cdktf.IResolvable;
 }
@@ -641,55 +647,204 @@ export class BackupPlanRuleLifecycleOutputReference extends cdktf.ComplexObject 
     return this._optInToArchiveForSupportedResources;
   }
 }
+export interface BackupPlanRuleScanAction {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}
+  */
+  readonly malwareScanner: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_mode BackupPlan#scan_mode}
+  */
+  readonly scanMode: string;
+}
+
+export function backupPlanRuleScanActionToTerraform(struct?: BackupPlanRuleScanAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    malware_scanner: cdktf.stringToTerraform(struct!.malwareScanner),
+    scan_mode: cdktf.stringToTerraform(struct!.scanMode),
+  }
+}
+
+
+export function backupPlanRuleScanActionToHclTerraform(struct?: BackupPlanRuleScanAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    malware_scanner: {
+      value: cdktf.stringToHclTerraform(struct!.malwareScanner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scan_mode: {
+      value: cdktf.stringToHclTerraform(struct!.scanMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BackupPlanRuleScanActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupPlanRuleScanAction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._malwareScanner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.malwareScanner = this._malwareScanner;
+    }
+    if (this._scanMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scanMode = this._scanMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupPlanRuleScanAction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._malwareScanner = undefined;
+      this._scanMode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._malwareScanner = value.malwareScanner;
+      this._scanMode = value.scanMode;
+    }
+  }
+
+  // malware_scanner - computed: false, optional: false, required: true
+  private _malwareScanner?: string; 
+  public get malwareScanner() {
+    return this.getStringAttribute('malware_scanner');
+  }
+  public set malwareScanner(value: string) {
+    this._malwareScanner = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get malwareScannerInput() {
+    return this._malwareScanner;
+  }
+
+  // scan_mode - computed: false, optional: false, required: true
+  private _scanMode?: string; 
+  public get scanMode() {
+    return this.getStringAttribute('scan_mode');
+  }
+  public set scanMode(value: string) {
+    this._scanMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanModeInput() {
+    return this._scanMode;
+  }
+}
+
+export class BackupPlanRuleScanActionList extends cdktf.ComplexList {
+  public internalValue? : BackupPlanRuleScanAction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupPlanRuleScanActionOutputReference {
+    return new BackupPlanRuleScanActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BackupPlanRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}
   */
   readonly completionWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}
   */
   readonly enableContinuousBackup?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}
   */
   readonly recoveryPointTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}
   */
   readonly ruleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#schedule BackupPlan#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#schedule BackupPlan#schedule}
   */
   readonly schedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}
   */
   readonly scheduleExpressionTimezone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#start_window BackupPlan#start_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#start_window BackupPlan#start_window}
   */
   readonly startWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#target_logically_air_gapped_backup_vault_arn BackupPlan#target_logically_air_gapped_backup_vault_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#target_logically_air_gapped_backup_vault_arn BackupPlan#target_logically_air_gapped_backup_vault_arn}
   */
   readonly targetLogicallyAirGappedBackupVaultArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}
   */
   readonly targetVaultName: string;
   /**
   * copy_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
   */
   readonly copyAction?: BackupPlanRuleCopyAction[] | cdktf.IResolvable;
   /**
   * lifecycle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
   */
   readonly lifecycle?: BackupPlanRuleLifecycle;
+  /**
+  * scan_action block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_action BackupPlan#scan_action}
+  */
+  readonly scanAction?: BackupPlanRuleScanAction[] | cdktf.IResolvable;
 }
 
 export function backupPlanRuleToTerraform(struct?: BackupPlanRule | cdktf.IResolvable): any {
@@ -709,6 +864,7 @@ export function backupPlanRuleToTerraform(struct?: BackupPlanRule | cdktf.IResol
     target_vault_name: cdktf.stringToTerraform(struct!.targetVaultName),
     copy_action: cdktf.listMapper(backupPlanRuleCopyActionToTerraform, true)(struct!.copyAction),
     lifecycle: backupPlanRuleLifecycleToTerraform(struct!.lifecycle),
+    scan_action: cdktf.listMapper(backupPlanRuleScanActionToTerraform, true)(struct!.scanAction),
   }
 }
 
@@ -785,6 +941,12 @@ export function backupPlanRuleToHclTerraform(struct?: BackupPlanRule | cdktf.IRe
       type: "list",
       storageClassType: "BackupPlanRuleLifecycleList",
     },
+    scan_action: {
+      value: cdktf.listMapperHcl(backupPlanRuleScanActionToHclTerraform, true)(struct!.scanAction),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BackupPlanRuleScanActionList",
+    },
   };
 
   // remove undefined attributes
@@ -855,6 +1017,10 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.lifecycle = this._lifecycle?.internalValue;
     }
+    if (this._scanAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scanAction = this._scanAction?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -873,6 +1039,7 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
       this._targetVaultName = undefined;
       this._copyAction.internalValue = undefined;
       this._lifecycle.internalValue = undefined;
+      this._scanAction.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -892,6 +1059,7 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
       this._targetVaultName = value.targetVaultName;
       this._copyAction.internalValue = value.copyAction;
       this._lifecycle.internalValue = value.lifecycle;
+      this._scanAction.internalValue = value.scanAction;
     }
   }
 
@@ -1064,6 +1232,22 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
   public get lifecycleInput() {
     return this._lifecycle.internalValue;
   }
+
+  // scan_action - computed: false, optional: true, required: false
+  private _scanAction = new BackupPlanRuleScanActionList(this, "scan_action", true);
+  public get scanAction() {
+    return this._scanAction;
+  }
+  public putScanAction(value: BackupPlanRuleScanAction[] | cdktf.IResolvable) {
+    this._scanAction.internalValue = value;
+  }
+  public resetScanAction() {
+    this._scanAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanActionInput() {
+    return this._scanAction.internalValue;
+  }
 }
 
 export class BackupPlanRuleList extends cdktf.ComplexList {
@@ -1085,9 +1269,182 @@ export class BackupPlanRuleList extends cdktf.ComplexList {
     return new BackupPlanRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BackupPlanScanSetting {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}
+  */
+  readonly malwareScanner: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#resource_types BackupPlan#resource_types}
+  */
+  readonly resourceTypes: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scanner_role_arn BackupPlan#scanner_role_arn}
+  */
+  readonly scannerRoleArn: string;
+}
+
+export function backupPlanScanSettingToTerraform(struct?: BackupPlanScanSetting | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    malware_scanner: cdktf.stringToTerraform(struct!.malwareScanner),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+    scanner_role_arn: cdktf.stringToTerraform(struct!.scannerRoleArn),
+  }
+}
+
+
+export function backupPlanScanSettingToHclTerraform(struct?: BackupPlanScanSetting | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    malware_scanner: {
+      value: cdktf.stringToHclTerraform(struct!.malwareScanner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    scanner_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.scannerRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BackupPlanScanSettingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupPlanScanSetting | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._malwareScanner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.malwareScanner = this._malwareScanner;
+    }
+    if (this._resourceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceTypes = this._resourceTypes;
+    }
+    if (this._scannerRoleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scannerRoleArn = this._scannerRoleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupPlanScanSetting | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._malwareScanner = undefined;
+      this._resourceTypes = undefined;
+      this._scannerRoleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._malwareScanner = value.malwareScanner;
+      this._resourceTypes = value.resourceTypes;
+      this._scannerRoleArn = value.scannerRoleArn;
+    }
+  }
+
+  // malware_scanner - computed: false, optional: false, required: true
+  private _malwareScanner?: string; 
+  public get malwareScanner() {
+    return this.getStringAttribute('malware_scanner');
+  }
+  public set malwareScanner(value: string) {
+    this._malwareScanner = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get malwareScannerInput() {
+    return this._malwareScanner;
+  }
+
+  // resource_types - computed: false, optional: false, required: true
+  private _resourceTypes?: string[]; 
+  public get resourceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('resource_types'));
+  }
+  public set resourceTypes(value: string[]) {
+    this._resourceTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypesInput() {
+    return this._resourceTypes;
+  }
+
+  // scanner_role_arn - computed: false, optional: false, required: true
+  private _scannerRoleArn?: string; 
+  public get scannerRoleArn() {
+    return this.getStringAttribute('scanner_role_arn');
+  }
+  public set scannerRoleArn(value: string) {
+    this._scannerRoleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scannerRoleArnInput() {
+    return this._scannerRoleArn;
+  }
+}
+
+export class BackupPlanScanSettingList extends cdktf.ComplexList {
+  public internalValue? : BackupPlanScanSetting[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupPlanScanSettingOutputReference {
+    return new BackupPlanScanSettingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan aws_backup_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan aws_backup_plan}
 */
 export class BackupPlan extends cdktf.TerraformResource {
 
@@ -1103,7 +1460,7 @@ export class BackupPlan extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BackupPlan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupPlan to import
-  * @param importFromId The id of the existing BackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1115,7 +1472,7 @@ export class BackupPlan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan aws_backup_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan aws_backup_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1126,7 +1483,7 @@ export class BackupPlan extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1144,6 +1501,7 @@ export class BackupPlan extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._advancedBackupSetting.internalValue = config.advancedBackupSetting;
     this._rule.internalValue = config.rule;
+    this._scanSetting.internalValue = config.scanSetting;
   }
 
   // ==========
@@ -1266,6 +1624,22 @@ export class BackupPlan extends cdktf.TerraformResource {
     return this._rule.internalValue;
   }
 
+  // scan_setting - computed: false, optional: true, required: false
+  private _scanSetting = new BackupPlanScanSettingList(this, "scan_setting", true);
+  public get scanSetting() {
+    return this._scanSetting;
+  }
+  public putScanSetting(value: BackupPlanScanSetting[] | cdktf.IResolvable) {
+    this._scanSetting.internalValue = value;
+  }
+  public resetScanSetting() {
+    this._scanSetting.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanSettingInput() {
+    return this._scanSetting.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1279,6 +1653,7 @@ export class BackupPlan extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       advanced_backup_setting: cdktf.listMapper(backupPlanAdvancedBackupSettingToTerraform, true)(this._advancedBackupSetting.internalValue),
       rule: cdktf.listMapper(backupPlanRuleToTerraform, true)(this._rule.internalValue),
+      scan_setting: cdktf.listMapper(backupPlanScanSettingToTerraform, true)(this._scanSetting.internalValue),
     };
   }
 
@@ -1325,6 +1700,12 @@ export class BackupPlan extends cdktf.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "BackupPlanRuleList",
+      },
+      scan_setting: {
+        value: cdktf.listMapperHcl(backupPlanScanSettingToHclTerraform, true)(this._scanSetting.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "BackupPlanScanSettingList",
       },
     };
 

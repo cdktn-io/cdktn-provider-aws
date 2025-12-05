@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface TransferWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}
   */
   readonly accessEndpoint?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#region TransferWebApp#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#region TransferWebApp#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}
   */
   readonly webAppEndpointPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}
   */
   readonly webAppUnits?: TransferWebAppWebAppUnits[] | cdktf.IResolvable;
   /**
   * identity_provider_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
   */
   readonly identityProviderDetails?: TransferWebAppIdentityProviderDetails[] | cdktf.IResolvable;
 }
 export interface TransferWebAppWebAppUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}
   */
   readonly provisioned?: number;
 }
@@ -159,11 +159,11 @@ export class TransferWebAppWebAppUnitsList extends cdktf.ComplexList {
 }
 export interface TransferWebAppIdentityProviderDetailsIdentityCenterConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}
   */
   readonly instanceArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#role TransferWebApp#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#role TransferWebApp#role}
   */
   readonly role?: string;
 }
@@ -315,7 +315,7 @@ export interface TransferWebAppIdentityProviderDetails {
   /**
   * identity_center_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
   */
   readonly identityCenterConfig?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktf.IResolvable;
 }
@@ -431,7 +431,7 @@ export class TransferWebAppIdentityProviderDetailsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app aws_transfer_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app aws_transfer_web_app}
 */
 export class TransferWebApp extends cdktf.TerraformResource {
 
@@ -447,7 +447,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TransferWebApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferWebApp to import
-  * @param importFromId The id of the existing TransferWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransferWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferWebApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -459,7 +459,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -470,7 +470,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_web_app',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

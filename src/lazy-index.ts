@@ -279,6 +279,7 @@ Object.defineProperty(exports, 'cloudwatchLogMetricFilter', { get: function () {
 Object.defineProperty(exports, 'cloudwatchLogResourcePolicy', { get: function () { return require('./cloudwatch-log-resource-policy'); } });
 Object.defineProperty(exports, 'cloudwatchLogStream', { get: function () { return require('./cloudwatch-log-stream'); } });
 Object.defineProperty(exports, 'cloudwatchLogSubscriptionFilter', { get: function () { return require('./cloudwatch-log-subscription-filter'); } });
+Object.defineProperty(exports, 'cloudwatchLogTransformer', { get: function () { return require('./cloudwatch-log-transformer'); } });
 Object.defineProperty(exports, 'cloudwatchMetricAlarm', { get: function () { return require('./cloudwatch-metric-alarm'); } });
 Object.defineProperty(exports, 'cloudwatchMetricStream', { get: function () { return require('./cloudwatch-metric-stream'); } });
 Object.defineProperty(exports, 'cloudwatchQueryDefinition', { get: function () { return require('./cloudwatch-query-definition'); } });
@@ -584,6 +585,7 @@ Object.defineProperty(exports, 'eipDomainName', { get: function () { return requ
 Object.defineProperty(exports, 'eksAccessEntry', { get: function () { return require('./eks-access-entry'); } });
 Object.defineProperty(exports, 'eksAccessPolicyAssociation', { get: function () { return require('./eks-access-policy-association'); } });
 Object.defineProperty(exports, 'eksAddon', { get: function () { return require('./eks-addon'); } });
+Object.defineProperty(exports, 'eksCapability', { get: function () { return require('./eks-capability'); } });
 Object.defineProperty(exports, 'eksCluster', { get: function () { return require('./eks-cluster'); } });
 Object.defineProperty(exports, 'eksFargateProfile', { get: function () { return require('./eks-fargate-profile'); } });
 Object.defineProperty(exports, 'eksIdentityProviderConfig', { get: function () { return require('./eks-identity-provider-config'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile
+// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface RolesanywhereProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#duration_seconds RolesanywhereProfile#duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#accept_role_session_name RolesanywhereProfile#accept_role_session_name}
+  */
+  readonly acceptRoleSessionName?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#duration_seconds RolesanywhereProfile#duration_seconds}
   */
   readonly durationSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#enabled RolesanywhereProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#enabled RolesanywhereProfile#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#id RolesanywhereProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#id RolesanywhereProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#managed_policy_arns RolesanywhereProfile#managed_policy_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#managed_policy_arns RolesanywhereProfile#managed_policy_arns}
   */
   readonly managedPolicyArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#name RolesanywhereProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#name RolesanywhereProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#require_instance_properties RolesanywhereProfile#require_instance_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#require_instance_properties RolesanywhereProfile#require_instance_properties}
   */
   readonly requireInstanceProperties?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#role_arns RolesanywhereProfile#role_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#role_arns RolesanywhereProfile#role_arns}
   */
   readonly roleArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#session_policy RolesanywhereProfile#session_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#session_policy RolesanywhereProfile#session_policy}
   */
   readonly sessionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#tags RolesanywhereProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#tags RolesanywhereProfile#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#tags_all RolesanywhereProfile#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#tags_all RolesanywhereProfile#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}
 */
 export class RolesanywhereProfile extends cdktf.TerraformResource {
 
@@ -74,7 +78,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RolesanywhereProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RolesanywhereProfile to import
-  * @param importFromId The id of the existing RolesanywhereProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RolesanywhereProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RolesanywhereProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +90,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +101,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rolesanywhere_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.24.0',
+        providerVersion: '6.25.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -108,6 +112,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._acceptRoleSessionName = config.acceptRoleSessionName;
     this._durationSeconds = config.durationSeconds;
     this._enabled = config.enabled;
     this._id = config.id;
@@ -123,6 +128,22 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // accept_role_session_name - computed: false, optional: true, required: false
+  private _acceptRoleSessionName?: boolean | cdktf.IResolvable; 
+  public get acceptRoleSessionName() {
+    return this.getBooleanAttribute('accept_role_session_name');
+  }
+  public set acceptRoleSessionName(value: boolean | cdktf.IResolvable) {
+    this._acceptRoleSessionName = value;
+  }
+  public resetAcceptRoleSessionName() {
+    this._acceptRoleSessionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptRoleSessionNameInput() {
+    return this._acceptRoleSessionName;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -292,6 +313,7 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      accept_role_session_name: cdktf.booleanToTerraform(this._acceptRoleSessionName),
       duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
@@ -307,6 +329,12 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      accept_role_session_name: {
+        value: cdktf.booleanToHclTerraform(this._acceptRoleSessionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       duration_seconds: {
         value: cdktf.numberToHclTerraform(this._durationSeconds),
         isBlock: false,
