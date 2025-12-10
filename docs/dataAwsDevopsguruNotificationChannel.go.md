@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.NewDataAwsDevopsguruNotificationChannel(scope Construct, id *string, config DataAwsDevopsguruNotificationChannelConfig) DataAwsDevopsguruNotificationChannel
 ```
@@ -323,7 +323,7 @@ func ResetSns()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannel_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannel_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannel_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 &dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannelConfig {
 	Connection: interface{},
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 &dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannelFilters {
 
@@ -858,7 +858,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotification
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelSns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 &dataawsdevopsgurunotificationchannel.DataAwsDevopsguruNotificationChannelSns {
 
@@ -873,7 +873,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.NewDataAwsDevopsguruNotificationChannelFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDevopsguruNotificationChannelFiltersList
 ```
@@ -1033,7 +1033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.NewDataAwsDevopsguruNotificationChannelFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDevopsguruNotificationChannelFiltersOutputReference
 ```
@@ -1322,7 +1322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelSnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.NewDataAwsDevopsguruNotificationChannelSnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDevopsguruNotificationChannelSnsList
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDevopsguruNotificationChannel.DataAwsDevopsguruNotificationChannelSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdevopsgurunotificationchannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel"
 
 dataawsdevopsgurunotificationchannel.NewDataAwsDevopsguruNotificationChannelSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDevopsguruNotificationChannelSnsOutputReference
 ```

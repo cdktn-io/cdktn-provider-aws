@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLake(scope Construct, id *string, config SecuritylakeDataLakeConfig) SecuritylakeDataLake
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ securitylakedatalake.SecuritylakeDataLake_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ securitylakedatalake.SecuritylakeDataLake_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 	Configuration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.securitylakeDataLake.SecuritylakeDataLakeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securitylakeDataLake.SecuritylakeDataLakeTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfiguration {
 	Region: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationEncryptionConfiguration {
 	KmsKeyId: *string,
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationLifecycleConfiguration {
 	Expiration: interface{},
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration {
 	Days: *f64,
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition {
 	Days: *f64,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationReplicationConfiguration {
 	Regions: *[]*string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeTimeouts {
 	Create: *string,
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationEncryptionConfigurationList
 ```
@@ -1565,7 +1565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference
 ```
@@ -1861,7 +1861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList
 ```
@@ -2021,7 +2021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference
 ```
@@ -2317,7 +2317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationList
 ```
@@ -2477,7 +2477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference
 ```
@@ -2828,7 +2828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList
 ```
@@ -2988,7 +2988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference
 ```
@@ -3313,7 +3313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationList
 ```
@@ -3473,7 +3473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationOutputReference
 ```
@@ -3888,7 +3888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationReplicationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationReplicationConfigurationList
 ```
@@ -4048,7 +4048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference
 ```
@@ -4373,7 +4373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecuritylakeDataLakeTimeoutsOutputReference
 ```

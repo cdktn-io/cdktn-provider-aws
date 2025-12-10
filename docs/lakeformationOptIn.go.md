@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptIn(scope Construct, id *string, config LakeformationOptInConfig) LakeformationOptIn
 ```
@@ -445,7 +445,7 @@ func ResetResourceData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptIn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.LakeformationOptIn_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptIn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.LakeformationOptIn_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ lakeformationoptin.LakeformationOptIn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptIn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.LakeformationOptIn_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ lakeformationoptin.LakeformationOptIn_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptIn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.LakeformationOptIn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInCondition {
 
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInConfig {
 	Connection: interface{},
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInPrincipal {
 	DataLakePrincipalIdentifier: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceData {
 	Catalog: interface{},
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataCatalog {
 	Id: *string,
@@ -1252,7 +1252,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataDatabase {
 	Name: *string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataDataCellsFilter {
 	DatabaseName: *string,
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataDataLocation {
 	ResourceArn: *string,
@@ -1418,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataLfTag {
 	Key: *string,
@@ -1478,7 +1478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataLfTagExpression {
 	Name: *string,
@@ -1524,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataLfTagPolicy {
 	ResourceType: *string,
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataTable {
 	DatabaseName: *string,
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataTableWithColumns {
 	DatabaseName: *string,
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsColumnWildcard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 &lakeformationoptin.LakeformationOptInResourceDataTableWithColumnsColumnWildcard {
 	ExcludedColumnNames: *[]*string,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInConditionList
 ```
@@ -1956,7 +1956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInConditionOutputReference
 ```
@@ -2234,7 +2234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInPrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInPrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInPrincipalList
 ```
@@ -2394,7 +2394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInPrincipalOutputReference
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataCatalogList
 ```
@@ -2843,7 +2843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataCatalogOutputReference
 ```
@@ -3139,7 +3139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataDatabaseList
 ```
@@ -3299,7 +3299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataDatabaseOutputReference
 ```
@@ -3617,7 +3617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataDataCellsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataDataCellsFilterList
 ```
@@ -3777,7 +3777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataCellsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataDataCellsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataDataCellsFilterOutputReference
 ```
@@ -4160,7 +4160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataDataLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataDataLocationList
 ```
@@ -4320,7 +4320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataDataLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataDataLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataDataLocationOutputReference
 ```
@@ -4638,7 +4638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataLfTagExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataLfTagExpressionList
 ```
@@ -4798,7 +4798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataLfTagExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataLfTagExpressionOutputReference
 ```
@@ -5116,7 +5116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataLfTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataLfTagList
 ```
@@ -5276,7 +5276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataLfTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataLfTagOutputReference
 ```
@@ -5616,7 +5616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataLfTagPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataLfTagPolicyList
 ```
@@ -5776,7 +5776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataLfTagPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataLfTagPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataLfTagPolicyOutputReference
 ```
@@ -6152,7 +6152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataList
 ```
@@ -6312,7 +6312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataOutputReference
 ```
@@ -6957,7 +6957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataTableList
 ```
@@ -7117,7 +7117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataTableOutputReference
 ```
@@ -7493,7 +7493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsColumnWildcardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataTableWithColumnsColumnWildcardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataTableWithColumnsColumnWildcardList
 ```
@@ -7653,7 +7653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataTableWithColumnsColumnWildcardOutputReference
 ```
@@ -7949,7 +7949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataTableWithColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationOptInResourceDataTableWithColumnsList
 ```
@@ -8109,7 +8109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationOptIn.LakeformationOptInResourceDataTableWithColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationoptin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin"
 
 lakeformationoptin.NewLakeformationOptInResourceDataTableWithColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationOptInResourceDataTableWithColumnsOutputReference
 ```

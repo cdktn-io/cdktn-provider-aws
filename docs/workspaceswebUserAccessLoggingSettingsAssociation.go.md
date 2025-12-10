@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserAccessLoggingSettingsAssociation.WorkspaceswebUserAccessLoggingSettingsAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebuseraccessloggingsettingsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettingsassociation"
 
 workspaceswebuseraccessloggingsettingsassociation.NewWorkspaceswebUserAccessLoggingSettingsAssociation(scope Construct, id *string, config WorkspaceswebUserAccessLoggingSettingsAssociationConfig) WorkspaceswebUserAccessLoggingSettingsAssociation
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.workspaceswebUserAccessLoggingSettingsAssociation.WorkspaceswebUserAccessLoggingSettingsAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebuseraccessloggingsettingsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettingsassociation"
 
 workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLoggingSettingsAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.workspaceswebUserAccessLoggingSettingsAssociation.WorkspaceswebUserAccessLoggingSettingsAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebuseraccessloggingsettingsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettingsassociation"
 
 workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLoggingSettingsAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLogging
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.workspaceswebUserAccessLoggingSettingsAssociation.WorkspaceswebUserAccessLoggingSettingsAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebuseraccessloggingsettingsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettingsassociation"
 
 workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLoggingSettingsAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLogging
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.workspaceswebUserAccessLoggingSettingsAssociation.WorkspaceswebUserAccessLoggingSettingsAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebuseraccessloggingsettingsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettingsassociation"
 
 workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLoggingSettingsAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebUserAccessLoggingSettingsAssociation.WorkspaceswebUserAccessLoggingSettingsAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebuseraccessloggingsettingsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettingsassociation"
 
 &workspaceswebuseraccessloggingsettingsassociation.WorkspaceswebUserAccessLoggingSettingsAssociationConfig {
 	Connection: interface{},

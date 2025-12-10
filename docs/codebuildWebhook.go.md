@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhook(scope Construct, id *string, config CodebuildWebhookConfig) CodebuildWebhook
 ```
@@ -473,7 +473,7 @@ func ResetScopeConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ codebuildwebhook.CodebuildWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ codebuildwebhook.CodebuildWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.CodebuildWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookConfig {
 	Connection: interface{},
@@ -1009,9 +1009,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
 	FilterGroup: interface{},
 	Id: *string,
 	ManualCreation: interface{},
-	PullRequestBuildPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.codebuildWebhook.CodebuildWebhookPullRequestBuildPolicy,
+	PullRequestBuildPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v21.codebuildWebhook.CodebuildWebhookPullRequestBuildPolicy,
 	Region: *string,
-	ScopeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.codebuildWebhook.CodebuildWebhookScopeConfiguration,
+	ScopeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.codebuildWebhook.CodebuildWebhookScopeConfiguration,
 }
 ```
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookFilterGroup {
 	Filter: interface{},
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookFilterGroupFilter {
 	Pattern: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookPullRequestBuildPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookPullRequestBuildPolicy {
 	RequiresCommentApproval: *string,
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 &codebuildwebhook.CodebuildWebhookScopeConfiguration {
 	Name: *string,
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildWebhookFilterGroupFilterList
 ```
@@ -1594,7 +1594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildWebhookFilterGroupFilterOutputReference
 ```
@@ -1934,7 +1934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildWebhookFilterGroupList
 ```
@@ -2094,7 +2094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookFilterGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildWebhookFilterGroupOutputReference
 ```
@@ -2403,7 +2403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookPullRequestBuildPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookPullRequestBuildPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildWebhookPullRequestBuildPolicyOutputReference
 ```
@@ -2703,7 +2703,7 @@ func InternalValue() CodebuildWebhookPullRequestBuildPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildwebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildwebhook"
 
 codebuildwebhook.NewCodebuildWebhookScopeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildWebhookScopeConfigurationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.NewDataAwsEc2CoipPools(scope Construct, id *string, config DataAwsEc2CoipPoolsConfig) DataAwsEc2CoipPools
 ```
@@ -337,7 +337,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.DataAwsEc2CoipPools_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.DataAwsEc2CoipPools_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ dataawsec2coippools.DataAwsEc2CoipPools_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.DataAwsEc2CoipPools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ dataawsec2coippools.DataAwsEc2CoipPools_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.DataAwsEc2CoipPools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 &dataawsec2coippools.DataAwsEc2CoipPoolsConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeouts,
 }
 ```
 
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 &dataawsec2coippools.DataAwsEc2CoipPoolsFilter {
 	Name: *string,
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 &dataawsec2coippools.DataAwsEc2CoipPoolsTimeouts {
 	Read: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.NewDataAwsEc2CoipPoolsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2CoipPoolsFilterList
 ```
@@ -1146,7 +1146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.NewDataAwsEc2CoipPoolsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2CoipPoolsFilterOutputReference
 ```
@@ -1457,7 +1457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPoolsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2coippools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2coippools"
 
 dataawsec2coippools.NewDataAwsEc2CoipPoolsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2CoipPoolsTimeoutsOutputReference
 ```

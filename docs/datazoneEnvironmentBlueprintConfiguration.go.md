@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironmentBlueprintConfiguration.DatazoneEnvironmentBlueprintConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironmentblueprintconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentblueprintconfiguration"
 
 datazoneenvironmentblueprintconfiguration.NewDatazoneEnvironmentBlueprintConfiguration(scope Construct, id *string, config DatazoneEnvironmentBlueprintConfigurationConfig) DatazoneEnvironmentBlueprintConfiguration
 ```
@@ -406,7 +406,7 @@ func ResetRegionalParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datazoneEnvironmentBlueprintConfiguration.DatazoneEnvironmentBlueprintConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironmentblueprintconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentblueprintconfiguration"
 
 datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datazoneEnvironmentBlueprintConfiguration.DatazoneEnvironmentBlueprintConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironmentblueprintconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentblueprintconfiguration"
 
 datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfigurat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datazoneEnvironmentBlueprintConfiguration.DatazoneEnvironmentBlueprintConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironmentblueprintconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentblueprintconfiguration"
 
 datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfigurat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datazoneEnvironmentBlueprintConfiguration.DatazoneEnvironmentBlueprintConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironmentblueprintconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentblueprintconfiguration"
 
 datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironmentBlueprintConfiguration.DatazoneEnvironmentBlueprintConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironmentblueprintconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentblueprintconfiguration"
 
 &datazoneenvironmentblueprintconfiguration.DatazoneEnvironmentBlueprintConfigurationConfig {
 	Connection: interface{},

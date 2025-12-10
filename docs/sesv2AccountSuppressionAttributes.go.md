@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.NewSesv2AccountSuppressionAttributes(scope Construct, id *string, config Sesv2AccountSuppressionAttributesConfig) Sesv2AccountSuppressionAttributes
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2accountsuppressionattributes"
 
 &sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributesConfig {
 	Connection: interface{},

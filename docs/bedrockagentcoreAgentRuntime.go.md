@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntime(scope Construct, id *string, config BedrockagentcoreAgentRuntimeConfig) BedrockagentcoreAgentRuntime
 ```
@@ -546,7 +546,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntime.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntime_IsConstruct(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntime_IsTerraformElement(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntime_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntime.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntime_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntime_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntime.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntime_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1176,7 +1176,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifact {
 	CodeConfiguration: interface{},
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfiguration {
 	EntryPoint: *[]*string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCode {
 	S3: interface{},
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3 {
 	Bucket: *string,
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfiguration {
 	ContainerUri: *string,
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAuthorizerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAuthorizerConfiguration {
 	CustomJwtAuthorizer: interface{},
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizer {
 	DiscoveryUrl: *string,
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeConfig {
 	Connection: interface{},
@@ -1530,7 +1530,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
 	Region: *string,
 	RequestHeaderConfiguration: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeTimeouts,
 }
 ```
 
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeLifecycleConfiguration {
 	IdleRuntimeSessionTimeout: *f64,
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeNetworkConfiguration {
 	NetworkMode: *string,
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfig {
 	SecurityGroups: *[]*string,
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeProtocolConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeProtocolConfiguration {
 	ServerProtocol: *string,
@@ -1978,7 +1978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeRequestHeaderConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeRequestHeaderConfiguration {
 	RequestHeaderAllowlist: *[]*string,
@@ -2010,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeTimeouts {
 	Create: *string,
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeWorkloadIdentityDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 &bedrockagentcoreagentruntime.BedrockagentcoreAgentRuntimeWorkloadIdentityDetails {
 
@@ -2091,7 +2091,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeList
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeOutputReference
 ```
@@ -2560,7 +2560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3List
 ```
@@ -2720,7 +2720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3OutputReference
 ```
@@ -3060,7 +3060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationList
 ```
@@ -3220,7 +3220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationOutputReference
 ```
@@ -3573,7 +3573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationList
 ```
@@ -3733,7 +3733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationOutputReference
 ```
@@ -4022,7 +4022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactList
 ```
@@ -4182,7 +4182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference
 ```
@@ -4533,7 +4533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerList
 ```
@@ -4693,7 +4693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerOutputReference
 ```
@@ -5040,7 +5040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAuthorizerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAuthorizerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeAuthorizerConfigurationList
 ```
@@ -5200,7 +5200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeAuthorizerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeAuthorizerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeAuthorizerConfigurationOutputReference
 ```
@@ -5509,7 +5509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeLifecycleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeLifecycleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeLifecycleConfigurationList
 ```
@@ -5669,7 +5669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeLifecycleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeLifecycleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeLifecycleConfigurationOutputReference
 ```
@@ -5994,7 +5994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeNetworkConfigurationList
 ```
@@ -6154,7 +6154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigList
 ```
@@ -6314,7 +6314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigOutputReference
 ```
@@ -6625,7 +6625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeNetworkConfigurationOutputReference
 ```
@@ -6956,7 +6956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeProtocolConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeProtocolConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeProtocolConfigurationList
 ```
@@ -7116,7 +7116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeProtocolConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeProtocolConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeProtocolConfigurationOutputReference
 ```
@@ -7412,7 +7412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeRequestHeaderConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeRequestHeaderConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeRequestHeaderConfigurationList
 ```
@@ -7572,7 +7572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeRequestHeaderConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeRequestHeaderConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeRequestHeaderConfigurationOutputReference
 ```
@@ -7868,7 +7868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreAgentRuntimeTimeoutsOutputReference
 ```
@@ -8204,7 +8204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeWorkloadIdentityDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsList
 ```
@@ -8353,7 +8353,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreAgentRuntime.BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoreagentruntime"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoreagentruntime"
 
 bedrockagentcoreagentruntime.NewBedrockagentcoreAgentRuntimeWorkloadIdentityDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsOutputReference
 ```

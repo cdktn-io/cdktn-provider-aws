@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembership(scope Construct, id *string, config CleanroomsMembershipConfig) CleanroomsMembership
 ```
@@ -432,7 +432,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.CleanroomsMembership_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.CleanroomsMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ cleanroomsmembership.CleanroomsMembership_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.CleanroomsMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ cleanroomsmembership.CleanroomsMembership_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.CleanroomsMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 &cleanroomsmembership.CleanroomsMembershipConfig {
 	Connection: interface{},
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 &cleanroomsmembership.CleanroomsMembershipDefaultResultConfiguration {
 	OutputConfiguration: interface{},
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 &cleanroomsmembership.CleanroomsMembershipDefaultResultConfigurationOutputConfiguration {
 	S3: interface{},
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 &cleanroomsmembership.CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3 {
 	Bucket: *string,
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipPaymentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 &cleanroomsmembership.CleanroomsMembershipPaymentConfiguration {
 	QueryCompute: interface{},
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipPaymentConfigurationQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 &cleanroomsmembership.CleanroomsMembershipPaymentConfigurationQueryCompute {
 	IsResponsible: interface{},
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipDefaultResultConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CleanroomsMembershipDefaultResultConfigurationList
 ```
@@ -1536,7 +1536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipDefaultResultConfigurationOutputConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CleanroomsMembershipDefaultResultConfigurationOutputConfigurationList
 ```
@@ -1696,7 +1696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference
 ```
@@ -2005,7 +2005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3List
 ```
@@ -2165,7 +2165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipDefaultResultConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipDefaultResultConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CleanroomsMembershipDefaultResultConfigurationOutputReference
 ```
@@ -2843,7 +2843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipPaymentConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipPaymentConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CleanroomsMembershipPaymentConfigurationList
 ```
@@ -3003,7 +3003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipPaymentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipPaymentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CleanroomsMembershipPaymentConfigurationOutputReference
 ```
@@ -3312,7 +3312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipPaymentConfigurationQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipPaymentConfigurationQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CleanroomsMembershipPaymentConfigurationQueryComputeList
 ```
@@ -3472,7 +3472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cleanroomsMembership.CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cleanroomsmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsmembership"
 
 cleanroomsmembership.NewCleanroomsMembershipPaymentConfigurationQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CleanroomsMembershipPaymentConfigurationQueryComputeOutputReference
 ```

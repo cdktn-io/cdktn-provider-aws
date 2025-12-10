@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigapplication"
 
 dataawsappconfigapplication.NewDataAwsAppconfigApplication(scope Construct, id *string, config DataAwsAppconfigApplicationConfig) DataAwsAppconfigApplication
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigapplication"
 
 dataawsappconfigapplication.DataAwsAppconfigApplication_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigapplication"
 
 dataawsappconfigapplication.DataAwsAppconfigApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsappconfigapplication.DataAwsAppconfigApplication_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigapplication"
 
 dataawsappconfigapplication.DataAwsAppconfigApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsappconfigapplication.DataAwsAppconfigApplication_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigapplication"
 
 dataawsappconfigapplication.DataAwsAppconfigApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigapplication"
 
 &dataawsappconfigapplication.DataAwsAppconfigApplicationConfig {
 	Connection: interface{},

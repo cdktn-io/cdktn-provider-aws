@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlan(scope Construct, id *string, config DataAwsBackupPlanConfig) DataAwsBackupPlan
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbackupplan.DataAwsBackupPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsbackupplan.DataAwsBackupPlan_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanRule {
 
@@ -883,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleCopyAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanRuleCopyAction {
 
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleCopyActionLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanRuleCopyActionLifecycle {
 
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanRuleLifecycle {
 
@@ -922,7 +922,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleScanAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanRuleScanAction {
 
@@ -935,7 +935,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanScanSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanScanSetting {
 
@@ -950,7 +950,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleCopyActionLifecycleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleCopyActionLifecycleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupPlanRuleCopyActionLifecycleList
 ```
@@ -1099,7 +1099,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleCopyActionLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleCopyActionLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupPlanRuleCopyActionLifecycleOutputReference
 ```
@@ -1399,7 +1399,7 @@ func InternalValue() DataAwsBackupPlanRuleCopyActionLifecycle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleCopyActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleCopyActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupPlanRuleCopyActionList
 ```
@@ -1548,7 +1548,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleCopyActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleCopyActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupPlanRuleCopyActionOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() DataAwsBackupPlanRuleCopyAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleLifecycleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleLifecycleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupPlanRuleLifecycleList
 ```
@@ -1986,7 +1986,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupPlanRuleLifecycleOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() DataAwsBackupPlanRuleLifecycle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupPlanRuleList
 ```
@@ -2435,7 +2435,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupPlanRuleOutputReference
 ```
@@ -2834,7 +2834,7 @@ func InternalValue() DataAwsBackupPlanRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleScanActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleScanActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupPlanRuleScanActionList
 ```
@@ -2983,7 +2983,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanRuleScanActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanRuleScanActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupPlanRuleScanActionOutputReference
 ```
@@ -3272,7 +3272,7 @@ func InternalValue() DataAwsBackupPlanRuleScanAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanScanSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanScanSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupPlanScanSettingList
 ```
@@ -3421,7 +3421,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanScanSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlanScanSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupPlanScanSettingOutputReference
 ```

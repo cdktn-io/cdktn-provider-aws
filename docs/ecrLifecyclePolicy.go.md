@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.NewEcrLifecyclePolicy(scope Construct, id *string, config EcrLifecyclePolicyConfig) EcrLifecyclePolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrlifecyclepolicy"
 
 &ecrlifecyclepolicy.EcrLifecyclePolicyConfig {
 	Connection: interface{},

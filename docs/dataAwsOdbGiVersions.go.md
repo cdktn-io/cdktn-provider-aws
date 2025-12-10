@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.NewDataAwsOdbGiVersions(scope Construct, id *string, config DataAwsOdbGiVersionsConfig) DataAwsOdbGiVersions
 ```
@@ -290,7 +290,7 @@ func ResetShape()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.DataAwsOdbGiVersions_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.DataAwsOdbGiVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsodbgiversions.DataAwsOdbGiVersions_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.DataAwsOdbGiVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsodbgiversions.DataAwsOdbGiVersions_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.DataAwsOdbGiVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 &dataawsodbgiversions.DataAwsOdbGiVersionsConfig {
 	Connection: interface{},
@@ -746,7 +746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersionsGiVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 &dataawsodbgiversions.DataAwsOdbGiVersionsGiVersions {
 
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersionsGiVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.NewDataAwsOdbGiVersionsGiVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbGiVersionsGiVersionsList
 ```
@@ -910,7 +910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbGiVersions.DataAwsOdbGiVersionsGiVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbgiversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbgiversions"
 
 dataawsodbgiversions.NewDataAwsOdbGiVersionsGiVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbGiVersionsGiVersionsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication"
 
 dataawsservicecatalogappregistryapplication.NewDataAwsServicecatalogappregistryApplication(scope Construct, id *string, config DataAwsServicecatalogappregistryApplicationConfig) DataAwsServicecatalogappregistryApplication
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication"
 
 dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryApplication_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication"
 
 dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryAppl
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication"
 
 dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryAppl
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication"
 
 dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication"
 
 &dataawsservicecatalogappregistryapplication.DataAwsServicecatalogappregistryApplicationConfig {
 	Connection: interface{},

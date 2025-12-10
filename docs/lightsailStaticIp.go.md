@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticip"
 
 lightsailstaticip.NewLightsailStaticIp(scope Construct, id *string, config LightsailStaticIpConfig) LightsailStaticIp
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticip"
 
 lightsailstaticip.LightsailStaticIp_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticip"
 
 lightsailstaticip.LightsailStaticIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ lightsailstaticip.LightsailStaticIp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticip"
 
 lightsailstaticip.LightsailStaticIp_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ lightsailstaticip.LightsailStaticIp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticip"
 
 lightsailstaticip.LightsailStaticIp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticip"
 
 &lightsailstaticip.LightsailStaticIpConfig {
 	Connection: interface{},

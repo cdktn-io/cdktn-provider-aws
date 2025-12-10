@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftDataShareConsumerAssociation.RedshiftDataShareConsumerAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatashareconsumerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareconsumerassociation"
 
 redshiftdatashareconsumerassociation.NewRedshiftDataShareConsumerAssociation(scope Construct, id *string, config RedshiftDataShareConsumerAssociationConfig) RedshiftDataShareConsumerAssociation
 ```
@@ -413,7 +413,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftDataShareConsumerAssociation.RedshiftDataShareConsumerAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatashareconsumerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareconsumerassociation"
 
 redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftDataShareConsumerAssociation.RedshiftDataShareConsumerAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatashareconsumerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareconsumerassociation"
 
 redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociation_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftDataShareConsumerAssociation.RedshiftDataShareConsumerAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatashareconsumerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareconsumerassociation"
 
 redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociation_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftDataShareConsumerAssociation.RedshiftDataShareConsumerAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatashareconsumerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareconsumerassociation"
 
 redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftDataShareConsumerAssociation.RedshiftDataShareConsumerAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftdatashareconsumerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareconsumerassociation"
 
 &redshiftdatashareconsumerassociation.RedshiftDataShareConsumerAssociationConfig {
 	Connection: interface{},

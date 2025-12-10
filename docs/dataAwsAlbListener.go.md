@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListener(scope Construct, id *string, config DataAwsAlbListenerConfig) DataAwsAlbListener
 ```
@@ -338,7 +338,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.DataAwsAlbListener_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.DataAwsAlbListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataawsalblistener.DataAwsAlbListener_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.DataAwsAlbListener_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dataawsalblistener.DataAwsAlbListener_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.DataAwsAlbListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -825,7 +825,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerConfig {
 	Connection: interface{},
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 	Port: *f64,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsAlbListener.DataAwsAlbListenerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dataAwsAlbListener.DataAwsAlbListenerTimeouts,
 }
 ```
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultAction {
 
@@ -1045,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognito.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionAuthenticateCognito {
 
@@ -1058,7 +1058,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionAuthenticateOidc {
 
@@ -1071,7 +1071,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionFixedResponse {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionForward {
 
@@ -1097,7 +1097,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionForwardStickiness {
 
@@ -1110,7 +1110,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionForwardTargetGroup {
 
@@ -1123,7 +1123,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionJwtValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionJwtValidation {
 
@@ -1136,7 +1136,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaim {
 
@@ -1149,7 +1149,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerDefaultActionRedirect {
 
@@ -1162,7 +1162,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerMutualAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerMutualAuthentication {
 
@@ -1175,7 +1175,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 &dataawsalblistener.DataAwsAlbListenerTimeouts {
 	Read: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionAuthenticateCognitoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionAuthenticateCognitoList
 ```
@@ -1358,7 +1358,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference
 ```
@@ -1713,7 +1713,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionAuthenticateCognito
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionAuthenticateOidcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionAuthenticateOidcList
 ```
@@ -1862,7 +1862,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionAuthenticateOidcOutputReference
 ```
@@ -2250,7 +2250,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionAuthenticateOidc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionFixedResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionFixedResponseList
 ```
@@ -2399,7 +2399,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionFixedResponseOutputReference
 ```
@@ -2699,7 +2699,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionForwardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionForwardList
 ```
@@ -2848,7 +2848,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionForwardOutputReference
 ```
@@ -3137,7 +3137,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionForward
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickinessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionForwardStickinessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionForwardStickinessList
 ```
@@ -3286,7 +3286,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionForwardStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionForwardStickinessOutputReference
 ```
@@ -3575,7 +3575,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionForwardStickiness
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionForwardTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionForwardTargetGroupList
 ```
@@ -3724,7 +3724,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference
 ```
@@ -4013,7 +4013,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionForwardTargetGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionJwtValidationAdditionalClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaimList
 ```
@@ -4162,7 +4162,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
 ```
@@ -4462,7 +4462,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionJwtValidationAdditionalClaim
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionJwtValidationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionJwtValidationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionJwtValidationList
 ```
@@ -4611,7 +4611,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionJwtValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionJwtValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionJwtValidationOutputReference
 ```
@@ -4911,7 +4911,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionJwtValidation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionList
 ```
@@ -5060,7 +5060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionOutputReference
 ```
@@ -5426,7 +5426,7 @@ func InternalValue() DataAwsAlbListenerDefaultAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerDefaultActionRedirectList
 ```
@@ -5575,7 +5575,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerDefaultActionRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerDefaultActionRedirectOutputReference
 ```
@@ -5908,7 +5908,7 @@ func InternalValue() DataAwsAlbListenerDefaultActionRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerMutualAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerMutualAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbListenerMutualAuthenticationList
 ```
@@ -6057,7 +6057,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerMutualAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerMutualAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbListenerMutualAuthenticationOutputReference
 ```
@@ -6368,7 +6368,7 @@ func InternalValue() DataAwsAlbListenerMutualAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsalblistener"
 
 dataawsalblistener.NewDataAwsAlbListenerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAlbListenerTimeoutsOutputReference
 ```

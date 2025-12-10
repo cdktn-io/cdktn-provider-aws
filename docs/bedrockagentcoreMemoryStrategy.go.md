@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategy(scope Construct, id *string, config BedrockagentcoreMemoryStrategyConfig) BedrockagentcoreMemoryStrategy
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategy_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategy_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategy_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 &bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategyConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrateg
 	Description: *string,
 	MemoryExecutionRoleArn: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyTimeouts,
 }
 ```
 
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 &bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategyConfiguration {
 	Type: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationConsolidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 &bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategyConfigurationConsolidation {
 	AppendToPrompt: *string,
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 &bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategyConfigurationExtraction {
 	AppendToPrompt: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 &bedrockagentcorememorystrategy.BedrockagentcoreMemoryStrategyTimeouts {
 	Create: *string,
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationConsolidationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyConfigurationConsolidationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStrategyConfigurationConsolidationList
 ```
@@ -1555,7 +1555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationConsolidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyConfigurationConsolidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStrategyConfigurationConsolidationOutputReference
 ```
@@ -1866,7 +1866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationExtractionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyConfigurationExtractionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStrategyConfigurationExtractionList
 ```
@@ -2026,7 +2026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyConfigurationExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStrategyConfigurationExtractionOutputReference
 ```
@@ -2337,7 +2337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreMemoryStrategyConfigurationList
 ```
@@ -2497,7 +2497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreMemoryStrategyConfigurationOutputReference
 ```
@@ -2870,7 +2870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreMemoryStrategy.BedrockagentcoreMemoryStrategyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcorememorystrategy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcorememorystrategy"
 
 bedrockagentcorememorystrategy.NewBedrockagentcoreMemoryStrategyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreMemoryStrategyTimeoutsOutputReference
 ```

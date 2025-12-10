@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.NewGameliftGameSessionQueue(scope Construct, id *string, config GameliftGameSessionQueueConfig) GameliftGameSessionQueue
 ```
@@ -454,7 +454,7 @@ func ResetTimeoutInSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 &gameliftgamesessionqueue.GameliftGameSessionQueueConfig {
 	Connection: interface{},
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 &gameliftgamesessionqueue.GameliftGameSessionQueuePlayerLatencyPolicy {
 	MaximumIndividualPlayerLatencyMilliseconds: *f64,
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.NewGameliftGameSessionQueuePlayerLatencyPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GameliftGameSessionQueuePlayerLatencyPolicyList
 ```
@@ -1431,7 +1431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgamesessionqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.NewGameliftGameSessionQueuePlayerLatencyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GameliftGameSessionQueuePlayerLatencyPolicyOutputReference
 ```

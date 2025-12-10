@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.NewSsoadminInstanceAccessControlAttributes(scope Construct, id *string, config SsoadminInstanceAccessControlAttributesConfig) SsoadminInstanceAccessControlAttributes
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributes_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributes_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributes_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 &ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributesAttribute {
 	Key: *string,
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 &ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributesAttributeValue {
 	Source: *[]*string,
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 &ssoadmininstanceaccesscontrolattributes.SsoadminInstanceAccessControlAttributesConfig {
 	Connection: interface{},
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.NewSsoadminInstanceAccessControlAttributesAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsoadminInstanceAccessControlAttributesAttributeList
 ```
@@ -1211,7 +1211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.NewSsoadminInstanceAccessControlAttributesAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsoadminInstanceAccessControlAttributesAttributeOutputReference
 ```
@@ -1535,7 +1535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.NewSsoadminInstanceAccessControlAttributesAttributeValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsoadminInstanceAccessControlAttributesAttributeValueList
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadmininstanceaccesscontrolattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadmininstanceaccesscontrolattributes"
 
 ssoadmininstanceaccesscontrolattributes.NewSsoadminInstanceAccessControlAttributesAttributeValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsoadminInstanceAccessControlAttributesAttributeValueOutputReference
 ```

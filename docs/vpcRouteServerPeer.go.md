@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.NewVpcRouteServerPeer(scope Construct, id *string, config VpcRouteServerPeerConfig) VpcRouteServerPeer
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.VpcRouteServerPeer_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.VpcRouteServerPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ vpcrouteserverpeer.VpcRouteServerPeer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.VpcRouteServerPeer_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ vpcrouteserverpeer.VpcRouteServerPeer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.VpcRouteServerPeer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -941,7 +941,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeerBgpOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 &vpcrouteserverpeer.VpcRouteServerPeerBgpOptions {
 	PeerAsn: *f64,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 &vpcrouteserverpeer.VpcRouteServerPeerConfig {
 	Connection: interface{},
@@ -1002,7 +1002,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
 	BgpOptions: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcRouteServerPeer.VpcRouteServerPeerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.vpcRouteServerPeer.VpcRouteServerPeerTimeouts,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 &vpcrouteserverpeer.VpcRouteServerPeerTimeouts {
 	Create: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeerBgpOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.NewVpcRouteServerPeerBgpOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcRouteServerPeerBgpOptionsList
 ```
@@ -1391,7 +1391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeerBgpOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.NewVpcRouteServerPeerBgpOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcRouteServerPeerBgpOptionsOutputReference
 ```
@@ -1709,7 +1709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcRouteServerPeer.VpcRouteServerPeerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcrouteserverpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpeer"
 
 vpcrouteserverpeer.NewVpcRouteServerPeerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcRouteServerPeerTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbac.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.NewS3BucketAbac(scope Construct, id *string, config S3BucketAbacConfig) S3BucketAbac
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbac.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.S3BucketAbac_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbac.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.S3BucketAbac_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketabac.S3BucketAbac_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbac.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.S3BucketAbac_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ s3bucketabac.S3BucketAbac_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbac.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.S3BucketAbac_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbacAbacStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 &s3bucketabac.S3BucketAbacAbacStatus {
 	Status: *string,
@@ -821,7 +821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbacConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 &s3bucketabac.S3BucketAbacConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbacAbacStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.NewS3BucketAbacAbacStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketAbacAbacStatusList
 ```
@@ -1145,7 +1145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAbac.S3BucketAbacAbacStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketabac"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketabac"
 
 s3bucketabac.NewS3BucketAbacAbacStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketAbacAbacStatusOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.NewConfigRemediationConfiguration(scope Construct, id *string, config ConfigRemediationConfigurationConfig) ConfigRemediationConfiguration
 ```
@@ -467,7 +467,7 @@ func ResetTargetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.ConfigRemediationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.ConfigRemediationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ configremediationconfiguration.ConfigRemediationConfiguration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.ConfigRemediationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ configremediationconfiguration.ConfigRemediationConfiguration_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.ConfigRemediationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1031,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 &configremediationconfiguration.ConfigRemediationConfigurationConfig {
 	Connection: interface{},
@@ -1045,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguratio
 	TargetId: *string,
 	TargetType: *string,
 	Automatic: interface{},
-	ExecutionControls: github.com/cdktf/cdktf-provider-aws-go/aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControls,
+	ExecutionControls: github.com/cdktf/cdktf-provider-aws-go/aws/v21.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControls,
 	Id: *string,
 	MaximumAutomaticAttempts: *f64,
 	Parameter: interface{},
@@ -1310,10 +1310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 &configremediationconfiguration.ConfigRemediationConfigurationExecutionControls {
-	SsmControls: github.com/cdktf/cdktf-provider-aws-go/aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls,
+	SsmControls: github.com/cdktf/cdktf-provider-aws-go/aws/v21.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls,
 }
 ```
 
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 &configremediationconfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls {
 	ConcurrentExecutionRatePercentage: *f64,
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 &configremediationconfiguration.ConfigRemediationConfigurationParameter {
 	Name: *string,
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.NewConfigRemediationConfigurationExecutionControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigRemediationConfigurationExecutionControlsOutputReference
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() ConfigRemediationConfigurationExecutionControls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.NewConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference
 ```
@@ -2064,7 +2064,7 @@ func InternalValue() ConfigRemediationConfigurationExecutionControlsSsmControls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.NewConfigRemediationConfigurationParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigRemediationConfigurationParameterList
 ```
@@ -2224,7 +2224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configremediationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configremediationconfiguration"
 
 configremediationconfiguration.NewConfigRemediationConfigurationParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigRemediationConfigurationParameterOutputReference
 ```

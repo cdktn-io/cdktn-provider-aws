@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.Lb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLb(scope Construct, id *string, config LbConfig) Lb
 ```
@@ -714,7 +714,7 @@ func ResetXffHeaderProcessingMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lb.Lb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.Lb_IsConstruct(x interface{}) *bool
 ```
@@ -746,7 +746,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lb.Lb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.Lb_IsTerraformElement(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ lb.Lb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lb.Lb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.Lb_IsTerraformResource(x interface{}) *bool
 ```
@@ -774,7 +774,7 @@ lb.Lb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lb.Lb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.Lb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1828,7 +1828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbAccessLogs {
 	Bucket: *string,
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbConfig {
 	Connection: interface{},
@@ -1898,9 +1898,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws.lb.LbAccessLogs,
+	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v21.lb.LbAccessLogs,
 	ClientKeepAlive: *f64,
-	ConnectionLogs: github.com/cdktf/cdktf-provider-aws-go/aws.lb.LbConnectionLogs,
+	ConnectionLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v21.lb.LbConnectionLogs,
 	CustomerOwnedIpv4Pool: *string,
 	DesyncMitigationMode: *string,
 	DnsRecordClientRoutingPolicy: *string,
@@ -1913,14 +1913,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
 	EnableXffClientPort: interface{},
 	EnableZonalShift: interface{},
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic: *string,
-	HealthCheckLogs: github.com/cdktf/cdktf-provider-aws-go/aws.lb.LbHealthCheckLogs,
+	HealthCheckLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v21.lb.LbHealthCheckLogs,
 	Id: *string,
 	IdleTimeout: *f64,
 	Internal: interface{},
 	IpAddressType: *string,
-	IpamPools: github.com/cdktf/cdktf-provider-aws-go/aws.lb.LbIpamPools,
+	IpamPools: github.com/cdktf/cdktf-provider-aws-go/aws/v21.lb.LbIpamPools,
 	LoadBalancerType: *string,
-	MinimumLoadBalancerCapacity: github.com/cdktf/cdktf-provider-aws-go/aws.lb.LbMinimumLoadBalancerCapacity,
+	MinimumLoadBalancerCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v21.lb.LbMinimumLoadBalancerCapacity,
 	Name: *string,
 	NamePrefix: *string,
 	PreserveHostHeader: interface{},
@@ -1931,7 +1931,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
 	Subnets: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lb.LbTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.lb.LbTimeouts,
 	XffHeaderProcessingMode: *string,
 }
 ```
@@ -2499,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbConnectionLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbConnectionLogs {
 	Bucket: *string,
@@ -2559,7 +2559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbHealthCheckLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbHealthCheckLogs {
 	Bucket: *string,
@@ -2619,7 +2619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbIpamPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbIpamPools {
 	Ipv4IpamPoolId: *string,
@@ -2651,7 +2651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbMinimumLoadBalancerCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbMinimumLoadBalancerCapacity {
 	CapacityUnits: *f64,
@@ -2683,7 +2683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbSubnetMapping {
 	SubnetId: *string,
@@ -2757,7 +2757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lb.LbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 &lb.LbTimeouts {
 	Create: *string,
@@ -2819,7 +2819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbAccessLogsOutputReference
 ```
@@ -3148,7 +3148,7 @@ func InternalValue() LbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbConnectionLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbConnectionLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbConnectionLogsOutputReference
 ```
@@ -3477,7 +3477,7 @@ func InternalValue() LbConnectionLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbHealthCheckLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbHealthCheckLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbHealthCheckLogsOutputReference
 ```
@@ -3806,7 +3806,7 @@ func InternalValue() LbHealthCheckLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbIpamPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbIpamPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbIpamPoolsOutputReference
 ```
@@ -4077,7 +4077,7 @@ func InternalValue() LbIpamPools
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbMinimumLoadBalancerCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbMinimumLoadBalancerCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbMinimumLoadBalancerCapacityOutputReference
 ```
@@ -4348,7 +4348,7 @@ func InternalValue() LbMinimumLoadBalancerCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbSubnetMappingList
 ```
@@ -4508,7 +4508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbSubnetMappingOutputReference
 ```
@@ -4895,7 +4895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lb.LbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lb"
 
 lb.NewLbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTimeoutsOutputReference
 ```

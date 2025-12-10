@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayprefixlistreference"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayprefixlistreference"
 
 ec2transitgatewayprefixlistreference.NewEc2TransitGatewayPrefixListReference(scope Construct, id *string, config Ec2TransitGatewayPrefixListReferenceConfig) Ec2TransitGatewayPrefixListReference
 ```
@@ -406,7 +406,7 @@ func ResetTransitGatewayAttachmentId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayprefixlistreference"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayprefixlistreference"
 
 ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReference_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayprefixlistreference"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayprefixlistreference"
 
 ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReference_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReference_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayprefixlistreference"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayprefixlistreference"
 
 ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReference_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReference_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayprefixlistreference"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayprefixlistreference"
 
 ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReference_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayprefixlistreference"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayprefixlistreference"
 
 &ec2transitgatewayprefixlistreference.Ec2TransitGatewayPrefixListReferenceConfig {
 	Connection: interface{},

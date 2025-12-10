@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmpatchgroup"
 
 ssmpatchgroup.NewSsmPatchGroup(scope Construct, id *string, config SsmPatchGroupConfig) SsmPatchGroup
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ssmpatchgroup.SsmPatchGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ssmpatchgroup.SsmPatchGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmpatchgroup"
 
 ssmpatchgroup.SsmPatchGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmpatchgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmpatchgroup"
 
 &ssmpatchgroup.SsmPatchGroupConfig {
 	Connection: interface{},
